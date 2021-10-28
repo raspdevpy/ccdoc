@@ -1,0 +1,33 @@
+# Channel Types
+Some functions needs a channel type or return channel types
+like `$channelType, $channelCount...`
+
+### Current available types:
+```
+	text
+  	dm
+  	voice
+  	dm_group
+  	category
+  	news
+  	store
+  	thread_news
+  	thread_public
+  	thread_private
+  	stage
+
+```
+
+### Example
+#### Using $channelType inside a thread, returns:
+<br/>
+<discord-messages>
+	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
+		!!exec $channelType
+	</discord-message>
+	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+		thread_public
+	</discord-message>
+</discord-messages>
+
+###### Tags: <Badge type="tip" text="Channel Types" vertical="middle" />

@@ -1,0 +1,31 @@
+{
+  "name": "guide",
+  "description": "Imagine a guide..",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vuepress dev guide",
+    "build": "vuepress build guide"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-search": "^2.0.0-beta.26",
+    "vuepress": "^2.0.0-beta.24",
+    "vuepress-vite": "^2.0.0-beta.20"
+  },
+  "dependencies": {
+    "@discord-message-components/vue": "^0.2.1",
+    "@vuepress/plugin-container": "^2.0.0-beta.24"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raspdevpy/vuedocs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raspdevpy/vuedocs/issues"
+  },
+  "homepage": "https://github.com/raspdevpy/vuedocs#readme"
+}
