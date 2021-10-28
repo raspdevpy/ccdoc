@@ -18,7 +18,7 @@ module.exports = {
 				link: 'https://ccommandbot.ga/dashboard',
 			},
 		],
-		repo: 'raspdevpy/vuedocs',
+		repo: 'raspdevpy/ccdoc',
 		contributors:false,
 		search: true,
 		logo: 'https://cdn.discordapp.com/icons/832255686783533066/f7131f694c6e1a2bd9c360d8b525d4e3.webp',
