@@ -33,6 +33,8 @@ to view Commands use `!!commands <commandname>`
 
 `appendcc`, `pool`, `redeem`, `shop` & `vote`
 
-**SUPPORT**
 
-Join our support server for help!
+## Contribute
+Please refer to [this file](../Contribution_Info/main.md) for info on how to contribute...
+
+Contact moderators/ developers at our support server for more info!
