@@ -1,4 +1,5 @@
-const sidebar = require('./sidebar')
+const sidebar = require('./sidebar');
+const parseTag = require('./parseTags');
 module.exports = {
 	lang: 'en-US',
 	title: 'Custom Command Bot',
@@ -6,7 +7,10 @@ module.exports = {
 	theme: '@vuepress/default',
 	//plugins: ['@vuepress/plugin-container'],
 	plugins: [
-		['@vuepress/plugin-search'],
+		['@vuepress/plugin-search',{
+			maxSuggestions:15,
+			getExtraFields: (page) =>parseTag(page),
+		}],
 		['@vuepress/plugin-container']
 	],
 	

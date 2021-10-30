@@ -19,7 +19,6 @@ function getSideBar(folder, title) {
 	}
 	return { text: title, children: files };
 }
-console.log(getSideBar("Member","Member functions"))
 
 module.exports= {
 	
