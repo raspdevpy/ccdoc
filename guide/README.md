@@ -8,7 +8,7 @@ It is not recommended to skip the guide or reading only parts of it. Following i
 1. Invite the Bot with the [link](https://discord.com/api/oauth2/authorize?client_id=725721249652670555&permissions=268561655&scope=bot)
 ![](https://i.imgur.com/NQp3N8L.png)
 
-We recommend to leave all the permissions enabled, so you don't face any issues, when using Functions that require certain discord permissions!
+We recommend to leave all the permissions enabled, so you don't face any issues, when using Functions that require certain discord permissions! For more info on bot permissions and privacy policy, please refere to [this](./Guide/perms&privacy.md) page
 
 ![](https://i.imgur.com/7WnDcnG.png)
 
