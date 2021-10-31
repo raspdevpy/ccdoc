@@ -52,5 +52,6 @@ module.exports= {
 	getSideBar('Variables','Variables Functions'),
 	getSideBar('Bot','Bot Functions'),
 	getSideBar('Useful','Useful Functions'),
+	getSideBar('Contribution_Info','Contribute'),
 ]
 }

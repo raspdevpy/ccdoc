@@ -1,4 +1,4 @@
-# Custom Command Bot Documentation:
+# Main Information
 
 ## Rules
 Please follow the following rules:
