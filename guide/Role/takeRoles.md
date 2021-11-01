@@ -1,5 +1,5 @@
 # $takeRoles
-Takes away a role
+Takes a role or roles from given user ID
 
 #### Usage: 
 `$takeRoles[userID;roleID 1;roleID 2;roleID 3;...]`
