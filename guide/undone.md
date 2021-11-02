@@ -3,16 +3,13 @@
 * $void
 * $useChannel
 * $uri
-* $unpinMessage
 * $transcriptChannel
 * $textTrim
 * $textSlice
 * $stringStartsWith
 * $stringEndsWith
-* $stop
 * $spread
 * $spliceTextJoin
-* $slowmode
 * $setChannelTopic
 * $sendWebhook
 * $sendCrosspostingMessage
@@ -27,7 +24,6 @@
 * $regexMatch
 * $referenceMessageID
 * $referenceChannelID
-* $pinMessage
 * $parseTime
 * $onlyIfMessageContains
 * $onClone
@@ -43,7 +39,6 @@
 * $interactionDelete
 * $indexOf
 * $highestServerRole
-* $hasRole
 * $hasEmbeds
 * $hasAnyRole
 * $hasAnyPerm
@@ -61,7 +56,6 @@
 * $findTextSplitIndex
 * $findSpecialChars
 * $findServerChannel
-* $findNumbers
 * $findChars
 * $filterMessageWords
 * $filterMessage
@@ -86,7 +80,6 @@
 * $createWebhook
 * $createObject
 * $concatTextSplit
-* $colorRole
 * $closeTicket
 * $cloneChannel
 * $clearReactions
@@ -384,7 +377,12 @@
 * ~~$usersInChannel~~
 * ~~$userRoleColor~~
 * ~~$userReacted~~
-
+* ~~$findNumbers~~
+* ~~$slowmode~~
+* ~~$stop~~
+* ~~$pinMessage~~
+* ~~$unpinMessage~~
+* ~~$colorRole~~
 # Progress
 
 
