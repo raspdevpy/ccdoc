@@ -26,14 +26,14 @@ Adds the author to a message with hyper link / icon or text
 		</discord-embed>
 	</discord-message>
      <discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $author[text;$authorAvatar;https://ccommandbot.ga]
+		!!exec $author[text;$authorAvatar;https://ccommandbot.com]
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
 		<discord-embed
 			slot="embeds"
             authorName="text"
             authorIcon="https://cdn.discordapp.com/attachments/654503812593090602/665721745466195978/blue.png"
-            authorUrl="https://ccommandbot.ga"
+            authorUrl="https://ccommandbot.com"
 		>
 		</discord-embed>
 	</discord-message>

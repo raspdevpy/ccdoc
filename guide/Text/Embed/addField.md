@@ -33,16 +33,16 @@ Adds fields to a message
 </discord-messages>
 
 $addField with hyperlinks:
-Usage:  `\[link\](https://ccommandbot.ga "tooltip(optional)")`
+Usage:  `\[link\](https://ccommandbot.com "tooltip(optional)")`
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $addField[title;This is a field with \[link\](https://ccommandbot.ga "tooltip")]
+		!!exec $addField[title;This is a field with \[link\](https://ccommandbot.com "tooltip")]
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
 		<discord-embed slot="embeds">
         <discord-embed-fields slot="fields">
 				<discord-embed-field fieldTitle="title">
-					This is a description <a href="https://ccommandbot.ga" target="_blank" title="tooltip">hello</a>
+					This is a description <a href="https://ccommandbot.com" target="_blank" title="tooltip">hello</a>
 				</discord-embed-field>
 		</discord-embed-fields>
 		</discord-embed>

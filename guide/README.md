@@ -12,7 +12,7 @@ We recommend to leave all the permissions enabled, so you don't face any issues,
 
 ![](https://i.imgur.com/7WnDcnG.png)
 
-2. Login to the [Dashboard](https://ccommandbot.ga/auth/login)
+2. Login to the [Dashboard](https://ccommandbot.com/auth/login)
 
 ![](https://i.imgur.com/pvJ3i6R.png)
 

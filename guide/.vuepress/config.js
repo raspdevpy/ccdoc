@@ -19,7 +19,7 @@ module.exports = {
 		navbar: [
 			{
 				text: 'Dashboard',
-				link: 'https://ccommandbot.ga/dashboard',
+				link: 'https://ccommandbot.com/dashboard',
 			},
 
 			{

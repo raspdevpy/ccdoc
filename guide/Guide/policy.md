@@ -43,7 +43,7 @@ If a user sends a message, a custom command with the specified trigg
 
 * We regularly do backups(every 10 days). Old backups get overwritten.
 
-For more detailed information about what "User ID","Session Cookies" are, look [here pls.](https://ccommandbot.ga/docs) (difficult to read due to lawyer English)
+For more detailed information about what "User ID","Session Cookies" are, look [here pls.](https://ccommandbot.com/docs) (difficult to read due to lawyer English)
 
 # Encryption
 
