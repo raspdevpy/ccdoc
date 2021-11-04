@@ -35,9 +35,9 @@ We don't store any private data like other bots. Generally, we only 
 # New: Message Content Intent
 Since the new approval of the discord message intent
 Useful information gets listed here.
-* We don't log out any type of message.
+* We don't log out/save any type of message.
 If a user sends a message, a custom command with the specified trigger gets executed. So not every message triggers a custom command. In this way, your privacy stays protected.Moreover, we have cooldowns, where a command can only receive a message every 4s if the command has been triggered. With the command! !!view, you can view what type of commands the server uses.
-* You can always **opt-out** from our bot by leaving the server, and your data will be deleted within 15 days or immediately (you must contact us for this).
+* You can always **opt-out** from our bot by leaving the server, and your data will be deleted within 15 days or immediately(~ 1-2 day) (you must contact us for this).
 
 # Data Retention
 
@@ -47,11 +47,11 @@ For more detailed information about what "User ID","Session Cookies" are
 
 # Encryption
 
-All data is saved encrypted in our database. In this way, nobody can view the plain database (Example: on an exploit) without our salted token.
+All data is saved encrypted in our database. In this way, nobody can view the plain database (Example: on an exploit) without our salted token.
 
 # Contact Us
 
 Generally,we recommend you contact us through our server to get a faster response.
 
-<!-- * Email: [support@ccommandbot.com](mailto:support@ccommandbot.com)
-* Server: [ccommandbot.com/join](http://ccommandbot.com/join) -->
+* Email: [ccommandbot@protonmail.com](mailto:ccommandbot@protonmail.com)
+* Server: [ccommandbot.com/join](http://ccommandbot.com/join) 
