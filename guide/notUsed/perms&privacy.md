@@ -74,6 +74,10 @@ We will let you know via email and/or a prominent notice on Our Service, prior t
 
 you are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
 
-### Contact Us
-If you have any questions about this Privacy Policy, you can contact per Discord:
-Join our Support Server or by contacting Da Beast#1000
+# Contact Us
+
+Generally,we recommend you contact us through our server to get a faster response.
+
+* Email: [ccommandbot@protonmail.com](mailto:ccommandbot@protonmail.com)
+* Server: [ccommandbot.com/join](http://ccommandbot.com/join) 
+* Website Owner: `MattReal#6833`
