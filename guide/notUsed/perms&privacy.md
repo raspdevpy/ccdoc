@@ -4,16 +4,7 @@
 Read our terms of service here, you will also find some information on data use & Privacy
 
 ### Basic Terms
-* We aren't responsible for your mistake(s). You are completly responsible for your actions. If you make a kick command for example and you haven't set your command permissions correctly. When that command is used maliciously by your users, we don't take any responsibility for it.
-
-* Self-botting per Bots of our Service is prohibited.
-* Misusing our Service is not allowed
-* Breaking ToS isn't allowed
-* Users, aged lower than 13 years, aren't allowed to use our service in any way.
-
-* With using our Service you automatically agree to our Terms Of Service. you have the choice to not use our Service and request a data removal.
-
-We may punish users/ servers who are using our service maliciously. We always preserve ourself the right, to ban users from our service, without breaking our rules. We do no have to inform you, when banning you from our service
+Check [this](../Guide/policy.md) for basic information.
 
 ## Privacy Policy
 Here you can find our Privacy Policy
