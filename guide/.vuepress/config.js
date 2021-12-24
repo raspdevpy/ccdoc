@@ -1,5 +1,6 @@
 const sidebar = require('./sidebar');
 const parseTag = require('./parseTags');
+const { write } = require('./parseTags');
 module.exports = {
 	lang: 'en-US',
 	title: 'Custom Command Bot',
@@ -38,4 +39,5 @@ module.exports = {
 		sidebar,
 
 	},
+	
 }
