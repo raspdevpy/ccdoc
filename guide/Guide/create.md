@@ -42,12 +42,15 @@ A trigger executes a code when a condition is met. Like if you send !!help, it w
 | Triggertype | gets executed when a user,|
 | --------                                      | -------- |
 | [Word](../Trigger/word.md)                    | Sends a message|
-| [On Join/Leave](../Trigger/joinorleave.md)    | Joins or Leaves your server | 
+| [Slash Commands](../Trigger/slash.md)         | Interacts with slash commands|
 | [On Reaction](../Trigger/reaction.md)         | Reacts on a message|
-| [Voice](../Trigger/voicecondecon.md)          | Connects to or Disconnects from a VC|
-| [Timed or Interval](../Trigger/time.md)       | Repeated or Scheduled Execution|
-| [Button](../Trigger/button.md)                | Clicks a Discord button|
+| [On Join/Leave](../Trigger/joinorleave.md)    | Joins or Leaves your server | 
 | [Role add/remove](../Trigger/roleaddremove.md)| Recieves or Loses a role|
+| [Button](../Trigger/button.md)                | Clicks a Discord button|
+| [Select Menu](../Trigger/select.md)           | Interacts with a Discord Interaction Menu|
+| [Timed or Interval](../Trigger/time.md)       | Repeated or Scheduled Execution|
+| [Voice](../Trigger/voicecondecon.md)          | Connects to or Disconnects from a VC|
+| [Channel Create/Delete](../Trigger/channel.md)| A channel is created/ deleted|
 
 As shown above, our bot supports a lot of events! And we're adding more of them! 
 
