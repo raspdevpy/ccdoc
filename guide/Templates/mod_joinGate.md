@@ -1,4 +1,4 @@
-# Moderation -> Captcha Verification
+# Moderation - Captcha Verification
 
 ## Info:
 A command for verification before the user can join the server.

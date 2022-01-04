@@ -1,4 +1,4 @@
-# Economy -> Balance
+# Economy - Balance
 
 ## Info:
 A command for checking your economy balance

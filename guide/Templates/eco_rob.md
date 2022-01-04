@@ -1,4 +1,4 @@
-# Economy -> Rob
+# Economy - Rob
 
 ## Info:
 A command for robbing someone
