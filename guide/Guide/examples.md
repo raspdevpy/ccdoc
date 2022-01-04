@@ -1,44 +1,59 @@
 # Examples
 Here you will find some examples and some codes from our Staff Members
 
-## Economy
+## Captcha Guild Verification Gate
 
-#### !pay \<mention\> {amount}
-User Command, to pay money to a user
+#### Info:
+A command for verification before the user can join the server.
 
-```bash
-$initvar[user;money;0]
-$initvar[user;bank;0]
-$initvar[user;money;0;$mentioned[1]]
-$initvar[user;bank;0;$mentioned[1]]
+#### Configuration:
+Trigger Type: `On Join/Leave` <br>
+Trigger: `add` <br>
+Min. Perms: `None` <br>
+Ignored Roles: `None` <br>
+Run Only In: `None` <br>
+Channel Used: `YOUR STAFF CHAT` <br>
 
-$onlyIf[$message[2]>0;You cannot give $nickname[$mentioned[1]] a lower amount then 0]
-$onlyIf[$message[2]<$getUserVar[bank];That amount is higher than the amount in your bank!]
-$onlyIf[$isNumber[$message[2]]==true;Not a Valid Number]
-$onlyIf[$mentioned[1]!=;You just want to throw your money into the sea or something? Please mention someone to give your money to!]
+#### Token: 
+Clone by using this command in your own server: `!!clone 5Tr2e`
 
-$setUserVar[bank;$math[$getUserVar[bank;$mentioned[1]]+$message[2]];$mentioned[1]]
-$setUserVar[bank;$math[$getUserVar[bank;$authorID]-$message[2]];$authorID]
+###### Tags: <Badge type="warning" text="Verification" vertical="middle" /> <Badge type="warning" text="Captcha" vertical="middle" /> <Badge type="warning" text="Join Gate" vertical="middle" />
 
-$author[$username;$authorAvatar]
-$description[You gifted :dollar: $message[2] to $nickname[$mentioned[1]]]
-```
 
-#### !giveMoney \<mention\> {amount}
-Staff Command, to give money to a user, from a giveaway for example!
 
-```bash
-$initvar[user;money;0]
-$initvar[user;bank;0]
-$initvar[user;money;0;$mentioned[1]]
-$initvar[user;bank;0;$mentioned[1]]
+## Economy rob
 
-$onlyIf[$message[2]>0;You cannot give $nickname[$mentioned[1]] a lower amount then 0]
-$onlyIf[$message[2]<$getUserVar[bank];That amount is higher than the amount in your bank!]
-$onlyIf[$isNumber[$message[2]]==true;Not a Valid Number]
-$onlyIf[$mentioned[1]!=;You just want to throw your money into the sea or something? Please mention someone to give your money to!]
+#### Info:
+A command for robbing someone
 
-$setUserVar[bank;$math[$getUserVar[bank;$mentioned[1]]+$message[2]];$mentioned[1]]
+#### Configuration:
+Trigger Type: `Message` <br>
+Trigger: `/!(rob|robbery)/gi` <br>
+Min. Perms: `None` <br>
+Ignored Roles: `None` <br>
+Run Only In: `None` <br>
+Channel Used: `None` <br>
 
-:white_check_mark: done, successfully added $message[2] to $nickname[$mentioned[1]]'s balance!
-```
+#### Token: 
+Clone by using this command in your own server: `!!clone XC5sK`
+
+###### Tags: <Badge type="tip" text="Economy" vertical="middle" /> <Badge type="tip" text="Rob" vertical="middle" /> <Badge type="tip" text="Money" vertical="middle" />
+
+
+## Economy balance check
+
+#### Info:
+A command for checking your economy balance
+
+#### Configuration:
+Trigger Type: `Message` <br>
+Trigger: `/!(bal|balance)/gi` <br>
+Min. Perms: `None` <br>
+Ignored Roles: `None` <br>
+Run Only In: `None` <br>
+Channel Used: `None` <br>
+
+#### Token: 
+Clone by using this command in your own server: `!!clone vFHnD`
+
+###### Tags: <Badge type="tip" text="Economy" vertical="middle" /> <Badge type="tip" text="Balance" vertical="middle" /> <Badge type="tip" text="Money" vertical="middle" />

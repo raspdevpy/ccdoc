@@ -3,3 +3,5 @@ node_modules
 .cache
 package-lock.json
 dist
+.gitpod.yml
+data.json
