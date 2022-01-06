@@ -32,7 +32,7 @@ module.exports= {
 	},
 	getSideBar('Guide','Full Guide'),
 	getSideBar('Trigger','Trigger Types'),
-	getSideBar('Templates','Templates'),
+	//getSideBar('Templates','Templates'),
 	getSideBar('Member','Member Functions'),
 	getSideBar('Channel','Channel Functions'),
 	getSideBar('Message','Message Functions'),
