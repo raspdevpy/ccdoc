@@ -34,5 +34,11 @@ User can only provide a user .It is not possible to provide text or unvalid inpu
 ## Option Choices
 String and Number type supports choices.If you provide chooices,the user can only select those and can't provide any custom text/number.
 
+
+## Creating a Custom Command 
+Go to the custom command build page and create a new custom command!
+Then navigate to the custom command editor by clicking on the edit button.
+Change the triggertype to `slash_command` and fill in the trigger field with the name of the command.
+
 ###  Retriving Options
 You can retrieve the options by using the following function [$getCommandOption](../../guide/Message/getCommandOption.md)

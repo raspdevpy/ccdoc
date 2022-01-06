@@ -1,7 +1,7 @@
-# Discord Raidlimits
+# Discord Ratelimits
 
 Our bot is unique in it's sort. 
-But sadly we aren't quite big enough yet, to get our raidimits decreased! 
+But sadly we aren't quite big enough yet, to get our ratelimits decreased! 
 Regarding to this, we sadly have to add cooldowns to functions and command executions. This to prevent a punishment from Discord Inc.
 
 Sadly this does has some consequences, the first one, is probably the most annoying...

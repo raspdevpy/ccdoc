@@ -18,7 +18,16 @@ Use this syntax to let the bot trigger when a member added an emoji to a message
 
 "add, 👍 =MESSAGE ID" -> Triggers when 👍  is added to the message with the specify message ID
 
-"add 👍|👎" -> Triggers when 👍 or 👎 reaction is added to a message
+"add, 👍|👎" -> Triggers when 👍 or 👎 reaction is added to a message
+
+#### Reaction Trigger with custom emojis
+
+`name` -> Triggers when the reaction; `name` is added or removed
+`add, name` -> Triggers when the reaction; `name` is added
+`remove, name` -> Triggers when the reaction; `name` is removed
+`add, name =MESSAGE ID` -> Triggers when `name` is added to the message with the specify message ID
+`add, name|name` -> Triggers when `name` reaction is added to a message
+
 ## More Info
 
 Do you want to know more, about the bot's syntax? You can check out [this](../../guide/syntax.md) page to learn more!

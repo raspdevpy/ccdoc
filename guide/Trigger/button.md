@@ -22,6 +22,18 @@ Use this syntax to let the bot trigger when the ID from a button is detected!
 All button IDs are caSe seNsiTiVe, so a if a command doesn't triggers, check the capitalization!
 :::
 
+::: info Info
+Button and Dropdown triggertype uses regex to match the trigger field.
+So id with the same will interfere with each other.
+For Example:
+* menu 1 id = test
+* menu 2 id = testone
+* Menu 2 could get triggered ,if you use menu 1 since it matches `test`
+##### Resolving the Problem
+Just change your id to `^id$`
+In regex ^ and $ are used to match the start and end of the string.
+:::
+
 ### Related Functions
 * `$buttonID` returns the button id
 * `$buttonEmoji` returns the button emoji
