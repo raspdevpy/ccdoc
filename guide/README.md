@@ -21,7 +21,7 @@ We recommend to leave all the permissions enabled, so you don't face any issues,
 ![](https://i.imgur.com/XxSsZ4G.png)
 
 
-## Making a Choise
+## Making a Choice
 Our bot has multiple features! To make sure, you choose the one, most fitted to your purpose, we have made a guide!
 
 
