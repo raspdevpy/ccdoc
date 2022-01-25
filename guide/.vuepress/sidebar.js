@@ -31,6 +31,7 @@ module.exports= {
 			]
 	},
 	getSideBar('Guide','Full Guide'),
+	getSideBar('Other','Other Information'),
 	getSideBar('Trigger','Trigger Types'),
 	//getSideBar('Templates','Templates'),
 	getSideBar('Member','Member Functions'),

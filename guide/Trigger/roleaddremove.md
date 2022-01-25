@@ -11,14 +11,14 @@ Use this syntax to let the bot trigger when a role is added and/or removed
 `remove` -> let the bot trigger when ANY role is removed
 
 
-`add, ROLE NAME` -> let the bot trigger when a role is given, specifed in `ROLE NAME`
+`add, ROLE NAME` -> let the bot trigger when a role is given, specified in `ROLE NAME`
 
-`add, ROLE ID` -> let the bot trigger when a role is given, specifed in `ROLE ID`
+`add, ROLE ID` -> let the bot trigger when a role is given, specified in `ROLE ID`
 
 
-`remove, ROLE NAME` -> let the bot trigger when a role is removed, specifed in `ROLE NAME`
+`remove, ROLE NAME` -> let the bot trigger when a role is removed, specified in `ROLE NAME`
 
-`remove, ROLE ID` -> let the bot trigger when a role is removed, specifed in `ROLE ID`
+`remove, ROLE ID` -> let the bot trigger when a role is removed, specified in `ROLE ID`
 
 `add, Role_1|Role_2` -> let the bot trigger when a role `Role_1` or `Role_2` is given
 

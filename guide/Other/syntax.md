@@ -4,7 +4,7 @@ Read all about the syntax used by the bot!
 ::: danger Disclaimer!
 The Syntax has been inspired from BDFD originally.
 
-We are not affiliated with BDFD. But we're using their syntax
+We are not affiliated with BDFD. But we're using a similar syntax
 :::
 
 ## Syntax Explanation

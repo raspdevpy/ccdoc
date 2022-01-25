@@ -11,29 +11,24 @@
 3. Please click on the green pencil to edit the Custom Command
 ![](https://i.imgur.com/GSsPtLc.png)
 
-::: tip Info
+::: warning Info
 When you first click on the edit button, there will be a Dashboard Tour started!
 
-We higly suggest, NOT skipping through it... It will save you a lot of trouble in the future! 
+We highly suggest, NOT skipping through it... It will save you a lot of trouble in the future! 
 :::
 
-## Templates
+::: tip Template
+* Template allows you to clone existing commands and directly setup them (no bot knowledge needed)
+* "You don't have to reinvent the wheel"
+* You can even use template to improve your knowledge about the bot and learn new things!
+* Click [here](../Guide/template.md) for more info
 
-#### What are templates?
-
-Templates are codes coded by our fantastic Staff Members, or the Owner!
-
-For example: Economy codes or an automatic Member Count code
-
-#### Nice, where do I find them?
-
-[If you're interested, please check out this!](https://discord.gg/96SSWzCDVD)
+:::
 
 
 ## Triggertypes
  
- Our Bot is highly customizeable and supports many Discord events. Down below is a list of all triggertypes with their explanation.
-
+Our Bot is highly customizable and supports many Discord Actions(events). Down below is a list of all triggertypes with their explanation.
 
 ::: tip What is a trigger?
 A trigger executes a code when a condition is met. Like if you send !!help, it will trigger the help command, since the trigger is the same.
@@ -54,9 +49,8 @@ A trigger executes a code when a condition is met. Like if you send !!help, it w
 
 As shown above, our bot supports a lot of events! And we're adding more of them! 
 
-::: tip Tip
-If you want more info on 1 specific event, click on the name in the scheme!
-:::
+**You can proceed the guide by click the event you want to learn more about or for your need**
+
 
 ## Finding a Trigger Type
 

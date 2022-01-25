@@ -46,7 +46,7 @@ The first argument would be `hi` in this case and the second `hello`.
 REGEX is a way to let a command trigger on multiple words/ triggers!
 
 ::: warning Warning
-We higly suggest, you learn REGEX, if you're going to use it yourself!
+We highly suggest, you learn REGEX, if you're going to use it yourself!
 
 Below are a couple of examples:
 :::

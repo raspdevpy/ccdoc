@@ -4,7 +4,7 @@ Since our bot is very advanced, everyone faces there own problems. Because of th
 The problem is the title, the answer is below it & after the question is the trigger type:
 
 ## My command does not triggers <Badge type="tip" text="Word" vertical="middle" /> 
-Have you set the minimium permission for the command execution to `None`?
+Have you set the minimum permission for the command execution to `None`?
 
 - No: change it, press save & try again
 

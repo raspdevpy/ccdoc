@@ -29,10 +29,10 @@ Option validates that you can only select the correct type.
 * USER
 
 Example Type USER:
-User can only provide a user .It is not possible to provide text or unvalid input.
+User can only provide a user .It is not possible to provide text or invalid input.
 
 ## Option Choices
-String and Number type supports choices.If you provide chooices,the user can only select those and can't provide any custom text/number.
+String and Number type supports choices.If you provide choices,the user can only select those and can't provide any custom text/number.
 
 
 ## Creating a Custom Command 
