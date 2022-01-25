@@ -21,19 +21,12 @@ We recommend to leave all the permissions enabled, so you don't face any issues,
 ![](https://i.imgur.com/XxSsZ4G.png)
 
 
-## Making a Choice
-Our bot has multiple features! To make sure, you choose the one, most fitted to your purpose, we have made a guide!
+## Creating Custom Command
+
+#### Follow this for creating your first Custom Command [this link](../Guide/create.md)
 
 
-### Custom Command
-Custom Commands are a good way, to make your own commands, that fit your needs! 
-
-They can be a bit overwhelming to start with, so if you haven't got any experience with discord bot, this is not the one best for you
-
-#### If you want to create a Custom Command follow [this link](../Guide/create.md)
-
-
-### Welcomer
+<!-- ### Welcomer
 Do you want to send a message, when a member joined your server? Then this one is the best for you! 
 
 You haven't got much options, so if you want to do other things as well, when a member joins, then choose [Custom Commands](../Guide/create.md)
@@ -46,4 +39,4 @@ Do you want to send a beautiful embed? One time, for example, the rules... Then 
 
 Do you want to send a message, when a member joined your server? Then choose [the welcomer](../Guide/welcomer.md)
 
-#### For a guide, for using the embed builder, follow [this link](../Guide/embedBuilder.md)
+#### For a guide, for using the embed builder, follow [this link](../Guide/embedBuilder.md) -->
