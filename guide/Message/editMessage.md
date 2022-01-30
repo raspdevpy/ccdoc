@@ -1,7 +1,7 @@
 # $editMessage
 Edits a message.
 
-#### Usage: `$editMessage[messagelid;new message;channelid(optional)]`
+#### Usage: `$editMessage[messageid;new message;channelid(optional)]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
