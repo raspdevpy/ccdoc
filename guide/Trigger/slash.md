@@ -41,4 +41,4 @@ Then navigate to the custom command editor by clicking on the edit button.
 Change the triggertype to `slash_command` and fill in the trigger field with the name of the command.
 
 ###  Retriving Options
-You can retrieve the options by using the following function [$getCommandOption](../../guide/Message/getCommandOption.md)
+You can retrieve the options by using the following function [$getCommandOption](../../Message/getCommandOption.md)
