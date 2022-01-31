@@ -9,7 +9,6 @@
 * $textSlice
 * $stringStartsWith
 * $stringEndsWith
-* $stop
 * $spread
 * $spliceTextJoin
 * $slowmode
@@ -38,9 +37,7 @@
 * $mentionType
 * $lowestServerRole
 * $jsonRequest
-* $interactionReply
-* $interactionEdit
-* $interactionDelete
+
 * $indexOf
 * $highestServerRole
 * $hasRole
@@ -142,6 +139,7 @@
 
 # Done:
 
+* ~~$stop~~
 * ~~$clientID~~
 * ~~$ownerID~~
 * ~~$noMentionMessage~~
@@ -386,7 +384,9 @@
 * ~~$userReacted~~
 
 # Progress
-
+* $interactionReply
+* $interactionEdit
+* $interactionDelete
 
 
 

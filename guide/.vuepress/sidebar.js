@@ -37,6 +37,7 @@ module.exports= {
 	getSideBar('Member','Member Functions'),
 	getSideBar('Channel','Channel Functions'),
 	getSideBar('Message','Message Functions'),
+	getSideBar('Interaction','Interaction Functions'),
 	getSideBar('Threads','Threads Functions'),
 	getSideBar('Role','Role Functions'),
 	getSideBar('Server','Server Functions'),
