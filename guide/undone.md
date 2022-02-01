@@ -9,11 +9,9 @@
 * $textSlice
 * $stringStartsWith
 * $stringEndsWith
-* $spread
 * $spliceTextJoin
 * $slowmode
 * $setChannelTopic
-* $sendWebhook
 * $sendCrosspostingMessage
 * $roleMembersCount
 * $return
@@ -30,14 +28,12 @@
 * $parseTime
 * $onlyIfMessageContains
 * $onClone
-* $newTicket
 * $muteUser
 * $moveUser
 * $modifyWebhook
 * $mentionType
 * $lowestServerRole
 * $jsonRequest
-
 * $indexOf
 * $highestServerRole
 * $hasRole
@@ -84,7 +80,6 @@
 * $createObject
 * $concatTextSplit
 * $colorRole
-* $closeTicket
 * $cloneChannel
 * $clearReactions
 * $clearReaction[
@@ -122,7 +117,6 @@
 * $ObjectCreate
 * $ObjectValues
 * $ObjectKeys
-* $interactionId
 * $removeButtons
 * $arrayShuffle
 * $arraySort
@@ -382,11 +376,17 @@
 * ~~$usersInChannel~~
 * ~~$userRoleColor~~
 * ~~$userReacted~~
+* ~~$interactionReply~~
+* ~~$interactionEdit~~
+* ~~$interactionDelete~~
+* ~~$interactionId~~
+* ~~$spread~~
+* ~~$sendWebhook~~
+* ~~$newTicket~~
+* ~~$closeTicket~~
 
 # Progress
-* $interactionReply
-* $interactionEdit
-* $interactionDelete
+
 
 
 
