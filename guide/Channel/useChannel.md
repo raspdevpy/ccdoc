@@ -13,3 +13,6 @@ Executes the code after it in the specified channel id.
         Hi!
     </discord-message>
 </discord-messages>
+
+##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="use" vertical="middle" /> <Badge type="tip" text="run" vertical="middle" />
