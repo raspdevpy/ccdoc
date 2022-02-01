@@ -14,3 +14,5 @@ Will spread data as arguments inside functions
     </discord-message>
 </discord-messages>
 
+##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+###### Tags: <Badge type="tip" text="data" vertical="middle" /> <Badge type="tip" text="spread" vertical="middle" /> <Badge type="tip" text="arguments" vertical="middle" />
