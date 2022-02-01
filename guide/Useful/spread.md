@@ -1,7 +1,7 @@
 # $spread
-Will spread data as arguments inside functions
+spreads text as arguments inside functions
 
-#### Usage: `$spread[separator (optional, by default is space);data to spread]`
+#### Usage: `$spread[separator (optional, default: ,);data to spread]`
 
 #### Example: 
 <br/>

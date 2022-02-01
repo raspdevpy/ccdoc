@@ -2,9 +2,10 @@
 To close a created ticket by the bot with `$newTicket`
 
 
-#### Usage: `$closeticket[error message(optional)]`
+#### Usage: `$closeTicket[error message(optional)]`
 <br/>
-```
+
+```sh
    $sendmessage[This ticket will be closed in 5s!]
    $wait[5s]
    $closeTicket

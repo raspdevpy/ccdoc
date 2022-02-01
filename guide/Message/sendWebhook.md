@@ -1,5 +1,5 @@
 # $sendWebhook
-Sends a webhook message using their id and token
+sends a webhook message using their id and token
 
 #### Usage: `$sendWebhook[webhookID;webhookToken;message;return message id (yes/no) optional;username (optional);avatar (optional)]`
 
@@ -9,17 +9,17 @@ Sends a webhook message using their id and token
     <discord-message>
         !!exec $sendWebhook[98723xxxx...;K9oJxxxx...;Hello world!]
     </discord-message>
-    <discord-message :bot="true" author="webhook" avatar="https://cdn.discordapp.com/avatars/928486809057517638/aebf48c7c6fec0daf690855ee0aa2e3c.webp?size=2048">
+    <discord-message :bot="true" author="Webhook" avatar="https://cdn.discordapp.com/avatars/928486809057517638/aebf48c7c6fec0daf690855ee0aa2e3c.webp?size=2048">
         Hello world!
     </discord-message>
 </discord-messages>
 
 ::: tip 
-You can use avatar and username parameters to send the same webhooks with multiples names or avatars.
+The param avatar and username can be changed.So different avatar and names gets displayed
 :::
 
 ::: warning Warning!
-Some braces format like {deletein} and {edit} might not work with this function!
+Embed Format tags like {deletein:} {edit} is currently not supported.
 :::
 
 ##### Function Difficultly: <Badge type="warning" text=" Medium" vertical="middle" /> 
