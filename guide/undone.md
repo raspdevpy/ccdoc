@@ -17,8 +17,6 @@
 * $return
 * $resolveEmojiID
 * $reply
-* $removeTextSplitElement
-* $removeSplitTextElement
 * $removeContains
 * $removeButton
 * $regexMatch
@@ -66,7 +64,6 @@
 * $emojiExists
 * $emojiCount
 * $emoji
-* $editTextSplitElement
 * $editIn
 * $editButton
 * $disableRoleMentions
@@ -98,28 +95,12 @@
 * $awaitButton
 * $authorAvatar
 * $attachment
-* $arrayUnshift
-* $arraySlice
-* $arrayShift
-* $arraySet
-* $arrayPush
-* $arrayPop
-* $arrayMap
-* $arrayLength
-* $arrayJoin
-* $arrayGet
-* $arrayFilter
-* $arraySearch
-* $arrayRemove
-* $arrayInclude
 * $ObjectGet
 * $ObjectSet
 * $ObjectCreate
 * $ObjectValues
 * $ObjectKeys
 * $removeButtons
-* $arrayShuffle
-* $arraySort
 * $argsCount
 * $argsCheck
 * $advancedTextSplit
@@ -128,8 +109,6 @@
 * $addMessageReactions
 * $addCmdReactions
 * $addButton
-
-
 
 # Done:
 
@@ -384,6 +363,25 @@
 * ~~$sendWebhook~~
 * ~~$newTicket~~
 * ~~$closeTicket~~
+* ~~$arrayShuffle~~
+* ~~$arraySort~~
+* ~~$arrayUnshift~~
+* ~~$arraySlice~~
+* ~~$arrayShift~~
+* ~~$arraySet~~
+* ~~$arrayPush~~
+* ~~$arrayPop~~
+* ~~$arrayMap~~
+* ~~$arrayLength~~
+* ~~$arrayJoin~~
+* ~~$arrayGet~~
+* ~~$arrayFilter~~
+* ~~$arraySearch~~
+* ~~$arrayRemove~~
+* ~~$arrayInclude~~
+* ~~$editTextSplitElement~~
+* ~~$removeTextSplitElement~~
+* ~~$removeSplitTextElement~~
 
 # Progress
 
