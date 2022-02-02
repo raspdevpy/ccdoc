@@ -1,6 +1,7 @@
 # $splitText
-Returns an object created by [$textSplit](.../textSplit/textSplit.md)
+returns the element by index from [$textSplit](.../textSplit/textSplit.md)
 
+#### Usage: `$splitText[index]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

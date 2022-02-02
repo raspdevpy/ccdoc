@@ -1,14 +1,15 @@
 # $arrayFilter
-To filter an array depend on a value of CODE, if false then remove that element from the array
+To filter an array depends on a value of CODE. If false, then remove that element from the array.
+
+
+#### Usage: `$arrayFilter[Element Value]{ CODE... }`
+
 ::: danger Currently bugged
 Shows up "invalid usage of $textTrim" and sometimes $let instead of $textTrim
 :::
 
-#### Usage: `$arrayFilter[Element Value]{
-CODE...
-}`
 ::: warning Note
-Only zero-cooldown functions allowed in CODE
+Only zero-cooldown functions are supported.
 :::
 <br/>
 <discord-messages>

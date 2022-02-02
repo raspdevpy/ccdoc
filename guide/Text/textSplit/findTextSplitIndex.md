@@ -1,5 +1,5 @@
 # $findTextSplitIndex
-Finds the index of a splitted value in `$textSplit`, same as `$arraysearch`
+returns the index of the first occurrence of a value in an array from `$textsplit`
 
 #### Usage: `$findTextSplitIndex[value]`
 <br/>

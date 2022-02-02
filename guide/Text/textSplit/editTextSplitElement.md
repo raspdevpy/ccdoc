@@ -1,7 +1,7 @@
 # $editTextSplitElement
-edits the value from the given index in a array created by `$textsplit`
+adds an element to an array from `$textsplit` or replaces the value by index of the split text from `$textsplit`
 
-#### Usage: `$$editTextSplitElement[index;new value]`
+#### Usage: `$editTextSplitElement[index;new value]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

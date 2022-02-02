@@ -1,7 +1,8 @@
 # $textSplit
-Splits text into pieces! To access them use: [$splitText](.../textSplit/splitText.md)
+splits text into pieces! To access them use: [$splitText](.../textSplit/splitText.md) or array functions
 
 
+#### Usage: `$textSplit[text;separator(optional, default = ,)]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

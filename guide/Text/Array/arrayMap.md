@@ -1,12 +1,9 @@
 # $arrayMap
-To replace array values to another value
+replaces the values of an array with the results of the function
 
-#### Usage: `$arrayMap[Element Value]{
-CODE...
-}
-`
-::: warning Note 
-Only zero-cooldown functions allowed in CODE
+#### Usage: `$arrayMap[Element Value]{ CODE...}`
+::: warning Note
+Only zero-cooldown functions are supported.
 :::
 
 <br/>
@@ -20,4 +17,4 @@ Only zero-cooldown functions allowed in CODE
 </discord-messages>
 
 ##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="map" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" /> <Badge type="tip" text="edit" vertical="middle" />
+###### Tags: <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="map" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" />

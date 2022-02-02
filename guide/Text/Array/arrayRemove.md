@@ -1,8 +1,8 @@
 # $arrayRemove
-Remove an element from the splitted array in `$textSplit` by index
+removes an element from an array from `$textsplit`
 
-#### Usage: `$$arrayRemove[Index;Index... (optional)]
-`
+#### Usage: `$arrayRemove[Index;Index... (optional)]`
+
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

@@ -1,7 +1,7 @@
 # $concatTextSplit
-To add arrays in the current splitted one in `$textSplit.`
+adds an array to the end of an array from `$textsplit`
 
-#### Usage: `$??exec $textsplit[a b; ] $concatTextSplit[c,d;,] $arrayjoin[ ]`
+#### Usage: `$concatTextSplit[text;separator(optional, default = ,)]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

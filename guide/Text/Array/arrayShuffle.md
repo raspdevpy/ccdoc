@@ -1,5 +1,5 @@
 # $arrayShuffle
-Will shuffle splitted values by `$textsplit`
+shuffles the array from `$textsplit`
 
 #### Usage: `$arrayShuffle`
 <br/>

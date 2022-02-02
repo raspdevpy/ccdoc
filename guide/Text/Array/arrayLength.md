@@ -1,5 +1,5 @@
 # $arrayLength
-Returns the length of the splitted array by '$textsplit'
+returns the length of an array from `$textsplit`
 
 #### Usage: `$arrayLength`
 <br/>
@@ -13,4 +13,4 @@ Returns the length of the splitted array by '$textsplit'
 </discord-messages>
 
 ##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="length" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" /> <Badge type="tip" text="quantity" vertical="middle" />
+###### Tags: <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="length" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" />

@@ -1,5 +1,5 @@
 # $arrayUnshift
-To add an element to the array(for the first index) 
+adds an element to the beginning of an array from `$textsplit`
 
 #### Usage: `$arrayUnshift[value]`
 <br/>

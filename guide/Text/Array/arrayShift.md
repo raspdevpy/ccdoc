@@ -1,10 +1,8 @@
 # $arrayShift
-Remove and return the first element in the splitted array by `$textsplit`
+removes and returns the first element from an array from `$textsplit`
 
 #### Usage: `$arrayShift`
-::: warning 
-Return element value or undefined if no element in the array
-:::
+> returns element value or undefined if array is empty
 
 <br/>
 <discord-messages>

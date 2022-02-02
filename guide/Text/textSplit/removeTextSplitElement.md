@@ -1,5 +1,5 @@
 # $removeTextSplitElement
-Removes an element from `$textSplit` by using its index. Same as `$arrayRemove`
+removes an element from an array from `$textsplit`
 
 #### Usage: `$removeTextSplitElement[Index]`
 <br/>
