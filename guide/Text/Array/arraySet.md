@@ -1,9 +1,8 @@
 # $arraySet
-To set a new value to a element by index number. 
+adds an element to an array from `$textsplit` or replaces the value by index of the split text from `$textsplit`
 
 #### Usage: `$arraySet[index;value]`
-::: warning If no element found, will add instead.
-:::
+
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

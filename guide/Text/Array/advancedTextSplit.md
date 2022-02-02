@@ -1,7 +1,7 @@
 # $advancedTextSplit
-First field is the message we want to split and get indexes from
-second field would be the split used in the text and the next field would get the value of the index, setting this index value as the new text.
-Next fields work as splitter and new index.
+The first field is the message we want to split and get indexes for. The second
+field would be the split used in the text, and the next field would get the value of the index, setting this index value as the new text. The next
+fields work as splitters and new indexes.
 
 ::: danger Currently bugged
 don't even respond at all

@@ -1,9 +1,9 @@
 # $arraySearch
-To search for the index of a splitted value in `$textSplit` array
+returns the index of the first occurrence of a value in an array from `$textsplit`
 
 #### Usage: `$arraySearch[value]`
-::: warning return the index if found otherwise -1
-:::
+> returns the index of the first occurrence of the value or -1 if not found
+
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

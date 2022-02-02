@@ -1,9 +1,8 @@
 # $arrayGet
-To return the value of a splitted text in `$textSplit` by index
+returns the value by index of the split text from `$textsplit`
 
 #### Usage: `$arrayGet[index]`
-::: warning Return undefined if no element exists
-:::
+> returns the value by index or undefined if not found
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -14,5 +13,5 @@ To return the value of a splitted text in `$textSplit` by index
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="get" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" /> <Badge type="tip" text="value" vertical="middle" />
+##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+###### Tags: <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="get" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" />

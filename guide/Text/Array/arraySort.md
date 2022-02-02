@@ -1,5 +1,5 @@
 # $arraySort
-To sort array numbers inside splitted values by '$textsplit' (ascending/descending)
+sort the array by numbers from `$textsplit`
 
 #### Usage: `$arraySort[Ascending (yes/no, default is no)]`
 <br/>

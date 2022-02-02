@@ -1,5 +1,5 @@
 # $arraySlice
-To keep only a part from `x` to `y` in the splitted array by `$textSplit`
+slices an array from x to y from `$textsplit`
 
 #### Usage: `$arraySlice[from;to]`
 <br/>

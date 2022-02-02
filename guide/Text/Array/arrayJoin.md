@@ -1,9 +1,8 @@
 # $arrayJoin
-Returns all splitted elements in the array with an optional separator
+joins the array from `$textSplit` with the specified separator
 
-#### Usage: `$arrayJoin[Seperator (optional)]
-
-Return nothing if no elements in the array`
+#### Usage: `$arrayJoin[Separator (optional)]`	
+> returns nothing,if array is empty
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -15,4 +14,4 @@ Return nothing if no elements in the array`
 </discord-messages>
 
 ##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="join" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" /> <Badge type="tip" text="get" vertical="middle" />
+###### Tags: <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="join" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" /> 

@@ -1,8 +1,5 @@
 # $spliceTextJoin
-Splits a text with `separator1`, them join with `separator2` every `x` times, and them joins with `separator3`.
-
-::: warning Might be difficult to understand at first
-:::
+Splits a text with `separator1`, then joins with `separator2` every `x` times, and them joins with `separator3`.
 
 #### Usage: `$spliceTextJoin[text;separator1;separator2;separator3;every]`
 <br/>
