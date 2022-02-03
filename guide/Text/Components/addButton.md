@@ -1,27 +1,29 @@
 # $addButton
-Add a button component to a message id
+adds a button component an existing message,use $button to send a message with a button
 
-::: tip 
-Available colors
-```
-red, green, blurple, grey
-/* url buttons is only grey by default */
-```
-Emoji can be unicode emoji, emoji url, or emoji id, from where the bot is in.
-:::
+
 
 #### Usage: `$addButton[Message ID;Label;style/url;link/id;emoji(optional);Adding in new row (yes/no, optional); disabled (yes/no, optional)]`
 <br/>
-::: details Examples
+
+##### Example
 (Add a simple button)
 ![](https://cdn.discordapp.com/attachments/914682255346118687/938578211380543578/Screenshot_20220202202417.jpg)
 (Add in new row)
 ![](https://cdn.discordapp.com/attachments/914682255346118687/938578211695112192/Screenshot_20220202202711.jpg)
 (Add disabled)
 ![](https://cdn.discordapp.com/attachments/914682255346118687/938578212018085899/Screenshot_20220202203325.jpg)
-:::
+
 ::: warning Bug
-When the emoji field is set, the button is not added to the message
+Currently the emoji field is not working.
+:::
+
+::: tip Available colors
+```
+red, green, blurple, grey, url
+/* url buttons is grey by default */
+```
+* you can use normal unicode emoji,custom emojis,with id,url or $customEmoji[emojiname]
 :::
 
 ##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 

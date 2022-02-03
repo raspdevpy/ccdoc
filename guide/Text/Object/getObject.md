@@ -1,7 +1,8 @@
 # $getObject
-Returns the JSON of the created/modified object
+returns the JSON of the created/modified object
 
 #### Usage: `$getObject[spaces(optional, default 0)]`
+
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -18,9 +19,7 @@ With spaces: {
 }
 	</discord-message>
 </discord-messages>
-::: tip Actual usage
-When you have a JSON object as a var, and you need to edit them, you will have to save the edits. You can do that by setting the var again, and use $getObject to return the modified string.
-:::
+
 
 ##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="get" vertical="middle" /> <Badge type="tip" text="object" vertical="middle" /> <Badge type="tip" text="json" vertical="middle" /> <Badge type="tip" text="string" vertical="middle" />
+###### Tags: <Badge type="tip" text="get" vertical="middle" /> <Badge type="tip" text="object" vertical="middle" /> <Badge type="tip" text="json" vertical="middle" />

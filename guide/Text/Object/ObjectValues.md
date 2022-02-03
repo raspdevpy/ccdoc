@@ -1,7 +1,7 @@
 # $ObjectValues
-Return all keys values of the object with an optional separator between each (default is ,)
+returns all the values of an object with the provided separator
 
-#### Usage: `$ObjectValues[Seperator (optional, default:, )]`
+#### Usage: `$ObjectValues[Separator (optional, default:, )]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
