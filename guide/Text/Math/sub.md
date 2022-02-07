@@ -1,4 +1,4 @@
-# $sum
+# $sub
 Subtracts (a) number(s) from each other
 
 #### Usage: `$sub[10;4;...]`
