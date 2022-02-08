@@ -1,7 +1,7 @@
 # $objectGet
 Get a object value/property by key, if key not found them return `undefined` (same as `$getObjectProperty`)
 
-#### Usage: `$objectGety[key]`
+#### Usage: `$objectGet[key]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

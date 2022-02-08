@@ -9,7 +9,7 @@ returns the value by index of the split text from `$textsplit`
 		!!exec $textsplit[17,19,15,30,40] {{ '\n' }} Your age is $arrayGet[4].
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		Your age is 40.
+		Your age is 30.
 	</discord-message>
 </discord-messages>
 
