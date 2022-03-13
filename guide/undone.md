@@ -1,7 +1,4 @@
 # Undone:
-* $argscheck
-* $argscount
-* $arraypop
 * $attachment
 * $authoravatar
 * $awaitmenu
@@ -120,6 +117,9 @@
 
 # Done:
 
+* ~~$argscheck~~
+* ~~$argscount~~
+* ~~$arraypop~~
 * ~~$abbreviate~~
 * ~~$addbutton~~
 * ~~$addcmdreactions~~
