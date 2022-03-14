@@ -20,7 +20,7 @@ a compact function with many functionalities!
 * iseditable - role is editable, returns true or false
 * ismanaged - role is managed(means discord bot integration), returns true or false
 * ishoisted - role is hoisted, returns true or false
-
+* icon - return role Icon if exists (undefined if not found)
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
