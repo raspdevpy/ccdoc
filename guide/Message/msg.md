@@ -27,6 +27,8 @@ a compact function with many functionalities!
 * reference - return message id , that was replied to 
 * thread - thread id of that message if exists (undefined otherwise)
 * pinned - return true if message is pinned
+* allattachments - return all attachments URLs separated by new line
+* allattachmentsname - return all attachments names separated by new line
 * attachment: return attachment URL of message (otherwise undefined), you can specify which attachment by using `additional 1` argument
 * attachmentname: return attachment name of message (otherwise undefined), you can specify which attachment by using `additional 1` argument
 * embedtitle - return message's embed title (otherwise undefined), you can specify which embed  by using `additional 1` argument
