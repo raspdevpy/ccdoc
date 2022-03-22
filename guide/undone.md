@@ -1,5 +1,4 @@
 # Undone:
-* $addobjectproperty
 * $argscheck
 * $argscount
 * $arraypop
@@ -72,8 +71,6 @@
 * $getembed
 * $getinviteinfo
 * $getmessage
-* $getobjectkeys
-* $getobjectproperty
 * $getserverinvite
 * $gettrigger
 * $hasanyperm

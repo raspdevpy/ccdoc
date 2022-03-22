@@ -9,18 +9,19 @@ a compact function with many functionalities!
 * mention - role's mention.
 * id - role's ID.
 * hex - role's hex color.
+* color - role's 10 base number
 * created - role's date and time of creation.
 * position - role's position.
 * rawposition - role's raw position.
-* guild - role's guild's id of origin.
+* guildid - role's guild's id of origin.
 * guildname - role's guild's name of origin.
 * timestamp - creation timestamp of roleid.
-* isdeleted - role is deleted, returns true or false.
 * ismentionable - role is mentionable, returns true or false.
 * iseditable - role is editable, returns true or false
 * ismanaged - role is managed(means discord bot integration), returns true or false
 * ishoisted - role is hoisted, returns true or false
-
+* usercount - users count with that role (cached only)
+* icon - return role Icon if exists (undefined if not found)
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
