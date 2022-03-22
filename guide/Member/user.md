@@ -12,7 +12,7 @@ a compact function with many functionalities!
 * mention - user mention.
 * avatar - user avatar URL.
 * isbot - user is a bot, returns true/false.
-* istyping - user is typing, returns true/false.
+* banner - return the user banner, undefined is returned if not found (user must be cached)
 * created - user account date and time of creation.
 * timestamp - creation timestamp of user account.
 
