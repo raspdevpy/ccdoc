@@ -1,5 +1,5 @@
 # $channelUsed
-Return the ID of the channel used, or set one if parameter 1 is specified
+Return the ID of the channel used if no channel ID is specified, or set it if there is one specified.
 
 #### Usage: `$channelUsed[channelID (optional)]`
 <br/>
@@ -20,5 +20,5 @@ Return the ID of the channel used, or set one if parameter 1 is specified
 [$channelID](../Channel/channelID.md), return the ID from the channel the command is executed in.
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="execChannel" vertical="middle" /> <Badge type="tip" text="channelUsed" vertical="middle" /> <Badge type="tip" text="command channel" vertical="middle" />

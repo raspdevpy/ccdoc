@@ -1,6 +1,5 @@
 # Channel Types
-Some functions needs a channel type or return channel types
-like `$channelType, $channelCount...`
+Some functions require a channel type, such as `$channelType`, and `$channelCount`.
 
 ### Current available types:
 ```
@@ -19,7 +18,7 @@ like `$channelType, $channelCount...`
 ```
 
 ### Example
-#### Using $channelType inside a thread, returns:
+#### Using $channelType inside a **public** thread, returns:
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

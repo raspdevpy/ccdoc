@@ -15,7 +15,7 @@ If channel is found:
 	</discord-message>
 </discord-messages>
 
-If channel is not found & second parameter = `"no"`:
+If channel is not found & second parameter is `"no"`:
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -28,8 +28,8 @@ If channel is not found & second parameter = `"no"`:
 
 
 ::: tip Related Functions
-[$channelExists](../Channel/channelExists.md), to check if a channel does exists
+[$channelExists](../Channel/channelExists.md), used to tell if a channel ID exists.
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="find" vertical="middle" /> <Badge type="tip" text="find Channel" vertical="middle" /> <Badge type="tip" text="search Channel" vertical="middle" /> 
