@@ -12,5 +12,5 @@ Returns the amount of servers the bot is in.
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="serverCount" vertical="middle" /> <Badge type="tip" text="botServerCount" vertical="middle" /> <Badge type="tip" text="OS" vertical="middle" /> <Badge type="tip" text="stats" vertical="middle" />
