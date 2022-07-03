@@ -13,7 +13,7 @@ Sends a message to a sepecified channel
 </discord-messages>
 
 ::: tip Note
-You can send embed using [Message Curl Format](.../CodeReferences/ref.message_curl_format.md)
+You can send embed using [Message Curl Format](../CodeReferences/ref.message_curl_format.md)
 :::
 
 ::: tip Related Functions

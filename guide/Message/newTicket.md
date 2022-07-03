@@ -12,5 +12,9 @@ This will create a ticket named "Member-ticket" and send "Hello World!" in the t
 There are templates which you can clone directly from the dashboard, that includes button tickets. Higly customizable.
 :::
 
+::: tip Note
+You can send embed using [Message Curl Format](../CodeReferences/ref.message_curl_format.md)
+:::
+
 ##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="ticket" vertical="middle" /> <Badge type="tip" text="support" vertical="middle" /> <Badge type="tip" text="channel" vertical="middle" />
