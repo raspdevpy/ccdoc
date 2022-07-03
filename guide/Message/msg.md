@@ -46,6 +46,8 @@ a compact function with many functionalities!
 * embedfieldinline - return message's embed field inline (otherwise undefined), you can specify which embed  by using `additional 1` argument, you can also specify which field by using `additional 2`
 * embedtimestamp - return message's embed timestamp (otherwise undefined), you can specify which embed  by using `additional 1` argument
 * embed - return message's embed in form like `{title:...}` (otherwise undefined), you can specify which embed  by using `additional 1` argument
+* sticker - return the sticker in the message, you can specify which sticker  by using `additional 1` argument
+* stickers - return all the stickers in the message, separated by `, `
 
 <br/>
 <discord-messages>
