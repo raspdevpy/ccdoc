@@ -36,3 +36,7 @@ To get what user input in the modal, we will use `$modalAnswer`
 `$modalID`:   Return the modal's id that triggered the command
 
 `$modalAnswer`: Return a data user input in submitting the modal
+
+::: danger
+You need to send a modal with $modal within 1 second of button/menu/slash execution
+:::
