@@ -14,7 +14,7 @@ the value is the modal id, for example:
 ### let's first send a button (with id apply-form) using [$button](../Trigger/button.md)
 ![](https://cdn.discordapp.com/attachments/959521105293475880/993635605328187462/unknown.png)
 
-### let's make a command to send a modal (with id mymodal) when user click the button using $modal
+### let's make a command to send a modal (with id mymodal) when user click the button using [$modal](../Interaction/modal.md)
 ![](https://cdn.discordapp.com/attachments/959521105293475880/993638716516085900/unknown.png)
 
 #### And that's what will happen when user click on the button
@@ -23,7 +23,7 @@ the value is the modal id, for example:
 ### now let's make a new command to respond to the modal submit
 Trigger type to be `Modal`, Trigger value to be the modal id, in this case `mymodal`
 
-To get what user input in the modal, we will use `$modalAnswer`
+To get what user input in the modal, we will use [$modalAnswer](../Interaction/modalAnswer.md)
 
 ![](https://cdn.discordapp.com/attachments/959521105293475880/993640962851094698/unknown.png)
 
@@ -33,10 +33,12 @@ To get what user input in the modal, we will use `$modalAnswer`
 ### that's it! :tada:
 
 ## Some functions related to Modal Trigger
-`$modalID`:   Return the modal's id that triggered the command
+[$modalID](../Interaction/modalID.md):   Return the modal's id that triggered the command
 
-`$modalAnswer`: Return a data user input in submitting the modal
+[$modalAnswer](../Interaction/modalAnswer.md): Return a data user input in submitting the modal
 
 ::: danger
-You need to send a modal with $modal within 1 second of button/menu/slash execution
+You need to send a modal with [$modal](../Interaction/modal.md) within 1 second of button/menu/slash execution
 :::
+
+###### Tags: <Badge type="tip" text="modal" vertical="middle" /> <Badge type="tip" text="trigger" vertical="middle" />
