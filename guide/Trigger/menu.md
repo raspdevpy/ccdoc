@@ -24,7 +24,7 @@ Now to know which option the user selected, we will use a function `$eventSelect
 ### now save and let's test by selecting rake
 ![](https://cdn.discordapp.com/attachments/959521105293475880/993623835108704336/menu.gif)
 
-### that's it!
+### that's it! :tada:
 
 ## Some functions related to Menu Trigger
 `$eventSelected`:   Return the option's value that user selected
