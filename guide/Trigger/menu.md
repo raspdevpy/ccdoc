@@ -12,6 +12,7 @@ the value is the menu id, for example:
 
 ## Example
 ### let's first send a menu (with id mymenu) with some options using [$selectMenu](../Text/Components/selectMenu.md)
+
 ![](https://i.imgur.com/TqPNG4N.png)
 
 ### let's make a new command to respond when user select an option in this menu
