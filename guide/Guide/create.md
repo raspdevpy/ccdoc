@@ -42,7 +42,7 @@ A trigger executes a code when a condition is met. Like if you send !!help, it w
 | [On Join/Leave](../Trigger/joinorleave.md)    | Joins or Leaves your server | 
 | [Role add/remove](../Trigger/roleaddremove.md)| Recieves or Loses a role|
 | [Button](../Trigger/button.md)                | Clicks a Discord button|
-| [Select Menu](../Trigger/select.md)           | Interacts with a Discord Interaction Menu|
+| [Select Menu](../Trigger/menu.md)           | Interacts with a Discord Interaction Menu|
 | [Timed or Interval](../Trigger/time.md)       | Repeated or Scheduled Execution|
 | [Voice](../Trigger/voicecondecon.md)          | Connects to or Disconnects from a VC|
 | [Channel Create/Delete](../Trigger/channel.md)| A channel is created/ deleted|
