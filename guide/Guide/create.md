@@ -34,7 +34,7 @@ Our Bot is highly customizable and supports many Discord Actions(events). Down b
 A trigger executes a code when a condition is met. Like if you send !!help, it will trigger the help command, since the trigger is the same.
 :::
 
-| Triggertype | gets executed when a user,|
+| Trigger Type | Triggers when user|
 | --------                                      | -------- |
 | [Word](../Trigger/word.md)                    | Sends a message|
 | [Slash Commands](../Trigger/slash.md)         | Interacts with slash commands|
@@ -43,6 +43,7 @@ A trigger executes a code when a condition is met. Like if you send !!help, it w
 | [Role add/remove](../Trigger/roleaddremove.md)| Recieves or Loses a role|
 | [Button](../Trigger/button.md)                | Clicks a Discord button|
 | [Select Menu](../Trigger/menu.md)           | Interacts with a Discord Interaction Menu|
+| [Modal (Form)](../Trigger/modal.md)| Submits a modal or form|
 | [Timed or Interval](../Trigger/time.md)       | Repeated or Scheduled Execution|
 | [Voice](../Trigger/voicecondecon.md)          | Connects to or Disconnects from a VC|
 | [Channel Create/Delete](../Trigger/channel.md)| A channel is created/ deleted|
@@ -54,14 +55,26 @@ As shown above, our bot supports a lot of events! And we're adding more of them!
 
 ## Finding a Trigger Type
 
-Triggertype: Word
+Trigger type: Word
 
 ![](https://i.imgur.com/zQtDgDM.png)
 
-Triggertype: On Reaction
+Trigger type: On Reaction
 
-![](https://i.imgur.com/Gmp1tEy.png)
+![](https://i.imgur.com/h1pe28J.gif)
 
-Triggertype: Button
+Trigger type: Button
 
 ![](https://i.imgur.com/QrxFg8d.png)
+
+Trigger type: Menu
+
+![](https://i.imgur.com/7wZLMIq.gif)
+
+Trigger type: Slash command
+
+![](https://i.imgur.com/Hspy46H.gif)
+
+Trigger type: Modal
+
+![](https://i.imgur.com/ON9e1D4.png)
