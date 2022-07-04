@@ -12,17 +12,17 @@ the value is the menu id, for example:
 
 ## Example
 ### let's first send a menu (with id mymenu) with some options using [$selectMenu](../Text/Components/selectMenu.md)
-![](https://cdn.discordapp.com/attachments/959521105293475880/993622374689812560/unknown.png)
+![](https://i.imgur.com/TqPNG4N.png)
 
 ### let's make a new command to respond when user select an option in this menu
 Trigger type to be `Menu`, Trigger value to be the menu id, in this case `mymenu`
 
 Now to know which option the user selected, we will use a function `$eventSelected`
 
-![](https://cdn.discordapp.com/attachments/959521105293475880/993627253789438002/unknown.png)
+![](https://i.imgur.com/G41cLKl.png)
 
 ### now save and let's test by selecting rake
-![](https://cdn.discordapp.com/attachments/959521105293475880/993623835108704336/menu.gif)
+![](https://i.imgur.com/ZulHZJz.gif)
 
 ### that's it! :tada:
 
