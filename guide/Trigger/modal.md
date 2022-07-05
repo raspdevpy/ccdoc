@@ -12,23 +12,23 @@ the value is the modal id, for example:
 
 ## Example
 ### let's first send a button (with id apply-form) using [$button](../Trigger/button.md)
-![](https://cdn.discordapp.com/attachments/959521105293475880/993635605328187462/unknown.png)
+![](https://i.imgur.com/Pmvl0XZ.png)
 
 ### let's make a command to send a modal (with id mymodal) when user click the button using [$modal](../Interaction/modal.md)
-![](https://cdn.discordapp.com/attachments/959521105293475880/993638716516085900/unknown.png)
+![](https://i.imgur.com/T4fpwhF.png)
 
 #### And that's what will happen when user click on the button
-![](https://cdn.discordapp.com/attachments/959521105293475880/993637725779533824/unknown.png)
+![](https://i.imgur.com/Z6fbIsU.png)
 
 ### now let's make a new command to respond to the modal submit
 Trigger type to be `Modal`, Trigger value to be the modal id, in this case `mymodal`
 
 To get what user input in the modal, we will use [$modalAnswer](../Interaction/modalAnswer.md)
 
-![](https://cdn.discordapp.com/attachments/959521105293475880/993640962851094698/unknown.png)
+![](https://i.imgur.com/nWI9q9E.png)
 
 ### now save and test by submitting the modal
-![](https://cdn.discordapp.com/attachments/959521105293475880/993640700560281681/unknown.png)
+![](https://i.imgur.com/val8aUC.png)
 
 ### that's it! :tada:
 

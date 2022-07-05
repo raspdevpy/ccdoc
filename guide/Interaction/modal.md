@@ -37,10 +37,10 @@ it can be multiple but max of 5 inputs
 
 ### Example
 #### Code
-![](https://cdn.discordapp.com/attachments/959521105293475880/993638716516085900/unknown.png)
+![](https://i.imgur.com/ByYr0UI.png)
 
 #### Output
-![](https://cdn.discordapp.com/attachments/959521105293475880/993637725779533824/unknown.png)
+![](https://i.imgur.com/LF7cnOK.png)
 
 ::: tip
 This can only be used inside the [modal trigger](../Trigger/modal.md)

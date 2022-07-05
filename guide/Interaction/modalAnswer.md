@@ -4,7 +4,7 @@ Returns an answer from a modal submitted by a user in the [modal trigger](../Tri
 Input Value is the input value used inside $modal function when sending the modal
 
 ### Example
-![](https://cdn.discordapp.com/attachments/959521105293475880/993640962851094698/unknown.png)
+![](https://i.imgur.com/SZc3371.png)
 
 ::: tip
 This can only be used inside the [modal trigger](../Trigger/modal.md)

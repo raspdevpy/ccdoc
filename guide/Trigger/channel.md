@@ -23,7 +23,7 @@ The following list is a functions that you might need:
 ## Example
 ### Let's make a command with `add` as value to only trigger when someone create channel
 ### and post it in `log` channel
-![Example Image](https://cdn.discordapp.com/attachments/959521105293475880/993601592160956506/unknown.png)
+![Example Image](https://i.imgur.com/yCoWNFr.png)
 
 ### the output when i create a channel named `newly-born`
-![Output Image](https://cdn.discordapp.com/attachments/959521105293475880/993602175395696661/unknown.png)
+![Output Image](https://i.imgur.com/R4bgKyv.png)
