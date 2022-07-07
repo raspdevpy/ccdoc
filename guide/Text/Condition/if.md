@@ -1,16 +1,15 @@
 # $if
-checks the expression and executes code inside it if true
-you can use $elseIf to check other conditions if previous one is false
-you can use $else to execute code block if nothing is true
+Checks An expression and executes code Only if that expression is true
 
-## Related functions
-- `$endif`
-- `$else`
-- `$elseif`
-- `$elseendif`
+## Shortest Syntax
+```bash
+$if[EXPRESSION]
+	CODE
+$endIf
+```
 
-
-#### Usage: See below
+## What is expression?
+Read about it [here](../../CodeReferences/ref.expression.md)
 
 ##### Example 1 only with $if
 
@@ -90,10 +89,17 @@ Info: The second else if will get never executed ,because it will exit the state
 </discord-messages>
 
 ##### Example 5 multiplie condtions in if with && or ||
-
-$if[] allows you to have multiplie condtions
+Expression can accept multiple conditions, use `||` or `&&` as separators
 <br/> `||` is for OR
  <br/> `&&` is for AND
+
+Example:
+```
+$username==Mido&&$country==Egypt
+```
+Condition 1: `$username==Mido`
+Condition 2: `$country==Egypt`
+But this expression will only be true only if both condition 1 **AND** (because of &&) condition 2 is `true`
 
 The Example below will execute since $username==Tom is false but the second expression is true .It wouldn't work with &&
 <br/>

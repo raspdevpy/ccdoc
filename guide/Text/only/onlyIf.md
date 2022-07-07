@@ -1,9 +1,13 @@
 # $onlyIf
-Continue execution only if certain condition is satisfied, else send error message
-In theory $onlyif can replace all other $onlyFor with the proper condition
-#### Usage: `$onlyif[Condition;error message]`
+Continue execution only if certain [expression](../../CodeReferences/ref.expression.md) is satisfied, else send error message
+In theory $onlyif can replace all other $onlyFor with the proper [expression](../../CodeReferences/ref.expression.md)
+#### Usage: `$onlyif[Expression;error message]`
 
 #### Example: `$onlyIf[$username==Mido;You are not mido]`
+
+::: tip Note
+Read about [Expression](../../CodeReferences/ref.expression.md)
+:::
 
 ::: tip Note
 You can send embed using [Message Curl Format](../../CodeReferences/ref.message_curl_format.md)
