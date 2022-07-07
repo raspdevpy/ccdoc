@@ -33,4 +33,4 @@ Set a channel used, otherwise errors will not be send anywhere! This makes bug f
 
 ## More Info
 
-Do you want to know more, about the bot's syntax? You can check out [this](../../guide/syntax.md) page to learn more!
+Do you want to know more, about the bot's syntax? You can check out [this](../Other/syntax.md) page to learn more!

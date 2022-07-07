@@ -38,5 +38,5 @@ Use: `{title: Your title here}`
 :::
 
 ::: danger Please be aware!!
-If you add any `:` in this function it will error! Check out [this](../../guide/syntax.md)
+If you add any `:` in this function it will error! Check out [this](../../Other/syntax.md)
 :::
