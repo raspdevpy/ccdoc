@@ -12,5 +12,5 @@ Checks if a string is a valid number.
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Check" vertical="middle" /> <Badge type="tip" text="Number" vertical="middle" /> <Badge type="tip" text="Is number" vertical="middle" /> <Badge type="tip" text="check number" vertical="middle" />

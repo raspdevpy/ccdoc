@@ -12,5 +12,5 @@ adds an element to an array from `$textsplit` or replaces the value by index of 
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="textsplit" vertical="middle" /> <Badge type="tip" text="edit" vertical="middle" /> <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="element" vertical="middle" />

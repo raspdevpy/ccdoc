@@ -17,5 +17,5 @@ returns the hex color of the highest role of the user
 If you use the main bot the member must be cached to get valid results.You can ignore the message,if you use custom bot!
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="color" vertical="middle" /> 

@@ -14,5 +14,5 @@ Returns a random Channel id from a Channel in the server
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="random" vertical="middle" /> <Badge type="tip" text="random Channel id" vertical="middle" /> <Badge type="tip" text="choose" vertical="middle" /> <Badge type="tip" text="return random Channel id" vertical="middle" />

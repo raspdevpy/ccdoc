@@ -25,5 +25,5 @@ To remove roles from a user if he/she already haves them, or add these roles if 
 [$setRoles](../Role/setRoles.md), to take all roles from a user & give the specified roles back
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Toggle roles" vertical="middle" /> <Badge type="tip" text="Give Roles" vertical="middle" /> <Badge type="tip" text="Take Roles" vertical="middle" /> <Badge type="tip" text="Member" vertical="middle" /> <Badge type="tip" text="role" vertical="middle" />

@@ -21,5 +21,5 @@ Example:
 </discord-messages>
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="random" vertical="middle" /> <Badge type="tip" text="reset random" vertical="middle" /> <Badge type="tip" text="clear" vertical="middle" /> 

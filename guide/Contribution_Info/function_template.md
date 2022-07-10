@@ -15,6 +15,6 @@
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip/ warning/ danger" text="Easy/ Medium/ Difficult" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip/ warning/ danger" text="Easy/ Medium/ Difficult" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="TAG 2" vertical="middle" /> <Badge type="tip" text="TAG 2" vertical="middle" />
 ```

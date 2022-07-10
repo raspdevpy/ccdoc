@@ -16,5 +16,5 @@ returns the element by index from [$textSplit](.../textSplit/textSplit.md)
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="split text" vertical="middle" /> <Badge type="tip" text="Return value" vertical="middle" />

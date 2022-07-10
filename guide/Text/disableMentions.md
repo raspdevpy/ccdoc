@@ -12,5 +12,5 @@ Replaces all the user mentions with their usernames
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Do not ping" vertical="middle" /> <Badge type="tip" text="Mention" vertical="middle" /> <Badge type="tip" text="Ping" vertical="middle" /> <Badge type="tip" text="Annoying" vertical="middle" />

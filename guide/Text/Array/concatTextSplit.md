@@ -12,5 +12,5 @@ adds an array to the end of an array from `$textsplit`
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="textsplit" vertical="middle" /> <Badge type="tip" text="concat" vertical="middle" /> <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="merge " vertical="middle" /> <Badge type="tip" text="add" vertical="middle" />

@@ -13,5 +13,5 @@ returns the value by index of the split text from `$textsplit`
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="get" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" />

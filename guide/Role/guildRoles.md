@@ -19,5 +19,5 @@ Returns all guild roles there names/ids/mentions.
 [$roleID](../Role/roleID.md), to return a roleID by name of it
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Guild Roles" vertical="middle" /> <Badge type="tip" text="all roles" vertical="middle" /> <Badge type="tip" text="server roles" vertical="middle" /> <Badge type="tip" text="roles" vertical="middle" /> <Badge type="tip" text="server/ guild" vertical="middle" /> 

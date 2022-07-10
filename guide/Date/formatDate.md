@@ -38,5 +38,5 @@ Example:
 Date functions uses on default UTC timezone,but you can change it [Learn More](./timezone.md)
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="formatDate" vertical="middle" /> 

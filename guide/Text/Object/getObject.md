@@ -21,5 +21,5 @@ With spaces: {
 </discord-messages>
 
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="get" vertical="middle" /> <Badge type="tip" text="object" vertical="middle" /> <Badge type="tip" text="json" vertical="middle" />

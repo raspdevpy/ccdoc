@@ -15,5 +15,5 @@ this functions returns the number of characters in the provided text
 </discord-messages>
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="count" vertical="middle" /> <Badge type="tip" text="Case" vertical="middle" />

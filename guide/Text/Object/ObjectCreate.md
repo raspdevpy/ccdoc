@@ -50,5 +50,5 @@ $setUserVar[data;$getObject]
 * use `$objectGet[groupname;key]` to get the value or $objectGet[groupname;key;index] to get the value of an array
 :::
 
-##### Function Difficultly: <Badge type="danger" text="Difficult" vertical="middle" /> 
+##### Function difficulty: <Badge type="danger" text="Difficult" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="create" vertical="middle" /> <Badge type="tip" text="object" vertical="middle" /> <Badge type="tip" text="json" vertical="middle" />

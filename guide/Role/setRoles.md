@@ -26,5 +26,5 @@ Gives a user specific roles and removes all other ones
 [$toggleRoles](../Role/toggleRoles.md), to toggle roles from a user
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Set role" vertical="middle" /> <Badge type="tip" text="Give Roles" vertical="middle" /> <Badge type="tip" text="Take Roles" vertical="middle" /> <Badge type="tip" text="Member" vertical="middle" /> <Badge type="tip" text="role" vertical="middle" />

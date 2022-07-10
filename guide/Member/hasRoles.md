@@ -14,5 +14,5 @@ Checks if given user ID has the provided roles.
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Has Roles" vertical="middle" /> <Badge type="tip" text="roles" vertical="middle" />

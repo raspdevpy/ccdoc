@@ -23,5 +23,5 @@ Suceful ban
 You can send embed using [Message Curl Format](../CodeReferences/ref.message_curl_format.md)
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="blacklist" vertical="middle" /> <Badge type="tip" text="roles" vertical="middle" />

@@ -12,5 +12,5 @@ Returns the server features
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="server" vertical="middle" /><Badge type="tip" text="Features" vertical="middle" />

@@ -22,5 +22,5 @@ Check this [list](../CodeReferences/ref.permissions_list.md) to view all permiss
 [$userPerms](../Member/userPerms.md), to return all member's permissions
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Role" vertical="middle" /> <Badge type="tip" text="Perms" vertical="middle" /> <Badge type="tip" text="permissions" vertical="middle" /> <Badge type="tip" text="rights" vertical="middle" /> <Badge type="tip" text="hadRolePerms" vertical="middle" />

@@ -16,5 +16,5 @@ Returns the position of a role.
 </discord-messages>
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Role" vertical="middle" /> <Badge type="tip" text="get position" vertical="middle" /> <Badge type="tip" text="position" vertical="middle" />

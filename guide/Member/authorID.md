@@ -16,5 +16,5 @@ Returns the author's ID of the executor, which executed the Custom Command.
 [$mention](../Member/mention.md), to mention the author of a command!
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="authorID" vertical="middle" /> <Badge type="tip" text="cmd executor" vertical="middle" /> <Badge type="tip" text="command author" vertical="middle" /> <Badge type="tip" text="command" vertical="middle" /> <Badge type="tip" text="userID" vertical="middle" />

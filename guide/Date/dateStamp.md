@@ -18,5 +18,5 @@ If you want to use the inbuild discord feature, called "Unix Timestamp (Styled)"
 You can use `$round[$math[$dateStamp]/1000]`
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="return" vertical="middle" /> <Badge type="tip" text="date" vertical="middle" /> <Badge type="tip" text="miliseconds" vertical="middle" />

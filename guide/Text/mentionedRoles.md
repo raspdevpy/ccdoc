@@ -12,5 +12,5 @@ Returns the ID of one of the roles that was mentioned by the user
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Mentioned" vertical="middle" /> <Badge type="tip" text="Role Mention" vertical="middle" /> <Badge type="tip" text="Ping" vertical="middle" /> <Badge type="tip" text="Role Ping" vertical="middle" />

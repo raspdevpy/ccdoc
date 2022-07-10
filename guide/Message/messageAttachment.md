@@ -13,5 +13,5 @@ returns the first attachment url of the message.
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge  type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge  type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge  type="tip" text="Attachment" vertical="middle" /> <Badge  type="tip" text="message" vertical="middle" />

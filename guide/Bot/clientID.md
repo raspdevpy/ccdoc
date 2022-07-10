@@ -13,5 +13,5 @@ Returns the Bot's UserID (also known as clientID)
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="bots" vertical="middle" /> <Badge type="tip" text="ID" vertical="middle" /> <Badge type="tip" text="user ID" vertical="middle" /> <Badge type="tip" text="Custom Command" vertical="middle" />

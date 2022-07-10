@@ -83,5 +83,5 @@ but if you are using $callFunction to call the function, any name is valid
 You will need to use `$callFunction` if you called a global function inside another custom command for first time, afterward you can use the short format
 i.e $printHello
 :::
-##### Function Difficultly: <Badge type="danger" text="Difficult" vertical="middle" /> 
+##### Function difficulty <Badge type="danger" text="Difficult" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Function" vertical="middle" />  <Badge type="tip" text="Custom Functions" vertical="middle" />  <Badge type="tip" text="Nested code" vertical="middle" />

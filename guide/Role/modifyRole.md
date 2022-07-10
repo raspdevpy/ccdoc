@@ -19,5 +19,5 @@ This will edit the color of the mod role
 :::
 
 
-##### Function Difficultly: <Badge type="tip" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Role" vertical="middle" /> <Badge type="tip" text="edit" vertical="middle" /> <Badge type="tip" text="modify role" vertical="middle" /> <Badge type="tip" text="edit role" vertical="middle" /> <Badge type="tip" text="change role name" vertical="middle" /> 

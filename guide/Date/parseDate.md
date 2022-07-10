@@ -12,5 +12,5 @@ Parses given ms to date or time
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="convert" vertical="middle" /> <Badge type="tip" text="date" vertical="middle" /> <Badge type="tip" text="miliseconds" vertical="middle" />

@@ -39,5 +39,5 @@ choosing red.
 You can send embed using [Message Curl Format](../../CodeReferences/ref.message_curl_format.md)
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="await" vertical="middle" /> <Badge type="tip" text="button" vertical="middle" /> <Badge type="tip" text="interaction" vertical="middle" /> <Badge type="tip" text="click" vertical="middle" />

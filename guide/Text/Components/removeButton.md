@@ -16,5 +16,5 @@ $removeButton[863xxxxxxxxxx21130]
 ```
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="remove" vertical="middle" /> <Badge type="tip" text="button" vertical="middle" /> <Badge type="tip" text="interaction" vertical="middle" /> <Badge type="tip" text="delete" vertical="middle" />

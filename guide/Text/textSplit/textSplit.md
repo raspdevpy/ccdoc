@@ -12,5 +12,5 @@ splits text into pieces! To access them use: [$splitText](.../textSplit/splitTex
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="split text" vertical="middle" /> <Badge type="tip" text="text Split" vertical="middle" />

@@ -12,5 +12,5 @@ returns all the keys of an object with the provided separator
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="object" vertical="middle" /> <Badge type="tip" text="keys" vertical="middle" /> <Badge type="tip" text="json" vertical="middle" />

@@ -12,5 +12,5 @@ rounds the number to a fixed decimals after comman
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="roundTenth" vertical="middle" /> <Badge type="tip" text="set" vertical="middle" /> <Badge type="tip" text="decimals" vertical="middle" /> <Badge type="tip" text="roundTenth" vertical="middle" />

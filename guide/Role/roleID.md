@@ -19,5 +19,5 @@ Returns the ID of a role.
 [$findRole](../Role/findRole.md), to find a role by it's name or mention
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Role" vertical="middle" /> <Badge type="tip" text="get ID" vertical="middle" /> <Badge type="tip" text="Find role ID" vertical="middle" /> <Badge type="tip" text="ID" vertical="middle" /> <Badge type="tip" text="roles" vertical="middle" />

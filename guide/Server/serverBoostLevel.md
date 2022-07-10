@@ -12,5 +12,5 @@ Returns the boost level of the server.
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Server" vertical="middle" /> <Badge type="tip" text="Boosts" vertical="middle" /> <Badge type="tip" text="boosting" vertical="middle" /> <Badge type="tip" text="Guild" vertical="middle" />

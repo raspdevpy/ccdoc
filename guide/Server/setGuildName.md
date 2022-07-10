@@ -8,5 +8,5 @@ Sets the name of your server to something, you have put in.
 :::
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="guild name" vertical="middle" /> <Badge type="tip" text="server name" vertical="middle" /> <Badge type="tip" text="server title" vertical="middle" />

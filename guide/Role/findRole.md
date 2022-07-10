@@ -35,5 +35,5 @@ If channel is not found:
 [$roleID](../Role/roleID.md), to return a roleID by name of it
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="find Role" vertical="middle" /> <Badge type="tip" text="Role ID" vertical="middle" /> <Badge type="tip" text="Roles" vertical="middle" /> <Badge type="tip" text="Search Roles" vertical="middle" /> <Badge type="tip" text="Found Roles" vertical="middle" /> 

@@ -12,5 +12,5 @@ Returns a user avatar by a given userID.
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="userID" vertical="middle" /> <Badge type="tip" text="user avatar" vertical="middle" />

@@ -40,5 +40,5 @@ This is plain text after the stop function
 ^^ - This will not send anything! 
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Stop" vertical="middle" />  <Badge type="tip" text="Cancel" vertical="middle" />  <Badge type="tip" text="Error" vertical="middle" />  <Badge type="tip" text="End Execution" vertical="middle" />

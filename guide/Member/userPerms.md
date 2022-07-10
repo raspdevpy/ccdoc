@@ -28,5 +28,5 @@ Check this [list](../CodeReferences/ref.permissions_list.md) to view all permiss
 [$hasPerms](../Member/hasPerms.md), to check if a member has certain perms
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Member" vertical="middle" /> <Badge type="tip" text="Perms" vertical="middle" /> <Badge type="tip" text="permissions" vertical="middle" /> <Badge type="tip" text="rights" vertical="middle" />
