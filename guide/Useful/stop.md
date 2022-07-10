@@ -24,6 +24,9 @@ This function will cause the interpetender to stop the command execution & retur
 	</discord-message>
 </discord-messages>
 
+::: tip Note
+You can send embed using [Message Curl Format](../CodeReferences/ref.message_curl_format.md)
+:::
 
 ::: danger Watch Out!!
 Using plain text in your code, like below will **NOT** work!!

@@ -1,59 +1,125 @@
 # Syntax
 Read all about the syntax used by the bot!
 
-::: danger Disclaimer!
+::: tip Disclaimer!
 The Syntax has been inspired from BDFD originally.
 
 We are not affiliated with BDFD. But we're using a similar syntax
 :::
 
-## Syntax Explanation
-Our bot uses functions, they are basically the coding blocks for your commands.
+## Syntax
+In general the code only have 2 types:\
+1- [Text](#what-is-text)\
+2- [Function](#what-is-a-function)
 
-#### General Function Classification:
-* value functions: Return a value
-* Action Functions: Preform an action in your discord guild (like: creating a channel or sending a message)
-* Database functions, Sets an variable or caches a member
+## What is Text?
+In the code anything is text except for [function](#what-is-a-function)\
+for example in this code:
+```
+Hello $username to our server
+```
 
-#### Parameters
-Since a guild has more than 1 member/channel/role/thread, some functions need data to be inputted. Like `$cacheMember[787695068306866198]`, needs an user ID to know which member to cache
+`Hello`: is a text\
+[`$username`](../Member/username.md): is a function\
+`to our server` is a text
 
-* Every Function starts with a `$`
-* After it the function name comes like `giveroles`
-* If the Function needs parameters you open it with `[`
-* Every Parameter gets separated with `;` 
-* If the Function has an opening `[` it needs an closing one: `]`
+## What is a function
+Any function starts with `$` like [`$username`](../Member/username.md)\
+In this code for example:
+```
+Hello $username to our server
+```
+[`$username`](../Member/username.md) is the only function in this code
 
-So your result would be `$giveRoles[authorid;roleid]`
+### But what function does?
+Each function in general can do one of the 3 things:
+* Replaced by a value
+* Do an action
+* Replaced by a value and Do an action
+
+For Example In running this code:
+```
+Hello $username to our server!
+```
+When this code runs you will find the bot sending:
+```
+Hello Mido to our server!
+```
+
+Which clearly shows that [`$username`](../Member/username.md) function is `Replaced by value` type\
+and this value will always be the username of the author
+
+### Input
+Some functions requires an input from you to behave differently and this is the format:
+```
+$function[Inputs]
+```
+Previously we used [`$username`](../Member/username.md) without inputs but why?\
+because [`$username`](../Member/username.md) documentations will tell you, that by default it will return the author name, but if you want to return someone else username you will need to do an input in this case\
+Assume that we want to get Rake name instead of Mido\
+we will first need to get Rake User ID, assume (1234) and input it to [`$username`](../Member/username.md):
+```
+Hello $username[1234]
+```
+Output
+```
+Hello Rake
+```
+### Multiple Inputs
+In some function it wants from you more than just 1 input like $channelSendMessage\
+it asks for 2 different inputs (in order):
+* Channel ID to send to
+* Message Content
+
+Assume that channel id is `1234`, and content is `Hello $username`
+To apply these inputs in the function, we will separate them by `;`\
+Like this:
+```
+$channelSendMessage[1234;Hello $username]
+```
+Output (in channel with ID 1234):
+```
+Hello Mido
+```
+
+Note: [`$channelSendMessage`](../Message/channelSendMessage.md) doesn't not get replaced by value, but only does an action (like sending the message)
 
 ::: tip Function names are case insensitive
-That's why $authorID and $authorid would return the same data!
+It means $authorID and $aUtHoRiD will work!
 :::
 
-## Compare characters
-`==` - Use this 2 signs to check if 2 values EXACTLY match each other.
+## Expressions
+In some functions you might find it tells you:\
+Provide an expression
 
-`!=` - Use this 2 signs to check if 2 values do NOT match each other.
-
-`>=` - Use this 2 signs to check if number string 1 greater is, or the same as number string 2
-
-`<=` - Use this 2 signs to check if number string 1 is smaller, or the same as number string 2
-
-`>` - Use this sign to check if number string 1 is greater then number string 2
-
-`<` - Use this sign to check if number string 1 is smaller then number string 2
-
+In this case, please read about the [expressions](../CodeReferences/ref.expression.md) here
 
 ## Escaping Characters
-Because our bot uses characters like: `[]` and `$` as "prefix's" for code blocks, you need to escape them when used in a text! 
+There's some danger characters that is troublesome to work with
+for example let's say you want to send [`$username`](../Member/username.md)
+to be literally be sent like that and not be replaced to be the user name
+For example code:
+```
+To get username use function: $username
+```
+You will find the output:
+```
+To get username use function: Mido
+```
+It clearly got replaced by user name, but what to do to tell the bot: treat this `$` as literal `$` not as function, here comes the escaping character technique, you will simply add `\` before that character like this:
+```
+To get username use function: \$username
+```
+Output will be:
+```
+To get username use function: $username
+```
 
-Use a `\` (back slash) for that sort of stuff... Special characters are linked below
-
-### Special Characters:
-`[`, `]`, `;`, `:`, `$`, `>`, `<`, `=`, `{`, `}`
+Some other dangerous characters
+`[`, `]`, `;`, `:`, `>`, `<`, `=`, `{`, `}`
 
 
-## Encoded Character Codes
+## Encoded Character Codes (Alternative of `\`)
 ```js
 #RIGHT# =>> [
 #LEFT# =>> ]

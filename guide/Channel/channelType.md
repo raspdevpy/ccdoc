@@ -1,5 +1,5 @@
 # $channelType
-Returns the type of channel, parsed by ID
+Returns the type of channel, from a channel ID.
 
 #### Usage: `$channelType[channelID]`
 <br/>
@@ -13,5 +13,5 @@ Returns the type of channel, parsed by ID
 </discord-messages>
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="type channel" vertical="middle" /> <Badge type="tip" text="channel type" vertical="middle" />
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
+###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="channel type" vertical="middle" />

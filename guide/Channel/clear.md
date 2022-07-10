@@ -1,5 +1,5 @@
 # $clear
-Clears an amount of messages from given channelID and from specfic person or everyone
+Clears messages from given channelID, and from specfic person or everyone.
 
 #### Usage: 
 `$clear[amount;userid or everyone(optional);channelID (optional)]`
@@ -26,7 +26,7 @@ Before
 		I'm a spammer, everyone shut up!
 	</discord-message>
 	<discord-message :bot="false" role-color="#4cfdc8" author="Good Moderator">
-		!!exec $clear[10;746697359303508059] Channel Purged
+		!!exec $clear[10;everyone] Channel Purged
 	</discord-message>
 </discord-messages>
 
@@ -38,5 +38,5 @@ After
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Bulk deleting" vertical="middle" /> <Badge type="tip" text="delete messages" vertical="middle" /> <Badge type="tip" text="Purge Channel" vertical="middle" /> <Badge type="tip" text="Clear Channel" vertical="middle" />

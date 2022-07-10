@@ -10,7 +10,7 @@ Use this code, on the FIRST line of your code! If you do not, it will execute al
 :::
 
 ::: tip Note
-You can send embed using [Message Curl Format](../CodeReferences/ref.message_curl_format.md)
+You can send embed using [Message Curl Format](../../CodeReferences/ref.message_curl_format.md)
 :::
 
 ##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 

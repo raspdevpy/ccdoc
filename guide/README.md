@@ -1,29 +1,29 @@
 # Getting Started
 :::tip Some words before starting with the Bot!
-It is not recommended to skip the guide or reading only parts of it. Following it step by step will be 99% understandable for you.
+It is highly unrecommended to skip the guide, or reading only parts of it. Reading it all will make Custom Command's syntax and functions much more clear for you.
 :::
 
 ## Inviting the Bot
 
-1. Invite the Bot with the [link](https://discord.com/api/oauth2/authorize?client_id=725721249652670555&permissions=268561655&scope=bot)
+1. Invite the Bot via this [link.](https://discord.com/api/oauth2/authorize?client_id=725721249652670555&permissions=268561655&scope=bot)
 ![](https://i.imgur.com/NQp3N8L.png)
 
-We recommend to leave all the permissions enabled, so you don't face any issues, when using Functions that require certain discord permissions! For more info on bot permissions and privacy policy, please refere to [this](./Guide/perms&privacy.md) page
+We recommend you leave all the permissions as-is, so you don't face any issues when using functions that require certain Discord permissions. Our Privacy Policy can be accessed via [this](https://doc.ccommandbot.com/Guide/policy.html) page.
 
 ![](https://i.imgur.com/7WnDcnG.png)
 
-2. Login to the [Dashboard](https://ccommandbot.com/auth/login)
+2. Login to the [Dashboard.](https://ccommandbot.com/auth/login)
 
 ![](https://i.imgur.com/pvJ3i6R.png)
 
-3. Select your Server 
+3. Select your Server.
 
 ![](https://i.imgur.com/XxSsZ4G.png)
 
 
-## Creating Custom Command
+## Creating Custom Commands
 
-#### Follow this for creating your first Custom Command [this link](../Guide/create.md)
+#### Follow [this link](../Guide/create.md) to create your first Custom Command!
 
 
 <!-- ### Welcomer

@@ -1,37 +1,32 @@
 # Menu Interaction
 
 ## Basic Information
-This trigger type, will trigger when a user interacts with a menu. This needs to be a menu send by the bot! 
+This trigger type, will trigger when a user select an option in a menu. 
 
 ## Syntax
-Use this syntax to let the bot trigger when the ID from a interaction menu is detected!
+the value is the menu id, for example:
 
-`test` -> If this is filled in in the trigger field, the command will trigger when the ID from the menu is `test`
+`test` -> will trigger only when a user select an option in a menu with id `test`
 
+`menu_1|menu_2` -> will trigger only when a user select an option in a menu with id `menu_1` or `menu_2`
 
-`menu_1|menu_2` -> If this is filled in in the trigger field, the command will trigger when the ID from the menu is `menu_1` OR `menu_2`
+## Example
+### let's first send a menu (with id mymenu) with some options using [$selectMenu](../Text/Components/selectMenu.md)
+![](https://i.imgur.com/TqPNG4N.png)
 
+### let's make a new command to respond when user select an option in this menu
+Trigger type to be `Menu`, Trigger value to be the menu id, in this case `mymenu`
 
-::: warning Warning
-All IDs are caSe seNsiTiVe, so a if a command doesn't triggers, check the capitalization!
-:::
+Now to know which option the user selected, we will use a function `$eventSelected`
 
-::: info Info
-Button and Dropdown triggertype uses regex to match the trigger field.
-So id with the same will interfere with each other.
-For Example:
-* menu 1 id = test
-* menu 2 id = testone
-* Menu 2 could get triggered ,if you use menu 1 since it matches `test`
-##### Resolving the Problem
-Just change your id to `^id$`
-In regex ^ and $ are used to match the start and end of the string.
-:::
+![](https://i.imgur.com/G41cLKl.png)
 
-## Creating a Menu
-Check here for creating a menu: [Menu](../Text/Components/menu.md)
+### now save and let's test by selecting rake
+![](https://i.imgur.com/ZulHZJz.gif)
 
+### that's it! :tada:
 
-## More Info
+## Some functions related to Menu Trigger
+`$eventSelected`:   Return the option's value that user selected
 
-Do you want to know more, about the bot's syntax? You can check out [this](../../guide/syntax.md) page to learn more!
+`$menuId`: Return the menu id that triggered the command

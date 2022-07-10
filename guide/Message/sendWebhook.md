@@ -18,8 +18,12 @@ sends a webhook message using their id and token
 The param avatar and username can be changed.So different avatar and names gets displayed
 :::
 
+::: tip Note
+You can send embed using [Message Curl Format](../CodeReferences/ref.message_curl_format.md)
+:::
+
 ::: warning Warning!
-Embed Format tags like {deletein:} {edit} is currently not supported.
+For non-premium, this function will behave exactly as $sendMessage due to late discord block avoidance
 :::
 
 ##### Function Difficultly: <Badge type="warning" text=" Medium" vertical="middle" /> 

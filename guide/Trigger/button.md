@@ -44,4 +44,4 @@ In regex ^ and $ are used to match the start and end of the string.
 
 ## More Info
 
-Do you want to know more, about the bot's syntax? You can check out [this](../../guide/syntax.md) page to learn more!
+Do you want to know more, about the bot's syntax? You can check out [this](../Other/syntax.md) page to learn more!

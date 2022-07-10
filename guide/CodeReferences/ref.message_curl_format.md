@@ -42,6 +42,7 @@ Sending a embed with title `Hello` and description `World`
 {file:Name:Content} adding attachment file from text
 {attachment:Name:URL} adding attachment file from url
 {deletecommand} to delete the original command message
+{stickers:Sticker 1 ID:Sticker 2 ID:Sticker 3 ID} to send stickers
 ```
 
 ::: tip Note

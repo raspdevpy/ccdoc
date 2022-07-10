@@ -22,7 +22,7 @@ Use: `{image: Your link here}`
 :::
 
 ::: danger Please be aware!!
-If you add any `:` in this function it will error! Check out [this](../../guide/syntax.md)
+If you add any `:` in this function it will error! Check out [this](../../Other/syntax.md)
 
-Link escapes are needed, use `\` to escape characters. Read [me](../../guide/syntax.md) to see more
+Link escapes are needed, use `\` to escape characters. Read [me](../../Other/syntax.md) to see more
 :::

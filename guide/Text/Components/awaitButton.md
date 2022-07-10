@@ -35,6 +35,9 @@ choosing red.
 ![](https://cdn.discordapp.com/attachments/914682255346118687/938559970792845312/Screenshot_20220202191947.jpg)
 :::
 
+::: tip Note
+You can send embed using [Message Curl Format](../../CodeReferences/ref.message_curl_format.md)
+:::
 
 ##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="await" vertical="middle" /> <Badge type="tip" text="button" vertical="middle" /> <Badge type="tip" text="interaction" vertical="middle" /> <Badge type="tip" text="click" vertical="middle" />

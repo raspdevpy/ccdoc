@@ -12,5 +12,5 @@ Returns the amount of RAM the bot is currently using.
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="ram" vertical="middle" /> <Badge type="tip" text="Check" vertical="middle" /> <Badge type="tip" text="Online" vertical="middle" /> <Badge type="tip" text="OS" vertical="middle" />  <Badge type="tip" text="stats" vertical="middle" />
