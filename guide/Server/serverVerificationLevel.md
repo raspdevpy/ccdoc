@@ -12,5 +12,5 @@ Returns the verification level of the server
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Server" vertical="middle" /> <Badge type="tip" text="Verification level" vertical="middle" /> <Badge type="tip" text="Verification" vertical="middle" /> <Badge type="tip" text="Guild" vertical="middle" />

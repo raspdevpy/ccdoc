@@ -19,5 +19,5 @@ Returns a sequence of numbers, decided by a starting (inclusive) number and stop
 This can be used with [$forEach](../Useful/forEach) quite easily
 :::
 
-##### Function Difficultly: <Badge type="danger" text="Difficult" vertical="middle" /> 
+##### Function difficulty <Badge type="danger" text="Difficult" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="sequence" vertical="middle" />  <Badge type="tip" text="Numbers list" vertical="middle" />  <Badge type="tip" text="return list" vertical="middle" />  <Badge type="tip" text="ForEach" vertical="middle" /> 

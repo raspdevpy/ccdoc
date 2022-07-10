@@ -13,5 +13,5 @@ returns the id of the webhook
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Webook ID" vertical="middle" /> <Badge type="tip" text="message" vertical="middle" />

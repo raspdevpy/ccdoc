@@ -17,6 +17,6 @@ Matches a string with given Regex Pattern
 ::: tip Regex Flags
 These are all regex flags: `g, i, m, u, s, y.`
 ::
-##### Function Difficultly: <Badge type=" warning" text="Medium" vertical="middle" /> 
+##### Function difficulty <Badge type=" warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="regex" vertical="middle" /> <Badge type="tip" text="search" vertical="middle" /> <Badge type="tip" text="find" vertical="middle" /> <Badge type="tip" text="search" vertical="middle" /> <Badge type="tip" text="match" vertical="middle" />
 

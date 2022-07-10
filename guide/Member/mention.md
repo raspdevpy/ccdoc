@@ -17,5 +17,5 @@ Mention's the executor of the command
 [$authorID](../Member/authorID.md), to return the ID of the executor of the command
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="ping" vertical="middle" /> <Badge type="tip" text="ping (ennoying)" vertical="middle" /> <Badge type="tip" text="mention" vertical="middle" /> <Badge type="tip" text="author" vertical="middle" /> 

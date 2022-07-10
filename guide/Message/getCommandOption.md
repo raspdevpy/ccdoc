@@ -16,5 +16,5 @@ string, number, boolean, channel, role, mentionable
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="slash" vertical="middle" /> <Badge type="tip" text="option" vertical="middle" />

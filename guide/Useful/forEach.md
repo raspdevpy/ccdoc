@@ -48,5 +48,5 @@ $endForEach
 This can be used with [$seq](../Useful/seq)!
 :::
 
-##### Function Difficultly: <Badge type="danger" text="Difficult" vertical="middle" /> 
+##### Function difficulty <Badge type="danger" text="Difficult" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="loop" vertical="middle" />  <Badge type="tip" text="forEach" vertical="middle" />  <Badge type="tip" text="for each object in list" vertical="middle" /> 

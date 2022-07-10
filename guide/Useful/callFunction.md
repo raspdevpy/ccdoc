@@ -50,5 +50,5 @@ Call the function, using [$printHello](../Useful/callFunction)
 A function name can't start with number, and must be within [A-Z or a-z or _ or 0-9]
 :::
 
-##### Function Difficultly: <Badge type="danger" text="Difficult" vertical="middle" /> 
+##### Function difficulty <Badge type="danger" text="Difficult" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Function" vertical="middle" />  <Badge type="tip" text="Custom Functions" vertical="middle" />  <Badge type="tip" text="Nested code" vertical="middle" />

@@ -32,5 +32,5 @@ If member is not found:
 [$userID](../Member/userID.md), to return a user ID from a given username
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="find" vertical="middle" /> <Badge type="tip" text="find member" vertical="middle" /> <Badge type="tip" text="find user" vertical="middle" /> <Badge type="tip" text="search Member" vertical="middle" /> <Badge type="tip" text="search User" vertical="middle" /> 

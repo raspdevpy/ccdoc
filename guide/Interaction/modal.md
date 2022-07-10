@@ -45,5 +45,5 @@ it can be multiple but max of 5 inputs
 ::: tip
 This can only be used inside the [modal trigger](../Trigger/modal.md)
 :::
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="modal" vertical="middle" /> <Badge type="tip" text="sending modal" vertical="middle" />

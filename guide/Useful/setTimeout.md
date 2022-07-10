@@ -32,5 +32,5 @@ If you only want to wait less then 1m, you can use [$wait](../useful/wait.md)
 
 
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="timeout" vertical="middle" />  <Badge type="tip" text="Wait" vertical="middle" />  <Badge type="tip" text="Thinking" vertical="middle" />  <Badge type="tip" text="Set Timeout" vertical="middle" /> 

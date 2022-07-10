@@ -13,7 +13,7 @@ Example:
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags:
 <Badge type="tip" text="is" vertical="middle" /> 
 <Badge type="tip" text="Deafened" vertical="middle" /> 

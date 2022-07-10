@@ -15,5 +15,5 @@ Creates a webhook for this channel
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="" vertical="middle" /> <Badge type="tip" text="TAG 2" vertical="middle" />

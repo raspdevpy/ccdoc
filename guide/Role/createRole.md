@@ -17,5 +17,5 @@ This [list](../CodeReferences/ref.permissions_list.md) of all valid channel type
 [$createChannel](../Channel/createChannel.md), create a role
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="create" vertical="middle" /> <Badge type="tip" text="createRole" vertical="middle" /> <Badge type="tip" text="make role" vertical="middle" /> 

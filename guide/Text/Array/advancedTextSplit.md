@@ -20,5 +20,5 @@ don't even respond at all
 ::: warning This function is only for EXPERTS
 :::
 
-##### Function Difficultly: <Badge type="danger" text="Difficult" vertical="middle" /> 
+##### Function difficulty: <Badge type="danger" text="Difficult" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="advanced" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" />

@@ -15,5 +15,5 @@ Joins the [$textSplit](.../textSplit/textSplit.md) indexes by a given separator
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="split text" vertical="middle" /> <Badge type="tip" text="Add" vertical="middle" />

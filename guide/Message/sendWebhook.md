@@ -26,5 +26,5 @@ You can send embed using [Message Curl Format](../CodeReferences/ref.message_cur
 For non-premium, this function will behave exactly as $sendMessage due to late discord block avoidance
 :::
 
-##### Function Difficultly: <Badge type="warning" text=" Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text=" Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="webhook" vertical="middle" /> <Badge type="tip" text="message" vertical="middle" /> 

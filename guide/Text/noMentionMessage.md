@@ -13,5 +13,5 @@ User's message without any mentions. (members, roles & channels)
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Mentions" vertical="middle" /> <Badge type="tip" text="Disable Mentions" vertical="middle" />

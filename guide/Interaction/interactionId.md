@@ -15,5 +15,5 @@ Except slash commands, since they don't have id.
 :::
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="interaction" vertical="middle" /> <Badge type="tip" text="id" vertical="middle" /> <Badge type="tip" text="button" vertical="middle" /> <Badge type="tip" text="menu" vertical="middle" /> <Badge type="tip" text="reply" vertical="middle" />

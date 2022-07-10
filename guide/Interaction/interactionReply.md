@@ -26,5 +26,5 @@ If you want a reply to a message use `$reply` or `{reply:messageId}` instead
 You can send embed using [Message Curl Format](../CodeReferences/ref.message_curl_format.md)
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="reply" vertical="middle" /> <Badge type="tip" text="ephemeral" vertical="middle" /> <Badge type="only you can see" text="ephemeral" vertical="middle" />

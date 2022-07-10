@@ -16,5 +16,5 @@ You can only use the durations, allowed by your boosting level! Please do not tr
 This Command supports Curl Arguments, a link to the page explaining it, will get added when done
 :::
 
-##### Function Difficultly: <Badge type="danger" text="Difficult" vertical="middle" /> 
+##### Function difficulty <Badge type="danger" text="Difficult" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="edit" vertical="middle" /> <Badge type="tip" text="Threads" vertical="middle" /> <Badge type="tip" text="Edit Threads" vertical="middle" />

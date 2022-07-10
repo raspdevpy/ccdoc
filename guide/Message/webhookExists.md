@@ -15,5 +15,5 @@ $webhookExists[webhookID;webhookToken]`
 </discord-messages>
 
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="webhook" vertical="middle" /> <Badge type="tip" text="exists" vertical="middle" />

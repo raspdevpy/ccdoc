@@ -11,5 +11,5 @@ Counting how many users reacted
 ![](https://cdn.discordapp.com/attachments/914682255346118687/940740236466618418/Screenshot_20220208194538.jpg)
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="get" vertical="middle" /> <Badge type="tip" text="reactions" vertical="middle" />

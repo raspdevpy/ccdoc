@@ -29,5 +29,5 @@ Gets info trom a thread.
 This Command supports Curl Arguments, a link to the page explaining it, will get added when done
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="Get functions/ get thread" vertical="middle" /> <Badge type="tip" text="Threads" vertical="middle" /> <Badge type="tip" text="Info Threads" vertical="middle" />

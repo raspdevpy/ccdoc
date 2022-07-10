@@ -16,5 +16,5 @@ changes the nickname from the member specified in the first parameter
 :::
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="change Nickname" vertical="middle" /> <Badge type="tip" text="nickname" vertical="middle" /> <Badge type="tip" text="server name" vertical="middle" /> <Badge type="tip" text="Names" vertical="middle" /> <Badge type="tip" text="modify name" vertical="middle" />

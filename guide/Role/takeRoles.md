@@ -26,5 +26,5 @@ Takes away a role
 [$toggleRoles](../Role/toggleRoles.md), to toggle roles from a user
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Take Roles" vertical="middle" /> <Badge type="tip" text="remove role" vertical="middle" /> <Badge type="tip" text="take role" vertical="middle" /> <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="role" vertical="middle" /> 

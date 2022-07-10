@@ -17,5 +17,5 @@ edits an existing button by `(Id/label/Emoji/url)`
 :::
 
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="button" vertical="middle" /> <Badge type="tip" text="edit" vertical="middle" /> <Badge type="tip" text="interaction" vertical="middle" /> 

@@ -15,5 +15,5 @@ Returns the ID of the category that the current/provided channel is in.
 
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="execChannelCategory" vertical="middle" /> <Badge type="tip" text="channelUsedCategory" vertical="middle" /> <Badge type="tip" text="command channel category" vertical="middle" />

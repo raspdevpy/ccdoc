@@ -28,5 +28,5 @@ This function, can cause your command to completely fail!
 Use [$message](../Guide/Text/message.md) to make sure you're safe with characters
 :::
 
-##### Function Difficultly: <Badge type="danger" text="Difficult" vertical="middle" /> 
+##### Function difficulty: <Badge type="danger" text="Difficult" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Replace" vertical="middle" /> <Badge type="tip" text="danger" vertical="middle" /> <Badge type="tip" text="un-escaped" vertical="middle" /> <Badge type="tip" text="message" vertical="middle" />

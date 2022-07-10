@@ -13,5 +13,5 @@ Read about [Expression](../../CodeReferences/ref.expression.md)
 You can send embed using [Message Curl Format](../../CodeReferences/ref.message_curl_format.md)
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Only If" vertical="middle" /> <Badge type="tip" text="Conditional restriction" vertical="middle" /> <Badge type="tip" text="Only Execute if" vertical="middle" />

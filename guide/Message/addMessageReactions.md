@@ -9,5 +9,5 @@ Reacts a message by id with multiples emojis
 - You can use the function curl format `{reactions}` to use inside functions like `$sendmessage`
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="add" vertical="middle" /> <Badge type="tip" text="message" vertical="middle" /> <Badge type="tip" text="reactions" vertical="middle" />

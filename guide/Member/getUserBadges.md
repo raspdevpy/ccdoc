@@ -17,5 +17,5 @@ This command is currently bugged,
 since Discord added Presence Intent
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="badges" vertical="middle" /> <Badge type="tip" text="user" vertical="middle" /> <Badge type="tip" text="discord badges" vertical="middle" /> 

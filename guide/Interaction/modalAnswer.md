@@ -9,5 +9,5 @@ Input Value is the input value used inside $modal function when sending the moda
 ::: tip
 This can only be used inside the [modal trigger](../Trigger/modal.md)
 :::
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="modalAnswer" vertical="middle" /> <Badge type="tip" text="modal" vertical="middle" /> <Badge type="tip" text="modal answer" vertical="middle" />

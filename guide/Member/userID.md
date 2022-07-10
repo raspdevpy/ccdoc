@@ -12,5 +12,5 @@ Returns a user ID by a given username.
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="userID" vertical="middle" /> <Badge type="tip" text="member's ID" vertical="middle" /> <Badge type="tip" text="User ID" vertical="middle" /> <Badge type="tip" text="username" vertical="middle" />

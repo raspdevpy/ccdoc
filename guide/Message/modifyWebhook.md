@@ -7,5 +7,5 @@ Modifies a webhook name/avatar by token and id
 
 ![](https://cdn.discordapp.com/attachments/914682255346118687/940753785867870278/Screenshot_20220208203936.jpg)
 :::
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="modify" vertical="middle" /> <Badge type="tip" text="webhook" vertical="middle" />

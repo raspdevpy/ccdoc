@@ -15,5 +15,5 @@ this sentence uppercases every first char of a word in a sentence
 </discord-messages>
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Replace Text" vertical="middle" /> <Badge type="tip" text="Case" vertical="middle" />

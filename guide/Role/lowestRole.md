@@ -16,5 +16,5 @@ returns the user's lowest role in this guild from the provided id or executor
 </discord-messages>
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Role" vertical="middle" /> <Badge type="tip" text="get lowest position" vertical="middle" /> <Badge type="tip" text="position" vertical="middle" />
