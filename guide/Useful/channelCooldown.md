@@ -24,5 +24,5 @@ Use this code, on the FIRST line of your code! If you do not, it will execute al
 :::
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Cooldown" vertical="middle" />  <Badge type="tip" text="Channel Cooldown" vertical="middle" />  <Badge type="tip" text="Raid Limit" vertical="middle" />  <Badge type="tip" text="Raid Limited" vertical="middle" /> 
