@@ -6,3 +6,4 @@ dist
 .gitpod.yml
 data.json
 build.sh
+ignore/*
