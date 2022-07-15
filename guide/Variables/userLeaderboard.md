@@ -4,14 +4,17 @@ Creates an user leaderboard from uservar
 #### Usage: `$userLeaderboard[variable;asc/desc (optional);{top}.- {username} - {value};list (optional, max=40);page (optional)]`
 
 Available Variables:
-* `{top}` : returns the rank number
-* `value}`: returns the value of the variable
-* `{id}` : returns the user id
-* `{mention}`: returns the user mention
-* `{username}`: returns the username
-* `{nickname}`: returns the nickname
-* `{tag}`: returns the tag like Mido#1234
-* `{discriminator}`: returns the discriminator like 1234
+| Variable | Description |
+| --- | ----------- |
+| {top} | returns the rank number |
+| {value} | returns the numerical value of the variable |
+| {raw_value} | returns the raw value in case it's not number |
+| {id} | returns the user id |
+| {mention} | returns the user mention |
+| {username} | returns the username |
+| {nickname} | returns the nickname |
+| {tag} | returns the tag like Mido#1234 |
+| {discriminator} | returns the discriminator like 1234 |
 
 Order:
 * `asc`: Rank is sorted from big to small numbers
