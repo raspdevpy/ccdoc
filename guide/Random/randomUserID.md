@@ -14,5 +14,5 @@ Returns a random user id from a user in the server
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="random" vertical="middle" /> <Badge type="tip" text="random user id" vertical="middle" /> <Badge type="tip" text="choose" vertical="middle" /> <Badge type="tip" text="return random user id" vertical="middle" />

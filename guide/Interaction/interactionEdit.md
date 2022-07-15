@@ -21,5 +21,5 @@ $interactionedit[Bye World!]
 You can send embed using [Message Curl Format](../CodeReferences/ref.message_curl_format.md)
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="interaction" vertical="middle" /> <Badge type="tip" text="edit" vertical="middle" /> <Badge type="tip" text="ephemeral" vertical="middle" /> <Badge type="tip" text="reply" vertical="middle" /> <Badge type="message" text="edit" vertical="middle" />

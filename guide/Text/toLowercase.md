@@ -15,5 +15,5 @@ this functions lowercases every  character
 </discord-messages>
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="case" vertical="middle" /> <Badge type="tip" text="Case" vertical="middle" />

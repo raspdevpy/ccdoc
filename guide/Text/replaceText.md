@@ -15,5 +15,5 @@ Replaces `A` with `X` in `TEXT`
 </discord-messages>
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Replace Text" vertical="middle" /> <Badge type="tip" text="Replace" vertical="middle" />

@@ -57,5 +57,5 @@ $endForEach
 ```
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Edit" vertical="middle" /> <Badge type="tip" text="Message" vertical="middle" /> <Badge type="tip" text="Channel" vertical="middle" /> <Badge type="tip" text="Messages" vertical="middle" /> <Badge type="tip" text="Modify message" vertical="middle" />

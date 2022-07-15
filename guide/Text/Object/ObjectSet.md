@@ -54,5 +54,5 @@ $objectSet[userdata;0;role;Moderator]
 ```
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="object" vertical="middle" /> <Badge type="tip" text="set" vertical="middle" /> 

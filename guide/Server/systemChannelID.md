@@ -13,4 +13,4 @@ Returns the system channel ID of this server (if any)
 This function is currently not functioning as expected!
 :::
 
-##### Function Difficultly: <Badge type="danger" text="NOT ADDED" vertical="middle" /> 
+##### Function difficulty: <Badge type="danger" text="NOT ADDED" vertical="middle" /> 

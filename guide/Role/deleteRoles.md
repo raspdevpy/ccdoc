@@ -16,5 +16,5 @@ This will delete the role with the id.
 [$deleteThreads](../Thread/deleteThreads.md), delete (a) thread(s)
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="role" vertical="middle" /> <Badge type="tip" text="delete" vertical="middle" /> <Badge type="tip" text="delete role" vertical="middle" /> <Badge type="tip" text="remove role" vertical="middle" /> 

@@ -12,5 +12,5 @@ Returns whether the channel is nsfw or not
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="not safe for work" vertical="middle" /> <Badge type="tip" text="Channel" vertical="middle" /> <Badge type="tip" text="NSFW" vertical="middle" />

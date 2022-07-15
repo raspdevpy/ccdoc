@@ -15,5 +15,5 @@ Returns a role name using their ID
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Role" vertical="middle" /> <Badge type="tip" text="get name" vertical="middle" /> <Badge type="tip" text="Find role name" vertical="middle" /> <Badge type="tip" text="name" vertical="middle" /> <Badge type="tip" text="roles" vertical="middle" />

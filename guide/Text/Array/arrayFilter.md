@@ -21,5 +21,5 @@ Only zero-cooldown functions are supported.
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="danger" text="Difficult" vertical="middle" /> 
+##### Function difficulty: <Badge type="danger" text="Difficult" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="filter" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" />

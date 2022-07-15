@@ -20,5 +20,5 @@ Presence intent needs to be enabled on Discord Dev Portal!
 [$authorID](../Member/authorID.md), to return the ID from the executor of the command!
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="status" vertical="middle" /> <Badge type="tip" text="member status" vertical="middle" /> <Badge type="tip" text="online" vertical="middle" /> <Badge type="tip" text="offline" vertical="middle" /> <Badge type="dnd" text="userID" vertical="middle" />

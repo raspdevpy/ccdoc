@@ -19,5 +19,5 @@ EXAMPLE:
 you can add`:thumbsup:`to your text. To display the emoji :thumbsup:
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Emoji" vertical="middle" /> <Badge type="tip" text="Custom Emojis" vertical="middle" /> <Badge type="tip" text="pictures" vertical="middle" /> <Badge type="tip" text="amazing" vertical="middle" />

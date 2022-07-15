@@ -13,5 +13,5 @@ Use this code, on the FIRST line of your code! If you do not, it will execute al
 You can send embed using [Message Curl Format](../../CodeReferences/ref.message_curl_format.md)
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Only If" vertical="middle" /> <Badge type="tip" text="role restrictions" vertical="middle" /> <Badge type="tip" text="Only Execute if" vertical="middle" />

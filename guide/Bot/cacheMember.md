@@ -10,5 +10,5 @@ not needed for function like:`$toggleRole,$giveRoles...`
 When someone executes a command, he/she/it will automatically get cached.
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Cache" vertical="middle" /> <Badge type="tip" text="Member" vertical="middle" /> <Badge type="tip" text="User" vertical="middle" /> 

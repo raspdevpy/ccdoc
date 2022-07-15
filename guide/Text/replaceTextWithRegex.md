@@ -15,5 +15,5 @@ Uses a regular expression to replace matching queries
 </discord-messages>
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Replace Text With Regex" vertical="middle" /> <Badge type="tip" text="Replace" vertical="middle" /> <Badge type="tip" text="regex" vertical="middle" />

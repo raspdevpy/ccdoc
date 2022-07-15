@@ -12,5 +12,5 @@ Multiplies (a) number(s) with each other
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Maths" vertical="middle" /> <Badge type="tip" text="Calculate" vertical="middle" /> <Badge type="tip" text="Multiply" vertical="middle" /> <Badge type="tip" text="*" vertical="middle" />

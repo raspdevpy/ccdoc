@@ -13,5 +13,5 @@ returns the guild's ownerID
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Owner ID" vertical="middle" /> <Badge type="tip" text="user ID" vertical="middle" />

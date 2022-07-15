@@ -30,5 +30,5 @@ You can send embed using [Message Curl Format](../CodeReferences/ref.message_cur
 [$sendMessage](../Text/sendMessage.md), to send a message to the channel used!
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Send" vertical="middle" /> <Badge type="tip" text="Message" vertical="middle" /> <Badge type="tip" text="DM" vertical="middle" /> <Badge type="tip" text="send DM Message" vertical="middle" />

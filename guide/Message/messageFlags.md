@@ -13,5 +13,5 @@ returns message flags from the message
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge Flags="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge Flags="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge Flags="tip" text="Flags" vertical="middle" /> <Badge Flags="tip" text="message" vertical="middle" />

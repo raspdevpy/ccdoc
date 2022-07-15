@@ -12,5 +12,5 @@ returns the id of the message sent
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge ID="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge ID="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge ID="tip" text="ID" vertical="middle" /> <Badge ID="tip" text="message" vertical="middle" />

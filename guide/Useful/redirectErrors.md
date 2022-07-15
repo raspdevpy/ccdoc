@@ -29,5 +29,5 @@ The way [$modifyChannelPerms](../Channel/modifyChannelPerms) shown here is **NOT
 Check the [$modifyChannelPerms](../Channel/modifyChannelPerms) for the correct usage
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="error" vertical="middle" />  <Badge type="tip" text="wrong usage" vertical="middle" />  <Badge type="tip" text="Trown error" vertical="middle" /> 

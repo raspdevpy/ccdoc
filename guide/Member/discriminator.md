@@ -25,5 +25,5 @@ Returns the tag of the user that executed the command, or a member specified in 
 [$userTag](../Member/userTag.md), to return the members username + discriminator
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="name" vertical="middle" /> <Badge type="tip" text="tag" vertical="middle" /> <Badge type="tip" text="discriminator" vertical="middle" /> <Badge type="tip" text="Names" vertical="middle" /> <Badge type="tip" text="userID" vertical="middle" />

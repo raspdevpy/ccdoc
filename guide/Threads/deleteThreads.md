@@ -6,5 +6,5 @@ Example: `$deleteThreads[809890890890000]`
 Don't forget to change the thread id
 
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="thread" vertical="middle" /> <Badge type="tip" text="delete" vertical="middle" />

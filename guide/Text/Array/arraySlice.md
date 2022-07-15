@@ -12,5 +12,5 @@ slices an array from x to y from `$textsplit`
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="slice" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" /> <Badge type="tip" text="keep" vertical="middle" />

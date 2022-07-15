@@ -126,5 +126,5 @@ The Example will only execute if the username is Lisa and their tag is 9999
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="if" vertical="middle" /> <Badge type="tip" text="condition" vertical="middle" /> <Badge type="case" text="decimals" vertical="middle" /> 

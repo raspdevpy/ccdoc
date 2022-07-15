@@ -12,5 +12,5 @@ Splits a text with `separator1`, then joins with `separator2` every `x` times, a
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="danger" text="Difficult" vertical="middle" /> 
+##### Function difficulty: <Badge type="danger" text="Difficult" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="textsplit" vertical="middle" /> <Badge type="tip" text="splice" vertical="middle" />

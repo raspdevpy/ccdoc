@@ -12,5 +12,5 @@ returns the index of the first occurrence of a value in an array from `$textspli
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="search" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" /> <Badge type="tip" text="array" vertical="middle" /> <Badge type="find" text="textsplit" vertical="middle" /> <Badge type="tip" text="index" vertical="middle" />

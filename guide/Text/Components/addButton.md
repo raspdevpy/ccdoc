@@ -26,5 +26,5 @@ red, green, blurple, grey, url
 * you can use normal unicode emoji,custom emojis,with id,url or $customEmoji[emojiname]
 :::
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="button" vertical="middle" /> <Badge type="tip" text="add" vertical="middle" /> <Badge type="tip" text="interaction" vertical="middle" /> <Badge type="tip" text="create" vertical="middle" />

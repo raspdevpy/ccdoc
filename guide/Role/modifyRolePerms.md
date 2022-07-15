@@ -29,5 +29,5 @@ Use `-` to deny a permission for a certain key;
 Use `/` to reset a permission for a certain key.
 :::
 
-##### Function Difficultly: <Badge type="danger" text="Difficult" vertical="middle" /> 
+##### Function difficulty: <Badge type="danger" text="Difficult" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Role" vertical="middle" /> <Badge type="tip" text="modify" vertical="middle" /> <Badge type="tip" text="modify role" vertical="middle" /> <Badge type="tip" text="edit role" vertical="middle" /> <Badge type="tip" text="change role perms" vertical="middle" /> 

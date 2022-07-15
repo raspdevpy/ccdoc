@@ -24,5 +24,5 @@ Sends the output of the code to the author in DM's, or to the specified userID's
 [$sendMessage](../Text/sendMessage.md), to send a message to the channel used!
 :::
 
-##### Function Difficultly: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Send" vertical="middle" /> <Badge type="tip" text="Message" vertical="middle" /> <Badge type="tip" text="DM" vertical="middle" /> <Badge type="tip" text="send DM Message" vertical="middle" />

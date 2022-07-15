@@ -16,5 +16,5 @@ Try this instead:
 ![](https://cdn.discordapp.com/attachments/914682255346118687/940731540541948014/Screenshot_20220208191111.jpg)
 
 :::
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="add" vertical="middle" /> <Badge type="tip" text="reactions" vertical="middle" />

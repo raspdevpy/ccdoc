@@ -12,5 +12,5 @@ Returns the amount of roles in your server/ guild!
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="role" vertical="middle" /> <Badge type="tip" text="count" vertical="middle" /> <Badge type="tip" text="amount of roles" vertical="middle" /> <Badge type="tip" text="return number" vertical="middle" />

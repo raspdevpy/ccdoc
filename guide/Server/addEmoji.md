@@ -9,5 +9,5 @@ Adds an emoji to this guild. If role IDs are given, the emoji will only be usabl
 	</discord-message>
 </discord-messages>
 
-##### Function Difficultly: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="add emoji" vertical="middle" /> <Badge type="tip" text="Emojis" vertical="middle" /> <Badge type="tip" text="Discord Emoji" vertical="middle" /> <Badge type="tip" text="Guild Emoji" vertical="middle" />
