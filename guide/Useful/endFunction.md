@@ -9,6 +9,8 @@ $endFunction
 ```
 
 ### Example:
-$function[Function Name;Paramaters..]\
-CODE\
+```bash
+$function[Function Name;Paramaters..]
+CODE
 $endFunction
+```

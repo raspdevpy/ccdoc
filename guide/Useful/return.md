@@ -10,6 +10,8 @@ $return[Return Value]
 ```
 
 ### Example:
-$function[add;num1;num2]\
-   $return[$math[$num1+$num2]]\
+```bash
+$function[add;num1;num2]
+   $return[$math[$num1+$num2]]
 $endFunction
+```

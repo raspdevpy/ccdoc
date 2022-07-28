@@ -10,5 +10,11 @@ $messageStickers[Index]
 ```
 
 ### Example:
-$messageStickers[1] // output: 992970796031017080\
-$messageStickers[10000] // output: undefined
+<discord-messages>
+          <discord-message :bot="false" role-color="#ffcc9a" author="Member">
+        !!exec $messageStickers[1]<br><br>
+          </discord-message>
+          <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+         992970796031017080
+        </discord-message>
+</discord-messages>

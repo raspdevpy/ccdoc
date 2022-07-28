@@ -9,4 +9,6 @@ $getTrigger[InfoType;Token (optional)]
 ```
 
 ### Example:
+```bash
 $getTrigger[name]
+```

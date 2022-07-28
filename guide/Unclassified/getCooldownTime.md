@@ -11,10 +11,12 @@ $getCooldownTime[time (i.e 10m);type (i.e server);id (in case of user id or chan
 ```
 
 ### Example:
-$if[$getCoolDownTime[10m;server]!=0]\
-    $interactionReply[You can't use this!]\
-    $stop\
-$else\
-    $servercooldown[10m]\
-$endIf\
+```bash
+$if[$getCoolDownTime[10m;server]!=0]
+    $interactionReply[You can't use this!]
+    $stop
+$else
+    $servercooldown[10m]
+$endIf
 ... REST OF CODE
+```
