@@ -9,6 +9,8 @@ $editEmbed[channel id (optional);message id (optional);New data (curl);Embed Num
 ```
 
 ### Example:
-$editEmbed[$channelID;$messageID;\
-{title:New title}\
+```bash
+$editEmbed[$channelID;$messageID;
+{title:New title}
 ]
+```

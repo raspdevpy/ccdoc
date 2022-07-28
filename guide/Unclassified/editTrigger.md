@@ -9,4 +9,6 @@ $editTrigger[InfoType;New value;Token (optional)]
 ```
 
 ### Example:
+```bash
 $editTrigger[name;Edited Name]
+```

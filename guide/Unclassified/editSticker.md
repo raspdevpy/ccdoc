@@ -10,4 +10,6 @@ $editSticker[Sticker ID;Info;New Value]
 ```
 
 ### Example:
+```bash
 $editSticker[992974663099629588;name;MyNewSmily]
+```
