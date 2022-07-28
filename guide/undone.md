@@ -1,4 +1,4 @@
-# Done (64.52%)
+# Done (68.96%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -84,6 +84,7 @@
 * ~~setUserVar~~
 * ~~addCmdReactions~~
 * ~~discriminator~~
+* ~~awaitMessage~~
 * ~~getServerVar~~
 * ~~mentioned~~
 * ~~addReactions~~
@@ -108,6 +109,7 @@
 * ~~deleteRoles~~
 * ~~rolePosition~~
 * ~~deletecommand~~
+* ~~attachment~~
 * ~~isValidInvite~~
 * ~~isBot~~
 * ~~getTextSplitLength~~
@@ -119,6 +121,7 @@
 * ~~editTextSplitElement~~
 * ~~removeTextSplitElement~~
 * ~~findTextSplitIndex~~
+* ~~authorAvatar~~
 * ~~creationDate~~
 * ~~userRoles~~
 * ~~status~~
@@ -239,7 +242,9 @@
 * ~~addButton~~
 * ~~removeButton~~
 * ~~function~~
+* ~~endFunction~~
 * ~~callFunction~~
+* ~~return~~
 * ~~dm~~
 * ~~sendDM~~
 * ~~modifyRole~~
@@ -265,6 +270,7 @@
 * ~~interactionEdit~~
 * ~~interactionDelete~~
 * ~~arrayJoin~~
+* ~~arrayPop~~
 * ~~arrayPush~~
 * ~~arrayShift~~
 * ~~arraySlice~~
@@ -287,25 +293,36 @@
 * ~~arrayShuffle~~
 * ~~arraySort~~
 * ~~getCommandOption~~
+* ~~ObjectRemove~~
+* ~~awaitMenu~~
+* ~~userVarRank~~
+* ~~menuId~~
+* ~~abs~~
+* ~~min~~
+* ~~max~~
+* ~~ceil~~
+* ~~floor~~
+* ~~arrayReverse~~
 * ~~modal~~
 * ~~modalID~~
 * ~~modalAnswer~~
+* ~~getChannelMessages~~
+* ~~arrayUnique~~
+* ~~modifyUserRoles~~
+* ~~arrayLoop~~
 
- # Not done (35.48%)
+ # Not done (31.04%)
 * [commandCode](./Unclassified/commandCode.md)
 * [numberSeparator](./Unclassified/numberSeparator.md)
-* [awaitMessage](./Unclassified/awaitMessage.md)
 * [editIn](./Unclassified/editIn.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [getServerInvite](./Unclassified/getServerInvite.md)
 * [checkContains](./Unclassified/checkContains.md)
-* [attachment](./Unclassified/attachment.md)
 * [emojiName](./Unclassified/emojiName.md)
 * [checkCondition](./Unclassified/checkCondition.md)
 * [blackListIDs](./Unclassified/blackListIDs.md)
 * [emojiID](./Unclassified/emojiID.md)
 * [emojiToString](./Unclassified/emojiToString.md)
-* [authorAvatar](./Unclassified/authorAvatar.md)
 * [argsCheck](./Unclassified/argsCheck.md)
 * [filterMessage](./Unclassified/filterMessage.md)
 * [getBotInvite](./Unclassified/getBotInvite.md)
@@ -383,8 +400,6 @@
 * [buttonIsDisabled](./Unclassified/buttonIsDisabled.md)
 * [endForEach](./Unclassified/endForEach.md)
 * [getObjectKeys](./Unclassified/getObjectKeys.md)
-* [endFunction](./Unclassified/endFunction.md)
-* [return](./Unclassified/return.md)
 * [moveUser](./Unclassified/moveUser.md)
 * [muteUser](./Unclassified/muteUser.md)
 * [botTier](./Unclassified/botTier.md)
@@ -393,10 +408,7 @@
 * [reply](./Unclassified/reply.md)
 * [eventChannelParent](./Unclassified/eventChannelParent.md)
 * [eventSelected](./Unclassified/eventSelected.md)
-* [arrayPop](./Unclassified/arrayPop.md)
 * [commandName](./Unclassified/commandName.md)
-* [ObjectRemove](./Unclassified/ObjectRemove.md)
-* [awaitMenu](./Unclassified/awaitMenu.md)
 * [getCooldownTime](./Unclassified/getCooldownTime.md)
 * [categoryChannels](./Unclassified/categoryChannels.md)
 * [botVersion](./Unclassified/botVersion.md)
@@ -422,33 +434,21 @@
 * [userBanner](./Unclassified/userBanner.md)
 * [editWebhookMessage](./Unclassified/editWebhookMessage.md)
 * [deleteWebhookMessage](./Unclassified/deleteWebhookMessage.md)
-* [userVarRank](./Unclassified/userVarRank.md)
 * [getMessageReactions](./Unclassified/getMessageReactions.md)
 * [getReactionCount](./Unclassified/getReactionCount.md)
 * [vcBefore](./Unclassified/vcBefore.md)
 * [vcAfter](./Unclassified/vcAfter.md)
-* [menuId](./Unclassified/menuId.md)
 * [timeoutBy](./Unclassified/timeoutBy.md)
 * [timeoutReason](./Unclassified/timeoutReason.md)
 * [timeoutAction](./Unclassified/timeoutAction.md)
 * [disableButtons](./Unclassified/disableButtons.md)
 * [enableButtons](./Unclassified/enableButtons.md)
-* [abs](./Unclassified/abs.md)
-* [min](./Unclassified/min.md)
-* [max](./Unclassified/max.md)
-* [ceil](./Unclassified/ceil.md)
-* [floor](./Unclassified/floor.md)
-* [arrayReverse](./Unclassified/arrayReverse.md)
 * [ignoreErrors](./Unclassified/ignoreErrors.md)
-* [getChannelMessages](./Unclassified/getChannelMessages.md)
-* [arrayUnique](./Unclassified/arrayUnique.md)
 * [eventOldNickname](./Unclassified/eventOldNickname.md)
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
-* [modifyUserRoles](./Unclassified/modifyUserRoles.md)
 * [messageStickers](./Unclassified/messageStickers.md)
 * [sticker](./Unclassified/sticker.md)
 * [deleteSticker](./Unclassified/deleteSticker.md)
 * [editSticker](./Unclassified/editSticker.md)
 * [serverStickers](./Unclassified/serverStickers.md)
-* [arrayLoop](./Unclassified/arrayLoop.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)
