@@ -1,4 +1,4 @@
-# Done (71.84%)
+# Done (72.73%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -62,6 +62,7 @@
 * ~~wait~~
 * ~~roleID~~
 * ~~sub~~
+* ~~numberSeparator~~
 * ~~hasRoles~~
 * ~~channelType~~
 * ~~allMembersCount~~
@@ -152,6 +153,7 @@
 * ~~repeatMessage~~
 * ~~randomUserID~~
 * ~~addObjectProperty~~
+* ~~createObject~~
 * ~~getObjectProperty~~
 * ~~randomChannelID~~
 * ~~randomMention~~
@@ -238,11 +240,13 @@
 * ~~formatDate~~
 * ~~humanizeMS~~
 * ~~concatTextSplit~~
+* ~~textSlice~~
 * ~~initVar~~
 * ~~deleteUserVar~~
 * ~~deleteServerVar~~
 * ~~deleteChannelVar~~
 * ~~deleteMessageVar~~
+* ~~uri~~
 * ~~regexMatch~~
 * ~~stop~~
 * ~~setTimeout~~
@@ -324,9 +328,8 @@
 * ~~modifyUserRoles~~
 * ~~arrayLoop~~
 
- # Not done (28.16%)
+ # Not done (27.27%)
 * [commandCode](./Unclassified/commandCode.md)
-* [numberSeparator](./Unclassified/numberSeparator.md)
 * [editIn](./Unclassified/editIn.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [getServerInvite](./Unclassified/getServerInvite.md)
@@ -340,7 +343,6 @@
 * [getEmbed](./Unclassified/getEmbed.md)
 * [cloneChannel](./Unclassified/cloneChannel.md)
 * [findServerChannel](./Unclassified/findServerChannel.md)
-* [createObject](./Unclassified/createObject.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [onlyIfMessageContains](./Unclassified/onlyIfMessageContains.md)
 * [removeSplitTextElement](./Unclassified/removeSplitTextElement.md)
@@ -388,11 +390,9 @@
 * [resolveEmojiID](./Unclassified/resolveEmojiID.md)
 * [filterMessageWords](./Unclassified/filterMessageWords.md)
 * [indexOf](./Unclassified/indexOf.md)
-* [textSlice](./Unclassified/textSlice.md)
 * [textTrim](./Unclassified/textTrim.md)
 * [mentionType](./Unclassified/mentionType.md)
 * [cropText](./Unclassified/cropText.md)
-* [uri](./Unclassified/uri.md)
 * [endTimeout](./Unclassified/endTimeout.md)
 * [parseTime](./Unclassified/parseTime.md)
 * [buttonID](./Unclassified/buttonID.md)
