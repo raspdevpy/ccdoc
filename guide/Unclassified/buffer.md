@@ -8,3 +8,7 @@ It return the input (useful for some rare cases)
 $buffer[input]
 ```
 
+### Example:
+```bash
+
+```

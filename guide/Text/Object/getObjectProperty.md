@@ -8,3 +8,6 @@ Gets a property value from given key.
 $getObjectProperty[key]
 ```
 
+::: danger
+This function got depreciated, use [$objectGet](./ObjectGet.md) instead 
+:::
