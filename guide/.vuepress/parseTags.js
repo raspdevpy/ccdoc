@@ -28,9 +28,9 @@ module.exports= (page)=>{
         content: page.contentRendered,
         tags: tags
     });
-    //console.log(jsonObj)
+    console.log(jsonObj.length)
 
-    if(jsonObj.length > 264) write('./data.json');
+    if(jsonObj.length > 500) write('./data.json');
     return tags;
 }
 
