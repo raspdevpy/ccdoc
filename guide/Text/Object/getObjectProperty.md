@@ -9,5 +9,5 @@ $getObjectProperty[key]
 ```
 
 ::: danger
-This function got depreciated, use [$objectGet](./ObjectGet.md) instead 
+This function got deprecated, use [$objectGet](./ObjectGet.md) instead 
 :::

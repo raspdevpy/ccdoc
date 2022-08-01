@@ -9,5 +9,5 @@ $addObjectProperty[key;value]
 ```
 
 ::: danger
-This function got depreciated, use [$objectSet](./ObjectSet.md) instead 
+This function got deprecated, use [$objectSet](./ObjectSet.md) instead 
 :::
