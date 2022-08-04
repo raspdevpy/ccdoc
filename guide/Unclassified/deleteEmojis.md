@@ -1,6 +1,6 @@
 # $deleteEmojis
 
-Delete an emoji or emojis from this server.
+Delete a custom emoji(s) from the server.
 
 ## Usage
 
