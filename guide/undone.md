@@ -1,4 +1,4 @@
-# Done (80.49%)
+# Done (84.48%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -107,12 +107,14 @@
 * ~~randomString~~
 * ~~getChannelVar~~
 * ~~setChannelVar~~
+* ~~checkContains~~
 * ~~deleteRoles~~
 * ~~rolePosition~~
 * ~~deletecommand~~
 * ~~attachment~~
 * ~~isValidInvite~~
 * ~~isBot~~
+* ~~emojiName~~
 * ~~getTextSplitLength~~
 * ~~createRole~~
 * ~~serverName~~
@@ -121,9 +123,11 @@
 * ~~clientID~~
 * ~~blackListRoleIDs~~
 * ~~blackListIDs~~
+* ~~emojiID~~
 * ~~editTextSplitElement~~
 * ~~removeTextSplitElement~~
 * ~~findTextSplitIndex~~
+* ~~emojiToString~~
 * ~~authorAvatar~~
 * ~~creationDate~~
 * ~~userRoles~~
@@ -164,7 +168,9 @@
 * ~~isValidObject~~
 * ~~usersInChannel~~
 * ~~modifyChannelPerms~~
+* ~~deleteEmojis~~
 * ~~serverEmojis~~
+* ~~emojiCount~~
 * ~~randomRoleID~~
 * ~~findRole~~
 * ~~isMuted~~
@@ -223,6 +229,7 @@
 * ~~timezone~~
 * ~~editChannel~~
 * ~~setRoles~~
+* ~~emojisFromMessage~~
 * ~~highestServerRole~~
 * ~~lowestServerRole~~
 * ~~lowestRole~~
@@ -230,14 +237,18 @@
 * ~~userRoleColor~~
 * ~~channelPermissionsFor~~
 * ~~usersTyping~~
+* ~~hasAnyPerm~~
 * ~~messagePublish~~
+* ~~hasAnyRole~~
 * ~~isTicket~~
 * ~~roleMembersCount~~
+* ~~emojiExists~~
 * ~~spliceTextJoin~~
 * ~~userReacted~~
 * ~~boostingSince~~
 * ~~abbreviate~~
 * ~~channel~~
+* ~~emoji~~
 * ~~guild~~
 * ~~msg~~
 * ~~role~~
@@ -304,6 +315,7 @@
 * ~~arrayFilter~~
 * ~~interactionEdit~~
 * ~~interactionDelete~~
+* ~~eventSelected~~
 * ~~arrayJoin~~
 * ~~arrayPop~~
 * ~~arrayPush~~
@@ -330,14 +342,19 @@
 * ~~getCommandOption~~
 * ~~ObjectRemove~~
 * ~~awaitMenu~~
+* ~~getCooldownTime~~
 * ~~categoryChannels~~
 * ~~botVersion~~
 * ~~disableMenu~~
 * ~~enableMenu~~
 * ~~removeMenu~~
 * ~~editMenu~~
+* ~~getTrigger~~
+* ~~editTrigger~~
+* ~~deleteTrigger~~
 * ~~buffer~~
 * ~~serverChannels~~
+* ~~clearCoolDown~~
 * ~~userVarRank~~
 * ~~vcBefore~~
 * ~~vcAfter~~
@@ -350,6 +367,7 @@
 * ~~ceil~~
 * ~~floor~~
 * ~~arrayReverse~~
+* ~~ignoreErrors~~
 * ~~modal~~
 * ~~modalID~~
 * ~~modalAnswer~~
@@ -363,15 +381,11 @@
 * ~~serverStickers~~
 * ~~arrayLoop~~
 
- # Not done (19.51%)
+ # Not done (15.52%)
 * [commandCode](./Unclassified/commandCode.md)
 * [editIn](./Unclassified/editIn.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [getServerInvite](./Unclassified/getServerInvite.md)
-* [checkContains](./Unclassified/checkContains.md)
-* [emojiName](./Unclassified/emojiName.md)
-* [emojiID](./Unclassified/emojiID.md)
-* [emojiToString](./Unclassified/emojiToString.md)
 * [filterMessage](./Unclassified/filterMessage.md)
 * [getBotInvite](./Unclassified/getBotInvite.md)
 * [getEmbed](./Unclassified/getEmbed.md)
@@ -382,8 +396,6 @@
 * [slowmode](./Unclassified/slowmode.md)
 * [usersBanned](./Unclassified/usersBanned.md)
 * [isBanned](./Unclassified/isBanned.md)
-* [deleteEmojis](./Unclassified/deleteEmojis.md)
-* [emojiCount](./Unclassified/emojiCount.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
 * [onlyForChannels](./Unclassified/onlyForChannels.md)
 * [maxRam](./Unclassified/maxRam.md)
@@ -401,18 +413,13 @@
 * [findSpecialChars](./Unclassified/findSpecialChars.md)
 * [findChars](./Unclassified/findChars.md)
 * [stringStartsWith](./Unclassified/stringStartsWith.md)
-* [emojisFromMessage](./Unclassified/emojisFromMessage.md)
-* [hasAnyPerm](./Unclassified/hasAnyPerm.md)
-* [hasAnyRole](./Unclassified/hasAnyRole.md)
 * [getChannelSlowmode](./Unclassified/getChannelSlowmode.md)
-* [emojiExists](./Unclassified/emojiExists.md)
 * [removeContains](./Unclassified/removeContains.md)
 * [stringEndsWith](./Unclassified/stringEndsWith.md)
 * [disableRoleMentions](./Unclassified/disableRoleMentions.md)
 * [disableChannelMentions](./Unclassified/disableChannelMentions.md)
 * [disableEveryoneMentions](./Unclassified/disableEveryoneMentions.md)
 * [enableEveryoneMentions](./Unclassified/enableEveryoneMentions.md)
-* [emoji](./Unclassified/emoji.md)
 * [resolveEmojiID](./Unclassified/resolveEmojiID.md)
 * [filterMessageWords](./Unclassified/filterMessageWords.md)
 * [mentionType](./Unclassified/mentionType.md)
@@ -424,20 +431,14 @@
 * [transcriptChannel](./Unclassified/transcriptChannel.md)
 * [reply](./Unclassified/reply.md)
 * [eventChannelParent](./Unclassified/eventChannelParent.md)
-* [eventSelected](./Unclassified/eventSelected.md)
 * [commandName](./Unclassified/commandName.md)
-* [getCooldownTime](./Unclassified/getCooldownTime.md)
 * [editEmbed](./Unclassified/editEmbed.md)
 * [userSetTimeout](./Unclassified/userSetTimeout.md)
 * [userRemoveTimeout](./Unclassified/userRemoveTimeout.md)
 * [userGetTimeout](./Unclassified/userGetTimeout.md)
-* [getTrigger](./Unclassified/getTrigger.md)
-* [editTrigger](./Unclassified/editTrigger.md)
-* [deleteTrigger](./Unclassified/deleteTrigger.md)
 * [dateToTime](./Unclassified/dateToTime.md)
 * [timeToDate](./Unclassified/timeToDate.md)
 * [roleIcon](./Unclassified/roleIcon.md)
-* [clearCoolDown](./Unclassified/clearCoolDown.md)
 * [membersWithStatus](./Unclassified/membersWithStatus.md)
 * [textShuffle](./Unclassified/textShuffle.md)
 * [userBanner](./Unclassified/userBanner.md)
@@ -448,7 +449,6 @@
 * [timeoutBy](./Unclassified/timeoutBy.md)
 * [timeoutReason](./Unclassified/timeoutReason.md)
 * [timeoutAction](./Unclassified/timeoutAction.md)
-* [ignoreErrors](./Unclassified/ignoreErrors.md)
 * [eventOldNickname](./Unclassified/eventOldNickname.md)
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)

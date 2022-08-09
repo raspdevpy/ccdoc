@@ -1,6 +1,8 @@
 # $editTrigger
 
-Edit a command information like `name` or `type`
+Edit a command information like `name` or `type`\
+\
+Editable types: name, runonlyin, ignorerole,  type, trigger, channelused, minperms
 
 ## Usage
 
