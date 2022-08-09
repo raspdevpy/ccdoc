@@ -14,7 +14,7 @@ This [list](../CodeReferences/ref.permissions_list.md) of all valid channel type
 
 ::: tip Related Functions
 
-[$createChannel](../Channel/createChannel.md), create a role
+[$createChannel](../Channel/createChannel.md), creates a channel
 :::
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 

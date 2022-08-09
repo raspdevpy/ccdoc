@@ -9,6 +9,10 @@ Only if user has the given permssions,they will be able to execute this command
 Use this code, on the FIRST line of your code! If you do not, it will execute all code before this line and not after!
 :::
 
+::: tip Permissions
+Check this [list](../../CodeReferences/ref.permissions_list.md) to view all permissions names
+:::
+
 ::: tip Note
 You can send embed using [Message Curl Format](../../CodeReferences/ref.message_curl_format.md)
 :::
