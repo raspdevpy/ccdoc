@@ -1,4 +1,4 @@
-# Done (84.48%)
+# Done (84.21%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -380,8 +380,11 @@
 * ~~editSticker~~
 * ~~serverStickers~~
 * ~~arrayLoop~~
+* ~~guildEvents~~
+* ~~getEventInfo~~
+* ~~getEventUsers~~
 
- # Not done (15.52%)
+ # Not done (15.79%)
 * [commandCode](./Unclassified/commandCode.md)
 * [editIn](./Unclassified/editIn.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
@@ -452,3 +455,5 @@
 * [eventOldNickname](./Unclassified/eventOldNickname.md)
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)
+* [eventExists](./Unclassified/eventExists.md)
+* [deleteEvent](./Unclassified/deleteEvent.md)

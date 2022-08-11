@@ -45,7 +45,7 @@ module.exports= {
 	getSideBar('Text','Text Functions'),
 	getSideBar('Text/Condition','Condition Functions'),
 	getSideBar('Stickers','Sticker Functions'),
-
+	getSideBar('Events','Event Functions'),
 	getSideBar('Text/Embed','Embed functions'),
 	getSideBar('Text/Components','Button Functions'),
 	getSideBar('Text/Math','Math Functions'),
