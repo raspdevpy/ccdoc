@@ -1,8 +1,9 @@
 # $guildRoles
 Returns all guild roles there names/ids/mentions.
 
+amount can control how many roles you want to return
 #### Usage: 
-`$guildRoles[id/name/mention (optional, defualt=name)]`
+`$guildRoles[id/name/mention (optional, defualt=name);amount]`
 
 
 <br/>
