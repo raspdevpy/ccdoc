@@ -1,4 +1,4 @@
-# Done (84.21%)
+# Done (84.43%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -338,7 +338,6 @@
 * ~~interactionId~~
 * ~~removeButtons~~
 * ~~arrayShuffle~~
-* ~~arraySort~~
 * ~~getCommandOption~~
 * ~~ObjectRemove~~
 * ~~awaitMenu~~
@@ -383,8 +382,10 @@
 * ~~guildEvents~~
 * ~~getEventInfo~~
 * ~~getEventUsers~~
+* ~~eventExists~~
+* ~~deleteEvent~~
 
- # Not done (15.79%)
+ # Not done (15.57%)
 * [commandCode](./Unclassified/commandCode.md)
 * [editIn](./Unclassified/editIn.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
@@ -434,6 +435,7 @@
 * [transcriptChannel](./Unclassified/transcriptChannel.md)
 * [reply](./Unclassified/reply.md)
 * [eventChannelParent](./Unclassified/eventChannelParent.md)
+* [arraySort](./Unclassified/arraySort.md)
 * [commandName](./Unclassified/commandName.md)
 * [editEmbed](./Unclassified/editEmbed.md)
 * [userSetTimeout](./Unclassified/userSetTimeout.md)
@@ -455,5 +457,3 @@
 * [eventOldNickname](./Unclassified/eventOldNickname.md)
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)
-* [eventExists](./Unclassified/eventExists.md)
-* [deleteEvent](./Unclassified/deleteEvent.md)
