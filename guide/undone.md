@@ -1,4 +1,4 @@
-# Done (84.90%)
+# Done (87.75%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -141,6 +141,7 @@
 * ~~onlyNSFW~~
 * ~~getRoleColor~~
 * ~~getBotInvite~~
+* ~~getEmbed~~
 * ~~messageAttachment~~
 * ~~onlyBotPerms~~
 * ~~cloneChannel~~
@@ -167,7 +168,9 @@
 * ~~roundTenth~~
 * ~~colorRole~~
 * ~~isValidObject~~
+* ~~removeSplitTextElement~~
 * ~~usersInChannel~~
+* ~~isBanned~~
 * ~~modifyChannelPerms~~
 * ~~deleteEmojis~~
 * ~~serverEmojis~~
@@ -181,10 +184,12 @@
 * ~~clearReactions~~
 * ~~getReactions~~
 * ~~onlyForCategories~~
+* ~~onlyForChannels~~
 * ~~serverRegion~~
 * ~~messageType~~
 * ~~modulo~~
 * ~~cpu~~
+* ~~maxRam~~
 * ~~channelTopic~~
 * ~~serverBanner~~
 * ~~serverBoostLevel~~
@@ -193,6 +198,7 @@
 * ~~isMentioned~~
 * ~~sendWebhook~~
 * ~~deleteWebhook~~
+* ~~pinMessage~~
 * ~~channelCategoryID~~
 * ~~addMessageReactions~~
 * ~~advancedTextSplit~~
@@ -208,6 +214,7 @@
 * ~~botPing~~
 * ~~messageID~~
 * ~~error~~
+* ~~executionTime~~
 * ~~if~~
 * ~~elseif~~
 * ~~endelseif~~
@@ -222,6 +229,7 @@
 * ~~hour~~
 * ~~minute~~
 * ~~botOwnerID~~
+* ~~stringStartsWith~~
 * ~~deleteMessage~~
 * ~~messageWebhookID~~
 * ~~messageFlags~~
@@ -245,6 +253,7 @@
 * ~~roleMembersCount~~
 * ~~emojiExists~~
 * ~~spliceTextJoin~~
+* ~~stringEndsWith~~
 * ~~userReacted~~
 * ~~boostingSince~~
 * ~~abbreviate~~
@@ -274,6 +283,7 @@
 * ~~regexMatch~~
 * ~~stop~~
 * ~~setTimeout~~
+* ~~parseTime~~
 * ~~button~~
 * ~~buttonID~~
 * ~~buttonEmoji~~
@@ -292,6 +302,7 @@
 * ~~return~~
 * ~~dm~~
 * ~~sendDM~~
+* ~~moveUser~~
 * ~~modifyRole~~
 * ~~disableButton~~
 * ~~editButton~~
@@ -356,6 +367,8 @@
 * ~~buffer~~
 * ~~serverChannels~~
 * ~~clearCoolDown~~
+* ~~textShuffle~~
+* ~~userBanner~~
 * ~~userVarRank~~
 * ~~vcBefore~~
 * ~~vcAfter~~
@@ -388,40 +401,31 @@
 * ~~deleteEvent~~
 * ~~arrayClear~~
 
- # Not done (15.10%)
+ # Not done (12.25%)
 * [commandCode](./Unclassified/commandCode.md)
 * [editIn](./Unclassified/editIn.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [getServerInvite](./Unclassified/getServerInvite.md)
 * [filterMessage](./Unclassified/filterMessage.md)
-* [getEmbed](./Unclassified/getEmbed.md)
 * [findServerChannel](./Unclassified/findServerChannel.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [onlyIfMessageContains](./Unclassified/onlyIfMessageContains.md)
-* [removeSplitTextElement](./Unclassified/removeSplitTextElement.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [usersBanned](./Unclassified/usersBanned.md)
-* [isBanned](./Unclassified/isBanned.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
-* [onlyForChannels](./Unclassified/onlyForChannels.md)
-* [maxRam](./Unclassified/maxRam.md)
 * [createWebhook](./Unclassified/createWebhook.md)
 * [referenceChannelID](./Unclassified/referenceChannelID.md)
 * [referenceMessageID](./Unclassified/referenceMessageID.md)
 * [setChannelTopic](./Unclassified/setChannelTopic.md)
-* [pinMessage](./Unclassified/pinMessage.md)
 * [unpinMessage](./Unclassified/unpinMessage.md)
 * [getInviteInfo](./Unclassified/getInviteInfo.md)
 * [isUserDMEnabled](./Unclassified/isUserDMEnabled.md)
 * [sendCrosspostingMessage](./Unclassified/sendCrosspostingMessage.md)
-* [executionTime](./Unclassified/executionTime.md)
 * [findNumbers](./Unclassified/findNumbers.md)
 * [findSpecialChars](./Unclassified/findSpecialChars.md)
 * [findChars](./Unclassified/findChars.md)
-* [stringStartsWith](./Unclassified/stringStartsWith.md)
 * [getChannelSlowmode](./Unclassified/getChannelSlowmode.md)
 * [removeContains](./Unclassified/removeContains.md)
-* [stringEndsWith](./Unclassified/stringEndsWith.md)
 * [disableRoleMentions](./Unclassified/disableRoleMentions.md)
 * [disableChannelMentions](./Unclassified/disableChannelMentions.md)
 * [disableEveryoneMentions](./Unclassified/disableEveryoneMentions.md)
@@ -430,9 +434,7 @@
 * [filterMessageWords](./Unclassified/filterMessageWords.md)
 * [mentionType](./Unclassified/mentionType.md)
 * [endTimeout](./Unclassified/endTimeout.md)
-* [parseTime](./Unclassified/parseTime.md)
 * [endForEach](./Unclassified/endForEach.md)
-* [moveUser](./Unclassified/moveUser.md)
 * [muteUser](./Unclassified/muteUser.md)
 * [transcriptChannel](./Unclassified/transcriptChannel.md)
 * [reply](./Unclassified/reply.md)
@@ -446,8 +448,6 @@
 * [timeToDate](./Unclassified/timeToDate.md)
 * [roleIcon](./Unclassified/roleIcon.md)
 * [membersWithStatus](./Unclassified/membersWithStatus.md)
-* [textShuffle](./Unclassified/textShuffle.md)
-* [userBanner](./Unclassified/userBanner.md)
 * [editWebhookMessage](./Unclassified/editWebhookMessage.md)
 * [deleteWebhookMessage](./Unclassified/deleteWebhookMessage.md)
 * [getMessageReactions](./Unclassified/getMessageReactions.md)

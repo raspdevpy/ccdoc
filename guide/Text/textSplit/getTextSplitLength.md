@@ -16,5 +16,9 @@ Returns the amount of objects created by [$textSplit](.../textSplit/textSplit.md
 	</discord-message>
 </discord-messages>
 
+::: danger
+This function got deprecated, use [$arrayLength](./../Array/arrayLength.md) instead 
+:::
+
 ##### Function difficulty <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="split text" vertical="middle" /> <Badge type="tip" text="Length" vertical="middle" />

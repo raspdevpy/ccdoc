@@ -1,5 +1,5 @@
 # $textSplit
-splits text into pieces! To access them use: [$splitText](.../textSplit/splitText.md) or array functions
+splits text into pieces! To access them use: [$arrayGet](./../Array/arrayGet.md) or array functions
 
 
 #### Usage: `$textSplit[text;separator(optional, default = ,)]`
