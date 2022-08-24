@@ -1,4 +1,4 @@
-# Done (84.46%)
+# Done (84.90%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -140,6 +140,7 @@
 * ~~suppressErrors~~
 * ~~onlyNSFW~~
 * ~~getRoleColor~~
+* ~~getBotInvite~~
 * ~~messageAttachment~~
 * ~~onlyBotPerms~~
 * ~~cloneChannel~~
@@ -385,14 +386,14 @@
 * ~~getEventUsers~~
 * ~~eventExists~~
 * ~~deleteEvent~~
+* ~~arrayClear~~
 
- # Not done (15.54%)
+ # Not done (15.10%)
 * [commandCode](./Unclassified/commandCode.md)
 * [editIn](./Unclassified/editIn.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [getServerInvite](./Unclassified/getServerInvite.md)
 * [filterMessage](./Unclassified/filterMessage.md)
-* [getBotInvite](./Unclassified/getBotInvite.md)
 * [getEmbed](./Unclassified/getEmbed.md)
 * [findServerChannel](./Unclassified/findServerChannel.md)
 * [getMessage](./Unclassified/getMessage.md)
@@ -457,4 +458,3 @@
 * [eventOldNickname](./Unclassified/eventOldNickname.md)
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)
-* [arrayClear](./Unclassified/arrayClear.md)
