@@ -1,4 +1,4 @@
-# Done (89.50%)
+# Done (89.47%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -278,7 +278,6 @@
 * ~~indexOf~~
 * ~~textSlice~~
 * ~~textTrim~~
-* ~~cropText~~
 * ~~initVar~~
 * ~~deleteUserVar~~
 * ~~deleteServerVar~~
@@ -409,7 +408,7 @@
 * ~~deleteEvent~~
 * ~~arrayClear~~
 
- # Not done (10.50%)
+ # Not done (10.53%)
 * [commandCode](./Unclassified/commandCode.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [filterMessage](./Unclassified/filterMessage.md)
