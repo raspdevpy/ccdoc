@@ -376,8 +376,8 @@
 * ~~disableButtons~~
 * ~~enableButtons~~
 * ~~abs~~
-* ~~min~~
-* ~~max~~
+* ~~mathMin~~
+* ~~mathMax~~
 * ~~ceil~~
 * ~~floor~~
 * ~~arrayReverse~~
