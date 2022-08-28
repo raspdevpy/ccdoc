@@ -19,5 +19,5 @@ $createObject[object string]
 </discord-messages>
 
 ::: danger
-This function got deprecated, use [$objectCreate](./objectCreate.md) instead 
+This function got deprecated, use [$ObjectCreate](./ObjectCreate.md) instead 
 :::

@@ -4,7 +4,7 @@
 Read our terms of service here, you will also find some information on data use & Privacy
 
 ### Basic Terms
-Check [this](../Guide/policy.md) for basic information.
+Check [this](../Guide/3.policy.md) for basic information.
 
 ## Privacy Policy
 Here you can find our Privacy Policy

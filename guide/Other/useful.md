@@ -47,4 +47,4 @@ Now you understand the basic coding components, now we need to choose our trigge
 
 ### Fantastic, you made it through the hardest learning curve... Let's proceed
 
-Now we can create our very first command! Let's go to [this](../Guide/create.md) page
+Now we can create our very first command! Let's go to [this](../Guide/1.create.md) page

@@ -23,13 +23,13 @@ We recommend you leave all the permissions as-is, so you don't face any issues w
 
 ## Creating Custom Commands
 
-#### Follow [this link](../Guide/create.md) to create your first Custom Command!
+#### Follow [this link](../Guide/1.create.md) to create your first Custom Command!
 
 
 <!-- ### Welcomer
 Do you want to send a message, when a member joined your server? Then this one is the best for you! 
 
-You haven't got much options, so if you want to do other things as well, when a member joins, then choose [Custom Commands](../Guide/create.md)
+You haven't got much options, so if you want to do other things as well, when a member joins, then choose [Custom Commands](../Guide/1.create.md)
 
 #### For setting up the welcomer, follow [this link](../Guide/welcomer.md)
 
