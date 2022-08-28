@@ -1,4 +1,4 @@
-# Done (87.75%)
+# Done (89.50%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -91,6 +91,7 @@
 * ~~addReactions~~
 * ~~nickname~~
 * ~~footer~~
+* ~~editIn~~
 * ~~useChannel~~
 * ~~isBoosting~~
 * ~~mentionedChannels~~
@@ -105,6 +106,7 @@
 * ~~serverFeatures~~
 * ~~highestRole~~
 * ~~randomString~~
+* ~~getServerInvite~~
 * ~~getChannelVar~~
 * ~~setChannelVar~~
 * ~~checkContains~~
@@ -170,6 +172,7 @@
 * ~~isValidObject~~
 * ~~removeSplitTextElement~~
 * ~~usersInChannel~~
+* ~~usersBanned~~
 * ~~isBanned~~
 * ~~modifyChannelPerms~~
 * ~~deleteEmojis~~
@@ -197,8 +200,10 @@
 * ~~closeTicket~~
 * ~~isMentioned~~
 * ~~sendWebhook~~
+* ~~setChannelTopic~~
 * ~~deleteWebhook~~
 * ~~pinMessage~~
+* ~~unpinMessage~~
 * ~~channelCategoryID~~
 * ~~addMessageReactions~~
 * ~~advancedTextSplit~~
@@ -292,6 +297,7 @@
 * ~~buttonStyle~~
 * ~~buttonIsDisabled~~
 * ~~forEach~~
+* ~~endForEach~~
 * ~~seq~~
 * ~~addButton~~
 * ~~removeButton~~
@@ -315,6 +321,7 @@
 * ~~spread~~
 * ~~toggleRoles~~
 * ~~awaitButton~~
+* ~~reply~~
 * ~~eventChannelID~~
 * ~~createThread~~
 * ~~thread~~
@@ -370,6 +377,7 @@
 * ~~textShuffle~~
 * ~~userBanner~~
 * ~~userVarRank~~
+* ~~getReactionCount~~
 * ~~vcBefore~~
 * ~~vcAfter~~
 * ~~menuId~~
@@ -401,23 +409,18 @@
 * ~~deleteEvent~~
 * ~~arrayClear~~
 
- # Not done (12.25%)
+ # Not done (10.50%)
 * [commandCode](./Unclassified/commandCode.md)
-* [editIn](./Unclassified/editIn.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
-* [getServerInvite](./Unclassified/getServerInvite.md)
 * [filterMessage](./Unclassified/filterMessage.md)
 * [findServerChannel](./Unclassified/findServerChannel.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [onlyIfMessageContains](./Unclassified/onlyIfMessageContains.md)
 * [slowmode](./Unclassified/slowmode.md)
-* [usersBanned](./Unclassified/usersBanned.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
 * [createWebhook](./Unclassified/createWebhook.md)
 * [referenceChannelID](./Unclassified/referenceChannelID.md)
 * [referenceMessageID](./Unclassified/referenceMessageID.md)
-* [setChannelTopic](./Unclassified/setChannelTopic.md)
-* [unpinMessage](./Unclassified/unpinMessage.md)
 * [getInviteInfo](./Unclassified/getInviteInfo.md)
 * [isUserDMEnabled](./Unclassified/isUserDMEnabled.md)
 * [sendCrosspostingMessage](./Unclassified/sendCrosspostingMessage.md)
@@ -434,10 +437,8 @@
 * [filterMessageWords](./Unclassified/filterMessageWords.md)
 * [mentionType](./Unclassified/mentionType.md)
 * [endTimeout](./Unclassified/endTimeout.md)
-* [endForEach](./Unclassified/endForEach.md)
 * [muteUser](./Unclassified/muteUser.md)
 * [transcriptChannel](./Unclassified/transcriptChannel.md)
-* [reply](./Unclassified/reply.md)
 * [eventChannelParent](./Unclassified/eventChannelParent.md)
 * [commandName](./Unclassified/commandName.md)
 * [editEmbed](./Unclassified/editEmbed.md)
@@ -451,7 +452,6 @@
 * [editWebhookMessage](./Unclassified/editWebhookMessage.md)
 * [deleteWebhookMessage](./Unclassified/deleteWebhookMessage.md)
 * [getMessageReactions](./Unclassified/getMessageReactions.md)
-* [getReactionCount](./Unclassified/getReactionCount.md)
 * [timeoutBy](./Unclassified/timeoutBy.md)
 * [timeoutReason](./Unclassified/timeoutReason.md)
 * [timeoutAction](./Unclassified/timeoutAction.md)

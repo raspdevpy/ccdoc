@@ -8,3 +8,7 @@ Sets the topic of a channel with given ID
 $setChannelTopic[channelID;topic]
 ```
 
+### Example:
+```bash
+$setChannelTopic[$channelID;This channel will be used for memes!]
+```
