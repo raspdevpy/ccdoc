@@ -1,6 +1,6 @@
 # $getMessage
 
-Gets information of given message ID.
+Gets information from provided message ID.
 
 ## Usage
 
