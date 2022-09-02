@@ -6,7 +6,7 @@ depends if you want to sort numerically or alphabetically or occurrences
 ## Usage
 
 ```bash
-$arraySort[Ascending (yes/no, default is no);Sort Type]
+$arraySort[Ascending (yes/no, default is no);Sort Type;array name (optional)]
 ```
 
 ### Sort Types:

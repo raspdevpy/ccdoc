@@ -1,16 +1,19 @@
 # $arrayUnshift
-adds an element to the beginning of an array from `$textsplit`
 
-#### Usage: `$arrayUnshift[value]`
-<br/>
+To add an element to the array (from the first)
+
+## Usage
+
+```bash
+$arrayUnshift[value;array name (optional)]
+```
+
+### Example:
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $textsplit[Mika Mido Wiki; ] {{ '\n' }} $arrayUnshift[Rake] {{ '\n' }} $arrayjoin[ ]​
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		Rake Mika Mido Wiki
-	</discord-message>
+          <discord-message :bot="false" role-color="#ffcc9a" author="Member">
+        !!exec $arrayUnshift[Mido]<br>$arrayUnshift[Rake]<br>$arrayUnshift[Azz]<br>$arrayJoin[/]<br><br>
+          </discord-message>
+          <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+        Azz/Rake/Mido
+        </discord-message>
 </discord-messages>
-
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="unshift" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" /> <Badge type="tip" text="add" vertical="middle" />

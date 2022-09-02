@@ -5,7 +5,7 @@ To reverse the array
 ## Usage
 
 ```bash
-$arrayReverse
+$arrayReverse[array name (optional)]
 ```
 
 ### Example:

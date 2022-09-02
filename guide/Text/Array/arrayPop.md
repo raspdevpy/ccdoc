@@ -5,7 +5,7 @@ To remove and return the last element in the array
 ## Usage
 
 ```bash
-$arrayPop
+$arrayPop[array name (optional)]
 ```
 
 ### Example:

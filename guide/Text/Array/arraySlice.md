@@ -1,16 +1,19 @@
 # $arraySlice
-slices an array from x to y from `$textsplit`
 
-#### Usage: `$arraySlice[from;to]`
-<br/>
+To keep only a part of the array
+
+## Usage
+
+```bash
+$arraySlice[from;to;array name (optional)]
+```
+
+### Example:
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $textsplit[Mika Wiki Mido Rake; ] {{ '\n' }} $arraySlice[2;3] {{ '\n' }} $arrayJoin[ ]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		Wiki Mido
-	</discord-message>
+          <discord-message :bot="false" role-color="#ffcc9a" author="Member">
+        !!exec $textSplit[Mido Rake Azz Finkz; ]<br>$arraySlice[2;3]<br>$arrayJoin[ ]<br><br>
+          </discord-message>
+          <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+        Rake Azz
+        </discord-message>
 </discord-messages>
-
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="slice" vertical="middle" /> <Badge type="tip" text="textsplit" vertical="middle" /> <Badge type="tip" text="keep" vertical="middle" />

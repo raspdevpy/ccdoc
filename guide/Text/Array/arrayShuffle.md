@@ -1,16 +1,19 @@
 # $arrayShuffle
-shuffles the array from `$textsplit`
 
-#### Usage: `$arrayShuffle`
-<br/>
+To shuffle an existing array
+
+## Usage
+
+```bash
+$arrayShuffle[array name (optional)]
+```
+
+### Example:
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $textsplit[Mika Rake Wiki Mido; ]{{ '\n' }} $arrayshuffle {{ '\n' }} $arrayjoin[ ]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		Mido Rake Mika Wiki
-	</discord-message>
+          <discord-message :bot="false" role-color="#ffcc9a" author="Member">
+        !!exec $textSplit[Rake/Azz/Mido;/]<br>$arrayShuffe<br>$arrayJoin[/]<br><br>
+          </discord-message>
+          <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+        Azz/Mido/Rake
+        </discord-message>
 </discord-messages>
-
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="textsplit" vertical="middle" /> <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="shuffle" vertical="middle" /> <Badge type="tip" text="random" vertical="middle" />
