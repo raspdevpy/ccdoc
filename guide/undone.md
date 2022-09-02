@@ -407,6 +407,7 @@
 * ~~eventExists~~
 * ~~deleteEvent~~
 * ~~arrayClear~~
+* ~~muteUser~~
 
  # Not done (10.53%)
 * [commandCode](./Unclassified/commandCode.md)
@@ -436,7 +437,6 @@
 * [filterMessageWords](./Unclassified/filterMessageWords.md)
 * [mentionType](./Unclassified/mentionType.md)
 * [endTimeout](./Unclassified/endTimeout.md)
-* [muteUser](./Unclassified/muteUser.md)
 * [transcriptChannel](./Unclassified/transcriptChannel.md)
 * [eventChannelParent](./Unclassified/eventChannelParent.md)
 * [commandName](./Unclassified/commandName.md)
