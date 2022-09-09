@@ -1,4 +1,4 @@
-# Done (89.47%)
+# Done (89.28%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -408,7 +408,7 @@
 * ~~deleteEvent~~
 * ~~arrayClear~~
 
- # Not done (10.53%)
+ # Not done (10.72%)
 * [commandCode](./Unclassified/commandCode.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [filterMessage](./Unclassified/filterMessage.md)
@@ -439,6 +439,7 @@
 * [muteUser](./Unclassified/muteUser.md)
 * [transcriptChannel](./Unclassified/transcriptChannel.md)
 * [eventChannelParent](./Unclassified/eventChannelParent.md)
+* [arrayCount](./Unclassified/arrayCount.md)
 * [commandName](./Unclassified/commandName.md)
 * [editEmbed](./Unclassified/editEmbed.md)
 * [userSetTimeout](./Unclassified/userSetTimeout.md)
