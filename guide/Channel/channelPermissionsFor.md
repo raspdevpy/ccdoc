@@ -1,11 +1,11 @@
 # $channelPermissionsFor
 
-Returns the permissions for this user in a channel
+Returns the permissions for this user/role in a channel
 
 ## Usage
 
 ```bash
-$channelPermissionsFor[userID] or $channelPermissionsFor[channelID;userID]
+$channelPermissionsFor[userID/role id] or $channelPermissionsFor[channelID;userID/role id]
 ```
 
 ### Example:
