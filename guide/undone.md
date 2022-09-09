@@ -1,4 +1,4 @@
-# Done (89.28%)
+# Done (89.72%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -309,6 +309,7 @@
 * ~~sendDM~~
 * ~~moveUser~~
 * ~~modifyRole~~
+* ~~muteUser~~
 * ~~disableButton~~
 * ~~editButton~~
 * ~~voiceChannelID~~
@@ -341,6 +342,7 @@
 * ~~arraySlice~~
 * ~~arrayUnshift~~
 * ~~arrayLength~~
+* ~~arrayCount~~
 * ~~arrayGet~~
 * ~~arraySet~~
 * ~~joinThreads~~
@@ -408,7 +410,7 @@
 * ~~deleteEvent~~
 * ~~arrayClear~~
 
- # Not done (10.72%)
+ # Not done (10.28%)
 * [commandCode](./Unclassified/commandCode.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [filterMessage](./Unclassified/filterMessage.md)
@@ -436,10 +438,8 @@
 * [filterMessageWords](./Unclassified/filterMessageWords.md)
 * [mentionType](./Unclassified/mentionType.md)
 * [endTimeout](./Unclassified/endTimeout.md)
-* [muteUser](./Unclassified/muteUser.md)
 * [transcriptChannel](./Unclassified/transcriptChannel.md)
 * [eventChannelParent](./Unclassified/eventChannelParent.md)
-* [arrayCount](./Unclassified/arrayCount.md)
 * [commandName](./Unclassified/commandName.md)
 * [editEmbed](./Unclassified/editEmbed.md)
 * [userSetTimeout](./Unclassified/userSetTimeout.md)
