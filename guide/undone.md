@@ -1,4 +1,4 @@
-# Done (89.72%)
+# Done (89.52%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -410,7 +410,7 @@
 * ~~deleteEvent~~
 * ~~arrayClear~~
 
- # Not done (10.28%)
+ # Not done (10.48%)
 * [commandCode](./Unclassified/commandCode.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [filterMessage](./Unclassified/filterMessage.md)
@@ -458,3 +458,4 @@
 * [eventOldNickname](./Unclassified/eventOldNickname.md)
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)
+* [randomTextBiased](./Unclassified/randomTextBiased.md)
