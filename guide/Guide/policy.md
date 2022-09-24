@@ -1,11 +1,11 @@
 # Custom Command's Privacy Policy
 Get detailed information here about our rights, your rights and other information.
-
+**These terms apply to both Custom Command, and Custom Bots.
 # Our Rights
 
 * Children under 13 years old are **not** allowed to use our service.
 * Any type of self-botting ("a bot inside a user account") or misusage of our Bot is **strictly** prohibited.
-* You are to not use our bot for NSFW ("Not Safe For Work content, also known as 18+ content") purposes. Doing so is strictly prohibited and will result in a ban.
+* You are to not use our bot to send, host or discuss NSFW ("Not Safe For Work content, also known as 18+ content") content, offensive content, controversial material, or pirated materal. Doing so is strictly prohibited and will result in a ban.
 * You must follow the Discord ToS and where applicable, third-party ToS.
 
 Not following our rules can, and will lead to a ban. Serious cases will result in a detailed report to Discord's Trust and Safety Team. For example, servers used to scam users.
