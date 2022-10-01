@@ -1,4 +1,4 @@
-# Done (89.57%)
+# Done (89.59%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -411,8 +411,9 @@
 * ~~arrayClear~~
 * ~~randomTextBiased~~
 * ~~triggerExists~~
+* ~~addUsersToThread~~
 
- # Not done (10.43%)
+ # Not done (10.41%)
 * [commandCode](./Unclassified/commandCode.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [filterMessage](./Unclassified/filterMessage.md)
@@ -460,4 +461,4 @@
 * [eventOldNickname](./Unclassified/eventOldNickname.md)
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)
-* [addUsersToThread](./Unclassified/addUsersToThread.md)
+* [removeUsersFromThread](./Unclassified/removeUsersFromThread.md)
