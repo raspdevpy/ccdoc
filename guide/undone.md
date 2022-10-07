@@ -1,4 +1,4 @@
-# Done (89.87%)
+# Done (89.89%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -416,8 +416,9 @@
 * ~~lockThread~~
 * ~~archiveThread~~
 * ~~getOption~~
+* ~~hyperlink~~
 
- # Not done (10.13%)
+ # Not done (10.11%)
 * [commandCode](./Unclassified/commandCode.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [filterMessage](./Unclassified/filterMessage.md)
