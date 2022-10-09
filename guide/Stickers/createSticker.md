@@ -5,7 +5,7 @@ create a new sticker in the server
 ## Usage
 
 ```bash
-$createSticker[name;image url (png/apng, max 512KB);emoji;description (optional);return sticker id (yes/no)]
+$createSticker[name;image url;emoji;description (optional);return sticker id (yes/no)]
 ```
 
 ### Example:
@@ -15,3 +15,13 @@ $createSticker[Happy Earth;https://media.discordapp.net/attachments/951590503370
 
 ### Output
 ![](https://i.imgur.com/RnZdfeL.png)
+
+
+## Notes
+> sticker name should be within 2-30 characters\
+
+> image url should be from trusted source like discord attachment or imgur.com\
+
+> image size should be less than 512KB\
+
+> accepted image extensions are .png or .apng
