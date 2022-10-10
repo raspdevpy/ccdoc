@@ -1,4 +1,4 @@
-# Done (89.94%)
+# Done (89.98%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -419,8 +419,10 @@
 * ~~hyperlink~~
 * ~~botVerified~~
 * ~~createSticker~~
+* ~~setBotActivity~~
+* ~~getBotActivity~~
 
- # Not done (10.06%)
+ # Not done (10.02%)
 * [commandCode](./Unclassified/commandCode.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [filterMessage](./Unclassified/filterMessage.md)
