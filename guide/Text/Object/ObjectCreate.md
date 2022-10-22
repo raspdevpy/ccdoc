@@ -17,7 +17,7 @@ Use `$getObjectProperty` or $objectGet` to get a key value.
 The example above shows how to save the object inside a variable and retrieve it later.
 - with an object you can save many properties inside a variable.
 ```sh
-$initvar[user;Data;{"Name":"none","Level":0,"isExpert":false"userId":0}]
+$initvar[user;Data;{"Name":"none","Level":0,"isExpert":false,"userId":0}]
 $objectCreate[$getuservar[Data]]
 $objectSet[Name;Wiki]
 $objectSet[level;20]
