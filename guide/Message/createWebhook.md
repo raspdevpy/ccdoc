@@ -1,4 +1,4 @@
-# $FUNCTION
+# $createWebhook
 Creates a webhook for this channel
 
 ::: warning bot has to have manage webhooks permission
