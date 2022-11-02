@@ -1,7 +1,7 @@
 # $editSticker
 
 To edit a sticker inside the server\
-**Info** can be: name,desc
+**Info** can be: name,desc,emoji
 
 ## Usage
 

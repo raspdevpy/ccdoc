@@ -1,14 +1,33 @@
 # $createThread <Badge type="warning" text="Read Below" vertical="middle" />
 Create a thread, corresponding to the messageID specified in the function
 #### Usage: 
-`$createThread[Channel ID;Message ID;Thread Name;Reason;Duration (1h/1d/3d/7d)(optional);Return ID (yes/no)(optional)]`
+`$createThread[Channel ID;Message ID;Thread Name;Reason;Duration (1h/1d/3d/7d)(optional);Return ID (yes/no)(optional);Private Thread? (yes/no)]`
 
-#### Example:
-`$createThread[$channelID;$messageID;Expample]`
-will create a thread on the executed message
+#### Example (Create Thread on user message):
+```bash
+$createThread[
+    {channel=$channelID}
+    {message=$messageID}
+    {name=Example}
+]
+```
+
+#### Example (Create A private thread):
+```bash
+$createThread[
+    {channel=$channelID}
+    {message=$messageID}
+    {name=Example}
+    {private=yes}
+]
+```
 
 ::: danger
 You can only use the durations, allowed by your boosting level! Please do not try to use `7d` if your server hasn't got level 3 boosting perks
+:::
+
+::: danger
+You can make private threads only if your server perks allow it.
 :::
 
 ::: tip Related Functions

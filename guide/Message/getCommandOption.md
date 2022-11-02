@@ -3,8 +3,9 @@ returns the value of a slash command option.
 
 #### Usage: `$getCommandOption[type;Option Name]`
 
-Valid Options:
-string, number, boolean, channel, role, mentionable
+## Valid Option Name
+`string, number, boolean, channel, role, mentionable, user`
+
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

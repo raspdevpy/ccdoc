@@ -44,6 +44,7 @@ Now you understand the basic coding components, now we need to choose our trigge
 | [Timed or Interval](../Trigger/time.md)       | Repeated or Scheduled Execution|
 | [Button](../Trigger/button.md)                | Clicks a Discord button|
 | [Role add/remove](../Trigger/roleaddremove.md)| Recieves or Loses a role|
+| [Library](../Trigger/library.md)| Create A library|
 
 ### Fantastic, you made it through the hardest learning curve... Let's proceed
 

@@ -1,4 +1,4 @@
-# Done (89.47%)
+# Done (90.00%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -309,6 +309,7 @@
 * ~~sendDM~~
 * ~~moveUser~~
 * ~~modifyRole~~
+* ~~muteUser~~
 * ~~disableButton~~
 * ~~editButton~~
 * ~~voiceChannelID~~
@@ -341,6 +342,7 @@
 * ~~arraySlice~~
 * ~~arrayUnshift~~
 * ~~arrayLength~~
+* ~~arrayCount~~
 * ~~arrayGet~~
 * ~~arraySet~~
 * ~~joinThreads~~
@@ -407,8 +409,21 @@
 * ~~eventExists~~
 * ~~deleteEvent~~
 * ~~arrayClear~~
+* ~~randomTextBiased~~
+* ~~triggerExists~~
+* ~~addUsersToThread~~
+* ~~removeUsersFromThread~~
+* ~~lockThread~~
+* ~~archiveThread~~
+* ~~getOption~~
+* ~~hyperlink~~
+* ~~botVerified~~
+* ~~createSticker~~
+* ~~setBotActivity~~
+* ~~getBotActivity~~
+* ~~arrayCreate~~
 
- # Not done (10.53%)
+ # Not done (10.00%)
 * [commandCode](./Unclassified/commandCode.md)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [filterMessage](./Unclassified/filterMessage.md)
@@ -436,7 +451,6 @@
 * [filterMessageWords](./Unclassified/filterMessageWords.md)
 * [mentionType](./Unclassified/mentionType.md)
 * [endTimeout](./Unclassified/endTimeout.md)
-* [muteUser](./Unclassified/muteUser.md)
 * [transcriptChannel](./Unclassified/transcriptChannel.md)
 * [eventChannelParent](./Unclassified/eventChannelParent.md)
 * [commandName](./Unclassified/commandName.md)
