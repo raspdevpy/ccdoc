@@ -1,5 +1,5 @@
 # $setGuildIcon
-Sets the name of your server to something, you have put in.
+Sets a new Icon for the server
 
 #### Usage: `$setGuildIcon[URL]`
 
