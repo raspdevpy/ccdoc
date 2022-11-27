@@ -2,7 +2,7 @@
 Sets a cooldown for a command.
 
 #### Usage: 
-`$cooldown[time;Error message]`
+`$cooldown[time (default 5s);Error message]`
 
 #### Example:
 ::: warning In this example we predict that we have written a code on the dash with the cooldown! 

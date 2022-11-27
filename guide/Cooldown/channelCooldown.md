@@ -2,7 +2,7 @@
 Sets a cooldown for a command, per channel!
 
 #### Usage: 
-`$channelCooldown[time;Error message]`
+`$channelCooldown[time (default is 5s);Error message]`
 
 #### Example:
 ::: warning In this example we predict that we have written a code on the dash with the cooldown! 
