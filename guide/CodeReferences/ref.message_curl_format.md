@@ -28,6 +28,7 @@ Sending a embed with title `Hello` and description `World`
 {url:link} adding a url for the title
 {footer:text:url} adding a footer
 {description:text} adding a description
+{desc:text} alias to {description}
 {color:hex} adding a color of embed
 {author:text:url} adding author
 {thumbnail:url} adding thumbnail
@@ -42,6 +43,10 @@ Sending a embed with title `Hello` and description `World`
 {file:Name:Content} adding attachment file from text
 {attachment:Name:URL} adding attachment file from url
 {deletecommand} to delete the original command message
+{reply:message id} to reply to a message
+{reply_mention:yes/no} to ping user on reply or not
+{interaction} to send message through an interaction
+{ephemeral:yes/no} to send message privately or not, useful only if {interaction} enabled
 {stickers:Sticker 1 ID:Sticker 2 ID:Sticker 3 ID} to send stickers
 {pin}	to pin the sent message
 ```
