@@ -2,7 +2,6 @@
 
 Return all the channels inside the guild\
 \
-info can be: name, id
 
 ## Usage
 
@@ -19,3 +18,20 @@ $serverChannels[info (optional, default is name);type (optional, default is all)
         channel1/channel2/channel3/channel4
         </discord-message>
 </discord-messages>
+
+
+::: tip Info types:
+ - name
+ - id
+:::
+
+::: tip Channel types:
+ - all
+ - text
+ - voice
+ - category
+:::
+
+::: tip Related Functions
+[$categoryChannels](..Channel/channelExists.md), to get channels from category
+:::
