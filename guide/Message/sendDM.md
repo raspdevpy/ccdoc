@@ -25,9 +25,9 @@ You can send embed using [Message Curl Format](../CodeReferences/ref.message_cur
 :::
 
 ::: tip Related Functions
-[$channelSendMessage](../Text/channelSendMessage.md), to send a message to a channel in the server!
+[$channelSendMessage](../Message/channelSendMessage.md), to send a message to a channel in the server!
 
-[$sendMessage](../Text/sendMessage.md), to send a message to the channel used!
+[$sendMessage](../Message/sendMessage.md), to send a message to the channel used!
 :::
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 

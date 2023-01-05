@@ -17,7 +17,7 @@ You can send embed using [Message Curl Format](../CodeReferences/ref.message_cur
 :::
 
 ::: tip Related Functions
-[$channelSendMessage](../Text/channelSendMessage.md), to send a message to a custom channel
+[$channelSendMessage](../Message/channelSendMessage.md), to send a message to a custom channel
 :::
 
 

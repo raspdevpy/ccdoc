@@ -25,7 +25,7 @@ This function, can cause your command to completely fail!
 :::
 
 ::: tip
-Use [$message](../Guide/Text/message.md) to make sure you're safe with characters
+Use [$message](../Message/message.md) to make sure you're safe with characters
 :::
 
 ##### Function difficulty: <Badge type="danger" text="Difficult" vertical="middle" /> 

@@ -7,7 +7,7 @@ Deletes a message
 `$deleteMessage[$channelID;$messageID]`
 
 ::: tip Related Functions
-[$deletecommand](../Text/deletecommand.md), to delete the message used to trigger the command!
+[$deletecommand](../Message/deletecommand.md), to delete the message used to trigger the command!
 :::
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 

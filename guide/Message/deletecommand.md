@@ -5,7 +5,7 @@ Deletes a message used to trigger the command
 
 
 ::: tip Related Functions
-[$deleteMessage](../Text/deleteMessage.md), to delete a message in the server or DMs
+[$deleteMessage](../Message/deleteMessage.md), to delete a message in the server or DMs
 :::
 
 

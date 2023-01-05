@@ -15,7 +15,7 @@ $setUservar[money;$math[$getUserVar[money]+1]]
 
 Used functions in the code:
 
-[$sendMessage](../Text/sendMessage.md)
+[$sendMessage](../Message/sendMessage.md)
 
 [$initVar](../Variables/initVar.md)
 

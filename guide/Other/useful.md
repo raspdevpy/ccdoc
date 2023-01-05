@@ -28,7 +28,7 @@ You don't have to provide an optional parameter,if you use the default parameter
 ### Okay, cool... But how do functions even work?
 
 ## Functions
-A function is a building block for your code. For example, if you want to send a message, you use a function called [$channelSendMessage](../Text/channelSendMessage.md) or [$sendMessage](../Text/sendMessage.md). Or if you want to kick a member, you use a function called [$kick](../Member/kick.md)
+A function is a building block for your code. For example, if you want to send a message, you use a function called [$channelSendMessage](../Message/channelSendMessage.md) or [$sendMessage](../Message/sendMessage.md). Or if you want to kick a member, you use a function called [$kick](../Member/kick.md)
 
 ### Nice, now I understand the basics! How do I proceed?
 

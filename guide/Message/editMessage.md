@@ -41,7 +41,7 @@ You can send embed using [Message Curl Format](../CodeReferences/ref.message_cur
 :::
 
 ::: tip Related Functions
-[$deleteMessage](../Text/deleteMessage.md), to delete a message in the server or DMs
+[$deleteMessage](../Message/deleteMessage.md), to delete a message in the server or DMs
 :::
 
 :::warning Watch Out!

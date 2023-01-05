@@ -17,11 +17,11 @@ Sends the output of the code to the author in DM's, or to the specified userID's
 </discord-messages>
 
 ::: tip Related Functions
-[$sendDM](../Text/sendDM.md), to send the output of the console to a DM message
+[$sendDM](../Message/sendDM.md), to send the output of the console to a DM message
 
-[$channelSendMessage](../Text/channelSendMessage.md), to send a message to a channel in the server!
+[$channelSendMessage](../Message/channelSendMessage.md), to send a message to a channel in the server!
 
-[$sendMessage](../Text/sendMessage.md), to send a message to the channel used!
+[$sendMessage](../Message/sendMessage.md), to send a message to the channel used!
 :::
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
