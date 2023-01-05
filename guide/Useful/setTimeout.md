@@ -27,7 +27,7 @@ Will execute the code inside it after certain time
 </discord-messages>
 
 :::tip 
-If you only want to wait less then 1m, you can use [$wait](../useful/wait.md)
+If you only want to wait less then 1m, you can use [$wait](../Useful/wait.md)
 :::
 
 

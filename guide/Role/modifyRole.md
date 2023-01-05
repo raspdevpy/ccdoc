@@ -15,7 +15,7 @@ This will edit the color of the mod role
 ::: tip Related Functions
 [$editChannel](../Channel/editChannel.md), to modify the name or category from a channel
 
-[$modifyRolePerms](../Role/modifyRole.md), to modify the role's perms
+[$modifyRolePerms](../Role/modifyRolePerms.md), to modify the role's perms
 :::
 
 

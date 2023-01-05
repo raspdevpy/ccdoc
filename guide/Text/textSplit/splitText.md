@@ -1,5 +1,5 @@
 # $splitText
-returns the element by index from [$textSplit](.../textSplit/textSplit.md)
+returns the element by index from [$textSplit](./textSplit.md)
 
 #### Usage: `$splitText[index]`
 <br/>

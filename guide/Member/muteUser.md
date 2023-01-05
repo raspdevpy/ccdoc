@@ -27,6 +27,5 @@ Check if the bot has mute permission, and his position is higher in the hierarch
 :::
 
 ::: tip Related function
-[$kick](../Text/isandhas/isMuted.html)
+[$kick](../Text/isandhas/isMuted.md)
 :::
- 

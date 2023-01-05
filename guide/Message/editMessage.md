@@ -33,7 +33,7 @@ Edits a message.
 </discord-messages>
 
 ::: tip Used Functions
-[$messageID](../Useful/messageID.md), to return the ID from the message used to trigger the command
+[$messageID](../Message/messageID.md), to return the ID from the message used to trigger the command
 :::
 
 ::: tip Note

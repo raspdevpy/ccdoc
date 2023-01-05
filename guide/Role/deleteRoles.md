@@ -13,7 +13,7 @@ This will delete the role with the id.
 ::: tip Related Functions
 [$deleteChannels](../Channel/deleteChannels.md), delete (a) channel(s)
 
-[$deleteThreads](../Thread/deleteThreads.md), delete (a) thread(s)
+[$deleteThreads](../Threads/deleteThreads.md), delete (a) thread(s)
 :::
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 

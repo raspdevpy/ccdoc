@@ -15,7 +15,7 @@ returns users,which have the users role
 </discord-messages>
 
 ::: tip Related Functions
-[$hassWithRole](../Member/hasWithRole.md), to check if the user has sWithRole
+[$hasRoles](../Member/hasRoles.md), to check if the user has role
 :::
 
 ::: info Member must be cached!

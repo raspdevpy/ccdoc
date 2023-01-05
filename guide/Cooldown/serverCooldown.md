@@ -14,9 +14,9 @@ You can send embed using [Message Curl Format](../CodeReferences/ref.message_cur
 :::
 
 ::: tip Related Functions
-[$channelCooldown](../Useful/channelCooldown.md), for a channel based cooldown
+[$channelCooldown](../Cooldown/channelCooldown.md), for a channel based cooldown
 
-[$cooldown](../Useful/cooldown.md), for a user based cooldown
+[$cooldown](../Cooldown/cooldown.md), for a user based cooldown
 :::
 
 ::: danger

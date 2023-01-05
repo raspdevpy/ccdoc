@@ -13,6 +13,6 @@ Used functions in the code:
 
 [$userTag](../Member/userTag.md)
 
-[$channelSendMessage](../Channel/channelSendMessage.md)
+[$channelSendMessage](../Message/channelSendMessage.md)
 
 [$channelID](../Channel/channelID.md)

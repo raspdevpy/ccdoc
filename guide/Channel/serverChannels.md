@@ -33,5 +33,5 @@ $serverChannels[info (optional, default is name);type (optional, default is all)
 :::
 
 ::: tip Related Functions
-[$categoryChannels](..Channel/channelExists.md), to get channels from category
+[$categoryChannels](../Channel/channelExists.md), to get channels from category
 :::

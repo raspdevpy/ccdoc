@@ -1,5 +1,5 @@
 # $getTextSplitLength
-Returns the amount of objects created by [$textSplit](.../textSplit/textSplit.md)
+Returns the amount of objects created by [$textSplit](./textSplit.md)
 
 
 <br/>

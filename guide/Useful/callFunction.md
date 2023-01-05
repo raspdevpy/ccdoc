@@ -10,7 +10,7 @@ To call a user-defined function created with [$function](../Useful/function)
 $callFunction[printHello;Mika]
 ``` 
 
-Call the function, using [$callFunction](../Useful/callFunction)
+Call the function, using [$callFunction](./callFunction)
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

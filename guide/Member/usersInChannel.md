@@ -15,7 +15,7 @@ returns users in a voice channel or normal channel
 </discord-messages>
 
 ::: tip Related Functions
-[$hassInChannel](../Member/usersWithRoles.md), to check if the user has sInChannel
+[$usersWithRole](../Member/usersWithRole.md), to check if the user has sInChannel
 :::
 
 ::: info Member must be cached!

@@ -1,5 +1,5 @@
 # $joinSplitText
-Joins the [$textSplit](.../textSplit/textSplit.md) indexes by a given separator 
+Joins the [$textSplit](./textSplit.md) indexes by a given separator 
 
 <br/>
 <discord-messages>

@@ -13,7 +13,7 @@ This will delete the channel the command is executed in.
 ::: tip Related Functions
 [$deleteRoles](../Role/deleteRoles.md), used to delete roles
 
-[$deleteThreads](../Thread/deleteThreads.md), used to delete threads
+[$deleteThreads](../Threads/deleteThreads.md), used to delete threads
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 

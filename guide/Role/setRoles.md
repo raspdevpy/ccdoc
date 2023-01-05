@@ -15,7 +15,7 @@ Gives a user specific roles and removes all other ones
 ::: tip Used Functions
 [$roleID](../Role/roleID.md), to return a roleID by name of it
 
-[$authorID](../Member.authorID.md), to return the ID of the command executor
+[$authorID](../Member/authorID.md), to return the ID of the command executor
 :::
 
 ::: tip Related Functions

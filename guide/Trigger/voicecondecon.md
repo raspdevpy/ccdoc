@@ -19,7 +19,7 @@ Use this syntax to let the bot trigger when a vc is joined/ leaved!
 `join/leave=voice channel id` -> in this case, will only trigger when user join/leave this specific voice channel
 
 ::: danger Special event!
-Because this is a special event type, you CANNOT use `$channelID` to return the channel that was joined! Use [$voiceChannelID](../channel/voiceChannelID.md) instead
+Because this is a special event type, you CANNOT use `$channelID` to return the channel that was joined! Use [$voiceChannelID](../Channel/voiceChannelID.md) instead
 :::
 
 ::: danger DO NOT FORGET:
