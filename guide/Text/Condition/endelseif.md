@@ -5,7 +5,7 @@ is used to close $elseIf
 ## Usage
 
 ```bash
-$elseIf[EXPR]
+$elseif[EXPR]
 CODE BLOCK
 $endelseif
 ```
