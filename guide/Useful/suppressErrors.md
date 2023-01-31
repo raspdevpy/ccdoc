@@ -9,8 +9,8 @@ Suppress all the errors and sends a custom one. {error} will contain the error t
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
         <DiscordMarkdown>
-	        !!exec $modifyChannelPerms[$authorID;-sendmessages;$channelID]
-            $suppressErrors[Wrong usage of $modifyChannelPerms]
+	        !!exec $suppressErrors[Wrong usage of $modifyChannelPerms]
+                       $modifyChannelPerms[$authorID;-sendmessages;$channelID]
 		</DiscordMarkdown>
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
