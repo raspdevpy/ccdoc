@@ -2,7 +2,7 @@
 Edits a channel by ID.
 
 #### Usage: 
-`$editChannel[channelID;categoryID/$default;name/$default;position/$default;nsfw/$default (yes/no);bitrate/$default;userLimit/$default;syncPermission (yes/no);reason (optional)]`
+`$editChannel[channelID;categoryID/$default;name/$default;position/$default;nsfw/$default (yes/no);bitrate/$default;userLimit/$default;syncPermission/$default (yes/no);reason (optional)]`
 
 ::: tip Available channel Types
 [This lists](../CodeReferences/ref.channel_types.md) all valid channel types.
