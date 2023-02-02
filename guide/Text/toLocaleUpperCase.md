@@ -10,7 +10,7 @@ this sentence uppercases every first char of a word in a sentence
 		!!exec $toLocaleUppercase[hello how are you?]
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-        How Are You?
+        Hello How Are You?
 	</discord-message>
 </discord-messages>
 

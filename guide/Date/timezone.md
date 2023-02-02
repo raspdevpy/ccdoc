@@ -1,7 +1,7 @@
 # $timezone
 this function set the timezone for all date functions
 get tz name (here)[https://en.wikipedia.org/wiki/List_of_tz_database_time_zones]
-#### Usage: `$timezone[Country/city]`
+#### Usage: `$timezone[Region/City]`
 
 Example:
 <br/>

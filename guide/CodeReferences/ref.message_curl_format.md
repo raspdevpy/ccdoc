@@ -38,7 +38,7 @@ Sending a embed with title `Hello` and description `World`
 {reactions:emoji,emoji2,...} add reactions after posting the message
 {suppress:yes/no} suppress the embed of the message
 {delete:time(s/m/h...)} delete the message after certain time after posting it
-{button:Name:style:emoji:button id:new line(true/false)} add a button to the message
+{button:Name:style:emoji:button id:new line(yes/no):disabled(yes/no)} add a button to the message
 {edit:Time in ms:New Content} edit the message after certain time
 {file:Name:Content} adding attachment file from text
 {attachment:Name:URL} adding attachment file from url
