@@ -1,5 +1,5 @@
 # $disableMentions
-Replaces all the user mentions with their usernames
+will not ping a user even though mentioned
 
 #### Usage: `$disableMentions`
 <br/>
@@ -8,7 +8,7 @@ Replaces all the user mentions with their usernames
 		!!exec $disableMentions <DiscordMention :highlight="true">Member</DiscordMention>
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		Member
+		@Member
 	</discord-message>
 </discord-messages>
 
