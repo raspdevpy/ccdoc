@@ -1,113 +1,116 @@
-# Word/Message
+# Word Trigger
 
-::: danger Please note:
-The bot will only trigger commands, when it can see the channel, the command is used!
+## Introduction
+This trigger, fires when user send a certain message like `?profile`
 
-Make sure the bot has permissions to view the channel you use for the command. And make sure "Send Messages" is enabled!
-:::
+## Example: Hello Command
+In this command, we want bot to greet the user when he says: ?hello
 
-## Main Syntax
-This syntax is unique to our bot! It is the most commonly used form in word triggers!
+1. create a new trigger, and set the trigger to be `?hello`
+![](https://i.imgur.com/oSeYLNr.png)
 
-##### Exact Match
-`!test` -> The bot will trigger when a message is EXACTLY the same as `!test`
+2. set the code to be simple message like 'Hello $mention'
+![](https://i.imgur.com/mVWBK9C.png)
 
-##### Trigger with Arguments
-`!test` -> The bot will trigger when a message starts with `!test` and the code includes `$message` or `$mentioned[]`
+Test it out in your server:
+![](https://i.imgur.com/EvEQsIq.png)
 
-##### Trigger not Case Sensitive 
-`!test|i` -> The bot will trigger when a message starts with `!tEst` 
+Congratulations for making your first word command
 
-*(The capitalization doesn't matter in the case!)*
+## Case insensitivity
+The previously created command `?hello` has an issue though, if user typed `?Hello` it won't work like this.
+
+So what to do? add `|i` to the command like this:
+
+![](https://i.imgur.com/uu2phTA.png)
+
+Let's test:
+![](https://i.imgur.com/Qr03TMJ.png)
+
+It works!
+
+## User Inputs
+Now, let's make another command `?hug @user`, this command should give a hug to another user.
+
+let's create a new command and set the trigger settings as below:\
+![](https://i.imgur.com/iK8yRXP.png)
+
+as for code, let's make it simple response like: `$mention hugs someone`:\
+![](https://i.imgur.com/GGFKqVR.png)
+
+here is the result:
+![](https://i.imgur.com/BK8qolm.png)
+
+but how we can take the mentioned user and replace `someone` with `@user`?
+
+you can do that through `$message` function, this function return you any word the user for example:\
+if user sent: ?cmd This bot is amazing!
+> $message[1] will be replaced with `this`\
+$message[2] will be replaced with `bot`\
+$message[3] will be replaced with `is`\
+$message[4] will be replaced with `amazing!`
+
+and so on, so for command `?hug @user`
+to get the `@user` part we will use $message[1]
+
+so code will be:
+![](https://i.imgur.com/FCfSQVr.png)
 
 
-## Argument Handling
-Arguments are really helpful, when you want the executer of the command to put in extra data! 
+let's test it out:
+![](https://i.imgur.com/SXdOdM0.png)
 
-::: danger
-If you want to use arguments,your code must use $message[] or $mentioned 
-:::
+Yay!
 
-### Refering to arguments in codes
-To get the data inputted as arguments, you use the function `$message`:
-* `$message` -> to return all the arguments
-* `$message[x]` -> to return a specific argument! (replace the `x` with a valid number!) 
+## Triggering on multiple words
+sometimes we want the bot to trigger in multiple words, let's say: ?hug, ?abrazo, ?étreinte 
 
-Arguments are saved in an array, so `$message[1]` would output the first argument,`$message[2]` the second one, enz...
-
-###### Arguments get splited on whitespace! 
-
-So `!say hi hello` would get splitted at in between `hi` and `hello` 
-
-The first argument would be `hi` in this case and the second `hello`.
-
-
-## [REGEX](https://www.sitepoint.com/learn-regex/)
-REGEX is a way to let a command trigger on multiple words/ triggers!
-
-::: warning Warning
-We highly suggest, you learn REGEX, if you're going to use it yourself!
-
-Below are a couple of examples:
-:::
-
-
-###### Multiple command prefixes
-`/^(!|>|\?|\.)help/gi` -> This will trigger when the 1 of the following messages is send:
+how we will do that? we can do that through well known regex format:
+```regex
+/^(prefix)(Word 1|Word 2|Word 3)\b/
 ```
-!help
->help
-?help
-.help
-```
 
-###### Command Aliases
-`/^(!help|!h|!info)/gi` -> This will trigger when the 1 of the following messages is send:
+Like:
 ```
-!help
-!h
-!info
+/^(\?)(hug|abrazo|étreinte)\b/
 ```
+Note: we used `\\?` instead of `?`, because `?` has special meaning in regex format, so we need to tell him use it as plain character through putting `\` before it
 
-###### Command Aliases
-`/^(!|>|\?|\.)(help|h|info)/gi` -> This will trigger when the 1 of the following messages is send:
+Trigger will look like this:
+![](https://i.imgur.com/pYGRD8x.png)
 
-:::: code-group
+When you use regex format, $message[1] will be equal to the command like `?hug` not the 2nd word, so we will need to adjust the function from $message[1] to $message[2]
+like this:
+![](https://i.imgur.com/VG1hBgB.png)
 
-::: code-group-item Prefix: !
-```
-!help
-!h
-!info
-```
-:::
+let's test it out:
+![](https://i.imgur.com/RISSily.png)
 
-::: code-group-item Prefix: >
-```
->help
->h
->info
-```
-:::
+Works as expected!
 
-::: code-group-item Prefix: ?
-```
-?help
-?h
-?info
-```
-:::
 
-::: code-group-item Prefix: .
-```
-.help
-.h
-.info
-```
-:::
+## Example: Report Command
+let's assume we want to make a report command, where user can report other with a reason like: `?report @user <reason>`
 
-::::
+so trigger setting will be like this:
+![](https://i.imgur.com/4cGQdgN.png)
 
-## More Info
+as for code, we will use `$message[1]` to get `@user`
+and `$message[2]` to get `<reason>`
 
-Do you want to know more, about the bot's syntax? You can check out [this](../Other/syntax.md) page to learn more!
+like this:
+![](https://i.imgur.com/i45qJkX.png)
+
+let's try it out:
+![](https://i.imgur.com/sMolPyQ.png)
+
+Oh, it didn't work as expected, why is that?
+simply because $message[2] will get us the 2nd word, which indeed `he's`, so how we can get the rest of the phrase
+
+you can do so through `$message[2+]`, which means get 2nd word and what after it, so code after adjusting:
+![](https://i.imgur.com/gmoZ074.png)
+
+let's try it out:
+![](https://i.imgur.com/KZBeAVT.png)
+
+Yay! works well.
