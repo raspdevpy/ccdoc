@@ -3,7 +3,7 @@ edits a previously sent interaction with `$interactionReply`
 
 #### Usage: `$interactionEdit[New Message;message id (optional, default is previously sent message)]`
 
-<br/>
+<br>
 ::: warning Just like $interactionreply, this function only works for interactions. 
 Don't use it in exec or other triggertypes.
 :::
