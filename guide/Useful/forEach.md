@@ -2,7 +2,7 @@
 Will loop over a list and every loop it will take an item and assign it inside varname accessible by $get[varname]
 
 #### Usage: 
-`$forEach[varname;LIST (ex: mido rake azz);Seperator (Optional, default is space)]`
+`$forEach[varname;LIST (ex: mido rake azz);Separator (Optional, default is space)]`
 
 #### Example:
 ```bash
