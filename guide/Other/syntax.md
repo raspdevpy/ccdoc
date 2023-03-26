@@ -33,9 +33,9 @@ Hello $username to our server
 
 ### But what function does?
 Each function in general can do one of the 3 things:
-* Replaced by a value
+* Replace itself by a value
 * Do an action
-* Replaced by a value and Do an action
+* Do an action and Replace itself by a value 
 
 For Example In running this code:
 ```
@@ -48,6 +48,16 @@ Hello Mido to our server!
 
 Which clearly shows that [`$username`](../Member/username.md) function is `Replaced by value` type\
 and this value will always be the username of the author
+
+::: tip `Replaced by value` type\ is also called `return`
+Read carefully function descriptions in docs.
+If a function is replaced by value, it returns that value. 
+E.g.:
+[`$username`](../Member/username.md) ***Returns*** the name of the user that executed the command
+If a function does an action, its description starts with a verb for that action.
+E.g.:
+[`$title`](../Embed/title.md) ***Adds*** a title to a message
+:::
 
 ### Input
 Some functions requires an input from you to behave differently and this is the format:
