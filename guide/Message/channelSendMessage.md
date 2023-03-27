@@ -12,9 +12,17 @@ Sends a message to a sepecified channel
 	</discord-message>
 </discord-messages>
 
-::: tip Note
-You can send embed using [Message Curl Format](../CodeReferences/ref.message_curl_format.md)
-:::
+#### Example
+### Send An Embed
+![](https://i.imgur.com/YObkPAZ.png)
+
+### Send a button
+![](https://i.imgur.com/bDJ5p3a.png)
+
+### Send a menu
+![](https://i.imgur.com/ApX37tb.png)
+
+You send more stuffs like footer, fields,... using [Message Curl Format](../CodeReferences/ref.message_curl_format.md)
 
 ::: tip Related Functions
 [$sendMessage](../Message/sendMessage.md), to send a message to the channel used
