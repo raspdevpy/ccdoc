@@ -1,7 +1,7 @@
 # $sendMessage
 Sends a message to a sepecified channel
 
-#### Usage: `$sendMessage[message;return ID (yes/no) (Command will error, if not specified!)]`
+#### Usage: `$sendMessage[message;return ID (yes/no) (optional)]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
