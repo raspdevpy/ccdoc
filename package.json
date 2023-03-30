@@ -16,7 +16,8 @@
     "@discord-message-components/vue": "^0.2.1",
     "@vuepress/plugin-container": "^2.0.0-beta.36",
     "@vueuse/core": "^9.13.0",
-    "cheerio": "^1.0.0-rc.10"
+    "cheerio": "^1.0.0-rc.10",
+    "vite": "2.8"
   },
   "main": "index.js",
   "repository": {

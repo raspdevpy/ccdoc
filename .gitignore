@@ -4,5 +4,5 @@ node_modules
 dist
 .gitpod.yml
 data.json
-build.sh
+build*.sh
 ignore/*
