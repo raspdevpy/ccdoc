@@ -40,7 +40,7 @@ module.exports= {
 		// getSideBar('Templates','Templates'),
 		{    
 			text: 'Functions',
-			collapsible:false,
+			collapsible:true,
 			children:[
 			getSideBar('Member','Member Functions',{collapsible:true}),
 			getSideBar('Channel','Channel Functions',{collapsible:true}),
