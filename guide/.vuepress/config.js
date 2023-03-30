@@ -14,7 +14,7 @@ module.exports = {
 		}],
 		['@vuepress/plugin-container']
 	],
-	
+	// base:"/ccdoc/dist/",
 	themeConfig: {
 		docsDir: 'guide',
 		navbar: [
@@ -32,11 +32,10 @@ module.exports = {
 		contributors:false,
 		search: true,
 		logo: 'https://cdn.discordapp.com/icons/832255686783533066/f7131f694c6e1a2bd9c360d8b525d4e3.webp',
-		sidebarDepth: 1,
 		editLinks: true,
 		editLinkText: 'Improve This Page!',
 		lastUpdated: true,
-		sidebar,
+		...sidebar,
 
 	},
 	
