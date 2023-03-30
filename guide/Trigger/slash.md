@@ -1,44 +1,110 @@
 # Slash Command
 
-# Basic Information
-This trigger type, will trigger when a user uses a slash command. This needs to be a slash command from the bot!
+# Introduction
+triggers when a user uses a slash command. This needs to be a slash command from the bot!
 
-# Creating a slash command
-Go to the slash command build page and create a new slash command!
-![](https://i.ibb.co/6NPBrfX/image.png)
-![](https://i.ibb.co/9tCFrTS/image.png)
+## Creating a slash command
+In this example we will create `/avatar` command, that show user avatar on request
+![](https://i.imgur.com/MtHPQWd.png)
 
-# Slash Command Builder
-Every slash command needs a name, a description. 
+### Steps
+1. Go to dashboard, your server page, click on Slash Builder
+![](https://i.imgur.com/L2dnA5D.png)
 
-Slash command options are like argument in message command.
+2. Click `Create`
+![](https://i.imgur.com/GlwHeER.png)
 
-## Slash Command options
-In Option List you can add a new option by selecting its type.
+3. Fill the slash name and description, remember this name, we will use it later 
+![](https://i.imgur.com/LL52VH2.png)
 
-Every option has a name, a description and a type.
-You can set it,if the option is required or optional.
-#### Option type
-Option validates that you can only select the correct type.
-* STRING 
-* INTEGER
-* BOOLEAN
-* MENTION
-* ROLE
-* CHANNEL
-* USER
+4. To add user option, to the slash, select from the option menu
+![](https://i.imgur.com/q2BEFHo.png)
 
-Example Type USER:
-User can only provide a user .It is not possible to provide text or invalid input.
+5. Select the User option (make sure background is blue)
+![](https://i.imgur.com/O2W1v6N.png)
 
-## Option Choices
-String and Number type supports choices.If you provide choices,the user can only select those and can't provide any custom text/number.
+6. Fill the option name, description, remember this name, we will use it later
+![](https://i.imgur.com/XHGMvnM.png)
+
+7. Click `Deploy Command/Save`
+![](https://i.imgur.com/PwJ8kLv.png)
+
+8. Create a new custom command, select type to be `Slash Command` and `Trigger` to be `avatar` (the name from step 3)
+![](https://i.imgur.com/YF6EfSY.png)
+
+9. Set the code to be (will be explained in next section)
+
+::: details Code
+```
+    $let[user_id;$getOption[user]]
+    $interactionReply[
+        {title:Avatar of $usertag[$user_id]}
+        {image:$userAvatar[$user_id]}
+    ]
+```
+:::
+
+10. go to your server and use the command as fellow:
+![](https://i.imgur.com/XZTeNVO.png)
 
 
-## Creating a Custom Command 
-Go to the custom command build page and create a new custom command!
-Then navigate to the custom command editor by clicking on the edit button.
-Change the triggertype to `slash_command` and fill in the trigger field with the name of the command.
+## Output 
+![](https://i.imgur.com/MtHPQWd.png)
 
-###  Retriving Options
-You can retrieve the options by using the following function [$getCommandOption](../Message/getCommandOption.md)
+
+## Code Explanation
+### Retrieving the option from user
+When user use the command like in Step 10, we can retrieve the option through [$getOption](../Interaction/getOption.md) function:
+```
+$getOption[option name]
+```
+In our example `option name` is `user` from step 6\
+then the user id will be stored in `user_id` using [$let](../Variables/let.md), this way we can recall it later in the code through `$user_id`:
+```
+    $let[user_id;$getOption[user]]
+```
+
+### Sending Message
+Next, to send a message with [$interactionReply[message]](../Interaction/interactionReply.md)\
+but here we will send an embed with title and image, using {title}, {image} [Curl Message Format](../CodeReferences/ref.message_curl_format.md):
+```
+$interactionReply[
+    {title:Embed Title}
+    {image:Embed Image}
+]
+```
+
+1. In title we want to set it to: Avatar of Mido#1234\
+To get the username `Mido#1234` we will use [$userTag[user id]](../Member/userTag.md), to specifiy the user we will use `$user_id`:
+```
+Avatar of $userTag[$user_id]
+```
+
+2. In Image to retrieve the user image, we will use [$userAvatar[user id]](../Member/userAvatar.md):
+```
+$userAvatar[$user_id]
+```
+
+Whole code:
+```
+    $let[user_id;$getOption[user]]
+    $interactionReply[
+        {title:Avatar of $usertag[$user_id]}
+        {image:$userAvatar[$user_id]}
+    ]
+```
+
+
+## Example 2: Sending Private Message
+Let's modify the previous code, to make him reply in private to user instead like this:
+![](https://i.imgur.com/SsFJHfv.png)
+
+$interactionReply accept 2 inputs by default: message, ephemeral\
+in the previous example we only used the first message, and 2nd input was by default `no`\
+To send the message in private we have to set the 2nd input `ephemeral` to `yes`
+![](https://i.imgur.com/I2ZuKB5.png)
+
+That's it, Save and test it out
+
+### Output
+![](https://i.imgur.com/SsFJHfv.png)
