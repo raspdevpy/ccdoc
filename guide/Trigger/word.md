@@ -88,6 +88,14 @@ let's test it out:
 
 Works as expected!
 
+## Triggering On All Message
+In some situation, you need to trigger on all kind of messages, like Counting Game Idea
+To do that, you can set Trigger to `%all%`
+![](https://i.imgur.com/YgYvhVw.png)
+
+::: danger Note
+If you used `%all%`, make sure to set `Run only in` to specific channels, to avoid going in cooldowns frequently.
+:::
 
 ## Example: Report Command
 let's assume we want to make a report command, where user can report other with a reason like: `?report @user <reason>`
