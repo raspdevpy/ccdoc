@@ -1,36 +1,54 @@
-# Role add/remove
+# Role Given/Taken 
 
-## Syntax
-Use this syntax to let the bot trigger when a role is added and/or removed
+## Introduction
+This trigger runs when someone get a role, or role removd from him depends on the settings
 
-` ` (empty) -> let the bot trigger when ANY role is given or removed!
+## Example 1: Trigger On Member Getting A Role
+1. Set Trigger Value: `add, Role1`\
+Which means trigger when user receive role `Role1`
+![](https://i.imgur.com/MevZIW3.png)
+
+2. Set code to: $username received `$roleName` Role
+![](https://i.imgur.com/WezSkrK.png)
+
+3. Set channel used to any channel you want the message to be sent to
+![](https://i.imgur.com/sUgGUAc.png)
+
+Output (When user get Role1):
+![](https://i.imgur.com/0PYZ2pA.png)
 
 
-`add` -> let the bot trigger when ANY role is given
+## Example 2: Trigger On Member's Roles Removed
+1. Set Trigger Value: `remove, Role1`\
+Which means trigger when role `Role1` removed from a user
+![](https://i.imgur.com/dt0kSdJ.png)
 
-`remove` -> let the bot trigger when ANY role is removed
+2. Set code to: `$roleName` Role was removed from $mention
+![](https://i.imgur.com/yqZAk54.png)
 
+3. Set channel used to any channel you want the message to be sent to
+![](https://i.imgur.com/sUgGUAc.png)
 
-`add, ROLE NAME` -> let the bot trigger when a role is given, specified in `ROLE NAME`
+Output (Role1 get removed from user):
+![](https://i.imgur.com/UbKVguz.png)
 
-`add, ROLE ID` -> let the bot trigger when a role is given, specified in `ROLE ID`
+## Example 3: Trigger On Multiple Roles
+You can make trigger on multiple roles by using this format: `Role1|Role2|Role3`
+Like this example
+1. Set Trigger Value: `add, Role1|Role2`\
+Which means trigger when user receive role `Role1` or `Role2`
+![](https://i.imgur.com/3X3aFyJ.png)
 
+2. Set code to: $username received `$roleName` Role
+![](https://i.imgur.com/WezSkrK.png)
 
-`remove, ROLE NAME` -> let the bot trigger when a role is removed, specified in `ROLE NAME`
+3. Set channel used to any channel you want the message to be sent to
+![](https://i.imgur.com/sUgGUAc.png)
 
-`remove, ROLE ID` -> let the bot trigger when a role is removed, specified in `ROLE ID`
-
-`add, Role_1|Role_2` -> let the bot trigger when a role `Role_1` or `Role_2` is given
+Output (When user get Role1 or Role2):
+![](https://i.imgur.com/UpUZYbA.png)
 
 ::: warning Warning
 All role names are caSe seNsiTiVe, so a if a command doesn't triggers, check the capitalization!
 :::
 
-::: danger DO NOT FORGET:
-
-Set a channel used, otherwise errors will not be send anywhere! This makes bug fixing really difficult!
-:::
-
-## More Info
-
-Do you want to know more, about the bot's syntax? You can check out [this](../Other/syntax.md) page to learn more!
