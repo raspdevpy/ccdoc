@@ -1,8 +1,8 @@
 # $createChannel
-Creates a channel in the server, if specified, in a category. 
+Creates a channel in the server.
 
 #### Usage: 
-`$createChannel[name;type;return ID (yes/no);categoryID (optional);topic;nfsw (yes/no);bitrate (i.e 64000);position;Slowdown duration;User Limit for Voice Channel]`
+`$createChannel[name;type;return ID (yes/no);categoryID (optional);topic;NSFW (yes/no);Bitrate (i.e 64000, VC only);Position;Slowmode in Seconds (optional);User Limi (VC only)]`
 
 #### Example:
 `$createChannel[general;text;no]`
@@ -13,9 +13,9 @@ This will create a text channel with the name "general".
 :::
 
 ::: tip Related Functions
-[$createThread](../Threads/createThread.md), used to create a thread
+[$createThread](../Threads/createThread.md) is used to create a thread.
 
-[$createRole](../Role/createRole.md), used to create a role
+[$createRole](../Role/createRole.md) is used to create a role.
 :::
 
 ##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 

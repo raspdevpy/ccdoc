@@ -1,5 +1,5 @@
 # $channelUsed
-Return the ID of the channel used if no channel ID is specified, or set it if there is one specified.
+Return the ID of the channel used. If no channel ID is specified, set it to the current channel.
 
 #### Usage: `$channelUsed[channelID (optional)]`
 <br/>
@@ -17,7 +17,7 @@ Return the ID of the channel used if no channel ID is specified, or set it if th
 
 
 ::: tip Related Functions
-[$channelID](../Channel/channelID.md), return the ID from the channel the command is executed in.
+[$channelID](../Channel/channelID.md) will return the channelID where the command was executed.
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 

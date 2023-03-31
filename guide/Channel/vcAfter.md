@@ -1,6 +1,6 @@
 # $vcAfter
 
-Return the voice channel id that user just join in voice trigger
+Returns the Voice channelID that the user switched to, **after**.
 
 ## Usage
 

@@ -1,14 +1,13 @@
 # $getChannelMessages
 
-To return list of messages ids
+Returns the most recent channel messages.
 
 ## Usage
-
 ```bash
-$getChannelMessages[Channel ID;From User ID or everyone (default is everyone);ids/contents;separator;amount (max is 50)]
+$getChannelMessages[Channel ID;userID or everyone (default is everyone);ids/contents;separator;amount (max 50)]
 ```
 
-### Example 1:
+### Example:
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
         !!exec $getChannelMessages[$channelID;$authorID;everyone;ids;/;2]<br><br>

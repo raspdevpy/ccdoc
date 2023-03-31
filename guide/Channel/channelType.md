@@ -12,6 +12,9 @@ Returns the type of channel, from a channel ID.
 	</discord-message>
 </discord-messages>
 
+::: tip Note
+This function returns a type of channel from this [list.](../CodeReferences/ref.channel_types.md)
+:::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="channel type" vertical="middle" />

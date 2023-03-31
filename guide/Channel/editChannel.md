@@ -1,8 +1,9 @@
 # $editChannel
-Edits a channel by ID.
+Edits a channel.
 
 #### Usage: 
 `$editChannel[channelID;categoryID/$default;name/$default;position/$default;nsfw/$default (yes/no);bitrate/$default;userLimit/$default;syncPermission/$default (yes/no);reason (optional)]`
+> If you don't want to edit something, set it to $default.
 
 ::: tip Available channel Types
 [This lists](../CodeReferences/ref.channel_types.md) all valid channel types.
@@ -10,14 +11,11 @@ Edits a channel by ID.
 
 #### Example:
 `$editChannel[$channelID;$default;new-channel-name;$default;$default;$default;$default;yes;To show the docs]`
-This will edit the channel name to be "new-channel-name"
+This will edit the channel name to be "new-channel-name".
 
 ::: tip Related Functions
-[$modifyChannelPerms](../Channel/modifyChannelPerms.md), used to modify channel permissions
+[$modifyChannelPerms](../Channel/modifyChannelPerms.md) can be used to modify channel permissions.
 :::
-
-
-
 
 
 ##### Function Difficulty: <Badge type="danger" text="Difficult" vertical="middle" /> 

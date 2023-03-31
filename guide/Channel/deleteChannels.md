@@ -1,5 +1,5 @@
 # $deleteChannels
-Delete a specified number of channels in the server, via channel IDs
+Delete channels in the server
 
 #### Usage: 
 `$deleteChannels[channelID1;channelID2;channelID3;...]`
@@ -11,9 +11,9 @@ This will delete the channel the command is executed in.
 
 
 ::: tip Related Functions
-[$deleteRoles](../Role/deleteRoles.md), used to delete roles
+[$deleteRoles](../Role/deleteRoles.md) can be used to delete roles.
 
-[$deleteThreads](../Threads/deleteThreads.md), used to delete threads
+[$deleteThreads](../Threads/deleteThreads.md) can be used to delete threads.
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 

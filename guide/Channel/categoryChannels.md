@@ -1,11 +1,11 @@
 # $categoryChannels
 
-To get the channels inside category
+Returns all channels inside a category.
 
 ## Usage
 
 ```bash
-$categoryChannels[Category ID;Info type (name/id/mention);Seperator (optional, default is ",")]
+$categoryChannels[Category ID;Info type (name/id/mention);Separator (optional, default is ",")]
 ```
 
 ### Example:

@@ -1,7 +1,6 @@
 # $serverChannels
 
-Return all the channels inside the guild\
-\
+Return all the channels inside the guild.
 
 ## Usage
 

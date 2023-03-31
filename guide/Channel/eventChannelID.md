@@ -1,10 +1,10 @@
 # $eventChannelID
-This will return the ID of the channel created/deleted
+This will return the ID of the channel created/deleted, triggered with the **Channel creation/deletion** trigger.
 
 #### Usage: `$eventChannelID`
 
 ::: warning
-This function will not work in the voice trigger to check which channel a member joined.
+This function will not work with the voice join/leave trigger.
 Instead, use [$voiceChannelID](../Channel/voiceChannelID.md).
 
 This function will not work in a normal trigger.

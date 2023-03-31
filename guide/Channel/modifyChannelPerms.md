@@ -10,23 +10,19 @@ This command will restrict members with the role "muted" from speaking.
 
 
 :::tip Information
-Use a `+` sign to grant the permission;
+Use `+` to grant a permission;
 
-Use `-` to deny the permission;
+Use `-` to deny a permission;
 
-Use `/` to set the permission to neutral.
+Use `/` to set a permission to neutral.
 :::
 
 ::: tip Permissions
 [This list](../CodeReferences/ref.permissions_list.md) contains a list of all permissions.
 :::
 
-::: warning 
-Bot needs the same permissions set which should be added (+) by $modifyChannelPerms
-:::
-
 ::: tip Related Functions
-[$editChannel](../Channel/editChannel.md), used to modify a channel.
+[$editChannel](../Channel/editChannel.md) can be used to modify a channel.
 :::
 
 

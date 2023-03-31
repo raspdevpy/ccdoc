@@ -1,6 +1,6 @@
 # $vcBefore
 
-Return the voice channel id that user just left in voice trigger
+Returns the Voice channelID the user switched from.
 
 ## Usage
 
