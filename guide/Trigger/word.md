@@ -74,7 +74,7 @@ Like:
 ```
 /^(\?)(hug|abrazo|étreinte)\b/
 ```
-Note: we used `\\?` instead of `?`, because `?` has special meaning in regex format, so we need to tell him use it as plain character through putting `\` before it
+Note: we used `\?` instead of `?`, because `?` has special meaning in regex format, so we need to tell him use it as plain character through putting `\` before it
 
 Trigger will look like this:
 ![](https://i.imgur.com/pYGRD8x.png)
