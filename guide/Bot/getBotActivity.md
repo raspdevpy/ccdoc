@@ -1,17 +1,15 @@
-# $getBotActivity
+# $getBotActivity <Badge type="danger" text="Premium ONLY!" vertical="middle" /> 
 
-get a custom bot activity
+This will return the bot's Activity Status.
 
 ## Usage
 
 ```bash
-$getBotActivity[information type]
+$getBotActivity[text/type]
 ```
 
-# Information type can be `text` or `type`
-
 ### Example:
-![](https://i.imgur.com/KyYqUGU.png)\
+![](https://i.imgur.com/KyYqUGU.png)
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
         !!exec $getBotActivity[text]<br><br>

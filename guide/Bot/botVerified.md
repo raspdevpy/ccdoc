@@ -1,14 +1,14 @@
 # $botVerified
 
-checks if a bot is verified or not
+Checks if a bot is verified or not.
 
 ## Usage
 
 ```bash
-$botVerified[bot id]
+$botVerified[Bot ID]
 ```
 
-### Example (Verified bot):
+### Example for a verified bot:
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
         !!exec $botVerified[725721249652670555]<br><br>
@@ -18,7 +18,7 @@ $botVerified[bot id]
         </discord-message>
 </discord-messages>
 
-### Example (not verified bot):
+### Example for an unverified bot:
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
         !!exec $botVerified[582019849073590274]<br><br>

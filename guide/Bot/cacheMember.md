@@ -1,13 +1,12 @@
 # $cacheMember
-Caches a member, so the bot recognizes the Member if you use other **cooldownless** user functions like, `$userwithRoles` 
-not needed for function like:`$toggleRole,$giveRoles...`
+Caches a member, so the bot recognizes the Member, when you use functions without cooldowns, such as `$usersWithRole`. This function is not needed for functions like `$toggleRoles`, and `$giveRoles`.
 #### Usage: `$cacheMember[userID (optional)]`
 
 #### Example:
-`$cacheMember[00xxxxxxxxxxxxxx00]`
+`$cacheMember[userID]`
 
 ::: tip
-When someone executes a command, he/she/it will automatically get cached.
+When someone executes a command, they will automatically get cached.
 :::
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 

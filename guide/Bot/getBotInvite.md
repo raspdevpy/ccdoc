@@ -19,5 +19,5 @@ $getBotInvite[permission;permission;permission...]
 </discord-messages>
 
 ::: tip Permissions
-Check this [list](../CodeReferences/ref.permissions_list.md) to view all permissions names
+Check this [list](../CodeReferences/ref.permissions_list.md) to view all permission names.
 :::

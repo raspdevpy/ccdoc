@@ -1,6 +1,6 @@
 # $cpu
 
-Returns the cpu usage.
+Returns the current CPU usage of the bot.
 
 ## Usage
 

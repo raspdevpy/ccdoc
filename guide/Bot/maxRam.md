@@ -1,6 +1,6 @@
 # $maxRam
 
-Total memory for this process.
+Returns the total memory for your bot's shard.
 
 ## Usage
 
