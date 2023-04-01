@@ -6,6 +6,7 @@ module.exports = {
 	title: 'Custom Command Bot',
 	description: 'The documentation of Custom Command bot',
 	theme: '@vuepress/default',
+	head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
 	//plugins: ['@vuepress/plugin-container'],
 	plugins: [
 		['@vuepress/plugin-search',{
