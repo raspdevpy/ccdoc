@@ -1,8 +1,13 @@
-# $voiceChannelID
+# $voiceChannelID <Badge type="warning" text="Depreciated" vertical="middle" /> 
 
-To return the voice channel id where the user join/left in voice trigger\
-in situation of moving from channel to channel, this function will return the new channel\
-This function is **deprecated**, please use [$vcBefore](./vcBefore.md), [$vcAfter](./vcAfter.md) instead
+::: danger
+This function has been depreciated!
+This function is **deprecated**, please use [$vcBefore](./vcBefore.md) and [$vcAfter](./vcAfter.md) instead.
+:::
+
+Returns the Voice channelID where the user join/left in voice trigger.
+If the user switches channel, this function will return the new channel.
+
 
 ## Usage
 

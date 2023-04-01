@@ -1,5 +1,5 @@
 # $channel
-Get specific information about a channel. 
+Gets specific information about a channel. 
 
 #### Usage: 
 `$channel[Channel ID;Option]`
@@ -11,16 +11,16 @@ name, id, isdeleted, mention, position, rawposition, topic, type, created, times
 #### Example:
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec `#$channel[$channelID;name]`
+		!!exec #$channel[$channelID;name]
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		`#custom-command-is-the-best`
+		#custom-command-is-the-best
 	</discord-message>
 </discord-messages>
 
 
 ::: tip Note
-Option `type` return a type from this [list](../CodeReferences/ref.channel_types.md)
+The `type` argument returns a type of channel from this [list.](../CodeReferences/ref.channel_types.md)
 :::
 
 

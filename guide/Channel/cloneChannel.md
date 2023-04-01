@@ -1,6 +1,6 @@
 # $cloneChannel
 
-Clones a channel with permissions.
+Clones a channel, duplicating its permissions and name.
 
 ## Usage
 

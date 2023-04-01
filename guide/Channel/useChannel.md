@@ -1,5 +1,5 @@
 # $useChannel
-Changes the channel Used (`$channelUsed`) to another channel.
+Sets the channelUsed.
 
 #### Usage: `$useChannel[channelID]`
 

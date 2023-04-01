@@ -1,6 +1,6 @@
 # $botPing
 
-Returns the Bot Message ping
+Returns the Bot's current message ping.
 
 ## Usage
 

@@ -1,6 +1,6 @@
-# $setBotActivity
+# $setBotActivity <Badge type="danger" text="Premium ONLY!" vertical="middle" /> 
 
-set a custom bot activity like `Watching ?help`
+Sets the Custom Bot's activity.
 
 ## Usage
 

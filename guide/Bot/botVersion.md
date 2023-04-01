@@ -1,6 +1,6 @@
 # $botVersion
 
-Return the current CC bot version
+Returns the bot's current version.
 
 ## Usage
 

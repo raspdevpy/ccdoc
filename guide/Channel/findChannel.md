@@ -1,10 +1,10 @@
 # $findChannel
-Searches for a channel, by ID or name
+Searches for a channel, by ID or name.
 
 #### Usage: 
 `$findChannel[ID/mention/name;returnCurrentChannel (yes/no) (optional)]`
 
-If channel is found:
+**If channel is found:**
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -15,7 +15,7 @@ If channel is found:
 	</discord-message>
 </discord-messages>
 
-If channel is not found & second parameter is `"no"`:
+**If channel is not found and the second argument is `"no"`:**
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -28,7 +28,7 @@ If channel is not found & second parameter is `"no"`:
 
 
 ::: tip Related Functions
-[$channelExists](../Channel/channelExists.md), used to tell if a channel ID exists.
+[$channelExists](../Channel/channelExists.md) is used to tell if a channel ID exists.
 :::
 
 ##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 

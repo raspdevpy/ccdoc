@@ -1,5 +1,5 @@
 # $channelID
-Return the ID of the channel the command is executed in, or a provided channel ID.
+Return the ID of the channel the command is executed in, or provides the ID when the name is provided.
 
 #### Usage: `$channelID[channel name (optional)]`
 <br/>
@@ -14,11 +14,11 @@ Return the ID of the channel the command is executed in, or a provided channel I
 
 
 ::: warning
-This function will not work in the voice trigger to show which channel a member joined.
-Instead use [$voiceChannelID](../Channel/voiceChannelID.md)
+This function will not work with the voice channel join/leave trigger.
+Instead, use [$voiceChannelID](../Channel/voiceChannelID.md).
 
-This function will not work in the channel event.
-Instead use [$eventChannelID](../Channel/eventChannelID.md)
+This function will not work with the channel creation/deletion trigger.
+Instead, use [$eventChannelID](../Channel/eventChannelID.md).
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 

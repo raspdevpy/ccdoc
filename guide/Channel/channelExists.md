@@ -1,5 +1,5 @@
 # $channelExists
-Returns a boolean(true/false), which determines whether a channel exists or not.
+Returns true or false, based on whether or not a channelID exists.
 
 #### Usage: 
 `$channelExists[channelID]`
@@ -17,11 +17,11 @@ Returns a boolean(true/false), which determines whether a channel exists or not.
 
 
 ::: tip Used Functions
-[$channelID](../Channel/channelID.md), to get the ID of a channel by name
+Use [$channelID](../Channel/channelID.md) to get the ID of a channel using its name.
 :::
 
 ::: tip Related Functions
-[$findChannel](../Channel/findChannel.md), to find a channel per name
+Use [$findChannel](../Channel/findChannel.md) to find a channel using its name.
 :::
 
 ##### Function Difficultyy: <Badge type="tip" text="Easy" vertical="middle" /> 

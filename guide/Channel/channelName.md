@@ -14,11 +14,11 @@ Returns the name of a channel.
 
 
 ::: tip Used Functions
-[$channelID](../Channel/channelID.md), to get the ID of a channel by name or the channel the command is executed in
+Use [$channelID](../Channel/channelID.md) to get the ID of a channel by name, or to get the channelID of which the command is executed in.
 :::
 
 ::: tip Related Functions
-[$findChannel](../Channel/findChannel.md), to find a channel per name
+Use [$findChannel](../Channel/findChannel.md), to find a channel using its name.
 :::
 
 

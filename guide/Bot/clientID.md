@@ -1,5 +1,5 @@
 # $clientID
-Returns the Bot's UserID (also known as clientID)
+Returns the Bot's UserID, which is also known as the Client ID.
 
 #### Usage: `$clientID`
 

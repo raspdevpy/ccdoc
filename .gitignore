@@ -6,3 +6,4 @@ dist
 data.json
 build*.sh
 ignore/*
+.DS_Store
