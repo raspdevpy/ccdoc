@@ -1,7 +1,6 @@
 # $timeToDate
 
-Convert timestamp (since 1970 in ms) to formatted Date (Timezone will respect $timeZone value)\
-Accept [this format](https://discord.com/channels/772051119538176021/949797746917933126/952064529876021358)
+Convert timestamp (since 1970 in ms) to formatted Date (Timezone will respect [$timeZone](../Date/timezone.md) value)
 
 ## Usage
 
@@ -18,3 +17,8 @@ $timeToDate[Time;Format (optional)]
         2022-3-12
         </discord-message>
 </discord-messages>
+
+::: tip Accepted Time Formats
+You can see the full list [here](../CodeReferences/ref.time_format.md)
+:::
+

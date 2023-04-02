@@ -1,4 +1,4 @@
-# Done (90.00%)
+# Done (91.91%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -61,6 +61,7 @@
 * ~~editMessage~~
 * ~~wait~~
 * ~~roleID~~
+* ~~commandCode~~
 * ~~sub~~
 * ~~numberSeparator~~
 * ~~hasRoles~~
@@ -157,6 +158,7 @@
 * ~~uptime~~
 * ~~hasRole~~
 * ~~channelUsed~~
+* ~~findServerChannel~~
 * ~~messageSlice~~
 * ~~usersWithRole~~
 * ~~resetUserVar~~
@@ -170,6 +172,7 @@
 * ~~roundTenth~~
 * ~~colorRole~~
 * ~~isValidObject~~
+* ~~onlyIfMessageContains~~
 * ~~removeSplitTextElement~~
 * ~~usersInChannel~~
 * ~~usersBanned~~
@@ -199,6 +202,7 @@
 * ~~newTicket~~
 * ~~closeTicket~~
 * ~~isMentioned~~
+* ~~createWebhook~~
 * ~~sendWebhook~~
 * ~~setChannelTopic~~
 * ~~deleteWebhook~~
@@ -360,6 +364,7 @@
 * ~~arrayShuffle~~
 * ~~arraySort~~
 * ~~getCommandOption~~
+* ~~commandName~~
 * ~~ObjectRemove~~
 * ~~awaitMenu~~
 * ~~getCooldownTime~~
@@ -369,10 +374,14 @@
 * ~~enableMenu~~
 * ~~removeMenu~~
 * ~~editMenu~~
+* ~~editEmbed~~
 * ~~getTrigger~~
 * ~~editTrigger~~
 * ~~deleteTrigger~~
+* ~~dateToTime~~
+* ~~timeToDate~~
 * ~~buffer~~
+* ~~roleIcon~~
 * ~~serverChannels~~
 * ~~clearCoolDown~~
 * ~~textShuffle~~
@@ -423,16 +432,12 @@
 * ~~getBotActivity~~
 * ~~arrayCreate~~
 
- # Not done (10.00%)
-* [commandCode](./Unclassified/commandCode.md)
+ # Not done (8.09%)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [filterMessage](./Unclassified/filterMessage.md)
-* [findServerChannel](./Unclassified/findServerChannel.md)
 * [getMessage](./Unclassified/getMessage.md)
-* [onlyIfMessageContains](./Unclassified/onlyIfMessageContains.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
-* [createWebhook](./Unclassified/createWebhook.md)
 * [referenceChannelID](./Unclassified/referenceChannelID.md)
 * [referenceMessageID](./Unclassified/referenceMessageID.md)
 * [getInviteInfo](./Unclassified/getInviteInfo.md)
@@ -453,14 +458,9 @@
 * [endTimeout](./Unclassified/endTimeout.md)
 * [transcriptChannel](./Unclassified/transcriptChannel.md)
 * [eventChannelParent](./Unclassified/eventChannelParent.md)
-* [commandName](./Unclassified/commandName.md)
-* [editEmbed](./Unclassified/editEmbed.md)
 * [userSetTimeout](./Unclassified/userSetTimeout.md)
 * [userRemoveTimeout](./Unclassified/userRemoveTimeout.md)
 * [userGetTimeout](./Unclassified/userGetTimeout.md)
-* [dateToTime](./Unclassified/dateToTime.md)
-* [timeToDate](./Unclassified/timeToDate.md)
-* [roleIcon](./Unclassified/roleIcon.md)
 * [membersWithStatus](./Unclassified/membersWithStatus.md)
 * [editWebhookMessage](./Unclassified/editWebhookMessage.md)
 * [deleteWebhookMessage](./Unclassified/deleteWebhookMessage.md)
