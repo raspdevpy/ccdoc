@@ -1,4 +1,4 @@
-# Done (91.91%)
+# Done (92.34%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -141,6 +141,7 @@
 * ~~argsCheck~~
 * ~~setMessageVar~~
 * ~~suppressErrors~~
+* ~~filterMessage~~
 * ~~onlyNSFW~~
 * ~~getRoleColor~~
 * ~~getBotInvite~~
@@ -220,6 +221,7 @@
 * ~~isValidLink~~
 * ~~isDeafened~~
 * ~~serverSplash~~
+* ~~sendCrosspostingMessage~~
 * ~~botPing~~
 * ~~messageID~~
 * ~~error~~
@@ -432,9 +434,8 @@
 * ~~getBotActivity~~
 * ~~arrayCreate~~
 
- # Not done (8.09%)
+ # Not done (7.66%)
 * [jsonRequest](./Unclassified/jsonRequest.md)
-* [filterMessage](./Unclassified/filterMessage.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
@@ -442,7 +443,6 @@
 * [referenceMessageID](./Unclassified/referenceMessageID.md)
 * [getInviteInfo](./Unclassified/getInviteInfo.md)
 * [isUserDMEnabled](./Unclassified/isUserDMEnabled.md)
-* [sendCrosspostingMessage](./Unclassified/sendCrosspostingMessage.md)
 * [findNumbers](./Unclassified/findNumbers.md)
 * [findSpecialChars](./Unclassified/findSpecialChars.md)
 * [findChars](./Unclassified/findChars.md)
