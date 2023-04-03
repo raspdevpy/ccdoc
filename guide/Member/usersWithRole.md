@@ -1,26 +1,30 @@
 # $usersWithRole
-returns users,which have the users role
 
-#### Usage: 
-`$usersWithRole[roleID;separator (optional, default space);id/username/tag/mention (optional, default tag)]`
+Returns a list of users with given role (members are given from the cache.\
+)
 
-<br/>
+## Usage
+
+```bash
+$usersWithRole[roleID;separator (optional, default new line);id/username/tag/mention (optional, default tag)]
+```
+
+### Example (Get users with member roles):
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $usersWithRole[$roleID[member];,;username]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		 Tom,Lisa,Ben
-	</discord-message>
+          <discord-message :bot="false" role-color="#ffcc9a" author="Member">
+        !!exec $usersWithRole[Members;, ;username]<br><br>
+          </discord-message>
+          <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+        Mido, Rake, Azz<br><br>
+        </discord-message>
 </discord-messages>
 
-::: tip Related Functions
-[$hasRoles](../Member/hasRoles.md), to check if the user has role
-:::
-
-::: info Member must be cached!
-If you use the main bot the member must be cached to get valid results.You can ignore the message,if you use custom bot!
-:::
-
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="WithRole" vertical="middle" /> 
+### Example (Get users with no role):
+<discord-messages>
+          <discord-message :bot="false" role-color="#ffcc9a" author="Member">
+        !!exec users with no roles: $usersWithRole[;, ;tag]<br><br>
+          </discord-message>
+          <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+        LonelyWolf#1234, Stranger#5678
+        </discord-message>
+</discord-messages>

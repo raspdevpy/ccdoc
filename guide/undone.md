@@ -1,4 +1,4 @@
-# Done (92.34%)
+# Done (92.13%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -161,7 +161,6 @@
 * ~~channelUsed~~
 * ~~findServerChannel~~
 * ~~messageSlice~~
-* ~~usersWithRole~~
 * ~~resetUserVar~~
 * ~~repeatMessage~~
 * ~~randomUserID~~
@@ -434,8 +433,9 @@
 * ~~getBotActivity~~
 * ~~arrayCreate~~
 
- # Not done (7.66%)
+ # Not done (7.87%)
 * [jsonRequest](./Unclassified/jsonRequest.md)
+* [usersWithRole](./Unclassified/usersWithRole.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
