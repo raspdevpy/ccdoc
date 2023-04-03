@@ -62,6 +62,7 @@ module.exports= {
 			getSideBar('Text/Object','Object Functions',{collapsible:true}),
 			getSideBar('Text/isandhas','Is and Has Functions',{collapsible:true}),
 			getSideBar('Text/only','Only Functions',{collapsible:true}),
+			getSideBar('Text/Regex','Regex Functions',{collapsible:true}),
 			getSideBar('Date','Date Functions',{collapsible:true}),
 			getSideBar('Variables','Variables Functions',{collapsible:true}),
 			getSideBar('Bot','Bot Functions',{collapsible:true}),
