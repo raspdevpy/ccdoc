@@ -2,7 +2,7 @@
 Custom Command Documentation
 
 # How to contribute?
-You can contribute by cloning this repo, modify then pull request
+You can contribute by forking this repo, [click here](https://github.com/raspdevpy/ccdoc/fork), modify the changes, then Pull request.
 
 # How to run?
 Required: Node 18.x, npm
