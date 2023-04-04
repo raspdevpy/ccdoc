@@ -6,14 +6,14 @@ Every function has a cooldown, this is how long the bot will wait before or abor
 You can retrieve the cooldown of a function by using the command !!func `fname` .
 
 ## Function Limit
-Functions with cooldowns can only be called 4 times in the code.
+Functions with cooldowns can only be called 5 times in the code.
 
 ## Execution Limits
-The Bot supports up to 6 parallel executions of a custom command.
+The Bot supports up to 5 parallel executions of a custom command.
 
 ## Execution Cooldown
 There is a global cooldown for all custom commands.
-The Executor can only trigger command every 4 seconds.
+The Executor can only trigger command every 5 seconds.
 
 # Premium
 Tier 3/4/5 allows you to run your own bot. That's why limitations are removed. Your Bot runs isolated in a separate process.
