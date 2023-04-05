@@ -1,4 +1,4 @@
-# Done (92.36%)
+# Done (92.14%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -148,7 +148,6 @@
 * ~~getEmbed~~
 * ~~messageAttachment~~
 * ~~onlyBotPerms~~
-* ~~cloneChannel~~
 * ~~setGuildName~~
 * ~~setGuildIcon~~
 * ~~deleteIn~~
@@ -435,8 +434,9 @@
 * ~~getBotActivity~~
 * ~~arrayCreate~~
 
- # Not done (7.64%)
+ # Not done (7.86%)
 * [jsonRequest](./Unclassified/jsonRequest.md)
+* [cloneChannel](./Unclassified/cloneChannel.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
