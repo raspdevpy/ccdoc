@@ -43,7 +43,7 @@ you can edit multiple parts of the embed add once by adding them together like t
 | {description:text} | edit a description |
 | {desc:text} | alias to {description} |
 | {color:hex} | edit a color of embed |
-| {author:text:url} | edit author |
+| {author:text:image url:link url} | edit author |
 | {thumbnail:url} | edit thumbnail |
 | {field:name:value:inline} | add a field |
 | {field:name:value:inline:field number} | edit a field |
