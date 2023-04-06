@@ -20,7 +20,7 @@ $findNumbers[string]
 </discord-messages>
 
 ::: tip Related functions
-- [$findSpecialChars](./Text/findSpecialChars.md)
-- [$findChars](./Text/findChars.md)
+- [$findSpecialChars](../Text/findSpecialChars.md)
+- [$findChars](../Text/findChars.md)
 :::
 
