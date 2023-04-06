@@ -21,13 +21,15 @@ module.exports= (page)=>{
         if(txt.match(/Easy|Difficult|Read Below|Medium|Bugged/gi)) return;
         if(txt.length>1) tags.push(txt);
     })
-
-    jsonObj.push({
+    if(page.title.startsWith('$'))
+        tags.push(page.title.slice(1));
+    let data={
         title: page.title,
         path: page.path,
         content: page.contentRendered,
         tags: tags
-    });
+    }
+    jsonObj.push(data);
     console.log(jsonObj.length)
 
     if(jsonObj.length > 500) write('./data.json');
