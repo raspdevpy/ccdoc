@@ -1,5 +1,5 @@
 # $get
-gets a temp value
+retrieve variable defined by [$let](./let.md)
 
 ## Usage: `$get[varname;value if not exists] or $varname`
 
