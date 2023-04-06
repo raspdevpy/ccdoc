@@ -48,40 +48,15 @@ Call the function, using [$printHello](../Useful/callFunction)
 	</discord-message>
 </discord-messages>
 
-
-## Global function
-defining global function will allow you to execute this function from another custom command
-#### How?
-add /global to the name when defining the function
-<br/>
-<discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-        <DiscordMarkdown>
-	        !!exec $function[printHello/global;name]{
-            {{ '\n' }}
-            Hello $name 👋
-            {{ '\n' }}
-	    }
-		</DiscordMarkdown>
-	</discord-message>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-        <DiscordMarkdown>
-	        !!exec $callFunction[printHello;Mika]
-		</DiscordMarkdown>
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-        Hello Mika 👋
-	</discord-message>
-</discord-messages>
+::: tip
+Code inside the function is isolated from outside, which means changing of variables, arrays, random,...won't effect the outside.\
+you can access outside temporary variables (assigned by [$let](../Variables/let.md)) but you can't change them.
+:::
 
 ::: danger 
 A function name can't start with number, and must be within [A-Z or a-z or _ or 0-9] for short format ($functionName)
 but if you are using $callFunction to call the function, any name is valid
 :::
 
-::: danger Calling global function for first time
-You will need to use `$callFunction` if you called a global function inside another custom command for first time, afterward you can use the short format
-i.e $printHello
-:::
 ##### Function difficulty <Badge type="danger" text="Difficult" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Function" vertical="middle" />  <Badge type="tip" text="Custom Functions" vertical="middle" />  <Badge type="tip" text="Nested code" vertical="middle" />
