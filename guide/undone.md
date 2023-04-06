@@ -1,4 +1,4 @@
-# Done (91.95%)
+# Done (92.39%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -81,6 +81,7 @@
 * ~~divide~~
 * ~~getUserVar~~
 * ~~color~~
+* ~~viewUserVars~~
 * ~~addField~~
 * ~~changeNickname~~
 * ~~setUserVar~~
@@ -136,6 +137,7 @@
 * ~~userRoles~~
 * ~~status~~
 * ~~charCount~~
+* ~~textLength~~
 * ~~getMessageVar~~
 * ~~memberJoinedDate~~
 * ~~argsCheck~~
@@ -148,6 +150,7 @@
 * ~~getEmbed~~
 * ~~messageAttachment~~
 * ~~onlyBotPerms~~
+* ~~cloneChannel~~
 * ~~setGuildName~~
 * ~~setGuildIcon~~
 * ~~deleteIn~~
@@ -434,10 +437,8 @@
 * ~~getBotActivity~~
 * ~~arrayCreate~~
 
- # Not done (8.05%)
+ # Not done (7.61%)
 * [jsonRequest](./Unclassified/jsonRequest.md)
-* [textLength](./Unclassified/textLength.md)
-* [cloneChannel](./Unclassified/cloneChannel.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
