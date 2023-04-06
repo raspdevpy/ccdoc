@@ -1,4 +1,4 @@
-# Done (92.39%)
+# Done (93.02%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -236,6 +236,9 @@
 * ~~replaceTextWithRegex~~
 * ~~regexReplace~~
 * ~~getObject~~
+* ~~findNumbers~~
+* ~~findSpecialChars~~
+* ~~findChars~~
 * ~~year~~
 * ~~day~~
 * ~~month~~
@@ -437,7 +440,7 @@
 * ~~getBotActivity~~
 * ~~arrayCreate~~
 
- # Not done (7.61%)
+ # Not done (6.98%)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
@@ -446,9 +449,6 @@
 * [referenceMessageID](./Unclassified/referenceMessageID.md)
 * [getInviteInfo](./Unclassified/getInviteInfo.md)
 * [isUserDMEnabled](./Unclassified/isUserDMEnabled.md)
-* [findNumbers](./Unclassified/findNumbers.md)
-* [findSpecialChars](./Unclassified/findSpecialChars.md)
-* [findChars](./Unclassified/findChars.md)
 * [getChannelSlowmode](./Unclassified/getChannelSlowmode.md)
 * [removeContains](./Unclassified/removeContains.md)
 * [disableRoleMentions](./Unclassified/disableRoleMentions.md)
