@@ -1,7 +1,6 @@
 # $authorAvatar
 
-Returns the author's avatar.
-
+Returns the URL to the User's avatar that triggered the command.
 ## Usage
 
 ```bash
