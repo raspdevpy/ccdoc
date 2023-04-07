@@ -45,7 +45,7 @@ $selectMenu[id;placeholder;min value(optional);max value;(optional);label;desc;v
 {deletecommand}
 {timestamp}
 {pin}
-
+{data:var name:var value}
 ### Only for interactions
 
 {ephemeral=yes/no}
