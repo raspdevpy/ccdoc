@@ -1,4 +1,4 @@
-# Done (93.04%)
+# Done (93.08%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -440,8 +440,11 @@
 * ~~getBotActivity~~
 * ~~arrayCreate~~
 * ~~sentMessageID~~
+* ~~increaseUserVar~~
+* ~~increaseChannelVar~~
+* ~~increaseServerVar~~
 
- # Not done (6.96%)
+ # Not done (6.92%)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
