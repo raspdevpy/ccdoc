@@ -27,19 +27,26 @@ mutemembers: Mute User
 speak: Ability to speak in voice channel
 deafenmembers: Able to deafen jusers
 attachfiles: Ability to attach files in message
-connect: Ability to connect to voice channel
+connect: Allows for joining of a voice channel
 addreactions: Ability to add new reaction to a message
 speakpriority: Speak priority inside a voice channel
 ttsmessage: Send TTS message
 externalemoji: Ability to use emojis outside the server   
-vad: ability to use VAD
+vad: Allows for using voice-activity-detection in a voice channel
 changenickname: Ability to change his own nickname 
 slashcommand: Ability to use slash and applications commands
 speakrequest: Ability to request a speak inside stage channels 
-managethreads: Manage threads channels
+managethreads: Allows for deleting and archiving threads, and viewing all private threads
 publicthreads: Ability to create public threads
 privatethreads: Ability to create private threads
 externalstickers: Ability to use stickers from outside the server
+canstream: Allows the user to go live,
+manageevents: Allows for creating, editing, and deleting scheduled events
+createpublicthreads: Allows for creating public and announcement threads
+createprivatethreads: Allows for creating private threads
+sendmessagesinthreads: Allows for sending messages in threads
+embeddedactivities: Allows for using Activities
+moderatemembers: Allows for timing out users
 ```
 
 ### Example
