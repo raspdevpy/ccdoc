@@ -17,7 +17,7 @@ Available Variables:
 | {discriminator} | returns the discriminator like 1234 |
 
 Order:
-* `asc`: Rank is sorted from big to small numbers
+* `desc`: Rank is sorted from big to small numbers
 * `asc`: Rank is sorted from small to big numbers
 
 #### Example:
