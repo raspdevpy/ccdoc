@@ -30,7 +30,7 @@ Sending a embed with title `Hello` and description `World`
 {description:text} adding a description
 {desc:text} alias to {description}
 {color:hex} adding a color of embed
-{author:text:url} adding author
+{author:text:image url:link url} adding author
 {thumbnail:url} adding thumbnail
 {field:name:value:inline} adding a field
 {timestamp:ms} attaching a timestamp

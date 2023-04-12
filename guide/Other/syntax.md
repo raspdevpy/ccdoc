@@ -141,4 +141,6 @@ Some other dangerous characters
 #EQUAL# =>> =
 #RIGHT_BRACKET# =>> {
 #LEFT_BRACKET# =>> }
+#NL# =>> New line 
+#BR# =>> New line
 ```

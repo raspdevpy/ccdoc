@@ -1,30 +1,29 @@
-# $usersWithRole
+# $textLength
 
-Returns a list of users with given role (members are given from the cache.\
-)
+Counts character of a text, or the user's message.
 
 ## Usage
 
 ```bash
-$usersWithRole[roleID;separator (optional, default new line);id/username/tag/mention (optional, default tag)]
+$textLength or $textLength[text]
 ```
 
-### Example (Get users with member roles):
+### Example:
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
-        !!exec $usersWithRole[Members;, ;username]<br><br>
+        !!exec $textLength[Mido]<br><br>
           </discord-message>
           <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-        Mido, Rake, Azz<br><br>
+        4<br><br>
         </discord-message>
 </discord-messages>
 
-### Example (Get users with no role):
+### Example:
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
-        !!exec users with no roles: $usersWithRole[;, ;tag]<br><br>
+        !!exec $textLength[Hello]<br><br>
           </discord-message>
           <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-        LonelyWolf#1234, Stranger#5678
+        6
         </discord-message>
 </discord-messages>

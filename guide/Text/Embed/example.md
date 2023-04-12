@@ -24,7 +24,7 @@ $selectMenu[id;placeholder;min value(optional);max value;(optional);label;desc;v
 
 ## Curl Format
 
-{author:name:avatar}
+{author:name:avatar:link url}
 {title:title}
 {color:hex/int/COLOR}
 {url:title url}
