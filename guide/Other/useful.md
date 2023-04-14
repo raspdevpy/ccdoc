@@ -38,6 +38,7 @@ Now you understand the basic coding components, now we need to choose our trigge
 | Triggertype                                   | gets executed when  a user,|
 | --------                                      | -------- |
 | [Word](../Trigger/word.md)                    | Sends a message|
+| [System Message](../Trigger/wordsystem.md)                    | When Discord send a system message such as pin message|
 | [On Join/Leave](../Trigger/joinorleave.md)    | Joins or Leaves your server | 
 | [On Reaction](../Trigger/reaction.md)         | Reacts on a message|
 | [Voice](../Trigger/voicecondecon.md)          | Connects to or Disconnects from a VC|
