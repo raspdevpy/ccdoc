@@ -1,4 +1,4 @@
-# Done (92.69%)
+# Done (93.13%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -443,8 +443,11 @@
 * ~~increaseUserVar~~
 * ~~increaseChannelVar~~
 * ~~increaseServerVar~~
+* ~~latestMessage~~
+* ~~cacheChannelMessages~~
+* ~~conditional~~
 
- # Not done (7.31%)
+ # Not done (6.88%)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
@@ -478,5 +481,3 @@
 * [eventOldNickname](./Unclassified/eventOldNickname.md)
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)
-* [latestMessage](./Unclassified/latestMessage.md)
-* [cacheChannelMessages](./Unclassified/cacheChannelMessages.md)
