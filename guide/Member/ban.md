@@ -8,7 +8,7 @@ If member can be banned by the bot:
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Discord Moderator">
-		!!exec $ban[$findMember[Unknown User];Spamming;10]
+		!!exec $ban[$findMember[Unknown User];Spamming;7]
 	</discord-message>
 </discord-messages>
 
@@ -16,7 +16,7 @@ If member can NOT be banned by the bot <Badge type="warning" text="Read Below wh
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Discord Moderator">
-		!!exec $ban[$ownerID;I'm a bad moderator;10]
+		!!exec $ban[$ownerID;I'm a bad moderator;7]
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
 		❌  Failed to ban undefined!
@@ -24,6 +24,9 @@ If member can NOT be banned by the bot <Badge type="warning" text="Read Below wh
 </discord-messages>
 
 
+::: tip
+You can set days at maximum of 7 days, limitation from discord.
+:::
 
 ::: tip Why can't the bot ban a member?
 It could be, that your bot role, is below the member role! 
