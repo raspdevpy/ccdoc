@@ -48,7 +48,7 @@ $selectMenu[id;placeholder;min value(optional);max value;(optional);label;desc;v
 
 ### Only for interactions
 
-{ephemeral=yes/no}
+{ephemeral=yes/no} or {private=yes/no}
 
 ::: tip What are ephemerals?
 Ephemerals are a type of message that can be dismissed by the user and can only be seen by the user. [Learn more](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ#:~:text=An%20"Ephemeral%20Message"%20is%20a,long%20enough%2C%20or%20restart%20Discord.)
