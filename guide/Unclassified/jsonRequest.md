@@ -1,10 +1,9 @@
 # $jsonRequest
 
-<<<<<<< HEAD
-makes a json request (GET method) and returns a property from it
-=======
 Makes an API request (`GET`) and returns its response.
->>>>>>> 8c68f88 (update jsonRequest)
+::: tip Note
+The URL must be whitelisted, you can check in our support server.
+:::
 
 ## Usage
 
