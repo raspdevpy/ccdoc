@@ -3,8 +3,18 @@
 It is highly unrecommended to skip the guide, or reading only parts of it. Reading it all will make Custom Command's syntax and functions much more clear for you.
 :::
 
-## Inviting the Bot
+## What's Custom Command Bot?
+Custom Command bot is a bot allowing you to create completely customizable commands!
+It's a perfect tool both for experienced developers, and complete beginners who are looking for a way of quick and easy bot development.
 
+### How do custom commands work?
+As the name suggests are completely custom. You are able to specify pretty much anything discord bot can do.
+
+### Do I have to know coding?
+No, you don't need any previous coding experience. CC uses easy to learn pseudo-language that has been designed specifically for developing discord bot easily.
+
+## Inviting the Bot
+Setting up a Bot is really easy, just follow these steps:
 1. Invite the Bot via this [link.](https://discord.com/api/oauth2/authorize?client_id=725721249652670555&permissions=268561655&scope=bot)
 ![](https://i.imgur.com/NQp3N8L.png)
 
@@ -22,8 +32,7 @@ We recommend you leave all the permissions as-is, so you don't face any issues w
 
 
 ## Creating Custom Commands
-
-#### Follow [this link](../Guide/1.create.md) to create your first Custom Command!
+#### Check out [the rest of the guide](../Guide/1.create.md) to create your first Custom Command!
 
 
 <!-- ### Welcomer
