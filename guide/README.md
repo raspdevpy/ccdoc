@@ -16,19 +16,19 @@ No, you don't need any previous coding experience. CC uses easy to learn pseudo-
 ## Inviting the Bot
 Setting up a Bot is really easy, just follow these steps:
 1. Invite the Bot via this [link.](https://discord.com/api/oauth2/authorize?client_id=725721249652670555&permissions=268561655&scope=bot)
-![](https://i.imgur.com/NQp3N8L.png)
+> ![](https://i.imgur.com/NQp3N8L.png)
 
 We recommend you leave all the permissions as-is, so you don't face any issues when using functions that require certain Discord permissions. Our Privacy Policy can be accessed via [this](https://doc.ccommandbot.com/Guide/policy.html) page.
 
-![](https://i.imgur.com/7WnDcnG.png)
+> ![](https://i.imgur.com/7WnDcnG.png)
 
 2. Login to the [Dashboard.](https://ccommandbot.com/auth/login)
 
-![](https://i.imgur.com/pvJ3i6R.png)
+> ![](https://i.imgur.com/pvJ3i6R.png)
 
 3. Select your Server.
 
-![](https://i.imgur.com/XxSsZ4G.png)
+> ![](https://i.imgur.com/XxSsZ4G.png)
 
 
 ## Creating Custom Commands
