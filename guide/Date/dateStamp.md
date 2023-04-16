@@ -1,7 +1,7 @@
 # $dateStamp
 Returns the current time since 1970 in ms.
 
-#### Usage: `$dateStamp[Return Seconds (Yes/No)]`
+#### Usage: `$dateStamp[Return in Seconds (Yes/No)]`
 
 <br/>
 <discord-messages>
