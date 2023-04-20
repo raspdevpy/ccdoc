@@ -51,6 +51,7 @@ Sending a embed with title `Hello` and description `World`
 | {stickers:Sticker 1 ID:Sticker 2 ID:Sticker 3 ID} | to send stickers | No example |
 | {pin} | to pin the sent message | No example |
 | {data:name:value} | attach a data (message variable) to the message, you can retrieve it later with $getMessageVar[name] | [{data:user:$authorID}](https://i.imgur.com/anm4XTp.png) |
+| {silent} | send message in silent mode, will not send push notification to discord users | [{silent}](https://i.imgur.com/HhSr6ec.png) |
 
 ::: tip Note
 Sometimes value contains characters like : (colon), [ , ; ,  ]<br>
