@@ -5,7 +5,7 @@ Sends a custom emoji from the current used server.
 ::: danger
 This function only output emojis from actual used server!
 So make sure that the emoji with the name used is present on the current server. 
-Otherwise, there is an error message.
+Otherwise, nothing is returned.
 :::
 
 #### Usage: `$customEmoji[emoji name]`
