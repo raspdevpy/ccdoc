@@ -1,14 +1,14 @@
 # $allMembersCount
-Returns the amount of users in your server/ guild!
+Returns a total number of users the bot currently serves
 
 #### Usage: `$allMembersCount`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec There are `$allMembersCount` members in the server!
+		!!exec &lt@$clientID> serves $allMembersCount users in total!
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		There are `599` members in the server
+		<discord-mention>Custom Command</discord-mention> serves 6852280 users in total!
 	</discord-message>
 </discord-messages>
 
