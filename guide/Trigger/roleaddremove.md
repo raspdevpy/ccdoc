@@ -6,24 +6,21 @@ This trigger runs when someone gets or loses a role.
 Role trigger will work with not input at all, but you can restrict the command to be executed if it meets some conditons:
 | Syntax | Explanation |
 | --- | --- |
-| ` ` | Command will trigger regardless of what role has been given or taken |
-| `ROLE` | Detects when someone gets or loses "Moderator" role |
-| `add` | Works if any role has been assigned |
-| `remove` | Activates when someone loses any role |
-| `add,ROLE` | Triggers when some gets a "Member" role |
-| `remove,ROLE` | Fires off when someone loses role with "772051119538176023" ID |
+|![](https://cdn.discordapp.com/attachments/1100128432395927765/1100512115627925564/image.png) | Command will trigger regardless of what role has been given or taken |
+| ![](https://cdn.discordapp.com/attachments/1100128432395927765/1100512172456542298/image.png) | Detects when someone gets or loses "Member" role |
+| ![](https://cdn.discordapp.com/attachments/1100128432395927765/1100512354392866816/image.png) | Works if any role has been assigned |
+| ![](https://cdn.discordapp.com/attachments/1100128432395927765/1100512392464576602/image.png) | Activates when someone loses any role |
+| ![](https://cdn.discordapp.com/attachments/1100128432395927765/1100512279751036989/image.png) | Triggers when some gets role with 1013004735193808988 ID |
+| ![](https://cdn.discordapp.com/attachments/1100128432395927765/1100512476895920288/image.png) | Fires off when someone loses "Admin" role |
 
-::: tip Multiple roles
+### Role input
+To specify a role you can either use an ID or it's name.
+But be aware, all role names are caSe seNsiTiVe, so a if a command doesn't trigger, check the capitalization!
+
+### Multiple roles
 You can make your command trigger on any of provided roles by putting role names/ids separated by "|".
 
 For example `Admin|Moderator`, will take effect either on Admin or Moderator role.
-:::
-
-::: tip Role input
-To specify a role you can either use an ID or it's name.
-
-But be aware, all role names are caSe seNsiTiVe, so a if a command doesn't trigger, check the capitalization!
-:::
 
 
 ## Example 1: Trigger On Member Getting A Role
