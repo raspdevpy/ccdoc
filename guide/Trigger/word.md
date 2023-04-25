@@ -57,7 +57,7 @@ So to hug a person pinged right after the keyword we need to use the following c
     </discord-message>
 </discord-messages>
 
-## Continue reading
+### Continue reading
 Here are some pages that might come in handy if you still have some doubts about the word trigger:
 * [!report](../Tutorials/3.report.md) - word command tutorial
 * [$message](../Message/message.md) - loading parameters
