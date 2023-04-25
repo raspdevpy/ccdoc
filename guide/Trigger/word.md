@@ -1,6 +1,70 @@
 # Word Trigger
+Word trigger is used to detect sent messages.
 
-## Introduction
+![Word example](https://cdn.discordapp.com/attachments/957286111250624552/1100474610660679730/image.png)
+<discord-messages>
+    <discord-message author="Member" role-color="#ffcc9a">
+        !ping
+    </discord-message>
+    <discord-message :bot=true author="Custom Command" role-color="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+        pong!
+    </discord-message>
+</discord-messages>
+
+## Syntax
+To use a word command, you have to specify a certain phrase that would trigger the command.
+There's a couple ways of setting what 
+| Name | Syntax | Example | Explanation |
+| - | - | - | - |
+| Word | `word` | `!ping` | Triggers on a message starting with !ping |
+| Multiple words | `word\|word...` | `!ban\|!unfriend\|!gulag` | Fires off on !ban, !unfriend or !gulag |
+| Case insensitive | `word\|i` | `apple\|i` | Matches with apple and any case variations like ApPLe |
+| Regex | `/RegExp/` | `/<@&\d{18,}>/` | Detects a user mention anywhere in a message |
+| Any message* | `%all%` | `%all%` | Triggers on **ANY** message |
+
+::: tip One word only!
+In word trigger (besides Regex) you are not allowed to put more than one word. All other words are interpreted as parameters, and cannot overlap with the trigger.
+:::
+
+::: danger Any message*
+Using `%all%` will result in a slight spam of cooldown messages, and might occasionally override your other commands.
+
+We strongly advise you to set the `Run only in` dropdown menu to specific channel(s).
+
+To get rid of the cooldown messages completely, you can either set a channel slowmode, or get yourself a [premium bot](https://ccommandbot.com/perks).
+
+:::
+## User input
+An important feature of word trigger are parameters. Parameters are data provided as a user when sending the message.
+
+Let's say we had a `?hug` command, used to express your feelings towards other users. In that case we would want to be able to our victim from message.
+Parameters are all words, but the trigger.
+```
+?hug [parameter1] [parameter2]...
+```
+
+Parameters can be retrived using the [$message](../Message/message.md) function.
+So to hug a person pinged right after the keyword we need to use the following code:
+
+![?hug trigger](https://cdn.discordapp.com/attachments/957286111250624552/1100485509584781342/image.png)
+![?hug code](https://i.imgur.com/FCfSQVr.png)
+<discord-messages>
+    <discord-message author="Member" role-color="#ffcc9a">
+        ?hug <discord-mention type=user>fajfaj</discord-mention>
+    </discord-message>
+    <discord-message :bot=true author="Custom Command" role-color="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+        <discord-mention type=user highlight=true>Member</discord-mention> hugs <discord-mention type=user>fajfaj</discord-mention>
+    </discord-message>
+</discord-messages>
+
+## Continue reading
+Here are some pages that might come in handy if you still have some doubts about the word trigger:
+* [!report](../Tutorials/3.report.md) - word command tutorial
+* [$message](../Message/message.md) - loading parameters
+* [$msg](../Message/msg.md) - to load info about the message
+
+<!-- Section below will be moved to a separate tutorial -->
+<!-- ## Introduction
 This trigger, fires when user send a certain message like `?profile`
 
 ## Example: Hello Command
@@ -15,9 +79,9 @@ In this command, we want bot to greet the user when he says: ?hello
 Test it out in your server:
 ![](https://i.imgur.com/EvEQsIq.png)
 
-Congratulations for making your first word command
+Congratulations for making your first word command -->
 
-## Case insensitivity
+<!-- ## Case insensitivity
 The previously created command `?hello` has an issue though, if user typed `?Hello` it won't work like this.
 
 So what to do? add `|i` to the command like this:
@@ -27,9 +91,9 @@ So what to do? add `|i` to the command like this:
 Let's test:
 ![](https://i.imgur.com/Qr03TMJ.png)
 
-It works!
+It works! -->
 
-## User Inputs
+<!-- ## User Inputs
 Now, let's make another command `?hug @user`, this command should give a hug to another user.
 
 let's create a new command and set the trigger settings as below:\
@@ -60,9 +124,10 @@ so code will be:
 let's test it out:
 ![](https://i.imgur.com/SXdOdM0.png)
 
-Yay!
+Yay! -->
 
-## Triggering on multiple words
+<!-- Section below covered with trigger|trigger -->
+<!-- ## Triggering on multiple words
 sometimes we want the bot to trigger in multiple words, let's say: ?hug, ?abrazo, ?étreinte 
 
 how we will do that? we can do that through well known regex format:
@@ -86,18 +151,11 @@ like this:
 let's test it out:
 ![](https://i.imgur.com/RISSily.png)
 
-Works as expected!
+Works as expected! -->
 
-## Triggering On All Message
-In some situation, you need to trigger on all kind of messages, like Counting Game Idea
-To do that, you can set Trigger to `%all%`
-![](https://i.imgur.com/YgYvhVw.png)
 
-::: danger Note
-If you used `%all%`, make sure to set `Run only in` to specific channels, to avoid going in cooldowns frequently.
-:::
-
-## Example: Report Command
+<!-- Will be moved to tutorials -->
+<!-- ## Example: Report Command
 let's assume we want to make a report command, where user can report other with a reason like: `?report @user <reason>`
 
 so trigger setting will be like this:
@@ -121,4 +179,4 @@ you can do so through `$message[2+]`, which means get 2nd word and what after it
 let's try it out:
 ![](https://i.imgur.com/KZBeAVT.png)
 
-Yay! works well.
+Yay! works well. -->
