@@ -1,10 +1,10 @@
 # $authorID
-Returns the author's ID of the executor, which executed the Custom Command.
+Returns the ID of the User that triggered the command.
 
 #### Usage: `$authorID`
 <br/>
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
+	<discord-message :bot="false" role-color="#ffcc9a" author="User">
 		!!exec $authorID
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
@@ -13,7 +13,7 @@ Returns the author's ID of the executor, which executed the Custom Command.
 </discord-messages>
 
 ::: tip Related Functions
-[$mention](../Member/mention.md), to mention the author of a command!
+[$mention](../Member/mention.md) ― to mention the author of a command!
 :::
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
