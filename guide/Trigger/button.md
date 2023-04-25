@@ -1,46 +1,51 @@
 # Button Click
 
-## Basic Information
-This trigger type, will trigger when a user interacts with a button. This needs to be a button send by the bot! 
+This trigger type, will detect when a user clicks a button. 
+The button has to be sent by the bot.
 
 #### Example of a button:
-
-![](https://media.discordapp.net/attachments/772051120368910371/880527140817367070/first-button.gif)
+> ![](https://media.discordapp.net/attachments/772051120368910371/880527140817367070/first-button.gif)
 
 
 
 ## Syntax
-Use this syntax to let the bot trigger when the ID from a button is detected!
+In order for button command to work, there must be button ID to be matched specified. Here's how you can provide it:
 
-`test` -> If this is filled in in the trigger field, the command will trigger when the ID from the button is `test`
+| Name | Syntax | Example | Explanation |
+| --- | --- | --- | --- |
+| Single ID | `button ID` | `staff-app` | Will detect one button only |
+| Multiple IDs | `buttonID\|buttonID` | `Apple\|Banana\|Orange` | Match more than one button |
+| Regex | `/RegExp/` | `/User-\d{18,}/` | Will trigger on any button matching a regex pattern |
 
 
-`button_1|button_2` -> If this is filled in in the trigger field, the command will trigger when the ID from the button is `button_1` OR `button_2`
-
-
-::: warning Warning
-All button IDs are caSe seNsiTiVe, so a if a command doesn't triggers, check the capitalization!
+::: tip Capitalization
+All button IDs are CASE SENSITIVE, so a if a command doesn't trigger, check the capitalization!
 :::
 
-::: info Info
-Button and Dropdown triggertype uses regex to match the trigger field.
-So id with the same will interfere with each other.
-For Example:
-* button 1 id = test
-* button 2 id = testone
-* button 2 could get triggered ,if you use menu 1 since it matches `test`
+::: tip Tricky behavior
+Button commands use regex to match the button ID, so commands with IDs with similiar beginnings may interfere.
+
+#### For Example:
+Let's say we have two buttons with the following IDs:
+
+* `test`
+* `testone`
+
+If we had a command `Button: test` both buttons will trigger it.
+
 ##### Resolving the Problem
 Just change your id to `^id$`
 In regex ^ and $ are used to match the start and end of the string.
 :::
 
 ### Related Functions
-* `$buttonID` returns the button id
-* `$buttonEmoji` returns the button emoji
-* `$buttonLabel` returns the button label
-* `$buttonURL` returns the button url
-* `$buttonStyle` returns the button style
-* `$buttonIsDisabled` returns true/false button disabled
+* [$button](../Text/Components/button.md) - sends a button
+* [$buttonID](../Text/Components/button.md) - returns the button id
+* [$buttonEmoji](../Text/Components/buttonEmoji.md) - returns the button emoji
+* [$buttonLabel](../Text/Components/buttonLabel.md) - returns the button label
+* [$buttonURL](../Text/Components/buttonURL.md) - returns the button url
+* [$buttonStyle](../Text/Components/buttonStyle.md) - returns the button style
+* [$buttonIsDisabled](../Text/Components/buttonIsDisabled.md) - returns whetheer the button disabled
 
 ## More Info
 
