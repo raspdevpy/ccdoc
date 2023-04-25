@@ -25,6 +25,7 @@ $selectMenu[id;placeholder;min value(optional);max value;(optional);label;desc;v
 ```
 
 ## Curl Format
+Here are all curl embed components you can use in any function containing `message` field.
 
 ```
 {author:name:avatar:link url}
@@ -51,17 +52,17 @@ $selectMenu[id;placeholder;min value(optional);max value;(optional);label;desc;v
 ```
 
 ### Only for interactions
-
+These arguments can be used in interaction trigger commands.
 ```
-{ephemeral=yes/no}
 {interaction}
-{return_id=yes/no}
-{message=curl embed content, menus, buttons}
-{pin}
+{ephemeral=yes/no}
+{message=content, curl embed, menus, buttons...} // Only in $interactionReply
 ```
 
 ::: tip What are ephemerals?
-Ephemerals are a type of message that can be dismissed by the user and can only be seen by the user. [Learn more](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ#:~:text=An%20"Ephemeral%20Message"%20is%20a,long%20enough%2C%20or%20restart%20Discord.)
+Ephemerals are interaction replies visibile only to the one who executed the command.
+
+![Ephemerals preview](https://cdn.discordapp.com/attachments/957286111250624552/1100459877480013914/image.png)
 :::
 
 ## What is the difference between function and embed format?
