@@ -13,9 +13,9 @@ In order for button command to work, there must be button ID to be matched speci
 
 | Name | Syntax | Example | Explanation |
 | --- | --- | --- | --- |
-| Single ID | `button ID` | `staff-app` | Will detect one button only |
-| Multiple IDs | `buttonID\|buttonID` | `Apple\|Banana\|Orange` | Match more than one button |
-| Regex | `/RegExp/` | `/User-\d{18,}/` | Will trigger on any button matching a regex pattern |
+| Single ID | `button ID` | `staff-app` | Detects a button with "staff-app" ID |
+| Multiple IDs | `buttonID\|buttonID` | `Apple\|Banana\|Orange` | Matches a buttons with IDs: "Apple", "Banana", or "Orange" |
+| Regex | `/RegExp/` | `/User-\d{18,}/` | Will trigger on any following the pattern "User-ID" like "User-434342521997492224" |
 
 
 ::: tip Capitalization
