@@ -135,6 +135,7 @@ Some other dangerous characters
 #LEFT# =>> ]
 #SEMI# =>> ;
 #COLON# =>> :
+#DOLLAR# =>> $
 #CHAR# =>> $
 #RIGHT_CLICK# =>> >
 #LEFT_CLICK# =>> <
