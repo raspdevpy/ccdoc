@@ -1,9 +1,10 @@
 # Complete Embed
 
-Here is a code example of a complete embed.
+Here is a code for a complete embed and a comprehension of both embed formats.
 
 ## Function Format
 
+```php
 $author[name;avatar;link]
 $title[title;url]
 $color[hex/int/COLOR]
@@ -21,9 +22,12 @@ $deletecommand
 $addTimestamp[time]
 $addReactions[emoji;emoji...]
 $selectMenu[id;placeholder;min value(optional);max value;(optional);label;desc;value;value]
+```
 
 ## Curl Format
+Here are all curl embed components you can use in any function containing `message` field.
 
+```
 {author:name:avatar:link url}
 {title:title}
 {color:hex/int/COLOR}
@@ -45,47 +49,69 @@ $selectMenu[id;placeholder;min value(optional);max value;(optional);label;desc;v
 {deletecommand}
 {timestamp}
 {pin}
+```
 
 ### Only for interactions
-
-{ephemeral=yes/no} or {private=yes/no}
+These arguments can be used in interaction trigger commands.
+```
+{interaction}
+{ephemeral=yes/no}
+{message=content, curl embed, menus, buttons...} // Only in $interactionReply
+```
 
 ::: tip What are ephemerals?
-Ephemerals are a type of message that can be dismissed by the user and can only be seen by the user. [Learn more](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ#:~:text=An%20"Ephemeral%20Message"%20is%20a,long%20enough%2C%20or%20restart%20Discord.)
+Ephemerals are interaction replies visibile only to the one who executed the command.
+
+![Ephemerals preview](https://cdn.discordapp.com/attachments/957286111250624552/1100459877480013914/image.png)
 :::
-
-{interaction}
-{return_id=yes/no}
-{ephemeral}
-{message=curl embed content, menus, buttons}
-{pin}
-
-# How do I execute the code?
-
-You can directly use the function format code with !!exec or inside your custom command
-
-To use the embed format, you have to wrap the code inside an embed function (a func which sends a message) like !!exec $sendMessage[code] or inside your custom command
 
 ## What is the difference between function and embed format?
 
-### Function Format:
+### 1. Function Format:
 
-Inside your custom command or !!exec it gets executed at last. (after all functions).
-It only allows you to send a embed and is perfect for beginners
+Function format works as usual functions, but it allows you to send up to **1 embed** and the embed gets sent right after the execution of your command.
 
-### Curl Format:
+#### Example:
+If you created a command with the following code, the bot would:
+1. First change author's 
+2. Send an embed confirming the change,
 
-It allows you to send a embed with button,dropdowns etc and is perfect for advanced users
-Inside your custom command or !!exec it gets executed directly,since it is wrapped in a func, which directly executes it
-Almost every function, which can send a message supports the embed format.
-Here are some functions:
-$sendMessage, $cooldown, $editIn, $awaitMessage, $reply etc
-Another advantage is that the embed format is parsed dynamically, so you can use loop, which create fields for example.
+```php
+$title[Nickname changed]
+$description[Your nickname has been changed to lowercase ($toLowercase[$username])]
 
-::: danger Please read!
-If you use curl format, make sure to use : to separate the parameters.
+$changeNickname[$authorID;$toLowercase[$username]]
+```
 
-If you use func format, make sure to use ; to seperate the parameters.
+### 2.  Curl Format:
+
+Curl embeds are a more complex way of sending embeds. It's used to "attach" an embed to a message sent with a function like `$sendMessage`, or `$interactionReply`.
+This format unlike the previous one, follows the normal code flow.
+
+#### Example:
+The following code would:
+1. Send a message announcing the upcoming nickname change,
+2. Edit user's nickname,
+3. Edit the previously sent message to confirm the change.
+
+```php
+$sendMessage[
+    {title: Nickname change}
+    {description: Your nickname is going to be changed to lowercase ($toLowercase[$username])}
+]
+
+$changeNickname[$authorID;$toLowercase[$username]]
+
+$editMessage[$sentMessageID;
+    {title: Nickname changed}
+    {description: Your nickname has been changed to lowercase ($toLowercase[$username])}
+]
+```
+
+::: danger Separators
+Please note, that separators vary between the formats:
+* Function arguments are separated `;`
+* Curl embed arguments are separated with `:`
 :::
 
 ###### Tags: <Badge type="tip" text="embed" vertical="middle" />
