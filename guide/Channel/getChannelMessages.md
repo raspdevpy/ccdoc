@@ -4,7 +4,7 @@ Returns the most recent channel messages.
 
 ## Usage
 ```bash
-$getChannelMessages[Channel ID;userID or everyone (default is everyone);ids/contents;separator;amount (max 50)]
+$getChannelMessages[Channel ID;userID or everyone (default is everyone);ids/contents;separator;amount (max 50);reverse (yes/no, default is no)]
 ```
 
 ### Example:
