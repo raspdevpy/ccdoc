@@ -1,4 +1,4 @@
-# Done (93.04%)
+# Done (93.07%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -440,8 +440,10 @@
 * ~~getBotActivity~~
 * ~~arrayCreate~~
 * ~~sentMessageID~~
+* ~~isConnected~~
+* ~~isStreaming~~
 
- # Not done (6.96%)
+ # Not done (6.93%)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
