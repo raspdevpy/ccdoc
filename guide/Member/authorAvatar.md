@@ -15,7 +15,7 @@ To send link as a plain text wrap the function into graves like<code>\`$authorAv
 ## Usage
 
 ```bash
-$authorAvatar
+$authorAvatar[Return Server Avatar Instead (yes/no, default is no)]
 ```
 
 ## Examples
