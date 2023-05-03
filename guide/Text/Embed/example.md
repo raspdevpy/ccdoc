@@ -43,6 +43,7 @@ Here are all curl embed components you can use in any function containing `messa
 {reply_mention}
 {attachment:file name:url:spoiler (yes/no)}
 {reactions:emoji,emoji...}
+{reaction:emoji,emoji...}
 {suppress:yes/no}
 {delete:time}
 {edit:time:new content}

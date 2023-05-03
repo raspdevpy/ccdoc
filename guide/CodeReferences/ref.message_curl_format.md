@@ -37,6 +37,8 @@ Sending a embed with title `Hello` and description `World`
 | {timestamp:ms} | attaching a timestamp | [{timestamp} or {timestamp:1680871946176}](https://i.imgur.com/2CEzTcp.png) |
 | {image:url} | displaying image | [{image:$authorAvatar}](https://i.imgur.com/Gmrxc69.png) |
 | {reactions:emoji,emoji2,...} | add reactions after posting the message | [{reactions: :+1:, :-1:}](https://i.imgur.com/Niff1PI.png) |
+| {reaction:emoji,emoji2,...} | alias for {reactions} | {reaction: :+1:, :-1:} |
+
 | {suppress:yes/no} | suppress the embed of the message | [{suppress:yes}](https://i.imgur.com/xomAWFd.png) |
 | {delete:time(s/m/h...)} | delete the message after certain time after posting it | {delete:5s} |
 | {button:Name:style:emoji:button id:new line(yes/no):disabled(yes/no)} | add a button to the message | [{button:Green button:green::id1}](https://i.imgur.com/CIj0FMU.png) |
