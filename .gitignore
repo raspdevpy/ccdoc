@@ -7,3 +7,4 @@ data.json
 build*.sh
 ignore/*
 .DS_Store
+guide/.vuepress/public/images/*

@@ -1,4 +1,4 @@
-# Done (93.08%)
+# Done (93.11%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -82,6 +82,7 @@
 * ~~getUserVar~~
 * ~~color~~
 * ~~viewUserVars~~
+* ~~viewServerVars~~
 * ~~addField~~
 * ~~changeNickname~~
 * ~~setUserVar~~
@@ -443,8 +444,9 @@
 * ~~isConnected~~
 * ~~isStreaming~~
 * ~~regexCheck~~
+* ~~ObjectLoop~~
 
- # Not done (6.92%)
+ # Not done (6.89%)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
