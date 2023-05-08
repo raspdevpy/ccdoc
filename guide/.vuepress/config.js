@@ -1,6 +1,14 @@
 const sidebar = require('./sidebar');
 const parseTag = require('./parseTags');
-const { write } = require('./parseTags');
+const replacements = require('./replacements');
+const replacePageContent = (content, replacements) => {
+	let output = content;
+	for (const [placeholder, replacement] of Object.entries(replacements)) {
+	  const regex = new RegExp(`${placeholder}`, 'g');
+	  output = output.replace(regex, replacement);
+	}
+	return output;
+  };
 module.exports = {
 	lang: 'en-US',
 	title: 'Custom Command Bot',
@@ -9,11 +17,24 @@ module.exports = {
 	head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
 	//plugins: ['@vuepress/plugin-container'],
 	plugins: [
+		(options, context) => ({
+			name: 'replace-content-plugin',
+			extendsMarkdown: md => {
+				const render = md.render;
+				md.render = (...args) => {
+					args[0]=replacements(args.slice(1),args[0])
+				  	const html = render.call(md, ...args);
+					return html
+			
+				};
+			  },
+		  }),
 		['@vuepress/plugin-search',{
 			maxSuggestions:15,
 			getExtraFields: (page) =>parseTag(page),
 		}],
-		['@vuepress/plugin-container']
+		['@vuepress/plugin-container'],
+
 	],
 	// base:"/ccdoc/dist/",
 	themeConfig: {
