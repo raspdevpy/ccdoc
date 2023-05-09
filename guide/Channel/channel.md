@@ -8,6 +8,7 @@ Gets specific information about a channel.
 ```
 name, id, isdeleted, mention, position, rawposition, topic, type, created, timestamp, guildid, guildname, ismanageable, parentid, parentname, isviewable, isdeletable
 ```
+
 #### Example:
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
