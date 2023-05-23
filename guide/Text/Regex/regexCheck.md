@@ -5,7 +5,7 @@ To check if a text match a regex or not
 ## Usage
 
 ```bash
-$regexCheck[Text;Regex]
+$regexCheck[Text;Regex;Flags]
 ```
 
 ### Example (Check If Text is alphabets):
