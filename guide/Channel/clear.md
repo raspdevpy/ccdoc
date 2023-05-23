@@ -4,6 +4,7 @@ Clears messages from a channelID, from a specfic person or everyone.
 #### Usage: 
 `$clear[amount;userID or everyone(optional);channelID (optional)]`
 
+
 Before
 <br/>
 <discord-messages>
@@ -38,5 +39,9 @@ After
 	</discord-message>
 </discord-messages>
 
-##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
+
+::: warning
+You can clear at max 100 messages, and as old as 2 weeks.
+:::
+#### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="Bulk deleting" vertical="middle" /> <Badge type="tip" text="delete messages" vertical="middle" /> <Badge type="tip" text="Purge Channel" vertical="middle" /> <Badge type="tip" text="Clear Channel" vertical="middle" />
