@@ -1,4 +1,4 @@
-# Done (93.13%)
+# Done (93.14%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -446,8 +446,9 @@
 * ~~regexCheck~~
 * ~~ObjectLoop~~
 * ~~arrayElementCount~~
+* ~~ObjectKeyExists~~
 
- # Not done (6.88%)
+ # Not done (6.86%)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
