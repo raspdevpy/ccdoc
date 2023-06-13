@@ -14,7 +14,8 @@ like [$timeToDate](../Date/timeToDate.md)
 | 0hr | hour in 24-format but with padding zero like 05 (5 AM)  |
 | hr/12 | hour in 12-format like 8 |
 | 0hr/12 | hour in 12-format but with padding zero like 05 |
-| ms | milliseconds |
+| ms | milliseconds like 1 |
+| 0ms | milliseconds but with padding zeros like 001 |
 | min | minutes like 9 |
 | 0min | minutes but with padding zero like 09 |
 | m | month number like 8 (August) |
