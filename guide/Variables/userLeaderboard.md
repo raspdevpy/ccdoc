@@ -1,5 +1,5 @@
 # $userLeaderboard
-Creates an user leaderboard from uservar
+generate a leaderboard of a user variable and return it
 
 #### Usage: `$userLeaderboard[variable;asc/desc (optional);{top}.- {username} - {value};list (optional, max=40);page (optional)]`
 
