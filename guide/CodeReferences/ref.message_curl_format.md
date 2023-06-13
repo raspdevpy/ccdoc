@@ -44,7 +44,8 @@ Sending a embed with title `Hello` and description `World`
 | {edit:Time in ms:New Content} | edit the message after certain time | [{edit:5s:My edited content}](https://i.imgur.com/p7LsT5C.png) |
 | {file:Name:Content} | adding attachment file from text | No example |
 | {attachment:Name:URL} | adding attachment file from url | No example |
-| {deletecommand} | to delete the original command message | No example |
+| {deletecommand} | to delete the original command message immediately | No example |
+| {deletecommand:time} | to delete the original command message after `time` like 5s | {deletecommand:5s} |
 | {reply:message id} | to reply to a message | No example |
 | {reply_mention:yes/no} | to ping user on reply or not | No example |
 | {interaction} | to send message through an interaction | No example |
