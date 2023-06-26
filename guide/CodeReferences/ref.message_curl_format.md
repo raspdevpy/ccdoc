@@ -53,6 +53,8 @@ Sending a embed with title `Hello` and description `World`
 | {private:yes/no} | alias as ephemeral | No example |
 | {stickers:Sticker 1 ID:Sticker 2 ID:Sticker 3 ID} | to send stickers | No example |
 | {pin} | to pin the sent message | No example |
+| {silent} | send message in silent mode, will not send push notification to discord users | [{silent}](https://i.imgur.com/HhSr6ec.png) |
+
 
 ::: tip Note
 Sometimes value contains characters like : (colon), [ , ; ,  ]<br>
