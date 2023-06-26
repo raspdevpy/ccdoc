@@ -1,4 +1,4 @@
-# Done (93.14%)
+# Done (92.95%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -448,7 +448,7 @@
 * ~~arrayElementCount~~
 * ~~ObjectKeyExists~~
 
- # Not done (6.86%)
+ # Not done (7.05%)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
@@ -482,3 +482,4 @@
 * [eventOldNickname](./Unclassified/eventOldNickname.md)
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)
+* [conditional](./Unclassified/conditional.md)
