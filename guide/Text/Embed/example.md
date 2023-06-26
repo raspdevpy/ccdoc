@@ -51,6 +51,7 @@ Here are all curl embed components you can use in any function containing `messa
 {deletecommand:time}
 {timestamp}
 {pin}
+{silent}
 ```
 
 ### Only for interactions
