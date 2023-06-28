@@ -5,11 +5,11 @@ same as [$randomText](./randomText.md) but with biased random
 ## Usage
 
 ```bash
-$randomTextBiased[Text1,Percentage1;Text2,Percentage2;Text3,Percentage3]
+$randomTextBiased[Text1,Weight1;Text2,Weight2;Text3,Weight3]
 ```
 
 ### Note:
-Percentages must sum up to 100, the more percentage for text, the more likely it will be selected
+The more weight a text have, the more likely it will be selected
 
 ### Example (Unlucky guy):
 <discord-messages>

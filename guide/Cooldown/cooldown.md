@@ -2,7 +2,7 @@
 Sets a cooldown for a command per user.
 
 #### Usage: 
-`$cooldown[time (default 5s);Error message]`
+`$cooldown[time (default 5s);Error message;user id (optional)]`
 
 ### Example 1:
 <discord-messages>

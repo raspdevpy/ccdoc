@@ -1,16 +1,29 @@
 # $ObjectValues
-returns all the values of an object with the provided separator
 
-#### Usage: `$ObjectValues[Separator (optional, default:, )]`
-<br/>
+Return the Object values with seperator between each value
+
+## Usage
+
+```bash
+$ObjectValues[Seperator (optional, default:, );Nested Propery 1;Nested Property 2]
+```
+
+### Example (Get values of nested property):
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $createObject[{"Owner":"Rake","Manager":"Mika","Dev":"Mido","Contributor":"Wiki"}] Staff members: $objectValues
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		Staff members: Rake, Mika, Mido, Wiki
-	</discord-message>
+          <discord-message :bot="false" role-color="#ffcc9a" author="Member">
+        !!exec $ObjectSet[name;Mido]<br>$objectSet[age;300]<br>$ObjectValues<br><br>
+          </discord-message>
+          <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+        Mido, 300<br><br>
+        </discord-message>
 </discord-messages>
 
-##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="object" vertical="middle" /> <Badge type="tip" text="values" vertical="middle" /> <Badge type="tip" text="json" vertical="middle" /> <Badge type="tip" text="property" vertical="middle" />
+### Example:
+<discord-messages>
+          <discord-message :bot="false" role-color="#ffcc9a" author="Member">
+        !!exec $objectSet[user;name;Mido]<br>$objectSet[user;id;1234]<br>$objectSet[user;weapon;Sword]<br>$ObjectValues[/;user]<br><br>
+          </discord-message>
+          <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+        Mido/1234/Sword
+        </discord-message>
+</discord-messages>

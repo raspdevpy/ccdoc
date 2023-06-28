@@ -1,7 +1,7 @@
 # $userAvatar
 Returns a user avatar by a given userID.
 
-#### Usage: `$userAvatar[userID]`
+#### Usage: `$userAvatar[userID;size;dynamic;return server avatar instead (yes/no, default is no)]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

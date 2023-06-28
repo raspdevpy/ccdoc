@@ -135,6 +135,7 @@ Some other dangerous characters
 #LEFT# =>> ]
 #SEMI# =>> ;
 #COLON# =>> :
+#DOLLAR# =>> $
 #CHAR# =>> $
 #RIGHT_CLICK# =>> >
 #LEFT_CLICK# =>> <
@@ -143,4 +144,6 @@ Some other dangerous characters
 #LEFT_BRACKET# =>> }
 #NL# =>> New line 
 #BR# =>> New line
+#SP# =>> Space
+#TAB# =>> Tab (few spaces)
 ```
