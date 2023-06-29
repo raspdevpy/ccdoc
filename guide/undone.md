@@ -1,4 +1,4 @@
-# Done (92.95%)
+# Done (93.36%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -212,6 +212,7 @@
 * ~~deleteWebhook~~
 * ~~pinMessage~~
 * ~~unpinMessage~~
+* ~~getInviteInfo~~
 * ~~channelCategoryID~~
 * ~~addMessageReactions~~
 * ~~advancedTextSplit~~
@@ -447,15 +448,15 @@
 * ~~ObjectLoop~~
 * ~~arrayElementCount~~
 * ~~ObjectKeyExists~~
+* ~~conditional~~
 
- # Not done (7.05%)
+ # Not done (6.64%)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
 * [referenceChannelID](./Unclassified/referenceChannelID.md)
 * [referenceMessageID](./Unclassified/referenceMessageID.md)
-* [getInviteInfo](./Unclassified/getInviteInfo.md)
 * [isUserDMEnabled](./Unclassified/isUserDMEnabled.md)
 * [getChannelSlowmode](./Unclassified/getChannelSlowmode.md)
 * [removeContains](./Unclassified/removeContains.md)
@@ -482,4 +483,3 @@
 * [eventOldNickname](./Unclassified/eventOldNickname.md)
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)
-* [conditional](./Unclassified/conditional.md)
