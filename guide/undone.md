@@ -1,4 +1,4 @@
-# Done (93.36%)
+# Done (93.39%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -449,8 +449,10 @@
 * ~~arrayElementCount~~
 * ~~ObjectKeyExists~~
 * ~~conditional~~
+* ~~cacheChannelMessages~~
+* ~~latestMessage~~
 
- # Not done (6.64%)
+ # Not done (6.61%)
 * [jsonRequest](./Unclassified/jsonRequest.md)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
