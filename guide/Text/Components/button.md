@@ -94,7 +94,7 @@ Check these pages:
 
 - [Button trigger](../../Trigger/button.md)
 - [$awaitButton](./awaitbutton.md)
-Using the button as trigger check here to [learn more](../../Trigger/button.md).
+
 :::
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
