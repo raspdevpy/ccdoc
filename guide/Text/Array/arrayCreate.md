@@ -1,6 +1,5 @@
 # $arrayCreate
-
-Creates an array from a list
+Creates an array from a list.
 
 ## Usage
 

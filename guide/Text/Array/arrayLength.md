@@ -1,6 +1,6 @@
 # $arrayLength
 
-return the elements number in array
+Returns the number of elements in an array.
 
 ## Usage
 

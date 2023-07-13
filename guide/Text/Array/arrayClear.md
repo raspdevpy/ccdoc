@@ -1,6 +1,5 @@
 # $arrayClear
-
-empty the array
+Deletes an array.
 
 ## Usage
 

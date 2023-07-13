@@ -1,6 +1,6 @@
 # $arraySearch
 
-To check search of a value in the array
+To search for a value in an array. If it exists, it will return the position of the value. If not, `-1` is returned.
 
 ## Usage
 

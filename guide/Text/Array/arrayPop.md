@@ -1,6 +1,6 @@
 # $arrayPop
 
-To remove and return the last element in the array
+Removes, and returns the last element in an array.
 
 ## Usage
 

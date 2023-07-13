@@ -1,12 +1,12 @@
 # $arrayLoop
 
-To loop over the array\
+To loop functions in an array.
 **Note:** Only zero-cooldown functions allowed in CODE
 
 ## Usage
 
 ```bash
-$arrayLoop[varname;index;array name (optional)]{
+$arrayLoop[varName;index;array name (optional)]{
 CODE...
 }
 ```

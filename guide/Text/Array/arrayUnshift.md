@@ -1,6 +1,6 @@
 # $arrayUnshift
 
-To add an element to the array (from the first)
+Adds an element to the start of the array. 
 
 ## Usage
 

@@ -1,6 +1,6 @@
 # $arrayReverse
 
-To reverse the array
+Reverses an array.
 
 ## Usage
 

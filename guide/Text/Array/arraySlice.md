@@ -1,6 +1,6 @@
 # $arraySlice
 
-To keep only a part of the array
+To keep only a part of the array, *slicing* it.
 
 ## Usage
 

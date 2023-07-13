@@ -1,7 +1,7 @@
 # $arrayFilter
 
-To filter an array depend on a value of CODE, if `false` then remove that element from the array\
-**Note:** Only zero-cooldown functions allowed in CODE
+Iterates through each element in an array. If the code returns `false`, the element will be removed from the array.
+**Note:** Only zero-cooldown functions are allowed in the `CODE`.
 
 ## Usage
 

@@ -1,7 +1,7 @@
 # $arrayMap
 
-To replace array values to another value\
-**Note:** Only zero-cooldown functions allowed in CODE
+To replace array values with another value.
+**Note:** Only zero-cooldown functions allowed in the CODE.
 
 ## Usage
 

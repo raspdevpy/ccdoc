@@ -1,6 +1,6 @@
 # $arrayShift
 
-To remove and return the first element in the array
+Removes and returns the last element in an array.
 
 ## Usage
 

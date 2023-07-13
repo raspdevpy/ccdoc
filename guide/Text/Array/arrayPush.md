@@ -1,6 +1,6 @@
 # $arrayPush
 
-To add an element to the array (from the last)
+Adds an element to the end of an array.
 
 ## Usage
 
