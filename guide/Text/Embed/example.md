@@ -48,8 +48,10 @@ Here are all curl embed components you can use in any function containing `messa
 {delete:time}
 {edit:time:new content}
 {deletecommand}
+{deletecommand:time}
 {timestamp}
 {pin}
+{silent}
 ```
 
 ### Only for interactions

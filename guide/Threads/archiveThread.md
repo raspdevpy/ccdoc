@@ -5,7 +5,7 @@ archive/unarchive a thread
 ## Usage
 
 ```bash
-$archiveThread[Thread ID;Lock? (yes/no)]
+$archiveThread[Thread ID;Archive? (yes/no)]
 ```
 
 ### Example (Archiving a thread):
