@@ -1,6 +1,6 @@
 # $arrayUnique
 
-Return the unique elements in the array glued with the separator
+Return the unique elements in the array, glued with the separator.
 
 ## Usage
 

@@ -1,11 +1,11 @@
 # $arrayJoin
 
-To join the array with specific seperator
+Joins an array created using [$textSplit](../textSplit/textSplit.md) with a specific separator.
 
 ## Usage
 
 ```bash
-$arrayJoin[Seperator (optional);array name (optional)]
+$arrayJoin[Separator (optional);array name (optional)]
 ```
 
 ### Example:

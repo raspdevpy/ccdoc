@@ -1,6 +1,6 @@
 # $arraySet
 
-set element value at specific position in array
+Sets the value of an index in an array.
 
 ## Usage
 

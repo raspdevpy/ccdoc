@@ -1,6 +1,5 @@
 # $arrayGet
-
-return the element value at specific position in array
+Returns the value of an element at the specified index in an array.
 
 ## Usage
 

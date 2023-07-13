@@ -1,8 +1,6 @@
 # $arrayInclude
 
-To check if a value exists in the array\
-\
-return true if exists otherwise false
+To check if a value exists in the array. Returns `true` if the value exists, otherwise returns `false`.
 
 ## Usage
 

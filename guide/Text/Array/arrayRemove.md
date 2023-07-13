@@ -1,10 +1,6 @@
 # $arrayRemove
 
-To remove an index in the array\
-\
-return nothing\
-\
-array name must be non-number
+Removes something from an array, using the index, and returns nothing.
 
 ## Usage
 

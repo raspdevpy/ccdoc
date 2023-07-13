@@ -1,7 +1,7 @@
 # $arraySort
 
-sort the array from `$textsplit`\
-depends if you want to sort numerically or alphabetically or occurrences
+Sorts an array, created with [$textSplit](../textSplit/textSplit.md).
+Can be sorted numerically or alphabetically, or depending on occurrences.
 
 ## Usage
 
