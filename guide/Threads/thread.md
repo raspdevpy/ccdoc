@@ -7,7 +7,7 @@ Gets info trom a thread.
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec &lt;@!$thread[$channelID;$getServerVar[threadID];owner]&gt;
+		!!exec &lt;@!$thread[$channelID;owner]&gt;
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
         <DiscordMention :highlight="true">Member</DiscordMention>
@@ -23,6 +23,7 @@ Gets info trom a thread.
 * `name`
 * `owner`
 * `locked`
+* `parent`
 :::
 
 ::: tip
