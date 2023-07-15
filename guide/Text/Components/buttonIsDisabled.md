@@ -1,6 +1,7 @@
 # $buttonIsDisabled
 
-return true if button is disabled, false otherwise, return undefined if not found
+Returns true if the button is disabled, otherwise returns `false`.
+<br>If there's no button, return `undefined`.
 
 ## Usage
 

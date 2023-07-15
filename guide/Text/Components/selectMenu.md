@@ -1,5 +1,5 @@
 # $selectMenu
-creates a select menu with options
+Creates a Menu with options.
 
 #### Usage: `$selectMenu[id;placeholder;min value(optional);max value;(optional);label;desc;value;value]` works only for one option
 ##### Creating SelectMenu
@@ -7,7 +7,7 @@ Code:
 ```
 $selectMenu[
 {id=id}
-{placeholder=Pls select your anwser!}
+{placeholder=Pls select your answer!}
 {min=1}
 {max=2}
 {label=Option one }
@@ -20,7 +20,7 @@ $selectMenu[
 {emoji=$customEmoji[reject]}
 ]
 ```
-* `id` the id of menu must be unique on multiplie menus
+* `id` the id of menu must be unique on multiple menus
 * `placeholder` 
 * `min` minimum to select (optional)
 * `max` maximum to select (optional)
@@ -30,12 +30,12 @@ $selectMenu[
 * `emoji` emoji for option (optional)
 
 Info:
-* You can have upto 5 menus on a message
+* You can have up to 5 menus on a message
 * You can add maximal 20 options to a menu
-* Id of multplie menus can't be same
+* Id of multiple menus can't be same
 
 ::: tip {key=value} what is this for a syntax?
-This syntax is called curl args.It is really similar to curl message.Especially new Functions support it ,you can use !!func `funcname` to check if it supports curl args.
+This syntax is called curl args.It is really similar to curl message.Especially new Functions support it ,you can use !!func `function name` to check if it supports curl arguments.
  [Learn more](../guide/curl.md)
 :::
 
@@ -43,13 +43,13 @@ Example:
 
 ![](https://i.imgur.com/XbRhFaZ.png)
 
-::: tip Do you want to add a menu inside a Function as paramter like $sendmessage[text]
+::: tip Do you want to add a menu inside a Function as a parameter, like `$sendMessage[text]`?
 
 Use: 
 ```
 {menu:
 {id=id}
-{placeholder=Pls select your anwser!}
+{placeholder=Pls select your answer!}
 {min=1}
 {max=2}
 {label=Option one }

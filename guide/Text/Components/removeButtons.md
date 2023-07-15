@@ -1,5 +1,5 @@
 # $removeButtons
-will remove multiple buttons from a message by their ids
+Removes multiple buttons from a message using their IDs.
 
 #### Usage: `$removeButtons[Message ID;Button ID1;Button ID2...]`
 <br/>

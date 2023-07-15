@@ -1,6 +1,6 @@
 # $buttonStyle
 
-return the clicked button style like blurple/red/url in Button trigger, return undefined if not found
+Return the clicked button's style, e.g. `blurple`/`red`/`url` in the Button trigger. If none, `undefined` is returned.
 
 ## Usage
 

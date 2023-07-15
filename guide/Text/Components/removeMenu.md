@@ -1,6 +1,6 @@
 # $removeMenu
 
-remove a menu(s) in given message, not providing Menu ID will remove every menu in the message
+Removes menus in a given message, not providing a Menu ID will remove every menu in the message.
 
 ## Usage
 

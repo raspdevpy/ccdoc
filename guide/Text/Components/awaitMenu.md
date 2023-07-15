@@ -1,8 +1,8 @@
 # $awaitMenu
 
-To wait for a menu option to be selected and return the selected options values\
-In case of no option selected, it return **undefined**\
-In case of multiple values selected, all of them will return with `,` as seperator
+To wait for a menu option to be selected and return the selected options values.
+If nothing is selected, it returns `undefined`.`
+If multiple values are selected, all of them will be returned, separated with `,`.
 
 ## Usage
 

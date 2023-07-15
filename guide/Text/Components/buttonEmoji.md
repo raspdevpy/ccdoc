@@ -1,6 +1,6 @@
 # $buttonEmoji
 
-return the clicked button emoji in Button trigger, return undefined if not found
+Return the clicked button's emoji in the [Button trigger](/Trigger/button.html). If there is no emoji, it returns `undefined`.
 
 ## Usage
 

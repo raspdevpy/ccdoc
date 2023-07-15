@@ -1,6 +1,6 @@
 # $buttonID
 
-return the button ID, return undefined if not found
+Returns the Button ID that triggered the command. Returns `undefined` if the trigger isn't Button.
 
 ## Usage
 

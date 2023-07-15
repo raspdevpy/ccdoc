@@ -1,5 +1,5 @@
 # $editButton
-edits an existing button by `(Id/label/Emoji/url)`
+Edits an existing button using its `(ID/label/Emoji/URL)`.
 
 #### Usage: `$editButton[Message ID;Query (optional, default: edit the last button);label/style/emoji/disabled/url/custom_id;New Value]`
 
