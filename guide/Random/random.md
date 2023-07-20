@@ -4,6 +4,11 @@ Returns a random number from X to Y
 #### Usage: 
 `$random[min;max;allowDecimals (yes/no)(optional, default=no)]`
 
+## Notes:
+max is inclusive if allowDecimals is `no`
+
+max is exclusive if allowDecimals is `yes`
+
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
