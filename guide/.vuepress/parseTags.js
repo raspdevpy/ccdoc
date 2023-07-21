@@ -1,17 +1,23 @@
 const cheerio = require('cheerio');
 const fs = require('fs');
 let jsonObj = [];
+const dataFile='./data.json';
 
-let write = (file)=>{
-    //write json with indents
-    fs.writeFile(file, JSON.stringify(jsonObj,null,2), function(err) {
+let delayed;
+function write(immediate=false){    
+    if(!delayed)    return delayed=setTimeout(write,1000,true);
+    if(!immediate){
+        clearTimeout(delayed)
+        return delayed=setTimeout(write,1000,true); 
+    }
+    fs.writeFile(dataFile, JSON.stringify(jsonObj,null,2), function(err) {
         if(err) {
             return console.log(err);
         }
-        //console.log("The file was saved!");
+        console.log("The file was saved!");
     });
-}
 
+}
 module.exports= (page)=>{
 
     let tags=[]
@@ -32,7 +38,7 @@ module.exports= (page)=>{
     jsonObj.push(data);
     console.log(jsonObj.length)
 
-    if(jsonObj.length > 500) write('./data.json');
+    if(jsonObj.length > 500) write();
     return tags;
 }
 
