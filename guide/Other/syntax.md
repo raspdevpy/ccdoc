@@ -146,4 +146,6 @@ Some other dangerous characters
 #BR# =>> New line
 #SP# =>> Space
 #TAB# =>> Tab (few spaces)
+#SLASH# =>> /
+#BACKSLASH# =>> \
 ```

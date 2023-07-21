@@ -1,4 +1,4 @@
-# Done (93.39%)
+# Done (93.71%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -105,6 +105,7 @@
 * ~~toLowercase~~
 * ~~channelID~~
 * ~~userTag~~
+* ~~jsonRequest~~
 * ~~ownerID~~
 * ~~serverFeatures~~
 * ~~highestRole~~
@@ -451,9 +452,17 @@
 * ~~conditional~~
 * ~~cacheChannelMessages~~
 * ~~latestMessage~~
+* ~~padLeft~~
+* ~~padRight~~
+* ~~increaseUserVar~~
+* ~~increaseChannelVar~~
+* ~~increaseServerVar~~
+* ~~viewChannelVars~~
+* ~~isUserMention~~
+* ~~isChannelMention~~
+* ~~ObjectIncrease~~
 
- # Not done (6.61%)
-* [jsonRequest](./Unclassified/jsonRequest.md)
+ # Not done (6.29%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
