@@ -1,4 +1,4 @@
-# Done (93.66%)
+# Done (93.71%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -457,8 +457,12 @@
 * ~~increaseUserVar~~
 * ~~increaseChannelVar~~
 * ~~increaseServerVar~~
+* ~~viewChannelVars~~
+* ~~isUserMention~~
+* ~~isChannelMention~~
+* ~~ObjectIncrease~~
 
- # Not done (6.34%)
+ # Not done (6.29%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
