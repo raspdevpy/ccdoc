@@ -1,4 +1,4 @@
-# Done (93.71%)
+# Done (93.86%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -461,8 +461,20 @@
 * ~~isUserMention~~
 * ~~isChannelMention~~
 * ~~ObjectIncrease~~
+* ~~imageDraw~~
+* ~~imageDrawBack~~
+* ~~imageFill~~
+* ~~imageWidth~~
+* ~~imageHeight~~
+* ~~imageLoadFromURL~~
+* ~~imageOutput~~
+* ~~imageCreate~~
+* ~~imageBorderRad~~
+* ~~httpRequest~~
+* ~~httpRequestHeader~~
+* ~~httpRequestStatus~~
 
- # Not done (6.29%)
+ # Not done (6.14%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)

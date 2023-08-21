@@ -70,6 +70,8 @@ module.exports= {
 			getSideBar('Bot','Bot Functions',{collapsible:true}),
 			getSideBar('Useful','Useful Functions',{collapsible:true}),
 			getSideBar('Cooldown','Cooldown functions',{collapsible:true}),
+			getSideBar('Request','Http Requests functions',{collapsible:true}),
+			getSideBar('Image','Image Builder functions',{collapsible:true}),
 			getSideBar('Unclassified','Unclassfied Functions',{collapsible:true})
 		]
 	},		
