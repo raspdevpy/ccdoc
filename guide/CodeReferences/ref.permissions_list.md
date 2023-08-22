@@ -1,4 +1,4 @@
-# Channel Permissions
+# Channel/User/Role Permissions
 Some functions needs a permissions names
 like `$modifyChannelPerms, $modifyRolePerms...`
 
