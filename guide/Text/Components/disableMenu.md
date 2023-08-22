@@ -1,6 +1,6 @@
 # $disableMenu
 
-Disable a menu(s) in given message, not providing Menu ID will disable every menu in the message
+Disable menus in the given message, not providing a Menu ID will disable every menu in the message.
 
 ## Usage
 

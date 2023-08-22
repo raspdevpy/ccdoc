@@ -1,16 +1,16 @@
 # $removeButton
-removes a button from a existing message by `(Id/label/Emoji/url)`
+Removes a button from an existing message using its `(ID/label/Emoji/URL)`.
 
 #### Usage: `$removeButton[Message ID;Label/Emoji/URL/ID (optional, empty means removing the last button)]`
 <br/>
 
-::: details Examples
-(Remove Button by label)
+:::details Examples
+(Remove Button using its label)
 ```
 $removeButton[863xxxxxxxxxx21130;Visit example.com]
 ```
 
-(Remove Last button)
+(Remove the Last button)
 ```
 $removeButton[863xxxxxxxxxx21130]
 ```

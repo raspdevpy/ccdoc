@@ -1,42 +1,43 @@
 # $awaitButton
 Wait a button to be pressed and return its button Id, or `undefined` in case of no button pressed until the timeout.
-::: tip This function supports message curl format
-That way, you can send a message with buttons by using `{button:label:style/url:emoji:id:newline(yes/no)}`
+:::tip Tip
+This function supports the [Message Curl Format](/CodeReferences/ref.message_curl_format.html).
+This way, you can send a message with buttons by using `{button:label:style/url:emoji:id:newline(yes/no)}`.
 :::
 
 #### Usage: `$awaitButton[Message (optional);user id (optional, default:author);timeout (optional, default:15s);button id1 (optional);button id2...]`
 <br/>
-::: details Examples
 
+:::details Examples
 (Simple response)
 
 ![](https://cdn.discordapp.com/attachments/914682255346118687/938556903116652594/Screenshot_20220202190956.jpg)
 
 (Usage example)
 ```
-$let[PressedButton;$awaitbutton[Which color is my favorite?
+$let[pressedButton;$awaitButton[Which color is my favorite?
 {button:Green:GREEN::green}
 {button:Blue:BLUE::blue}
-{button:Red:RED::red};$authorid;15s;red;blue;green]]
+{button:Red:RED::red};$authorID;15s;red;blue;green]]
 /* Saves the pressed button id in a temporary var, so you can retrieve later */
 
-$if[$get[PressedButton]!=red]
+$if[$pressedButton!=red]
 Wrong!
 $else
 Correct!
 $endif
-/* If the button id is different from red, which is the right answer, them incorrect. Else, correct. */
+/* If the button id is different from red, which is the right answer, then incorrect. Else, correct. */
 ```
-choosing something other them red, or nothing.
+Choosing something other them red, or nothing.
 ![](https://cdn.discordapp.com/attachments/914682255346118687/938559970293714984/Screenshot_20220202191954.jpg)
 
-choosing red.
+Choosing red.
 
 ![](https://cdn.discordapp.com/attachments/914682255346118687/938559970792845312/Screenshot_20220202191947.jpg)
 :::
 
-::: tip Note
-You can send embed using [Message Curl Format](../../CodeReferences/ref.message_curl_format.md)
+:::tip Note
+You can send an embed using the [Message Curl Format](/CodeReferences/ref.message_curl_format.md).
 :::
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 

@@ -1,6 +1,6 @@
 # $enableButtons
 
-Enable buttons in a message, not providing button id will enable every button in the message
+Enable buttons in a message, not providing a Button ID will enable every button in the message.
 
 ## Usage
 

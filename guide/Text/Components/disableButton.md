@@ -1,5 +1,5 @@
 # $disableButton
-disables a button by `(Id/label/Emoji/url)`
+Disables a button using its `(ID/label/Emoji/URL)`.
 
 #### Usage: `$disableButton[Message ID;Label/Emoji/URL/ID (optional, default: disables the last button)]`
 

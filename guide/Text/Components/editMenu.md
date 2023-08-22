@@ -1,7 +1,7 @@
 # $editMenu
 
-edit a menu in given message\
-type can be: `id/disabled/max/min/placeholder/ph/options
+Edits a menu in given message.\
+`type` can be: `id/disabled/max/min/placeholder/ph/options`.
 
 ## Usage
 

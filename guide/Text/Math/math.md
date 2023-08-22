@@ -32,7 +32,6 @@ Operator                 | Associativity | Description
 +, -, sqrt               | Right         | Unary prefix operators
 \*, /, %                 | Left          | Multiplication, division, remainder
 +, -                     | Left          | Addition, subtraction
-:::
 
 :::warning Are there any more advanced functions?
 There are more advanced functions located [here.](https://github.com/silentmatt/expr-eval/blob/master/README.md)

@@ -1,10 +1,10 @@
-# $menuId
+# $menuID
 
-Return the menu id of the menu in [Select Menu Trigger](../../Trigger/menu.md)
+Return the Menu ID of the menu triggered with the [Select Menu Trigger](../../Trigger/menu.md).
 
 ## Usage
 
 ```bash
-$menuId
+$menuID
 ```
 
