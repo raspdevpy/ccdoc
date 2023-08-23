@@ -1,8 +1,6 @@
 var fs = require('fs');
 var path = require('path');
 const crypto = require('crypto');
-const https = require('https');
-
 
 function shaUrl(url) {
   const ext = path.extname(url);
