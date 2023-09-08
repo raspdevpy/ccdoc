@@ -47,7 +47,7 @@ module.exports = {
 
 			{
 				text: 'Discord',
-				link: 'https://discord.gg/ccbot',
+				link: 'https://discord.gg/ZFQNZA4Ekz',
 			},
 		],
 		repo: 'raspdevpy/ccdoc',
