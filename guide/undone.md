@@ -1,4 +1,4 @@
-# Done (93.87%)
+# Done (92.43%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -474,8 +474,9 @@
 * ~~httpRequestHeader~~
 * ~~httpRequestStatus~~
 * ~~ObjectMerge~~
+* ~~addMenu~~
 
- # Not done (6.13%)
+ # Not done (7.57%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
@@ -507,3 +508,11 @@
 * [eventOldNickname](./Unclassified/eventOldNickname.md)
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)
+* [imageUseFont](./Unclassified/imageUseFont.md)
+* [imageTextFillColor](./Unclassified/imageTextFillColor.md)
+* [imageTextFill](./Unclassified/imageTextFill.md)
+* [imageTextStrokeColor](./Unclassified/imageTextStrokeColor.md)
+* [imageTextSize](./Unclassified/imageTextSize.md)
+* [imageTextStroke](./Unclassified/imageTextStroke.md)
+* [imageTextWeight](./Unclassified/imageTextWeight.md)
+* [imageTextAlign](./Unclassified/imageTextAlign.md)
