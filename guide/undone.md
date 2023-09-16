@@ -1,4 +1,4 @@
-# Done (92.43%)
+# Done (93.99%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -470,13 +470,22 @@
 * ~~imageOutput~~
 * ~~imageCreate~~
 * ~~imageBorderRad~~
+* ~~imageUseFont~~
+* ~~imageTextFillColor~~
+* ~~imageTextColor~~
+* ~~imageTextFill~~
+* ~~imageTextStrokeColor~~
+* ~~imageTextSize~~
+* ~~imageTextStroke~~
+* ~~imageTextWeight~~
+* ~~imageTextAlign~~
 * ~~httpRequest~~
 * ~~httpRequestHeader~~
 * ~~httpRequestStatus~~
 * ~~ObjectMerge~~
 * ~~addMenu~~
 
- # Not done (7.57%)
+ # Not done (6.01%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
@@ -508,11 +517,3 @@
 * [eventOldNickname](./Unclassified/eventOldNickname.md)
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)
-* [imageUseFont](./Unclassified/imageUseFont.md)
-* [imageTextFillColor](./Unclassified/imageTextFillColor.md)
-* [imageTextFill](./Unclassified/imageTextFill.md)
-* [imageTextStrokeColor](./Unclassified/imageTextStrokeColor.md)
-* [imageTextSize](./Unclassified/imageTextSize.md)
-* [imageTextStroke](./Unclassified/imageTextStroke.md)
-* [imageTextWeight](./Unclassified/imageTextWeight.md)
-* [imageTextAlign](./Unclassified/imageTextAlign.md)
