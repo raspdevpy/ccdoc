@@ -9,7 +9,7 @@ $httpRequest[URL;Method;Content;Header 1;Header 2;...]
 ```
 
 ### Methods:
-Accepts PUT, GET, POST, HEAD, PATCH methods, if not provided, it will use GET method
+Accepts PUT, GET, POST, DELETE, HEAD, PATCH methods, if not provided, it will use GET method
 
 ### Content Input:
 It can any content that suitable for your `content-type` header, like with `content-type: application/json` you can put the content as json format and so on
