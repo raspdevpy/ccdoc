@@ -1,7 +1,7 @@
 # $serverSplash
 Returns the current server invite splash
 
-#### Usage: `$serverSplash` or `$serverSplash[guildID;size (optional)]`
+#### Usage: `$serverSplash[size (optional)]`
 
 Learn more about it: https://support.discord.com/hc/en-us/articles/360028716472-Server-Banner-Background-Invite-Splash-Image
 

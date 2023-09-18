@@ -1,7 +1,7 @@
 # $hasRole
 Checks if the user has the given role id, and return true or false
 
-#### Usage: `$hasRole[userID;roleID;guildID (optional)]`
+#### Usage: `$hasRole[userID;roleID]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
