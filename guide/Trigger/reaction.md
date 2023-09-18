@@ -14,6 +14,9 @@ To trigger on multiple emojis, set trigger to: add, Emoji1|Emoji2|Emoji3..\
 For example, to set it to trigger on :+1: and :-1::
 ![](https://i.imgur.com/REenf8E.png)
 
+### Using Custom Emoji
+You can use the custom emoji name like `wave` or the id like `123456`
+
 ## Trigger When User Remove Reaction
 ### Single Emoji
 To set it to trigger when user remove his reaction of certain emoji (i.e 👍), set trigger to: remove, emoji\
