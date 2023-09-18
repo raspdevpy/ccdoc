@@ -1,4 +1,4 @@
-# Done (93.99%)
+# Done (94.02%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -484,8 +484,10 @@
 * ~~httpRequestStatus~~
 * ~~ObjectMerge~~
 * ~~addMenu~~
+* ~~displayName~~
+* ~~arrayConcat~~
 
- # Not done (6.01%)
+ # Not done (5.98%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
