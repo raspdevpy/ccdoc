@@ -13,6 +13,8 @@ a compact function with many functionalities!
 
 * **authorname** - message author name
 
+* **authoravatar** - message author avatar
+
 * **channel** - message channel id
 
 * **channelname** - message channel name

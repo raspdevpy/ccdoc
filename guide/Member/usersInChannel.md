@@ -2,7 +2,7 @@
 returns users in a voice channel or normal channel
 
 #### Usage: 
-`$usersInChannel[channelID;id/mention/username (optional);separator (optional)]`
+`$usersInChannel[channelID;id/mention/username/count (optional);separator (optional)]`
 
 <br/>
 <discord-messages>

@@ -8,6 +8,13 @@ This way, you can send a message with buttons by using `{button:label:style/url:
 #### Usage: `$awaitButton[Message (optional);user id (optional, default:author);timeout (optional, default:15s);button id1 (optional);button id2...]`
 <br/>
 
+### Timeout
+It means the maximum time bot can wait user button click for.\
+it accept format of time like `10s`.\
+The max time is `60 x bot tier` seconds, for example for tier 3 it would be `180` seconds.
+
+::: details Examples
+
 :::details Examples
 (Simple response)
 

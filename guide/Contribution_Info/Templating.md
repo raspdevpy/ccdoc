@@ -78,6 +78,7 @@ use the following syntax to escape the chars:
 * `text` : This creates a text input.
 * `boolean` : This creates a checkbox.
 * `id` : This creates a text input.
+* `runonlyin` : This modifies the cloned command run only in to the selected channel(s)
 
 #### Fields
 * `input` : This creates a text input.

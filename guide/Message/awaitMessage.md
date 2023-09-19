@@ -5,9 +5,13 @@ Awaits a message from given user ID or everyone in this channel, and return it
 ## Usage
 
 ```bash
-$awaitMessage[MESSAGE (Optional);userid / everyone (optional, default everyone);timeout after (default and max:(60 x bot tier) seconds); return message id instead of content (yes/no)]
+$awaitMessage[MESSAGE (Optional);userid / everyone (optional, default everyone);timeout; return message id instead of content (yes/no)]
 return the user reply or undefined
 ```
+### Timeout
+It means the maximum time bot can wait user message for.\
+it accept format of time like `10s`.\
+The max time is `60 x bot tier` seconds, for example for tier 3 it would be `180` seconds.
 
 ### Example:
 <discord-messages>

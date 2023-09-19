@@ -1,4 +1,4 @@
-# Done (93.71%)
+# Done (94.03%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -461,8 +461,34 @@
 * ~~isUserMention~~
 * ~~isChannelMention~~
 * ~~ObjectIncrease~~
+* ~~imageDraw~~
+* ~~imageDrawBack~~
+* ~~imageFill~~
+* ~~imageWidth~~
+* ~~imageHeight~~
+* ~~imageLoadFromURL~~
+* ~~imageOutput~~
+* ~~imageCreate~~
+* ~~imageBorderRad~~
+* ~~imageUseFont~~
+* ~~imageTextFillColor~~
+* ~~imageTextColor~~
+* ~~imageTextFill~~
+* ~~imageTextStrokeColor~~
+* ~~imageTextSize~~
+* ~~imageTextStroke~~
+* ~~imageTextWeight~~
+* ~~imageTextAlign~~
+* ~~httpRequest~~
+* ~~httpRequestHeader~~
+* ~~httpRequestStatus~~
+* ~~ObjectMerge~~
+* ~~addMenu~~
+* ~~displayName~~
+* ~~arrayConcat~~
+* ~~blackListChannelIDs~~
 
- # Not done (6.29%)
+ # Not done (5.97%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)

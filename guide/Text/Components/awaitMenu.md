@@ -9,6 +9,10 @@ If multiple values are selected, all of them will be returned, separated with `,
 ```bash
 $awaitMenu[Message (optional);user id (optional, default:author);timeout (optional, default:15s);menu id1 (optional);menu id2...]
 ```
+### Timeout
+It means the maximum time bot can wait user message for.\
+it accept format of time like `10s`.\
+The max time is `60 x bot tier` seconds, for example for tier 3 it would be `180` seconds.
 
 ### Example:
 <discord-messages>

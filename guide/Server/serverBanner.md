@@ -1,7 +1,7 @@
 # $serverBanner
 Returns the current server banner
 
-#### Usage: `$serverBanner` or `$serverBanner[guildID;size (optional);dynamic (yes/no)(optional)]`
+#### Usage: `$serverBanner[size (optional);dynamic (yes/no)(optional)]`
 
 Learn more about it: https://support.discord.com/hc/en-us/articles/360028716472-Server-Banner-Background-Invite-Banner-Image
 

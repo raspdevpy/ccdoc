@@ -1,0 +1,14 @@
+# $imageTextWeight
+
+specify the weight of font, i.\
+e bold, italic.\
+.
+
+## Usage
+
+```bash
+$imageTextWeight[Weight Type]
+```
+
+# Types
+regular, bold, italic, bold italic
