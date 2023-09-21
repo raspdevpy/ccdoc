@@ -5,7 +5,8 @@ Control the border radius of the filled box with $imageFill
 ## Usage
 
 ```bash
-$imageBorderRad[border radius]
+$imageBorderRad[border radius for all corners]
+or $imageBorderRad[top-left corner radius; top-right corner radius;bottom-right corner radius;bottom-left corner radius]
 ```
 
 Example: (Draw Red Circle in the center)\
