@@ -5,7 +5,7 @@ Draw a loaded image behind the current image
 ## Usage
 
 ```bash
-$imageDrawBack[image name;x;y;width;height]
+$imageDrawBack[image name;x;y;width;height;opacity]
 ```
 
 ### Example:

@@ -5,7 +5,7 @@ Draw a loaded image on the current image
 ## Usage
 
 ```bash
-$imageDraw[image name;x;y;width;height]
+$imageDraw[image name;x;y;width;height;opacity]
 ```
 
 ### Example:

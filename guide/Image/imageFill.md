@@ -5,7 +5,7 @@ Fill image with specific color name
 ## Usage
 
 ```bash
-$imageFill[color;x;y;width;height]
+$imageFill[color;x;y;width;height;opacity]
 ```
 
 ### Colors:
