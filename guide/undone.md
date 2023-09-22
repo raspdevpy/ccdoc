@@ -1,4 +1,4 @@
-# Done (93.87%)
+# Done (93.88%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -489,8 +489,9 @@
 * ~~arrayConcat~~
 * ~~blackListChannelIDs~~
 * ~~imageSetOpacity~~
+* ~~imageLoadEmoji~~
 
- # Not done (6.13%)
+ # Not done (6.12%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
