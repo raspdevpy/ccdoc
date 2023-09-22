@@ -1,4 +1,4 @@
-# Done (94.03%)
+# Done (93.87%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -479,6 +479,7 @@
 * ~~imageTextStroke~~
 * ~~imageTextWeight~~
 * ~~imageTextAlign~~
+* ~~imageTextBaseline~~
 * ~~httpRequest~~
 * ~~httpRequestHeader~~
 * ~~httpRequestStatus~~
@@ -487,8 +488,9 @@
 * ~~displayName~~
 * ~~arrayConcat~~
 * ~~blackListChannelIDs~~
+* ~~imageSetOpacity~~
 
- # Not done (5.97%)
+ # Not done (6.13%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
@@ -520,3 +522,4 @@
 * [eventOldNickname](./Unclassified/eventOldNickname.md)
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)
+* [OnTemplate](./Unclassified/OnTemplate.md)
