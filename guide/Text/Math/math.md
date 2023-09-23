@@ -3,7 +3,7 @@ Calculates numbers with any mathematically correct
 quantifier(s) in between.
 
 #### Usage: `$math[10*(2+5)/7*8-2]`
-#### Usage: `$math[Expression;Name1=Value1;Name1=Value2]`
+e#### Usage: `$math[Expression;Name1=Value1;Name1=Value2]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
