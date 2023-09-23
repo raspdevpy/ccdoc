@@ -3,6 +3,7 @@ Calculates numbers with any mathematically correct
 quantifier(s) in between.
 
 #### Usage: `$math[10*(2+5)/7*8-2]`
+#### Usage: `$math[Expression;Name1=Value1;Name1=Value2]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -11,7 +12,14 @@ quantifier(s) in between.
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
 		78
 	</discord-message>
+	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
+		!!exec Networth = $math[cash+bank;cash=100;bank=500]
+	</discord-message>
+	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+		Networth = 600
+	</discord-message>
 </discord-messages>
+
 
 :::tip Alternatives
 [$sum](./sum.md), can be used to sum up arguments.
