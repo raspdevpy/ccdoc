@@ -8,17 +8,17 @@ which means, [X=0 Y=0] will be the top-left, [X=Width Y=0] is the top-right and 
 ![](https://i.imgur.com/o0Ws1LM.png)
 
 ## Example 1
-In one of image builder functions `$imageFill`, it requires position of the filled rectangle, let's try to provide [X=0;Y=0], Width=100, Height=100.
+In one of image builder functions `$imageFill`, it requires position of the filled rectangle, let's try to provide [X=0;Y=0], Width=100, Height=100.\
 ![](https://i.imgur.com/uWY7dcm.png)
 
 ### Centering the box
-to center the filled box, we can place it at position X equal to half the canvas width, and Y equal to half the canvas height. like so
+to center the filled box, we can place it at position X equal to half the canvas width, and Y equal to half the canvas height. like so\
 ![](https://i.imgur.com/iSAQv14.png)
 
 **Question: But Wait..that doesn't appear to be properly centered?**
 **Answer: You are correct, because as we told that X, And Y is the position of Top-Left corner by default, so to fix it, we have to move the position half the rectangle width and height**
 
-Here is the fixed version
+Here is the fixed version\
 ![](https://i.imgur.com/Ea6uGKA.png)
 
 > Yay!
@@ -35,7 +35,7 @@ $imagePositionBase[Base]
 > where `Base` can be top, topleft, topright,center, centerleft, centerright, bottom, bottomleft, bottomright
 
 ### Example 2: Rewriting Example 1
-Let's this time make X, Y position is actually the center of the box by specifing `Base` to `center`
+Let's this time make X, Y position is actually the center of the box by specifing `Base` to `center`\
 ![](https://i.imgur.com/PsCAkLz.png)
 
 ### Did you notice `width/2` and `height/2`?
@@ -54,5 +54,5 @@ Yeah, we call it **Placeholders** that helps you simplify the text.
 | h           | alias for height                                                                                  |
 
 ## Example 3: Even Simpler
-We can now use `center` instead of `width/2`
+We can now use `center` instead of `width/2`\
 ![](https://i.imgur.com/vTFbagw.png)
