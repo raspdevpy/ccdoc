@@ -11,6 +11,9 @@ $imageFill[color;x;y;width;height;opacity]
 ### Colors:
 Accept Color Hex or Common Color Names like gray, black
 
+# Position: X & Y
+You can read more about X, Y [here](./../CodeReferences/ref.imgbuild.position.md)
+
 ### Example 1:
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">

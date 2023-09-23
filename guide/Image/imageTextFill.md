@@ -7,6 +7,11 @@ write a filled text on an image
 ```bash
 $imageTextFill[Text;position x;position y;color;opacity]
 ```
+# Position: X & Y
+You can read more about X, Y [here](./../CodeReferences/ref.imgbuild.position.md)
+
+# Size: Width & Height
+You can read more about Width, Height [here](./../CodeReferences/ref.imgbuild.size.md)
 
 ### Example:
 <discord-messages>

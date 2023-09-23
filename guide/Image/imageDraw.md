@@ -8,6 +8,12 @@ Draw a loaded image on the current image
 $imageDraw[image name;x;y;width;height;opacity]
 ```
 
+# Position: X & Y
+You can read more about X, Y [here](./../CodeReferences/ref.imgbuild.position.md)
+
+# Size: Width & Height
+You can read more about Width, Height [here](./../CodeReferences/ref.imgbuild.size.md)
+
 ### Example:
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
