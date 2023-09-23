@@ -9,3 +9,4 @@ ignore/*
 .DS_Store
 guide/.vuepress/public/images/*
 .vscode
+OnTemplate.md
