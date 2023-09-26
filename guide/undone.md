@@ -1,4 +1,4 @@
-# Done (93.89%)
+# Done (93.90%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -491,8 +491,9 @@
 * ~~imageSetOpacity~~
 * ~~imageLoadEmoji~~
 * ~~imagePositionBase~~
+* ~~ObjectRenameKey~~
 
- # Not done (6.11%)
+ # Not done (6.10%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
