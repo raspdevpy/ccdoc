@@ -1,4 +1,4 @@
-# Done (93.90%)
+# Done (93.93%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -464,6 +464,8 @@
 * ~~imageDraw~~
 * ~~imageDrawBack~~
 * ~~imageFill~~
+* ~~imageStroke~~
+* ~~imageStrokeWidth~~
 * ~~imageWidth~~
 * ~~imageHeight~~
 * ~~imageLoadFromURL~~
@@ -493,7 +495,7 @@
 * ~~imagePositionBase~~
 * ~~ObjectRenameKey~~
 
- # Not done (6.10%)
+ # Not done (6.07%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
