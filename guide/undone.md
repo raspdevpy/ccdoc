@@ -1,4 +1,4 @@
-# Done (93.80%)
+# Done (93.98%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -498,8 +498,9 @@
 * ~~eventCreate~~
 * ~~eventStart~~
 * ~~eventEnd~~
+* ~~eventEdit~~
 
- # Not done (6.20%)
+ # Not done (6.02%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
@@ -532,4 +533,3 @@
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)
 * [OnTemplate](./Unclassified/OnTemplate.md)
-* [eventEdit](./Unclassified/eventEdit.md)
