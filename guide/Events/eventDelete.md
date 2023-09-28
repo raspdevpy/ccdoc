@@ -1,10 +1,10 @@
-# $deleteEvent
+# $eventDelete
 
 to delete an already existed event
 
 ## Usage
 
 ```bash
-$deleteEvent[event id]
+$eventDelete[event id]
 ```
 

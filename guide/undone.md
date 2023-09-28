@@ -1,4 +1,4 @@
-# Done (93.94%)
+# Done (93.80%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -423,11 +423,6 @@
 * ~~editSticker~~
 * ~~serverStickers~~
 * ~~arrayLoop~~
-* ~~guildEvents~~
-* ~~getEventInfo~~
-* ~~getEventUsers~~
-* ~~eventExists~~
-* ~~deleteEvent~~
 * ~~arrayClear~~
 * ~~randomTextBiased~~
 * ~~triggerExists~~
@@ -495,8 +490,16 @@
 * ~~imagePositionBase~~
 * ~~ObjectRenameKey~~
 * ~~userConnectedVC~~
+* ~~eventDelete~~
+* ~~eventExists~~
+* ~~guildEvents~~
+* ~~getEventInfo~~
+* ~~getEventUsers~~
+* ~~eventCreate~~
+* ~~eventStart~~
+* ~~eventEnd~~
 
- # Not done (6.06%)
+ # Not done (6.20%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
@@ -529,3 +532,4 @@
 * [eventNewNickname](./Unclassified/eventNewNickname.md)
 * [includeLibrary](./Unclassified/includeLibrary.md)
 * [OnTemplate](./Unclassified/OnTemplate.md)
+* [eventEdit](./Unclassified/eventEdit.md)
