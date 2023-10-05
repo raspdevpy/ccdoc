@@ -13,6 +13,7 @@ $eventCreate[
 	{desc=The event description (optional)}
 	{channel=the event channel if type is voice/stage}
 	{location=Your event location if type is external}
+	{cover=Event Image (optional)}
 	{return_id=whether to return the created event id or not (yes/no)}
 	{reason=creation reason for audit log(optional)]
 ```

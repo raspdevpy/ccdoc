@@ -15,6 +15,7 @@ $eventEdit[
 	{desc=new description}
 	{channel=new voice/stage channel}
 	{location=new location}
+	{cover=Event Image (optional)}
 	{reason=edit reason for audit log}
 	]
 ```
