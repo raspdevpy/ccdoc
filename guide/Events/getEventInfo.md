@@ -12,6 +12,7 @@ $getEventInfo[event id;info type]
 | id      | the event id       | id like `123456789123456789`|
 | name      | the event name       | name like `My Cool Event`|
 | owner      | the user who created the event       | user id like `123456789123456789`|
+| creator      | alias for owner       | user id like `123456789123456789`|
 | channel      | the channel where event is in only if the event type is `voice`       | channel id like `123456789123456789` or `undefined`|
 | desc      | the event description       | description like `This event is so cool!`|
 | start_time      | the event start time       | timestamp in millisecond |
