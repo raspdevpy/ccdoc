@@ -1,4 +1,4 @@
-# Done (93.98%)
+# Done (94.01%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -499,8 +499,10 @@
 * ~~eventStart~~
 * ~~eventEnd~~
 * ~~eventEdit~~
+* ~~createForum~~
+* ~~editForum~~
 
- # Not done (6.02%)
+ # Not done (5.99%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
