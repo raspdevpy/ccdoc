@@ -1,4 +1,4 @@
-# Done (94.05%)
+# Done (94.06%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -505,8 +505,9 @@
 * ~~editPost~~
 * ~~closePost~~
 * ~~lockPost~~
+* ~~pinPost~~
 
- # Not done (5.95%)
+ # Not done (5.94%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
