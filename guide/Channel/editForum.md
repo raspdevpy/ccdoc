@@ -19,12 +19,13 @@ $editForum[
 	{nsfw=age restriction of forum (optional)}
 	{post_ratelimit=Post creations ratelimit (optional)}
 	{message_ratelimit=Post messages ratelimit (optional)}
-	{reason=Creation Reason for audit log (optional)}
+	{reason=Edit Reason for audit log (optional)}
 	{tag=available tags in the post (optional)}
 	{moderator_tag=available tags only for moderators}
+	{remove_tag=Tag name to remove}
+]
 ```
 
-{remove_tag=Tag name to remove}
 
 ### Tags Removal:
 you can remove an existing tag with {remove_tag=Tag name}, you can repeat it as much as you want to remove multiple tags.

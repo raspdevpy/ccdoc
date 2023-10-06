@@ -22,6 +22,7 @@ $createForum[
 	{tag=available tags in the post (optional)}
 	{moderator_tag=available tags only for moderators}
 	{return_id=Whether return the created forum id or not}
+]
 ```
 
 ### Layout values:
