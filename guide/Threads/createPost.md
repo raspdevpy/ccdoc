@@ -25,7 +25,7 @@ It accepts only 7 durations: 1h, 1d, 3d, 7d
 It accept embed and curl format like\
 ```
 {content=
-	{desc=Embed description}
-	{title=Embed Title}
+	{desc:Embed description}
+	{title:Embed Title}
 }
 ```
