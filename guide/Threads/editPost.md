@@ -35,8 +35,8 @@ It accept the tag names only, if not valid will be ignored.
 It accept embed and curl format like\
 ```
 {content=
-	{desc=Embed description}
-	{title=Embed Title}
+	{desc:Embed description}
+	{title:Embed Title}
 }
 ```
 
