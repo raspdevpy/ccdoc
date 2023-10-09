@@ -33,11 +33,11 @@ You can find here how to setup custom bot. You need this if you have tier 3+ by 
 ![](https://i.imgur.com/FR3sH1v.png)
 
 ## 8. Go to the Dashboard and select the server where you want to have premium.
-![](https://i.imgur.com/A5lqSco.png)
+![](https://i.imgur.com/0xEeKlN.png)
 
 - Then paste the copied `Application ID` and `Token` to `Client ID` and `Token`
 
-![](https://i.imgur.com/xcgBVht.png)
+![](https://i.imgur.com/WX7zWGf.png)
 
 ## 9.Change the Prefix from `!!` to any of your choice
 
