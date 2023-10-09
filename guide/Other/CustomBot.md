@@ -25,7 +25,7 @@ You can find here how to setup custom bot. You need this if you have tier 3+ by 
 ![enable the intent](https://i.imgur.com/Vg5ugu7.png)
 
 ## 6. Generate the invitation link, copy it and invite the bot to your server
-![generating the invite link](https://i.imgur.com/KpZEmDa.png)
+![generating the invite link](https://i.imgur.com/DILwJT4.png)
 
 ## 7. Copy the `Application ID` and `Token` to your Clipboard
 ![](https://i.imgur.com/OipIbR1.png)
