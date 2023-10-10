@@ -1,4 +1,4 @@
-# Done (94.09%)
+# Done (94.12%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -508,8 +508,11 @@
 * ~~pinPost~~
 * ~~deletePost~~
 * ~~deletePosts~~
+* ~~createAutomodKeyword~~
+* ~~editAutomodKeyword~~
+* ~~deleteAutomod~~
 
- # Not done (5.91%)
+ # Not done (5.88%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
