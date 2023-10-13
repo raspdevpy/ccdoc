@@ -15,7 +15,7 @@ module.exports = {
 	description: 'Custom Command Bot\'s Documentation',
 	theme: '@vuepress/default',
 	head: [
-		['link', { rel: 'icon', href: '/favicon.ico' }],
+		['link', { rel: 'icon', href: 'https://doc.ccommandbot.com/bot-profile.png' }],
 		['meta', { name: 'theme-color', content: '#74b0f7' }],
 
 		['meta', { property: 'og:title', content: 'Custom Command Bot' }],
