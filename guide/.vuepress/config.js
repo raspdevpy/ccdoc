@@ -20,13 +20,13 @@ module.exports = {
 
 		['meta', { property: 'og:title', content: 'Custom Command Bot' }],
 		['meta', { property: 'og:description', content: 'Custom Command Bot\'s Documentation' }],
-		['meta', { property: 'og:image', content: 'https://doc.ccommandbot.com/favicon.ico' }],
+		['meta', { property: 'og:image', content: 'https://doc.ccommandbot.com/bot-profile.png' }],
 		['meta', { property: 'og:url', content: 'https://ccommandbot.com' }],
 
 
 		['meta', { name: 'twitter:title', content: 'Custom Command Bot' }],
 		['meta', { name: 'twitter:description', content: 'Custom Command Bot\'s Documentation' }],
-		['meta', { name: 'twitter:image', content: 'https://doc.ccommandbot.com/favicon.ico' }]
+		['meta', { name: 'twitter:image', content: 'https://doc.ccommandbot.com/bot-profile.png' }]
 	],
 	//plugins: ['@vuepress/plugin-container'],
 	plugins: [
