@@ -13,6 +13,8 @@ Some functions require a channel type, such as `$channelType`, and `$channelCoun
   	thread_news
   	thread_public
   	thread_private
+	post
+	forum
   	stage
 
 ```

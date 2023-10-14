@@ -9,9 +9,17 @@ Use this syntax to let the bot trigger when a channel is added or removed or bot
 
 `add=category id` -> trigger when a channel is being created in category with id `category id`
 
+`add, channel type` -> trigger when new channel/thread of certain type created, such as `post, text, voice, category,..`
+
+
 `remove` -> trigger when a channel is removed
+`remove, channel type` -> trigger when certain type of channel is being removed like `post, text, voice, category`
 
 `remove=category id` -> trigger when a channel is being deleted in category with id `category id`
+
+::: tip Supported Channel Type
+You can see the whole list [here.](../CodeReferences/ref.channel_types.md)
+:::
 
 ## Related Functions
 The following list is a functions that you might need:
