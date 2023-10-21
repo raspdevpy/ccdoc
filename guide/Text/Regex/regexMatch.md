@@ -4,7 +4,9 @@ Matches a string with given Regex Pattern
 #### Usage: `$regexMatch[text;regexp;flags(optional);group index(optional, 0 by default) or all;separator (optional)]`
 
 ## Note about Separator
-It can only be used when flag includes `g` and group index is `all`
+It can only be used when group index is `all`.\
+in case flag is `g` it will return all matches glued with that separator\
+in case flag is not `g` it will return the whole matched text and matched groups
 
 ### Example (Find the first number):
 <discord-messages>
