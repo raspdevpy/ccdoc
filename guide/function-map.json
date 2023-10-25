@@ -90,6 +90,7 @@
   "imagedrawback": "Image/imageDrawBack.md",
   "imagefill": "Image/imageFill.md",
   "imageheight": "Image/imageHeight.md",
+  "imagelineheight": "Image/imageLineHeight.md",
   "imageloademoji": "Image/imageLoadEmoji.md",
   "imageloadfromurl": "Image/imageLoadFromURL.md",
   "imageoutput": "Image/imageOutput.md",

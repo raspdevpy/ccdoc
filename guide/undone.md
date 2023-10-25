@@ -1,4 +1,4 @@
-# Done (94.12%)
+# Done (94.13%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -511,8 +511,9 @@
 * ~~createAutomodKeyword~~
 * ~~editAutomodKeyword~~
 * ~~deleteAutomod~~
+* ~~imageLineHeight~~
 
- # Not done (5.88%)
+ # Not done (5.87%)
 * [getMessage](./Unclassified/getMessage.md)
 * [slowmode](./Unclassified/slowmode.md)
 * [hasEmbeds](./Unclassified/hasEmbeds.md)
