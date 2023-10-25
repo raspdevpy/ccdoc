@@ -56,6 +56,7 @@ module.exports= {
 			getSideBar('Text/Condition','Condition Functions',{collapsible:true}),
 			getSideBar('Stickers','Sticker Functions',{collapsible:true}),
 			getSideBar('Events','Event Functions',{collapsible:true}),
+			getSideBar('Timeout','User Timeout Functions',{collapsible:true}),
 			getSideBar('Text/Embed','Embed functions',{collapsible:true}),
 			getSideBar('Text/Components','Button Functions',{collapsible:true}),
 			getSideBar('Text/Math','Math Functions',{collapsible:true}),

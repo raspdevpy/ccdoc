@@ -1,4 +1,4 @@
-# Done (94.13%)
+# Done (99.82%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -175,11 +175,13 @@
 * ~~randomChannelID~~
 * ~~randomMention~~
 * ~~roundTenth~~
+* ~~getMessage~~
 * ~~colorRole~~
 * ~~isValidObject~~
 * ~~onlyIfMessageContains~~
 * ~~removeSplitTextElement~~
 * ~~usersInChannel~~
+* ~~slowmode~~
 * ~~usersBanned~~
 * ~~isBanned~~
 * ~~modifyChannelPerms~~
@@ -191,6 +193,7 @@
 * ~~isMuted~~
 * ~~argsCount~~
 * ~~messageExists~~
+* ~~hasEmbeds~~
 * ~~clearReaction~~
 * ~~clearReactions~~
 * ~~getReactions~~
@@ -209,12 +212,15 @@
 * ~~isMentioned~~
 * ~~createWebhook~~
 * ~~sendWebhook~~
+* ~~referenceChannelID~~
+* ~~referenceMessageID~~
 * ~~setChannelTopic~~
 * ~~deleteWebhook~~
 * ~~pinMessage~~
 * ~~unpinMessage~~
 * ~~getInviteInfo~~
 * ~~channelCategoryID~~
+* ~~isUserDMEnabled~~
 * ~~addMessageReactions~~
 * ~~advancedTextSplit~~
 * ~~isMentionable~~
@@ -271,11 +277,17 @@
 * ~~hasAnyRole~~
 * ~~isTicket~~
 * ~~roleMembersCount~~
+* ~~getChannelSlowmode~~
 * ~~emojiExists~~
 * ~~spliceTextJoin~~
+* ~~removeContains~~
 * ~~stringEndsWith~~
 * ~~userReacted~~
+* ~~disableRoleMentions~~
 * ~~boostingSince~~
+* ~~disableChannelMentions~~
+* ~~disableEveryoneMentions~~
+* ~~enableEveryoneMentions~~
 * ~~abbreviate~~
 * ~~channel~~
 * ~~emoji~~
@@ -289,10 +301,13 @@
 * ~~get~~
 * ~~formatDate~~
 * ~~humanizeMS~~
+* ~~resolveEmojiID~~
+* ~~filterMessageWords~~
 * ~~concatTextSplit~~
 * ~~indexOf~~
 * ~~textSlice~~
 * ~~textTrim~~
+* ~~mentionType~~
 * ~~initVar~~
 * ~~deleteUserVar~~
 * ~~deleteServerVar~~
@@ -302,6 +317,7 @@
 * ~~regexMatch~~
 * ~~stop~~
 * ~~setTimeout~~
+* ~~endTimeout~~
 * ~~parseTime~~
 * ~~button~~
 * ~~buttonID~~
@@ -332,12 +348,14 @@
 * ~~botTier~~
 * ~~modifyRolePerms~~
 * ~~void~~
+* ~~transcriptChannel~~
 * ~~redirectErrors~~
 * ~~spread~~
 * ~~toggleRoles~~
 * ~~awaitButton~~
 * ~~reply~~
 * ~~eventChannelID~~
+* ~~eventChannelParent~~
 * ~~createThread~~
 * ~~thread~~
 * ~~getThreads~~
@@ -386,6 +404,9 @@
 * ~~removeMenu~~
 * ~~editMenu~~
 * ~~editEmbed~~
+* ~~userSetTimeout~~
+* ~~userRemoveTimeout~~
+* ~~userGetTimeout~~
 * ~~getTrigger~~
 * ~~editTrigger~~
 * ~~deleteTrigger~~
@@ -395,13 +416,20 @@
 * ~~roleIcon~~
 * ~~serverChannels~~
 * ~~clearCoolDown~~
+* ~~membersWithStatus~~
 * ~~textShuffle~~
 * ~~userBanner~~
+* ~~editWebhookMessage~~
+* ~~deleteWebhookMessage~~
 * ~~userVarRank~~
+* ~~getMessageReactions~~
 * ~~getReactionCount~~
 * ~~vcBefore~~
 * ~~vcAfter~~
 * ~~menuId~~
+* ~~timeoutBy~~
+* ~~timeoutReason~~
+* ~~timeoutAction~~
 * ~~disableButtons~~
 * ~~enableButtons~~
 * ~~abs~~
@@ -416,6 +444,8 @@
 * ~~modalAnswer~~
 * ~~getChannelMessages~~
 * ~~arrayUnique~~
+* ~~eventOldNickname~~
+* ~~eventNewNickname~~
 * ~~modifyUserRoles~~
 * ~~messageStickers~~
 * ~~sticker~~
@@ -423,6 +453,7 @@
 * ~~editSticker~~
 * ~~serverStickers~~
 * ~~arrayLoop~~
+* ~~includeLibrary~~
 * ~~arrayClear~~
 * ~~randomTextBiased~~
 * ~~triggerExists~~
@@ -513,36 +544,5 @@
 * ~~deleteAutomod~~
 * ~~imageLineHeight~~
 
- # Not done (5.87%)
-* [getMessage](./Unclassified/getMessage.md)
-* [slowmode](./Unclassified/slowmode.md)
-* [hasEmbeds](./Unclassified/hasEmbeds.md)
-* [referenceChannelID](./Unclassified/referenceChannelID.md)
-* [referenceMessageID](./Unclassified/referenceMessageID.md)
-* [isUserDMEnabled](./Unclassified/isUserDMEnabled.md)
-* [getChannelSlowmode](./Unclassified/getChannelSlowmode.md)
-* [removeContains](./Unclassified/removeContains.md)
-* [disableRoleMentions](./Unclassified/disableRoleMentions.md)
-* [disableChannelMentions](./Unclassified/disableChannelMentions.md)
-* [disableEveryoneMentions](./Unclassified/disableEveryoneMentions.md)
-* [enableEveryoneMentions](./Unclassified/enableEveryoneMentions.md)
-* [resolveEmojiID](./Unclassified/resolveEmojiID.md)
-* [filterMessageWords](./Unclassified/filterMessageWords.md)
-* [mentionType](./Unclassified/mentionType.md)
-* [endTimeout](./Unclassified/endTimeout.md)
-* [transcriptChannel](./Unclassified/transcriptChannel.md)
-* [eventChannelParent](./Unclassified/eventChannelParent.md)
-* [userSetTimeout](./Unclassified/userSetTimeout.md)
-* [userRemoveTimeout](./Unclassified/userRemoveTimeout.md)
-* [userGetTimeout](./Unclassified/userGetTimeout.md)
-* [membersWithStatus](./Unclassified/membersWithStatus.md)
-* [editWebhookMessage](./Unclassified/editWebhookMessage.md)
-* [deleteWebhookMessage](./Unclassified/deleteWebhookMessage.md)
-* [getMessageReactions](./Unclassified/getMessageReactions.md)
-* [timeoutBy](./Unclassified/timeoutBy.md)
-* [timeoutReason](./Unclassified/timeoutReason.md)
-* [timeoutAction](./Unclassified/timeoutAction.md)
-* [eventOldNickname](./Unclassified/eventOldNickname.md)
-* [eventNewNickname](./Unclassified/eventNewNickname.md)
-* [includeLibrary](./Unclassified/includeLibrary.md)
+ # Not done (0.18%)
 * [OnTemplate](./Unclassified/OnTemplate.md)
