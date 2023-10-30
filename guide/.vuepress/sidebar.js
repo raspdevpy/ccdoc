@@ -73,7 +73,7 @@ module.exports= {
 			getSideBar('Cooldown','Cooldown functions',{collapsible:true}),
 			getSideBar('Request','Http Requests functions',{collapsible:true}),
 			getSideBar('Image','Image Builder functions',{collapsible:true}),
-			getSideBar('Unclassified','Unclassfied Functions',{collapsible:true})
+			// getSideBar('Unclassified','Unclassfied Functions',{collapsible:true})
 		]
 	},		
 		getSideBar('Contribution_Info','Contribute'),
