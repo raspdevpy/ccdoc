@@ -11,10 +11,23 @@ const replacePageContent = (content, replacements) => {
   };
 module.exports = {
 	lang: 'en-US',
-	title: 'Custom Command Bot',
-	description: 'The documentation of Custom Command bot',
+	title: 'Custom Command',
+	description: 'Custom Command Bot\'s Documentation',
 	theme: '@vuepress/default',
-	head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+	head: [
+		['link', { rel: 'icon', href: 'https://doc.ccommandbot.com/bot-profile.png' }],
+		['meta', { name: 'theme-color', content: '#74b0f7' }],
+
+		['meta', { property: 'og:title', content: 'Custom Command Bot' }],
+		['meta', { property: 'og:description', content: 'Custom Command Bot\'s Documentation' }],
+		['meta', { property: 'og:image', content: 'https://doc.ccommandbot.com/bot-profile.png' }],
+		['meta', { property: 'og:url', content: 'https://ccommandbot.com' }],
+
+
+		['meta', { name: 'twitter:title', content: 'Custom Command Bot' }],
+		['meta', { name: 'twitter:description', content: 'Custom Command Bot\'s Documentation' }],
+		['meta', { name: 'twitter:image', content: 'https://doc.ccommandbot.com/bot-profile.png' }]
+	],
 	//plugins: ['@vuepress/plugin-container'],
 	plugins: [
 		(options, context) => ({
@@ -53,7 +66,7 @@ module.exports = {
 		repo: 'raspdevpy/ccdoc',
 		contributors:false,
 		search: true,
-		logo: 'https://cdn.discordapp.com/icons/832255686783533066/f7131f694c6e1a2bd9c360d8b525d4e3.webp',
+		logo: '/favicon.ico',
 		editLinks: true,
 		editLinkText: 'Improve This Page!',
 		lastUpdated: true,
