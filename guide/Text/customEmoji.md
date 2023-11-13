@@ -1,30 +1,29 @@
 # $customEmoji
-Sends a custom emoji from the current used server.
 
+Returns a custom emoji
 
-::: danger
-This function only output emojis from actual used server!
-So make sure that the emoji with the name used is present on the current server. 
-Otherwise, nothing is returned.
-:::
+## Usage
 
-#### Usage: `$customEmoji[emoji name]`
-<br/>
+```bash
+$customEmoji[name or id]
+```
+
+### Example (Using Custom Emoji Name):
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $customEmoji[cc]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-        <DiscordReaction image="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp"/>
-	</discord-message>
+          <discord-message :bot="false" role-color="#ffcc9a" author="Member">
+        !!exec $customEmoji[yes]<br><br>
+          </discord-message>
+          <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+        <discord-embed slot="embeds" image="https://i.imgur.com/E174Ey0.png"><br></discord-embed>
+        </discord-message>
 </discord-messages>
 
-::: tip want to send a normal emoji?
-Just add it to your text.
-
-EXAMPLE:
-you can add`:thumbsup:`to your text. To display the emoji :thumbsup:
-:::
-
-##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="Emoji" vertical="middle" /> <Badge type="tip" text="Custom Emojis" vertical="middle" /> <Badge type="tip" text="pictures" vertical="middle" /> <Badge type="tip" text="amazing" vertical="middle" />
+### Example (Using Custom Emoji ID):
+<discord-messages>
+          <discord-message :bot="false" role-color="#ffcc9a" author="Member">
+        !!exec $customEmoji[833252579873259521]<br><br>
+          </discord-message>
+          <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+        <discord-embed slot="embeds" image="https://i.imgur.com/7t3gZNn.png"><br></discord-embed>
+        </discord-message>
+</discord-messages>
