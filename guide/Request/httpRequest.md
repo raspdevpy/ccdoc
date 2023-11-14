@@ -18,6 +18,9 @@ It can any content that suitable for your `content-type` header, like with `cont
 It accept the header in format of header: value\
 for example: `Content-Type: application/json`
 
+### Timeout
+$httpRequest will timeout after 1 minute, for tier 4+ it will timeout after 30 minutes.
+
 ### Example (Sending JSON Request):
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
