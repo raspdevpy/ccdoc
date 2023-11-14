@@ -19,7 +19,7 @@ It accept the header in format of header: value\
 for example: `Content-Type: application/json`
 
 ### Timeout
-$httpRequest will timeout after 1 minute, for tier 4+ it will timeout after 30 minutes.
+request will timeout after 1 minute, for tier 4+ it will timeout after 30 minutes.
 
 ### Example (Sending JSON Request):
 <discord-messages>
