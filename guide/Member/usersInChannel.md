@@ -18,8 +18,8 @@ returns users in a voice channel or normal channel
 [$usersWithRole](../Member/usersWithRole.md), to check if the user has sInChannel
 :::
 
-::: info Member must be cached!
-If you use the main bot the member must be cached to get valid results.You can ignore the message,if you use custom bot!
+::: danger Warning
+This data comes from the cache, not the api, therefore it may not be precise unless all the guild members are cached (which only in tier 5).
 :::
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 

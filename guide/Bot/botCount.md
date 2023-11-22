@@ -12,5 +12,9 @@ Returns the amount of bots in your server/guild!
 	</discord-message>
 </discord-messages>
 
+::: danger Warning
+This search happen on cached bots only, not the api, therefore it may not be precise unless all the guild members are cached (which only in tier 5).
+:::
+
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="bots" vertical="middle" /> <Badge type="tip" text="count" vertical="middle" /> <Badge type="tip" text="amount of bots" vertical="middle" /> <Badge type="tip" text="return number" vertical="middle" />

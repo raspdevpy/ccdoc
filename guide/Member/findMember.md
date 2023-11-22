@@ -26,6 +26,11 @@ If member is not found:
 	</discord-message>
 </discord-messages>
 
+
+::: danger Warning
+This search happen on cached users only, not the api, therefore it may not be precise unless all the guild members are cached (which only in tier 5).
+:::
+
 ::: tip Related Functions
 [$authorID](../Member/authorID.md), to get the ID from the author of the command
 

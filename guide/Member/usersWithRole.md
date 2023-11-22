@@ -28,3 +28,8 @@ $usersWithRole[roleID;separator (optional, default new line);id/username/tag/men
         LonelyWolf#1234, Stranger#5678
         </discord-message>
 </discord-messages>
+
+
+::: danger Warning
+This data comes from the cache, not the api, therefore it may not be precise unless all the guild members are cached (which only in tier 5).
+:::
