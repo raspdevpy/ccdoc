@@ -543,6 +543,8 @@
 * ~~editAutomodKeyword~~
 * ~~deleteAutomod~~
 * ~~imageLineHeight~~
+* ~~mentionRole~~
+* ~~mentionChannel~~
 
  # Not done (0.18%)
 * [OnTemplate](./Unclassified/OnTemplate.md)
