@@ -2,7 +2,7 @@
 Gets info trom a thread.
 
 #### Usage: 
-`$thread[Channel ID;Thread ID;Type]`
+`$thread[Thread ID;Type]`
 
 <br/>
 <discord-messages>
