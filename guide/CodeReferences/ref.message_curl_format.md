@@ -54,6 +54,8 @@ Sending a embed with title `Hello` and description `World`
 | {stickers:Sticker 1 ID:Sticker 2 ID:Sticker 3 ID} | to send stickers | No example |
 | {pin} | to pin the sent message | No example |
 | {silent} | send message in silent mode, will not send push notification to discord users | [{silent}](https://i.imgur.com/HhSr6ec.png) |
+| {removebutton:id} | remove a button with id, empty id will remove all buttons | `{removebutton:mybtnid}` |
+| {removemenu:id} | remove a menu with id, empty id will remove all buttons | `{removemenu:mybtnid}` |
 
 
 ::: tip Note
