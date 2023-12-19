@@ -545,6 +545,7 @@
 * ~~imageLineHeight~~
 * ~~mentionRole~~
 * ~~mentionChannel~~
+* ~~removeEmbed~~
 
  # Not done (0.18%)
 * [OnTemplate](./Unclassified/OnTemplate.md)

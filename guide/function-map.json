@@ -349,6 +349,7 @@
   "menuid": "Text/Components/menuId.md",
   "removebutton": "Text/Components/removeButton.md",
   "removebuttons": "Text/Components/removeButtons.md",
+  "removeembed": "Text/Components/removeEmbed.md",
   "removemenu": "Text/Components/removeMenu.md",
   "selectmenu": "Text/Components/selectMenu.md",
   "checkcondition": "Text/Condition/checkCondition.md",
