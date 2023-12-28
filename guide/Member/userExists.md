@@ -1,5 +1,5 @@
 # $userExists
-Returns a boolean, to check if a channel exists
+Returns a boolean, to check if a user exists in the server.
 
 #### Usage: 
 `$userExists[userid]`
