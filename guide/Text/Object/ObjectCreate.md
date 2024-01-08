@@ -1,7 +1,7 @@
 # $objectCreate
 Creates a json object from the input 
 
-Use `$getObjectProperty` or $objectGet` to get a key value.
+Use `$getObjectProperty` or `$objectGet` to get a key value.
 #### Usage: `$objectCreate[JSON string]`
 <br/>
 <discord-messages>
