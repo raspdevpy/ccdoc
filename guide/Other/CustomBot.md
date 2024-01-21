@@ -39,4 +39,4 @@ You can find here how to setup custom bot. You need this if you have tier 3+ by 
 
 10. You are done!
   Wait for few minutes, your bot should go online.
-  and that's it :tada:.
+  and that's it :tada:. **Ensure to leave the main bot in your server, otherwise you'll lose the ability to access the dashboard!**
