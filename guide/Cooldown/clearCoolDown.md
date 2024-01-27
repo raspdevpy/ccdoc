@@ -7,7 +7,7 @@ Type can be: user, channel, server
 ## Usage
 
 ```bash
-$clearCoolDown[type (optional, default user);id (optional, default "$authorID")]
+$clearCoolDown[type (optional, default user);id (optional, default "$authorID");command token (optional)]
 ```
 
 ### Example (cooldown exception for specific user):
