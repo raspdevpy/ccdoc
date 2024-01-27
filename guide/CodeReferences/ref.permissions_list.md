@@ -47,6 +47,8 @@ createprivatethreads: Allows for creating private threads
 sendmessagesinthreads: Allows for sending messages in threads
 embeddedactivities: Allows for using Activities
 moderatemembers: Allows for timing out users
+sendvc: Allows for sending a voice messages
+usesoundboard: Allows for using sound-boards
 ```
 
 ### Example
