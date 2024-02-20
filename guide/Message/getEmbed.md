@@ -8,6 +8,9 @@ Gets information of an embed
 $getEmbed[Channel ID (optional);Message ID (optional);Info (optional, default is description);Embed Number (optional, default is 1)]
 ```
 
+## Info values
+title, footer, footer_image, author, author_url, author_image, color, description, field, field_value, field_inline, thumbnail, timestamp
+
 ### Example:
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
