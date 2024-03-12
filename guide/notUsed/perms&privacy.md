@@ -69,6 +69,6 @@ you are advised to review this Privacy Policy periodically for any changes. Chan
 
 Generally,we recommend you contact us through our server to get a faster response.
 
-* Email: [ccommandbot@protonmail.com](mailto:ccommandbot@protonmail.com)
+* Email: [owner@ccommandbot.com](mailto:owner@ccommandbot.com)
 * Server: [ccommandbot.com/join](http://ccommandbot.com/join) 
 * Website Owner: `MattReal#6833`
