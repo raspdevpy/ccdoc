@@ -181,7 +181,6 @@
   "deletemessage": "Message/deleteMessage.md",
   "deletewebhook": "Message/deleteWebhook.md",
   "deletewebhookmessage": "Message/deleteWebhookMessage.md",
-  "deletecommand": "Message/deletecommand.md",
   "disablechannelmentions": "Message/disableChannelMentions.md",
   "disableeveryonementions": "Message/disableEveryoneMentions.md",
   "disablerolementions": "Message/disableRoleMentions.md",

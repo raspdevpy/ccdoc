@@ -1,4 +1,4 @@
-# Done (99.82%)
+# Done (99.27%)
 * ~~cacheMember~~
 * ~~setServerVar~~
 * ~~serverCount~~
@@ -116,7 +116,6 @@
 * ~~checkContains~~
 * ~~deleteRoles~~
 * ~~rolePosition~~
-* ~~deletecommand~~
 * ~~attachment~~
 * ~~isValidInvite~~
 * ~~isBot~~
@@ -547,5 +546,8 @@
 * ~~mentionChannel~~
 * ~~removeEmbed~~
 
- # Not done (0.18%)
+ # Not done (0.73%)
+* [deleteCommand](./Unclassified/deleteCommand.md)
 * [OnTemplate](./Unclassified/OnTemplate.md)
+* [getToken](./Unclassified/getToken.md)
+* [numToWord](./Unclassified/numToWord.md)
