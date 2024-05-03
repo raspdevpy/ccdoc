@@ -28,6 +28,7 @@ $selectMenu[id;placeholder;min value(optional);max value;(optional);label;desc;v
 Here are all curl embed components you can use in any function containing `message` field.
 
 ```
+{content:text}
 {author:name:avatar:link url}
 {title:title}
 {color:hex/int/COLOR}

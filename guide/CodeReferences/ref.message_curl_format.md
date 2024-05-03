@@ -25,6 +25,7 @@ Sending a embed with title `Hello` and description `World`
 ### List:
 | Curl Format | Description | Example (click to see output) |
 |:-----------:|-------------|---------|
+| {content:text} | to set message content | `{content:Message content}` |
 | {title:text} | adding a title | [{title:My name is $username}](https://i.imgur.com/vUfjDLa.png) |
 | {url:link} | adding a url for the title | [{url:https://discord.com}](https://i.imgur.com/k234oP0.png) |
 | {footer:text:url} | adding a footer | [{footer:You see my small profile?:$authorAvatar}](https://i.imgur.com/MbG9VQ3.png) |
