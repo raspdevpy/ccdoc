@@ -49,6 +49,11 @@ embeddedactivities: Allows for using Activities
 moderatemembers: Allows for timing out users
 sendvc: Allows for sending a voice messages
 usesoundboard: Allows for using sound-boards
+useexternalsounds: Allow use for sounds outside the server
+viewcreatormonetization: View creator monetization page
+createexpression: Allows for creating emojis, stickers, and soundboard sounds
+createevent: Allows for creating scheduled events
+sendpolls: Allows sending polls
 ```
 
 ### Example
