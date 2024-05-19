@@ -57,7 +57,7 @@ Sending a embed with title `Hello` and description `World`
 | {silent} | send message in silent mode, will not send push notification to discord users | [{silent}](https://i.imgur.com/HhSr6ec.png) |
 | {removebutton:id} | remove a button with id, empty id will remove all buttons | `{removebutton:mybtnid}` |
 | {removemenu:id} | remove a menu with id, empty id will remove all buttons | `{removemenu:mybtnid}` |
-
+| {poll:data} | add a new poll to the message, learn more about data [here](../CodeReferences/ref.poll_data.md) | see example [here](../CodeReferences/ref.poll_data.md) |
 
 ::: tip Note
 Sometimes value contains characters like : (colon), [ , ; ,  ]<br>
