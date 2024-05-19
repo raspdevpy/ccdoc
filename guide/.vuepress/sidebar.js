@@ -3,7 +3,7 @@ const path = require("path");
 
 function getSideBar(folder, title, options={}) {
 	const extension = [".md"];
-
+	if(!fs.existsSync(path.join(`${__dirname}/../${folder}`)))	return { text: title, children: [], collapsible:false,...options};
 	const files = fs
 		.readdirSync(path.join(`${__dirname}/../${folder}`))
 		.filter(
