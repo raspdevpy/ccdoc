@@ -168,6 +168,45 @@ Let's try sending some mentions:
 
 It detects all of them!
 
+## Trigger when a message has attachment
+It can be done using `%has_attachment%` as trigger, it makes the command execute when a message contains an attachment.
+
+### Example
+![](https://i.imgur.com/41Q7lMg.png)
+
+### Output
+![](https://i.imgur.com/aaP2nVM.png)
+
+## Trigger when pinned message is sent
+It can be done using `%pin%` as trigger, it makes the command execute when discord send a message when a message get pinned.
+
+### Example
+![](https://i.imgur.com/VNhSEQ2.png)
+
+### Output
+![](https://i.imgur.com/YxFWWym.png)
+
+## Trigger when thread is created
+It can be done using `%thread_created%` as trigger, it makes the command execute when discord send a message when a thread get created.
+
+### Example
+![](https://i.imgur.com/VhBExwB.png)
+
+### Output
+![](https://i.imgur.com/WszJWXs.png)
+
+## Trigger when poll is being sent
+It can be done using `%has_poll%` as trigger, it makes the command execute when a user send a poll.
+
+### Example
+![](https://i.imgur.com/2tDlcML.png)
+
+### Output
+![](https://i.imgur.com/BLj6YY3.png)
+
+## Trigger when automod action is detected
+It can be done using `%automod_action%` as trigger, it makes the command execute when discord send an automod action detection.
+
 ## Any message
 From time to time you may not now what the message content will be, you can make cc trigger to any message sent in a channel.
 
@@ -213,6 +252,11 @@ As we got through all the examples, here's a summary of the word trigger:
 | Case insensitive | `word\|i` | `apple\|i` | Matches with apple and any case variations like ApPLe |
 | Regex | `/RegExp/` | `/<@&\d{18,}>/` | Detects a user mention anywhere in a message |
 | Any message* | `%all%` | `%all%` | Triggers on **ANY** message |
+| Message Pin | `%pin%` | `%pin%` | Triggers on discord system pin message |
+| Thread Creation | `%thread_created%` | `%thread_created%` | Triggers on discord system thread creation message |
+| Message with Attachment | `%has_attachment%` | `%has_attachment%` | Triggers on when user message has an attachnment |
+| Message With Poll | `%has_poll%` | `%has_poll%` | Triggers when user message has a poll |
+| Automod Action | `%automod_action%` | `%automod_action%` | Triggers when automod detection message is sent |
 
 ::: tip One word only!
 In word trigger (besides Regex) you are not allowed to put more than one word. All other words are interpreted as parameters, and cannot overlap with the trigger.
