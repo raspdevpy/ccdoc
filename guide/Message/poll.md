@@ -15,6 +15,9 @@ $poll[Channel ID (default $channelID);Message ID (default $messageID);data]
 `answer n name`: get the nth answer name\
 `answer n emoji`: get the nth answer emoji\
 `answer n votes`: get the nth answer votes\
+`top n name`: get the nth top-ranked name\
+`top n emoji`: get the nth top-ranked answer emoji\
+`top n votes`: get the nth top-ranked answer votes\
 `multiple`: whether poll accept multiple selection (yes/no)\
 `expired`: whether poll is expired (yes/no)\
 `expiretime`: get the expiration time of the poll in ms\
