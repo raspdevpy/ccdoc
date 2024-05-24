@@ -12,5 +12,9 @@ Returns a user ID by a given username.
 	</discord-message>
 </discord-messages>
 
+::: danger Warning
+This data comes from the cache, not the api, therefore it may not be precise unless all the guild members are cached (which only in tier 5).
+:::
+
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="userID" vertical="middle" /> <Badge type="tip" text="member's ID" vertical="middle" /> <Badge type="tip" text="User ID" vertical="middle" /> <Badge type="tip" text="username" vertical="middle" />

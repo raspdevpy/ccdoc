@@ -14,7 +14,6 @@ Returns a random Mention id from a Mention in the server
 	</discord-message>
 </discord-messages>
 
-
 ::: danger Warning
 This members comes from the cache, so it picks random member from the cached members, unless all the guild members are cached (which only in tier 5).
 :::

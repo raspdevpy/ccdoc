@@ -12,9 +12,5 @@ Returns the amount of users in your server/ guild!
 	</discord-message>
 </discord-messages>
 
-::: danger Warning
-This data comes from the cache, not the api, therefore it may not be precise unless all the guild members are cached (which only in tier 5).
-:::
-
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="members" vertical="middle" /> <Badge type="tip" text="count" vertical="middle" /> <Badge type="tip" text="amount of users" vertical="middle" /> <Badge type="tip" text="return number" vertical="middle" />

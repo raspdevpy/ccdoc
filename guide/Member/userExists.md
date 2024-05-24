@@ -15,6 +15,10 @@ Returns a boolean, to check if a user exists in the server.
 	</discord-message>
 </discord-messages>
 
+::: danger Warning
+This data comes from the cache, not the api, therefore it may not be precise unless all the guild members are cached (which only in tier 5).
+:::
+
 ::: tip Related Functions
 [$findMember](../Member/findMember.md), to find a member's ID
 :::
