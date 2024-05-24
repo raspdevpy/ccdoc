@@ -3,7 +3,11 @@ this function set the timezone for all date functions
 get tz name (here)[https://en.wikipedia.org/wiki/List_of_tz_database_time_zones]
 #### Usage: `$timezone[Region/City]`
 
-Example:
+### Accepted Zones:
+Standard Zones like Africa/Cairo [(list here)](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)\
+Or you can use `UTC+hh:mm` or `UTC-hh:mm` to specify a certain offset like `UTC+03:00`.
+
+### Example:
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
