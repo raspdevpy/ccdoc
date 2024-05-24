@@ -6,7 +6,7 @@ Gets specific information about a channel.
 
 `Option` can be any of these:
 ```
-name, id, isdeleted, mention, position, rawposition, topic, type, created, timestamp, guildid, guildname, ismanageable, parentid, parentname, isviewable, isdeletable
+name, id, isdeleted, mention, position, rawposition, topic, type, created, timestamp, guildid, guildname, ismanageable, parentid, parentname, isviewable, isdeletable, region
 ```
 
 #### Example:

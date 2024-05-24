@@ -2,7 +2,12 @@
 Creates a channel in the server.
 
 #### Usage: 
-`$createChannel[name;type;return ID (yes/no);categoryID (optional);topic;NSFW (yes/no);Bitrate (i.e 64000, VC only);Position;Slowmode in Seconds (optional);User Limi (VC only)]`
+`$createChannel[name;type;return ID (yes/no);categoryID (optional);topic;NSFW (yes/no);Bitrate (i.e 64000, VC only);Position;Slowmode in Seconds (optional);User Limit (VC only);RTC Region]`
+
+### RTC Region:
+For Voice Channel Only, to specify where voice channel RTC region located.
+default is `auto`, where discord will pick the best one, but you can specify one of those:
+> auto, brazil, hongkong, india, japan, rotterdam, russia, singapore, southafrica, sydney, us-central, us-east, us-south, us-west
 
 #### Example:
 `$createChannel[general;text;no]`

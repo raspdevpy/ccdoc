@@ -2,12 +2,16 @@
 Edits a channel.
 
 #### Usage: 
-`$editChannel[channelID;categoryID/$default;name/$default;position/$default;nsfw/$default (yes/no);bitrate/$default;userLimit/$default;syncPermission/$default (yes/no);reason (optional)]`
+`$editChannel[channelID;categoryID/$default;name/$default;position/$default;nsfw/$default (yes/no);bitrate/$default;userLimit/$default;syncPermission/$default (yes/no);reason (optional);RTC region/$default]`
 > If you don't want to edit something, set it to $default.
 
 ::: tip Available channel Types
 [This lists](../CodeReferences/ref.channel_types.md) all valid channel types.
 :::
+
+### RTC Region:
+default is `auto`, but you can specify one of those:
+> auto, brazil, hongkong, india, japan, rotterdam, russia, singapore, southafrica, sydney, us-central, us-east, us-south, us-west
 
 #### Example:
 `$editChannel[$channelID;$default;new-channel-name;$default;$default;$default;$default;yes;To show the docs]`
