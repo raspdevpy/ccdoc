@@ -18,7 +18,7 @@ $clear[10;$authorID]
 $clear[10;everyone]
 ```
 
-### Example 3 (delete 10 messages of a user, including pinned ones):
+### Example 3 (delete 10 messages of a user, skipping pinned ones):
 ```bash
 $clear[10;$authorID;;yes]
 ```
