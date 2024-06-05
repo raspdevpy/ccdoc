@@ -31,7 +31,7 @@ Sending a embed with title `Hello` and description `World`
 | {footer:text:url} | adding a footer | [{footer:You see my small profile?:$authorAvatar}](https://i.imgur.com/MbG9VQ3.png) |
 | {description:text} | adding a description | [{description:Do you know that this month is $month?}](https://i.imgur.com/BV7wZpY.png) |
 | {desc:text} | alias to {description} | {desc:Hello World, do you see this description?} |
-| {color:hex} | adding a color of embed | [{color:RED} or {color:#ff0000}](https://i.imgur.com/f9no81k.png) |
+| {color:input} | adding a color of embed, read this [page](./ref.embed.colors.md) to know the accepted input | [{color:RED} or {color:#ff0000}](https://i.imgur.com/f9no81k.png) |
 | {author:text:image url:link url} | adding author | [{author:$username:$authorAvatar:$authorAvatar}](https://i.imgur.com/2DU2dwn.png) |
 | {thumbnail:url} | adding thumbnail | [{thumbnail:$authorAvatar}](https://i.imgur.com/HruXoXs.png) |
 | {field:name:value:inline} | adding a field | [{field:My name:$username}](https://i.imgur.com/zSdpHiW.png) |
