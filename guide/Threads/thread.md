@@ -15,11 +15,12 @@ Gets info trom a thread.
 </discord-messages>
 
 ::: details Valid objects for "Type"
-* `archivedAt`
+* `archivedat`
 * `duration`
 * `id`
 * `members`
-* `membersCount`
+* `memberscount`
+* `messagescount`
 * `name`
 * `owner`
 * `locked`
