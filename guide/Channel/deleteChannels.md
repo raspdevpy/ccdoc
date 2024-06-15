@@ -1,5 +1,5 @@
 # $deleteChannels
-Delete channels in the server
+Delete channels in the server, up to 10 channels at once
 
 #### Usage: 
 `$deleteChannels[channelID1;channelID2;channelID3;...]`
