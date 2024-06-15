@@ -1,5 +1,5 @@
 # $deleteRoles
-Deletes (a) role(s) in the server
+Deletes (a) role(s) in the server up to 10 roles at once
 
 #### Usage: 
 `$deleteRoles[roleID1;roleID2;roleID3;...]`
