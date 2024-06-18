@@ -3,7 +3,7 @@ Returns all guild roles there names/ids/mentions.
 
 amount can control how many roles you want to return
 #### Usage: 
-`$guildRoles[id/name/mention (optional, defualt=name);amount]`
+`$guildRoles[id/name/mention (optional, defualt=name);amount;separator (default ', ')]`
 
 
 <br/>
