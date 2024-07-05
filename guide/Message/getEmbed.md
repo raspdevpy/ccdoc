@@ -9,7 +9,7 @@ $getEmbed[Channel ID (optional);Message ID (optional);Info (optional, default is
 ```
 
 ## Info values
-title, footer, footer_image, author, author_url, author_image, color, description, field, field_value, field_inline, thumbnail, timestamp
+title, footer, footer_image, author, author_url, author_image, color, color_hex, description, field, field_value, field_inline, thumbnail, timestamp
 
 ### Example:
 <discord-messages>
