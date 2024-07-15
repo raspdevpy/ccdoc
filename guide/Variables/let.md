@@ -1,9 +1,9 @@
 # $let
-define a variable, that you can access later through [$get](./get.md)
-This functions is useful to temporary store variables, like for to save a result of a calculation
+Define a variable, that you can access later through [$get](./get.md).
+This function is useful to temporarily store variables, like to save the result of a calculation
 
 #### Usage: `$let[variable name;variable value;remain after execution (yes/no , default no) (optional)]`
-The first value will only exist till cc ends its execution,the second will be still accessable till next bot restart (every 5d)
+The first value will only exist umtil cc ends its execution,the second will still be accessable until next bot restart (every 5d)
 You can use $get[varname] or $varname to retrieve the value
 <br/>
 <discord-messages>
