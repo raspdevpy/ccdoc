@@ -1,6 +1,6 @@
 # $mathMax
 
-Return the highest number from a list of numbers
+Return the largest number from a list of numbers
 
 ## Usage
 
