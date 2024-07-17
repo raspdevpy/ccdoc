@@ -1,6 +1,6 @@
 # $regexCheck
 
-To check if a text match a regex or not
+To check if a text matches a regex or not, returns true or false
 
 ## Usage
 
@@ -8,7 +8,7 @@ To check if a text match a regex or not
 $regexCheck[Text;Regex;Flags]
 ```
 
-### Example (Check If Text is alphabets):
+### Example (Check If Text is letters):
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
         !!exec $regexCheck[ABC;^[a-zA-Z]+$]<br><br>
