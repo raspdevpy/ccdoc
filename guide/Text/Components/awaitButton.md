@@ -9,8 +9,8 @@ This way, you can send a message with buttons by using `{button:label:style/url:
 <br/>
 
 ### Timeout
-The maximum time the bot waits for a user to click a button.
-Accepts time in the format `10s` for example.
+The maximum time the bot waits for a user to click a button.\
+Accepts time in the format `10s` for example.\
 The max time is `60 x bot tier` seconds, for example for tier 3 it would be `180` seconds. Tier 0's limit is 60 seconds. 
 
 ::: details Examples
