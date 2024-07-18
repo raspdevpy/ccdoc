@@ -1,6 +1,6 @@
 # $userRemoveTimeout
 
-Remove timeout on a user, so he can talk
+Removes a timeout from a user.
 
 ## Usage
 
