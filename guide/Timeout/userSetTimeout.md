@@ -1,6 +1,6 @@
 # $userSetTimeout
 
-Set timeout user so he can't chat or communicate for specified period
+Sets a user timeout, so the user cannot talk/interact with the server.
 
 ## Usage
 
