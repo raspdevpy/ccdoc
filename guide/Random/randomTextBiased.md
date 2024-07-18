@@ -9,7 +9,7 @@ $randomTextBiased[Text1,Weight1;Text2,Weight2;Text3,Weight3]
 ```
 
 ### Note:
-The more weight a text have, the more likely it will be selected
+The more weight a text has, the more likely it it to be selected
 
 ### Example (Unlucky guy):
 <discord-messages>
