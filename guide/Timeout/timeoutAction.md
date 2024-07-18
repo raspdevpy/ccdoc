@@ -1,6 +1,7 @@
 # $timeoutAction
 
-Return `add` in case of timeout user, `remove` in case of timeout got removed by someone in Timeout trigger
+Returns `add` if a user was timed out, `remove` if the timeout was removed.
+This function only works in the Timeout trigger.
 
 ## Usage
 
