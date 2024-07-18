@@ -1,13 +1,12 @@
 # Complete Embed
 
-Here is a code for a complete embed and a comprehension of both embed formats.
-
+Here is a code example for a complete embed in both function and curl format.
 ## Function Format
 
 ```php
 $author[name;avatar;link]
 $title[title;url]
-$color[hex/int/COLOR]
+$color[hex/colorname/random]
 $thumbnail[url]
 $description[description]
 $addField[name;value;inline (yes/no)]
@@ -30,7 +29,7 @@ Here are all curl embed components you can use in any function containing `messa
 ```
 {author:name:avatar:link url}
 {title:title}
-{color:hex/int/COLOR}
+{color:hex/colorname/random}
 {url:title url}
 {thumbnail:url}
 {description:description}
@@ -62,10 +61,10 @@ These arguments can be used in interaction trigger commands.
 {message=content, curl embed, menus, buttons...} // Only in $interactionReply
 ```
 
-::: tip What are ephemerals?
-Ephemerals are interaction replies visibile only to the one who executed the command.
+::: tip What are ephemeral messages?
+Ephemeral messages are interaction replies visibile only to the one who executed the command.
 
-![Ephemerals preview](https://cdn.discordapp.com/attachments/957286111250624552/1100459877480013914/image.png)
+![Ephemeral message preview](https://cdn.discordapp.com/attachments/957286111250624552/1100459877480013914/image.png)
 :::
 
 ## What is the difference between function and embed format?
@@ -88,7 +87,7 @@ $changeNickname[$authorID;$toLowercase[$username]]
 
 ### 2.  Curl Format:
 
-Curl embeds are a more complex way of sending embeds. It's used to "attach" an embed to a message sent with a function like `$sendMessage`, or `$interactionReply`.
+Curl embeds are a more complex way of sending embeds. It's used to "attach" an embed to a message sent with a function like `$sendMessage` or `$interactionReply`.
 This format unlike the previous one, follows the normal code flow.
 
 #### Example:
@@ -113,8 +112,8 @@ $editMessage[$sentMessageID;
 
 ::: danger Separators
 Please note, that separators vary between the formats:
-* Function arguments are separated `;`
-* Curl embed arguments are separated with `:`
+* Function arguments are separated by a `;`
+* Curl embed arguments are separated by a `:`
 :::
 
 ###### Tags: <Badge type="tip" text="embed" vertical="middle" />
