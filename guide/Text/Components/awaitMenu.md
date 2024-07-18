@@ -12,7 +12,7 @@ $awaitMenu[Message (optional);user id (optional, default:author);timeout (option
 ### Timeout
 It means the maximum time bot can wait user message for.\
 it accept format of time like `10s`.\
-The max time is `60 x bot tier` seconds, for example for tier 3 it would be `180` seconds. Tier 0's limit is 60 seconds.
+The max time is 60 x (bot tier + 1) seconds, for example for tier 3 it would be 240 seconds.
 
 ### Example:
 <discord-messages>
