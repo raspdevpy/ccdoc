@@ -77,9 +77,9 @@ Role trigger will work with no input at all, but you can restrict the command to
 
 ### Role input
 To specify a role you can either use an ID or it's name.
-But be aware, all role names are caSe seNsiTiVe, so a if a command doesn't trigger, check the capitalization!
+But be aware, all role names are case sensitive, so a if a command doesn't trigger, check the capitalization!
 
 ### Multiple roles
-You can make your command trigger on any of provided roles by putting role names/ids separated by "|".
+You can make your command trigger on any provided roles by putting role names/ids separated by "|".
 
 For example `Admin|Moderator`, will take effect either on Admin or Moderator role.
