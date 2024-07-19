@@ -1,5 +1,5 @@
 # $deleteUserVar
-Deletes a user variable, from the author of the command triggered or from the ID specified.
+Deletes a user variable, from the author of the command or from the ID specified.
 
 #### Usage: `$deleteUserVar[variable;userID]`
 <br/>
