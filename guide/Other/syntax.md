@@ -8,20 +8,20 @@ We are not affiliated with BDFD. But we're using a similar syntax
 :::
 
 ## Syntax
-In general the code only have 2 types:\
+In general the code only has 2 types:\
 1- [Text](#what-is-text)\
 2- [Function](#what-is-a-function)
 
 ## What is Text?
-In the code anything is text except for [function](#what-is-a-function)\
+In the code anything is text except for [functions](#what-is-a-function)\
 for example in this code:
 ```
 Hello $username to our server
 ```
 
-`Hello`: is a text\
+`Hello`: is text\
 [`$username`](../Member/username.md): is a function\
-`to our server` is a text
+`to our server` is text
 
 ## What is a function
 Any function starts with `$` like [`$username`](../Member/username.md)\
@@ -31,26 +31,25 @@ Hello $username to our server
 ```
 [`$username`](../Member/username.md) is the only function in this code
 
-### But what function does?
+### But what do functions do?
 Each function in general can do one of the 3 things:
-* Replace itself by a value
+* Replace itself with a value
 * Do an action
-* Do an action and Replace itself by a value 
+* Do an action and Replace itself with a value 
 
-For Example In running this code:
+For example running this code:
 ```
-Hello $username to our server!
+Hello $username, welcome to our server!
 ```
-When this code runs you will find the bot sending:
+you will find the bot sends:
 ```
-Hello Mido to our server!
+Hello Mido, welcome to our server!
 ```
 
-Which clearly shows that [`$username`](../Member/username.md) function is `Replaced by value` type\
-and this value will always be the username of the author
+Which clearly shows that the [`$username`](../Member/username.md) function is `Replaced by value` type and this value will always be the username of the author
 
-::: tip `Replaced by value` type\ is also called `return`
-Read carefully function descriptions in docs.
+::: tip `Replaced by value` type is also called `return`\
+Read the function descriptions in docs carefully.
 If a function is replaced by value, it returns that value. 
 E.g.:
 [`$username`](../Member/username.md) ***Returns*** the name of the user that executed the command
