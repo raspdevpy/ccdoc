@@ -64,9 +64,9 @@ Some functions requires an input from you to behave differently and this is the 
 $function[Inputs]
 ```
 Previously we used [`$username`](../Member/username.md) without inputs but why?\
-because [`$username`](../Member/username.md) documentations will tell you, that by default it will return the author name, but if you want to return someone else username you will need to do an input in this case\
-Assume that we want to get Rake name instead of Mido\
-we will first need to get Rake User ID, assume (1234) and input it to [`$username`](../Member/username.md):
+As the [`$username`](../Member/username.md) documentation will tell you, that by default it will return the exrcutor's name, but if you want to return someone else username you will need to do an input in this case\
+Assume that we want to get Rake's name instead of Mido\
+We will first need to get Rake's User ID, assume 1234, and input it to [`$username`](../Member/username.md):
 ```
 Hello $username[1234]
 ```
@@ -75,13 +75,13 @@ Output
 Hello Rake
 ```
 ### Multiple Inputs
-In some function it wants from you more than just 1 input like $channelSendMessage\
+Some functions need more than just 1 input like $channelSendMessage\
 it asks for 2 different inputs (in order):
 * Channel ID to send to
 * Message Content
 
-Assume that channel id is `1234`, and content is `Hello $username`
-To apply these inputs in the function, we will separate them by `;`\
+Assume that the channel id is `1234`, and content is `Hello $username`
+To apply these inputs in the function, we will separate them by a semicolon `;`\
 Like this:
 ```
 $channelSendMessage[1234;Hello $username]
@@ -91,10 +91,10 @@ Output (in channel with ID 1234):
 Hello Mido
 ```
 
-Note: [`$channelSendMessage`](../Message/channelSendMessage.md) doesn't not get replaced by value, but only does an action (like sending the message)
+Note: [`$channelSendMessage`](../Message/channelSendMessage.md) doesn't get replaced by a value, but only does an action (sending a message)
 
 ::: tip Function names are case insensitive
-It means $authorID and $aUtHoRiD will work!
+It means $authorID and $aUtHoRiD will work the same! 
 :::
 
 ## Expressions
@@ -104,7 +104,7 @@ Provide an expression
 In this case, please read about the [expressions](../CodeReferences/ref.expression.md) here
 
 ## Escaping Characters
-There's some danger characters that is troublesome to work with
+There's some dangerous characters that are troublesome to work with
 for example let's say you want to send [`$username`](../Member/username.md)
 to be literally be sent like that and not be replaced to be the user name
 For example code:
