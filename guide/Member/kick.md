@@ -32,7 +32,7 @@ Discord prevents users (members/bots) from kicking members above their highest r
 :::
 
 ::: danger Be careful with adding this to a command!
-every member that can execute the command, this function is added in. Will be able to kick everyone below the bot role!
+EVERY member that can execute the command this function is added in will be able to kick everyone below the bot role!
 
 We highly suggest, not putting the bot role above "Admin" and "head moderator"
 :::
