@@ -1,5 +1,5 @@
 # $messageType
-returns the id of the webhook
+Returns the type of this message.
 
 #### Usage: `$messageType`
 
