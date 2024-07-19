@@ -1,6 +1,6 @@
 # $return
 
-Can only be used inside user-defined function created by $function\
+Can only be used inside user-defined functions created with $function\
 It has no effect outside the user-defined function
 
 ## Usage
