@@ -1,7 +1,7 @@
 # Timed or Interval
 
 ## Interval: Basic Information
-This trigger type will execute a code once per x time.
+This trigger type will execute a command once per x time.
 
 #### Example of an interval trigger:
 
