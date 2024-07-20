@@ -11,7 +11,7 @@ This way, you can send a message with buttons by using `{button:label:style/url:
 ### Timeout
 The maximum time the bot waits for a user to click a button.\
 Accepts time in the format `10s` for example.\
-The max time is 60 x (bot tier + 1) seconds, for example for tier 3 it would be 240 seconds.
+The max time is `60 x (bot tier + 1)` seconds, for example for tier 3 it would be `240` seconds.
 
 ::: details Examples
 
