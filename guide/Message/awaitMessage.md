@@ -9,8 +9,8 @@ $awaitMessage[MESSAGE (Optional);userid / everyone (optional, default everyone);
 return the user reply or undefined
 ```
 ### Timeout
-It means the maximum time bot can wait user message for.\
-it accept format of time like `10s`.\
+The maximum time the bot waits for a user to send a message.\
+Accepts time in the format `10s` for example.\
 The max time is `60 x (bot tier + 1)` seconds, for example for tier 3 it would be `240` seconds.
 
 ### Example:
