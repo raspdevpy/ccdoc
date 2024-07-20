@@ -1,5 +1,5 @@
 # $onlyIf
-Continue the execution only if certain [expression](../../CodeReferences/ref.expression.md) is satisfied, otherwise top the execution and send the error message.
+Continue the execution only if certain [expression](../../CodeReferences/ref.expression.md) is satisfied, otherwise stop the execution and send the error message.
 In theory $onlyif can replace all other $onlyFor with the proper [expression](../../CodeReferences/ref.expression.md)
 #### Usage: `$onlyif[Expression;error message]`
 
