@@ -71,6 +71,7 @@
   "formatdate": "Date/formatDate.md",
   "hour": "Date/hour.md",
   "humanizems": "Date/humanizeMS.md",
+  "memberjoinedcode": "Date/memberJoinedCode.md",
   "memberjoineddate": "Date/memberJoinedDate.md",
   "minute": "Date/minute.md",
   "month": "Date/month.md",

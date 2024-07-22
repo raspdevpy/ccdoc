@@ -550,6 +550,7 @@
 * ~~numToWord~~
 * ~~imageCrop~~
 * ~~poll~~
+* ~~memberJoinedCode~~
 
  # Not done (0.18%)
 * [OnTemplate](./Unclassified/OnTemplate.md)
