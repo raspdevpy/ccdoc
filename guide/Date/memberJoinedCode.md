@@ -11,9 +11,9 @@ $memberJoinedCode[User ID;Info Type (default code)]
 ### Info Type:
 
 ### Accepted ones are:
-* `code`: return the invite code if exists, like Zbhzxf\
-* `code_url`: return the invite url if exists, like `https://discord.gg/Zbhzxf`\
-* `type`: return the invite type, one of these values (bot-invite, integration, discovery, student-hub, invite-link, invite-link-custom, manual-verification, unknown)\
+* `code`: return the invite code if exists, like Zbhzxf
+* `code_url`: return the invite url if exists, like `https://discord.gg/Zbhzxf`
+* `type`: return the invite type, one of these values (bot-invite, integration, discovery, student-hub, invite-link, invite-link-custom, manual-verification, unknown)
 * `inviter`: return the inviter id if exists
 
 ### Example:
