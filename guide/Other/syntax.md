@@ -64,7 +64,7 @@ Some functions requires an input from you to behave differently and this is the 
 $function[Inputs]
 ```
 Previously we used [`$username`](../Member/username.md) without inputs but why?\
-As the [`$username`](../Member/username.md) documentation will tell you, that by default it will return the exrcutor's name, but if you want to return someone else username you will need to do an input in this case\
+As the [`$username`](../Member/username.md) documentation will tell you, that by default it will return the executor's name, but if you want to return someone else username you will need to do an input in this case\
 Assume that we want to get Rake's name instead of Mido\
 We will first need to get Rake's User ID, assume 1234, and input it to [`$username`](../Member/username.md):
 ```
