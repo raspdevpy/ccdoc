@@ -15,6 +15,8 @@ a compact function with many functionalities!
 
 * **authoravatar** - message author avatar
 
+* **type** - message type i.e Thread Starter, you can find the list in [$messageType](./messageType) 
+
 * **channel** - message channel id
 
 * **channelname** - message channel name
