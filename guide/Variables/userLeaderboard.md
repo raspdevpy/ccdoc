@@ -17,11 +17,11 @@ Available Variables:
 | {discriminator} | returns the discriminator like 1234 |
 
 Order:
-* `desc`: Will display all the top ranked member with the biggest numbers.
-* `asc`: Will display all the bottom ranked member with the lowest numbers.
+* `desc`: Will display all the members' ranks from largest to smallest.
+* `asc`: Will display all the members' ranks from smallest to largest.
 
 #### Example:
-To use this function your uservar must have nummeric values .
+To use this function your uservar must have numeric values .
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Mido">

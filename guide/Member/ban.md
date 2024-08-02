@@ -35,7 +35,7 @@ Discord prevents users (members/bots) from banning members above their highest r
 :::
 
 ::: danger Be really careful with adding this to a command!
-EVERY member that can execute the command, this function is added in. Will be able to BAN everyone below the bot role!
+EVERY member that can execute the command that this function is added in will be able to BAN everyone below the bot role!
 
 We highly suggest, not putting the bot role above "Admin" and "head moderator"
 :::

@@ -16,11 +16,11 @@ $button[Click me!;;verySimpleButton]
 
 ::: tip What's an ID?
 ID is used to identify the button clicked. This way, you can decide what happens after clicking a specific button.
-Keep in mind, that there musn't be two buttons with the same ID in one message.
+Keep in mind, that there can't be two buttons with the same ID in one message.
 :::
 
 ## Colors
-There are four button colors available:
+There are four button colors discord allows you to use:
 `blurple`, `grey`, `green`, and `red`.
 
 ```php

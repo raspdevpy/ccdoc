@@ -13,7 +13,7 @@ If member can be banned by the bot:
 </discord-messages>
 
 ::: tip Related Functions
-[$kick](../Member/kick.md), to kick a member instead of banning him/here
+[$kick](../Member/kick.md), to kick a member instead of banning him/her
 
 [$ban](../Member/ban.md), to ban a member
 :::

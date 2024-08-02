@@ -1,5 +1,5 @@
 # $regexMatch
-Matches a string with given Regex Pattern
+Matches a string with the given Regex Pattern and returns the matched text or multiple matches seperated by the seperator 
 
 #### Usage: `$regexMatch[text;regexp;flags(optional);group index(optional, 0 by default) or all;separator (optional)]`
 

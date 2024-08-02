@@ -1,6 +1,6 @@
 # $hasAnyPerm
 
-Checks if an user or author has one of the provided permissions
+Checks if a user or the author has one of the provided permissions
 
 ## Usage
 

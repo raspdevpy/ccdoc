@@ -1,5 +1,5 @@
 #  $description
-Adds a description to a message
+Adds a description to a message embed.
 
 #### Usage: `$description[your text]`
 <br/>

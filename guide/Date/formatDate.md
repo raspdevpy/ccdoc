@@ -1,5 +1,5 @@
 # $formatDate
-Formats the providen Date in Milliseconds / Stringed Date / ISO String to default/given format. syntax of formats can be found (here)[https://momentjs.com/docs/#/parsing/string-format/]
+Formats the providen Date provided in Milliseconds/Stringed Date/ISO String to default/given format. Syntax of formats can be found [here](https://momentjs.com/docs/#/parsing/string-format/)
 #### Usage: `$formatDate[date in ms / string / iso string / javascript convertable date;format]`
 Example:
 <br/>

@@ -13,7 +13,7 @@ Returns the amount of bots in your server/guild!
 </discord-messages>
 
 ::: danger Warning
-This data comes from the cache, not the api, therefore it may not be precise unless all the guild members are cached (which only in tier 5).
+This data comes from the cache, not the api, therefore it may not be precise unless all the guild members are cached (which is only in tier 5).
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 

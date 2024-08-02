@@ -1,5 +1,5 @@
 # $getMessageVar
-Gets an message variable value
+Gets a message variable value
 
 #### Usage: `$getMessageVar[variable;messageID(optional)]`
 <br/>

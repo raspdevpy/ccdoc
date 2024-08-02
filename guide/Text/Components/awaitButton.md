@@ -1,5 +1,5 @@
 # $awaitButton
-Wait a button to be pressed and return its button Id, or `undefined` in case of no button pressed until the timeout.
+Waits for a button to be pressed and return its button id, or `undefined` in case no button was pressed when the timeout is reached.
 :::tip Tip
 This function supports the [Message Curl Format](/CodeReferences/ref.message_curl_format.html).
 This way, you can send a message with buttons by using `{button:label:style/url:emoji:id:newline(yes/no)}`.
@@ -9,8 +9,8 @@ This way, you can send a message with buttons by using `{button:label:style/url:
 <br/>
 
 ### Timeout
-It means the maximum time bot can wait user button click for.\
-it accept format of time like `10s`.\
+The maximum time the bot waits for a user to click a button.\
+Accepts time in the format `10s` for example.\
 The max time is `60 x (bot tier + 1)` seconds, for example for tier 3 it would be `240` seconds.
 
 ::: details Examples

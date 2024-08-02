@@ -1,6 +1,6 @@
 # Button Click
 
-This trigger type, will detect when a user clicks a button. 
+This trigger type will detect when a user clicks a button. 
 The button has to be sent by the bot.
 
 #### Example of a button:
@@ -9,13 +9,13 @@ The button has to be sent by the bot.
 
 
 ## Syntax
-In order for button command to work, there must be button ID to be matched specified. Here's how you can provide it:
+In order for a button command to work, there must be a button ID specified. Here's how you can provide it:
 
 | Name | Syntax | Example | Explanation |
 | --- | --- | --- | --- |
 | Single ID | `button ID` | `staff-app` | Detects a button with "staff-app" ID |
 | Multiple IDs | `buttonID\|buttonID` | `Apple\|Banana\|Orange` | Matches a buttons with IDs: "Apple", "Banana", or "Orange" |
-| Regex | `/RegExp/` | `/User-\d{18,}/` | Will trigger on any following the pattern "User-ID" like "User-434342521997492224" |
+| Regex | `/RegExp/` | `/User-\d{18,}/` | Will trigger on any button following the pattern "User-ID" like "User-434342521997492224" |
 
 
 ::: tip Capitalization
@@ -49,4 +49,4 @@ In regex ^ and $ are used to match the start and end of the string.
 
 ## More Info
 
-Do you want to know more, about the bot's syntax? You can check out [this](../Other/syntax.md) page to learn more!
+Do you want to know more about the bot's syntax? You can check out [this](../Other/syntax.md) page to learn more!

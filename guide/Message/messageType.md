@@ -1,5 +1,5 @@
 # $messageType
-returns the id of the webhook
+Returns the type of this message.
 
 #### Usage: `$messageType`
 
@@ -12,6 +12,10 @@ returns the id of the webhook
 		Default
 	</discord-message>
 </discord-messages>
+
+::: tip Note
+This function returns a type of message from this [list.](../CodeReferences/ref.message_types.md)
+:::
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="type" vertical="middle" /> <Badge type="tip" text="message" vertical="middle" />

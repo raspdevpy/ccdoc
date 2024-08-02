@@ -1,6 +1,6 @@
 # $ObjectIncrease
 
-To increase key value, if not exists, it will create it and set to the value
+To increase a key value, if the key doesn't exist, it will create one and set to that value
 
 ## Usage
 

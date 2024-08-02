@@ -1,16 +1,16 @@
 # Timed or Interval
 
 ## Interval: Basic Information
-This trigger type, will execute a code ones per x time.
+This trigger type will execute a command once per x time.
 
 #### Example of an interval trigger:
 
 ![](https://cdn.discordapp.com/attachments/772051120368910371/880525770710220872/first-interval.gif)
 
 ## Timed Event: Syntax
-Use this syntax to let the bot know, how long it should wait until execution!
+Use this syntax to let the bot know how long it should wait until execution!
 
-You can specify any time, in the following format:
+You can specify any time in the following format:
 
 ```
 1s -> execute after 1 second
@@ -21,9 +21,9 @@ You can specify any time, in the following format:
 ```
 
 ## Interval: Syntax
-Use this syntax to let the bot know, how long it should wait until the next command execution!
+Use this syntax to let the bot know how long it should wait until the next command execution!
 
-You can specify any time, in the following format:
+You can specify any time in the following format:
 
 ```
 1s -> execute after 1 second
@@ -35,9 +35,9 @@ You can specify any time, in the following format:
 
 ::: danger DO NOT FORGET:
 
-Set a channel used, otherwise errors will not be send anywhere! This makes bug fixing really difficult!
+Set a channel used, otherwise errors will not be sent anywhere! This makes bug fixing really difficult!
 :::
 
 ## More Info
 
-Do you want to know more, about the bot's syntax? You can check out [this](../Other/syntax.md) page to learn more!
+Do you want to know more about the bot's syntax? You can check out [this](../Other/syntax.md) page to learn more!

@@ -1,6 +1,6 @@
 # $mathMin
 
-Return the lowest number from a list of numbers
+Return the smallest number from a list of numbers
 
 ## Usage
 

@@ -1,5 +1,5 @@
 # $objectGet
-Get a object value/property by key, if key not found them return `undefined` (same as `$getObjectProperty`)
+Get a object value/property by key, if the key is not found then return `undefined` (same as `$getObjectProperty`)
 
 #### Usage: `$objectGet[key]`
 <br/>

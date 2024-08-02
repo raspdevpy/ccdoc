@@ -1,8 +1,6 @@
 # $imageTextWeight
 
-specify the weight of font, i.\
-e bold, italic.\
-.
+specify the weight of the font, i.e bold, italic.
 
 ## Usage
 

@@ -1,20 +1,20 @@
 # Slash Command
 
 # Introduction
-triggers when a user uses a slash command. This needs to be a slash command from the bot!
+triggers when a user uses a slash command. This needs to be a slash command from the bot.
 
 ## Creating a slash command
-In this example we will create `/avatar` command, that show user avatar on request
+In this example we will create an `/avatar` command, that shows the user's avatar
 ![](https://i.imgur.com/MtHPQWd.png)
 
 ### Steps
-1. Go to dashboard, your server page, click on Slash Builder
+1. Go to dashboard, your server page, click on Slash Command Builder
 ![](https://i.imgur.com/L2dnA5D.png)
 
 2. Click `Create`
 ![](https://i.imgur.com/GlwHeER.png)
 
-3. Fill the slash name and description, remember this name, we will use it later 
+3. Fill the slash name and description
 ![](https://i.imgur.com/LL52VH2.png)
 
 4. To add user option, to the slash, select from the option menu
@@ -29,10 +29,10 @@ In this example we will create `/avatar` command, that show user avatar on reque
 7. Click `Deploy Command/Save`
 ![](https://i.imgur.com/PwJ8kLv.png)
 
-8. Create a new custom command, select type to be `Slash Command` and `Trigger` to be `avatar` (the name from step 3)
+8. Create a new custom command, select type to be `Slash Command` and select your slash command from the dropdown in `Trigger` 
 ![](https://i.imgur.com/YF6EfSY.png)
 
-9. Set the code to be (will be explained in next section)
+9. Set the code to be executed when the slash command is used
 
 ::: details Code
 ```
@@ -44,7 +44,7 @@ In this example we will create `/avatar` command, that show user avatar on reque
 ```
 :::
 
-10. go to your server and use the command as fellow:
+10. go to your server and use the command as follows:
 ![](https://i.imgur.com/XZTeNVO.png)
 
 
@@ -54,19 +54,19 @@ In this example we will create `/avatar` command, that show user avatar on reque
 
 ## Code Explanation
 ### Retrieving the option from user
-When user use the command like in Step 10, we can retrieve the option through [$getOption](../Interaction/getOption.md) function:
+When a user uses the command like in Step 10, we can retrieve the option through the [$getOption](../Interaction/getOption.md) function:
 ```
 $getOption[option name]
 ```
 In our example `option name` is `user` from step 6\
-then the user id will be stored in `user_id` using [$let](../Variables/let.md), this way we can recall it later in the code through `$user_id`:
+then the user id will be stored in a temporary variable named`user_id` using [$let](../Variables/let.md), this way we can recall it later in the code through `$user_id`:
 ```
     $let[user_id;$getOption[user]]
 ```
 
 ### Sending Message
 Next, to send a message with [$interactionReply[message]](../Interaction/interactionReply.md)\
-but here we will send an embed with title and image, using {title}, {image} [Curl Message Format](../CodeReferences/ref.message_curl_format.md):
+Here we will send an embed with a title and image using {title} and {image} [Curl Message Format](../CodeReferences/ref.message_curl_format.md):
 ```
 $interactionReply[
     {title:Embed Title}
@@ -80,7 +80,7 @@ To get the username `Mido#1234` we will use [$userTag[user id]](../Member/userTa
 Avatar of $userTag[$user_id]
 ```
 
-2. In Image to retrieve the user image, we will use [$userAvatar[user id]](../Member/userAvatar.md):
+2. In Image to retrieve the user avatar, we will use [$userAvatar[user id]](../Member/userAvatar.md):
 ```
 $userAvatar[$user_id]
 ```

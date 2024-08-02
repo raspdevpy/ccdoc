@@ -1,7 +1,7 @@
 # $userGetTimeout
 
-Return timeleft for timeout expiry in milliseconds\
-If user is not timeout, it will return 0
+Return the time left of the timeout in milliseconds.\
+If user is not timed out, it will return 0.
 
 ## Usage
 

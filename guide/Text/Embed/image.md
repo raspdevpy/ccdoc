@@ -1,5 +1,5 @@
 # $image
-Adds an image to a message
+Adds an image to a message embed
 
 #### Usage: `$image[YOUR URL HERE]`
 <br/>

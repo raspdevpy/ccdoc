@@ -1,5 +1,5 @@
 # $editMessage
-Edits a message.
+Edits a message sent by the bot.
 
 #### Usage: `$editMessage[messageid;new message;channelid(optional)]`
 <br/>

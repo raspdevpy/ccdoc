@@ -1,7 +1,6 @@
 # $usersWithRole
 
-Returns a list of users with given role (members are given from the cache.\
-)
+Returns a list of users with given role (members are given from the cache.)
 
 ## Usage
 
