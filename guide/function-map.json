@@ -285,6 +285,7 @@
   "memberscount": "Server/membersCount.md",
   "ownerid": "Server/ownerID.md",
   "resolveemojiid": "Server/resolveEmojiID.md",
+  "securitypause": "Server/securityPause.md",
   "serverbanner": "Server/serverBanner.md",
   "serverboostcount": "Server/serverBoostCount.md",
   "serverboostlevel": "Server/serverBoostLevel.md",
