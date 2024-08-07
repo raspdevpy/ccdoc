@@ -3,7 +3,7 @@ gets the id of the interaction (button ,menu)
 
 #### Usage: `$interactionId`
 
-::: warning Just like $interactionReply, this functions only works for interaction
+::: warning Just like $interactionReply, this function only works for interaction
 Except slash commands, since they don't have id.
 :::
 
