@@ -71,4 +71,3 @@ Generally,we recommend you contact us through our server to get a fas
 
 * Email: [owner@ccommandbot.com](mailto:owner@ccommandbot.com)
 * Server: [ccommandbot.com/join](http://ccommandbot.com/join) 
-* Website Owner: `MattReal#6833`
