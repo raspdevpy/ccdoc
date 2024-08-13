@@ -1,6 +1,6 @@
 # $sendCrosspostingMessage
 
-Sends a message to multiple channels
+Sends a message to multiple channels, up to 10 channels
 
 ## Usage
 
