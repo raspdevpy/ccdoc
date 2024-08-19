@@ -552,6 +552,7 @@
 * ~~poll~~
 * ~~memberJoinedCode~~
 * ~~securityPause~~
+* ~~memberSearch~~
 
  # Not done (0.18%)
 * [OnTemplate](./Unclassified/OnTemplate.md)

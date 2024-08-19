@@ -145,6 +145,7 @@
   "isbanned": "Member/isBanned.md",
   "isuserdmenabled": "Member/isUserDMEnabled.md",
   "kick": "Member/kick.md",
+  "membersearch": "Member/memberSearch.md",
   "memberswithstatus": "Member/membersWithStatus.md",
   "mention": "Member/mention.md",
   "moveuser": "Member/moveUser.md",
