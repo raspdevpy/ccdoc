@@ -9,8 +9,8 @@ $memberSearch[username/nickname;amount to return (Default is 1);separator (Defau
 ```
 
 ### Info To Return:
+By default it is `id`, but you can pick from:
 
-### By default it is `id`, but you can pick from:
 * `id`: to return the found user id\
 * `username`: to return the found user's username\
 * `nickname`: to return the found user's nickname in the server\
