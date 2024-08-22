@@ -1,21 +1,22 @@
 # $user
-a compact function with many functionalities!
+Retrieve an information about user given his user id, like his username.
 
 ### Usage `$user[userid;property]`
 
 #### Supported Properties
-
-* name - user name.
-* id - user ID.
-* tag - user Tag.
-* discrim - user discriminator.
-* mention - user mention.
-* avatar - user avatar URL.
-* isbot - user is a bot, returns true/false.
-* banner - return the user banner, undefined is returned if not found (user must be cached)
-* created - user account date and time of creation.
-* timestamp - creation timestamp of user account.
-
+| Property | Description |
+|:-----------:|-------------|
+| name | username |
+| id | user ID |
+| tag | user Tag |
+| discrim | user discriminator |
+| mention | user mention |
+| avatar | user avatar URL |
+| isbot | user is a bot, returns true/false |
+| banner | return the user banner, undefined is returned if not found (user must be cached) |
+| created | user account date and time of creation |
+| timestamp | creation timestamp of user account |
+| displayname | user display name if exists, otherwise username |
 
 <br/>
 <discord-messages>
