@@ -5,7 +5,14 @@ changes the nickname from the member specified in the first parameter
 `$changeNickname[userID;nickname]`
 
 #### Example:
-`$changeNickname[$authorID;I'm a idiot lol]`
+<discord-messages>
+          <discord-message :bot="false" role-color="#ffcc9a" author="Cool Name">
+        !!exec $changeNickname[$authorID;New Nickname]<br><br>
+          </discord-message>
+          <discord-message :bot="false" role-color="#0099ff" author="New Nickname">
+        Test Message<br><br>
+        </discord-message>
+</discord-messages>
 
 ::: tip Used Functions
 [$authorID](../Member/authorID.md), to get the ID from the author of the command
