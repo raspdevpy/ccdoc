@@ -40,7 +40,7 @@ In regex ^ and $ are used to match the start and end of the string.
 
 ### Related Functions
 * [$button](../Text/Components/button.md) - sends a button
-* [$buttonID](../Text/Components/button.md) - returns the button id
+* [$buttonID](../Text/Components/buttonID.md) - returns the button id
 * [$buttonEmoji](../Text/Components/buttonEmoji.md) - returns the button emoji
 * [$buttonLabel](../Text/Components/buttonLabel.md) - returns the button label
 * [$buttonURL](../Text/Components/buttonURL.md) - returns the button url
