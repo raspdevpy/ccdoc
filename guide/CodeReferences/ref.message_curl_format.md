@@ -35,6 +35,7 @@ Sending a embed with title `Hello` and description `World`
 | {author:text:image url:link url} | adding author | [{author:$username:$authorAvatar:$authorAvatar}](https://i.imgur.com/2DU2dwn.png) |
 | {thumbnail:url} | adding thumbnail | [{thumbnail:$authorAvatar}](https://i.imgur.com/HruXoXs.png) |
 | {field:name:value:inline} | adding a field | [{field:My name:$username}](https://i.imgur.com/zSdpHiW.png) |
+| {removefields:field number 1:field number 2:...} | remove field(s), leave input empty to remove all fields | {removefields:1:2} |
 | {timestamp:ms} | attaching a timestamp | [{timestamp} or {timestamp:1680871946176}](https://i.imgur.com/2CEzTcp.png) |
 | {image:url} | displaying image | [{image:$authorAvatar}](https://i.imgur.com/Gmrxc69.png) |
 | {reactions:emoji,emoji2,...} | add reactions after posting the message | [{reactions: :+1:, :-1:}](https://i.imgur.com/Niff1PI.png) |
