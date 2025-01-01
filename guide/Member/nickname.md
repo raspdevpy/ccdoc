@@ -1,8 +1,8 @@
 # $nickname
-Returns the nickname of the user that executed the command, or a member specified in the first parameter
+returns the nickname of the user the server (or the display name if you specified the 2nd input)
 
 #### Usage: 
-`$nickname[userid (optional, default=$authorID)]`
+`$nickname[userid (optional, default=$authorID);Return Display Name If No nickname (yes/no , default yes)]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
