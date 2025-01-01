@@ -2,7 +2,7 @@
 Returns a sequence of numbers, decided by a starting (inclusive) number and stop at ending (inclusive) number with step. 
 
 #### Usage: 
-`$seq[Start;End;Step (optional, default=1)]`
+`$seq[Start;End;Step (optional, default=1);Separator (default ' ')]`
 
 #### Example:
 <br/>
