@@ -8,10 +8,10 @@ $imageUseFont[font name]
 ```
 
 ## Accepted Font Names:
-DejaVu Serif, DejaVu Sans Mono, DejaVu Sans, Courier Prime, Lato, Montserrat, Open Sans, PT Mono, Quicksand, Raleway, Roboto, Roboto Mono, Rubik, Space Mono
+DejaVu Serif, DejaVu Sans Mono, DejaVu Sans, Courier Prime, Lato, Montserrat, Open Sans, PT Mono, Quicksand, Raleway, Roboto, Roboto Mono, Rubik, Space Mono, Minecraft
 
 ## Fonts Preview:
-![](https://i.imgur.com/FlkK6tx.png)
+![](https://i.imgur.com/OVSrq4l.png)
 
 ### Example:
 <discord-messages>
