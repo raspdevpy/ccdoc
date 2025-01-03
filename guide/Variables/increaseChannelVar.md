@@ -1,6 +1,7 @@
 # $increaseChannelVar
 
-To increase channel variable with a certain amount
+To increase channel variable with a certain amount.\
+If the variable doesn't exist it will be created and its value set to the answer of the value as if the original value of the var is 0.
 
 ## Usage
 

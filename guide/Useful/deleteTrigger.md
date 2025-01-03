@@ -1,6 +1,6 @@
 # $deleteTrigger
 
-delete a command with token, **empty token = delete current command**
+Delete a command using its token, **empty token = delete current command**
 
 ## Usage
 

@@ -1,8 +1,8 @@
 # Custom Bot
-You can find here how to setup custom bot. You need this if you have tier 3+ by redeeming it or by winning in our support server.
+Here you can find how to setup your custom bot. You need to do this if you have tier 3+ by redeeming it or by winning in our support server.
 
-# Steps (Only Once)
-## 1. Go to [Discord Dev Portal](https://discord.com/developers/applications)
+# Steps (Only do these once)
+## 1. Go to the [Discord Developer Portal](https://discord.com/developers/applications)
 
 
 ## 2. Create a new Application
@@ -17,19 +17,19 @@ You can find here how to setup custom bot. You need this if you have tier 3+ by 
 ## 4. Go to `Bot`
 ![go to section bot](https://i.imgur.com/xUCbccq.png)
 
-## 5. Click Reset Token, To show a new valid token
+## 5. Click Reset Token, to show a new valid token
 ![](https://i.imgur.com/GbWfwyy.png)
 
 ## 6. Click on 'Copy' to copy the token
 ![](https://i.imgur.com/pHYqcIT.png)
 
-## 7. Go to the Dashboard [(click here)](https://ccommandbot.com/dashboard) and select the server where you want to have premium.
+## 7. Go to the [Dashboard](https://ccommandbot.com/dashboard) and select the server where you want premium.
 ![](https://i.imgur.com/Ostshet.png)
 
 ![](https://i.imgur.com/fQXdiT3.png)
 
 
-## 8. Paste the copied token in 'Token' input, then click 'Save' button
+## 8. Paste the copied token in 'Token' input and then click 'Save' button
 ![](https://i.imgur.com/2FAuEKp.png)
 
 
@@ -37,6 +37,5 @@ You can find here how to setup custom bot. You need this if you have tier 3+ by 
 ![](https://i.imgur.com/zkjCUvB.png)
 
 
-10. You are done!
-  Wait for few minutes, your bot should go online.
-  and that's it :tada:. **Ensure to leave the main bot in your server, otherwise you'll lose the ability to access the dashboard!**
+## 10. You are done!
+  Wait for few minutes and your bot should go online and that's it :tada:! **Ensure to keep the main bot in your server, otherwise you'll lose the ability to access the dashboard!**

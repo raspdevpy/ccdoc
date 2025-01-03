@@ -2,7 +2,7 @@
 Word commands, also known as message commands are executed when the bot receives a text message.
 
 ## Basic word command
-Let's create a word command with a trigger `!ping`, this means the command will be triggered whenever someone sends a `!ping` message.
+Let's create a word command with a trigger `!ping`, this means the command will be triggered whenever someone sends a message starting with `!ping`.
 In the code part we will type `pong!`, so the bot will respond with it.
 
 ![Word example](https://cdn.discordapp.com/attachments/1100128432395927765/1100813255418576966/pingcmd.png)
@@ -17,9 +17,9 @@ In the code part we will type `pong!`, so the bot will respond with it.
 </discord-messages>
 
 ## Using parameters
-A crucial feature of word type are parameters. They are data provided when executing the command.
+A crucial feature of the word type are parameters. They are data provided when executing the command.
 
-Let's say we had a `?hug` command, which users can use to express their feelings towards other users. 
+Let's say we had a `?hug` command, which users can use to hug other users. 
 In that case we would want users to select a user by mentioning him.
 
 #### Usage
@@ -31,7 +31,7 @@ The mention will be the `parameter 1`, because users will mention their victim r
 </discord-messages>
 
 #### Setup
-Parameters can be retrived using the [$message](../Message/message.md) function, we will use it to get user mention:
+Parameters can be retrived using the [$message](../Message/message.md) function, we will use it to get the user mention:
 
 <!-- ![?hug trigger](https://cdn.discordapp.com/attachments/957286111250624552/1100485509584781342/image.png) -->
 ![?hug code](https://cdn.discordapp.com/attachments/1100128432395927765/1100816608198402049/hugcmd.png)
@@ -146,6 +146,7 @@ Here is the expression which we are going to use:
 ```regex
 /<@!?\d{18,}>/
 ```
+You need to add a forward slash before and after your expression, otherwise the bot will only reply when you literally send `<@!?\d{18,}>` in your message
 
 ![Ping detector](https://cdn.discordapp.com/attachments/957286111250624552/1100839560532983908/image.png)
 

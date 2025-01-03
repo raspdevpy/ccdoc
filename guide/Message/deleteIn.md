@@ -1,5 +1,5 @@
 # $deleteIn
-Deletes a message send, after a certain time
+Deletes a message sent after a certain time
 
 #### Usage: `$deleteIn[time]`
 

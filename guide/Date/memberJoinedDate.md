@@ -1,5 +1,5 @@
 # $memberJoinedDate
-returns the date the member Joined in date or time or from the current Author
+Returns the date a member joined in date or time from the provided user/command executor. 
 #### Usage: `$memberJoinedDate[userid;date/time(optional)]` or `$memberJoinedDate`
 Example:
 <br/>

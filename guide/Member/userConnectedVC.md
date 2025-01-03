@@ -1,6 +1,6 @@
 # $userConnectedVC
 
-return the voice channel ID of the voice channel to which the user is currently connected
+return the voice channel ID of the voice channel to which the user is currently connected to
 
 ## Usage
 
@@ -8,7 +8,7 @@ return the voice channel ID of the voice channel to which the user is currently 
 $userConnectedVC[User ID (default is $authorID)]
 ```
 
-### In case of no connected:
+### If the user is not connected:
 the function will return `undefined`
 
 ### Example:

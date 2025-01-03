@@ -5,10 +5,10 @@ This function returns the bot's ping, it can be used to check if the bot is onli
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec `$ping`ms
+		!!exec $ping ms
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		`20`ms
+		20 ms
 	</discord-message>
 </discord-messages>
 

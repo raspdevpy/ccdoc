@@ -1,5 +1,5 @@
 # $modulo
-calculates the rest of a division
+calculates the remainder of a division operation
 
 #### Usage: `$modulo[10;2;...]`
 <br/>

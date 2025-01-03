@@ -1,6 +1,6 @@
 # $timezone
-this function set the timezone for all date functions
-get tz name (here)[https://en.wikipedia.org/wiki/List_of_tz_database_time_zones]
+This function sets the timezone for all date functions after the `$timezone` function itself.\
+Get valid timezone names from [this website](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 #### Usage: `$timezone[Region/City]`
 
 Example:

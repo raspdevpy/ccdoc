@@ -1,5 +1,5 @@
 # $isValidHex
-checks if the given int or hex code is valid ,returns true,false
+Checks if the given text is a valid hex code, returns true or false
 
 #### Usage: `$isValidHex[int or hexcode]`
 Example:

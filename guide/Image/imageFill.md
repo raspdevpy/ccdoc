@@ -1,6 +1,6 @@
 # $imageFill
 
-Fill image with specific color name
+Fill an image with a specific color
 
 ## Usage
 
@@ -9,7 +9,7 @@ $imageFill[color;x;y;width;height;opacity]
 ```
 
 ### Colors:
-Accept Color Hex or Common Color Names like gray, black
+Accepts hex or Common Color Names like gray or black
 
 # Position: X & Y
 You can read more about X, Y [here](./../CodeReferences/ref.imgbuild.position.md)

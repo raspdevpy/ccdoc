@@ -13,7 +13,7 @@ checks if a user reacted on a message or users which reacted on a message
 	</discord-message>
 </discord-messages>
 
-::: info Member must be cached!
+::: tip Member must be cached!
 If you use the main bot the member must be cached to get valid results.You can ignore the message,if you use custom bot!
 :::
 

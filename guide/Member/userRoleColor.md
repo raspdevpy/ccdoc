@@ -13,7 +13,7 @@ returns the hex color of the highest role of the user
 	</discord-message>
 </discord-messages>
 
-::: info Member must be cached!
+::: tip Member must be cached!
 If you use the main bot the member must be cached to get valid results.You can ignore the message,if you use custom bot!
 :::
 

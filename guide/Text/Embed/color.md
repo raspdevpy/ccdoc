@@ -1,7 +1,7 @@
 #  $color
 sets the color of the embed
 
-#### Usage: `$color[hex or colorname or RANDOM]`
+#### Usage: `$color[hex/colorname/random/transparent]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

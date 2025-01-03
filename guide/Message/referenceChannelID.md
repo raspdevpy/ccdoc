@@ -1,6 +1,6 @@
 # $referenceChannelID
 
-The ID of the channel where this user replied in
+The ID of the channel where the message the user replied to is in
 
 ## Usage
 

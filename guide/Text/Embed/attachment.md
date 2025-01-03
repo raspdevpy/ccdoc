@@ -1,8 +1,8 @@
 # $attachment
 
-adds an attachment.\
+Adds an attachment to a message.\
 \
-If name field is given, you must specify the extension for the attachment (png, webp, or gif)
+If the name field is given, you must specify the extension for the attachment (png, webp, or gif)
 
 ## Usage
 
