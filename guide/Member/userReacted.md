@@ -1,7 +1,7 @@
 # $userReacted
 checks if a user reacted on a message or users which reacted on a message
 
-#### Usage: `$userRoleColor` or `$userRoleColor[userID]`
+#### Usage: `$userReacted[channelID (optional);message ID;User ID;Reaction]`
 
 <br/>
 <discord-messages>
