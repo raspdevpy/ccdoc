@@ -1,7 +1,7 @@
 # Library
 
 ## Basic Information
-Library is one of the unique triggers, that doesn't get triggered by events in your server. A library acts can be included in other commands so you can use the code in it after calling `$includeLibrary[Library name]`. 
+Library is one of the unique triggers, that doesn't get triggered by events in your server. A library can be included (referenced) in other commands so you can use the code in it after calling `$includeLibrary[Library name]`. 
 
 The goal of this trigger is simply sharing code, functions or objects across multiple custom commands (see the example below).
 
