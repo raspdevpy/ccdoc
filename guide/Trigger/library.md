@@ -33,4 +33,4 @@ That demonstrates Library's usefulness.
 
 
 ## Some functions related to Library
-[$includeLibrary](../Unclassified/includeLibrary.md):   Include your library
+[$includeLibrary](../Useful/includeLibrary.md):   Include your library
