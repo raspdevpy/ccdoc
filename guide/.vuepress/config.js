@@ -1,6 +1,7 @@
 const sidebar = require('./sidebar');
 const parseTag = require('./parseTags');
 const replacements = require('./replacements');
+const fs = require('fs')
 const replacePageContent = (content, replacements) => {
 	let output = content;
 	for (const [placeholder, replacement] of Object.entries(replacements)) {
@@ -44,6 +45,14 @@ module.exports = {
 		  }),
 		['@vuepress/plugin-search',{
 			maxSuggestions:15,
+			isSearchable:(page)=>{
+				if(!page.data.filePathRelative)	return true;
+				if(page.data.filePathRelative.endsWith('_ai.md'))
+					return true;
+				let aiFile = __dirname+'/../'+page.data.filePathRelative.replace('.md','_ai.md');
+				if(fs.existsSync(aiFile))	return false;
+				return true;
+			},
 			getExtraFields: (page) =>parseTag(page),
 		}],
 		['@vuepress/plugin-container'],
