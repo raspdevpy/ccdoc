@@ -12,12 +12,17 @@ function getSideBar(folder, title, options={}) {
 				fs.statSync(path.join(`${__dirname}/../${folder}`, item)).isFile() &&
 				extension.includes(path.extname(item))
 		);
-    for (let i = 0; i < files.length; i++) {
-		let name = files[i]
-		//-files[i]={text:name,link:`/${folder}/${name}`}
-		files[i]=`/${folder}/${name}`
-	}
-	return { text: title, children: files, collapsible:false,...options};
+	let aiRefinedFiles = files.filter(file=>file.endsWith('_ai.md'));
+	
+	let children = [];
+	files.forEach(name=>{
+		if(name.endsWith('_ai.md'))	return;
+		if(aiRefinedFiles.includes(name.replace('.md', '_ai.md')))
+			children.push(`/${folder}/${name.replace('.md', '_ai.md')}`)
+		else
+			children.push(`/${folder}/${name}`)
+	})
+	return { text: title, children, collapsible:false,...options};
 
 	
 }
