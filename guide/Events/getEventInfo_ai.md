@@ -46,4 +46,4 @@ $getEventInfo[event id;info type]
     <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
         Event Name
     </discord-message>
-<discord-messages>
+</discord-messages>
