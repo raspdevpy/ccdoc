@@ -1,5 +1,5 @@
 # $messagePublish
-Publishs message to an annoucemnet channel
+Publishes message to an announcement channel
 
 #### Usage: `$messagePublish or $messagePublish[messageID] or $messagePublish[channelID;messageID]`
 
