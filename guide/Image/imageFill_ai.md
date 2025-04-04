@@ -54,4 +54,4 @@ $image[$imageOutput]
             <discord-embed slot="embeds" image="https://i.imgur.com/QeSr9tZ.png">
             </discord-embed>
         </discord-message>
-<discord-messages>
+</discord-messages>
