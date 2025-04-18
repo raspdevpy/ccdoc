@@ -1,6 +1,10 @@
 # $httpRequest
 
-Make HTTP requests with custom content and headers, and retrieve the response.
+Performs a HTTP request, with a content and headers and returns the response content.
+
+::: warning Warning
+In order to use `$httpRequest`, the API you wish to use needs to be whitelisted. To request a whitelist, please open a ticket in our Support Server.
+:::
 
 ## Usage
 
