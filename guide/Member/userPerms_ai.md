@@ -7,7 +7,7 @@ This function returns a list of permissions a user has within the current channe
 `$userPerms[userID;separator (optional)]`
 
 *   **`userID`**: The ID of the user whose permissions you want to retrieve.
-*   **`separator` (Optional)**:  The character or string used to separate the permissions in the returned list. If omitted, a default separator might be used (check your bot's documentation).
+*   **`separator` (Optional)**:  The character or string used to separate the permissions in the returned list. If omitted, a default separator might be used.
 
 <br/>
 

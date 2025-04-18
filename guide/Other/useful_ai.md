@@ -4,10 +4,6 @@ This page provides helpful information about the bot and this documentation itse
 
 ## Understanding the Docs
 
-### Commonly Used Shortcuts
-
-*   `cc` -> Refers to a custom command.
-
 ### Function Parameters Explained
 
 ::: tip What are Parameters?
