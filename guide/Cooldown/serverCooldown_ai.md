@@ -42,7 +42,7 @@ You can use the following macros within your error message to dynamically displa
 | `%mins%`     | Number of minutes left on the cooldown. | `54`                                 |
 | `%secs%`     | Number of seconds left on the cooldown. | `56`                                 |
 | `%timestamp%` | Unix timestamp (seconds) of expiration. | `1680711176`                         |
-| `%relative%`  | Discord's relative timestamp.          | `![](https://i.imgur.com/F2bAFnk.png)` |
+| `%relative%`  | Discord's relative timestamp.          | ![](https://i.imgur.com/F2bAFnk.png) |
 
 ::: tip Note
 You can format the error message as an embed using [Message Curl Format](../CodeReferences/ref.message_curl_format.md).
