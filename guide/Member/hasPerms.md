@@ -1,28 +1,35 @@
 # $hasPerms
-Check if given user ID has the provided perms
 
-#### Usage: 
-`$hasPerms[userID;perms1;perm2;...]`
+Checks if user has all of the given permissions. Returns `true` or `false`.
 
-<br/>
+## Usage:
+
+```bash
+$hasPerms[userID;perm1;perm2;...]
+```
+1. **userID** - User you want to check for permissions.
+2. **perm N** - You can add as many permissions as needed. The available permissions are here: [Permissions List](../CodeReferences/ref.permissions_list.md).
+
+## Example
+
+#### Using $hasPerms
+
+How to use $hasPerms. Keep in mind that only if the user does have all of listed permissions, true will be returned.
+
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $hasPerms[$authorID;sendmessages]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $hasPerms[$authorID;sendmessages]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
         true
-	</discord-message>
+    </discord-message>
 </discord-messages>
 
-::: tip Permissions
-Check this [list](../CodeReferences/ref.permissions_list.md) to view all permissions names
+::: tip Suggestion
+To make code stop if the user doesn't have the needed permission, you can check out [$onlyIf](../Text/only/onlyIf.md). For multiple actions, check [$if](../Text/Condition/if.md).
 :::
 
-::: tip Related Functions
-[$rolePerms](../Role/rolePerms.md), to check if a role has certain perms
+##### Related functions: [$hasAnyPerm](../Member/hasAnyPerm.md) [$hasAnyRole](../Member/hasAnyRole.md) [$hasRole](../Role/hasRole.md)
 
-[$userPerms](../Member/userPerms.md), to return ALL user's permissions
-:::
-
-##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="perms" vertical="middle" /> <Badge type="tip" text="permissions" vertical="middle" /> <Badge type="tip" text="rights" vertical="middle" /> <Badge type="tip" text="hadPerms" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
+###### Tags: <Badge type="tip" text="permission" vertical="middle"/> <Badge type="tip" text="management" vertical="middle"/>
