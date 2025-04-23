@@ -1,20 +1,39 @@
 # $changeNickname
-changes the nickname from the member specified in the first parameter
 
-#### Usage: 
-`$changeNickname[userID;nickname]`
+Changes the nickname of a specified member in the server.
 
-#### Example:
-`$changeNickname[$authorID;I'm a idiot lol]`
+## Usage:
 
-::: tip Used Functions
-[$authorID](../Member/authorID.md), to get the ID from the author of the command
+```bash
+$changeNickname[userID;nickname]
+```
+1. **userID** - The ID of the member whose nickname you want to change.
+2. **nickname** - The new nickname you want to assign to the member.
+
+## Example
+
+#### Using $changeNickname
+
+Changing the nickname of the command author
+
+<discord-messages>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $changeNickname[$authorID;Steve]
+    </discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="Steve" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        Hello
+    </discord-message>
+</discord-messages>
+
+::: tip Permissions
+The bot requires the "Manage Nicknames" permission to change nicknames and only change nicknames of members with roles lower than bots highest role.
 :::
 
-::: tip Related Functions
-[$nickname](../Member/nickname.md), to get the current nickname from a member
+::: danger Discord restiriction
+Discord doesn't allow others to change owners nickname. If you will try to change nickname of an invalid member or owner, error message will be shown.
 :::
 
+##### Related functions: [$nickname](../Member/nickname.md)
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="change Nickname" vertical="middle" /> <Badge type="tip" text="nickname" vertical="middle" /> <Badge type="tip" text="server name" vertical="middle" /> <Badge type="tip" text="Names" vertical="middle" /> <Badge type="tip" text="modify name" vertical="middle" />
+##### Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+###### Tags: <Badge type="tip" text="change Nickname" vertical="middle" /> <Badge type="tip" text="nickname" vertical="middle" /> <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="Names" vertical="middle" /> <Badge type="tip" text="modify name" vertical="middle" />

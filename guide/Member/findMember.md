@@ -1,41 +1,51 @@
 # $findMember
-Searches for a member, by: nickname/ID/mention/username/username#dicriminator
 
-#### Usage: 
-`$findMember[nickname/ID/mention/username/username#dicriminator;returnCurrentUser (yes/no) (optional)]`
+Searches for a user in the current server by their nickname, ID, mention, username, or username with discriminator. Returns userID of the found user.
 
-If member is found:
-<br/>
+## Usage:
+
+```bash
+$findMember[query;returnCurrentUser]
+```
+1. **query** - Can be userID, nickname, mention, username, username#descriminator.
+2. **returnCurrentUser** - (Optional) default value: `yes`. Can be either `yes` or `no`. If this is set to yes, when user is not found, it will return $authorID. If it's no, and user is not found, it will return undefined.
+
+## Example
+
+#### Successful search
+
+Searching for existing user
+
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $findMember[Member#0000;no]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		869243919697846379
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $findMember[user2;no]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        123456789123456789
+    </discord-message>
 </discord-messages>
 
-If member is not found:
-<br/>
+#### Unsuccessful search
+
+Searching for invalid user
+
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $findMember[user;no]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		undefined
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $findMember[user123;no]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        undefined
+    </discord-message>
 </discord-messages>
 
-
-::: danger Warning
-This data comes from the cache, not the api, therefore it may not be precise unless all the guild members are cached (which only in tier 5).
+::: warning Cache
+This function works on the bot's cache to find members.
+If the user is not cached, the function will not find them.
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br>
+To have all members cached, you will need Tier 5 Bot.
 :::
 
-::: tip Related Functions
-[$authorID](../Member/authorID.md), to get the ID from the author of the command
+##### Related functions: [$userID](../Member/userID.md) [$authorID](../Member/authorID.md)
 
-[$userID](../Member/userID.md), to return a user ID from a given username
-:::
-
-##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="find" vertical="middle" /> <Badge type="tip" text="find member" vertical="middle" /> <Badge type="tip" text="find user" vertical="middle" /> <Badge type="tip" text="search Member" vertical="middle" /> <Badge type="tip" text="search User" vertical="middle" /> 
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle"/>
+###### Tags: <Badge type="tip" text="search" vertical="middle"/> <Badge type="tip" text="find" vertical="middle"/> <Badge type="tip" text="member" vertical="middle"/>

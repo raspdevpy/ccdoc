@@ -1,47 +1,51 @@
 # $kick
-Kicks a user from the server
 
-#### Usage: 
-`$kick[userID;reason(optional)]`
+Kicks a user from the server.
 
-If member can be kicked by the bot:
-<br/>
+## Usage
+
+```bash
+$kick[userID;reason]
+```
+1. **userID** - The ID of the user to kick.
+2. **reason** - (Optional) The reason for kick. You can see this in Audit Log.
+
+## Example
+
+#### Successful kick
+
+Successfull kick with no response
+
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Discord Moderator">
-		!!exec $kick[$findMember[Unknown User];Spamming]
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $kick[123456789123456789;Spamming]
+    </discord-message>
 </discord-messages>
 
-If member can be NOT be kick by the bot <Badge type="warning" text="Read Below why" vertical="middle" />:
-<br/>
+#### Unsucessful kick
+
+Unsuccessful kick with error message
+
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Discord Moderator">
-		!!exec $kick[$ownerID;I'm a bad moderator;10]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		❌  Failed to kick undefined!
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $kick[$ownerID;Spamming]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        ❌ bot is missing enough permissions at line 1
+    </discord-message>
 </discord-messages>
 
-
-
-::: tip Why can't the bot kick a member?
-It could be, that your bot role, is below the member role! 
-
-Discord prevents users (members/bots) from kicking members above their highest role
+::: tip Bot is missing enough permissions
+The most common reason is that the bot's role is lower in the role hierarchy than the member you are trying to ban.
+Discord doesn't allow members and bots from kicking members with a higher or equal highest role. Ensure the bot's highest role is above the target user.
 :::
 
-::: danger Be careful with adding this to a command!
-EVERY member that can execute the command this function is added in will be able to kick everyone below the bot role!
-
-We highly suggest, not putting the bot role above "Admin" and "head moderator"
+::: danger Important Note
+If any member who can execute the command with this function, they will be able to kick any member below the bot's highest role.
+Do not place the bot's role above Admin or Head Moderator roles to avoid kicking important member.
 :::
 
-::: tip Related Functions
-[$ban](../Member/ban.md), to ban a member, harsh punishment
+##### Related functions: [$ban](../Member/ban.md) [$unban](../Member/unban.md)
 
-[$unban](../Member/unban.md), to unban a member, let's be nice
-:::
-
-##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="kick" vertical="middle" /> <Badge type="tip" text="punish" vertical="middle" /> <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="moderation" vertical="middle" /> <Badge type="tip" text="moderator" vertical="middle" />

@@ -1,44 +1,41 @@
 # $hasAnyRole
 
-This function checks if a user has at least one of the specified roles. You can check the message author's roles or specify a different user ID.
+Checks if a user has one of the given roles. Returns `true` or `false`.
 
 ## Usage
 
 ```bash
-$hasAnyRole[roleID1;roleID2;...]
-```
-
-```bash
 $hasAnyRole[userID;roleID1;roleID2;...]
 ```
+1. **userID** - (Optional) default value: `$authorID`. If not included or left empty, $authorID will be used.
+2. **role N** - You can add as many roles as needed.
 
-**Parameters:**
+## Example
 
-*   **`roleID1;roleID2;...`:**  A semicolon-separated list of role IDs to check for.
-*   **`userID` (Optional):** The ID of the user to check. If omitted, the message author's ID is used.
+#### Using $hasAnyRole
 
-## Examples
-
-**Example 1: Checking if the message author has the "Admin" role:**
-
-In this example, we use `$onlyIf` to prevent the command from executing if the author does not have the "Admin" role.  Replace `"Admin"` with the actual ID of your Admin role.
+How to use $hasAnyRole without user argument. Keep in mind that if the user does have only one of listed roles, true will be returned.
 
 <discord-messages>
-  <discord-message :bot="false" role-color="#ffcc9a" author="Admin">
-    !!exec $onlyIf[$hasAnyRole[$authorID;Admin]==true;You are not admin]<br>You are admin!<br><br>
-  </discord-message>
-  <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-    You are admin!
-  </discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec I have Admin OR Manager role: $hasAnyRole[admin;manager]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        I have Admin OR Manager role: true
+    </discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec I have Admin role: $hasAnyRole[admin], I have Manager role: $hasAnyRole[manager]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        I have Admin role: true, I have Manager role: false
+    </discord-message>
 </discord-messages>
 
-**Example 2: Checking if a normal user (without the "Admin" role) attempts the same command:**
+::: tip Suggestion
+To make code stop if the user doesn't have the needed role, you can check out [$onlyIf](../Text/only/onlyIf.md). For multiple actions, check [$if](../Text/Condition/if.md).
+:::
 
-<discord-messages>
-  <discord-message :bot="false" role-color="#ffcc9a" author="Normal User">
-    !!exec $onlyIf[$hasAnyRole[$authorID;Admin]==true;You are not admin]<br>You are admin!<br><br>
-  </discord-message>
-  <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-    You are not admin
-  </discord-message>
-</discord-messages>
+##### Related functions: [$hasPerms](../Member/hasPerms.md) [$hasAnyPerm](../Member/hasAnyPerm.md) [$hasRole](../Role/hasRole.md)
+
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
+###### Tags: <Badge type="tip" text="roles" vertical="middle"/> <Badge type="tip" text="management" vertical="middle"/>

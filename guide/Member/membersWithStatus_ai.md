@@ -1,49 +1,50 @@
 # $membersWithStatus
 
-This function retrieves a comma-separated list of member IDs who have specified statuses within the server.  It's particularly useful for targeting actions or information to specific groups of online, idle, or DND members.
+Returns a list of member IDs who have specified status within the server separated by comma.
 
 ## Usage
 
 ```bash
 $membersWithStatus[Status1;Status2;...]
 ```
-
-**Parameters:**
-
-*   `Status1;Status2;...`:  A semicolon-separated list of Discord member statuses you want to filter by. Valid status options include:
-
-    *   `online`
-    *   `idle`
-    *   `dnd` (Do Not Disturb)
-    *   `offline` (Includes invisible users)
-    *   `streaming` (only valid for activities)
-    *   `mobile` (only valid for platforms)
-    *   `desktop` (only valid for platforms)
-    *   `web` (only valid for platforms)
-
-**Returns:**
-
-A comma-separated string of member IDs that match the specified statuses.  If no members match the provided statuses, an empty string will be returned.
+1. **Status N** - You can add multiple statuses. Can be `online`, `idle`, `dnd` (Do Not Disturb), `offline` (Includes invisible users), `streaming` (only valid for activities), `mobile` (only valid for platforms), `desktop` (only valid for platforms), `web` (only valid for platforms)
 
 ## Example
 
-Let's find all members who are currently online:
+#### Single status in $membersWithStatus
+
+How to use $membersWithStatus with one status specified
 
 <discord-messages>
-  <discord-message :bot="false" role-color="#ffcc9a" author="Member">
-    !!exec $membersWithStatus[online]
-  </discord-message>
-  <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-    1xxxxxxxxxxxxxxxx2,3xxxxxxxxxxxx4
-  </discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $membersWithStatus[online]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        123456789123456789,987654321987654321
+    </discord-message>
 </discord-messages>
 
-In this example, the command returns a list of IDs ( `1xxxxxxxxxxxxxxxx2,3xxxxxxxxxxxx4` ) representing the members currently with the "online" status.
+#### Multiple statuses in $membersWithStatus
 
-**Combining Statuses:**
+How to use $membersWithStatus with multiple statuses specified
 
-To retrieve members with multiple statuses, separate them with a semicolon. For example, to find members who are either online or idle:
+<discord-messages>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $membersWithStatus[online;idle]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        123456789123456789,987654321987654321,765432198765432198
+    </discord-message>
+</discord-messages>
 
-```bash
-$membersWithStatus[online;idle]
-```
+::: danger Cache
+This function works on the bot's cache to find members.
+If the user is not cached, the function will not find them.
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br>
+To have all members cached, you will need Tier 5 Bot.
+:::
+
+##### Related functions: [$status](../Member/status.md)
+
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle"/>
+###### Tags: <Badge type="tip" text="search" vertical="middle"/> <Badge type="tip" text="find" vertical="middle"/> <Badge type="tip" text="members" vertical="middle"/> <Badge type="tip" text="status" vertical="middle"/>

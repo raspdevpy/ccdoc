@@ -1,44 +1,37 @@
 # $username
 
-Returns the username of the user who executed the command, or the username of a specific member.
+Returns the username of the given user.
 
-#### Usage:
+## Usage
 
-`$username[userid (optional, default=$authorID)]`
-
-*   **`userid` (optional):**  The ID of the user you want to retrieve the username from. If omitted, it defaults to the ID of the command author ( `$authorID` ).
-
-<br/>
-
-**Example:**
-
-```discord
-!!exec $username
+```bash
+$username[userID]
 ```
+1. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to return nickname from.
 
-**Result:**
+## Example
 
-```discord
-Member  (Assuming the command was executed by a user named "Member")
-```
+#### Using $nickname
+
+How to use $nickname
 
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $username
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		Member
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $nickname
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        User
+    </discord-message>
 </discord-messages>
 
-::: tip Related Functions
-
-*   [`$nickname`](../Member/nickname.md):  Retrieves the current nickname of a member.
-*   [`$discriminator`](../Member/discriminator.md): Retrieves the discriminator (the four-digit number after the username, e.g., #1234) of a member.
-*   [`$userTag`](../Member/userTag.md): Returns the member's username and discriminator (e.g., Username#1234).
-
+::: warning Cache
+This function works on the bot's cache to find members.
+If the user is not cached, the function will not find them.
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br>
+To have all members cached, you will need Tier 5 Bot.
 :::
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+##### Related functions: [`$nickname`](../Member/nickname.md) 
 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="name" vertical="middle" /> <Badge type="tip" text="username" vertical="middle" /> <Badge type="tip" text="nickname" vertical="middle" /> <Badge type="tip" text="Names" vertical="middle" /> <Badge type="tip" text="userID" vertical="middle" />

@@ -1,21 +1,37 @@
 # $userRoleColor
-returns the hex color of the highest role of the user
 
-#### Usage: `$userRoleColor` or `$userRoleColor[userID]`
+Returns the hex color code of the users highest role.
 
-<br/>
+## Usage
+
+```bash
+$userRoleColor[userID]
+```
+1. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to return top role color from.
+
+## Example
+
+#### Using $userRoleColor
+
+How to use $userRoleColor
+
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $userRoleColor
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		 #fff00
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $userRoleColor
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        #d6e0ff
+    </discord-message>
 </discord-messages>
 
-::: tip Member must be cached!
-If you use the main bot the member must be cached to get valid results.You can ignore the message,if you use custom bot!
+::: warning Cache
+This function works on the bot's cache to find members.
+If the user is not cached, the function will not find them.
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br>
+To have all members cached, you will need Tier 5 Bot.
 :::
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="color" vertical="middle" /> 
+##### Related functions: [$userRoles](../Member/userRoles.md)
+
+##### Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+###### Tags: <Badge type="tip" text="color" vertical="middle" />

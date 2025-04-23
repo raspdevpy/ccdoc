@@ -1,56 +1,39 @@
 # $usersWithRole
 
-This function retrieves a list of users who have a specific role within your Discord server. The information is pulled directly from the bot's cache.
+Returns a list of users who have the given role. 
 
 ## Usage
 
 ```bash
-$usersWithRole[roleID;separator (optional, default: newline);id/username/tag/mention (optional, default: tag)]
+$usersWithRole[roleID;separator;type]
 ```
+1. **roleID** - (Optional) default value: (users without any roles). The ID of a role you want to retrive users with.
+2. **separator** - (Optional) default value: `#NL#` (newline). The separator used for creating user list.
+3. **type** - (Optional) default value: `tag`. Can be `tag`, `username`, `id` or `mention`.
 
-**Parameters:**
+## Example
 
-*   **`roleID`**: The ID of the role you want to filter users by.
-*   **`separator` (Optional)**: The character(s) used to separate the list of users. Defaults to a newline character (`\n`).
-*   **`id/username/tag/mention` (Optional)**:  Specifies what information about each user to return.  Defaults to `tag` (username#discriminator).
-    *   `id`: Returns the user's ID.
-    *   `username`: Returns the user's username.
-    *   `tag`: Returns the user's full Discord tag (username#discriminator).
-    *   `mention`: Returns a mention of the user (e.g., `<@1234567890>`).
+#### Using $usersWithRole
 
-## Examples
-
-### Example 1: Get usernames of users with the "Members" role, separated by commas.
-
-```discord
-!!exec $usersWithRole[Members;, ,username]
-```
+How to use $usersWithRole
 
 <discord-messages>
-    <discord-message :bot="false" role-color="#ffcc9a" author="Member">
-        !!exec $usersWithRole[Members;, ,username]
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $usersWithRole[;, ;username]
     </discord-message>
-    <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-        Mido, Rake, Azz
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        user, user1, user2
     </discord-message>
 </discord-messages>
 
-### Example 2: Get tags of users with no specific role (provide empty role ID), separated by commas and a space.
-
-```discord
-!!exec users with no roles: $usersWithRole[;, ,tag]
-```
-
-<discord-messages>
-    <discord-message :bot="false" role-color="#ffcc9a" author="Member">
-        !!exec users with no roles: $usersWithRole[;, ,tag]
-    </discord-message>
-    <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-        LonelyWolf#1234, Stranger#5678
-    </discord-message>
-</discord-messages>
-
-::: danger Warning
-
-**Important:** This function relies on the bot's cache. If the cache is not fully populated (especially on larger servers or if the bot has recently started), the results may be incomplete or inaccurate.  Ensuring all guild members are cached is best achieved at tier 5.
+::: warning Cache
+This function works on the bot's cache to find members.
+If the user is not cached, the function will not find them.
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br>
+To have all members cached, you will need Tier 5 Bot.
 :::
+
+##### Related functions: [$userRoles](../Member/userRoles.md)
+
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
+###### Tags: <Badge type="tip" text="Roles" vertical="middle"/> <Badge type="tip" text="Has Roles" vertical="middle"/>

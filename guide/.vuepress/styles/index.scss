@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Assistant-Medium';
+    src: url('/fonts/Assistant-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Noto-Sans-Medium';
+    src: url('/fonts/NotoSans-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+.discord-messages {
+    background-color: #202024 !important;
+    border: 1px solid #3f4245 !important;
+}
+.discord-messages,
+.discord-messages * {
+    font-family: 'Assistant-Medium', sans-serif !important;
+}
+.discord-message .discord-author-info .discord-author-username {
+    font-family: 'Noto-Sans-Medium', sans-serif !important;
+    font-size: 0.95rem !important;
+    letter-spacing: 0px !important;
+    display: inline-flex !important;
+}
+.discord-message .discord-message-body {
+    font-size: 15px !important;
+}
+.discord-message .discord-message-content .discord-message-timestamp {
+    display: inline-flex !important;
+    font-size: 11px !important;
+    margin-left: 5px !important;
+}

@@ -1,31 +1,24 @@
 # $eventOldNickname
 
-Retrieves the previous nickname of a member when they update their nickname. This event trigger is only available within the Nickname Change event.
+Returns the old nickname of a member when their nickname is updated. Works in `On Nickname Changes` trigger.
 
-## Description
+## Usage
 
-The `$eventOldNickname` expression returns the nickname a member had *before* they changed it.  If the member didn't have a nickname prior to the change, it will return `` (empty).
-
-## Syntax
-
-```
+```bash
 $eventOldNickname
 ```
 
-## Usage Notes
-
-*   This expression is only valid within the Nickname Change event.
-*   If the member had no nickname before the change, this will return `` (empty). To handle this, you can use conditional statements.
-
 ## Example
 
-To send a message to a channel displaying the member's previous and current nicknames:
+#### Using $eventOldNickname
 
-```markdown
-$sendMessage[Nickname changed!
-User: $mention
-Old Nickname: $eventOldNickname
-New Nickname: $eventNickname]
+Imagine you have a Nickname Change command that logs the new nickname to a channel
+
+```bash
+$sendMessage[User $username changed their nickname from $eventOldNickname to $eventNewNickname!]
 ```
 
-This example sends a message to the specified channel showing who changed their nickname, and what their old and new nicknames are.  If they didn't have a previous nickname, it will display "Old Nickname: ".
+##### Related functions: [$username](../Member/username.md) [$eventNewNickname](../Member/eventNewNickname.md)
+
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
+###### Tags: <Badge type="tip" text="nickname" vertical="middle"/> <Badge type="tip" text="username" vertical="middle"/>

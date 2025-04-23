@@ -1,33 +1,37 @@
 # $userRoleColor
 
-Returns the hex color code of the user's highest role.
+Returns the hex color code of the users highest role.
 
-#### Usage
+## Usage
 
-*   `$userRoleColor` - Returns the color of the user who executed the command.
-*   `$userRoleColor[userID]` - Returns the color of the user with the specified User ID.
+```bash
+$userRoleColor[userID]
+```
+1. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to return top role color from.
 
-<br/>
+## Example
 
-#### Example
+#### Using $userRoleColor
 
-Here's an example of how `$userRoleColor` might be used in a command:
+How to use $userRoleColor
 
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $userRoleColor
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		 #fff00
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $userRoleColor
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        #d6e0ff
+    </discord-message>
 </discord-messages>
 
-::: tip Important: Member Caching
-For the default bot, the member whose role color you're trying to retrieve *must* be cached (i.e., the bot must be aware of the user).  This usually isn't an issue if the user is active in the server.
-
-If you are using a custom bot, you can generally ignore this caching requirement.
+::: warning Cache
+This function works on the bot's cache to find members.
+If the user is not cached, the function will not find them.
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br>
+To have all members cached, you will need Tier 5 Bot.
 :::
 
-##### Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+##### Related functions: [$userRoles](../Member/userRoles.md)
 
+##### Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="color" vertical="middle" />
