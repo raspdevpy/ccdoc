@@ -1,55 +1,61 @@
 # $channelCooldown
 
-Sets a cooldown for a command, *per channel*! This means the command can only be used again in the specific channel after the specified cooldown has expired.
+Sets a cooldown for a command in channel.
 
-#### Usage:
+## Usage
 
-`$channelCooldown[time (default is 5s);Error message]`
+```bash
+$channelCooldown[time;error message]
+```
+1. **time** - (Optional) default value: `5s`. The cooldown duration. Example times: `10s`, `1m`, `2h`, `1d`
+2. **error message** - (Optional) default value: (none). The message to send if a cooldown is still in progress.
 
-*   **time:** The cooldown duration.  Defaults to 5 seconds if not provided.  Examples: `10s`, `1m`, `2h`, `1d`.
-*   **Error message:** The message to send when a user tries to use the command before the cooldown expires.
+## Example
 
-### Example:
+#### Using $channelCooldown
+
+As you can see, first time it will set the cooldown and execute code below, second time, it won't allow execution
 
 <discord-messages>
-  <discord-message :bot="false" role-color="#ffcc9a" author="Member">
-    !!exec $channelCooldown[2h;You can get points again after %time%]<br>
-    $sendMessage[You received 100x points.]
-  </discord-message>
-  <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-    You can get points again after 1 hour 54 minutes and 56 seconds
-  </discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $channelCooldown[5m;You're on cooldown!]<br>
+        You're not on cooldown!
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        You're not on cooldown!
+    </discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $channelCooldown[5m;You're on cooldown! Still %mins%m remaining!]<br>
+        You're not on cooldown!
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        You're on cooldown! Still 4m remaining!
+    </discord-message>
 </discord-messages>
 
-In this example, the command will give the user 100 points.  If they try to use the command again within 2 hours in the same channel, they will receive the error message: "You can get points again after [remaining time]".
+## Placeholders
 
-## Usable Macros in Error Message:
+Available placeholders you can use in error message
 
-These macros can be used in your error message to provide dynamic information about the cooldown.
+| Placeholder   | Description                                               | Output Example                            |
+| ------------- | --------------------------------------------------------- | ----------------------------------------- |
+| `%time%`      | The full time remaining                                   | `1 day 2 hours 3 minutes and 4 seconds`   |
+| `%days%`      | The number of days remaining                              | `1`                                       |
+| `%hrs%`       | The number of hours remaining                             | `2`                                       |
+| `%mins%`      | The number of minutes remaining                           | `3`                                       |
+| `%secs%`      | The number of seconds remaining                           | `4`                                       |
+| `%timestamp%` | Timestamp of cooldown expiration in seconds               | `1735689600`                              |
+| `%relative%`  | Shows Discord relative timestamp (Automatically Updates)  | `<t:1735689600:R>` - Displays: `in 1 day` |
 
-| Macro        | Description                                       | Output Example                           |
-| ------------ | ------------------------------------------------- | ---------------------------------------- |
-| `%time%`     | Replaced with the remaining time in a readable format. | `5 days 1 hour 54 minutes and 56 seconds` |
-| `%days%`     | The number of days remaining.                   | `5`                                      |
-| `%hrs%`      | The number of hours remaining.                  | `1`                                      |
-| `%mins%`     | The number of minutes remaining.                | `54`                                     |
-| `%secs%`     | The number of seconds remaining.                | `56`                                     |
-| `%timestamp%` | Unix timestamp (seconds) for when the cooldown expires. | `1680711176`                             |
-| `%relative%` | Displays the remaining time using Discord's relative timestamp feature (updates automatically).  | ![](https://i.imgur.com/F2bAFnk.png)         |
-
-::: tip Note
-You can send styled messages or embeds by using the [Message Curl Format](../CodeReferences/ref.message_curl_format.md) in the error message.
+::: warning Warning
+Place this function above the code you want to use cooldown for. All code before this function will be executed.
+:::
+::: tip Suggestion
+You can send embeds, select menus and buttons by using the [message curl format](../CodeReferences/ref.message_curl_format.md).
 :::
 
-::: tip Related Functions
-*   [$cooldown](../Cooldown/cooldown.md): Sets a cooldown for a command, *per user*.
-*   [$serverCooldown](../Cooldown/serverCooldown.md): Sets a cooldown for a command, *per server*.
-:::
 
-::: danger Important
-Place the `$channelCooldown` function on the **FIRST line** of your command's code.  If it's not the first line, the code before it will execute regardless of the cooldown, and the cooldown won't apply correctly.
-:::
+##### Related functions: [$cooldown](../Cooldown/cooldown.md) [$serverCooldown](../Cooldown/serverCooldown.md)
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
-
-###### Tags: <Badge type="tip" text="Cooldown" vertical="middle" /> <Badge type="tip" text="Channel Cooldown" vertical="middle" /> <Badge type="tip" text="Raid Limit" vertical="middle" /> <Badge type="tip" text="Raid Limited" vertical="middle" />
+###### Tags: <Badge type="tip" text="Cooldown" vertical="middle" /> <Badge type="tip" text="Channel Cooldown" vertical="middle" /> <Badge type="tip" text="Limit" vertical="middle" />
