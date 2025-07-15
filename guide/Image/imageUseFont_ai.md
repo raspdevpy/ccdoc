@@ -27,6 +27,8 @@ You can choose from the following fonts:
 *   Rubik
 *   Space Mono
 *   Minecraft
+*   Blackout
+*   Motorblock
 
 ## Font Preview
 
