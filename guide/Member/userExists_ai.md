@@ -1,42 +1,37 @@
 # $userExists
 
-Checks if a user exists within the server. Returns `true` if the user exists, and `false` otherwise.
+Checks if a user exists in the server. Returns `true` if the user exists, and `false` if not.
 
-#### Usage:
+## Usage
 
-`$userExists[userId]`
+```bash
+$userExists[userID]
+```
+1. **userID** - The ID of the user to check. If left empty, false will be returned.
 
-**Arguments:**
+## Example
 
-*   `userId`: The ID of the user to check.
+#### Using $userExists
 
-<br/>
-
-**Example:**
+How to use $userExists
 
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $userExists[$authorID]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		true
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $userExists[$authorID]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        true
+    </discord-message>
 </discord-messages>
 
-This example checks if the message author exists in the server and returns `true` if they do.
-
-::: danger Warning
-
-This function relies on the bot's cache.  The information may not be perfectly accurate unless all guild members are cached (typically only in tier 5 bots). This means it might return `false` even if a user exists if they haven't been cached yet.
-
+::: warning Cache
+This function works on the bot's cache to find members.
+If the user is not cached, the function will not find them.
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br>
+To have all members cached, you will need Tier 5 Bot.
 :::
 
-::: tip Related Functions
-
-*   [$findMember](../Member/findMember.md):  Finds a member's ID based on search criteria.
-
-:::
+##### Related functions: [$findMember](../Member/findMember.md)
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
-
-###### Tags: <Badge type="tip" text="User" vertical="middle" /> <Badge type="tip" text="Exists" vertical="middle" /> <Badge type="tip" text="Check" vertical="middle" /> <Badge type="tip" text="Is Real" vertical="middle" /> <Badge type="tip" text="Server" vertical="middle" />
+###### Tags: <Badge type="tip" text="User" vertical="middle" /> <Badge type="tip" text="Exists" vertical="middle" /> <Badge type="tip" text="Check" vertical="middle" /> <Badge type="tip" text="Is Real" vertical="middle" />

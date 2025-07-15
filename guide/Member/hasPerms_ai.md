@@ -1,40 +1,35 @@
 # $hasPerms
 
-Determines if a specific user has the provided Discord permissions.
+Checks if user has all of the given permissions. Returns `true` or `false`.
 
-#### Usage:
+## Usage:
 
-`$hasPerms[userID;perm1;perm2;...]`
+```bash
+$hasPerms[userID;perm1;perm2;...]
+```
+1. **userID** - User you want to check for permissions.
+2. **perm N** - You can add as many permissions as needed. The available permissions are here: [Permissions List](../CodeReferences/ref.permissions_list.md).
 
-**Parameters:**
+## Example
 
-*   `userID`: The Discord user ID to check.  You can use `$authorID` to check the message author's permissions.
-*   `perm1;perm2;...`: A semicolon-separated list of Discord permissions to check.  The function will return `true` only if the user has **all** specified permissions.
+#### Using $hasPerms
 
-<br/>
-
-**Example:**
-
-This example checks if the message author has the `sendmessages` permission in the current channel.
+How to use $hasPerms. Keep in mind that only if the user does have all of listed permissions, true will be returned.
 
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $hasPerms[$authorID;sendmessages]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $hasPerms[$authorID;sendmessages]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
         true
-	</discord-message>
+    </discord-message>
 </discord-messages>
 
-::: tip Permissions
-Refer to this [list](../CodeReferences/ref.permissions_list.md) to see all available permission names.
+::: tip Suggestion
+To make code stop if the user doesn't have the needed permission, you can check out [$onlyIf](../Text/only/onlyIf.md). For multiple actions, check [$if](../Text/Condition/if.md).
 :::
 
-::: tip Related Functions
+##### Related functions: [$hasAnyPerm](../Member/hasAnyPerm.md) [$hasAnyRole](../Member/hasAnyRole.md) [$hasRole](../Role/hasRole.md)
 
-*   `[$rolePerms](../Role/rolePerms.md)`: Checks if a role has specific permissions.
-*   `[$userPerms](../Member/userPerms.md)`: Returns all permissions a user has.
-:::
-
-##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" />
-###### Tags: <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="perms" vertical="middle" /> <Badge type="tip" text="permissions" vertical="middle" /> <Badge type="tip" text="rights" vertical="middle" /> <Badge type="tip" text="hadPerms" vertical="middle" />
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
+###### Tags: <Badge type="tip" text="permission" vertical="middle"/> <Badge type="tip" text="management" vertical="middle"/>

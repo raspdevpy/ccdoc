@@ -1,56 +1,51 @@
 # $findMember
 
-Searches for a member in the current server by their nickname, ID, mention, username, or username with discriminator (e.g., `username#1234`).
+Searches for a user in the current server by their nickname, ID, mention, username, or username with discriminator. Returns userID of the found user.
 
-#### Usage:
+## Usage:
 
-`$findMember[search_query;returnCurrentUser]`
-
-**Arguments:**
-
-*   `search_query`:  The member's nickname, ID, mention, username, or username#discriminator to search for.
-*   `returnCurrentUser`:  (Optional) Accepts `yes` or `no`. If set to `yes`, the function will return the current user's ID if no match is found for the `search_query`. If `no` or omitted, it will return `undefined` when no match is found.
-
-**Example:**
-
+```bash
+$findMember[query;returnCurrentUser]
 ```
-$findMember[Member#0000;no]
-```
+1. **query** - Can be userID, nickname, mention, username, username#descriminator.
+2. **returnCurrentUser** - (Optional) default value: `yes`. Can be either `yes` or `no`. If this is set to yes, when user is not found, it will return $authorID. If it's no, and user is not found, it will return undefined.
 
-If a member is found:
+## Example
 
-<br/>
+#### Successful search
+
+Searching for existing user
 
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $findMember[Member#0000;no]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		869243919697846379
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $findMember[user2;no]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        123456789123456789
+    </discord-message>
 </discord-messages>
 
-If a member is not found:
+#### Unsuccessful search
 
-<br/>
+Searching for invalid user
 
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $findMember[user;no]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		undefined
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $findMember[user123;no]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        undefined
+    </discord-message>
 </discord-messages>
 
-::: danger Warning
-This function relies on the bot's cache to find members. If a member is not cached, the function will not find them.  Member caching is more reliable with higher server tiers (especially Tier 5).
+::: warning Cache
+This function works on the bot's cache to find members.
+If the user is not cached, the function will not find them.
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br>
+To have all members cached, you will need Tier 5 Bot.
 :::
 
-::: tip Related Functions
-*   [$authorID](../Member/authorID.md): Get the ID of the command's author.
-*   [$userID](../Member/userID.md):  Find a user's ID from their username.
-:::
+##### Related functions: [$userID](../Member/userID.md) [$authorID](../Member/authorID.md)
 
-##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" />
-###### Tags: <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="find" vertical="middle" /> <Badge type="tip" text="find member" vertical="middle" /> <Badge type="tip" text="find user" vertical="middle" /> <Badge type="tip" text="search Member" vertical="middle" /> <Badge type="tip" text="search User" vertical="middle" />
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle"/>
+###### Tags: <Badge type="tip" text="search" vertical="middle"/> <Badge type="tip" text="find" vertical="middle"/> <Badge type="tip" text="member" vertical="middle"/>

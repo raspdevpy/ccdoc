@@ -2,39 +2,38 @@
 
 Changes the nickname of a specified member in the server.
 
-#### Usage:
+## Usage:
 
-`$changeNickname[userID;nickname]`
+```bash
+$changeNickname[userID;nickname]
+```
+1. **userID** - The ID of the member whose nickname you want to change.
+2. **nickname** - The new nickname you want to assign to the member.
 
-*   **userID:** The ID of the member whose nickname you want to change.
-*   **nickname:** The new nickname you want to assign to the member.
+## Example
 
-#### Example:
+#### Using $changeNickname
 
-`$changeNickname[$authorID;I'm a bot lol]`
+Changing the nickname of the command author
 
-This example changes the nickname of the command author to "I'm a bot lol".  Make sure your bot has the correct permissions to change nicknames!
+<discord-messages>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $changeNickname[$authorID;Steve]
+    </discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="Steve" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        Hello
+    </discord-message>
+</discord-messages>
 
-::: tip What You Need to Know
-
-*   The bot requires the "Manage Nicknames" permission in the server.
-*   The bot can only change nicknames of members with roles lower than its highest role.
-*   The bot will error out if it doesn't have the required permissions or the user ID is invalid.
-
+::: tip Permissions
+The bot requires the "Manage Nicknames" permission to change nicknames and only change nicknames of members with roles lower than bots highest role.
 :::
 
-::: tip Useful Functions
-
-*   [$authorID](../Member/authorID.md): Retrieves the ID of the command author.
-
+::: danger Discord restiriction
+Discord doesn't allow others to change owners nickname. If you will try to change nickname of an invalid member or owner, error message will be shown.
 :::
 
-::: tip Related Functions
-
-*   [$nickname](../Member/nickname.md): Retrieves the current nickname of a member.
-
-:::
+##### Related functions: [$nickname](../Member/nickname.md)
 
 ##### Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
-
 ###### Tags: <Badge type="tip" text="change Nickname" vertical="middle" /> <Badge type="tip" text="nickname" vertical="middle" /> <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="Names" vertical="middle" /> <Badge type="tip" text="modify name" vertical="middle" />

@@ -1,28 +1,29 @@
 # $authorID
 
-This function retrieves the unique ID of the user who executed the command. This ID can be used in other functions or for logging purposes.
+Returns the ID of the user who executed the command.
 
-#### Usage: `$authorID`
+## Usage
 
-<br/>
+```bash
+$authorID
+```
 
-Here's an example of how `$authorID` works:
+## Example
+
+#### Using $authorID
+
+How to use $authorID
 
 <discord-messages>
-  <discord-message :bot="false" role-color="#ffcc9a" author="User">
-    !!exec $authorID
-  </discord-message>
-  <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-    683630053686378498
-  </discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec My ID is $authorID
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        My ID is 123456789123456789
+    </discord-message>
 </discord-messages>
 
-In this example, the user executed the command `!!exec $authorID`.  The custom command then returned the user's ID: `683630053686378498`.
-
-::: tip Related Functions
-[$mention](../Member/mention.md) ― Use this function to mention the author of a command within a message!
-:::
+##### Related functions: [$mention](../Member/mention.md)
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
-
-###### Tags: <Badge type="tip" text="authorID" vertical="middle" /> <Badge type="tip" text="cmd executor" vertical="middle" /> <Badge type="tip" text="command author" vertical="middle" /> <Badge type="tip" text="command" vertical="middle" /> <Badge type="tip" text="userID" vertical="middle" />
+###### Tags: <Badge type="tip" text="authorID" vertical="middle" /> <Badge type="tip" text="executor" vertical="middle" /> <Badge type="tip" text="command author" vertical="middle" /> <Badge type="tip" text="" vertical="middle" /> <Badge type="tip" text="userID" vertical="middle" />

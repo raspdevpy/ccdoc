@@ -1,22 +1,32 @@
 # $mention
 
-Returns mention of the User that triggered the command.
+Returns a mention of a user.
 
-#### Usage: 
-<br/>
+## Usage
+
+```bash
+$mention[userID]
+```
+1. **userID** - (Optional) default value: `$authorID`. The ID of user to get mentioned.
+
+## Example
+
+#### Using $mention
+
+How to use $mention for author or other user
+
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="User">
-		!!exec $mention
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-        <DiscordMention :highlight="true">User</DiscordMention>
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec Me: $mention<br>
+		Other user: $mention[123456789123456789]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        Me: <DiscordMention :highlight="true">User</DiscordMention><br>
+		Other user: <DiscordMention :highlight="false">Other User</DiscordMention>
+    </discord-message>
 </discord-messages>
 
+##### Related functions: [$username](../Member/username.md) [$nickname](../Member/nickname.md)
 
-::: tip Related Functions
-[$authorID](../Member/authorID.md), to return the ID of the executor of the command
-:::
-
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="ping" vertical="middle" /> <Badge type="tip" text="ping (ennoying)" vertical="middle" /> <Badge type="tip" text="mention" vertical="middle" /> <Badge type="tip" text="author" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+###### Tags: <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="ping" vertical="middle" /> <Badge type="tip" text="mention" vertical="middle" /> <Badge type="tip" text="author" vertical="middle" />

@@ -1,23 +1,34 @@
-# `$getUserBadges` <Badge type="warning" text="Currently Bugged" vertical="middle" />
+# $getUserBadges
 
-Retrieves the Discord badges associated with the user who executed the custom command.
+Returns the Discord badges from specified user. If none found, returns `none`. If found multiple, separated by `, `.
 
-#### Usage: `$getUserBadges`
+## Usage
 
-This function will return a string containing the badges the user has (e.g., "HypeSquad Balance").
+```bash
+$getUserBadges[userID]
+```
+1. **userID** - (Optional) default value: `$authorID`. Which user to return badges from.
 
-<br/>
+## Example
 
-**Example:**
+#### Using $getUserBadges
+
+How to return badges from command author
 
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $getUserBadges
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		Hype squad Balance
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $getUserBadges
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        Active Developer
+    </discord-message>
 </discord-messages>
 
-##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="badges" vertical="middle" /> <Badge type="tip" text="user" vertical="middle" /> <Badge type="tip" text="discord badges" vertical="middle" />
+::: danger Warning
+Not all badges are 100% guranteed.
+:::
+
+##### Related functions: [$userBanner](../Member/userBanner.md)
+
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
+###### Tags: <Badge type="tip" text="badges" vertical="middle"/> <Badge type="tip" text="user" vertical="middle"/>

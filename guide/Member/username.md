@@ -1,25 +1,37 @@
 # $username
-Returns the name of the user that executed the command, or a member specified in the first parameter
 
-#### Usage: 
-`$username[userid (optional, default=$authorID)]`
-<br/>
+Returns the username of the given user.
+
+## Usage
+
+```bash
+$username[userID]
+```
+1. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to return nickname from.
+
+## Example
+
+#### Using $nickname
+
+How to use $nickname
+
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $username
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		Member
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $nickname
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        User
+    </discord-message>
 </discord-messages>
 
-::: tip Related Functions
-[$nickname](../Member/nickname.md), to get the current nickname from a member
-
-[$discriminator](../Member/discriminator.md), to get the current discriminator from a member
-
-[$userTag](../Member/userTag.md), to return the members username + discriminator
+::: warning Cache
+This function works on the bot's cache to find members.
+If the user is not cached, the function will not find them.
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br>
+To have all members cached, you will need Tier 5 Bot.
 :::
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Related functions: [`$nickname`](../Member/nickname.md) 
+
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="name" vertical="middle" /> <Badge type="tip" text="username" vertical="middle" /> <Badge type="tip" text="nickname" vertical="middle" /> <Badge type="tip" text="Names" vertical="middle" /> <Badge type="tip" text="userID" vertical="middle" />

@@ -2,57 +2,50 @@
 
 Bans a user from the server.
 
-#### Usage:
+## Usage
 
-`$ban[userID;reason;messages to delete (in days)]`
+```bash
+$ban[userID;reason;messages to delete]
+```
+1. **userID** - The ID of the user to ban.
+2. **reason** - The reason for the ban.
+3. **messages to delete** - The number of days to delete messages from this user. Maximum is 7 days, limited by Discord.
 
-*   **userID:** The ID of the user to ban.
-*   **reason:** The reason for the ban.
-*   **messages to delete (in days):**  The number of days of messages from the user to delete (0-7).  Discord limits this to a maximum of 7 days.
+## Examples
 
-<br/>
+#### Sucessful ban
 
-**Example: Successful Ban** (If the bot has sufficient permissions)
-
-<discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Discord Moderator">
-		!!exec $ban[$findMember[Unknown User];Spamming;7]
-	</discord-message>
-</discord-messages>
-
-<br/>
-
-**Example: Unsuccessful Ban** (If the bot does *not* have sufficient permissions) <Badge type="warning" text="See Explanation Below" vertical="middle" />
+Successful ban with no response
 
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Discord Moderator">
-		!!exec $ban[$ownerID;I'm a bad moderator;7]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		❌  Failed to ban 1234567!
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $ban[123456789123456789;Spamming;7]
+    </discord-message>
 </discord-messages>
 
-::: tip
-You can set the number of days of messages to delete to a maximum of 7, as limited by Discord.
+#### Unsucessful ban
+
+Unsuccessful ban with error message
+
+<discord-messages>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $ban[$ownerID;Just a test;0]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        ❌ bot is missing enough permissions at line 1
+    </discord-message>
+</discord-messages>
+
+::: tip Permissions
+Make sure that the bot does have sufficient permission. The bot also needs to be higher in role hierarchy then the user.
 :::
 
-::: tip Why can't the bot ban a member?
-The most common reason is that the bot's role is lower in the role hierarchy than the member you are trying to ban.
-
-Discord prevents users (including bots) from banning members with a higher or equal highest role.  Ensure the bot's highest role is above the target user's.
+::: danger Important Note
+If any member who can execute the command with this function, they will be able to ban any member below the bot's highest role.
+Do not place the bot's role above Admin or Head Moderator roles to avoid banning important member.
 :::
 
-::: danger Be extremely careful with this function!
-If any member who can execute the command containing this function has sufficient permissions, they will be able to ban *any* member below the bot's highest role.
+##### Related functions: [$kick](../Member/kick.md) [$unban](../Member/unban.md)
 
-**Recommendation:** Avoid placing the bot's role above "Admin" or "Head Moderator" roles to limit potential misuse.
-:::
-
-::: tip Related Functions
-*   [$kick](../Member/kick.md):  Kicks a member from the server.
-*   [$unban](../Member/unban.md):  Unbans a previously banned member.
-:::
-
-##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" />
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="ban" vertical="middle" /> <Badge type="tip" text="punish" vertical="middle" /> <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="moderation" vertical="middle" /> <Badge type="tip" text="moderator" vertical="middle" />

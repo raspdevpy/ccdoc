@@ -1,48 +1,30 @@
 # $isUserDMEnabled
 
-This function determines if a specific user has direct messages (DMs) enabled. It returns `true` if DMs are enabled, and `false` otherwise.
+This function checks if a  user has direct messages (DMs) enabled. It returns `true` if DMs are enabled, and `false` if not.
 
-## Syntax
+## Usage
 
 ```bash
-$isUserDMEnabled
 $isUserDMEnabled[userID]
 ```
+1. **userID** - (Optional) default value: `$authorID`. The ID of the user you want to check.
 
-## Parameters
+## Example
 
-*   **`userID` (Optional):** The ID of the user you want to check.  If no `userID` is provided, it checks if DMs are enabled for the current user invoking the command (i.e., the user who ran the command).
+#### Using $isUserDMEnabled
 
-## Functionality
+How to use $isUserDMEnabled
 
-This function attempts to retrieve information about whether a user has direct messaging enabled.
+<discord-messages>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $isUserDMEnabled[123456789123456789]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        true
+    </discord-message>
+</discord-messages>
 
-*   **Without a `userID`:** It checks if the user executing the current command has direct messages enabled.
-*   **With a `userID`:**  It checks if the specified user (by their ID) has direct messages enabled.
+##### Related functions: [$dm](../Message/DM.md) [$sendDM](../Message/sendDM.md)
 
-## Returns
-
-*   **`true`:** If the user has DMs enabled.
-*   **`false`:** If the user has DMs disabled or if the user is not found.
-
-## Examples
-
-**Example 1: Check if the command user has DMs enabled:**
-
-```bash
-$isUserDMEnabled
-```
-
-**Example 2: Check if a specific user (with ID 1234567890) has DMs enabled:**
-
-```bash
-$isUserDMEnabled[1234567890]
-```
-
-**Explanation:**
-
-In the second example, replace `1234567890` with the actual ID of the user you want to check.  The function will then return `true` or `false` depending on whether that user has DMs enabled.
-
-**Important Notes:**
-
-*   User privacy settings can affect the accuracy of this function.  If a user has highly restrictive privacy settings, the bot might not be able to determine whether their DMs are enabled.
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
+###### Tags: <Badge type="tip" text="dm" vertical="middle"/> <Badge type="tip" text="direct message" vertical="middle"/>

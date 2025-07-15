@@ -1,36 +1,30 @@
 # $isBanned
 
-Checks if a specific user is banned from the current guild.
+Checks if a user is banned from the guild. Returns `true` or `false`.
 
-## Syntax
+## Usage
 
 ```bash
 $isBanned[userID]
 ```
-
-## Parameters
-
-*   `userID` - The ID of the user to check. This parameter is **required**.
-
-## Returns
-
-*   `true` - If the user is banned from the guild.
-*   `false` - If the user is not banned from the guild or the user ID is invalid.
+1. **userID** - The ID of the user to check if it's banned.
 
 ## Example
 
-```markdown
-$if[$isBanned[543210987654321098]==true]
-  This user is banned!
-$else
-  This user is not banned.
-$endif
-```
+#### Using $isBanned
 
-**Explanation:**
+How to use $isBanned
 
-This example checks if the user with the ID `543210987654321098` is banned from the current guild.  If `$isBanned` returns `true`, the bot will respond with "This user is banned!". Otherwise, it will respond with "This user is not banned."
+<discord-messages>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $isBanned[123456789123456789]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        false
+    </discord-message>
+</discord-messages>
 
-## Notes
+##### Related functions: [$kick](../Member/kick.md) [$ban](../Member/ban.md)
 
-*   Ensure the bot has the necessary permissions to view ban information.
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
+###### Tags: <Badge type="tip" text="ban" vertical="middle" /> <Badge type="tip" text="punish" vertical="middle" /> <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="moderation" vertical="middle" /> <Badge type="tip" text="moderator" vertical="middle" />

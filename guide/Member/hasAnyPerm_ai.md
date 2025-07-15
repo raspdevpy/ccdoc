@@ -1,55 +1,41 @@
-# $hasAnyPerm - Check for Multiple Permissions
+# $hasAnyPerm
 
-This function checks if a specified user, or the message author, possesses *at least one* of the provided permissions. Think of it like asking: "Does this user have *any* of these permissions?"
+Checks if a user has one of the given permissions. Returns `true` or `false`.
 
 ## Usage
-
-There are two ways to use `$hasAnyPerm`:
-
-**1. Checking the Message Author:**
-
-```bash
-$hasAnyPerm[permission1;permission2;...]
-```
-
-   *   In this format, the function checks if the *message author* has at least one of the listed permissions.
-
-**2. Checking a Specific User:**
 
 ```bash
 $hasAnyPerm[userID;permission1;permission2;...]
 ```
-
-   *   Here, you specify the `userID` of the user you want to check. The function then verifies if that user has at least one of the listed permissions.
-
-## Parameters
-
-*   `userID` (Optional): The ID of the user you want to check. If omitted, the function checks the message author.
-*   `permission1;permission2;...`: A semicolon-separated list of Discord permissions.
+1. **userID** - (Optional) default value: `$authorID`. If not included or left empty, $authorID will be used.
+2. **permission N** - You can add as many permissions as needed. The available permissions are here: [Permissions List](../CodeReferences/ref.permissions_list.md).
 
 ## Example
 
-```
-$hasAnyPerm[$authorID;manageroles;managechannels]
-```
+#### Using $hasAnyPerm
 
-This example checks if the message author (represented by `$authorID`) has either the `manageroles` permission *or* the `managechannels` permission (or both).  It returns `true` if either is true, and `false` only if *neither* are true.
+How to use $hasAnyPerm without user argument. Keep in mind that if the user does have only one of listed permissions, true will be returned.
 
-Another example, targeting a specific user:
+<discord-messages>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec I have managechannels OR manageroles permission: $hasAnyPerm[managechannels;manageroles]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        I have managechannels OR manageroles permission: true
+    </discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec I have managechannels permission: $hasAnyPerm[managechannels], I have manageroles permission: $hasAnyPerm[manageroles]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        I have managechannels permission: true, I have manageroles permission: false
+    </discord-message>
+</discord-messages>
 
-```
-$hasAnyPerm[678901234567890123;kick;ban]
-```
+::: tip Suggestion
+To make code stop if the user doesn't have the needed permission, you can check out [$onlyIf](../Text/only/onlyIf.md). For multiple actions, check [$if](../Text/Condition/if.md).
+:::
 
-This example checks if the user with ID `678901234567890123` has either the `kick` permission *or* the `ban` permission (or both).
+##### Related functions: [$hasPerms](../Member/hasPerms.md) [$hasAnyRole](../Member/hasAnyRole.md) [$hasRole](../Role/hasRole.md)
 
-## Understanding the Result
-
-The `$hasAnyPerm` function will return:
-
-*   `true`: If the user has at least one of the specified permissions.
-*   `false`: If the user does not have any of the specified permissions.
-
-## Permissions List
-
-For a comprehensive list of available Discord permissions and their corresponding codes, please refer to this resource: [Permissions List](../CodeReferences/ref.permissions_list.md). Understanding the correct permission codes is essential for using this function effectively.
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
+###### Tags: <Badge type="tip" text="permission" vertical="middle"/> <Badge type="tip" text="management" vertical="middle"/>

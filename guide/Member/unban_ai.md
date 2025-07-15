@@ -1,31 +1,32 @@
 # $unban
 
-Unbans a user from the server. This function allows you to remove a ban from a user, granting them access back into the server.
+Unbans a user from the server.
 
-#### Usage:
+## Usage
 
-`$unban[userID;reason]`
+```bash
+$unban[userID/username;reason]
+```
+1. **userID/username** - The ID or username of user to unban.
+2. **reason** - (Optional) default value: (none). The reason for the unban. You can see this in Audit Log.
 
-*   **userID:** The ID of the user you want to unban. You can obtain this ID by enabling Developer Mode in Discord settings and right-clicking on a user.
-*   **reason:** The reason for unbanning the user. This will be displayed in the audit log.
+## Example
 
-**Example:**
+#### Using $unban
 
-If the bot has the necessary permissions to unban the member:
+How to unban user with a reason
 
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Discord Moderator">
-		!!exec $unban[898908909879675454;Unban because ban appeal was successful]
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $unban[123456789123456789;Appeal successful]
+    </discord-message>
 </discord-messages>
 
-This example will unban the user with the ID `898908909879675454` and the reason "Unban because ban appeal was successful".
-
-::: tip Related Functions
-*   [$kick](../Member/kick.md): Use this to kick a member from the server.
-*   [$ban](../Member/ban.md): Use this to ban a member from the server.
+::: tip Permissions
+Make sure that the bot does have sufficient permission.
 :::
 
-##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" />
+##### Related functions: [$kick](../Member/kick.md) [$ban](../Member/ban.md)
 
-###### Tags: <Badge type="tip" text="unban" vertical="middle" /> <Badge type="tip" text="unpunish" vertical="middle" /> <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="moderation" vertical="middle" /> <Badge type="tip" text="moderator" vertical="middle" />
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+###### Tags: <Badge type="tip" text="unban" vertical="middle" /> <Badge type="tip" text="unpunish" vertical="middle" /> <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="moderation" vertical="middle" />

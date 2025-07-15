@@ -1,34 +1,30 @@
 # $displayName
 
-Retrieves the display name of a specified user. This is the name that's shown for the user in a specific server, which may differ from their global username.
+Returns the display name of a specified user. This is the name that's shown for the user in a specific server, which might be different from their global name.
 
 ## Usage
 
+```bash
+$displayName[userID]
 ```
-$displayName[User ID]
-```
-
-**Parameters:**
-
-*   **`User ID`:** The Discord User ID of the user whose display name you want to retrieve.  You can usually copy this ID by right-clicking on a user in Discord and selecting "Copy ID" (you may need to enable Developer Mode in Discord settings).
+1. **userID** - (Optional) default value: `$authorID`. The user ID of the user you want to return display name from.
 
 ## Example
 
-This example demonstrates how to use `$displayName` to get the display name of a user with the ID `788361834360864808`.
+#### Using $displayName
 
-```
-!!exec $displayName[788361834360864808]
-```
-
-**Expected Output:**
+How to return display name from author
 
 <discord-messages>
-  <discord-message :bot="false" role-color="#ffcc9a" author="Member">
-    !!exec $displayName[788361834360864808]
-  </discord-message>
-  <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-    Mido
-  </discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $displayName
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        User
+    </discord-message>
 </discord-messages>
 
-In this case, the user with the ID `788361834360864808` has the display name "Mido" in this server.
+##### Related functions: [$nickname](../Member/nickname.md) [$username](../Member/username.md)
+
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
+###### Tags: <Badge type="tip" text="name" vertical="middle"/> <Badge type="tip" text="username" vertical="middle"/> <Badge type="tip" text="nickname" vertical="middle"/>

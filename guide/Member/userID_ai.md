@@ -1,31 +1,36 @@
-# `$userID`
+# $userID
 
-Retrieves a user ID based on a provided username.
+Returns a user ID based on the given username.
 
-#### Usage: `$userID[username]`
-
-This function searches for a user within the server and returns their unique ID.
-
-<br/>
-
-**Example:**
-
-```discord
-!!exec $userID[Mika]
+## Usage
+```bash
+$userID[username]
 ```
+1. **username** - (Optional) if not provided, $authorID will be returned. The username of a user you want to return ID of.
 
-**Output:**
+## Example
 
-```discord
-787695068306866198
-```
+#### Using $userID
 
-<br/>
+How to use $userID
 
-::: danger Warning
-**Important:** The user data is retrieved from the server's cache. This means the information might not be completely up-to-date if all guild members haven't been fully cached.  Complete caching is typically only available on tier 5 servers.
+<discord-messages>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $userID[user]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        123456789123456789
+    </discord-message>
+</discord-messages>
+
+::: warning Cache
+This function works on the bot's cache to find members.
+If the user is not cached, the function will not find them.
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br>
+To have all members cached, you will need Tier 5 Bot.
 :::
 
-##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+##### Related functions: [$authorID](../Member/authorID.md) [$findMember](../Member/findMember.md)
 
-###### Tags: <Badge type="tip" text="userID" vertical="middle" /> <Badge type="tip" text="Member ID" vertical="middle" /> <Badge type="tip" text="User ID" vertical="middle" /> <Badge type="tip" text="Username" vertical="middle" />
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+###### Tags: <Badge type="tip" text="user" vertical="middle" /> <Badge type="tip" text="Member ID" vertical="middle" /> <Badge type="tip" text="User ID" vertical="middle" /> <Badge type="tip" text="Username" vertical="middle" />

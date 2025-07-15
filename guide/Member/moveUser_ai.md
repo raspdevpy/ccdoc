@@ -2,36 +2,42 @@
 
 Moves a user to a different voice channel, or disconnects them from their current voice channel.
 
-## Description
-
-The `$moveUser` function allows you to move a specified user to a different voice channel. If you don't provide a target channel, the function will disconnect the user from their current voice channel.  This is a powerful tool for moderation and managing voice channel activity.
-
 ## Usage
 
 ```bash
-$moveUser[userID;channelID (optional);reason (optional)]
+$moveUser[userID;channelID;reason]
 ```
-
-## Parameters
-
-*   **`userID`**: (Required) The ID of the user you want to move or disconnect.  This must be a valid user ID within your Discord server.
-*   **`channelID`**: (Optional) The ID of the voice channel you want to move the user to. If omitted, the user will be disconnected from their current voice channel.
-*   **`reason`**: (Optional) A reason for the move or disconnection. This reason will be visible in the server's audit log.
+1. **userID** - The ID of user to be moved.
+2. **channelID** - (Optional) default: disconnect user. The channel where to move the user. If none provided, the user will be disconnected.
+3. **reason** - (Optional) default value: (empty). Reason for move or disconnect. You can see this in Audit Log.
 
 ## Examples
 
-**Moving a user to a specific channel:**
+#### Moving user to a channel
 
-```bash
-$moveUser[123456789012345678;987654321098765432;User was being disruptive]
-```
+How to move user to another channel
 
-This example will move the user with ID `123456789012345678` to the voice channel with ID `987654321098765432`. The reason provided is "User was being disruptive".
+<discord-messages>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $moveUser[123456789123456789;123456789987654321;AFK]
+    </discord-message>
+</discord-messages>
 
-**Disconnecting a user from their current channel:**
+#### Disconnecting user from a channel
 
-```bash
-$moveUser[123456789012345678;;User was AFK]
-```
+How to diconnect user from a channel
 
-This example will disconnect the user with ID `123456789012345678` from their current voice channel. The reason provided is "User was AFK".  Notice the double semi-colon `;;` which represents an empty `channelID` value, indicating a disconnect.
+<discord-messages>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $moveUser[123456789123456789;;AFK]
+    </discord-message>
+</discord-messages>
+
+::: tip Permission
+Make sure that the bot does have enough permission to move or disconnect members. The bot also needs to be higher in the role hierarchy.
+:::
+
+##### Related functions: [$vcBefore](../Channel/vcBefore.md) [$vcAfter](../Channel/vcAfter.md)
+
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle"/>
+###### Tags: <Badge type="tip" text="voice" vertical="middle"/> <Badge type="tip" text="move" vertical="middle"/>

@@ -1,32 +1,38 @@
 # $userPerms
-Returns the member key permissions.
 
-#### Usage: 
-`$userPerms[userID;separator (optional)]`
+Returns a list of permissions a user has in the current channel.
 
-<br/>
+## Usage
+
+```bash
+$userPerms[userID;separator]
+```
+1. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to return permissions from.
+2. **separator** - (Optional) default value: `, `. The separator used for creating permission list.
+
+## Example
+
+#### Using $userPerms
+
+How to use $userPerms
+
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $userPerms[$authorID; | ]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-        viewchannel | readmessages
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $userPerms[;/]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        View Channel/Send Messages/Mention Everyone
+    </discord-message>
 </discord-messages>
 
-::: tip Permissions
-Check this [list](../CodeReferences/ref.permissions_list.md) to view all permissions names
+::: warning Cache
+This function works on the bot's cache to find members.
+If the user is not cached, the function will not find them.
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br>
+To have all members cached, you will need Tier 5 Bot.
 :::
 
-::: tip Used Functions
-[$autorID](../Member/authorID.md), to return the command executers ID
-:::
+##### Related functions: [$rolePerms](../Role/rolePerms.md) [$hasPerms](../Member/hasPerms.md)
 
-::: tip Related Functions
-[$rolePerms](../Role/rolePerms.md), to check if a role has certain perms
-
-[$hasPerms](../Member/hasPerms.md), to check if a member has certain perms
-:::
-
-##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="Member" vertical="middle" /> <Badge type="tip" text="Perms" vertical="middle" /> <Badge type="tip" text="permissions" vertical="middle" /> <Badge type="tip" text="rights" vertical="middle" />
+##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" />
+###### Tags: <Badge type="tip" text="Member" vertical="middle" /> <Badge type="tip" text="Permissions" vertical="middle" /> <Badge type="tip" text="User Rights" vertical="middle" />

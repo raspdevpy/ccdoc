@@ -1,81 +1,44 @@
 # $authorAvatar
 
-Returns the URL to the User's avatar that triggered the command.
-
-::: tip Discord adds image to message if link provided  <Badge type="tip" text="Read examples section" vertical="middle"/>
-If a message contains only a link to an image, Discord sends **only** the image.
-
-If a message has a link to an image AND some text, Discord sends **both** the link and the image.
-
-To add image without posting the link use [$attachment](../Text/Embed/attachment.md)
-
-To send link as a plain text wrap the function into graves like<code>\`$authorAvatar\`</code>
-:::
+Returns the avatar (profile picture) URL of the user who executed the command.
 
 ## Usage
 
 ```bash
-$authorAvatar[Return Server Avatar Instead (yes/no, default is no)]
+$authorAvatar[serverAvatar]
 ```
+1. **serverAvatar** - (Optional) default value: `no`. Can be `yes` or `no`. Discord does have two types of avatars, global and per-server (custom avatar in each server). If no server avatar is set, the global avatar will be used.
 
 ## Examples
 
-### Message contains text and link to image
+#### Sending avatar URL
+
+How is the avatar URL displayed when sent with text and without text
 
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="crochet" avatar="https://cdn.discordapp.com/avatars/808007806266769458/768de61c5d90024e100ec5c058d3c2fe.webp?size=4096" >
-		!!exec My avatar link: $authorAvatar<br/>
-        Image attached below:
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp" >
-        My avatar link:
-            <a href="https://cdn.discordapp.com/avatars/808007806266769458/768de61c5d90024e100ec5c058d3c2fe.webp?size=4096">
-                https://cdn.discordapp.com/avatars/808007806266769458/768de61c5d90024e100ec5c058d3c2fe.webp?size=4096
-            </a><br/>
-        Image attached below:
-        <DiscordReaction image="https://cdn.discordapp.com/avatars/808007806266769458/768de61c5d90024e100ec5c058d3c2fe.webp?size=4096"></DiscordReaction>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec With text: $authorAvatar
     </discord-message>
-</discord-messages>
-
-### Message contains only link to image
-
-::: details Example
-<discord-messages>
-    <discord-message :bot="false" role-color="#ffcc9a" author="crochet" avatar="https://cdn.discordapp.com/avatars/808007806266769458/768de61c5d90024e100ec5c058d3c2fe.webp?size=4096" >
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        With text: <a href="https://cdn.discordapp.com/embed/avatars/0.png">
+        https://cdn.discordapp.com/embed/avatars/0.png
+        </a><br>
+        <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="User Avatar" style="vertical-align: text-bottom;" />
+    </discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
         !!exec $authorAvatar
     </discord-message>
-    <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp" >
-        <DiscordReaction image="https://cdn.discordapp.com/avatars/808007806266769458/768de61c5d90024e100ec5c058d3c2fe.webp?size=4096"></DiscordReaction>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="User Avatar" style="vertical-align: text-bottom;" />
     </discord-message>
 </discord-messages>
+
+::: tip Note
+You can send the image as an attachment, so no link will be displayed. For this, you can use function [$attachment](../Text/Embed/attachment.md).
+To display the avatar URL as plain text, either enclose the function in backticks (`` `$authorAvatar` ``) or angle brackets (`<$authorAvatar>`).
 :::
 
-### Send text and image without link
+##### Related functions: [$attachment](../Text/Embed/attachment.md)
 
-::: details Example
-<discord-messages>
-    <discord-message :bot="false" role-color="#ffcc9a" author="crochet" avatar="https://cdn.discordapp.com/avatars/808007806266769458/768de61c5d90024e100ec5c058d3c2fe.webp?size=4096" >
-        !!exec No link, only text and image<br/>
-        $attachment[$authorAvatar]
-    </discord-message>
-    <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp" >
-        No link, only text and image
-        <DiscordReaction image="https://cdn.discordapp.com/avatars/808007806266769458/768de61c5d90024e100ec5c058d3c2fe.webp?size=4096"></DiscordReaction>
-    </discord-message>
-</discord-messages>
-:::
-
-### Send link as plain text
-
-::: details Example
-<discord-messages>
-    <discord-message :bot="false" role-color="#ffcc9a" author="crochet" avatar="https://cdn.discordapp.com/avatars/808007806266769458/768de61c5d90024e100ec5c058d3c2fe.webp?size=4096" >
-        !!exec <DiscordMarkdown>`$authorAvatar`</DiscordMarkdown><br/>
-    </discord-message>
-    <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp" >
-        <DiscordMarkdown>
-            `https://cdn.discordapp.com/avatars/808007806266769458/768de61c5d90024e100ec5c058d3c2fe.webp?size=4096`
-        </DiscordMarkdown>
-    </discord-message>
-</discord-messages>
-:::
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
+###### Tags: <Badge type="tip" text="Image" vertical="middle"/> <Badge type="tip" text="Avatar" vertical="middle"/> <Badge type="tip" text="Attachment" vertical="middle"/> <Badge type="tip" text="profile picture" vertical="middle"/>

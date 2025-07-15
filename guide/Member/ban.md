@@ -1,50 +1,51 @@
 # $ban
-Bans a user from the server
 
-#### Usage: 
-`$ban[userID;reason;messages to delete (in days)]`
+Bans a user from the server.
 
-If member can be banned by the bot:
-<br/>
+## Usage
+
+```bash
+$ban[userID;reason;messages to delete]
+```
+1. **userID** - The ID of the user to ban.
+2. **reason** - The reason for the ban.
+3. **messages to delete** - The number of days to delete messages from this user. Maximum is 7 days, limited by Discord.
+
+## Examples
+
+#### Sucessful ban
+
+Successful ban with no response
+
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Discord Moderator">
-		!!exec $ban[$findMember[Unknown User];Spamming;7]
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $ban[123456789123456789;Spamming;7]
+    </discord-message>
 </discord-messages>
 
-If member can NOT be banned by the bot <Badge type="warning" text="Read Below why" vertical="middle" />
-<br/>
+#### Unsucessful ban
+
+Unsuccessful ban with error message
+
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Discord Moderator">
-		!!exec $ban[$ownerID;I'm a bad moderator;7]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		❌  Failed to ban undefined!
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $ban[$ownerID;Just a test;0]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        ❌ bot is missing enough permissions at line 1
+    </discord-message>
 </discord-messages>
 
-
-::: tip
-You can set days at maximum of 7 days, limitation from discord.
+::: tip Permissions
+Make sure that the bot does have sufficient permission. The bot also needs to be higher in role hierarchy then the user.
 :::
 
-::: tip Why can't the bot ban a member?
-It could be, that your bot role, is below the member role! 
-
-Discord prevents users (members/bots) from banning members above their highest role
+::: danger Important Note
+If any member who can execute the command with this function, they will be able to ban any member below the bot's highest role.
+Do not place the bot's role above Admin or Head Moderator roles to avoid banning important member.
 :::
 
-::: danger Be really careful with adding this to a command!
-EVERY member that can execute the command that this function is added in will be able to BAN everyone below the bot role!
+##### Related functions: [$kick](../Member/kick.md) [$unban](../Member/unban.md)
 
-We highly suggest, not putting the bot role above "Admin" and "head moderator"
-:::
-
-::: tip Related Functions
-[$kick](../Member/kick.md), to kick a member instead of banning him/here
-
-[$unban](../Member/unban.md), to unban a member,which is banned
-:::
-
-##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="ban" vertical="middle" /> <Badge type="tip" text="punish" vertical="middle" /> <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="moderation" vertical="middle" /> <Badge type="tip" text="moderator" vertical="middle" />
