@@ -59,6 +59,7 @@ Sending a embed with title `Hello` and description `World`
 | {removebutton:id} | remove a button with id, empty id will remove all buttons | `{removebutton:mybtnid}` |
 | {removemenu:id} | remove a menu with id, empty id will remove all buttons | `{removemenu:mybtnid}` |
 | {poll:data} | add a new poll to the message, learn more about data [here](../CodeReferences/ref.poll_data.md) | see example [here](../CodeReferences/ref.poll_data.md) |
+| {container:data} | add container for discord v2 components. | [see example here](../CodeReferences/ref.v2_components.md) |
 
 ::: tip Note
 Sometimes value contains characters like : (colon), [ , ; ,  ]<br>
