@@ -18,6 +18,21 @@ Used to send a modal, it must be used inside interaction like button/menu/slash 
 }
 
 {input=
+    {name=Menu name}
+    {type=menu}
+    {id=menu id}
+    {desc=Menu description}
+
+    // support menu curls, like below
+    {option=Option 1}
+    {value=option_1_id}
+
+    {option=Option 2}
+    {value=option_2_id}
+    ...
+}
+
+{input=
     {name=Input name}
     {id=Input id}
     ...
@@ -29,8 +44,8 @@ Used to send a modal, it must be used inside interaction like button/menu/slash 
 must be `yes` or `no`, the default is `yes`<br\>
 
 ##### **type**
-property must be `short` or `long`, the default is `short`, `short` means it accept only one line as input
-but `long` means it accept multiple lines
+property must be `short` or `long` or `menu`, the default is `short`, `short` means it accept only one line as input
+but `long` means it accept multiple lines. and `menu` to specify that input as menu instead of text input
 
 ##### **input**
 it can be multiple but max of 5 inputs
@@ -41,6 +56,13 @@ it can be multiple but max of 5 inputs
 
 #### Output
 ![](https://i.imgur.com/LF7cnOK.png)
+
+### Example With Menu
+#### Code
+![](https://i.imgur.com/ClY5l4b.png)
+
+#### Output
+![](https://i.imgur.com/chJsAth.png)
 
 ::: tip
 This can only be used inside the [modal trigger](../Trigger/modal.md)

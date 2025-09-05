@@ -1,6 +1,6 @@
 # $modalAnswer
 Returns an answer from a modal submitted by a user in the [modal trigger](../Trigger/modal.md)<br/>
-#### Usage: `$modalAnswer[Input Value]`
+#### Usage: `$modalAnswer[Input Value;Seperator (only for menu multiple values)]`
 Input Value is the input value used inside $modal function when sending the modal
 
 ### Example
