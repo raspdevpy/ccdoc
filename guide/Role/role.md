@@ -10,6 +10,9 @@ a compact function with many functionalities!
 * id - role's ID.
 * hex - role's hex color.
 * color - role's 10 base number
+* primaryColor - same as color
+* secondColor - secondary color in case of gradient
+* thirdColor - third color in case of there is tertiary color
 * created - role's date and time of creation.
 * position - role's position.
 * rawposition - role's raw position.
