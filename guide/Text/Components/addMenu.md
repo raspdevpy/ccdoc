@@ -9,12 +9,12 @@ $addMenu[
         {id=Menu ID}
         {ph=Placeholder}
         
-        {label=Option 1 Label}
+        {option=Option 1}
         {desc=Option 1 Description}
         {value=Option 1 ID}
         {emoji=Option 1 Emoji}
 
-        {label=Option 2 Label}
+        {option=Option 2}
         {desc=Option 2 Description}
         {value=Option 2 ID}
         {emoji=Option 2 Emoji}
@@ -28,10 +28,10 @@ $addMenu[
         {chid=$channelID}
         {mid=1151607052007907449}
         {id=mymenu}
-        {label=Rake}
+        {option=Rake}
         {value=rake}
         
-        {label=Mido}
+        {option=Mido}
         {value=mido}]
 ```
 

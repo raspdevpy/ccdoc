@@ -1,47 +1,169 @@
 # $selectMenu
 Creates a Menu with options.
 
-#### Usage: `$selectMenu[id;placeholder;min value(optional);max value;(optional);label;desc;value;value]` works only for one option
-##### Creating SelectMenu
-Code:
+#### Usage: `$selectMenu[{menu structure]` works only for one option
+
+#### Menu Structure
+to construct a menu inside $selectMenu, it needs to follow this structure
 ```
-$selectMenu[
-{id=id}
-{placeholder=Pls select your answer!}
-{min=1}
-{max=2}
-{label=Option one }
-{desc=txt for one}
-{value=one}
-{emoji=$customEmoji[accept]}
-{label=Option two }
-{desc=txt for two}
-{value=two}
-{emoji=$customEmoji[reject]}
-]
+{id=menu id}
+{placeholder/ph=A placeholder for the menu}
+{min=minimum options to be selected (i.e 1)}
+{max=maximum options to be selected (i.e 5)}
+{type=the menu type (i.e text/user/role/mention/channel)}
+
+
+// Each option can be structured like this
+{option=Option name}
+{value=option id}
+{desc=description of the option (optional)}
+{emoji=an emoji of the option (optional)}
+
 ```
+* `type` the menu type, can be `text` (default), `user` (to select a user), `role` (role select), `mention` (role or user select), `channel` (channel select) 
 * `id` the id of menu must be unique on multiple menus
-* `placeholder` 
+* `placeholder`
 * `min` minimum to select (optional)
 * `max` maximum to select (optional)
-* `label` label of option
+* `option` label of option
 * `desc` description of option
-* `value` value of option ,which [$eventSelected](./eventSelected.md) returns on usage
+* `value` id of option ,which [$eventSelected](./eventSelected.md) returns when the user selects the option
 * `emoji` emoji for option (optional)
 
 Info:
-* You can have up to 5 menus on a message
-* You can add maximal 20 options to a menu
-* Id of multiple menus can't be same
+* You can have up to 5 menu in a message
+* You can add maximal 20 options for each menu
+
+## Examples
+### Sending a menu with some options with $selectMenu
+```
+$selectMenu[
+    {id=my_menu}
+    {ph=Select the option}
+    {type=text}
+    {min=1}
+    {max=2}
+
+    {option=Option 1}
+    {value=option_1}
+
+    {option=Option 2}
+    {value=option_2}
+
+    {option=Option 3}
+    {value=option_3}
+]
+```
+![](https://i.imgur.com/pSIYauj.png)
+
+### Sending a menu with some options and selected some of them
+```
+$selectMenu[
+    {id=my_menu}
+    {ph=Select the option}
+    {type=text}
+    {min=1}
+    {max=2}
+
+    {option=Option 1}
+    {value=option_1}
+
+    {option=Option 2}
+    {value=option_2}
+
+    {option=Option 3}
+    {value=option_3}
+
+    {selected=option_1}
+    {selected=option_3}
+]
+```
+![](https://i.imgur.com/gAe2sP0.png)
+
+
+### Sending a menu to select user with $selectMenu
+```
+$selectMenu[
+    {id=my_menu}
+    {ph=Select the user}
+    {type=user}
+    {min=1}
+    {max=2}
+]
+```
+![](https://i.imgur.com/TuXQ5nN.png)
+
+### Sending a menu to select user with $sendMessage
+```
+$sendMessage[
+    {menu:
+        {id=my_menu}
+        {ph=Select the user}
+        {type=user}
+        {min=1}
+        {max=2}    
+    }
+]
+```
+![](https://i.imgur.com/EXOYY1k.png)
+
+### Sending a menu with selected user
+```
+$selectMenu[
+    {id=my_menu}
+    {ph=Select the user}
+    {type=user}
+    {min=1}
+    {max=2}
+    {selected_user=$userID}
+]
+```
+![](https://i.imgur.com/UmFu9Of.png)
+
+### Sending a menu with selected role
+```
+$selectMenu[
+    {id=my_menu}
+    {ph=Select the role}
+    {type=role}
+    {min=1}
+    {max=2}
+    {selected_role=$roleID[Test1]}
+]
+```
+![](https://i.imgur.com/XldvSKC.png)
+
+### Sending a menu with selected channel
+```
+$selectMenu[
+    {id=my_menu}
+    {ph=Select the channel}
+    {type=channel}
+    {min=1}
+    {max=2}
+    {selected_channel=$channelID}
+]
+```
+![](https://i.imgur.com/gNDtTWP.png)
+
+### Sending a menu with selected mentionable (user / role)
+```
+$selectMenu[
+    {id=my_menu}
+    {ph=Select user or role}
+    {type=mention}
+    {min=1}
+    {max=2}
+    {selected_role=$roleID[Test1]}
+    {selected_user=$userID}
+]
+```
+![](https://i.imgur.com/ZkamUGb.png)
 
 ::: tip {key=value} what is this for a syntax?
 This syntax is called curl args.It is really similar to curl message.Especially new Functions support it ,you can use !!func `function name` to check if it supports curl arguments.
  [Learn more](../guide/curl.md)
 :::
-
-Example:
-
-![](https://i.imgur.com/XbRhFaZ.png)
 
 ::: tip Do you want to add a menu inside a Function as a parameter, like `$sendMessage[text]`?
 
@@ -52,7 +174,7 @@ Use:
 {placeholder=Pls select your answer!}
 {min=1}
 {max=2}
-{label=Option one }
+{option=Option one }
 {desc=txt for one}
 {value=one}
 {emoji=$customEmoji[accept]}

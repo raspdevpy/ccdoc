@@ -17,7 +17,7 @@ The max time is `60 x bot tier` seconds, for example for tier 3 it would be `180
 ### Example:
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
-        !!exec You selected: $awaitMenu[<br>{title: Test}<br>{menu:<br>    {id=test}<br>    {placeholder=Select}<br>    {min=1}<br>    {max=1}<br>    {label=Mido}<br>    {desc=A guy}<br>    {value=mido}<br>    {label=Rake}<br>    {desc=Another guy}<br>    {value=rake}<br>}<br>;$authorID;;test]<br><br>
+        !!exec You selected: $awaitMenu[<br>{title: Test}<br>{menu:<br>    {id=test}<br>    {placeholder=Select}<br>    {min=1}<br>    {max=1}<br>    {option=Mido}<br>    {desc=A guy}<br>    {value=mido}<br>    {option=Rake}<br>    {desc=Another guy}<br>    {value=rake}<br>}<br>;$authorID;;test]<br><br>
           </discord-message>
 </discord-messages>
 
