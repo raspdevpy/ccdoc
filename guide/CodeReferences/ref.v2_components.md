@@ -15,6 +15,8 @@ You can use {container:data} to send a message with v2 component
 	{separator:...}
 }
 ```
+* total number of components (i.e container, text...) cannot exceed 40 in the whole message
+* container can hold up to 40 components (i.e text, gallery,...) as max.
 
 #### section structure
 section allow you to add a text + image + button together in inside the container, a section should contain at least one text and one accessory (image or button).
