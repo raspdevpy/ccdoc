@@ -17,7 +17,7 @@ You can use {container:data} to send a message with v2 component
 ```
 
 #### section structure
-section allow you to add a text + image + button together in inside the container
+section allow you to add a text + image + button together in inside the container, a section should contain at least one text and one accessory (image or button).
 the structure is:
 ```
 {section:
@@ -101,5 +101,20 @@ $sendMessage[
 ]
 ```
 
+### Example (Not using container)
+If you don't like how the container looks like, you can directly add components without it (only for text, section, gallery, file, separator)
+```php
+$sendMessage[
+	{section:
+		{text: a text inside section}
+		{thumb: $userAvatar}
+	}
+	{separator}
+	{section:
+		{text: a text inside another section}
+		{button:Click me:gray::btn_id}
+	}
+]
+```
 ### Output
-![](https://i.imgur.com/9bnlwKg.png)
+![](https://i.imgur.com/v8DYvPY.png)
