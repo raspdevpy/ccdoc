@@ -95,6 +95,8 @@ a compact function with many functionalities!
 
 * **stickers** - return all the stickers in the message, separated by `, ` 
 
+* **components** - return all components in the message like `{button:..} {container:...}`
+
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
