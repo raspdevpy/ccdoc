@@ -11,7 +11,7 @@ on:
       - main
 
 env:
-  REGISTRY: ${{ secrets.DOCKER_REGISTRY }}
+  REGISTRY: ${{ secrets.DOCKER_REGISTRY || 'docker.io' }}
   IMAGE_NAME: raspdevpy/${{ github.event.repository.name }}
 
 jobs:
