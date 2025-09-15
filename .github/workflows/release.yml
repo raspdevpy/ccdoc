@@ -12,7 +12,7 @@ on:
 
 env:
   REGISTRY: ${{ secrets.DOCKER_REGISTRY }}
-  IMAGE_NAME: raspdevpy/${{ github.repository_name }}
+  IMAGE_NAME: raspdevpy/${{ github.event.repository.name }}
 
 jobs:
   build-and-push:
