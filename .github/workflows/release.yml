@@ -4,11 +4,13 @@ on:
   push:
     branches:
       - main
+      - beta
     tags:
       - 'v*'
   pull_request:
     branches:
       - main
+      - beta
 
 env:
   REGISTRY: ${{ secrets.DOCKER_REGISTRY || 'docker.io' }}
