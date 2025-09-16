@@ -10,3 +10,4 @@ ignore/*
 guide/.vuepress/public/images/*
 .vscode
 OnTemplate.md
+.env
