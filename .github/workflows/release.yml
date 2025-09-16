@@ -16,10 +16,10 @@ env:
 
 jobs:
   build-and-push:
+    environment: ${{ github.event_name != 'pull_request' && 'Deploy Image' || '' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
