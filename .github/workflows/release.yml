@@ -63,5 +63,5 @@ jobs:
             BUILD_DATE=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.created'] }}
             GIT_COMMIT=${{ github.sha }}
             VERSION=${{ steps.meta.outputs.version }}
-          cache-from: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:cache
-          cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:cache,mode=max
+          cache-from: ${{ github.event_name == 'pull_request' && 'type=local,src=/tmp/.buildx-cache' || format('type=registry,ref={0}/{1}:cache', env.REGISTRY, env.IMAGE_NAME) }}
+          cache-to: ${{ github.event_name == 'pull_request' && 'type=local,dest=/tmp/.buildx-cache-new,mode=max' || format('type=registry,ref={0}/{1}:cache,mode=max', env.REGISTRY, env.IMAGE_NAME) }}
