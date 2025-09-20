@@ -1,8 +1,12 @@
 # $sendWebhook
 sends a webhook message using their id and token
 
-#### Usage: `$sendWebhook[webhookID;webhookToken;message;return message id (yes/no) optional;username (optional);avatar (optional)]`
-
+#### Usage: 
+```php
+$sendWebhook[webhookID;webhookToken;message;return message id (yes/no) optional;username (optional);avatar (optional)]
+or
+$sendWebhook[Webhook URL;;message;return message id (yes/no) optional;username (optional);avatar (optional)]
+```
 #### Example: 
 <br/>
 <discord-messages>
