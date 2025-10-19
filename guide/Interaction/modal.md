@@ -33,6 +33,21 @@ Used to send a modal, it must be used inside interaction like button/menu/slash 
 }
 
 {input=
+    {name=User/Role/Mention/Channel Menu name}
+    {type=user or role or mention or channel}
+    {id=menu id}
+    {desc=Menu description}
+
+    {selected=user id or role id or channel id} // for user/role/channel menu
+    ...
+
+    {selected_user=user id for mention} // for mention menu
+    {selected_role=role id for mention} // for mention menu
+    ...
+}
+
+
+{input=
     {name=Input name}
     {id=Input id}
     ...
@@ -44,11 +59,11 @@ Used to send a modal, it must be used inside interaction like button/menu/slash 
 must be `yes` or `no`, the default is `yes`<br\>
 
 ##### **type**
-property must be `short` or `long` or `menu`, the default is `short`, `short` means it accept only one line as input
-but `long` means it accept multiple lines. and `menu` to specify that input as menu instead of text input
+property must be `short`, `long`, `menu/user/role/mention/channel` , the default is `short`, `short` means it accept only one line as input
+but `long` means it accept multiple lines. and `menu/user/role/mention/channel` to specify that input as menu instead of text input
 
 ##### **input**
-it can be multiple but max of 5 inputs
+it can be multiple but max of 5 inputs, i.e (3 text inputs, 2 menus)
 
 ### Example
 #### Code
