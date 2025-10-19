@@ -29,3 +29,12 @@ The following table details the available time format macros and their descripti
 | `0s`    | Seconds with leading zero                          | `03`        |
 | `ampm`  | AM/PM indicator                                   | `PM` / `AM` |
 | `tz`    | Timezone abbreviation                             | `UTC`       |
+
+### Example
+```php
+$timeToDate[$timestamp;%y%-%m%-%d%]
+```
+Result:
+```
+2025-8-15
+```

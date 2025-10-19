@@ -25,3 +25,12 @@ like [$timeToDate](../Date/timeToDate.md)
 | 0s | seconds but with padding zero like 03 |
 | ampm | PM / AM |
 | tz | Timezone used like UTC |
+
+### Example
+```php
+$timeToDate[$timestamp;%y%-%m%-%d%]
+```
+Result:
+```
+2025-8-15
+```
