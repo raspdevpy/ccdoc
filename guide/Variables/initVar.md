@@ -5,6 +5,6 @@ Initializes a variable value to a default, specified in "Defaultvalue"
 <br/>
 <discord-messages>
     <discord-message :bot="false" role-color="#ffcc9a" author="Member">
-        !!exec $$initVar[user;warnings;0;$authorID]
+        !!exec $initVar[user;warnings;0;$authorID]
     </discord-message>
 </discord-messages>
