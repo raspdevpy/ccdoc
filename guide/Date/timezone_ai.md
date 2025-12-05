@@ -14,7 +14,6 @@ Replace `Region/City` with the desired timezone. For example, `Europe/Zurich` or
 
 This example demonstrates how `$timezone` changes the output of the `$hour` function.
 
-```html
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec 
@@ -27,7 +26,7 @@ This example demonstrates how `$timezone` changes the output of the `$hour` func
         after Change  Europe/Zurich 12
 	</discord-message>
 </discord-messages>
-```
+
 
 In this example:
 
