@@ -1,6 +1,6 @@
 # $creationDate
 Returns the creation date of given channel, guild, emoji, user or role ID.
-#### Usage: `$creationDate[emojiID/userID/roleID/channelID/guildID;date/time/ms (optional)]`
+#### Usage: `$creationDate[emojiID/userID/roleID/channelID/guildID;date/ms (optional)]`
 Example:
 <br/>
 <discord-messages>
