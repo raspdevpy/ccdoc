@@ -21,7 +21,7 @@ Used to send a modal, it must be used inside interaction like button/menu/slash 
     {name=Menu name}
     {type=menu}
     {id=menu id}
-    {desc=Menu description}
+    {subtitle=Menu subtitle (description)}
 
     // support menu curls, like below
     {option=Option 1}
@@ -36,7 +36,7 @@ Used to send a modal, it must be used inside interaction like button/menu/slash 
     {name=User/Role/Mention/Channel Menu name}
     {type=user or role or mention or channel}
     {id=menu id}
-    {desc=Menu description}
+    {subtitle=Menu subtitle (description)}
 
     {selected=user id or role id or channel id} // for user/role/channel menu
     ...
