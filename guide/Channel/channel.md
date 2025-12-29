@@ -6,8 +6,9 @@ Gets specific information about a channel.
 
 `Option` can be any of these:
 ```
-name, id, isdeleted, mention, position, rawposition, topic, type, created, timestamp, guildid, guildname, ismanageable, parentid, parentname, isviewable, isdeletable, region
+name, id, isdeleted, mention, position, rawposition, topic, type, created, timestamp, guildid, guildname, ismanageable, parentid, parentname, isviewable, isdeletable, region, limit
 ```
+
 
 #### Example:
 <discord-messages>
@@ -19,6 +20,9 @@ name, id, isdeleted, mention, position, rawposition, topic, type, created, times
 	</discord-message>
 </discord-messages>
 
+::: tip Voice Channel Limit
+When the channel is voice, you can get the user limit with `limit`, it will return 0 if no limit.
+:::
 
 ::: tip Note
 The `type` argument returns a type of channel from this [list.](../CodeReferences/ref.channel_types.md)
