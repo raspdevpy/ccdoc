@@ -17,6 +17,9 @@ Retrieve an information about user given his user id, like his username.
 | created | user account date and time of creation |
 | timestamp | creation timestamp of user account |
 | displayname | user display name if exists, otherwise username |
+| clantag | user equipped clan tag if exists |
+| clantagserver | Server id of the user equipped clan tag if exists |
+| clantagicon | Icon URL of the user equipped clan tag if exists |
 
 <br/>
 <discord-messages>
