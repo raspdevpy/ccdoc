@@ -15,23 +15,24 @@ You can use {container:data} to send a message with v2 component
 	{separator:...}
 }
 ```
-* total number of components (i.e container, text...) cannot exceed 40 in the whole message
-* container can hold up to 40 components (i.e text, gallery,...) as max.
-* total text content length in the message should be at max of 4000
+* Total number of components (i.e container, text...) cannot exceed 40 in the entire message
+* Containers can hold up to 40 components (i.e text, gallery,...) at max.
+* Total text content length in the message cannot exceed 4000
 
-#### section structure
-section allow you to add a text + image + button together in inside the container, a section should contain at least one text and one accessory (image or button).
-the structure is:
+#### Section structure
+Section allows you to add a text + image + button together inside a container. A section should contain at least one text and one accessory (image or button). If you are putting this inside a container and want *only* the thumbnail to be a spoiler, use {spoiler:yes} inside the section.
+The structure is:
 ```
 {section:
 	{text: any text inside the section}
 	{thumbnail/thumb: an image URL to show inside the section}
 	{button:Name:color:emoji:id:new line (yes/no):disabled (yes/no)}
+	{spoiler:yes/no}
 }
 ```
  
-#### gallery structure
-gallery, allows you to show multiple images together like a gallery, up to 10 images.
+#### Gallery structure
+Gallery allows you to show multiple images together like a gallery. Supports up to 10 images for each gallery component.
 the structure is:
 ```
 {gallery:
@@ -42,8 +43,8 @@ the structure is:
 }
 ```
 
-#### row structure
-row, allows you to include multiple buttons at once (up to 5 buttons)
+#### Row structure
+Row allows you to include multiple buttons at once (up to 5 buttons per row). Buttons are like the normal button curl. Read more about button at [$button](../Text/Components/button.md)
 the structure is:
 ```
 {row:
@@ -54,23 +55,23 @@ the structure is:
 }
 ```
 
-#### menu structure
-menu, like the normal menu curl, to form a menu inside the container, read more about menu in [$selectMenu](../Text/Components/selectMenu.md)
+#### Menu structure
+Menu is like the normal menu curl. It can be used to form a menu inside a container. Read more about menu at [$selectMenu](../Text/Components/selectMenu.md)
 
-#### file structure
-you set a file in the container for download , the structure is:
+#### File structure
+You can set a file in the container for downloading, the structure is:
 ```
 {file:name of the file:file content as text}
 ```
 
-#### separator structure
-you can set a separator between other components in the container with {separator}, the structure is:
+#### Separator structure
+You can set a separator between other components in the container with {separator}, the structure is:
 ```
 {separator:divide (yes/no):size (1 or 2)}
 ```
 
-#### spoiler
-spoiler, allow you to determine if the whole container will be marked as spoiler or not (user will need to click to view)
+#### Spoiler
+Spoiler, allow you to determine if the whole container will be marked as spoiler or not (user will need to click to view).
 ```
 {spoiler:yes/no}
 ```
@@ -78,33 +79,33 @@ spoiler, allow you to determine if the whole container will be marked as spoiler
 ### Example
 ```
 $sendMessage[
-{container:
-
-{text:a text inside container}
-{separator:no:2}
-{gallery:
-{image:$userAvatar}
-}
-{row:
-{button:BTN 1:red::btn1}
-{button:BTN 2:GREEN::btn2}
-}
-{text:a text before the section}
-{section:
-{text:a text inside the section}
-{thumbnail:$userAvatar}
-{button: BTN 3:gray:btn3}
-}
-
-{file:file.txt:Whatever}
-
-{color:Green}
-{spoiler:yes}
-}
+	{container:
+		
+		{text:a text inside container}
+		{separator:no:2}
+		{gallery:
+			{image:$userAvatar}
+		}
+		{row:
+			{button:BTN 1:red::btn1}
+			{button:BTN 2:GREEN::btn2}
+		}
+		{text:a text before the section}
+		{section:
+			{text:a text inside the section}
+			{thumbnail:$userAvatar}
+			{button: BTN 3:gray:btn3}
+		}
+		
+		{file:file.txt:Whatever}
+		
+		{color:Green}
+		{spoiler:yes}
+	}
 ]
 ```
 
-### Example (Not using container)
+### Example (Not using a container)
 If you don't like how the container looks like, you can directly add components without it (only for text, section, gallery, file, separator)
 ```php
 $sendMessage[
