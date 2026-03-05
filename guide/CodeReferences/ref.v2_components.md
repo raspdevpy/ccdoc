@@ -19,9 +19,8 @@ You can use {container:data} to send a message with v2 component
 * Containers can hold up to 40 components (i.e text, gallery,...) at max.
 * Total text content length in the message cannot exceed 4000
 
-#### Section structure
-Section allows you to add a text + image + button together inside a container. A section should contain at least one text and one accessory (image or button). If you are putting this inside a container and want *only* the thumbnail to be a spoiler, use {spoiler:yes} inside the section.
-The structure is:
+#### Section
+Sections allow you to add text, along with a thumbnail or button inside a container. A section should contain at least one text and one accessory (image or button). If you are putting this inside a container and want *only* the thumbnail to be a spoiler, use {spoiler:yes} inside the section.
 ```
 {section:
 	{text: any text inside the section}
@@ -31,9 +30,8 @@ The structure is:
 }
 ```
  
-#### Gallery structure
-Gallery allows you to show multiple images together like a gallery. Supports up to 10 images for each gallery component.
-the structure is:
+#### Gallery
+Galleries allows you to show multiple images together like a gallery. Supports up to 10 images for each gallery component.
 ```
 {gallery:
 	{image: image 1 url}
@@ -43,9 +41,8 @@ the structure is:
 }
 ```
 
-#### Row structure
-Row allows you to include multiple buttons at once (up to 5 buttons per row). Buttons are like the normal button curl. Read more about button at [$button](../Text/Components/button.md)
-the structure is:
+#### Rows
+Rows allow you to include multiple buttons at once (up to 5 buttons per row). Buttons are like the normal button curl, read more about button curl format at [$button](../Text/Components/button.md).
 ```
 {row:
 	{button: button 1 details}
@@ -55,17 +52,17 @@ the structure is:
 }
 ```
 
-#### Menu structure
-Menu is like the normal menu curl. It can be used to form a menu inside a container. Read more about menu at [$selectMenu](../Text/Components/selectMenu.md)
+#### Menu
+Menus are like the normal menu curl. It can be used to form a menu inside a container. Read more about menu at [$selectMenu](../Text/Components/selectMenu.md)
 
-#### File structure
-You can set a file in the container for downloading, the structure is:
+#### File
+You can set a file in the container for downloading.
 ```
 {file:name of the file:file content as text}
 ```
 
-#### Separator structure
-You can set a separator between other components in the container with {separator}, the structure is:
+#### Separator
+You can set a separator between other components in the container with {separator}
 ```
 {separator:divide (yes/no):size (1 or 2)}
 ```
@@ -80,7 +77,6 @@ Spoiler, allow you to determine if the whole container will be marked as spoiler
 ```
 $sendMessage[
 	{container:
-		
 		{text:a text inside container}
 		{separator:no:2}
 		{gallery:
@@ -98,24 +94,24 @@ $sendMessage[
 		}
 		
 		{file:file.txt:Whatever}
-		
+
 		{color:Green}
 		{spoiler:yes}
 	}
 ]
 ```
 
-### Example (Not using a container)
+### Example (Without a container)
 If you don't like how the container looks like, you can directly add components without it (only for text, section, gallery, file, separator)
 ```php
 $sendMessage[
 	{section:
-		{text: a text inside section}
-		{thumb: $userAvatar}
+		{text:a text inside section}
+		{thumb:$userAvatar}
 	}
 	{separator}
 	{section:
-		{text: a text inside another section}
+		{text:a text inside another section}
 		{button:Click me:gray::btn_id}
 	}
 ]
