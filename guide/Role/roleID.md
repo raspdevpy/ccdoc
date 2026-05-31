@@ -1,5 +1,5 @@
 # $roleID
-Returns the ID of a role.
+Returns the ID of a role. When used in `Role Given/Taken` trigger and a name is not specified, the triggering role ID is returned.
 
 #### Usage: 
 `$roleID[ROLE NAME]`
