@@ -6,6 +6,7 @@ Used to send a modal, it must be used inside interaction like button/menu/slash 
 ```
 {title=The modal title}
 {id=The modal id}
+
 {input=
     {name=Input name}
     {id=Input id}
@@ -23,34 +24,31 @@ Used to send a modal, it must be used inside interaction like button/menu/slash 
     {id=menu id}
     {subtitle=Menu subtitle (description)}
 
-    // support menu curls, like below
     {option=Option 1}
     {value=option_1_id}
 
     {option=Option 2}
     {value=option_2_id}
-    ...
 }
 
 {input=
-    {name=User/Role/Mention/Channel Menu name}
+    {name=Attachment Input}
+    {type=attachment}
+    {id=input id}
+    {subtitle=Attachment subtitle (description)}
+    {min=Min number of attachments (1-10)}
+    {max=Max number of attachments (1-10)}
+    {required=yes/no}
+}
+
+{input=
+    {name=Select Menu}
     {type=user or role or mention or channel}
     {id=menu id}
     {subtitle=Menu subtitle (description)}
-
-    {selected=user id or role id or channel id} // for user/role/channel menu
-    ...
-
-    {selected_user=user id for mention} // for mention menu
-    {selected_role=role id for mention} // for mention menu
-    ...
-}
-
-
-{input=
-    {name=Input name}
-    {id=Input id}
-    ...
+    {selected=ID} // Prefilled ID for user/role/channel menus
+    {selected_user=ID} // Prefilled user ID for mention menus
+    {selected_role=ID} // Prefilled role ID for mention menus
 }
 
 ```
@@ -59,11 +57,14 @@ Used to send a modal, it must be used inside interaction like button/menu/slash 
 must be `yes` or `no`, the default is `yes`<br\>
 
 ##### **type**
-property must be `short`, `long`, `menu/user/role/mention/channel` , the default is `short`, `short` means it accept only one line as input
-but `long` means it accept multiple lines. and `menu/user/role/mention/channel` to specify that input as menu instead of text input
+Specifies the input type for the input.
+* **`short` (Default):** A single-line text input field.
+* **`long`:** A multi-line text area for longer responses.
+* **`menu/user/role/mention/channel`:** A dropdown selection menu instead of a text field.
+* **`attachment/attach`:** A file upload input field.
 
-##### **input**
-it can be multiple but max of 5 inputs, i.e (3 text inputs, 2 menus)
+#### Max Amount of Inputs
+You can include multiple input fields, up to a maximum of 5 total (for example: 3 text inputs and 2 selection menus).
 
 ### Example
 #### Code
