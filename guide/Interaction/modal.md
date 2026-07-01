@@ -3,6 +3,7 @@ Used to send a modal, it must be used inside interaction like button/menu/slash 
 #### Usage: `$modal[Input]`
 
 **Input** will accept this format:
+
 ```
 {title=The modal title}
 {id=The modal id}
@@ -51,20 +52,58 @@ Used to send a modal, it must be used inside interaction like button/menu/slash 
     {selected_role=ID} // Prefilled role ID for mention menus
 }
 
+{input=
+    {name=Radio Group Name}
+    {type=radio}
+    {id=radio id}
+    {subtitle=Radio subtitle (description)}
+    {required=yes/no}
+
+    {option=Option 1}
+    {value=option_1_id}
+
+    {option=Option 2}
+    {value=option_2_id}
+}
+
+{input=
+    {name=Checkbox Group Name}
+    {type=checkbox}
+    {id=checkbox id}
+    {subtitle=Checkbox subtitle (description)}
+    {required=yes/no}
+    {min=Minimum required choices (0-10)}
+    {max=Maximum allowed choices (1-10)}
+
+    {option=Option 1}
+    {value=option_1_id}
+
+    {option=Option 2}
+    {value=option_2_id}
+}
+
 ```
+
 #### Notes on input properties:
+
 ##### **required**
-must be `yes` or `no`, the default is `yes`<br\>
+
+must be `yes` or `no`, the default is `yes`<br>
 
 ##### **type**
+
 Specifies the input type for the input.
+
 * **`short` (Default):** A single-line text input field.
 * **`long`:** A multi-line text area for longer responses.
 * **`menu/user/role/mention/channel`:** A dropdown selection menu instead of a text field.
 * **`attachment/attach`:** A file upload input field.
+* **`radio`:** A multiple choice list where only **one** item can be selected (Min 2 options, Max 10).
+* **`checkbox`:** A multiple choice list where **several** items can be checked (Min 1 option, Max 10).
 
 #### Max Amount of Inputs
-You can include multiple input fields, up to a maximum of 5 total (for example: 3 text inputs and 2 selection menus).
+
+You can include multiple input fields, up to a maximum of 5 total (for example: 2 text inputs, 1 attachment input, and 2 radio/checkbox fields).
 
 ### Example
 #### Code
