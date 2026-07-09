@@ -8,7 +8,7 @@ Sets the Custom Bot's activity.
 $setBotActivity[activity type;activity text]
 ```
 
-> **Activity types are**: playing, streaming, listening, watching, competing
+> **Activity types are**: playing, streaming, listening, watching, competing, custom
 
 ### Example:
 ```bash
