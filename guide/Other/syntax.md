@@ -130,8 +130,8 @@ Some other dangerous characters
 
 ## Encoded Character Codes (Alternative of `\`)
 ```js
-#RIGHT# =>> [
-#LEFT# =>> ]
+#LEFT# =>> [
+#RIGHT# =>> ]
 #SEMI# =>> ;
 #COLON# =>> :
 #DOLLAR# =>> $
@@ -139,8 +139,8 @@ Some other dangerous characters
 #RIGHT_CLICK# =>> >
 #LEFT_CLICK# =>> <
 #EQUAL# =>> =
-#RIGHT_BRACKET# =>> {
-#LEFT_BRACKET# =>> }
+#LEFT_BRACKET# =>> {
+#RIGHT_BRACKET# =>> }
 #NL# =>> New line 
 #BR# =>> New line
 #SP# =>> Space
