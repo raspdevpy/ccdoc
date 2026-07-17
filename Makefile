@@ -2,7 +2,8 @@ include .env
 
 # Variables
 # DOCKER_REGISTRY ?=
-DOCKER_REPO ?= raspdevpy/$(shell basename `git remote get-url origin`)
+BRANCH ?= $(shell git branch --show-current)
+DOCKER_REPO ?= ccdoc-$(BRANCH)
 VERSION ?= $(shell git describe --tags --always --dirty)
 LATEST_TAG := latest
 BUILD_DATE := $(shell date -u +"%Y-%m-%dT%H:%M:%SZ")
@@ -49,7 +50,12 @@ push: ## Push Docker image to registry
 	@echo "Pushed: $(IMAGE_TAG)"
 	@echo "Pushed: $(LATEST_IMAGE)"
 
-release: build test push ## Build, test and push Docker image
+extract_data:
+	docker compose up ccdoc-data-extract --detach
+	docker cp ccdoc-data-extract:/app/data.json ./data.json
+	docker compose down ccdoc-data-extract
+
+release: build test push extract_data ## Build, test and push Docker image
 	@echo "Release completed for version: $(VERSION)"
 
 clean: ## Remove local Docker images
