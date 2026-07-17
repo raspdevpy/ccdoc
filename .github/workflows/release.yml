@@ -14,7 +14,7 @@ on:
 
 env:
   REGISTRY: ${{ secrets.DOCKER_REGISTRY || 'docker.io' }}
-  IMAGE_NAME: raspdevpy/${{ github.event.repository.name }}
+  IMAGE_NAME: ccdoc
 
 jobs:
   build-and-push:
@@ -22,11 +22,24 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Get image version
+        id: version
+        shell: bash
+        run: |
+          BRANCH="${GITHUB_REF_NAME}"
+          VERSION=$(git describe --tags --always --dirty)
+
+          echo "branch=${BRANCH}" >> "$GITHUB_OUTPUT"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+
+          echo "Image: ccdoc-${BRANCH}:${VERSION}"
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -43,14 +56,10 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-${{ steps.version.outputs.branch }}
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr,prefix=pr-
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
-            type=raw,value=latest,enable={{is_default_branch}}
+            type=raw,value=${{ steps.version.outputs.version }}
+            type=raw,value=latest
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
@@ -61,9 +70,12 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
           build-args: |
             BUILD_DATE=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.created'] }}
             GIT_COMMIT=${{ github.sha }}
-            VERSION=${{ steps.meta.outputs.version }}
-          cache-from: ${{ github.event_name == 'pull_request' && 'type=local,src=/tmp/.buildx-cache' || format('type=registry,ref={0}/{1}:cache', env.REGISTRY, env.IMAGE_NAME) }}
-          cache-to: ${{ github.event_name == 'pull_request' && 'type=local,dest=/tmp/.buildx-cache-new,mode=max' || format('type=registry,ref={0}/{1}:cache,mode=max', env.REGISTRY, env.IMAGE_NAME) }}
+            VERSION=${{ steps.version.outputs.version }}
+
+          cache-from: ${{ github.event_name == 'pull_request' && 'type=local,src=/tmp/.buildx-cache' || format('type=registry,ref={0}/{1}-cache', env.REGISTRY, env.IMAGE_NAME) }}
+
+          cache-to: ${{ github.event_name == 'pull_request' && 'type=local,dest=/tmp/.buildx-cache-new,mode=max' || format('type=registry,ref={0}/{1}-cache,mode=max', env.REGISTRY, env.IMAGE_NAME) }}
