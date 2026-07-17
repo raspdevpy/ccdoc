@@ -170,7 +170,7 @@ Let's try sending some mentions:
 It detects all of them!
 
 ## Any message
-From time to time you may not now what the message content will be, you can make cc trigger to any message sent in a channel.
+From time to time you may not know what the message content will be, you can make cc trigger to any message sent in a channel.
 
 ### How does it work?
 It can be done using `%all%` trigger, it makes the command execute regardless of the content.
