@@ -40,6 +40,7 @@ module.exports= {
 		},
 		
 		getSideBar('Guide','Full Guide'),
+		getSideBar('Changelogs','Changelogs', {collapsible:true}),
 		getSideBar('Trigger','Trigger Types'),
 		getSideBar('Tutorials','Tutorials & Examples'),
 
