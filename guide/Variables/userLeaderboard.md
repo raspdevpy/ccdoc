@@ -1,5 +1,5 @@
 # $userLeaderboard
-generate a leaderboard of a user variable and return it
+Generates a leaderboard of a user variable and return it.
 
 #### Usage: `$userLeaderboard[variable;asc/desc (optional);{top}.- {username} - {value};list (optional, max=40);page (optional)]`
 
@@ -17,11 +17,11 @@ Available Variables:
 | {discriminator} | returns the discriminator like 1234 |
 
 Order:
-* `desc`: Rank is sorted from big to small numbers
-* `asc`: Rank is sorted from small to big numbers
+* `desc`: Will display all the members' ranks from largest to smallest.
+* `asc`: Will display all the members' ranks from smallest to largest.
 
 #### Example:
-To use this function your uservar must have nummeric values .
+To use this function your uservar must have numeric values .
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Mido">

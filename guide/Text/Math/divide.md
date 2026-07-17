@@ -1,5 +1,5 @@
 # $divide
-divides (a) number(s) from each other
+divides (a) number(s) from each other, from left to right
 
 #### Usage: `$divide[10;2;...]`
 <br/>

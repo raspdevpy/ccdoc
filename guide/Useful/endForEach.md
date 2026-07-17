@@ -1,6 +1,6 @@
 # $endForEach
 
-its used as closer for $forEach
+To close $foreach
 
 ## Usage
 

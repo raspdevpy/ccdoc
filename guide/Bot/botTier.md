@@ -1,11 +1,15 @@
-# $botTier
+# Bot Tier
 
-Returns the bot's current tier.
-The standard (free) bot is Tier 0.
+This command retrieves the current tier level of your bot.
 
-## Usage
+The standard, free version of the bot operates at **Tier 0**.
 
-```bash
+## How to Use
+
+Simply use the command:
+
+```
 $botTier
 ```
 
+The command will then return the tier level of your bot.

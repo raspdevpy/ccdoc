@@ -1,7 +1,7 @@
 # $footer
-Adds a footer to a message
+Adds a footer to a message embed with an optional icon url
 
-#### Usage: `$footer[YOUR TEXT HERE;icon url(optional)]`
+#### Usage: `$footer[text;icon url(optional)]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

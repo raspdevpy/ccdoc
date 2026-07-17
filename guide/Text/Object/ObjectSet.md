@@ -5,7 +5,7 @@ set an object property value by key
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $createObject[{"name":"Wiki"}] $objectSet[name;Rake] $objectSet[tag;0001] $getObject
+		!!exec $objectCreate[{"name":"Wiki"}] $objectSet[name;Rake] $objectSet[tag;0001] $getObject
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
 		{"name":"Rake","tag":"0001"}
@@ -14,12 +14,12 @@ set an object property value by key
 
 ::: tip Setting Objects inside Objects
 ```
-$createobject[{"type":0}]
+$objectCreate[{"type":0}]
 
 $objectset[version;2.5]
 /* will return {"type:0,"version":"2.5"} */
 
-$createobject[{"type":0}]
+$objectCreate[{"type":0}]
 
 $objectSet[userdata;age;20]
 $objectSet[userdata;name;Member]
@@ -29,7 +29,7 @@ $objectSet[userdata;role;Moderator]
 
 ::: tip Setting values inside array
 ```
- $createobject[{ "userdata":{
+ $objectCreate[{ "userdata":{
   "age":0,
   "name":"undefined",
   "role":"undefined"
@@ -40,7 +40,7 @@ $objectSet[userdata;name;Member]
 $objectSet[userdata;role;Moderator]
 /* this is the format for normal groups */
 
-$createobject[{ "userdata":[{
+$objectCreate[{ "userdata":[{
   "age":0,
   "name":"undefined",
   "role":"undefined"

@@ -1,46 +1,41 @@
 # Custom Bot
-You can find here how to setup custom bot. You need this if you have tier 3+ by redeeming it or by winning in our support server.
+Here you can find how to setup your custom bot. You need to do this if you have tier 3+ by redeeming it or by winning in our support server.
 
-# Steps (Only Once)
-## 1. Go to [Discord Dev Portal](https://discord.com/developers/applications)
+# Steps (Only do these once)
+## 1. Go to the [Discord Developer Portal](https://discord.com/developers/applications)
 
 
 ## 2. Create a new Application
 
-![](https://i.imgur.com/VcKrqRi.png)
+![](https://i.imgur.com/kA8EKS7.png)
 
 
 ## 3. Enter a name and press the create button
 
-![](https://i.imgur.com/5Xv7dk6.png)
+![](https://i.imgur.com/46zlT4y.png)
 
-## 4. Go to `Bot` and click `Add Bot`
-![go to section bot](https://i.imgur.com/zzLXLE3.png)
+## 4. Go to `Bot`
+![go to section bot](https://i.imgur.com/xUCbccq.png)
 
-![](https://i.imgur.com/yFqcwpC.png)
+## 5. Click Reset Token, to show a new valid token
+![](https://i.imgur.com/GbWfwyy.png)
 
-![you can customize it if you want](https://i.imgur.com/f3cOEW2.png)
+## 6. Click on 'Copy' to copy the token
+![](https://i.imgur.com/pHYqcIT.png)
 
-## 5. Enable the intents
-![enable the intent](https://i.imgur.com/Vg5ugu7.png)
+## 7. Go to the [Dashboard](https://ccommandbot.com/dashboard) and select the server where you want premium.
+![](https://i.imgur.com/Ostshet.png)
 
-## 6. Generate the invitation link, copy it and invite the bot to your server
-![generating the invite link](https://i.imgur.com/KpZEmDa.png)
+![](https://i.imgur.com/fQXdiT3.png)
 
-## 7. Copy the `Application ID` and `Token` to your Clipboard
-![](https://i.imgur.com/OipIbR1.png)
 
-![](https://i.imgur.com/FR3sH1v.png)
+## 8. Paste the copied token in 'Token' input and then click 'Save' button
+![](https://i.imgur.com/2FAuEKp.png)
 
-## 8. Go to the Dashboard and select the server where you want to have premium.
-![](https://i.imgur.com/A5lqSco.png)
 
-- Then paste the copied `Application ID` and `Token` to `Client ID` and `Token`
+## 9. Click on 'Invite your bot', and invite the bot to your server.
+![](https://i.imgur.com/zkjCUvB.png)
 
-![](https://i.imgur.com/xcgBVht.png)
 
-## 9.Change the Prefix from `!!` to any of your choice
-
-10.Press `Save Bot` and wait for few minutes, your bot should go online.
-
-and that's it :tada:.
+## 10. You are done!
+  Wait for few minutes and your bot should go online and that's it :tada:! **Ensure to keep the main bot in your server, otherwise you'll lose the ability to access the dashboard!**

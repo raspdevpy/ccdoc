@@ -1,14 +1,14 @@
 # Menu Interaction
 
 ## Basic Information
-This trigger type, will trigger when a user select an option in a menu. 
+This trigger type will trigger when a user selects an option in a menu. 
 
 ## Syntax
 the value is the menu id, for example:
 
-`test` -> will trigger only when a user select an option in a menu with id `test`
+`test` -> will trigger only when a user selects an option in a menu with id `test`
 
-`menu_1|menu_2` -> will trigger only when a user select an option in a menu with id `menu_1` or `menu_2`
+`menu_1|menu_2` -> will trigger only when a user selects an option in a menu with id `menu_1` or `menu_2`
 
 ## Example
 ### let's first send a menu (with id mymenu) with some options using [$selectMenu](../Text/Components/selectMenu.md)

@@ -1,9 +1,9 @@
 # $onlyForCategories
-Only in given categories categorie will be able to execute this command
+The command will only be executable in the provided categories.
 
 #### Usage: `$onlyForCategories[categoryID;categoryID;...;error message]`
 
-#### Example: `$onlyForCategories[797978978978988;:x: - this command is restricted to Main category]`
+#### Example: `$onlyForCategories[797978978978988;:x: - this command is restricted to the Main category]`
 
 ::: danger
 Use this code, on the FIRST line of your code! If you do not, it will execute all code before this line and not after!

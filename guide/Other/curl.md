@@ -1,6 +1,6 @@
 # Curl Arguments
-Curl arguments helps to pass arguments to a function instead of using a param array like $randomText[one;two;three].
-We have added curl arguments to improve the readability of long and complicated codes. Its not required anymore to fill optional values with `;;;`
+Curl arguments help to pass arguments to a function instead of using a parameter array like $randomText[one;two;three].
+We have added curl arguments to improve the readability of long and complicated codes. With curl it's not required to fill optional values with empty parameter values like this: `;;;`
 
 
 ## Example
@@ -13,8 +13,8 @@ $createChannel[
 ]
 ```
 
-will create a channel without having to specify params like "return ID" & "NSFW"
+This will create a channel without having to specify parameters like "return ID" or "NSFW"
 
 ## Curl support
-Curl are not supported on every function.
-Check the curl support by using !!func `fname`
+Curl is not supported on every function.
+Check if a function supports curl by using !!func `function name`

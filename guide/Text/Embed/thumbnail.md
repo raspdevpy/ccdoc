@@ -1,5 +1,5 @@
 # $thumbnail
-Adds an thumbnail to an message
+Adds a thumbnail to a message embed.
 
 #### Usage: `$thumbnail[YOUR URL HERE]`
 <br/>

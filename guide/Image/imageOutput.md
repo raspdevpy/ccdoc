@@ -1,9 +1,6 @@
 # $imageOutput
 
-Generate the current draw into file, and return the filename, it can be used inside $image or {image:.\
-.\
-.\
-} and other places that accept image
+Generate the current draw into file, and return the filename, it can be used inside $image or {image:...} and other places that accept image
 
 ## Usage
 

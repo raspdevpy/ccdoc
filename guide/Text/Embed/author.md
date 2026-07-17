@@ -1,7 +1,7 @@
 #  $author
-Adds the author to a message with hyper link / icon or text
+Adds an author to a message embed, with an optional icon url and/or hyperlink.
 
-#### Usage: `$author[text;icon url(optional);hyper link(optional)]`
+#### Usage: `$author[text;icon url(optional);hyperlink(optional)]`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

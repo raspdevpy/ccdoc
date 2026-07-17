@@ -1,6 +1,6 @@
 # $abs
 
-Return the absolute of a number
+Return the absolute value of a number. Basically forces a number to be positive
 
 ## Usage
 

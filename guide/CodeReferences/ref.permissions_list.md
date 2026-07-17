@@ -1,63 +1,72 @@
-# Channel/User/Role Permissions
-Some functions needs a permissions names
-like `$modifyChannelPerms, $modifyRolePerms...`
+# Understanding Channel, User, and Role Permissions
 
-### Permissions:
+Several bot functions, such as `$modifyChannelPerms` and `$modifyRolePerms`, require you to specify permission names. This page provides a comprehensive list of these permission names and their descriptions.
+
+### Available Permissions:
+
+Here's a breakdown of the permissions you can use:
+
+*   **admin:** Administrator (Grants all permissions)
+*   **manageserver:** Manage Server (Modify server settings)
+*   **kick:** Kick User (Remove members from the server)
+*   **ban:** Ban User (Permanently remove members from the server)
+*   **manageroles:** Manage Roles (Create, edit, and delete roles)
+*   **managechannels:** Manage Channels (Create, edit, and delete channels)
+*   **managewebhooks:** Manage Webhooks (Create, edit, and delete webhooks)
+*   **managemessages:** Manage Messages (Delete messages, pin messages)
+*   **viewauditlog:** View Audit Log (See server activity logs)
+*   **managenicknames:** Manage Nicknames (Change member nicknames)
+*   **sendmessages:** Send Messages (Send text messages in channels)
+*   **readmessages:** Read Message History (View past messages in channels)
+*   **movemembers:** Move Members (Move users between voice channels)
+*   **manageemojis:** Manage Emojis (Create, edit, and delete emojis)
+*   **viewguildinsights:** View Guild Insights (Access community analytics)
+*   **mentioneveryone:** Mention Everyone (@everyone and @here)
+*   **embedlinks:** Embed Links (Post links with rich previews)
+*   **viewchannel:** View Channel (See the channel. If set to `false`, the user cannot see the channel)
+*   **createinvite:** Create Invite (Generate invite links to the server)
+*   **mutemembers:** Mute Members (Silence users in voice channels)
+*   **speak:** Speak (Speak in voice channels)
+*   **deafenmembers:** Deafen Members (Prevent users from hearing in voice channels)
+*   **attachfiles:** Attach Files (Upload files to channels)
+*   **connect:** Connect (Join voice channels)
+*   **addreactions:** Add Reactions (Add reactions to messages)
+*   **speakpriority:** Speak Priority (Speak uninterrupted in voice channels)
+*   **ttsmessage:** Send TTS Message (Send text-to-speech messages)
+*   **externalemoji:** Use External Emojis (Use emojis from other servers)
+*   **vad:** Voice Activity Detection (Use voice activity detection in voice channels)
+*   **changenickname:** Change Nickname (Change own nickname)
+*   **slashcommand:** Use Slash Commands (Use application commands)
+*   **speakrequest:** Request to Speak (Request to speak in stage channels)
+*   **managethreads:** Manage Threads (Delete, archive threads, view all private threads)
+*   **publicthreads:** Create Public Threads (Create public forum and announcement threads)
+*   **privatethreads:** Create Private Threads (Create private threads)
+*   **externalstickers:** Use External Stickers (Use stickers from other servers)
+*   **canstream:** Go Live (Stream video in voice channels)
+*   **manageevents:** Manage Events (Create, edit, and delete scheduled events)
+*   **createpublicthreads:** Create Public and Announcement Threads
+*   **createprivatethreads:** Create Private Threads
+*   **sendmessagesinthreads:** Send Messages in Threads (Send messages within threads)
+*   **embeddedactivities:** Use Activities (Use Discord Activities)
+*   **moderatemembers:** Moderate Members (Timeout Users)
+*   **sendvc:** Allows for sending a voice messages
+*   **usesoundboard:** Allows for using sound-boards
+*   **useexternalsounds:** Allow use for sounds outside the server
+*   **viewcreatormonetization:** View creator monetization page
+*   **createexpression:** Allows for creating emojis, stickers, and soundboard sounds
+*   **createevent:** Allows for creating scheduled events
+*   **sendpolls:** Allows sending polls
+
+### Example: Denying Send Messages Permission
+
+This example demonstrates how to use `$modifyChannelPerms` to deny the "send messages" permission for a role with the ID `muted` in a specific channel.
+
 ```
-admin: Administrator
-manageserver: Manage Server
-kick: Kick User
-ban: Ban User
-manageroles: Manage Roles
-managechannels: Manage Channels
-managewebhooks: Manage Webhooks
-managemessages: Manage Messages
-viewauditlog: View audit log
-managenicknames: Manage nicknames
-sendmessages: Send message 
-readmessages: Read message history
-movemembers: Move Members from Voice Channel to another
-manageemojis: Manage Emojis
-viewguildinsights: View Guild Insights for communities
-mentioneveryone: Ability to mention @everyone 
-embedlinks: Display Embed Links
-viewchannel: View a channel
-createinvite: Ability to create an invite
-mutemembers: Mute User
-speak: Ability to speak in voice channel
-deafenmembers: Able to deafen jusers
-attachfiles: Ability to attach files in message
-connect: Allows for joining of a voice channel
-addreactions: Ability to add new reaction to a message
-speakpriority: Speak priority inside a voice channel
-ttsmessage: Send TTS message
-externalemoji: Ability to use emojis outside the server   
-vad: Allows for using voice-activity-detection in a voice channel
-changenickname: Ability to change his own nickname 
-slashcommand: Ability to use slash and applications commands
-speakrequest: Ability to request a speak inside stage channels 
-managethreads: Allows for deleting and archiving threads, and viewing all private threads
-publicthreads: Ability to create public threads
-privatethreads: Ability to create private threads
-externalstickers: Ability to use stickers from outside the server
-canstream: Allows the user to go live,
-manageevents: Allows for creating, editing, and deleting scheduled events
-createpublicthreads: Allows for creating public and announcement threads
-createprivatethreads: Allows for creating private threads
-sendmessagesinthreads: Allows for sending messages in threads
-embeddedactivities: Allows for using Activities
-moderatemembers: Allows for timing out users
-sendvc: Allows for sending a voice messages
-usesoundboard: Allows for using sound-boards
-useexternalsounds: Allow use for sounds outside the server
-viewcreatormonetization: View creator monetization page
-createexpression: Allows for creating emojis, stickers, and soundboard sounds
-createevent: Allows for creating scheduled events
-sendpolls: Allows sending polls
+$modifyChannelPerms[$channelID;-sendmessages;$roleID[muted]]
 ```
 
-### Example
-`$modifyChannelPerms[$channelID;-sendmessages;$roleID[muted]]`
+In this example:
 
-to deny send messages access of a certian role
-###### Tags: <Badge type="tip" text="Permissions" vertical="middle" />
+*   `$channelID` is the ID of the channel you want to modify permissions in.
+*   `-sendmessages` denies the "sendmessages" permission. Using a `+` would grant the permission instead.
+*   `$roleID[muted]` specifies the role ID of the "muted" role.

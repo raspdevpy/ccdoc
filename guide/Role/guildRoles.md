@@ -1,12 +1,28 @@
 # $guildRoles
-Returns all guild roles there names/ids/mentions.
 
-amount can control how many roles you want to return
-#### Usage: 
-`$guildRoles[id/name/mention (optional, defualt=name);amount;separator (default ', ')]`
+Returns a list of all roles in the guild, displaying their names, IDs, or mentions.
 
+You can specify the type of information you want (ID, name, or mention) and limit the number of roles returned.
+
+#### Usage:
+
+`$guildRoles[type;amount;separator]`
+
+**Parameters:**
+
+*   `type` (Optional):  Determines what information to return for each role. Possible values are:
+    *   `id`: Returns the role's ID.
+    *   `name`: Returns the role's name. (Default)
+    *   `mention`: Returns the role's mention.
+*   `amount` (Optional): The maximum number of roles to return. If omitted, all roles will be returned.
+*   `separator` (Optional): The separator between the returned list, default is ', '
 
 <br/>
+
+**Example:**
+
+This example shows how to retrieve the IDs of all roles in the guild.
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $guildRoles[id]
@@ -17,8 +33,8 @@ amount can control how many roles you want to return
 </discord-messages>
 
 ::: tip Related Functions
-[$roleID](../Role/roleID.md), to return a roleID by name of it
+*   [$roleID](../Role/roleID.md):  Retrieves a role ID by its name.
 :::
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="Guild Roles" vertical="middle" /> <Badge type="tip" text="all roles" vertical="middle" /> <Badge type="tip" text="server roles" vertical="middle" /> <Badge type="tip" text="roles" vertical="middle" /> <Badge type="tip" text="server/ guild" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+###### Tags: <Badge type="tip" text="Guild Roles" vertical="middle" /> <Badge type="tip" text="all roles" vertical="middle" /> <Badge type="tip" text="server roles" vertical="middle" /> <Badge type="tip" text="roles" vertical="middle" /> <Badge type="tip" text="server/ guild" vertical="middle" />

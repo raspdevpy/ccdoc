@@ -1,5 +1,5 @@
 # $redirectErrors
-To redirect any kind of errors to specific channel, by default errors will appear in execution channel
+To redirect any kind of errors to a specific channel, by default errors will appear in the execution channel
 
 #### Usage: 
 `$redirectErrors[Channel ID]`

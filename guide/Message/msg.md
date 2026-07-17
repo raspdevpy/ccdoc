@@ -1,101 +1,96 @@
 # $msg
-a compact function with many functionalities!
+The `$msg` function is a powerful and compact tool that lets you extract a wide range of information from Discord messages.
 
-### Usage `$msg[channelid;messageid;property]`
+### Usage: `$msg[channelid;messageid;property]`
 
-#### Supported Properties
+To use the `$msg` function, you need to provide the channel ID, the message ID, and the specific property you want to retrieve.  Let's break it down:
 
-* **author** - message author ID
+*   **`channelid`**: The ID of the channel where the message is located.
+*   **`messageid`**: The ID of the message you want to get information from.
+*   **`property`**: The specific piece of information you want to retrieve from the message.
 
-* **authormention** - message author mention
+#### Example:
 
-* **authortag** - message author tag
+```
+$msg[1234567890;9876543210;authorname]
+```
 
-* **authorname** - message author name
+This would return the author's name of the message with the ID `9876543210` located in the channel with the ID `1234567890`.
 
-* **authoravatar** - message author avatar
+### Supported Properties
 
-* **type** - message type i.e Thread Starter, you can find the list in [$messageType](./messageType) 
+Here's a comprehensive list of the properties you can access with the `$msg` function:
 
-* **channel** - message channel id
+**Author Information:**
 
-* **channelname** - message channel name
+*   **`author`**: The message author's user ID.
+*   **`authormention`**:  A mention of the message author (e.g., `<@1234567890>`).
+*   **`authortag`**: The message author's full Discord tag (e.g., `Username#1234`).
+*   **`authorname`**: The message author's username (e.g., `Username`).
+*   **`authoravatar`**: The URL of the message author's avatar.
 
-* **cleancontent** - message content without any mentions removes `@here` , `@everyone\`
+**Channel Information:**
 
-* **content** - message content
+*   **`channel`**: The ID of the channel where the message was sent.
+*   **`channelname`**: The name of the channel where the message was sent.
 
-* **created** - message created date
+**Message Content:**
 
-* **guildid** - guild id of message
+*   **`cleancontent`**: The message content with mentions like `@here` and `@everyone` removed.
+*   **`content`**: The full message content.
+*   **`rawcontent`**: The message content with _all_ mentions removed.
 
-* **id** - message id
+**Message Metadata:**
 
-* **isdeleteable** - author of the command can delete the message, returns true/false.
+*   **`created`**: The date and time the message was created.
+*   **`guildid`**: The ID of the guild (server) where the message was sent.
+*   **`guildname`**: The name of the guild (server) where the message was sent.
+*   **`id`**: The message ID.
+*   **`url`**: A direct link to the message.
+*   **`reference`**: The message ID of the message this message is replying to (if it's a reply).
+*   **`thread`**: The thread ID of the message if it exists within a thread (otherwise undefined).
+*   **`pinned`**: Returns `true` if the message is pinned, `false` otherwise.
 
-* **isdeleted** -  message was deleted, returns true/false.
+**Attachment Information:**
 
-* **iseditable** - author of the command can edit the message, returns true/false.
+*   **`allattachments`**: A newline-separated list of URLs for all attachments in the message.
+*   **`allattachmentsname`**: A newline-separated list of filenames for all attachments in the message.
+*   **`attachment`**: The URL of a specific attachment. Use `additional 1` to specify which attachment (e.g., `$msg[...;attachment additional 1]` for the first attachment).  Returns `undefined` if no attachment exists or the specified attachment doesn't exist.
+*   **`attachmentname`**: The filename of a specific attachment. Use `additional 1` to specify which attachment (e.g., `$msg[...;attachmentname additional 1]` for the first attachment).  Returns `undefined` if no attachment exists or the specified attachment doesn't exist.
 
-* **ispinnable** - author of the command can pin the message, returns true/false.
+**Embed Information:**
 
-* **ispinned** - message is pinned, returns true/false.
+*   **`embed`**: Returns the full embed object in JSON format. Use `additional 1` to specify which embed (e.g., `$msg[...;embed additional 1]` for the first embed). Returns an empty JSON object `{}` if no embed exists or the specified embed doesn't exist.
+*   **`embedtitle`**: The title of a specific embed. Use `additional 1` to specify which embed. Returns `undefined` if no embed exists or the specified embed doesn't exist.
+*   **`embedcolor`**: The color of a specific embed. Use `additional 1` to specify which embed. Returns `undefined` if no embed exists or the specified embed doesn't exist.
+*   **`embeddesc`**: The description of a specific embed. Use `additional 1` to specify which embed. Returns `undefined` if no embed exists or the specified embed doesn't exist.
+*   **`embedauthortext`**: The author text of a specific embed. Use `additional 1` to specify which embed. Returns `undefined` if no embed exists or the specified embed doesn't exist.
+*   **`embedauthorurl`**: The author URL of a specific embed. Use `additional 1` to specify which embed. Returns `undefined` if no embed exists or the specified embed doesn't exist.
+*   **`embedauthoricon`**: The author icon URL of a specific embed. Use `additional 1` to specify which embed. Returns `undefined` if no embed exists or the specified embed doesn't exist.
+*   **`embedimage`**: The image URL of a specific embed. Use `additional 1` to specify which embed. Returns `undefined` if no embed exists or the specified embed doesn't exist.
+*   **`embedthumbnail`**: The thumbnail URL of a specific embed. Use `additional 1` to specify which embed. Returns `undefined` if no embed exists or the specified embed doesn't exist.
+*   **`embedurl`**: The URL of a specific embed's title. Use `additional 1` to specify which embed. Returns `undefined` if no embed exists or the specified embed doesn't exist.
+*   **`embedfields`**: Returns embed fields like `NAME///VALUE///INLINE//////NAME 1///VALUE 1///INLINE 2..` of a specific embed. Use `additional 1` to specify which embed. Returns `undefined` if no embed exists or the specified embed doesn't exist.
+*   **`embedfieldname`**: The name of a specific field within a specific embed. Use `additional 1` to specify the embed and `additional 2` to specify the field number. Returns `undefined` if no embed exists, the specified embed doesn't exist, or the specified field doesn't exist.
+*   **`embedfieldvalue`**: The value of a specific field within a specific embed. Use `additional 1` to specify the embed and `additional 2` to specify the field number. Returns `undefined` if no embed exists, the specified embed doesn't exist, or the specified field doesn't exist.
+*   **`embedfieldinline`**: Whether a specific field within a specific embed is displayed inline (`true` or `false`). Use `additional 1` to specify the embed and `additional 2` to specify the field number. Returns `undefined` if no embed exists, the specified embed doesn't exist, or the specified field doesn't exist.
+*   **`embedtimestamp`**: The timestamp of a specific embed. Use `additional 1` to specify which embed. Returns `undefined` if no embed exists or the specified embed doesn't exist.
 
-* **rawcontent** - message content without _**ANY**_ mentions.
+**Sticker Information:**
 
-* **guildname** - guild name of the message
+*   **`sticker`**: Returns a specific sticker in the message. Use `additional 1` to specify which sticker.
+*   **`stickers`**: Returns all the stickers in the message, separated by `, `.
 
-* **url** - link to the message.
+**Permission Checks:**
 
-* **reference** - return message id , that was replied to
+*   **`isdeleteable`**: Returns `true` if the command author has permission to delete the message, `false` otherwise.
+*   **`isdeleted`**: Returns `true` if the message has been deleted, `false` otherwise.
+*   **`iseditable`**: Returns `true` if the command author has permission to edit the message, `false` otherwise.
+*   **`ispinnable`**: Returns `true` if the command author has permission to pin the message, `false` otherwise.
+*   **`ispinned`**: Returns `true` if the message is pinned, `false` otherwise.
 
-* **thread** - thread id of that message if exists (undefined otherwise)
-
-* **pinned** - return true if message is pinned
-
-* **allattachments** - return all attachments URLs separated by new line
-
-* **allattachmentsname** - return all attachments names separated by new line
-
-* attachment: return attachment URL of message (otherwise undefined), you can specify which attachment by using `additional 1` argument
-
-* attachmentname: return attachment name of message (otherwise undefined), you can specify which attachment by using `additional 1` argument
-
-* **embedtitle** - return message's embed title (otherwise undefined), you can specify which embed  by using `additional 1` argument
-
-* **embedcolor** - return message's embed color (otherwise undefined), you can specify which embed  by using `additional 1` argument
-
-* **embeddesc** - return message's embed description (otherwise undefined), you can specify which embed  by using `additional 1` argument
-
-* **embedauthortext** - return message's embed author text (otherwise undefined), you can specify which embed  by using `additional 1` argument
-
-* **embedauthorurl** - return message's embed author URL (otherwise undefined), you can specify which embed  by using `additional 1` argument
-
-* **embedauthoricon** - return message's embed author ICON (otherwise undefined), you can specify which embed  by using `additional 1` argument
-
-* **embedimage** - return message's embed image (otherwise undefined), you can specify which embed  by using `additional 1` argument
-
-* **embedthumbnail** - return message's embed thumbnail (otherwise undefined), you can specify which embed  by using `additional 1` argument
-
-* **embedurl** - return message's embed title URL (otherwise undefined), you can specify which embed  by using `additional 1` argument
-
-* **embedfields** - return message's embed fields like NAME///VALUE///INLINE//////NAME 1///VALUE 1///INLINE 2.. (otherwise undefined), you can specify which embed  by using `additional 1` argument
-
-* **embedfieldname** - return message's embed field name (otherwise undefined), you can specify which embed  by using `additional 1` argument, you can also specify which field by using `additional 2`
-
-* **embedfieldvalue** - return message's embed field value (otherwise undefined), you can specify which embed  by using `additional 1` argument, you can also specify which field by using `additional 2`
-
-* **embedfieldinline** - return message's embed field inline (otherwise undefined), you can specify which embed  by using `additional 1` argument, you can also specify which field by using `additional 2`
-
-* **embedtimestamp** - return message's embed timestamp (otherwise undefined), you can specify which embed  by using `additional 1` argument
-
-* **embed** - return message's embed in form like `{title:...}` (otherwise empty), you can specify which embed  by using `additional 1` argument
-
-* **sticker** - return the sticker in the message, you can specify which sticker  by using `additional 1` argument
-
-* **stickers** - return all the stickers in the message, separated by `, ` 
-
-* **components** - return all components in the message like `{button:..} {container:...}`
+**Components:**
+* 	**`components`** - return all components in the message like `{button:..} {container:...}`
 
 <br/>
 <discord-messages>
@@ -107,5 +102,5 @@ a compact function with many functionalities!
 	</discord-message>
 </discord-messages>
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="compact" vertical="middle" /> <Badge type="tip" text="message" vertical="middle" />

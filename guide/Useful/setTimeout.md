@@ -11,7 +11,7 @@ Will execute the code inside it after certain time
                 <DiscordMarkdown>
                         !!exec This part gets executed before the 2d timeout
                         {{ '\n' }}
-                        $setTimeout[2d;Testing;$autorID]
+                        $setTimeout[2d;Testing;$authorID]
                         {{ '\n' }}
                         This part after the 2d
                         {{ '\n' }}

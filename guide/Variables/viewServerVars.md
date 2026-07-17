@@ -1,6 +1,6 @@
 # $viewServerVars
 
-Get list of defined server variables, and optionally filter then using query regex
+View a list of all the variables that are defined for the server, and search for specific variables using a regular expression query filter
 
 ## Usage
 

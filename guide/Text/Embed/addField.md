@@ -1,5 +1,5 @@
 #  $addField
-Adds fields to a message
+Adds fields to a message embed.
 
 #### Usage: `$addField[title;value;inline(yes/no default=yes)(optional)]`
 <br/>

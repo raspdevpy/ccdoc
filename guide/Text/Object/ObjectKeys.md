@@ -1,6 +1,6 @@
 # $ObjectKeys
 
-Return the Object Keys with seperator between each key
+Return the Object Keys with the seperator between each key
 
 ## Usage
 

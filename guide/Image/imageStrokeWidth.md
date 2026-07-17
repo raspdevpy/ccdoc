@@ -1,6 +1,6 @@
 # $imageStrokeWidth
 
-Control the stroke line thickness when drawing like $imageStroke
+Control the stroke line thickness when drawing with $imageStroke
 
 ## Usage
 

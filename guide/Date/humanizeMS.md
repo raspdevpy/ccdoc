@@ -1,5 +1,5 @@
 # $humanizeMS
-Converts Milliseconds into a Readable durations
+Converts milliseconds into human readable durations
 
 #### Usage: `$humanizeMS[MS;limit (Number) (optional), separator (optional)]`
 Example:
@@ -13,8 +13,8 @@ Example:
 	</discord-message>
 </discord-messages>
 
-::: tip Other Timezone
-Date functions uses on default UTC timezone,but you can change it [Learn More](./timezone.md)
+::: tip Other Timezones
+Date functions by default use the UTC timezone,but you can change it [Learn More](./timezone.md)
 :::
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 

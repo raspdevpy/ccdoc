@@ -1,6 +1,6 @@
 # $viewUserVars
 
-Get List Of Defined User Vars on user
+View a list of all the variables that are defined for a specific user
 
 ## Usage
 

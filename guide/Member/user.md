@@ -1,9 +1,14 @@
 # $user
 Retrieve an information about user given his user id, like his username.
 
-### Usage `$user[userid;property]`
+Multiple options to retrive informations from user.
 
-#### Supported Properties
+## Usage
+```bash
+$user[userID;option]
+```
+
+#### Supported Option List
 | Property | Description |
 |:-----------:|-------------|
 | name | username |
@@ -12,7 +17,10 @@ Retrieve an information about user given his user id, like his username.
 | discrim | user discriminator |
 | mention | user mention |
 | avatar | user avatar URL |
+| ms | Returns accounts creation time in miliseconds like 1735763400000 |
 | isbot | user is a bot, returns true/false |
+| lastmessagechannelid | Returns users last messages channel ID |
+| lastmessageid | Returns users last messages ID |
 | banner | return the user banner, undefined is returned if not found (user must be cached) |
 | created | user account date and time of creation |
 | timestamp | creation timestamp of user account |
@@ -21,15 +29,24 @@ Retrieve an information about user given his user id, like his username.
 | clantagserver | Server id of the user equipped clan tag if exists |
 | clantagicon | Icon URL of the user equipped clan tag if exists |
 
-<br/>
+
+## Example
+
+#### Using $user
+
+How to show user account creation date
+
 <discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $user[$authorID;name]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		Member
-	</discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $user[;created]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        Wednesday, January 1, 2025 08:30 PM
+    </discord-message>
 </discord-messages>
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="compact" vertical="middle" /> <Badge type="tip" text="user" vertical="middle" />
+
+##### Related functions: [$nickname](../Member/nickname.md)
+
+##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" />
+###### Tags: <Badge type="tip" text="account" vertical="middle" /> <Badge type="tip" text="user" vertical="middle" /> <Badge type="tip" text="created" vertical="middle" />

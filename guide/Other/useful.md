@@ -11,14 +11,14 @@ This page includes useful Information about the bot and this documentation.
 ::: tip What is a parameter?
 Parameters are Values, which a Function needs. To understand it let us see the usage of `$giveRoles[userid;roleid]`
 
-* Parameter 1 is a userid. a userid is an ID unique to that user. To get the userid we will use another function named $authorID, which returns the id of the executor
+* Parameter 1 is a userid. A userid is an ID unique to that user. To get the userid we will use another function named $authorID, which returns the id of the executor
 
-* Parameter 2 is an roleid. To get the roleid, you can copy the id of the role you want to give or use an another function named `$roleID[rolename]`
+* Parameter 2 is a roleid. To get the roleid, you can copy the id of the role you want to give or use an another function named `$roleID[rolename]`
 :::
 
 #### Example: `$giveRoles[authorid;roleid1;...]`
 
-`...` -> stands for that the func can have more then 1 parameter.Every paramter (in this case roleid ) gets seperated with `;`
+`...` -> means the function can have more then 1 parameter. Every paramter (in this case roleid ) gets seperated with `;`
 
 #### Example: `$random[min;max;allowDecimals (yes/no)(optional, default=no)]`
 
@@ -28,7 +28,7 @@ You don't have to provide an optional parameter,if you use the default parameter
 ### Okay, cool... But how do functions even work?
 
 ## Functions
-A function is a building block for your code. For example, if you want to send a message, you use a function called [$channelSendMessage](../Message/channelSendMessage.md) or [$sendMessage](../Message/sendMessage.md). Or if you want to kick a member, you use a function called [$kick](../Member/kick.md)
+A function is a building block for your code. For example, if you want to send a message, you use can a function called [$channelSendMessage](../Message/channelSendMessage.md) or [$sendMessage](../Message/sendMessage.md). Or if you want to kick a member, you use a function called [$kick](../Member/kick.md)
 
 ### Nice, now I understand the basics! How do I proceed?
 

@@ -1,5 +1,5 @@
 # $messageExists
-returns true/false ,if the message Exists from the message
+returns true/false if the message exists
 
 #### Usage: `$messageExists[channelID;messageID]`
 

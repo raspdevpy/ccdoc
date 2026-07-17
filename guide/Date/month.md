@@ -1,14 +1,14 @@
 # $month
-returns current month
-#### Usage: `$month`
+returns current month number or name
+#### Usage: `$month[return name (yes/no)]`
 Example:
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $month
+		!!exec $month, $month[yes]
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		11
+		11, November
 	</discord-message>
 </discord-messages>
 

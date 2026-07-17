@@ -1,5 +1,5 @@
 #  $addTimestamp
-Adds a timestamp to a message
+Adds a timestamp to a message embed.
 
 #### Usage: `$addTimestamp` or `$addTimestamp[ms]`
 <br/>

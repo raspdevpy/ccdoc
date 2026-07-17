@@ -1,29 +1,38 @@
 # $ObjectKeyExists
 
-To check if a key is exists in the object, returns true or false
+Checks if given key is present in the object. Returns `true` or `false`.
 
 ## Usage
 
 ```bash
-$ObjectKeyExists[Key;Nested Key...(optional)]
+$ObjectKeyExists[Key;...]
 ```
+1. **Key(s)** - Key to check it's existence. You can put as many nested keys as needed.
 
-### Example:
-<discord-messages>
-          <discord-message :bot="false" role-color="#ffcc9a" author="Member">
-        !!exec $objectSet[name;Mido]<br>$objectKeyExists[name]<br><br>
-          </discord-message>
-          <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-        true<br><br>
-        </discord-message>
-</discord-messages>
+## Example
 
-### Example:
+#### Using $ObjectKeyExists
+
+How to check if `name` key exists
+
 <discord-messages>
-          <discord-message :bot="false" role-color="#ffcc9a" author="Member">
-        !!exec $objectSet[name;Mido]<br>$objectKeyExists[name]<br><br>
-          </discord-message>
-          <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $objectSet[name;Mido]
+        $ObjectKeyExists[name]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        true
+    </discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $objectSet[username;mido]
+        $ObjectKeyExists[name]
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
         false
-        </discord-message>
+    </discord-message>
 </discord-messages>
+
+##### Related functions: [$ObjectKeys](./ObjectKeys.md) [$ObjectCreate](./ObjectCreate.md) [$ObjectSet](./ObjectSet.md)
+
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+###### Tags: <Badge type="tip" text="Object" vertical="middle" /> <Badge type="tip" text="Key" vertical="middle" />

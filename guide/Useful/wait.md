@@ -28,16 +28,5 @@ Will wait an X time, before executing the code below it.
 If you want to wait more then 1m, we suggest you use [$setTimeout](../Useful/setTimeout.md)
 :::
 
-::: warning Why do i need sendMessage?
-Read [this](../url) how parsing works
-The Output without $sendmessage would be:
-```
-This part gets executed before the 10s
-This part after the 10s
-```
-It would get sent after 10s
-:::
-
-
 ##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="timeout" vertical="middle" />  <Badge type="tip" text="Wait" vertical="middle" />  <Badge type="tip" text="Thinking" vertical="middle" /> 

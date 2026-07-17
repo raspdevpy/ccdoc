@@ -1,8 +1,6 @@
 # $message 
 Returns the user's message, with arguments
 
-If this function is called on a slash command, it will contain the value of either given option index or all the option values
-
 ## Usage: `$message or $message[number]`
 
 ### Example:

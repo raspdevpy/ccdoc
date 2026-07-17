@@ -1,6 +1,6 @@
 # $triggerExists
 
-Check if a trigger with token exists or not
+Check if a trigger with the specified token exists
 
 ## Usage
 

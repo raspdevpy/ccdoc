@@ -5,7 +5,7 @@ triggers when user react/unreact with certain emoji
 
 ## Trigger When User React With Emoji
 ### Single Emoji
-To set it to trigger when user react with certain emoji (i.e 👍), set trigger to: add, emoji\
+To set it to trigger when user react with a certain emoji (i.e 👍), set trigger to: add, emoji\
 Example:
 ![](https://i.imgur.com/PZEM5gu.png)
 

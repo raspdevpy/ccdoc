@@ -1,0 +1,13 @@
+services:
+  ccdoc-dev:
+    build:
+      context: .
+      dockerfile: DockerfileDev
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 8080:8080
+    command: npm run dev
+volumes:
+  redis_data:

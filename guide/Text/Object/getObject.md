@@ -11,11 +11,11 @@ With spaces: $getobject[1]
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
 		Without spaces: {"Owner":"Rake","Manager":"Mika","Dev":"Mido","Contributor":"Wiki"}
-With spaces: {
- "Owner": "Rake",
- "Manager": "Mika",
- "Dev": "Mido",
- "Contributor": "Wiki"
+With spaces: {<br/>
+ "Owner": "Rake",<br/>
+ "Manager": "Mika",<br/>
+ "Dev": "Mido",<br/>
+ "Contributor": "Wiki"<br/>
 }
 	</discord-message>
 </discord-messages>

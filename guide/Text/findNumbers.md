@@ -1,11 +1,11 @@
 # $findNumbers
 
-Takes every number from given string and returns them alone
+Find numbers from inside a text.
 
 ## Usage
 
 ```bash
-$findNumbers[string;separator]
+$findNumbers[text;separator]
 ```
 
 ### Example:

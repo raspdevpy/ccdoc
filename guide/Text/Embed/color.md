@@ -2,9 +2,9 @@
 sets the color of the embed
 
 ## Usage
-`$color[hex or colorname or RANDOM]`
+`$color[Hex or Color Name]`
 
-## Accepted Colors
+## Accepted Color Names
 Check this [page](../../CodeReferences/ref.embed.colors.md)
 
 ## Example 1: Using it in function format
@@ -38,3 +38,13 @@ Check this [page](../../CodeReferences/ref.embed.colors.md)
 		</discord-embed>
 	</discord-message>
 </discord-messages>
+
+::: tip To color an embed inside a function like $sendmessage[text]
+
+Use: `{color:hex or colorname or RANDOM or TRANSPARENT}`
+Example: `{color:#0099ff}`
+:::
+
+::: danger Please be aware!!
+If you add any `:` in this function it will error! Check out [this](../../Other/syntax.md)
+:::

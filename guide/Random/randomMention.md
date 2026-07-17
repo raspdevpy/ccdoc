@@ -14,5 +14,9 @@ Returns a random Mention id from a Mention in the server
 	</discord-message>
 </discord-messages>
 
+::: danger Warning
+This members comes from the cache, so it picks random member from the cached members, unless all the guild members are cached (which only in tier 5).
+:::
+
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="random" vertical="middle" /> <Badge type="tip" text="random Mention" vertical="middle" /> <Badge type="tip" text="choose" vertical="middle" /> <Badge type="tip" text="return random Mention" vertical="middle" />

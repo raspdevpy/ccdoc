@@ -1,7 +1,6 @@
 # $eventDelete
 
-to delete an already existed event
-
+To delete an existing event
 ## Usage
 
 ```bash

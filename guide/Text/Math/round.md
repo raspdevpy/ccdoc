@@ -1,5 +1,5 @@
 # $round
-Rounds the number to the unit!
+Rounds the number to the nearest integer.
 
 #### Usage: `$round[number]`
 <br/>

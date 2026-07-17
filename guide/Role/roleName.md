@@ -1,5 +1,5 @@
 # $roleName
-Returns a role name using their ID
+Returns a role name using their ID. When used in `Role Given/Taken` trigger and an ID is not specified, the triggering role name is returned.
 
 #### Usage: 
 `$roleName[roleID]`

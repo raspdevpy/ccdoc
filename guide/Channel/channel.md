@@ -1,16 +1,47 @@
-# $channel
-Gets specific information about a channel. 
+# `$channel`
 
-#### Usage: 
+Retrieves information about a specific channel.
+
+#### Usage:
+
 `$channel[Channel ID;Option]`
 
-`Option` can be any of these:
-```
-name, id, isdeleted, mention, position, rawposition, topic, type, created, timestamp, guildid, guildname, ismanageable, parentid, parentname, isviewable, isdeletable, region, limit
-```
+#### Parameters:
 
+*   **Channel ID:** The ID of the channel you want to get information from.
+*   **Option:**  The specific piece of information you want to retrieve about the channel. See the list below for available options.
+
+#### Available Options:
+
+The `Option` parameter determines what information `$channel` returns. Here's a breakdown of the available options:
+
+*   `name`: The name of the channel.
+*   `id`: The ID of the channel.
+*   `isdeleted`: Returns `true` if the channel is deleted, otherwise `false`.
+*   `mention`:  Returns the channel mention (e.g., `<#1234567890>`).
+*   `position`: The channel's position in the channel list (numerical).
+*   `rawposition`:  The raw position of the channel, unaffected by sorting.
+*   `topic`: The channel topic (if applicable, e.g., for text channels).
+*   `type`: The type of channel (See Note below).
+*   `created`: The timestamp of when the channel was created (Unix timestamp).
+*   `timestamp`:  Alias for `created`. Returns the timestamp when the channel was created (Unix timestamp).
+*   `guildid`: The ID of the guild (server) the channel belongs to.
+*   `guildname`: The name of the guild (server) the channel belongs to.
+*   `ismanageable`: Returns `true` if the bot can manage the channel, otherwise `false`.
+*   `parentid`: The ID of the parent category (if applicable).
+*   `parentname`: The name of the parent category (if applicable).
+*   `isviewable`: Returns `true` if the bot can view the channel, otherwise `false`.
+*   `isdeletable`: Returns `true` if the bot can delete the channel, otherwise `false`.
+*	`region`: Return the voice channel's RTC region
+*	`limit`: Return the voice channel's user limit
+
+##### RC Voice Channel Region
+auto, brazil, hongkong, india, japan, rotterdam, russia, singapore, southafrica, sydney, us-central, us-east, us-south, us-west
 
 #### Example:
+
+This example retrieves the name of the channel with the ID stored in the variable `$channelID`.
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec #$channel[$channelID;name]
@@ -20,15 +51,9 @@ name, id, isdeleted, mention, position, rawposition, topic, type, created, times
 	</discord-message>
 </discord-messages>
 
-::: tip Voice Channel Limit
-When the channel is voice, you can get the user limit with `limit`, it will return 0 if no limit.
-:::
-
 ::: tip Note
-The `type` argument returns a type of channel from this [list.](../CodeReferences/ref.channel_types.md)
+The `type` option returns the channel's type.  Refer to this [list](../CodeReferences/ref.channel_types.md) for possible channel types.
 :::
 
-
-##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="create" vertical="middle" />
- 
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="information" vertical="middle" />

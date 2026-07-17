@@ -1,5 +1,5 @@
 # $title
-Adds an title to an message
+Adds a title to a message embed.
 
 #### Usage: `$title[YOUR TITLE TEXT HERE;url(optional)]`
 <br/>

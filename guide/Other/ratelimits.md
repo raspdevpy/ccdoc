@@ -2,16 +2,20 @@
 Rate Limits prevents misleading usage or abuse of the API. Our Bot receives a lot of requests, that's why we have decided to use our own cooldown system.
 
 ## Function Cooldown
-Many functions have a **cooldown** — time till next execution is possible for the same data input/user/place (e.g. channel or guild).
+Many functions have a **cooldown** — time until next execution is possible for the same data input/user/place (e.g. channel or guild).
 
-The Bot acts differently if a called function is on cooldown: waits for cooldown to pass, then execute; sends an error message; cancels the execution without warning.
+The Bot acts differently if a called function is on cooldown:
+* waits for cooldown to pass, then execute
+* sends an error message
+* cancels the execution without warning.
+
 ::: tip
-You can retrieve the cooldown of a function by using the command `!!func fname`.
+You can see the cooldown (if any) of a function by using the command `!!func function name`.
 :::
 
 ## Function Limit
 The same function with cooldown can only be called **5 times in the code**.<br/>
-If Function Limit is reached, bot cancels the execution of the function without warning.
+If the function limit is reached, the bot cancels the execution of the function without warning.
 
 ## Execution Limits
 The Bot supports up to **5 parallel executions** of the same custom command.

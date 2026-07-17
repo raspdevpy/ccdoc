@@ -1,14 +1,14 @@
 # Modal (Form) Interaction
 
 ## Basic Information
-This trigger type, will trigger when a user submit a modal. 
+This trigger type will trigger when a user submits a modal. 
 
 ## Syntax
 the value is the modal id, for example:
 
-`modal_1` -> will trigger only when a user submit a modal with id `modal_1`
+`modal_1` -> will trigger only when a user submits a modal with id `modal_1`
 
-`modal_1|modal_2` -> will trigger only when a user submit a modal with id `modal_1` or `modal_2`
+`modal_1|modal_2` -> will trigger only when a user submits a modal with id `modal_1` or `modal_2`
 
 ## Example
 ### let's first send a button (with id apply-form) using [$button](../Trigger/button.md)

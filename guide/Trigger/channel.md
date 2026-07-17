@@ -17,12 +17,12 @@ Use this syntax to let the bot trigger when a channel is added or removed or bot
 
 `remove=category id` -> trigger when a channel is being deleted in category with id `category id`
 
-::: tip Supported Channel Type
+::: tip Supported Channel Types
 You can see the whole list [here.](../CodeReferences/ref.channel_types.md)
 :::
 
 ## Related Functions
-The following list is a functions that you might need:
+The following list is functions that you might need:
 
 [$eventChannelID](../Channel/eventChannelID.md): will return the channel id that got created/removed
 

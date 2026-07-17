@@ -1,6 +1,6 @@
-# $httpRequest
+# `$httpRequest`
 
-Perform an http request, with a content and headers and return the response content
+Performs an HTTP request with the specified content and headers, then returns the response body.
 
 ## Usage
 
@@ -8,20 +8,59 @@ Perform an http request, with a content and headers and return the response cont
 $httpRequest[URL;Method;Content;Header 1;Header 2;...]
 ```
 
-### Methods:
-Accepts PUT, GET, POST, DELETE, HEAD, PATCH methods, if not provided, it will use GET method
+## Parameters
 
-### Content Input:
-It can any content that suitable for your `content-type` header, like with `content-type: application/json` you can put the content as json format and so on
+### Method
 
-### Header:
-It accept the header in format of header: value\
-for example: `Content-Type: application/json`
+Supported HTTP methods:
 
-### Timeout
-request will timeout after 1 minute, for tier 4+ it will timeout after 30 minutes.
+* `GET`
+* `POST`
+* `PUT`
+* `PATCH`
+* `DELETE`
+* `HEAD`
 
-### Example (Sending JSON Request):
+If no method is provided, `GET` is used by default.
+
+### Content
+
+The request body to send.
+
+The format of the content should match the `Content-Type` header. For example, if you specify:
+
+```text
+Content-Type: application/json
+```
+
+the content should be valid JSON.
+
+### Headers
+
+Headers should be provided in the following format:
+
+```text
+Header-Name: Value
+```
+
+For example:
+
+```text
+Content-Type: application/json
+```
+
+You can provide as many headers as needed.
+
+## Timeout
+
+Requests automatically timeout after **1 minute**.
+
+For **Tier 4 and above**, the timeout is extended to **30 minutes**.
+
+## Example
+
+### Sending a JSON request
+
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
         !!exec $let[response;$httpRequest[My API URL;post;{"name":"Mido"};Content-Type: application/json]]<br>Response is $response<br>Response Status is $httpRequestStatus<br><br>
@@ -31,6 +70,17 @@ request will timeout after 1 minute, for tier 4+ it will timeout after 30 minute
         </discord-message>
 </discord-messages>
 
-### Some Notes:
-* This function wont throw error if request non-ok status, so please check on your own the return value of $httpRequestStatus after the request to make sure its valid status you expecting
-* Make sure the response data length is less than 1 MB, or it will errorRandom
+## Notes
+
+* This function **does not throw an error** when the server returns a non-success status code (such as `404` or `500`). Always check `$httpRequestStatus` to verify that the request completed successfully.
+* The response body must be **smaller than 1 MB**. Requests that exceed this limit will be rejected.
+* The destination URL must be **whitelisted** before it can be used. If the URL has not yet been approved, please open a ticket in our Support Server to request whitelisting.
+
+## Related Functions
+
+* [$httpRequestStatus](../Request/httpRequestStatus.md)
+* [$httpRequestHeader](../Request/httpRequestHeader.md)
+
+**Function Difficulty:** <Badge type="warning" text="Medium" vertical="middle"/>
+
+**Tags:** <Badge type="tip" text="http request" vertical="middle"/> <Badge type="tip" text="api request" vertical="middle"/>

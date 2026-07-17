@@ -1,6 +1,7 @@
 # $timeoutReason
 
-Return the reason of timeout in Timeout trigger
+Return the reason of the timeout.\
+This function only works in the Timeout trigger.
 
 ## Usage
 
