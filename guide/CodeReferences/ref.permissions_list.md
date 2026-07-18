@@ -19,7 +19,7 @@ Here's a breakdown of the permissions you can use:
 *   **sendmessages:** Send Messages (Send text messages in channels)
 *   **readmessages:** Read Message History (View past messages in channels)
 *   **movemembers:** Move Members (Move users between voice channels)
-*   **manageemojis:** Manage Emojis (Create, edit, and delete emojis)
+*   **manageemojis:** depreciated, use `manageexpression` instead
 *   **viewguildinsights:** View Guild Insights (Access community analytics)
 *   **mentioneveryone:** Mention Everyone (@everyone and @here)
 *   **embedlinks:** Embed Links (Post links with rich previews)
@@ -56,6 +56,11 @@ Here's a breakdown of the permissions you can use:
 *   **createexpression:** Allows for creating emojis, stickers, and soundboard sounds
 *   **createevent:** Allows for creating scheduled events
 *   **sendpolls:** Allows sending polls
+*   **useexternalapps:**  Allows user-installed apps to send public responses. When disabled, users will still be allowed to use their apps but the responses will be ephemeral. This only applies to apps not also installed to the server.
+*   **pinmessages:** Allows pinning and unpinning messages
+*   **bypassslowmode:** Allows bypassing slowmode restrictions
+*   **setvcstatus:** Allows setting voice channel status
+*   **manageexpression:** Allows for editing and deleting emojis, stickers, and soundboard sounds created by all users
 
 ### Example: Denying Send Messages Permission
 
