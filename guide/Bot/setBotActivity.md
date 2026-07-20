@@ -1,6 +1,6 @@
-# $setBotActivity <Badge type="danger" text="Premium ONLY!" vertical="middle" /> 
+# `$setBotActivity` <Badge type="danger" text="Tier 4+ ONLY!" vertical="middle" />
 
-Sets the Custom Bot's activity.
+Set your bot's activity status (the text displayed under the bot's name).
 
 ## Usage
 
@@ -8,12 +8,17 @@ Sets the Custom Bot's activity.
 $setBotActivity[activity type;activity text]
 ```
 
-> **Activity types are**: playing, streaming, listening, watching, competing
+**Parameters:**
 
-### Example:
+*   `activity type`:  The type of activity.  Valid options are: `playing`, `streaming`, `listening`, `watching`, `custom` and `competing`.
+*   `activity text`: The text to display as the bot's activity.
+
+## Examples
+
+**Example:** Sets the bot's activity to "Listening to The Cosmos".
+
 ```bash
 $setBotActivity[listening;The Cosmos]
 ```
 
-### Output:
 ![](https://i.imgur.com/KyYqUGU.png)
