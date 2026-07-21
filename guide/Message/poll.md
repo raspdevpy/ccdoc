@@ -26,7 +26,7 @@ $poll[Channel ID (default $channelID);Message ID (default $messageID);data]
 ### Example:
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
-        !!exec Poll name: $msg[$channelID;$messageID;name]<br>Total votes: $msg[$channelID;$messageID;votes]<br>Total answers: $msg[$channelID;$messageID;answers]<br>1st answer name: $msg[$channelID;$messageID;answer 1 name]<br>2nd answer name: $msg[$channelID;$messageID;answer 2 name]<br>1st answer votes: $msg[$channelID;$messageID;answer 1 votes]<br><br>
+        !!exec Poll name: $poll[$channelID;$messageID;name]<br>Total votes: $poll[$channelID;$messageID;votes]<br>Total answers: $poll[$channelID;$messageID;answers]<br>1st answer name: $poll[$channelID;$messageID;answer 1 name]<br>2nd answer name: $poll[$channelID;$messageID;answer 2 name]<br>1st answer votes: $poll[$channelID;$messageID;answer 1 votes]<br><br>
           </discord-message>
 </discord-messages>
 
