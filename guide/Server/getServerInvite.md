@@ -1,6 +1,6 @@
 # $getServerInvite
 
-creates an invite link to this server
+Creates an invite link to the current server.
 
 ## Usage
 

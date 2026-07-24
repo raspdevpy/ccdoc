@@ -1,7 +1,15 @@
 # $channelSendMessage
-Sends a message to a sepecified channel
+
+Sends a message to a specified channel. This function allows you to send messages to any channel your bot has access to.
 
 #### Usage: `$channelSendMessage[channelID;message;return ID (yes/no) (optional, default=no)]`
+
+| Parameter     | Description                                                                                                                                         | Required | Default |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------|----------|---------|
+| `channelID`   | The ID of the channel to send the message to. You can get this by right-clicking the channel and selecting "Copy ID" (you must have Developer Mode enabled in Discord settings). | Yes      |         |
+| `message`     | The message to send.  This can be plain text, embeds, buttons, menus, or any other valid Discord message content.                                                        | Yes      |         |
+| `return ID`   |  `yes` or `no`.  If `yes`, the ID of the sent message will be returned. Defaults to `no`.  This is useful if you need to edit or delete the message later. | No       | `no`    |
+
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -12,21 +20,26 @@ Sends a message to a sepecified channel
 	</discord-message>
 </discord-messages>
 
-#### Example
-### Send An Embed
+#### Examples
+
+Here are some examples of how to use the `$channelSendMessage` function:
+
+### Send an Embed
+
 ![](https://i.imgur.com/YObkPAZ.png)
 
-### Send a button
+### Send a Button
+
 ![](https://i.imgur.com/bDJ5p3a.png)
 
-### Send a menu
+### Send a Menu
+
 ![](https://i.imgur.com/ApX37tb.png)
 
-You send more stuffs like footer, fields,... using [Message Curl Format](../CodeReferences/ref.message_curl_format.md)
+You can send more complex messages with features like footers and fields by using the [Message Curl Format](../CodeReferences/ref.message_curl_format.md). This format allows for more detailed control over your messages.
 
 ::: tip Related Functions
-[$sendMessage](../Message/sendMessage.md), to send a message to the channel used
+*   [$sendMessage](../Message/sendMessage.md): Sends a message to the channel where the command was used.
 :::
 
-##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="Send" vertical="middle" /> <Badge type="tip" text="Message" vertical="middle" /> <Badge type="tip" text="Channel" vertical="middle" /> <Badge type="tip" text="Messages" vertical="middle" />
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" />
