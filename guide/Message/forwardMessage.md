@@ -1,5 +1,5 @@
 # $forwardMessage
-forward a messaage to another channel
+forward a message to another channel
 
 #### Usage: `$forwardMessage[Source Channel ID;Source Message ID;Target Channel ID;Return the new message id (yes/no)]`
 
