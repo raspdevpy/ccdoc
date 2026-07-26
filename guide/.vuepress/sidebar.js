@@ -83,6 +83,8 @@ module.exports= {
 		]
 	},		
 		getSideBar('Contribution_Info','Contribute'),
+		getSideBar('Legal','Legal'),
+
 	]
 	}
 }
