@@ -1,7 +1,7 @@
 const cheerio = require('cheerio');
 const fs = require('fs');
 let jsonObj = [];
-const dataFile='./data.json';
+const dataFile='./guide/.vuepress/public/docs-pages.json';
 
 let delayed;
 function write(immediate=false){    

@@ -11,3 +11,4 @@ guide/.vuepress/public/images/*
 .vscode
 OnTemplate.md
 .env
+guide/.vuepress/public/docs-pages.json

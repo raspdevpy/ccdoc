@@ -2,6 +2,8 @@ const sidebar = require('./sidebar');
 const parseTag = require('./parseTags');
 const replacements = require('./replacements');
 const fs = require('fs')
+const path = require('path')
+
 const replacePageContent = (content, replacements) => {
 	let output = content;
 	for (const [placeholder, replacement] of Object.entries(replacements)) {
@@ -10,6 +12,25 @@ const replacePageContent = (content, replacements) => {
 	}
 	return output;
   };
+
+const aiFiles = new Set();
+
+function scanAiFiles(dir) {
+	fs.readdirSync(dir, { withFileTypes: true }).forEach(entry => {
+		const fullPath = path.join(dir, entry.name);
+
+		if (entry.isDirectory()) {
+			scanAiFiles(fullPath);
+		} else if (entry.name.endsWith('_ai.md')) {
+			aiFiles.add(
+				fullPath
+					.replace(__dirname + '/../', '')
+			);
+		}
+	});
+}
+
+scanAiFiles(__dirname + '/../');
 module.exports = {
 	lang: 'en-US',
 	title: 'Custom Command',
@@ -46,12 +67,16 @@ module.exports = {
 		['@vuepress/plugin-search',{
 			maxSuggestions:15,
 			isSearchable:(page)=>{
-				if(!page.data.filePathRelative)	return true;
-				if(page.data.filePathRelative.endsWith('_ai.md'))
+				const file = page.data.filePathRelative;
+
+				if(!file) return true;
+
+				if(file.endsWith('_ai.md'))
 					return true;
-				let aiFile = __dirname+'/../'+page.data.filePathRelative.replace('.md','_ai.md');
-				if(fs.existsSync(aiFile))	return false;
-				return true;
+
+				return !aiFiles.has(
+					file.replace('.md','_ai.md')
+				);
 			},
 			getExtraFields: (page) =>parseTag(page),
 		}],
