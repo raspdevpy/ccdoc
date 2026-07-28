@@ -22,10 +22,7 @@ function scanAiFiles(dir) {
 		if (entry.isDirectory()) {
 			scanAiFiles(fullPath);
 		} else if (entry.name.endsWith('_ai.md')) {
-			aiFiles.add(
-				fullPath
-					.replace(__dirname + '/../', '')
-			);
+			aiFiles.add(entry.name.split("/").pop());
 		}
 	});
 }
@@ -73,9 +70,8 @@ module.exports = {
 
 				if(file.endsWith('_ai.md'))
 					return true;
-
 				return !aiFiles.has(
-					file.replace('.md','_ai.md')
+					file.replace('.md','_ai.md').split("/").pop()
 				);
 			},
 			getExtraFields: (page) =>parseTag(page),
