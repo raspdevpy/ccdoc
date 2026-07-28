@@ -3,7 +3,7 @@
 This trigger type will trigger when a user joins or leaves the server depending on your configuration.
 
 ::: warning Custom Bots
-Custom bots using Tier 3+ are required to have the presence intent enabled for this trigger to work.
+Custom bots using Tier 3+ are required to have the `Guild Members` intent enabled for this trigger to work.
 :::
 
 ## Example
