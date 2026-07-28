@@ -1,28 +1,42 @@
-# Member Join/Leave
+# On Join/Leave
 
-## Basic Information
-This trigger type will trigger when a user joins or leaves the server. For premium users, the presence intent permission needs to be enabled! 
+This trigger type will trigger when a user joins or leaves the server depending on your configuration.
 
-#### Example of a join trigger:
-
-![](https://cdn.discordapp.com/attachments/772051120368910371/882199989873414184/join_leave.gif)
-
-## Syntax
-Use this syntax to let the bot trigger when a member joined/left your guild/server
-
-`add` -> If this is filled in in the trigger field, the command will trigger when a member joined your server!
-
-
-`remove` -> If this is filled in in the trigger field, the command will trigger when a member left your server!
-
-::: tip Testing
-We understand that testing with this trigger can be quite difficult! For that reason, we made a command!
-
-`!!emit uadd` to simulate that you joined your guild
-
-`!!emit uremove` to simulate that you left your guild
+::: warning Custom Bots
+Custom bots using Tier 3+ are required to have the presence intent enabled for this trigger to work.
 :::
 
-## More Info
+## Example
 
-Do you want to know more about the bot's syntax? You can check out [this](../Other/syntax.md) page to learn more!
+Select when to trigger, and choose a channel where this command will be executed.
+
+![](/images/triggers/join-leave/0.png)
+
+Enter code:
+
+```php
+Hello $displayName! Welcome to our server.
+```
+
+## Testing
+
+Wait for a user to join and see if it worked!
+
+<DiscordMessages>
+    <DiscordMessage :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        Hello Member! Welcome to our server.
+    </DiscordMessage>
+</DiscordMessages>
+
+::: tip Test Command
+For member joins/leaves you can use `!!emit` command to trigger the On Join/Leave trigger.
+:::
+
+<DiscordMessages>
+    <DiscordMessage :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!emit uadd
+    </DiscordMessage>
+    <DiscordMessage :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        Hello Member! Welcome to our server.
+    </DiscordMessage>
+</DiscordMessages>

@@ -1,0 +1,11 @@
+# On Timeout
+
+This trigger fires whenever a member's timeout status changes.
+
+## User Timeout Set
+
+Activates when a member is placed in a timeout.
+
+## User Timeout Removed
+
+Activates when a timeout is removed from a member.
