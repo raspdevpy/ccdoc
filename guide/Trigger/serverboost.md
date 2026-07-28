@@ -1,28 +1,13 @@
-# Server Boost Trigger
+# On Server Boost
 
-## Basic Information
-This trigger will only trigger if someone boosted or removed the boost from your server
+This trigger will trigger when someone boosts or removes boost from your server.
 
-## Syntax
-the trigger value should be `add/remove`
+![](/images/triggers/boost/0.png)
 
-`add`: to trigger only if someone boosted\
-`remove`: to trigger only if someone removed the boost
+## User boost the server
 
-if you leave it blank, it will trigger for both
+Triggers when user boosts your server.
 
-## Example
-### Let's create the server boost trigger command
-![](https://i.imgur.com/9AOu4J4.png)
+## User unboost the server
 
-Notice that we left trigger value blank, because we want it to trigger for both cases
-we will know if user boosted or unboosted with `$isBoosting`
-
-### Output (When boosting)
-
-![](https://i.imgur.com/5xGlxRx.png)
-
-### That's it
-
-## Some functions related to Library
-[$isBoosting](../Text/isandhas/isBoosting.md):   return true if user is boosting otherwise false
+Triggers when user unboosts your server.
