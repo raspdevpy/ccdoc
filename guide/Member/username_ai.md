@@ -31,7 +31,7 @@ User will be cached after they trigger any command from this bot, but eventually
 To have all members cached, you will need Tier 5 Bot.
 :::
 
-##### Related functions: [`$nickname`](../Member/nickname.md) 
+##### Related functions: `$nickname` 
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="name" vertical="middle" /> <Badge type="tip" text="username" vertical="middle" /> <Badge type="tip" text="nickname" vertical="middle" /> <Badge type="tip" text="Names" vertical="middle" /> <Badge type="tip" text="userID" vertical="middle" />

@@ -1,4 +1,4 @@
-# `$serverRegion`
+# $serverRegion
 
 Returns the current server region or `undefined` if not available.
 

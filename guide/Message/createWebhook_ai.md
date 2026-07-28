@@ -1,4 +1,4 @@
-# `$createWebhook`
+# $createWebhook
 
 Creates a webhook in a specified channel.
 

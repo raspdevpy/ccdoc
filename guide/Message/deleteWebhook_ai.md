@@ -1,4 +1,4 @@
-# `$deleteWebhook`
+# $deleteWebhook
 
 Deletes a webhook using its ID and token.
 

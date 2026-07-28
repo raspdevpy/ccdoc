@@ -1,4 +1,4 @@
-# `$emojiToString`
+# $emojiToString
 
 This function returns the actual emoji that a user reacted with in a reaction add/remove event. This is useful for determining which specific emoji triggered the event.
 

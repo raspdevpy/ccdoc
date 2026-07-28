@@ -1,4 +1,4 @@
-# `$month`
+# $month
 
 Returns the current month's number or name.
 

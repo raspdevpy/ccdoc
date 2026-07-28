@@ -36,7 +36,6 @@ module.exports= (page)=>{
         tags: tags
     }
     jsonObj.push(data);
-    console.log(jsonObj.length)
 
     if(jsonObj.length > 500) write();
     return tags;

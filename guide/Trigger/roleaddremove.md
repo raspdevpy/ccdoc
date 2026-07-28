@@ -11,7 +11,7 @@ Let's make a command, which will log everytime someone receives a Role1
 
 2. Set the code to: 
 ```php
-$username received `$roleName` role
+$username received $roleName role
 ```
 ![](https://i.imgur.com/WezSkrK.png)
 
@@ -50,7 +50,7 @@ Which means trigger when user receive role `Role1` or `Role2`
 
 ![](https://i.imgur.com/3X3aFyJ.png)
 
-2. Set code to: $username received `$roleName` Role
+2. Set code to: $username received $roleName Role
 
 ![](https://i.imgur.com/WezSkrK.png)
 

@@ -1,4 +1,4 @@
-# `$noEscapingMessage` <Badge type="danger" text="DANGER WARNING!!" vertical="middle" />
+# $noEscapingMessage <Badge type="danger" text="DANGER WARNING!!" vertical="middle" />
 
 This function behaves similarly to `$message`, but it **does not escape special characters**. This means characters like backticks (`) or newlines will be interpreted literally and won't be replaced with their escaped counterparts.
 

@@ -1,4 +1,4 @@
-# `$addMessageReactions`
+# $addMessageReactions
 
 Adds reactions (emojis) to a message by its ID.
 

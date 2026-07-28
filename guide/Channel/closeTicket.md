@@ -1,5 +1,5 @@
 # $closeTicket
-Closes a ticket created by the bot using [`$newTicket`](../Channel/newTicket.md).
+Closes a ticket created by the bot using `$newTicket`.
 
 
 #### Usage: `$closeTicket[error message(optional)]`

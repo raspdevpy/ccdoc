@@ -1,4 +1,4 @@
-# `$messageID`
+# $messageID
 
 Retrieves the ID of the message that triggered the command.
 

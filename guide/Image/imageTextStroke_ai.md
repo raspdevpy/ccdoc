@@ -1,4 +1,4 @@
-# `$imageTextStroke`
+# $imageTextStroke
 
 Add a stroke (border) to text on an image. This effect can enhance the visibility of your text, especially when placed over complex backgrounds.
 

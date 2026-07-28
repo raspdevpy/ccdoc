@@ -1,4 +1,4 @@
-# `$year`
+# $year
 
 Get the current year.
 
@@ -7,7 +7,7 @@ This command returns the current year based on the configured timezone (default 
 #### Usage:
 
 ```
-`$year`
+$year
 ```
 
 **Example:**

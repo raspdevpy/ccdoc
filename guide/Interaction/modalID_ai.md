@@ -1,4 +1,4 @@
-## `$modalID`
+## $modalID
 
 This variable returns the unique ID of the modal that activated the [modal trigger](../Trigger/modal.md).
 

@@ -34,8 +34,8 @@ You can send embeds using the [Message Curl Format](../CodeReferences/ref.messag
 :::
 
 ::: tip Related Functions
-*   [`$channelSendMessage`](../Message/channelSendMessage.md): Sends a message to a specific channel in the server.
-*   [`$sendMessage`](../Message/sendMessage.md): Sends a message to the channel where the command was used.
+*   `$channelSendMessage`: Sends a message to a specific channel in the server.
+*   `$sendMessage`: Sends a message to the channel where the command was used.
 :::
 
 ##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" />

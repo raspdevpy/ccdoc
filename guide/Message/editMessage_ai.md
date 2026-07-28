@@ -1,4 +1,4 @@
-# `$editMessage`
+# $editMessage
 
 Edits a message previously sent by the bot. This function allows you to modify the content of a message.
 
@@ -17,7 +17,7 @@ $editMessage[123456789012345678;This is the updated message content!]
 In this example, the message with the ID `123456789012345678` will be edited to display "This is the updated message content!".
 
 ::: tip Used Functions
-`$messageID` - Use the [`$messageID`](../Message/messageID.md) function to retrieve the ID of the message that triggered the command. This is useful if you want to edit the same message that invoked the command.
+`$messageID` - Use the `$messageID` function to retrieve the ID of the message that triggered the command. This is useful if you want to edit the same message that invoked the command.
 :::
 
 ::: tip Note
@@ -25,7 +25,7 @@ You can format your `newMessage` as an embed using the [Message Curl Format](../
 :::
 
 ::: tip Related Functions
-*   `$deleteMessage` -  The [`$deleteMessage`](../Message/deleteMessage.md) function deletes a message from the server or in DMs.
+*   `$deleteMessage` -  The `$deleteMessage` function deletes a message from the server or in DMs.
 :::
 
 ##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" />

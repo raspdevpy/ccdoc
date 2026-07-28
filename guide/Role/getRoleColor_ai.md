@@ -1,4 +1,4 @@
-# `$getRoleColor`
+# $getRoleColor
 
 Retrieves the hexadecimal color code of a role.
 

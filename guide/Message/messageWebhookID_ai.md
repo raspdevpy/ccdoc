@@ -1,4 +1,4 @@
-# `$messageWebhookID`
+# $messageWebhookID
 
 Retrieves the ID of the webhook that sent the message.
 

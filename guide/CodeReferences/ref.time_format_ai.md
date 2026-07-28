@@ -2,7 +2,7 @@
 
 Many functions require you to specify a time format to correctly construct date and time values. This guide explains the accepted time format macros you can use.
 
-For example, the [`$timeToDate`](../Date/timeToDate.md) function uses these formats.
+For example, the `$timeToDate` function uses these formats.
 
 ### Available Time Format Macros
 

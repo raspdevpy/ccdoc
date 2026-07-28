@@ -1,4 +1,4 @@
-# `$timezone`
+# $timezone
 
 This function sets the timezone used by subsequent date and time functions within your command. Think of it as changing the "local time" for your bot's calculations.
 

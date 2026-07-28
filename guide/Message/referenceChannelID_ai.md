@@ -1,4 +1,4 @@
-# `$referenceChannelID`
+# $referenceChannelID
 
 Retrieves the ID of the channel containing the message a user replied to.
 

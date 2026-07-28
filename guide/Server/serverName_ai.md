@@ -1,4 +1,4 @@
-# `$serverName`
+# $serverName
 
 Returns the name of the current server.
 

@@ -1,4 +1,4 @@
-# `$hasRole`
+# $hasRole
 
 Determines if a user possesses a specific role within the server. Returns `true` if the user has the role, and `false` otherwise.
 

@@ -8,8 +8,8 @@ Returns the ID of the channel that was created or deleted. This function is used
 **Important Considerations:**
 
 *   This function is exclusively for the **Channel Creation** and **Channel Deletion** triggers.
-*   For **Voice Channel Join/Leave** events, use [`$voiceChannelID`](../Channel/voiceChannelID.md) instead.
-*   This function will **not** work in regular command triggers. For those triggers, use [`$channelID`](../Channel/channelID.md).
+*   For **Voice Channel Join/Leave** events, use `$voiceChannelID` instead.
+*   This function will **not** work in regular command triggers. For those triggers, use `$channelID`.
 :::
 
 ##### Difficulty: <Badge type="tip" text="Easy" vertical="middle" />

@@ -1,4 +1,4 @@
-# `$imageOutput`
+# $imageOutput
 
 This function saves the current image being drawn into a file and returns the filename. This filename can then be used within other functions like `$image` or within the `{image:...}` tag in functions like `$sendMessage`.
 

@@ -1,4 +1,4 @@
-# `$addCmdReactions`
+# $addCmdReactions
 
 Reacts to the user's message with multiple emojis.
 

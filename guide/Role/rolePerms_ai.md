@@ -27,7 +27,7 @@ For a comprehensive list of all permission names, refer to the [Permissions List
 :::
 
 ::: tip Related Functions
-*   [`$userPerms`](../Member/userPerms.md): Returns a member's permissions.
+*   `$userPerms`: Returns a member's permissions.
 :::
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" />

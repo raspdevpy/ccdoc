@@ -1,4 +1,4 @@
-# `$slowmode` - Set or Remove Channel Slowmode
+# $slowmode
 
 This command allows you to set or remove the slowmode in a specified channel.  Slowmode limits how frequently users can send messages in that channel.
 

@@ -7,17 +7,17 @@ This function returns the total number of bots present in your Discord server (g
 Here's how you can use the `$botCount` function:
 
 ```
-!!exec There are `$botCount` bots in the server!
+!!exec There are $botCount bots in the server!
 ```
 
 This command, when executed, will display a message showing the bot count in the server.  See the example below:
 
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec There are `$botCount` bots in the server!
+		!!exec There are $botCount bots in the server!
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		There are `2` bots in the server!
+		There are 2 bots in the server!
 	</discord-message>
 </discord-messages>
 

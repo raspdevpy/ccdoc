@@ -1,4 +1,4 @@
-# `$imageTextFillColor`
+# $imageTextFillColor
 
 Set the color used to fill text in images.
 

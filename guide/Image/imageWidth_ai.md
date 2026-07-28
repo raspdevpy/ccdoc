@@ -1,4 +1,4 @@
-# `$imageWidth`
+# $imageWidth
 
 Retrieves the width of an image. This function allows you to dynamically get the width of an image that has been previously loaded, referenced by its assigned name.
 

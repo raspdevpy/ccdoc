@@ -20,12 +20,12 @@ Hello $username to our server
 ```
 
 *   `Hello`: This is text.
-*   [`$username`](../Member/username.md): This is a function.
+*   `$username`: This is a function.
 *   `to our server`: This is text.
 
 ## What is a Function?
 
-A function is a special instruction that begins with a `$` symbol, like [`$username`](../Member/username.md).
+A function is a special instruction that begins with a `$` symbol, like `$username`.
 
 In this example:
 
@@ -33,7 +33,7 @@ In this example:
 Hello $username to our server
 ```
 
-[`$username`](../Member/username.md) is the only function present.
+`$username` is the only function present.
 
 ### Function Actions
 
@@ -55,15 +55,15 @@ Will result in the bot sending:
 Hello Mido, welcome to our server!
 ```
 
-This demonstrates that the [`$username`](../Member/username.md) function is of the "Replace with a value" type. It's replaced by the username of the command executor.
+This demonstrates that the `$username` function is of the "Replace with a value" type. It's replaced by the username of the command executor.
 
 ::: tip Function Return Values and Actions
 
 *   A function that `Replaces with a value` is also said to `return` that value. Check the function documentation to understand what it returns. For example:
-    [`$username`](../Member/username.md) ***Returns*** the name of the user that executed the command.
+    `$username` ***Returns*** the name of the user that executed the command.
 
 *   A function that `Performs an Action` will have its description begin with a verb describing that action. For example:
-    [`$title`](../Embed/title.md) ***Adds*** a title to a message.
+    `$title` ***Adds*** a title to a message.
 :::
 
 ### Function Input
@@ -74,9 +74,9 @@ Some functions require input from you to customize their behavior. The format is
 $function[Inputs]
 ```
 
-We previously used [`$username`](../Member/username.md) without any input. This is because, as its documentation specifies, it defaults to returning the executor's name.  To get someone else's username, you need to provide their User ID as input.
+We previously used `$username` without any input. This is because, as its documentation specifies, it defaults to returning the executor's name.  To get someone else's username, you need to provide their User ID as input.
 
-Let's say we want to get Rake's name instead of Mido's. We first need Rake's User ID (e.g., 1234) and then input it into [`$username`](../Member/username.md):
+Let's say we want to get Rake's name instead of Mido's. We first need Rake's User ID (e.g., 1234) and then input it into `$username`:
 
 ```
 Hello $username[1234]
@@ -107,7 +107,7 @@ Output (in channel with ID 1234):
 Hello Mido
 ```
 
-Note:  [`$channelSendMessage`](../Message/channelSendMessage.md) does not get replaced by a value; it only performs an action (sending a message).
+Note:  `$channelSendMessage` does not get replaced by a value; it only performs an action (sending a message).
 
 ::: tip Case Insensitivity
 Function names are not case-sensitive.  `$authorID` and `$aUtHoRiD` will function identically!

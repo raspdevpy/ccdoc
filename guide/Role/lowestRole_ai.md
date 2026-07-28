@@ -1,4 +1,4 @@
-# `$lowestRole`
+# $lowestRole
 
 Returns the user's lowest role in the current guild. You can specify a user ID, or if omitted, it will use the command executor (the user who ran the command).  "Lowest" refers to the role with the lowest position in the server's role hierarchy (typically, the role created first).
 

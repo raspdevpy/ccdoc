@@ -1,4 +1,4 @@
-# `$imageHeight`
+# $imageHeight
 
 Retrieves the height of an image stored within the bot's memory. This function allows you to dynamically access the height of images based on their assigned name.
 

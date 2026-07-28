@@ -1,4 +1,4 @@
-# `$modifyUserRoles`
+# $modifyUserRoles
 
 This function allows you to modify a user's roles by adding, removing, or toggling them. You can perform multiple operations in a single function call.
 

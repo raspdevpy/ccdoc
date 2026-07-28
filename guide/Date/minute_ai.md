@@ -1,4 +1,4 @@
-# `$minute`
+# $minute
 
 Returns the current minute (0-59).
 

@@ -1,4 +1,4 @@
-# `$imageUseFont`
+# $imageUseFont
 
 Sets the font type for text rendered on images.
 

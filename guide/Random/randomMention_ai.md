@@ -1,4 +1,4 @@
-# `$randomMention`
+# $randomMention
 
 Returns a random mention from the current server. This function is useful for things like raffles, giveaways, or randomly selecting a user.
 

@@ -1,4 +1,4 @@
-# `$humanizeMS`
+# $humanizeMS
 
 Converts milliseconds into a human-readable duration string. This function is useful for displaying elapsed time or time remaining in a user-friendly format.
 

@@ -1,6 +1,6 @@
 # $closeTicket
 
-Closes a ticket that was previously created by the bot using the [`$newTicket`](../Channel/newTicket.md) command. This is used to finalize and close a support or request ticket channel.
+Closes a ticket that was previously created by the bot using the `$newTicket` command. This is used to finalize and close a support or request ticket channel.
 
 #### Usage: `$closeTicket[optional error message]`
 

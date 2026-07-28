@@ -1,4 +1,4 @@
-# `$memberJoinedDate`
+# $memberJoinedDate
 
 Retrieves the date and time a member joined the server. You can specify a user ID or use it without any arguments to get the join date of the command executor.
 

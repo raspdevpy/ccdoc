@@ -1,4 +1,4 @@
-# `$transcriptChannel`
+# $transcriptChannel
 
 This function generates an HTML file containing a transcript of the latest messages from a specified channel and can optionally send the generated file to another channel.
 

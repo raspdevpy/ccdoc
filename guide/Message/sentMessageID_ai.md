@@ -1,4 +1,4 @@
-# `$sentMessageID`
+# $sentMessageID
 
 Get the ID of the last sent message.
 

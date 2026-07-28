@@ -1,4 +1,4 @@
-# `$day`
+# $day
 
 Returns the current date. Optionally, you can also retrieve the day of the week.
 

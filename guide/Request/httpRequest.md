@@ -1,4 +1,4 @@
-# `$httpRequest`
+# $httpRequest
 
 Performs an HTTP request with the specified content and headers, then returns the response body.
 
