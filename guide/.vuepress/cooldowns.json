@@ -1,0 +1,609 @@
+{
+  "$addbutton": {
+    "time": 10000,
+    "per": "Message ID",
+    "scope": "messageupdate"
+  },
+  "$addcmdreactions": {
+    "time": 5000,
+    "per": "User",
+    "scope": "emojiuser"
+  },
+  "$addemoji": {
+    "time": 420000,
+    "per": "Server",
+    "scope": "emojiupdate"
+  },
+  "$addmenu": {
+    "time": 10000,
+    "per": "message",
+    "scope": "messageupdate"
+  },
+  "$addmessagereactions": {
+    "time": 6000,
+    "per": "Message ID",
+    "scope": "emojiupdate"
+  },
+  "$adduserstothread": {
+    "time": 30000,
+    "per": "Thread ID",
+    "scope": "thread"
+  },
+  "$archivethread": {
+    "time": 30000,
+    "per": "Thread ID",
+    "scope": "thread"
+  },
+  "$ban": {
+    "time": 180000,
+    "per": "User",
+    "scope": "memberuser"
+  },
+  "$boostingsince": {
+    "time": 180000,
+    "per": "User",
+    "scope": "memberuser"
+  },
+  "$cachechannelmessages": {
+    "time": 60000,
+    "per": "Server",
+    "scope": "fetch"
+  },
+  "$cachemember": {
+    "time": 60000,
+    "per": "Server",
+    "scope": "fetch"
+  },
+  "$changenickname": {
+    "time": 240000,
+    "per": "User ID",
+    "scope": "userupdate"
+  },
+  "$channelsendmessage": {
+    "time": 2000,
+    "per": "User",
+    "scope": "channeluser"
+  },
+  "$clear": {
+    "time": 240000,
+    "per": "Server",
+    "scope": "clear"
+  },
+  "$clearreaction": {
+    "time": 10000,
+    "per": "Channel ID",
+    "scope": "messageupdate"
+  },
+  "$clearreactions": {
+    "time": 10000,
+    "per": "Channel ID",
+    "scope": "messageupdate"
+  },
+  "$clonechannel": {
+    "time": 420000,
+    "per": "Channel ID",
+    "scope": "channelupdate"
+  },
+  "$closepost": {
+    "time": 30000,
+    "per": "Post ID",
+    "scope": "post"
+  },
+  "$closeticket": {
+    "time": 10000,
+    "per": "Server",
+    "scope": "messageupdate"
+  },
+  "$colorrole": {
+    "time": 60000,
+    "per": "Server",
+    "scope": "roleupdate"
+  },
+  "$cpu": {
+    "time": 10000,
+    "per": "User",
+    "scope": "unsortable"
+  },
+  "$createautomodkeyword": {
+    "time": 60000,
+    "per": "Server",
+    "scope": "automod"
+  },
+  "$createchannel": {
+    "time": 420000,
+    "per": "User",
+    "scope": "channeluser"
+  },
+  "$createforum": {
+    "time": 420000,
+    "per": "User",
+    "scope": "channeluser"
+  },
+  "$createpost": {
+    "time": 60000,
+    "per": "forum",
+    "scope": "threadchannel"
+  },
+  "$createrole": {
+    "time": 60000,
+    "per": "Server",
+    "scope": "roleupdate"
+  },
+  "$createsticker": {
+    "time": 300000,
+    "per": "Server",
+    "scope": "stickerupdate"
+  },
+  "$createthread": {
+    "time": 180000,
+    "per": "Channel ID",
+    "scope": "threadchannel"
+  },
+  "$createwebhook": {
+    "time": 300000,
+    "per": "User",
+    "scope": "webhookuser"
+  },
+  "$deleteautomod": {
+    "time": 60000,
+    "per": "Server",
+    "scope": "automod"
+  },
+  "$deletechannels": {
+    "time": 60000,
+    "per": "Server",
+    "scope": "channelupdate"
+  },
+  "$deleteemojis": {
+    "time": 300000,
+    "per": "Server",
+    "scope": "emojiupdate"
+  },
+  "$deletemessage": {
+    "time": 9600,
+    "per": "Message ID",
+    "scope": "messageupdate"
+  },
+  "$deletepost": {
+    "time": 60000,
+    "per": "Post ID",
+    "scope": "post"
+  },
+  "$deleteposts": {
+    "time": 120000,
+    "per": "Server",
+    "scope": "post"
+  },
+  "$deleteroles": {
+    "time": 60000,
+    "per": "Server",
+    "scope": "roleupdate"
+  },
+  "$deletesticker": {
+    "time": 300000,
+    "per": "Server",
+    "scope": "stickerupdate"
+  },
+  "$deletethreads": {
+    "time": 180000,
+    "per": "Thread ID",
+    "scope": "threadchannel"
+  },
+  "$deletetrigger": {
+    "time": 5000,
+    "hardCooldown": true,
+    "per": "Server",
+    "scope": "Server"
+  },
+  "$deletewebhook": {
+    "time": 300000,
+    "per": "User",
+    "scope": "webhookuser"
+  },
+  "$disablebutton": {
+    "time": 9600,
+    "per": "Message ID",
+    "scope": "messageupdate"
+  },
+  "$disablebuttons": {
+    "time": 9600,
+    "per": "Message ID",
+    "scope": "messageupdate"
+  },
+  "$disablemenu": {
+    "time": 9600,
+    "per": "message id",
+    "scope": "messageupdate"
+  },
+  "$dm": {
+    "time": 2000,
+    "per": "User",
+    "scope": "channeluser"
+  },
+  "$editautomodkeyword": {
+    "time": 60000,
+    "per": "id",
+    "scope": "automod"
+  },
+  "$editbutton": {
+    "time": 9600,
+    "per": "Message ID",
+    "scope": "messageupdate"
+  },
+  "$editchannel": {
+    "time": 420000,
+    "per": "Channel ID",
+    "scope": "channelupdate"
+  },
+  "$editembed": {
+    "time": 10000,
+    "per": "channel id",
+    "scope": "messageupdate"
+  },
+  "$editforum": {
+    "time": 420000,
+    "per": "id",
+    "scope": "channeluser"
+  },
+  "$editin": {
+    "time": 10000,
+    "per": "time",
+    "scope": "messageupdate"
+  },
+  "$editmenu": {
+    "time": 10000,
+    "per": "message id",
+    "scope": "messageupdate"
+  },
+  "$editmessage": {
+    "time": 10000,
+    "per": "Message ID",
+    "scope": "messageupdate"
+  },
+  "$editpost": {
+    "time": 60000,
+    "per": "post_id",
+    "scope": "threadchannel"
+  },
+  "$editsticker": {
+    "time": 300000,
+    "per": "Server",
+    "scope": "stickerupdate"
+  },
+  "$editthread": {
+    "time": 180000,
+    "per": "Thread ID",
+    "scope": "threadchannel"
+  },
+  "$edittrigger": {
+    "time": 5000,
+    "hardCooldown": true,
+    "per": "Server",
+    "scope": "Server"
+  },
+  "$enablebuttons": {
+    "time": 10000,
+    "per": "Message ID",
+    "scope": "messageupdate"
+  },
+  "$enablemenu": {
+    "time": 10000,
+    "per": "message id",
+    "scope": "messageupdate"
+  },
+  "$eventcreate": {
+    "time": 60000,
+    "per": "Server",
+    "scope": "scheduledevents"
+  },
+  "$eventdelete": {
+    "time": 60000,
+    "per": "Server",
+    "scope": "scheduledevents"
+  },
+  "$eventedit": {
+    "time": 30000,
+    "per": "event",
+    "scope": "scheduledevents"
+  },
+  "$eventend": {
+    "time": 6000,
+    "per": "Event ID",
+    "scope": "scheduledevents"
+  },
+  "$eventstart": {
+    "time": 6000,
+    "per": "Event ID",
+    "scope": "scheduledevents"
+  },
+  "$foreach": {
+    "time": 0.6000000000000001,
+    "per": "Server",
+    "scope": "awaits"
+  },
+  "$forwardmessage": {
+    "time": 2000,
+    "per": "User",
+    "scope": "channeluser"
+  },
+  "$getchannelslowmode": {
+    "time": 1000,
+    "per": "Server",
+    "scope": "cache"
+  },
+  "$getembed": {
+    "time": 60000,
+    "per": "Channel ID",
+    "scope": "fetch"
+  },
+  "$geteventusers": {
+    "time": 60000,
+    "per": "event id",
+    "scope": "event"
+  },
+  "$getmessage": {
+    "time": 60000,
+    "per": "Channel ID",
+    "scope": "fetch"
+  },
+  "$getreactions": {
+    "time": 3500,
+    "per": "Message ID",
+    "scope": "fetchuser"
+  },
+  "$getrolecolor": {
+    "time": 1000,
+    "per": "Server",
+    "scope": "cache"
+  },
+  "$getserverinvite": {
+    "time": 360000,
+    "per": "Server",
+    "scope": "webhookupdate"
+  },
+  "$giveroles": {
+    "time": 6000,
+    "per": "User ID",
+    "scope": "userupdate"
+  },
+  "$guildroles": {
+    "time": 1000,
+    "per": "Server",
+    "scope": "cache"
+  },
+  "$httprequest": {
+    "time": 0.6000000000000001,
+    "per": "Server",
+    "scope": "request"
+  },
+  "$interactionedit": {
+    "time": 500,
+    "per": "User",
+    "scope": "interaction"
+  },
+  "$jsonrequest": {
+    "time": 0.6000000000000001,
+    "per": "Server",
+    "scope": "request"
+  },
+  "$kick": {
+    "time": 180000,
+    "per": "User",
+    "scope": "memberuser"
+  },
+  "$lockpost": {
+    "time": 30000,
+    "per": "Post ID",
+    "scope": "post"
+  },
+  "$lockthread": {
+    "time": 30000,
+    "per": "Thread ID",
+    "scope": "thread"
+  },
+  "$memberjoinedcode": {
+    "time": 3000,
+    "per": "Server",
+    "scope": "search"
+  },
+  "$membersearch": {
+    "time": 60000,
+    "per": "Server",
+    "scope": "membersearch"
+  },
+  "$messageexists": {
+    "time": 60000,
+    "per": "Channel ID",
+    "scope": "fetch"
+  },
+  "$messagepublish": {
+    "time": 60000,
+    "per": "Message ID",
+    "scope": "messageupdate"
+  },
+  "$modifychannelperms": {
+    "time": 420000,
+    "per": "Channel ID",
+    "scope": "channelupdate"
+  },
+  "$modifyrole": {
+    "time": 60000,
+    "per": "Server",
+    "scope": "roleupdate"
+  },
+  "$modifyroleperms": {
+    "time": 60000,
+    "per": "Server",
+    "scope": "roleupdate"
+  },
+  "$modifyuserroles": {
+    "time": 6000,
+    "per": "User ID",
+    "scope": "userupdate"
+  },
+  "$modifywebhook": {
+    "time": 120000,
+    "per": "User",
+    "scope": "webhookuser"
+  },
+  "$moveuser": {
+    "time": 120000,
+    "per": "User",
+    "scope": "updateuser"
+  },
+  "$muteuser": {
+    "time": 120000,
+    "per": "User",
+    "scope": "updateuser"
+  },
+  "$newticket": {
+    "time": 120000,
+    "per": "User",
+    "scope": "channeluser"
+  },
+  "$pinmessage": {
+    "time": 120000,
+    "per": "Message ID",
+    "scope": "messageupdate"
+  },
+  "$pinpost": {
+    "time": 30000,
+    "per": "Post ID",
+    "scope": "post"
+  },
+  "$removebutton": {
+    "time": 10000,
+    "per": "Message ID",
+    "scope": "messageupdate"
+  },
+  "$removebuttons": {
+    "time": 10000,
+    "per": "Message ID",
+    "scope": "messageupdate"
+  },
+  "$removecontains": {
+    "time": 420000,
+    "per": "Server",
+    "scope": "clear"
+  },
+  "$removeembed": {
+    "time": 10000,
+    "per": "Message ID",
+    "scope": "messageupdate"
+  },
+  "$removemenu": {
+    "time": 10000,
+    "per": "message id",
+    "scope": "messageupdate"
+  },
+  "$removeusersfromthread": {
+    "time": 30000,
+    "per": "Thread ID",
+    "scope": "thread"
+  },
+  "$securitypause": {
+    "time": 60000,
+    "per": "Server",
+    "scope": "pause-invite"
+  },
+  "$sendcrosspostingmessage": {
+    "time": 240000,
+    "per": "Server",
+    "scope": "messageuser"
+  },
+  "$senddm": {
+    "time": 2000,
+    "per": "User",
+    "scope": "channeluser"
+  },
+  "$sendmessage": {
+    "time": 2000,
+    "per": "User",
+    "scope": "channeluser"
+  },
+  "$setchanneltopic": {
+    "time": 420000,
+    "per": "Channel ID",
+    "scope": "channelupdate"
+  },
+  "$setguildicon": {
+    "time": 600000,
+    "per": "Server",
+    "scope": "guildupdate"
+  },
+  "$setguildname": {
+    "time": 600000,
+    "per": "Server",
+    "scope": "guildupdate"
+  },
+  "$setroles": {
+    "time": 6000,
+    "per": "User ID",
+    "scope": "userupdate"
+  },
+  "$settimeout": {
+    "time": 1000,
+    "per": "User",
+    "scope": "timeout"
+  },
+  "$slowmode": {
+    "time": 420000,
+    "per": "Channel ID",
+    "scope": "channelupdate"
+  },
+  "$status": {
+    "time": 240000,
+    "per": "User",
+    "scope": "userupdate"
+  },
+  "$takeroles": {
+    "time": 6000,
+    "per": "User ID",
+    "scope": "userupdate"
+  },
+  "$toggleroles": {
+    "time": 6000,
+    "per": "User ID",
+    "scope": "userupdate"
+  },
+  "$transcriptchannel": {
+    "time": 180000,
+    "per": "Channel ID",
+    "scope": "file"
+  },
+  "$unban": {
+    "time": 420000,
+    "per": "User ID",
+    "scope": "userupdate"
+  },
+  "$unpinmessage": {
+    "time": 120000,
+    "per": "Message ID",
+    "scope": "messageupdate"
+  },
+  "$userremovetimeout": {
+    "time": 60000,
+    "per": "User ID",
+    "scope": "timeout"
+  },
+  "$usersettimeout": {
+    "time": 60000,
+    "per": "User ID",
+    "scope": "timeout"
+  },
+  "$usersbanned": {
+    "time": 240000,
+    "per": "id",
+    "scope": "fetchuser"
+  },
+  "$wait": {
+    "time": 0.6000000000000001,
+    "per": "Server",
+    "scope": "awaits"
+  },
+  "$webhookexists": {
+    "time": 60000,
+    "per": "webhookID",
+    "scope": "webhook"
+  }
+}
