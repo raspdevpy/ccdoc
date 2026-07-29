@@ -1,21 +1,22 @@
 # $getCommandOption
-returns the value of a slash command option.
+
+Retrieves the value of a specific option from a slash command.
 
 #### Usage: `$getCommandOption[type;Option Name]`
 
-## Valid Option Name
-`string, number, boolean, channel, role, mentionable, user`
+## Option Types
+
+This function requires you to specify the data type of the option you're trying to retrieve.  Here's a list of valid option types:
+
+*   `string`:  For text-based input.
+*   `number`:  For numerical input (integers or decimals).
+*   `boolean`: For true/false values.
+*   `channel`: For channel mentions/IDs.
+*   `role`: For role mentions/IDs.
+*   `mentionable`: For user or role mentions/IDs.
+*   `user`: For user mentions/IDs.
 
 <br/>
-<discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		/* Code must be in your slash command*/
-        $getCommandOption[string;optionname]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		Mido
-	</discord-message>
-</discord-messages>
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="slash" vertical="middle" /> <Badge type="tip" text="option" vertical="middle" />

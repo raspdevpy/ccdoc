@@ -1,28 +1,39 @@
 # $channelExists
-Returns true or false, based on whether or not a channelID exists.
 
-#### Usage: 
+Checks if a channel with the provided ID exists. Returns `true` if the channel exists, and `false` if it doesn't.
+
+#### Usage:
+
 `$channelExists[channelID]`
 
+**Parameters:**
+
+*   `channelID`: The ID of the channel to check. This should be a numerical value.
 
 <br/>
-<discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $channelExists[889102524727058463]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		true
-	</discord-message>
-</discord-messages>
 
+**Example:**
 
-::: tip Used Functions
-Use [$channelID](../Channel/channelID.md) to get the ID of a channel using its name.
+```
+!!exec $channelExists[889102524727058463]
+```
+
+```
+true
+```
+
+::: tip Example Breakdown
+This example checks if a channel with the ID `889102524727058463` exists. Since a channel with that ID exists, the function returns `true`.
+:::
+
+::: tip Useful Tip
+You can use the [$channelID](../Channel/channelID.md) function to retrieve the ID of a channel based on its name.  This is helpful if you don't already know the channel's ID.
 :::
 
 ::: tip Related Functions
-Use [$findChannel](../Channel/findChannel.md) to find a channel using its name.
+*   [$findChannel](../Channel/findChannel.md):  Finds a channel by its name.
 :::
 
-##### Function Difficultyy: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="Channel" vertical="middle" /> <Badge type="tip" text="exists" vertical="middle" /> <Badge type="tip" text="check" vertical="middle" /> <Badge type="tip" text="is real" vertical="middle" /> <Badge type="tip" text="server channel" vertical="middle" /> 
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+
+###### Tags: <Badge type="tip" text="Channel" vertical="middle" /> <Badge type="tip" text="exists" vertical="middle" /> <Badge type="tip" text="check" vertical="middle" /> <Badge type="tip" text="is real" vertical="middle" /> <Badge type="tip" text="server channel" vertical="middle" />

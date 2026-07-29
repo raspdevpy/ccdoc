@@ -1,16 +1,25 @@
 # $ram
-Returns the amount of RAM the bot is currently using.
+
+Displays the amount of RAM (Random Access Memory) currently being used by the bot. This command provides insight into the bot's resource consumption.
 
 #### Usage: `$ram`
-<br/>
-<discord-messages>
-	<discord-message>
-		!!exec $ram MB
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		2143.55 MB
-	</discord-message>
-</discord-messages>
 
-##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
+<br/>
+
+**Example:**
+
+```
+!!exec $ram MB
+```
+
+**Bot Response:**
+
+```
+2143.55 MB
+```
+
+This indicates that the bot is currently using approximately 2143.55 MB of RAM.
+
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+
 ###### Tags: <Badge type="tip" text="ram" vertical="middle" /> <Badge type="tip" text="Check" vertical="middle" /> <Badge type="tip" text="Online" vertical="middle" /> <Badge type="tip" text="OS" vertical="middle" />  <Badge type="tip" text="stats" vertical="middle" />

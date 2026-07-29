@@ -1,11 +1,18 @@
-# $channelCount
-Returns the amount of channels that are in the server.
+# `$channelCount`
 
-#### Usage: `$channelCount[Type (optional)]`
+This function returns the total number of channels present in the server.
 
-`Type` can be a type from this [list.](../CodeReferences/ref.channel_types.md)
+#### Usage: `$channelCount[Channel Type (optional)]`
 
-#### Example
+You can optionally specify a channel type to count only channels of that specific type. Refer to this [list](../CodeReferences/ref.channel_types.md) for valid channel types.
+
+#### Parameters:
+
+*   **`Channel Type` (optional):** The type of channel to count. If omitted, the function will count all channels.  Valid types can be found in the [Channel Types Reference](../CodeReferences/ref.channel_types.md).
+
+#### Example:
+
+Counts the number of public threads in the server:
 
 <br/>
 <discord-messages>
@@ -17,5 +24,5 @@ Returns the amount of channels that are in the server.
 	</discord-message>
 </discord-messages>
 
-##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="count" vertical="middle" /> <Badge type="tip" text="amount of channels" vertical="middle" /> <Badge type="tip" text="return number" vertical="middle" />

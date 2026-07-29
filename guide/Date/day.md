@@ -1,8 +1,16 @@
 # $day
-returns current date or if $day[yes] the day
-#### Usage: `$day[Return day of the week (yes/no)(optional)]`
-Example:
+
+Returns the current date. Optionally, you can also retrieve the day of the week.
+
+#### Usage: `$day[yes/no (optional)]`
+
+*   **`$day`**: Returns the current date (day of the month).
+*   **`$day[yes]`**: Returns the current date (day of the month) followed by the day of the week.
+
+**Example:**
+
 <br/>
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $day $day[yes]
@@ -12,9 +20,10 @@ Example:
 	</discord-message>
 </discord-messages>
 
-::: tip Other Timezone
-Date functions uses on default UTC timezone,but you can change it [Learn More](./timezone.md)
+::: tip Timezone Information
+Date functions default to the UTC timezone. You can customize the timezone used by your bot. [Learn More](./timezone.md)
 :::
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="day" vertical="middle" /> 
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+
+###### Tags: <Badge type="tip" text="day" vertical="middle" />

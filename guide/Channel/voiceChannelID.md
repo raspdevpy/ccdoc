@@ -1,23 +1,22 @@
-# $voiceChannelID <Badge type="warning" text="Depreciated" vertical="middle" /> 
+# $voiceChannelID <Badge type="warning" text="Deprecated" vertical="middle" />
 
 ::: danger
-This function has been depreciated!
-This function is **deprecated**, please use [$vcBefore](./vcBefore.md) and [$vcAfter](./vcAfter.md) instead.
+**This function is deprecated and should no longer be used!**
+
+Please use [$vcBefore](./vcBefore.md) and [$vcAfter](./vcAfter.md) instead.  These functions provide more control and flexibility.
 :::
 
-Returns the Voice channelID where the user join/left in voice trigger.
-If the user switches channel, this function will return the new channel.
-
+Returns the ID of the voice channel a user joined or left in a voice trigger event. If a user switches channels, this function will return the ID of the *new* channel they joined.
 
 ## Usage
 
 ```bash
 $voiceChannelID
 ```
+
+## Important Considerations
+
 ::: warning
-This function will not work in the `Channel Creation/Deletion` trigger.
-Instead, use [$eventChannelID](../Channel/eventChannelID.md).
-
-This function only works for the `Voice Join/Leave` trigger. For other triggers, use [$channelID](../Channel/channelID.md).
+*   This function **will not work** in the `Channel Creation/Deletion` trigger.  Use [$eventChannelID](../Channel/eventChannelID.md) for those events.
+*   `$voiceChannelID` is specifically designed for the `Voice Join/Leave` trigger. Using it in other triggers will not produce the desired result. For other triggers, use the more general [$channelID](../Channel/channelID.md).
 :::
-

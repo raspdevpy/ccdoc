@@ -1,18 +1,27 @@
 # $randomChannelID
-Returns a random Channel id from a Channel in the server
 
-#### Usage: 
-`$randomChannelID`
+This function returns a random Channel ID from any channel within the server.
+
+#### Usage:
+
+Simply use `$randomChannelID` in your command or custom function.
 
 <br/>
-<discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $randomChannelID
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		37907890789087988
-	</discord-message>
-</discord-messages>
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="random" vertical="middle" /> <Badge type="tip" text="random Channel id" vertical="middle" /> <Badge type="tip" text="choose" vertical="middle" /> <Badge type="tip" text="return random Channel id" vertical="middle" />
+**Example:**
+
+```discord
+!!exec $randomChannelID
+```
+
+**Result:**
+
+```discord
+37907890789087988
+```
+
+This will output a random channel ID from the server where the command is executed.  The actual ID returned will, of course, be different each time.
+
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+
+###### Tags: <Badge type="tip" text="random" vertical="middle" /> <Badge type="tip" text="channel ID" vertical="middle" /> <Badge type="tip" text="selection" vertical="middle" /> <Badge type="tip" text="random channel" vertical="middle" />

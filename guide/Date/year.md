@@ -1,8 +1,19 @@
 # $year
-returns current year
-#### Usage: `$year`
-Example:
-<br/>
+
+Get the current year.
+
+This command returns the current year based on the configured timezone (default is UTC).
+
+#### Usage:
+
+```
+$year
+```
+
+**Example:**
+
+Here's how to use the `$year` command in a Discord message:
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $year
@@ -12,9 +23,10 @@ Example:
 	</discord-message>
 </discord-messages>
 
-::: tip Other Timezone
-Date functions uses on default UTC timezone,but you can change it [Learn More](./timezone.md)
+::: tip Timezone Information
+Date functions default to the UTC timezone. You can customize the timezone used by your commands. [Learn More](./timezone.md)
 :::
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="year" vertical="middle" /> 
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+
+###### Tags: <Badge type="tip" text="year" vertical="middle" />

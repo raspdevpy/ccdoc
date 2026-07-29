@@ -1,6 +1,6 @@
 # $imageFill
 
-Fill an image with a specific color
+Fill a portion of an image with a specified color.
 
 ## Usage
 
@@ -8,17 +8,25 @@ Fill an image with a specific color
 $imageFill[color;x;y;width;height;opacity]
 ```
 
-### Colors:
-Accepts hex or Common Color Names like gray or black
+| Parameter | Description                                                                                                                   | Required |
+| :-------- | :---------------------------------------------------------------------------------------------------------------------------- | :------- |
+| `color`   | The color to fill with. Can be a hex code (e.g., `#FF0000`) or a common color name (e.g., `gray`, `black`, `red`).           | Yes      |
+| `x`       | The x-coordinate of the top-left corner of the rectangle to fill.  See [Positioning](./../CodeReferences/ref.imgbuild.position.md) for more details. | No       |
+| `y`       | The y-coordinate of the top-left corner of the rectangle to fill.  See [Positioning](./../CodeReferences/ref.imgbuild.position.md) for more details. | No       |
+| `width`   | The width of the rectangle to fill. See [Sizing](./../CodeReferences/ref.imgbuild.size.md) for more details.               | No       |
+| `height`  | The height of the rectangle to fill. See [Sizing](./../CodeReferences/ref.imgbuild.size.md) for more details.              | No       |
+| `opacity` | The opacity of the fill color (0-1, where 0 is fully transparent and 1 is fully opaque). Defaults to 1 if omitted. | No |
 
-# Position: X & Y
-You can read more about X, Y [here](./../CodeReferences/ref.imgbuild.position.md)
+## Examples
 
-# Size: Width & Height
-You can read more about Width, Height [here](./../CodeReferences/ref.imgbuild.size.md)
+### Example 1: Fill the entire image with gray.
 
+```
+!!exec $imageCreate[300;300]
+$imageFill[gray]
+$image[$imageOutput]
+```
 
-### Example 1:
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
         !!exec $imageCreate[300;300]<br>$imageFill[gray]<br>$image[$imageOutput]<br><br>
@@ -29,7 +37,15 @@ You can read more about Width, Height [here](./../CodeReferences/ref.imgbuild.si
           </discord-message>
 </discord-messages>
 
-### Example 2:
+### Example 2: Fill a 50x50 rectangle at (100, 100) with red.
+
+```
+!!exec $imageCreate[300;300]
+$imageFill[gray]
+$imageFill[red;100;100;50;50]
+$image[$imageOutput]
+```
+
 <discord-messages>
           <discord-message :bot="false" role-color="#ffcc9a" author="Member">
         !!exec $imageCreate[300;300]<br>$imageFill[gray]<br>$imageFill[red;100;100;50;50]<br>$image[$imageOutput]<br><br>

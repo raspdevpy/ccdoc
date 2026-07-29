@@ -1,5 +1,6 @@
 # $serverContentFilter
-Returns the content filter level of this guild
+
+Returns the content filter level of this guild. This determines the level of explicit content filtering applied to media content within the server.
 
 #### Usage: `$serverContentFilter`
 

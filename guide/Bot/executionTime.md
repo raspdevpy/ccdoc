@@ -1,11 +1,22 @@
 # $executionTime
 
-Returns the time the interpreter took to execute the code before it, in milliseconds.
-**Note:** This function won't work in embeds.
+This function returns the time it took for the interpreter to execute the code *before* this function, measured in milliseconds.
 
-## Usage
+## How to Use
 
-```bash
+Simply include `$executionTime` in your code.  It will be replaced with the execution time in milliseconds.
+
+```
 $executionTime
 ```
 
+**Example:**
+
+Imagine your bot executes some complex calculations or retrieves data from an external source. You can use `$executionTime` to gauge how long these operations take.
+
+```
+Some complex command code
+$executionTime
+```
+
+This would output the time taken to execute the "Some complex command code" part of the command. This can be useful for identifying performance bottlenecks.

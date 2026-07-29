@@ -1,20 +1,36 @@
 # $lowestRole
-returns the user's lowest role in this guild from the provided id or executor
 
-#### Usage: 
-`$lowestRole[userid]` or `$lowestRole`
+Returns the user's lowest role in the current guild. You can specify a user ID, or if omitted, it will use the command executor (the user who ran the command).  "Lowest" refers to the role with the lowest position in the server's role hierarchy (typically, the role created first).
 
+#### Usage:
+
+*   `$lowestRole[userID]` - Returns the lowest role for the user with the specified `userID`.
+*   `$lowestRole` - Returns the lowest role for the user who executed the command.
 
 <br/>
-<discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $roleID[$lowestRole]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-		Member
-	</discord-message>
-</discord-messages>
 
+**Example:**
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="Role" vertical="middle" /> <Badge type="tip" text="get lowest position" vertical="middle" /> <Badge type="tip" text="position" vertical="middle" />
+This example retrieves the role ID of the user's lowest role and displays it.
+
+```discord
+!!exec $roleName[$lowestRole]
+```
+
+**Explanation:**
+
+*   `!!exec` is used to execute a custom command.
+*   `$lowestRole` retrieves the lowest role of the command executor.
+*   `$roleName` retrieves the ID of the role obtained from `$lowestRole`.
+
+**Discord Output:**
+
+```discord
+Member
+```
+
+(The bot will output the role ID of the user's lowest role. This example only provides a placeholder "Member".)
+
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+
+###### Tags: <Badge type="tip" text="Role" vertical="middle" /> <Badge type="tip" text="Get Lowest Role" vertical="middle" /> <Badge type="tip" text="Role Hierarchy" vertical="middle" />

@@ -1,21 +1,35 @@
 # Troubleshooting
-Since our bot is very advanced, everyone faces their own problems. Because of this, we made a section, with some common problems. Sorted from most common to less common
 
-The problem is the title, the answer is below it and after the question is the trigger type:
+Our bot's advanced features mean users may encounter unique issues. This section addresses common problems, ordered from most frequent to less frequent.
 
-## My command does not trigger <Badge type="tip" text="Word" vertical="middle" /> 
-Have you set the minimum permission for the command execution to `None`?
+Each problem is presented as a question, followed by troubleshooting steps and the trigger type.
 
-- No: change it, press save & try again
+## My command doesn't trigger  <Badge type="tip" text="Word" vertical="middle" />
 
-- Yes: check if your trigger contains any [special characters](../CodeReferences/specialCharacters)
+**Possible Causes:**
+
+*   **Incorrect Permission Level:** Have you set the minimum permission level for the command execution to `None`?
+
+    *   **No:** Change the permission level to `None`, save the changes, and try again.
+
+    *   **Yes:** Continue to the next possible cause.
+
+*   **Special Characters in Trigger:** Does your command trigger contain any [special characters](../CodeReferences/specialCharacters)? Special characters can sometimes interfere with trigger recognition.
 
 ## The bot failed to assign a role
-Follow these steps!
 
-1. Ensure the bot has sufficient permissions to assign roles. (We recommend granting him Administrator, as it will completely eliminate all permission issues.)
+**Troubleshooting Steps:**
 
-2. Ensure the bot's role (@Custom Command) is above the role you're trying to assign, as well as all the roles the member has. This can be found in Discord's Role Hierachy.
-![Hierarchy example](https://media.discordapp.net/attachments/857273141968371732/964741875179356180/unknown.png?width=497&height=593 "hierarchy example")
+1.  **Insufficient Bot Permissions:** Ensure the bot has sufficient permissions to assign roles.  Granting the bot Administrator permissions is the easiest way to resolve permission issues.
 
-If those steps fail, feel free to ask a member of our staff on the [support server](https://ccommandsbot.com/join).
+2.  **Role Hierarchy:**  The bot's role (@Custom Command) must be higher in the server's role hierarchy than:
+    *   The role the bot is trying to assign.
+    *   All roles the member already has.
+
+    You can adjust the role hierarchy in your Discord server settings.
+
+    ![Hierarchy example](https://media.discordapp.net/attachments/857273141968371732/964741875179356180/unknown.png?width=497&height=593 "Role Hierarchy Example")
+
+**Still having trouble?**
+
+If these steps don't resolve the issue, please reach out to our staff on the [support server](https://ccommandsbot.com/join) for personalized assistance.

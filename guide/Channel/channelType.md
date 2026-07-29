@@ -1,8 +1,15 @@
 # $channelType
-Returns the type of channel, from a channel ID.
+
+Retrieves the type of a channel based on its ID.
 
 #### Usage: `$channelType[channelID]`
+
+This function allows you to determine the type of a specific channel using its unique ID.
+
 <br/>
+
+**Example:**
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $channelType[$channelID]
@@ -13,7 +20,7 @@ Returns the type of channel, from a channel ID.
 </discord-messages>
 
 ::: tip Note
-This function returns a type of channel from this [list.](../CodeReferences/ref.channel_types.md)
+The `$channelType` function returns a string representing the channel type.  Refer to this [list](../CodeReferences/ref.channel_types.md) for possible channel types and their meanings.
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 

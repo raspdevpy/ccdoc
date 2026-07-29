@@ -1,5 +1,5 @@
 # $ownerID
-returns the guild's ownerID
+Returns the guild's owner ID.
 
 #### Usage: `$ownerID`
 
@@ -14,4 +14,4 @@ returns the guild's ownerID
 </discord-messages>
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="Owner ID" vertical="middle" /> <Badge type="tip" text="user ID" vertical="middle" />
+###### Tags: <Badge type="tip" text="Owner ID" vertical="middle" /> <Badge type="tip" text="User ID" vertical="middle" />

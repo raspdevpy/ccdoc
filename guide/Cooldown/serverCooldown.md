@@ -1,44 +1,61 @@
 # $serverCooldown
-Sets a cooldown for a command, across all members in your server, when user face a cooldown, it stops the execution and send `Error Message`
-## Usage: 
-`$serverCooldown[time (default is 5s);Error message]`
 
-### Example 1:
+Sets a cooldown in a command for the whole server.
+
+## Usage
+
+```bash
+$serverCooldown[time;error message]
+```
+1. **time** - (Optional) default value: `5s`. The cooldown duration. Example times: `10s`, `1m`, `2h`, `1d`
+2. **error message** - (Optional) default value: (none). The message to send if a cooldown is still in progress.
+
+## Example
+
+#### Using $serverCooldown
+
+As you can see, first time it will set the cooldown and execute code below, second time, it won't allow execution
+
 <discord-messages>
-          <discord-message :bot="false" role-color="#ffcc9a" author="Member">
-        !!exec $serverCooldown[2h;You can get points again after %time%]<br>
-        $sendMessage[You received 100x points.]<br>
-          </discord-message>
-          <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-        You can get points again after 1 hour 54 minutes and 56 seconds<br><br>
-        </discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $serverCooldown[5m;You're on cooldown!]<br>
+        You're not on cooldown!
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        You're not on cooldown!
+    </discord-message>
+    <discord-message :bot="false" role-color="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+        !!exec $serverCooldown[5m;You're on cooldown! Still %mins%m remaining!]<br>
+        You're not on cooldown!
+    </discord-message>
+    <discord-message :bot="true" role-color="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        You're on cooldown! Still 4m remaining!
+    </discord-message>
 </discord-messages>
 
-## Usable Macros In Message :
-| Macro      | Description | Output Example |
-| ----------- | ----------- | ----------- |
-| %time% | replaced with human readable time |5 days 1 hour 54 minutes and 56 seconds |
-| %days% | days left | 5 |
-| %hrs%  | hours left | 1 |
-| %mins% | minutes left |54 |
-| %secs% | seconds left | 56 |
-| %timestamp% | timestamp in seconds for when cooldown expire | 1680711176 |
-| %relative% | uses discord to update itself |![](https://i.imgur.com/F2bAFnk.png) |
+## Placeholders
 
-::: tip Note
-You can send embed using [Message Curl Format](../CodeReferences/ref.message_curl_format.md)
+Available placeholders you can use in error message
+
+| Placeholder   | Description                                               | Output Example                            |
+| ------------- | --------------------------------------------------------- | ----------------------------------------- |
+| `%time%`      | The full time remaining                                   | `1 day 2 hours 3 minutes and 4 seconds`   |
+| `%days%`      | The number of days remaining                              | `1`                                       |
+| `%hrs%`       | The number of hours remaining                             | `2`                                       |
+| `%mins%`      | The number of minutes remaining                           | `3`                                       |
+| `%secs%`      | The number of seconds remaining                           | `4`                                       |
+| `%timestamp%` | Timestamp of cooldown expiration in seconds               | `1735689600`                              |
+| `%relative%`  | Shows Discord relative timestamp (Automatically Updates)  | `<t:1735689600:R>` - Displays: `in 1 day` |
+
+::: warning Warning
+Place this function above the code you want to use cooldown for. All code before this function will be executed.
 :::
-
-::: tip Related Functions
-[$channelCooldown](../Cooldown/channelCooldown.md), for a channel based cooldown
-
-[$cooldown](../Cooldown/cooldown.md), for a user based cooldown
-:::
-
-::: danger
-Use this code, on the FIRST line of your code! If you do not, it will execute all code before this line and not after!
+::: tip Suggestion
+You can send embeds, select menus and buttons by using the [message curl format](../CodeReferences/ref.message_curl_format.md).
 :::
 
 
-##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="Cooldown" vertical="middle" />  <Badge type="tip" text="Server Cooldown" vertical="middle" />  <Badge type="tip" text="Raid Limit" vertical="middle" />  <Badge type="tip" text="Raid Limited" vertical="middle" /> 
+##### Related functions: [$serverCooldown](../Cooldown/serverCooldown.md) [$cooldown](../Cooldown/cooldown.md)
+
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+###### Tags: <Badge type="tip" text="Cooldown" vertical="middle" /> <Badge type="tip" text="Server Cooldown" vertical="middle" /> <Badge type="tip" text="Limit" vertical="middle" />

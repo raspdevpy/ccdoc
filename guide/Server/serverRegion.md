@@ -1,8 +1,11 @@
 # $serverRegion
-Returns the Current server region or undefined 
+
+Returns the current server region or `undefined` if not available.
 
 #### Usage: `$serverRegion`
+
 <br/>
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $serverRegion

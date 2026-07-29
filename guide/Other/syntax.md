@@ -1,137 +1,163 @@
 # Syntax
-Read all about the syntax used by the bot!
 
-::: tip Disclaimer!
-The Syntax has been inspired from BDFD originally.
+Learn about the syntax used by the bot to understand how to write commands and scripts!
 
-We are not affiliated with BDFD. But we're using a similar syntax
-:::
+## Syntax Overview
 
-## Syntax
-In general the code only has 2 types:\
-1- [Text](#what-is-text)\
-2- [Function](#what-is-a-function)
+The bot's code primarily uses two fundamental types:
+
+1.  [Text](#what-is-text)
+2.  [Function](#what-is-a-function)
 
 ## What is Text?
-In the code anything is text except for [functions](#what-is-a-function)\
-for example in this code:
+
+Anything in the code that isn't a [function](#what-is-a-function) is considered text.
+
+For example, in the following code snippet:
+
 ```
 Hello $username to our server
 ```
 
-`Hello`: is text\
-`$username`: is a function\
-`to our server` is text
+*   `Hello`: This is text.
+*   `$username`: This is a function.
+*   `to our server`: This is text.
 
-## What is a function
-Any function starts with `$` like `$username`\
-In this code for example:
+## What is a Function?
+
+A function is a special instruction that begins with a `$` symbol, like `$username`.
+
+In this example:
+
 ```
 Hello $username to our server
 ```
-`$username` is the only function in this code
 
-### But what do functions do?
-Each function in general can do one of the 3 things:
-* Replace itself with a value
-* Do an action
-* Do an action and Replace itself with a value 
+`$username` is the only function present.
 
-For example running this code:
+### Function Actions
+
+Functions generally perform one of these three actions:
+
+*   **Replace with a value:** The function is replaced by a specific value.
+*   **Perform an action:** The function executes a task.
+*   **Perform an action and replace with a value:** The function executes a task and then is replaced by a specific value.
+
+For example, running this code:
+
 ```
 Hello $username, welcome to our server!
 ```
-you will find the bot sends:
+
+Will result in the bot sending:
+
 ```
 Hello Mido, welcome to our server!
 ```
 
-Which clearly shows that the `$username` function is `Replaced by value` type and this value will always be the username of the author
+This demonstrates that the `$username` function is of the "Replace with a value" type. It's replaced by the username of the command executor.
 
-::: tip `Replaced by value` type is also called `return`\
-Read the function descriptions in docs carefully.
-If a function is replaced by value, it returns that value. 
-E.g.:
-`$username` ***Returns*** the name of the user that executed the command
-If a function does an action, its description starts with a verb for that action.
-E.g.:
-`$title` ***Adds*** a title to a message
+::: tip Function Return Values and Actions
+
+*   A function that `Replaces with a value` is also said to `return` that value. Check the function documentation to understand what it returns. For example:
+    `$username` ***Returns*** the name of the user that executed the command.
+
+*   A function that `Performs an Action` will have its description begin with a verb describing that action. For example:
+    `$title` ***Adds*** a title to a message.
 :::
 
-### Input
-Some functions requires an input from you to behave differently and this is the format:
+### Function Input
+
+Some functions require input from you to customize their behavior. The format is as follows:
+
 ```
 $function[Inputs]
 ```
-Previously we used `$username` without inputs but why?\
-As the `$username` documentation will tell you, that by default it will return the executor's name, but if you want to return someone else username you will need to do an input in this case\
-Assume that we want to get Rake's name instead of Mido\
-We will first need to get Rake's User ID, assume 1234, and input it to `$username`:
+
+We previously used `$username` without any input. This is because, as its documentation specifies, it defaults to returning the executor's name.  To get someone else's username, you need to provide their User ID as input.
+
+Let's say we want to get Rake's name instead of Mido's. We first need Rake's User ID (e.g., 1234) and then input it into `$username`:
+
 ```
 Hello $username[1234]
 ```
-Output
+
+Output:
+
 ```
 Hello Rake
 ```
-### Multiple Inputs
-Some functions need more than just 1 input like $channelSendMessage\
-it asks for 2 different inputs (in order):
-* Channel ID to send to
-* Message Content
 
-Assume that the channel id is `1234`, and content is `Hello $username`
-To apply these inputs in the function, we will separate them by a semicolon `;`\
-Like this:
+### Multiple Inputs
+
+Some functions, like `$channelSendMessage`, require multiple inputs.  It needs:
+
+*   The Channel ID to send to.
+*   The Message Content.
+
+Let's assume the channel ID is `1234` and the content is `Hello $username`.  To provide these inputs to the function, we separate them with a semicolon (`;`):
+
 ```
 $channelSendMessage[1234;Hello $username]
 ```
+
 Output (in channel with ID 1234):
+
 ```
 Hello Mido
 ```
 
-Note: `$channelSendMessage` doesn't get replaced by a value, but only does an action (sending a message)
+Note:  `$channelSendMessage` does not get replaced by a value; it only performs an action (sending a message).
 
-::: tip Function names are case insensitive
-It means $authorID and $aUtHoRiD will work the same! 
+::: tip Case Insensitivity
+Function names are not case-sensitive.  `$authorID` and `$aUtHoRiD` will function identically!
 :::
 
 ## Expressions
-In some functions you might find it tells you:\
-Provide an expression
 
-In this case, please read about the [expressions](../CodeReferences/ref.expression.md) here
+Some functions require you to provide an "expression" as input.
+
+In these cases, please refer to the [Expressions](../CodeReferences/ref.expression.md) documentation for detailed information.
 
 ## Escaping Characters
-There's some dangerous characters that are troublesome to work with
-for example let's say you want to send `$username`
-to be literally be sent like that and not be replaced to be the user name
-For example code:
+
+Certain characters can cause unexpected behavior and need to be "escaped." For example, if you want to send the literal text `$username` instead of having it replaced with the username:
+
+Code:
+
 ```
 To get username use function: $username
 ```
-You will find the output:
+
+Output:
+
 ```
 To get username use function: Mido
 ```
-It clearly got replaced by user name, but what to do to tell the bot: treat this `$` as literal `$` not as function, here comes the escaping character technique, you will simply add `\` before that character like this:
+
+To prevent the `$` from being interpreted as the start of a function, you need to "escape" it by adding a backslash (`\`) before it:
+
 ```
 To get username use function: \$username
 ```
-Output will be:
+
+Output:
+
 ```
 To get username use function: $username
 ```
 
-Some other dangerous characters
+Other characters that may need escaping include:
+
 `[`, `]`, `;`, `:`, `>`, `<`, `=`, `{`, `}`
 
+## Encoded Character Codes (Alternative to `\`)
 
-## Encoded Character Codes (Alternative of `\`)
+Instead of using backslashes, you can use these encoded character codes to represent special characters:
+
 ```js
-#LEFT# =>> [
 #RIGHT# =>> ]
+#LEFT# =>> [
 #SEMI# =>> ;
 #COLON# =>> :
 #DOLLAR# =>> $
@@ -139,9 +165,9 @@ Some other dangerous characters
 #RIGHT_CLICK# =>> >
 #LEFT_CLICK# =>> <
 #EQUAL# =>> =
-#LEFT_BRACKET# =>> {
-#RIGHT_BRACKET# =>> }
-#NL# =>> New line 
+#RIGHT_BRACKET# =>> {
+#LEFT_BRACKET# =>> }
+#NL# =>> New line
 #BR# =>> New line
 #SP# =>> Space
 #TAB# =>> Tab (few spaces)
