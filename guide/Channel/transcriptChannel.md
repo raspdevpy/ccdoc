@@ -1,6 +1,6 @@
 # $transcriptChannel
 
-This function generates an HTML file containing a transcript of the latest messages from a specified channel and can optionally send the generated file to another channel.
+This function generates an HTML file containing a transcript of the latest 100 messages from a specified channel and can optionally send the generated file to another channel.
 
 **Functionality:** Compiles the latest messages from a channel into an HTML file.
 
