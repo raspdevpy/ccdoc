@@ -1,9 +1,9 @@
 # Stage 1 — build the static assets
-FROM node:20-alpine3.21 AS builder
+FROM node:24-alpine AS builder
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci
+RUN npm ci  --legacy-peer-deps
 
 COPY . .
 # adjust the build command if your project uses a different script
