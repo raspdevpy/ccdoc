@@ -162,7 +162,7 @@ $selectMenu[
 
 ::: tip {key=value} what is this for a syntax?
 This syntax is called curl args.It is really similar to curl message.Especially new Functions support it ,you can use !!func `function name` to check if it supports curl arguments.
- [Learn more](../guide/curl.md)
+ [Learn more](../../Other/curl.md)
 :::
 
 ::: tip Do you want to add a menu inside a Function as a parameter, like `$sendMessage[text]`?

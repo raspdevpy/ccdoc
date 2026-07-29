@@ -41,7 +41,7 @@ Adding Custom Command Bot to your server is a breeze. Just follow these simple s
 
 With the bot successfully added to your server, you're now ready to unleash your creativity and build your own custom commands!
 
-Head over to [the full guide](../Guide/1.create.md) to learn how to create your first command.
+Head over to [the full guide](./guide/Guide/1.create.md) to learn how to create your first command.
 
 # How to run 
 
