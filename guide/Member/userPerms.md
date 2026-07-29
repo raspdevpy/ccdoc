@@ -1,6 +1,6 @@
 # $userPerms
 
-Returns a list of permissions a user has in the current channel.
+Returns a list of permissions a user has across the server based on their roles.
 
 ## Usage
 
