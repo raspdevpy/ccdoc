@@ -1,4 +1,4 @@
-# Custom Command Bot Privacy Policy
+# Privacy Policy
 
 **Last Updated:** July 27, 2026
 
