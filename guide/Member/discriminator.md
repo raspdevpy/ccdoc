@@ -28,7 +28,7 @@ Returning a discriminator from user
 This feature is deprecated because Discord switched to usernames. This function will return 0 as of the username update. This still works on bots.
 :::
 
-##### Related functions: [$username](../Member/username.md) [$nickname](../Member/nickname.md) [$userTag](../Member/userTag.md)
+##### Related functions: `$username` `$nickname` `$userTag`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="name" vertical="middle"/> <Badge type="tip" text="tag" vertical="middle"/> <Badge type="tip" text="discriminator" vertical="middle"/>

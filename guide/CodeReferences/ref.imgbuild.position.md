@@ -43,7 +43,7 @@ Here's the corrected version:
 
 By default, X and Y represent the top-left corner of the object. But what if we want to use a different point as the reference? For example, in the previous example, we had to perform extra calculations to center the box because we were working with the top-left corner.
 
-### `$imagePositionBase`
+### $imagePositionBase
 
 The `$imagePositionBase` function allows us to change the origin point used for positioning.
 

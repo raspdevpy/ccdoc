@@ -52,5 +52,5 @@ This example retrieves the names of all text channels in the server, separated b
 
 ::: tip Related Functions
 
-*   [$categoryChannels](../Channel/channelExists.md):  Get channels within a specific category.
+*   `$categoryChannels`:  Get channels within a specific category.
 :::

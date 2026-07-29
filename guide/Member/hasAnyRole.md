@@ -32,10 +32,10 @@ How to use $hasAnyRole without user argument. Keep in mind that if the user does
 </discord-messages>
 
 ::: tip Suggestion
-To make code stop if the user doesn't have the needed role, you can check out [$onlyIf](../Text/only/onlyIf.md). For multiple actions, check [$if](../Text/Condition/if.md).
+To make code stop if the user doesn't have the needed role, you can check out `$onlyIf`. For multiple actions, check `$if`.
 :::
 
-##### Related functions: [$hasPerms](../Member/hasPerms.md) [$hasAnyPerm](../Member/hasAnyPerm.md) [$hasRole](../Role/hasRole.md)
+##### Related functions: `$hasPerms` `$hasAnyPerm` `$hasRole`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="roles" vertical="middle"/> <Badge type="tip" text="management" vertical="middle"/>

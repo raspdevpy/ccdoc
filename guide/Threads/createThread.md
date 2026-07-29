@@ -23,9 +23,9 @@ $createThread[
 ```
 
 ::: tip Related Functions
-[$createChannel](../Channel/createChannel.md), create a channel
+`$createChannel`, create a channel
 
-[$createRole](../Role/createRole.md), create a role
+`$createRole`, create a role
 :::
 
 ::: tip

@@ -45,7 +45,7 @@ If any member who can execute the command with this function, they will be able 
 Do not place the bot's role above Admin or Head Moderator roles to avoid kicking important member.
 :::
 
-##### Related functions: [$ban](../Member/ban.md) [$unban](../Member/unban.md)
+##### Related functions: `$ban` `$unban`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="kick" vertical="middle" /> <Badge type="tip" text="punish" vertical="middle" /> <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="moderation" vertical="middle" /> <Badge type="tip" text="moderator" vertical="middle" />

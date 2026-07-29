@@ -10,7 +10,7 @@ Deletes a message variable, from the command trigger or from the ID specified.
 </discord-messages>
 
 ::: tip Related Functions
-Check out: [$setMessageVar](../Variables/setMessageVar.md)
+Check out: `$setMessageVar`
 
-Check out: [$getMessageVar](../Variables/getMessageVar.md)
+Check out: `$getMessageVar`
 :::

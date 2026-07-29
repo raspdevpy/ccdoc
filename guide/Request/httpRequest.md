@@ -78,8 +78,8 @@ For **Tier 4 and above**, the timeout is extended to **30 minutes**.
 
 ## Related Functions
 
-* [$httpRequestStatus](../Request/httpRequestStatus.md)
-* [$httpRequestHeader](../Request/httpRequestHeader.md)
+* `$httpRequestStatus`
+* `$httpRequestHeader`
 
 **Function Difficulty:** <Badge type="warning" text="Medium" vertical="middle"/>
 

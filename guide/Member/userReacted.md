@@ -37,7 +37,7 @@ User will be cached after they trigger any command from this bot, but eventually
 To have all members cached, you will need Tier 5 Bot.
 :::
 
-##### Related functions: [$getMessageReactions](../Message/getMessageReactions.md) [$getReactionCount](../Message/getReactionCount.md)
+##### Related functions: `$getMessageReactions` `$getReactionCount`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="reaction" vertical="middle" /> <Badge type="tip" text="user" vertical="middle" />

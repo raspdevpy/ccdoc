@@ -36,7 +36,7 @@ default is `auto`, but you can specify one of those:
 This example changes the channel name to "new-channel-name", syncs permissions with category and provides a reason for audit logs.  All other channel properties will remain unchanged.
 
 ::: tip Related Functions
-Use [$modifyChannelPerms](../Channel/modifyChannelPerms.md) to manage channel permissions in more detail.
+Use `$modifyChannelPerms` to manage channel permissions in more detail.
 :::
 
 ##### Function Difficulty: <Badge type="danger" text="Difficult" vertical="middle" />

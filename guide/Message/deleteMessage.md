@@ -14,7 +14,7 @@ Deletes a specified message from a channel.
 This example will delete the message with the ID specified in `$messageID` from the channel with the ID specified in `$channelID`.  Make sure your bot has the necessary permissions to delete messages in the specified channel.
 
 ::: tip Related Functions
-[$deletecommand](../Message/deletecommand.md) -  Use this function to delete the message that triggered the command.
+`$deletecommand` -  Use this function to delete the message that triggered the command.
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />

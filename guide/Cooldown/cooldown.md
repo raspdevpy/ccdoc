@@ -56,7 +56,7 @@ You can send embeds, select menus and buttons by using the [message curl format]
 :::
 
 
-##### Related functions: [$channelCooldown](../Cooldown/channelCooldown.md) [$serverCooldown](../Cooldown/serverCooldown.md)
+##### Related functions: `$channelCooldown` `$serverCooldown`
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="Cooldown" vertical="middle" /> <Badge type="tip" text="Limit" vertical="middle" />

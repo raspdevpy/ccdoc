@@ -32,8 +32,8 @@ In this example, we're searching for a channel named "general" and telling the f
 
 ::: tip Related functions
 
-*   [$findMember](../Member/findMember.md): Find a member in the server.
-*   [$findRole](../Role/findRole.md): Find a role in the server.
-*   [$findChannel](../Channel/findChannel.md): Find a channel (works across servers if the bot is in multiple).
+*   `$findMember`: Find a member in the server.
+*   `$findRole`: Find a role in the server.
+*   `$findChannel`: Find a channel (works across servers if the bot is in multiple).
 
 :::

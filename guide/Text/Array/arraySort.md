@@ -1,6 +1,6 @@
 # $arraySort
 
-Sorts an array, created with [$textSplit](../textSplit/textSplit.md).
+Sorts an array, created with `$textSplit`.
 Can be sorted numerically or alphabetically, or depending on occurrences.
 
 ## Usage

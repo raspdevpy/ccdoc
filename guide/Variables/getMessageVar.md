@@ -13,7 +13,7 @@ Gets a message variable value
 </discord-messages>
 
 ::: tip Related Functions
-Check out: [$setMessageVar](../Variables/setMessageVar.md)
+Check out: `$setMessageVar`
 
-Check out: [$deleteMessageVar](../Variables/deleteMessageVar.md)
+Check out: `$deleteMessageVar`
 :::

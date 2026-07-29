@@ -9,5 +9,5 @@ $removeSplitTextElement[index;index2;...]
 ```
 
 ::: danger
-This function got deprecated, use [$arrayRemove](./../Array/arrayRemove.md) instead 
+This function got deprecated, use `$arrayRemove` instead 
 :::

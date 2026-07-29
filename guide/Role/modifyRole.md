@@ -49,13 +49,13 @@ This example will:
 
 ::: tip Used Functions
 
-*   [$roleID](../Role/roleID.md):  Returns a role ID by its name.
+*   `$roleID`D by its name.
 :::
 
 ::: tip Related Functions
 
-*   [$editChannel](../Channel/editChannel.md):  Modifies the name or category of a channel.
-*   [$modifyRolePerms](../Role/modifyRolePerms.md): Modifies the permissions of a role.
+*   `$editChannel`:  Modifies the name or category of a channel.
+*   `$modifyRolePerms`: Modifies the permissions of a role.
 :::
 
 ##### Function difficulty: <Badge type="tip" text="Medium" vertical="middle" />

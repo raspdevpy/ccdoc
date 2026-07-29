@@ -25,11 +25,11 @@ Retrieves the name of a Discord channel.
 :::
 
 ::: tip Getting the Channel ID
-Use [$channelID](../Channel/channelID.md) to get the ID of a channel by its name or to get the ID of the channel where the command was executed.
+Use `$channelID` to get the ID of a channel by its name or to get the ID of the channel where the command was executed.
 :::
 
 ::: tip Related Functions
-Use [$findChannel](../Channel/findChannel.md) to find a channel using its name.
+Use `$findChannel` to find a channel using its name.
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />

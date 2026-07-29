@@ -13,7 +13,7 @@ adds an array to the end of an array from `$textsplit`
 </discord-messages>
 
 ::: danger
-This function got deprecated, use [$arrayConcat](./../Array/arrayConcat.md) instead 
+This function got deprecated, use `$arrayConcat` instead 
 :::
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 

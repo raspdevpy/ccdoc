@@ -24,7 +24,7 @@ How to return the global name from author
     </discord-message>
 </discord-messages>
 
-##### Related functions: [$displayName](../Member/displayName.md) [$nickname](../Member/nickname.md) [$username](../Member/username.md)
+##### Related functions: `$displayName` `$nickname` `$username`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="name" vertical="middle"/> <Badge type="tip" text="name" vertical="middle"/> <Badge type="tip" text="global" vertical="middle"/>

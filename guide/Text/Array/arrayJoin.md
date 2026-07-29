@@ -1,6 +1,6 @@
 # $arrayJoin
 
-Joins an array created using [$textSplit](../textSplit/textSplit.md) with a specific separator.
+Joins an array created using `$textSplit` with a specific separator.
 
 ## Usage
 

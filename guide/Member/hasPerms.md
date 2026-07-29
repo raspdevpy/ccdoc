@@ -26,10 +26,10 @@ How to use $hasPerms. Keep in mind that only if the user does have all of listed
 </discord-messages>
 
 ::: tip Suggestion
-To make code stop if the user doesn't have the needed permission, you can check out [$onlyIf](../Text/only/onlyIf.md). For multiple actions, check [$if](../Text/Condition/if.md).
+To make code stop if the user doesn't have the needed permission, you can check out `$onlyIf`. For multiple actions, check `$if`.
 :::
 
-##### Related functions: [$hasAnyPerm](../Member/hasAnyPerm.md) [$hasAnyRole](../Member/hasAnyRole.md) [$hasRole](../Role/hasRole.md)
+##### Related functions: `$hasAnyPerm` `$hasAnyRole` `$hasRole`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="permission" vertical="middle"/> <Badge type="tip" text="management" vertical="middle"/>

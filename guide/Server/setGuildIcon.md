@@ -4,7 +4,7 @@ Sets a new Icon for the server
 #### Usage: `$setGuildIcon[URL]`
 
 ::: tip Related Functions
-[$setGuildName](../Server/setGuildName.md), to set a server's name
+`$setGuildName`, to set a server's name
 :::
 
 

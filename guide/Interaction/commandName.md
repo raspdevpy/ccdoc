@@ -32,5 +32,5 @@ The bot will roll a dice and then reply with the result and the name of the comm
 ## Related Functions
 
 *   [Slash command](../Trigger/slash.md): Learn how to create and trigger slash commands.
-*   [$interactionReply](../Interaction/interactionReply.md):  Send a reply to the interaction that triggered the command.
-*   [$getOption](../Interaction/getOption.md): Retrieve the value of an option provided by the user in the slash command.
+*   `$interactionReply`:  Send a reply to the interaction that triggered the command.
+*   `$getOption`: Retrieve the value of an option provided by the user in the slash command.

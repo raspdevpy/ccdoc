@@ -1,5 +1,5 @@
 # $joinSplitText
-Joins the [$textSplit](./textSplit.md) indexes by a given separator 
+Joins the `$textSplit` indexes by a given separator 
 
 <br/>
 <discord-messages>
@@ -16,7 +16,7 @@ Joins the [$textSplit](./textSplit.md) indexes by a given separator
 </discord-messages>
 
 ::: danger
-This function got deprecated, use [$arrayJoin](./../Array/arrayJoin.md) instead 
+This function got deprecated, use `$arrayJoin` instead 
 :::
 
 ##### Function difficulty <Badge type="warning" text="Medium" vertical="middle" /> 

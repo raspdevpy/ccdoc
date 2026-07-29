@@ -11,7 +11,7 @@ To make a command to trigger when a poll ends.
 * for trigger, select "When Poll Ends"
 ![](https://i.imgur.com/ZwUoy2i.png)
 
-* for code, you can get the poll information with [$poll](../Message/poll.md), here is an example
+* for code, you can get the poll information with `$poll`, here is an example
 ![](https://i.imgur.com/gWLjPrS.png)
 
 ### Output

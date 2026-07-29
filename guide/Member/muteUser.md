@@ -37,7 +37,7 @@ How to unmute a member with reason
 Make sure that the bot does have enough permission to mute or unmute members. The bot also needs to be higher in the role hierarchy.
 :::
 
-##### Related functions: [$vcBefore](../Channel/vcBefore.md) [$vcAfter](../Channel/vcAfter.md)
+##### Related functions: `$vcBefore` `$vcAfter`
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="voice" vertical="middle"/> <Badge type="tip" text="mute" vertical="middle"/>

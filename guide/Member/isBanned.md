@@ -24,7 +24,7 @@ How to use $isBanned
     </discord-message>
 </discord-messages>
 
-##### Related functions: [$kick](../Member/kick.md) [$ban](../Member/ban.md)
+##### Related functions: `$kick` `$ban`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="ban" vertical="middle" /> <Badge type="tip" text="punish" vertical="middle" /> <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="moderation" vertical="middle" /> <Badge type="tip" text="moderator" vertical="middle" />

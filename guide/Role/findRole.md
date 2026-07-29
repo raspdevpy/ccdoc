@@ -42,7 +42,7 @@ If the role is not found, the function will return `undefined`.
 </discord-messages>
 
 ::: tip Related Functions
-*   [$roleID](../Role/roleID.md): Returns the role ID based on the role's name.
+*   `$roleID`: Returns the role ID based on the role's name.
 :::
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" />

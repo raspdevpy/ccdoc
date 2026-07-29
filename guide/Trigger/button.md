@@ -39,13 +39,13 @@ In regex ^ and $ are used to match the start and end of the string.
 :::
 
 ### Related Functions
-* [$button](../Text/Components/button.md) - sends a button
-* [$buttonID](../Text/Components/buttonID.md) - returns the button id
-* [$buttonEmoji](../Text/Components/buttonEmoji.md) - returns the button emoji
-* [$buttonLabel](../Text/Components/buttonLabel.md) - returns the button label
-* [$buttonURL](../Text/Components/buttonURL.md) - returns the button url
-* [$buttonStyle](../Text/Components/buttonStyle.md) - returns the button style
-* [$buttonIsDisabled](../Text/Components/buttonIsDisabled.md) - returns whetheer the button disabled
+* `$button` - sends a button
+* `$buttonID` - returns the button id
+* `$buttonEmoji` - returns the button emoji
+* `$buttonLabel` - returns the button label
+* `$buttonURL` - returns the button url
+* `$buttonStyle` - returns the button style
+* `$buttonIsDisabled` - returns whetheer the button disabled
 
 ## More Info
 

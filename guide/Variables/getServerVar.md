@@ -13,7 +13,7 @@ Gets a server variable value
 </discord-messages>
 
 ::: tip Related Functions
-Check out: [$setServerVar](../Variables/setServerVar.md)
+Check out: `$setServerVar`
 
-Check out: [$deleteServerVar](../Variables/deleteServerVar.md)
+Check out: `$deleteServerVar`
 :::

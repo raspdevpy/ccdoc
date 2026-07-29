@@ -24,8 +24,8 @@ This will delete the role with the ID `879889890890890` and the role with the ID
 
 ::: tip Related Functions
 
-*   [$deleteChannels](../Channel/deleteChannels.md): Deletes one or more channels.
-*   [$deleteThreads](../Threads/deleteThreads.md): Deletes one or more threads.
+*   `$deleteChannels`: Deletes one or more channels.
+*   `$deleteThreads`: Deletes one or more threads.
 
 :::
 

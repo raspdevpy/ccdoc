@@ -22,14 +22,14 @@ Toggles roles on a user. This means it removes specified roles if the user alrea
 This example toggles the "Member +" role on the command executor.  If the user has the role it will be removed, if they don't have it, it will be added.
 
 ::: tip Used Functions
-[$roleID](../Role/roleID.md), to get the ID of a role by name.  This is used to dynamically find the role ID based on its name.
+`$roleID`, to get the ID of a role by name.  This is used to dynamically find the role ID based on its name.
 :::
 
 ::: tip Related Functions
 
-*   [$giveRoles](../Role/giveRoles.md): Gives roles to a user.
-*   [$takeRoles](../Role/takeRoles.md): Removes roles from a user.
-*   [$setRoles](../Role/setRoles.md): Removes all existing roles from a user and then adds the specified roles.
+*   `$giveRoles`: Gives roles to a user.
+*   `$takeRoles`: Removes roles from a user.
+*   `$setRoles`: Removes all existing roles from a user and then adds the specified roles.
 
 :::
 

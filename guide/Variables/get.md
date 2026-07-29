@@ -1,5 +1,5 @@
 # $get
-retrieve variable defined by [$let](./let.md)
+retrieve variable defined by `$let`
 
 ## Usage: `$get[varname;value if not exists] or $varname`
 
@@ -24,5 +24,5 @@ retrieve variable defined by [$let](./let.md)
 </discord-messages>
 
 ::: tip Related Functions
-Check out: [$let](../Variables/let.md)
+Check out: `$let`
 :::

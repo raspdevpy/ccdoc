@@ -44,7 +44,7 @@ the structure is:
 ```
 
 #### Row structure
-Row allows you to include multiple buttons at once (up to 5 buttons per row). Buttons are like the normal button curl. Read more about button at [$button](../Text/Components/button.md)
+Row allows you to include multiple buttons at once (up to 5 buttons per row). Buttons are like the normal button curl. Read more about button at `$button`
 the structure is:
 ```
 {row:
@@ -56,7 +56,7 @@ the structure is:
 ```
 
 #### Menu structure
-Menu is like the normal menu curl. It can be used to form a menu inside a container. Read more about menu at [$selectMenu](../Text/Components/selectMenu.md)
+Menu is like the normal menu curl. It can be used to form a menu inside a container. Read more about menu at `$selectMenu`
 
 #### File structure
 You can set a file in the container for downloading, the structure is:

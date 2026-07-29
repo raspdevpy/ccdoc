@@ -13,8 +13,8 @@ Deletes the bot's message after a specified duration.
 `$deleteIn[10s]` - This will delete the bot's message 10 seconds after it's sent.
 
 ::: tip Related Functions
-*   [$deleteMessage](../Message/deleteMessage.md): Deletes a specific message in the server or DMs.
-*   [$deletecommand](../Message/deletecommand.md): Deletes the message that triggered the command.
+*   `$deleteMessage`: Deletes a specific message in the server or DMs.
+*   `$deletecommand`: Deletes the message that triggered the command.
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />

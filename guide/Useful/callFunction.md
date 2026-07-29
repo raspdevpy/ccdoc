@@ -1,5 +1,5 @@
 # $callFunction
-To call a user-defined function created with [$function](../Useful/function)
+To call a user-defined function created with `$function`
 
 
 #### Usage: 
@@ -10,7 +10,7 @@ To call a user-defined function created with [$function](../Useful/function)
 $callFunction[printHello;Mika]
 ``` 
 
-Call the function, using [$callFunction](./callFunction)
+Call the function, using `$callFunction`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -28,7 +28,7 @@ Call the function, using [$callFunction](./callFunction)
 	</discord-message>
 </discord-messages>
 
-Call the function, using [$printHello](../Useful/callFunction)
+Call the function, using `$printHello`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">

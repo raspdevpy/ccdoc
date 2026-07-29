@@ -34,11 +34,11 @@ To use this function your uservar must have numeric values .
 </discord-messages>
 
 ::: tip Related Functions
-Check out: [$setUserVar](../Variables/getUserVar.md)
+Check out: `$setUserVar`
 
-Check out: [$getUserVar](../Variables/getUserVar.md)
+Check out: `$getUserVar`
 
-Check out: [$deleteUserVar](../Variables/deleteUserVar.md)
+Check out: `$deleteUserVar`
 
-Check out: [$resetUserVar](../Variables/resetUserVar.md)
+Check out: `$resetUserVar`
 :::

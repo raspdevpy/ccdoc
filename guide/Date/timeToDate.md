@@ -1,6 +1,6 @@
 # $timeToDate
 
-Convert a Unix timestamp (milliseconds since January 1, 1970 UTC) into a formatted date string. This function respects the timezone configured via the [$timeZone](../Date/timezone.md) function.
+Convert a Unix timestamp (milliseconds since January 1, 1970 UTC) into a formatted date string. This function respects the timezone configured via the `$timeZone` function.
 
 ## Usage
 

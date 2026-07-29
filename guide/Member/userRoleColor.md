@@ -31,7 +31,7 @@ User will be cached after they trigger any command from this bot, but eventually
 To have all members cached, you will need Tier 5 Bot.
 :::
 
-##### Related functions: [$userRoles](../Member/userRoles.md)
+##### Related functions: `$userRoles`
 
 ##### Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="color" vertical="middle" />

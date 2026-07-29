@@ -37,7 +37,7 @@ What happens if user is not connected to a voice channel
     </discord-message>
 </discord-messages>
 
-##### Related functions: [$vcBefore](../Channel/vcBefore.md) [$vcAfter](../Channel/vcAfter.md)
+##### Related functions: `$vcBefore` `$vcAfter`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="voice" vertical="middle"/> <Badge type="tip" text="connected" vertical="middle"/>

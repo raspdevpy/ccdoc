@@ -10,9 +10,9 @@ Deletes a user variable, from the author of the command or from the ID specified
 </discord-messages>
 
 ::: tip Related Functions
-Check out: [$setUserVar](../Variables/setUserVar.md)
+Check out: `$setUserVar`
 
-Check out: [$getUserVar](../Variables/getUserVar.md)
+Check out: `$getUserVar`
 
-Check out: [$resetUserVar](../Variables/resetUserVar.md)
+Check out: `$resetUserVar`
 :::

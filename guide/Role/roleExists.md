@@ -30,11 +30,11 @@ Checks if a role exists within the server and returns a boolean value (true or f
 This example checks if a role with the name "muted" exists on the server.  First, `$roleID[muted]` resolves to the role ID of the role named "muted" (if it exists).  Then, `$roleExists` checks if a role with that ID exists. The command returns `true` if the role exists and `false` if it doesn't.
 
 ::: tip Used Functions
-*   [$roleID](../Role/roleID.md):  Retrieves a role's ID by its name.
+*   `$roleID`:  Retrieves a role's ID by its name.
 :::
 
 ::: tip Related Functions
-*   [$findRole](../Role/findRole.md):  Finds roles by name or mention.
+*   `$findRole`:  Finds roles by name or mention.
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />

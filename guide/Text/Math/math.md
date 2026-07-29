@@ -22,13 +22,13 @@ e#### Usage: `$math[Expression;Name1=Value1;Name1=Value2]`
 
 
 :::tip Alternatives
-[$sum](./sum.md), can be used to sum up arguments.
+`$sum`, can be used to sum up arguments.
 
-[$sub](./sub.md), can be used to subtract arguments.
+`$sub`, can be used to subtract arguments.
 
-[$multi](./multi.md), can be used to multiply arguments.
+`$multi`, can be used to multiply arguments.
 
-[$divide](./divide.md), can be used to divide arguments.
+`$divide`, can be used to divide arguments.
 :::
 
 ## Valid Quantifiers

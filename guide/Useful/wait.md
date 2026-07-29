@@ -25,7 +25,7 @@ Will wait an X time, before executing the code below it.
 </discord-messages>
 
 :::tip 
-If you want to wait more then 1m, we suggest you use [$setTimeout](../Useful/setTimeout.md)
+If you want to wait more then 1m, we suggest you use `$setTimeout`
 :::
 
 ##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 

@@ -33,7 +33,7 @@ This example shows how to retrieve the IDs of all roles in the guild.
 </discord-messages>
 
 ::: tip Related Functions
-*   [$roleID](../Role/roleID.md):  Retrieves a role ID by its name.
+*   `$roleID`:  Retrieves a role ID by its name.
 :::
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />

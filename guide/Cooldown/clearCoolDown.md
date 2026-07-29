@@ -37,7 +37,7 @@ How to remove cooldown from a user
     </discord-message>
 </discord-messages>
 
-##### Related functions: [$getCooldownTime](../Cooldown/getCooldownTime.md)
+##### Related functions: `$getCooldownTime`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="Cooldown" vertical="middle"/> <Badge type="tip" text="Clear Cooldown" vertical="middle"/>

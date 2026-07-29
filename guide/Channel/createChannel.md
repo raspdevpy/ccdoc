@@ -41,8 +41,8 @@ For a complete list of valid channel types, see [this reference page](../CodeRef
 :::
 
 ::: tip Related Functions
-*   [$createThread](../Threads/createThread.md): Use this function to create a new thread.
-*   [$createRole](../Role/createRole.md):  Use this function to create a new role.
+*   `$createThread`: Use this function to create a new thread.
+*   `$createRole`:  Use this function to create a new role.
 :::
 
 ##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" />

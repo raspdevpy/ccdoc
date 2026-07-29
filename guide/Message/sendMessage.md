@@ -39,7 +39,7 @@ You can send more complex structures like embed titles, footers, buttons, and me
 :::
 
 ::: tip Related Functions
-*   [$channelSendMessage](../Message/channelSendMessage.md):  Send a message to a specific channel.
+*   `$channelSendMessage`:  Send a message to a specific channel.
 :::
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" />

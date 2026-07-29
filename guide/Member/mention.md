@@ -26,7 +26,7 @@ How to use $mention for author or other user
     </discord-message>
 </discord-messages>
 
-##### Related functions: [$username](../Member/username.md) [$nickname](../Member/nickname.md)
+##### Related functions: `$username`nickname.md)
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="ping" vertical="middle" /> <Badge type="tip" text="mention" vertical="middle" /> <Badge type="tip" text="author" vertical="middle" />

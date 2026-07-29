@@ -23,8 +23,8 @@ This example will delete the channel the command is executed in.  `$channelID` r
 This example will delete the channels with IDs 123456789012345678 and 987654321098765432.
 
 ::: tip Related Functions
-*   Use [$deleteRoles](../Role/deleteRoles.md) to delete roles.
-*   Use [$deleteThreads](../Threads/deleteThreads.md) to delete threads.
+*   Use `$deleteRoles` to delete roles.
+*   Use `$deleteThreads` to delete threads.
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />

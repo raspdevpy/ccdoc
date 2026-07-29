@@ -31,7 +31,7 @@ Parameters are values that a function needs to operate correctly. Think of them 
 
 ## Functions
 
-A function is a fundamental building block of your code. It performs a specific action. For example, to send a message to a channel, you might use the `[$channelSendMessage](../Message/channelSendMessage.md)` or `[$sendMessage](../Message/sendMessage.md)` function. To kick a member, you'd use `[$kick](../Member/kick.md)`.
+A function is a fundamental building block of your code. It performs a specific action. For example, to send a message to a channel, you might use the ``$channelSendMessage`` or ``$sendMessage`` function. To kick a member, you'd use ``$kick``.
 
 ### Taking the Next Step: Triggers
 

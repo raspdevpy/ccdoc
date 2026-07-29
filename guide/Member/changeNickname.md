@@ -33,7 +33,7 @@ The bot requires the "Manage Nicknames" permission to change nicknames and only 
 Discord doesn't allow others to change owners nickname. If you will try to change nickname of an invalid member or owner, error message will be shown.
 :::
 
-##### Related functions: [$nickname](../Member/nickname.md)
+##### Related functions: `$nickname`
 
 ##### Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="change Nickname" vertical="middle" /> <Badge type="tip" text="nickname" vertical="middle" /> <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="Names" vertical="middle" /> <Badge type="tip" text="modify name" vertical="middle" />

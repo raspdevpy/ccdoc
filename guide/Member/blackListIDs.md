@@ -27,7 +27,7 @@ How to blacklist a user from the command
     </discord-message>
 </discord-messages>
 
-##### Related functions: [$blackListRoleIds](../Role/blackListRoleIds.md) [$blackListChannelIDs](../Channel/blackListChannelIDs.md) [$onlyForIDs](../Text/only/onlyForIDs.md) [$onlyForRoles](../Text/only/onlyForRoles.md)
+##### Related functions: `$blackListRoleIds` `$blackListChannelIDs` `$onlyForIDs` `$onlyForRoles`
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="only for" vertical="middle"/> <Badge type="tip" text="blacklist" vertical="middle"/> <Badge type="tip" text="not allowed" vertical="middle"/>

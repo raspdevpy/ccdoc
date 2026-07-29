@@ -2,7 +2,7 @@
 
 ## Why Use Expressions?
 
-Some functions, like the incredibly useful [$if](../Text/Condition/if.md) function, require an expression as input. Expressions allow you to create dynamic and conditional logic within your scripts.
+Some functions, like the incredibly useful `$if` function, require an expression as input. Expressions allow you to create dynamic and conditional logic within your scripts.
 
 ## What is an Expression?
 

@@ -5,7 +5,7 @@ removes an element from an array from `$textsplit`
 <br/>
 
 ::: danger
-This function got deprecated, use [$arrayRemove](./../Array/arrayRemove.md) instead 
+This function got deprecated, use `$arrayRemove` instead 
 :::
 
 ##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 

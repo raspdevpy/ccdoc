@@ -42,7 +42,7 @@ In this example, the bot searches for a channel named "bot-commands". If found, 
 Here, the bot attempts to find a channel named "bot-cmnds" (note the typo).  Since no such channel exists, and the second argument is set to `no`, the function returns `undefined`.
 
 ::: tip Related Functions
-[$channelExists](../Channel/channelExists.md) is useful for verifying if a channel ID exists before using it.
+`$channelExists` is useful for verifying if a channel ID exists before using it.
 :::
 
 ##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" />

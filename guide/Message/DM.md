@@ -34,9 +34,9 @@ Sends the output of your code directly to the author via Discord Direct Message 
 </discord-messages>
 
 ::: tip Related Functions
-*   [$sendDM](../Message/sendDM.md):  Send the output of the console to a DM message. (More control over the DM)
-*   [$channelSendMessage](../Message/channelSendMessage.md): Send a message to a specific channel in the server.
-*   [$sendMessage](../Message/sendMessage.md): Send a message to the channel where the command was used.
+*   `$sendDM`:  Send the output of the console to a DM message. (More control over the DM)
+*   `$channelSendMessage`: Send a message to a specific channel in the server.
+*   `$sendMessage`: Send a message to the channel where the command was used.
 :::
 
 **Difficulty:** <Badge type="warning" text="Medium" vertical="middle" />

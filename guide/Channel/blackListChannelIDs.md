@@ -1,4 +1,4 @@
-# `$blackListChannelIDs`
+# $blackListChannelIDs
 
 Prevent command execution within specified channels and display a custom error message.
 

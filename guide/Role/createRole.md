@@ -26,7 +26,7 @@ For a comprehensive list of available permissions, please see the [Permission Li
 
 ::: tip Related Functions
 
-[$createChannel](../Channel/createChannel.md), creates a channel
+`$createChannel`, creates a channel
 :::
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 

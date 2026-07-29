@@ -34,11 +34,11 @@ How is the avatar URL displayed when sent with text and without text
 </discord-messages>
 
 ::: tip Note
-You can send the image as an attachment, so no link will be displayed. For this, you can use function [$attachment](../Text/Embed/attachment.md).
+You can send the image as an attachment, so no link will be displayed. For this, you can use function `$attachment`.
 To display the avatar URL as plain text, either enclose the function in backticks (`` `$authorAvatar` ``) or angle brackets (`<$authorAvatar>`).
 :::
 
-##### Related functions: [$attachment](../Text/Embed/attachment.md)
+##### Related functions: `$attachment`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="Image" vertical="middle"/> <Badge type="tip" text="Avatar" vertical="middle"/> <Badge type="tip" text="Attachment" vertical="middle"/> <Badge type="tip" text="profile picture" vertical="middle"/>

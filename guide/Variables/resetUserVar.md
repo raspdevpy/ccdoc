@@ -10,7 +10,7 @@ Resets a user variable for all users.
 </discord-messages>
 
 ::: tip Related Functions
-Check out: [$setUserVar](../Variables/setUserVar.md)
+Check out: `$setUserVar`
 
-Check out: [$getUserVar](../Variables/getUserVar.md)
+Check out: `$getUserVar`
 :::

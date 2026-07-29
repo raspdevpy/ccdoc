@@ -27,7 +27,7 @@ to construct a menu inside $selectMenu, it needs to follow this structure
 * `max` maximum to select (optional)
 * `option` label of option
 * `desc` description of option
-* `value` id of option ,which [$eventSelected](./eventSelected.md) returns when the user selects the option
+* `value` id of option ,which `$eventSelected` returns when the user selects the option
 * `emoji` emoji for option (optional)
 
 Info:

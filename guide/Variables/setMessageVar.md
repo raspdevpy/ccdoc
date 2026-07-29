@@ -10,7 +10,7 @@ Sets a message variable value.
 </discord-messages>
 
 ::: tip Related Functions
-Check out: [$getMessageVar](../Variables/getMessageVar.md)
+Check out: `$getMessageVar`
 
-Check out: [$deleteMessageVar](../Variables/deleteMessageVar.md)
+Check out: `$deleteMessageVar`
 :::

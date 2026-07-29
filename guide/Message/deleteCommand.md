@@ -20,7 +20,7 @@ $deleteCommand[1m]
 ```
 
 ::: tip Related Functions
-*   [$deleteMessage](../Message/deleteMessage.md):  Delete any message within a server.  This is more flexible as it lets you target specific messages.
+*   `$deleteMessage`:  Delete any message within a server.  This is more flexible as it lets you target specific messages.
 :::
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />

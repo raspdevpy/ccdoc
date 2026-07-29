@@ -54,12 +54,12 @@ In this example we will create an `/avatar` command, that shows the user's avata
 
 ## Code Explanation
 ### Retrieving the option from user
-When a user uses the command like in Step 10, we can retrieve the option through the [$getOption](../Interaction/getOption.md) function:
+When a user uses the command like in Step 10, we can retrieve the option through the `$getOption` function:
 ```
 $getOption[option name]
 ```
 In our example `option name` is `user` from step 6\
-then the user id will be stored in a temporary variable named`user_id` using [$let](../Variables/let.md), this way we can recall it later in the code through `$user_id`:
+then the user id will be stored in a temporary variable named`user_id` using `$let`, this way we can recall it later in the code through `$user_id`:
 ```
     $let[user_id;$getOption[user]]
 ```
