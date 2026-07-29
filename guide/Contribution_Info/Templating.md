@@ -1,104 +1,143 @@
-# Templating
-This pages contains information about the templating system and how to make commands for the template system compatible
-The new templating system includes parsing of Metadata and Inputs.
+# Templating System
+
+This page explains how to use the new templating system and how to make your commands compatible with it. The new system includes parsing of Metadata and Inputs, making command creation and customization easier.
 
 ## Metadata
-Metadata is a way to add extra information to a command like description,tags,category,etc.
-It helps the user to find the command easier in the template search.
-Metadata is a JSON object.So incorrect syntax will not be accepted.
+
+Metadata adds extra information to your commands, such as descriptions, tags, categories, and more. This helps users find your commands more easily through template search.
+
+**Key Features:**
+
+*   **Improved Discoverability:** Makes commands easier to find in the template search.
+*   **JSON Format:** Metadata is a JSON object, ensuring structured and error-free information.  Incorrect syntax will cause parsing errors.
 
 ### Metadata Syntax
-In your code you can add metadata by using the following syntax:
-You need to comment out the metadata in your code,else it will get sent as message.
+
+To add metadata to your code, use the following syntax.  **Important:** Make sure to comment out the metadata in your code; otherwise, it will be treated as a message and sent to the user.
+
 ```
 {{{ and }}}
-``` 
-are used to mark the metadata and parse it much easier.
+```
 
-#### Metadata Syntax Types
+These delimiters mark the beginning and end of the metadata, allowing the system to parse it correctly.
+
+#### Metadata Structure
+
+Here's the structure of the metadata JSON object:
+
 ```ts
 {{{
-        "version": number,
-        "tags": Array<string>,
-        "author": string,
-        "usecase": string,
-        "category": string,
-        "preview": link,
-        "description": Array<string> ,
-        "link": Array<link>,
-        "custommd"?: string, //optional
+    "version": number,
+    "tags": Array<string>,
+    "author": string,
+    "usecase": string,
+    "category": string,
+    "preview": link,
+    "description": Array<string>,
+    "link": Array<link>,
+    "custommd"?: string // Optional custom markdown
 }}}
 ```
 
-#### Metadata Syntax Example in your code for !balance command
+**Explanation of Fields:**
+
+*   **`version`:**  The version of the command.  Use numbers.
+*   **`tags`:** An array of strings representing keywords related to the command (e.g., `["economy", "balance", "money"]`).
+*   **`author`:** The author of the command (e.g., `"User-0000"`).
+*   **`usecase`:** A brief explanation of what the command does (e.g., `"checks the balance of the user"`).
+*   **`category`:** The category the command belongs to (e.g., `"economy"`).
+*   **`preview`:** A link to a preview image or video demonstrating the command.
+*   **`description`:** An array of strings providing a detailed description of the command.  Each string can be a separate line of the description.  Use `<code>...</code>` to format command examples.
+*   **`link`:** An array of links to relevant resources, documentation, or examples.
+*   **`custommd`:** (Optional) A string containing custom markdown to further describe or provide instructions for the command.
+
+#### Metadata Example
+
+Here's an example of metadata for a `!balance` command:
+
 ```
-/* Metadata : 
+/* Metadata :
 {{{
-        "version": "1",
-        "tags": ["economy","balance","money"],
-        "author": "User-0000",
-        "usecase": "checks the balance of the user",
-        "category": "economy",
-        "preview": "https://media.discordapp.net/attachments/845279377733320745/928401183809364008/unknown.png",
-        "description": ["Run <code>!bal</code> to show your balance"] ,
-        "link": ["https://media.discordapp.net/attachments/845279377733320745/928401183809364008/unknown.png"],
-        "custommd": ""
+    "version": "1",
+    "tags": ["economy", "balance", "money"],
+    "author": "User-0000",
+    "usecase": "checks the balance of the user",
+    "category": "economy",
+    "preview": "https://media.discordapp.net/attachments/845279377733320745/928401183809364008/unknown.png",
+    "description": ["Run <code>!bal</code> to show your balance"] ,
+    "link": ["https://media.discordapp.net/attachments/845279377733320745/928401183809364008/unknown.png"],
+    "custommd": ""
 }}}
 */
 The !bal command code
 ```
-The link and preview are same since it is a small command.
 
-## $onTemplate
-This is a function ,which is used to create  a UI for the user to interact with like inputs,choice.
-It is useful to get inputs from the user and to directly replace it in the command code.
+**Note:** In this example, the `link` and `preview` are the same, as it's a simple command.
 
-**A Ui only gets created ,if metadata for the commands exists**
+## `$onTemplate` Function
+
+The `$onTemplate` function creates a user interface (UI) for interacting with commands. This UI allows users to input values and customize the command before execution. It is especially useful for commands that require user-specific information.
+
+**Important:** A UI is only generated if the command has associated metadata.
 
 ### Usage
 
 ```
-$onTemplate[type;field;title;help;def value]
+$onTemplate[type;field;title;help;default value]
 ```
 
-* Valid types: category,number,channel,role,text,boolean,id
-* Valid fields: input,inputarray,dropdown,dropdown array,checkbox
+**Parameters:**
 
-:::warning Escaping 
-You can't have chars like  [] and ; in the function since it is unsupported by the parser.
-use the following syntax to escape the chars:
-`#RIGHT#` and `#LEFT#` and `#SEMI#`
+*   **`type`:** The type of input field to create.
+*   **`field`:** The style/appearance of the input field.
+*   **`title`:** The title displayed above the input field in the UI.
+*   **`help`:** A helpful description displayed below the input field.
+*   **`default value`:** The default value for the input field.
+
+**Valid Types:**
+
+*   `category`:  Creates a dropdown list of categories from the server. `dropdownarray` or `dropdown` should be used for the `field` parameter.
+*   `number`: Creates a number input field.
+*   `channel`: Creates a dropdown list of channels from the server. `dropdownarray` or `dropdown` should be used for the `field` parameter.
+*   `role`: Creates a dropdown list of roles from the server. `dropdownarray` or `dropdown` should be used for the `field` parameter.
+*   `text`: Creates a single-line text input field.
+*   `boolean`: Creates a checkbox.
+*   `id`: Creates a text input field, typically used for IDs.
+*   `runonlyin`:  This modifies the cloned command run only in to the selected channel(s)
+
+**Valid Fields:**
+
+*   `input`: Creates a standard text input field.
+*   `inputarray`: Creates a text input field with the placeholder "Split by ,". The input will be treated as an array, split by commas.
+*   `dropdown`: Creates a dropdown list with values from the specified `type`. If the type is `text` or `number`, the values are taken from the `default value` parameter, separated by commas.
+*   `dropdownarray`: Creates a dropdown list where multiple options can be selected.  Values are determined as with the standard `dropdown` field.
+*   `checkbox`: Creates a checkbox.
+
+**Title & Help:**
+
+*   **`title`:** The label for the input field.
+*   **`help`:** A descriptive text providing guidance on what to enter in the input field.
+
+**Default Value:**
+
+*   **`default value`:** The value that's pre-filled or pre-selected in the input field.
+
+:::warning Escaping Special Characters
+You **cannot** use the characters `[` `]` and `;` directly within the `$onTemplate` function. They are unsupported by the parser.
+
+Use the following escape sequences instead:
+
+*   `#RIGHT#` for `]`
+*   `#LEFT#` for `[`
+*   `#SEMI#` for `;`
 :::
-
-#### Types
-* `category` : This creates a dropdown with the categories from the server.  `dropdownarray` or `dropdown` would be used for the 2nd param.
-* `number` : This creates a number input. 
-* `channel` : This creates dropdown with the channels from the server.  `dropdownarray` or `dropdown` would be used for the 2nd param.
-* `role` : This creates dropdown with the roles from the server.  `dropdownarray` or `dropdown` would be used for the 2nd param.
-* `text` : This creates a text input.
-* `boolean` : This creates a checkbox.
-* `id` : This creates a text input.
-* `runonlyin` : This modifies the cloned command run only in to the selected channel(s)
-
-#### Fields
-* `input` : This creates a text input.
-* `inputarray` : This creates a text input with the placeholder "Split by ,"
-* `dropdown` : This creates a dropdown with the values from the type or if `text` / `number` from the default value parameter,where the values are separated by "," 
-* `dropdownarray` : This creates a dropdown,where you can select multiple options with the values from the type or if `text` / `number` from the default value parameter,where the values are separated by ","
-* `checkbox` : This creates a checkbox.
-
-#### Title,Help
-* title: This is the title of the input/dropdown/checkbox.
-* help: This is the help text of the input/dropdown/checkbox.
-
-#### Default Value
-* def value: This is the default value,if a value is not provided by the user.
 
 #### Example Ticket System
 
-Ticket Code :
+**Ticket Code:**
+
 ```
-$let[categoryID;$onTemplate[category;dropdown;Ticket Category;Choose the category where the ticket should be created;$channelCategoryID]] // Put the category ID Here 
+$let[categoryID;$onTemplate[category;dropdown;Ticket Category;Choose the category where the ticket should be created;$channelCategoryID]] // Put the category ID Here
 $if[$buttonID==openTicket]
     $cooldown[1m;<@$authorID> Please Wait %time% to create a new ticket]
     $newTicket[$userTag;
@@ -116,15 +155,19 @@ $elseIf[$buttonID==closeTicket]
     $closeTicket[This channel is not a ticket!]
 $endelse
 ```
-Template Asking for Input:
-![](https://i.ibb.co/LQnfhh3/image.png)
 
+**Template Asking for Input:**
 
-After Cloning: `$let[categoryID;866251414232498197]`
+![Template Input UI](https://i.ibb.co/LQnfhh3/image.png)
 
-# Special Cases 
-dropdownarray and inputarray are splited by ","
-In your custom commands you have to spread the array by using the following syntax:
+**After Cloning:** `$let[categoryID;866251414232498197]`
+
+## Special Cases: Arrays
+
+`dropdownarray` and `inputarray` fields split their input by commas (`,`).  To use these arrays in your custom commands, you need to *spread* them.
+
+**How to Spread Arrays:**
+
 ```
 $let[input;input,from,template]
 $giveRoles[$authorID;$spread[,;$input]]

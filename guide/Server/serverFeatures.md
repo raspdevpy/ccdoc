@@ -1,7 +1,9 @@
-# $serverFeatures
-Returns the server features
+# serverFeatures
+
+Returns the server features. This function returns a comma-separated list of features enabled on the server.
 
 #### Usage: `$serverFeatures`
+
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -13,4 +15,3 @@ Returns the server features
 </discord-messages>
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="server" vertical="middle" /><Badge type="tip" text="Features" vertical="middle" />

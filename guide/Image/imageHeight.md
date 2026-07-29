@@ -1,21 +1,27 @@
 # $imageHeight
 
-Return the image height, based on the name
+Retrieves the height of an image stored within the bot's memory. This function allows you to dynamically access the height of images based on their assigned name.
 
 ## Usage
 
-```bash
+```
 $imageHeight[image name]
 ```
 
-### Example 1:
-```bash
-$imageHeight // return the current image height
+*   `image name`: The name you assigned to the image when you loaded it (e.g., using `$loadImage`). If no name is provided, it defaults to the most recently loaded image.
 
+## Examples
+
+### Example 1: Get the height of the last loaded image
 
 ```
+$imageHeight
+```
 
-### Example 2:
-```bash
-$imageHeight[avatar] // return height of image that was loaded with avatar name
+This will return the height of the most recently loaded image.  If no image has been loaded, it will likely return an error.
+
+### Example 2: Get the height of an image named "avatar"
+
+```
+$imageHeight[avatar]
 ```

@@ -1,7 +1,11 @@
 # $serverBoostLevel
+
 Returns the boost level of the server.
 
 #### Usage: `$serverBoostLevel`
+
+This command retrieves the current boost level of the Discord server. Boost levels range from 0 (no boosts) to 3 (highest level).
+
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -13,4 +17,3 @@ Returns the boost level of the server.
 </discord-messages>
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="Server" vertical="middle" /> <Badge type="tip" text="Boosts" vertical="middle" /> <Badge type="tip" text="boosting" vertical="middle" /> <Badge type="tip" text="Guild" vertical="middle" />

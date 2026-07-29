@@ -12,7 +12,6 @@ $mentionChannel[Name/ID]
 ```bash
 $mentionChannel[chat]
 
-
 ```
 
 ### Example:

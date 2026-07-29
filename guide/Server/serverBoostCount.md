@@ -1,7 +1,9 @@
 # $serverBoostCount
-Returns the amount of boostes the server has.
+
+Returns the number of boosts this server has.
 
 #### Usage: `$serverBoostCount`
+
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -12,5 +14,5 @@ Returns the amount of boostes the server has.
 	</discord-message>
 </discord-messages>
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="Server" vertical="middle" /> <Badge type="tip" text="Boosts" vertical="middle" /> <Badge type="tip" text="boosting" vertical="middle" /> <Badge type="tip" text="Guild" vertical="middle" />

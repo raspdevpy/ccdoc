@@ -1,11 +1,22 @@
 # $findChannel
-Searches for a channel, by ID or name.
 
-#### Usage: 
+Searches for a channel by its ID, mention, or name.
+
+#### Usage:
+
 `$findChannel[ID/mention/name;returnCurrentChannel (yes/no) (optional)]`
 
-**If channel is found:**
-<br/>
+**Parameters:**
+
+*   `ID/mention/name`: The ID, mention, or name of the channel to search for.
+*   `returnCurrentChannel (yes/no) (optional)`:  Determines the behavior when a channel isn't found:
+    *   `yes`: (Default) Returns the current channel's ID if no match is found.
+    *   `no`: Returns `undefined` if no match is found.
+
+**Example Scenarios:**
+
+**Scenario 1: Channel Found (using channel name)**
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $findChannel[bot-commands;no]
@@ -15,8 +26,10 @@ Searches for a channel, by ID or name.
 	</discord-message>
 </discord-messages>
 
-**If channel is not found and the second argument is `"no"`:**
-<br/>
+In this example, the bot searches for a channel named "bot-commands". If found, it returns the channel's ID (869243919697846379).  The `;no` tells the function to return undefined if the channel isn't found.
+
+**Scenario 2: Channel Not Found (with `returnCurrentChannel` set to `no`)**
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $findChannel[bot-cmnds;no]
@@ -26,10 +39,11 @@ Searches for a channel, by ID or name.
 	</discord-message>
 </discord-messages>
 
+Here, the bot attempts to find a channel named "bot-cmnds" (note the typo).  Since no such channel exists, and the second argument is set to `no`, the function returns `undefined`.
 
 ::: tip Related Functions
-[$channelExists](../Channel/channelExists.md) is used to tell if a channel ID exists.
+[$channelExists](../Channel/channelExists.md) is useful for verifying if a channel ID exists before using it.
 :::
 
-##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="find" vertical="middle" /> <Badge type="tip" text="find Channel" vertical="middle" /> <Badge type="tip" text="search Channel" vertical="middle" /> 
+##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" />
+###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="find" vertical="middle" /> <Badge type="tip" text="find Channel" vertical="middle" /> <Badge type="tip" text="search Channel" vertical="middle" />

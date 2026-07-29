@@ -1,8 +1,12 @@
 # $serverCount
-Returns the amount of servers the bot is in.
+
+This function returns the total number of servers (guilds) the bot is currently in. It's a simple way to display the bot's reach.
 
 #### Usage: `$serverCount`
+
+This function doesn't require any arguments. Just include it in your command response.
 <br/>
+**Example:**
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec I am in $serverCount servers.
@@ -12,5 +16,6 @@ Returns the amount of servers the bot is in.
 	</discord-message>
 </discord-messages>
 
-##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+
 ###### Tags: <Badge type="tip" text="serverCount" vertical="middle" /> <Badge type="tip" text="botServerCount" vertical="middle" /> <Badge type="tip" text="OS" vertical="middle" /> <Badge type="tip" text="stats" vertical="middle" />

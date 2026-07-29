@@ -1,8 +1,17 @@
 # $month
-returns current month number or name
+
+Returns the current month's number or name.
+
 #### Usage: `$month[return name (yes/no)]`
-Example:
-<br/>
+
+This function allows you to retrieve the current month in either its numerical representation (1-12) or its full name (e.g., January, February).
+
+*   If you use `$month` without any parameters, it will return the month's number.
+*   If you use `$month[yes]`, it will return the month's name.  Any value other than `yes` or no parameter will return the month's number.
+
+**Example:**
+
+```html
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $month, $month[yes]
@@ -11,10 +20,16 @@ Example:
 		11, November
 	</discord-message>
 </discord-messages>
+```
 
-::: tip Other Timezone
-Date functions uses on default UTC timezone,but you can change it [Learn More](./timezone.md)
+**Explanation:**
+
+*   The first `$month` returns the numerical representation of the current month (in this case, 11 for November).
+*   The second `$month[yes]` returns the name of the current month (November).
+
+::: tip Timezone Information
+Date functions default to using the UTC timezone. You can change the timezone used by the bot. [Learn More](./timezone.md)
 :::
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="month" vertical="middle" /> 
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+###### Tags: <Badge type="tip" text="month" vertical="middle" />

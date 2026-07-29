@@ -1,30 +1,34 @@
-# Time Format
-Some functions needs accept time formats to help you construct the date and time.
+# Understanding Time Formats
 
-like [$timeToDate](../Date/timeToDate.md)
+Many functions require you to specify a time format to correctly construct date and time values. This guide explains the accepted time format macros you can use.
 
-### Accepted Time Format
-| Macro | Brief description |
-|:-------:|-------------------|
-| d | day number of the month like 9 |
-| 0d | day number but with padding zero like 09 |
-| dn | day name of the week like Sunday |
-| y | year number like 2022 |
-| hr | hour in 24-format like 20 (8 PM) |
-| 0hr | hour in 24-format but with padding zero like 05 (5 AM)  |
-| hr/12 | hour in 12-format like 8 |
-| 0hr/12 | hour in 12-format but with padding zero like 05 |
-| ms | milliseconds like 1 |
-| 0ms | milliseconds but with padding zeros like 001 |
-| min | minutes like 9 |
-| 0min | minutes but with padding zero like 09 |
-| m | month number like 8 (August) |
-| 0m | month number but with padding zero like 08  |
-| mn | month name like February |
-| s | seconds like 20 |
-| 0s | seconds but with padding zero like 03 |
-| ampm | PM / AM |
-| tz | Timezone used like UTC |
+For example, the `$timeToDate` function uses these formats.
+
+### Available Time Format Macros
+
+The following table details the available time format macros and their descriptions:
+
+| Macro   | Description                                       | Example     |
+| :------- | :------------------------------------------------ | :---------- |
+| `d`     | Day number of the month                           | `9`         |
+| `0d`    | Day number of the month with leading zero        | `09`        |
+| `dn`    | Day name of the week                              | `Sunday`    |
+| `y`     | Year number                                      | `2022`      |
+| `hr`    | Hour in 24-hour format                             | `20` (8 PM) |
+| `0hr`   | Hour in 24-hour format with leading zero          | `05` (5 AM) |
+| `hr/12` | Hour in 12-hour format                             | `8`         |
+| `0hr/12`| Hour in 12-hour format with leading zero          | `08`         |
+| `ms`    | Milliseconds                                       | `1`         |
+| `0ms`   | Milliseconds with leading zeros                   | `001`       |
+| `min`   | Minutes                                            | `9`         |
+| `0min`  | Minutes with leading zero                          | `09`        |
+| `m`     | Month number                                       | `8` (August)|
+| `0m`    | Month number with leading zero                     | `08`        |
+| `mn`    | Month name                                         | `February`  |
+| `s`     | Seconds                                            | `20`        |
+| `0s`    | Seconds with leading zero                          | `03`        |
+| `ampm`  | AM/PM indicator                                   | `PM` / `AM` |
+| `tz`    | Timezone abbreviation                             | `UTC`       |
 
 ### Example
 ```php

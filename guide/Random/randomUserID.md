@@ -1,10 +1,15 @@
 # $randomUserID
-Returns a random user id from a user in the server
 
-#### Usage: 
-`$randomUserID`
+Retrieves a random user ID from a user within the server.
+
+#### Usage:
+
+```
+$randomUserID
+```
 
 <br/>
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $randomUserID
@@ -14,9 +19,10 @@ Returns a random user id from a user in the server
 	</discord-message>
 </discord-messages>
 
-::: danger Warning
-This members comes from the cache, so it picks random member from the cached members, unless all the guild members are cached (which only in tier 5).
+::: danger Important
+The user ID is selected randomly from the server's cached members.  This means the returned user ID might not always represent a currently active member, especially if all guild members are not cached (typically only guaranteed in higher server tiers).
 :::
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="random" vertical="middle" /> <Badge type="tip" text="random user id" vertical="middle" /> <Badge type="tip" text="choose" vertical="middle" /> <Badge type="tip" text="return random user id" vertical="middle" />
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+
+###### Tags: <Badge type="tip" text="random" vertical="middle" /> <Badge type="tip" text="random user ID" vertical="middle" /> <Badge type="tip" text="selection" vertical="middle" /> <Badge type="tip" text="user ID" vertical="middle" />

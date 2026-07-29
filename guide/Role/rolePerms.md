@@ -1,10 +1,17 @@
-# $rolePerms
-Returns the role key permissions.
 
-#### Usage: 
+Returns the permissions a role has.
+
+#### Usage:
+
 `$rolePerms[roleID;separator (optional)]`
 
+*   `roleID`: The ID of the role to check.
+*   `separator`: (Optional) The separator to use when listing the permissions. Defaults to no separator.
+
 <br/>
+
+**Example:**
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $rolePerms[$roleID[muted]; | ]
@@ -14,13 +21,13 @@ Returns the role key permissions.
 	</discord-message>
 </discord-messages>
 
-::: tip Permissions
-Check this [list](../CodeReferences/ref.permissions_list.md) to view all permissions names
+::: tip Permissions List
+For a comprehensive list of all permission names, refer to the [Permissions List](../CodeReferences/ref.permissions_list.md).  This list includes all the permissions a role can have.
+
 :::
 
 ::: tip Related Functions
-[$userPerms](../Member/userPerms.md), to return all member's permissions
+*   `$userPerms`: Returns a member's permissions.
 :::
 
-##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="Role" vertical="middle" /> <Badge type="tip" text="Perms" vertical="middle" /> <Badge type="tip" text="permissions" vertical="middle" /> <Badge type="tip" text="rights" vertical="middle" /> <Badge type="tip" text="hadRolePerms" vertical="middle" />
+##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" />

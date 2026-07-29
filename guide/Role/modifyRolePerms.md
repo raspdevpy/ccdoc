@@ -1,33 +1,45 @@
 # $modifyRolePerms
-Modifies the permissions from a role. 
 
-#### Usage: 
+Modifies the permissions of a specified role.
+
+#### Usage:
+
 `$modifyRolePerms[roleID;+perm1;-perm2;/perm3;+perm4;...]`
 
-#### Example:
-`$modifyRolePerms[$roleID[muted];-sendmessages;]`
-this will modify the perms of the role muted, to not be able to send messages
+#### Parameters:
 
-::: tip Permissions
-Check this [list](../CodeReferences/ref.permissions_list.md) to view all permissions names
+*   **`roleID`:** The ID of the role to modify.
+*   **`+perm1;-perm2;/perm3;+perm4;...`:** A semicolon-separated list of permission modifications.
+
+    *   Use `+` to **grant** a permission.
+    *   Use `-` to **deny** a permission.
+    *   Use `/` to **reset** a permission to its default value.
+
+#### Example:
+
+`$modifyRolePerms[$roleID[muted];-sendmessages;]`
+
+This example modifies the permissions of the role named "muted" so that members with this role will not be able to send messages in the server.
+
+::: tip Permissions List
+Refer to this [list](../CodeReferences/ref.permissions_list.md) for a complete overview of available permission names.
 :::
-::: tip Used Functions
-[$roleID](../Role/roleID.md), to return a roleID by name of it
+
+::: tip Helpful Functions
+*   **[$roleID](../Role/roleID.md):**  Returns a role ID based on its name.
 :::
 
 ::: tip Related Functions
-[$modifyChannelPerms](../Channel/modifyChannelPerms.md), to modify the perms of a channel
-
-[$modifyRole](../Role/modifyRole.md), to edit the role's name or color
+*   **[$modifyChannelPerms](../Channel/modifyChannelPerms.md):** Modifies the permissions of a channel.
+*   **[$modifyRole](../Role/modifyRole.md):** Edits a role's name or color.
 :::
 
-:::tip Information
-Use a `+` sign to grand permission for a certain key;
-
-Use `-` to deny a permission for a certain key;
-
-Use `/` to reset a permission for a certain key.
+::: tip Important Notes
+*   Use a `+` sign to grant a specific permission.
+*   Use a `-` sign to deny a specific permission.
+*   Use a `/` sign to reset a permission to its default state (neither granted nor denied).
 :::
 
-##### Function difficulty: <Badge type="danger" text="Difficult" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="Role" vertical="middle" /> <Badge type="tip" text="modify" vertical="middle" /> <Badge type="tip" text="modify role" vertical="middle" /> <Badge type="tip" text="edit role" vertical="middle" /> <Badge type="tip" text="change role perms" vertical="middle" /> 
+##### Function Difficulty: <Badge type="danger" text="Difficult" vertical="middle" />
+
+###### Tags: <Badge type="tip" text="Role" vertical="middle" /> <Badge type="tip" text="Modify" vertical="middle" /> <Badge type="tip" text="Modify Role" vertical="middle" /> <Badge type="tip" text="Edit Role" vertical="middle" /> <Badge type="tip" text="Change Role Permissions" vertical="middle" />

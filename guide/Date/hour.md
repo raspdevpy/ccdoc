@@ -1,8 +1,15 @@
 # $hour
-returns current hour
+
+This command returns the current hour (in 24-hour format).
+
 #### Usage: `$hour`
-Example:
+
+**Example:**
+
+This example shows how to use the `$hour` command in a custom command.
+
 <br/>
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $hour
@@ -12,9 +19,10 @@ Example:
 	</discord-message>
 </discord-messages>
 
-::: tip Other Timezone
-Date functions uses on default UTC timezone,but you can change it [Learn More](./timezone.md)
+::: tip Timezone Considerations
+Date functions use the UTC timezone by default. You can change the timezone for your bot. [Learn More](./timezone.md)
 :::
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="hour" vertical="middle" /> 
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+
+###### Tags: <Badge type="tip" text="hour" vertical="middle" />

@@ -1,8 +1,19 @@
 # $noMentionMessage
-Returns the message, send by the command executor, without mentions. Useful to prevent the bot from accidentally pinging the members role
 
-#### Usage: `$noMentionMessage`
-<br/>
+The `$noMentionMessage` function returns the content of the message sent by the command executor, but with all mentions removed. This is particularly useful for preventing your bot from accidentally pinging roles or users when echoing user input or using it in other command logic.
+
+#### Usage:
+
+`$noMentionMessage`
+
+This function doesn't require any parameters. It simply returns the message content with mentions stripped out.
+
+#### Example:
+
+Let's say you want to echo the user's message in a custom command, but you don't want the bot to actually ping anyone they mentioned.
+
+Here's how it would look in Discord:
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec <DiscordMention :highlight="true">Server Moderator</DiscordMention> testing [$noMentionMessage] ($message)
@@ -12,6 +23,8 @@ Returns the message, send by the command executor, without mentions. Useful to p
 	</discord-message>
 </discord-messages>
 
+In this example, even though the user mentioned "Server Moderator", the bot only mentions them once and then includes "testing" (the message with mentions removed). The original message including the mention is also included.
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+
 ###### Tags: <Badge type="tip" text="mentions" vertical="middle" /> <Badge type="tip" text="disable mentions" vertical="middle" /> <Badge type="tip" text="ping" vertical="middle" />

@@ -1,9 +1,17 @@
 # $dateStamp
-Returns the current time since 1970 in ms.
+
+Returns the current Unix timestamp (the number of milliseconds that have elapsed since January 1, 1970 UTC).
 
 #### Usage: `$dateStamp[Return in Seconds (Yes/No)]`
 
+This function allows you to retrieve the current timestamp in either milliseconds or seconds.
+
+*   **`Return in Seconds (Yes/No)`:**  Specify whether you want the timestamp returned in seconds (enter `Yes`) or milliseconds (enter `No` or leave blank).
+
 <br/>
+
+**Example:**
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $dateStamp, $dateStamp[yes]
@@ -13,5 +21,8 @@ Returns the current time since 1970 in ms.
 	</discord-message>
 </discord-messages>
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="return" vertical="middle" /> <Badge type="tip" text="time" vertical="middle" /> <Badge type="tip" text="miliseconds" vertical="middle" />
+In this example, the first `$dateStamp` call returns the timestamp in milliseconds, while the second `$dateStamp[yes]` call returns the timestamp in seconds.
+
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+
+###### Tags: <Badge type="tip" text="return" vertical="middle" /> <Badge type="tip" text="time" vertical="middle" /> <Badge type="tip" text="milliseconds" vertical="middle" />

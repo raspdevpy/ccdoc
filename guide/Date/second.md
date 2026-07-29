@@ -1,8 +1,15 @@
 # $second
-returns current second
+
+Returns the current second (0-59).
+
 #### Usage: `$second`
-Example:
+
+This function is simple! It just retrieves the current second of the minute.
+
+**Example:**
+
 <br/>
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $second
@@ -12,9 +19,9 @@ Example:
 	</discord-message>
 </discord-messages>
 
-::: tip Other Timezone
-Date functions uses on default UTC timezone,but you can change it [Learn More](./timezone.md)
+::: tip Timezone Considerations
+Date functions default to using UTC timezone. You can change this if needed. [Learn More about Timezones](./timezone.md)
 :::
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
 ###### Tags: <Badge type="tip" text="second" vertical="middle" /> 

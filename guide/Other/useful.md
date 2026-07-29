@@ -1,51 +1,55 @@
 # Useful Information
-This page includes useful Information about the bot and this documentation.
 
-## Docs
+This page provides helpful information about the bot and this documentation itself. Let's get you started!
 
-### Used Shortcuts
-`cc` -> is a custom command
+## Understanding the Docs
 
-### Function Explanation
+### Function Parameters Explained
 
-::: tip What is a parameter?
-Parameters are Values, which a Function needs. To understand it let us see the usage of `$giveRoles[userid;roleid]`
+::: tip What are Parameters?
 
-* Parameter 1 is a userid. A userid is an ID unique to that user. To get the userid we will use another function named $authorID, which returns the id of the executor
+Parameters are values that a function needs to operate correctly. Think of them as ingredients for a recipe. Let's look at the function `$giveRoles[userid;roleid]` as an example.
 
-* Parameter 2 is a roleid. To get the roleid, you can copy the id of the role you want to give or use an another function named `$roleID[rolename]`
+*   **Parameter 1: `userid`** -  This is the unique ID of the user you want to give the role to. You can get this ID using the `$authorID` function, which returns the ID of the command executor.
+
+*   **Parameter 2: `roleid`** - This is the ID of the role you want to give. You can copy the role ID directly from Discord or use the `$roleID[rolename]` function to get the ID by the role's name.
 :::
 
-#### Example: `$giveRoles[authorid;roleid1;...]`
+#### Parameter Examples
 
-`...` -> means the function can have more then 1 parameter. Every paramter (in this case roleid ) gets seperated with `;`
+*   **Multiple Parameters:** `$giveRoles[authorid;roleid1;roleid2;...]`
 
-#### Example: `$random[min;max;allowDecimals (yes/no)(optional, default=no)]`
+    *   The `...` indicates that the function can accept multiple parameters of the same type (in this case, `roleid`).  Each parameter is separated by a semicolon (`;`).
 
-`(optional` -> this parameter is optional and the default value is `no`
-You don't have to provide an optional parameter,if you use the default parameter
+*   **Optional Parameters:** `$random[min;max;allowDecimals (yes/no)(optional, default=no)]`
 
-### Okay, cool... But how do functions even work?
+    *   `(optional)` means that the parameter is not required.
+    *   `default=no` indicates the default value for the optional parameter. If you don't provide a value, the function will assume the default value (`no` in this case).
+    *   You can simply omit the optional parameter if you want to use the default.
+
+### How Functions Work
 
 ## Functions
-A function is a building block for your code. For example, if you want to send a message, you use can a function called [$channelSendMessage](../Message/channelSendMessage.md) or [$sendMessage](../Message/sendMessage.md). Or if you want to kick a member, you use a function called [$kick](../Member/kick.md)
 
-### Nice, now I understand the basics! How do I proceed?
+A function is a fundamental building block of your code. It performs a specific action. For example, to send a message to a channel, you might use the `[$channelSendMessage](../Message/channelSendMessage.md)` or `[$sendMessage](../Message/sendMessage.md)` function. To kick a member, you'd use `[$kick](../Member/kick.md)`.
+
+### Taking the Next Step: Triggers
 
 ## Triggers
-Now you understand the basic coding components, now we need to choose our trigger
 
-| Triggertype                                   | gets executed when  a user,|
-| --------                                      | -------- |
-| [Word](../Trigger/word.md)                    | Sends a message|
-| [On Join/Leave](../Trigger/joinorleave.md)    | Joins or Leaves your server | 
-| [On Reaction](../Trigger/reaction.md)         | Reacts on a message|
-| [Voice](../Trigger/voicecondecon.md)          | Connects to or Disconnects from a VC|
-| [Timed or Interval](../Trigger/time.md)       | Repeated or Scheduled Execution|
-| [Button](../Trigger/button.md)                | Clicks a Discord button|
-| [Role add/remove](../Trigger/roleaddremove.md)| Recieves or Loses a role|
-| [Library](../Trigger/library.md)| Create A library|
+Now that you understand the basic components, you need to choose a trigger. A trigger defines what action causes your code to run.
 
-### Fantastic, you made it through the hardest learning curve... Let's proceed
+| Trigger Type                                 | Description                                                                                             |
+| :------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
+| [Word](../Trigger/word.md)                   | Executes when a user sends a message containing a specific word or phrase.                            |
+| [On Join/Leave](../Trigger/joinorleave.md)   | Executes when a user joins or leaves your server.                                                       |
+| [On Reaction](../Trigger/reaction.md)        | Executes when a user reacts to a message.                                                               |
+| [Voice](../Trigger/voicecondecon.md)         | Executes when a user connects to or disconnects from a voice channel.                                     |
+| [Timed or Interval](../Trigger/time.md)      | Executes repeatedly at a set interval or at a specific time.                                          |
+| [Button](../Trigger/button.md)               | Executes when a user clicks a Discord button.                                                          |
+| [Role add/remove](../Trigger/roleaddremove.md) | Executes when a user receives or loses a role.                                                          |
+| [Library](../Trigger/library.md) | Create A library |
 
-Now we can create our very first command! Let's go to [this](../Guide/1.create.md) page
+### Congratulations! Ready to Create?
+
+Now that you grasp the basics, let's create your first command! Head over to [this page](../Guide/1.create.md).

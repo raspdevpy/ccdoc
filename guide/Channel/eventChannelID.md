@@ -1,15 +1,17 @@
 # $eventChannelID
-This will return the ID of the channel created/deleted, triggered with the **Channel creation/deletion** trigger.
+
+Returns the ID of the channel that was created or deleted. This function is used specifically for the **Channel Creation** or **Channel Deletion** triggers.
 
 #### Usage: `$eventChannelID`
 
 ::: warning
-This function will not work with the voice join/leave trigger.
-Instead, use [$voiceChannelID](../Channel/voiceChannelID.md).
+**Important Considerations:**
 
-This function will not work in a normal trigger.
-Instead, use [$channelID](../Channel/channelID.md).
+*   This function is exclusively for the **Channel Creation** and **Channel Deletion** triggers.
+*   For **Voice Channel Join/Leave** events, use `$voiceChannelID` instead.
+*   This function will **not** work in regular command triggers. For those triggers, use `$channelID`.
 :::
 
-##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
+##### Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
+
 ###### Tags: <Badge type="tip" text="channel" vertical="middle" /> <Badge type="tip" text="execChannel" vertical="middle" /> <Badge type="tip" text="channelUsed" vertical="middle" /> <Badge type="tip" text="used channel" vertical="middle" /> <Badge type="tip" text="channel create/delete" vertical="middle" />

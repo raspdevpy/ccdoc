@@ -1,8 +1,11 @@
-# $serverEmojis
-returns the server emojis
+# serverEmojis
+
+Returns the server emojis.
 
 #### Usage: `$serverEmojis`
+
 <br/>
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $serverEmojis
@@ -12,5 +15,4 @@ returns the server emojis
 	</discord-message>
 </discord-messages>
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="server" vertical="middle" /><Badge type="tip" text="Emojis" vertical="middle" />
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />

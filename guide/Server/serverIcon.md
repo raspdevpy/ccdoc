@@ -1,8 +1,11 @@
 # $serverIcon
-Returns the Current Server Icon
+
+Returns the current server's icon.
 
 #### Usage: `$serverIcon`
+
 <br/>
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
 		!!exec $serverIcon

@@ -1,7 +1,9 @@
 # $allMembersCount
-Returns a total number of users the bot currently serves
+
+Returns the total number of users the bot is currently serving across all servers it's in.
 
 #### Usage: `$allMembersCount`
+
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -12,5 +14,4 @@ Returns a total number of users the bot currently serves
 	</discord-message>
 </discord-messages>
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="members" vertical="middle" /> <Badge type="tip" text="count" vertical="middle" /> <Badge type="tip" text="amount of users" vertical="middle" /> <Badge type="tip" text="return number" vertical="middle" />
+##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />

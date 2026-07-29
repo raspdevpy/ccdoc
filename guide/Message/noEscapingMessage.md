@@ -1,32 +1,35 @@
-# $noEscapingMessage <Badge type="danger" text="DANGER WARNING!!" vertical="middle" /> 
-It does the same as `$message` BUT, special characters won't be replaced! 
+# $noEscapingMessage <Badge type="danger" text="DANGER WARNING!!" vertical="middle" />
+
+This function behaves similarly to `$message`, but it **does not escape special characters**. This means characters like backticks (`) or newlines will be interpreted literally and won't be replaced with their escaped counterparts.
 
 #### Usage: `$noEscapingMessage`
+
 <br/>
+
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec `$` $noEscapingMessage
+		!!exec `` `$` $noEscapingMessage `` `
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-        `$`
+        `` `$` `` `
 	</discord-message>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec `$`
+		!!exec `` `$` `` `
 	</discord-message>
 	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-        `#CHAR#`
+        `` `#CHAR#` `` `
 	</discord-message>
 </discord-messages>
 
-::: danger DO NOT PROCEED
-ONLY USE THIS FUNCTION WHEN YOU KNOW WHAT YOU'RE DOING!!
+::: danger READ CAREFULLY BEFORE USING!
 
-This function, can cause your command to completely fail!
+**ONLY use this function if you understand the implications and are comfortable handling potentially unsafe characters.**  Using `$noEscapingMessage` carelessly can lead to command errors, unexpected behavior, or even security vulnerabilities.  Always sanitize your inputs and be aware of the context in which this function is being used.
 :::
 
 ::: tip
-Use [$message](../Message/message.md) to make sure you're safe with characters
+
+For most use cases, it's recommended to use [$message](../Message/message.md) to ensure proper character escaping and prevent unexpected issues.
 :::
 
-##### Function difficulty: <Badge type="danger" text="Difficult" vertical="middle" /> 
+##### Function difficulty: <Badge type="danger" text="Difficult" vertical="middle" />
 ###### Tags: <Badge type="tip" text="Replace" vertical="middle" /> <Badge type="tip" text="danger" vertical="middle" /> <Badge type="tip" text="un-escaped" vertical="middle" /> <Badge type="tip" text="message" vertical="middle" />
