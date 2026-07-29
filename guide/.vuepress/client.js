@@ -17,6 +17,10 @@ import {
 
 import "@discord-message-components/vue/dist/style.css";
 
+import "./styles/prism-coldark-dark.css";
+
+import Arg from "./components/Arg.vue";
+
 export default defineClientConfig({
     enhance({ app }) {
         app.use(DiscordMessageComponents, {});
@@ -33,5 +37,7 @@ export default defineClientConfig({
         app.component("DiscordMessages", DiscordMessages);
         app.component("DiscordReaction", DiscordReaction);
         app.component("DiscordReactions", DiscordReactions);
+
+        app.component("Arg", Arg);
     },
 });

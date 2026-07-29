@@ -1,60 +1,85 @@
-# Getting Started with Custom Command Bot
+# Custom Command
 
-:::tip Important: Read This First!
-To get the most out of Custom Command Bot and avoid confusion, we highly recommend reading this guide in its entirety. Understanding the concepts presented here will make creating and managing custom commands much easier.
-:::
+Hello! Welcome to our official documentation repository.
 
-## What is Custom Command Bot?
+If you'd like to read our documentation, please head to [doc.ccommandbot.com](https://doc.ccommandbot.com).  
+If you'd like to contribute, here's how:
 
-Custom Command Bot empowers you to create fully customizable commands for your Discord server. It's a versatile tool suitable for both experienced developers and beginners who want a simple and effective way to enhance their server's functionality.
+## Single Files
 
-### How Do Custom Commands Work?
+For small edits to a few files, you can navigate to the page you want to edit, scroll down and click the `Improve This Page!` button.  
+After making your changes, click the `Commit changes` button.  
+This will automatically fork the repository and create a new branch for your edit.  
+Finally, click the `Open Pull Request` button to submit your changes for review.
 
-As the name suggests, custom commands are entirely customizable! You have the flexibility to define almost any action that a Discord bot can perform, tailored to your specific needs.
+## Multiple Files
 
-### Do I Need Coding Experience?
+For larger changes involving many files, we recommend using your IDE and the dev server so you can preview how everything will look.
 
-No coding experience is required! Custom Command Bot uses an easy-to-learn pseudo-language designed specifically for straightforward Discord bot development.
+## Running the Dev Server
 
-## Inviting the Bot to Your Server
+### Requirements
 
-Adding Custom Command Bot to your server is a breeze. Just follow these simple steps:
+[Git](https://git-scm.com/install/),  
+[Node.js](https://nodejs.org/en/download/current) `>=22.18.0` or [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
-1.  **Invite the Bot:** Click [this link](https://discord.com/api/oauth2/authorize?client_id=725721249652670555&permissions=268561655&scope=bot) to invite the bot to your server.
+### Steps
 
-    > ![](https://i.imgur.com/NQp3N8L.png)
+1\. [Fork this repository](https://github.com/raspdevpy/ccdoc/fork)  
+2\. Clone your forked repository to your device:
 
-    :::details Permissions
-    We recommend keeping all the preset permissions during the invitation process. This will prevent future issues caused by the bot lacking necessary permissions. If you have security concerns, please refer to our Privacy Policy accessible via [this link](https://doc.ccommandbot.com/Guide/policy.html).
-    > ![](https://i.imgur.com/7WnDcnG.png)
-    :::
+```bash
+git clone https://github.com/YOUR_USERNAME/ccdoc
+```
 
-2.  **Log in to the Dashboard:** Go to the [Dashboard](https://ccommandbot.com) and log in.
+Or using SSH:
 
-    > ![](https://i.imgur.com/pvJ3i6R.png)
+```bash
+git clone git@github.com:YOUR_USERNAME/ccdoc.git
+```
 
-3.  **Select Your Server:** Choose the server you want to manage from the dashboard.
+### Node.js
+ 
+3\. Install dependencies:
+ 
+```bash
+npm i
+```
 
-    > ![](https://i.imgur.com/XxSsZ4G.png)
+4\. Start the dev server and go to [localhost:8080](http://localhost:8080):
 
-## Creating Your First Custom Commands
+```bash
+npm run dev
+```
 
-With the bot successfully added to your server, you're now ready to unleash your creativity and build your own custom commands!
+### Docker Compose
 
-Head over to [the full guide](./guide/Guide/1.create.md) to learn how to create your first command.
+3\. Start the Docker server and go to [localhost:8080](http://localhost:8080):
 
-# How to run 
+```bash
+docker compose up
+```
 
-## Without Docker
-Required: Node 18.x, npm
+## Saving Changes
 
-1. run `git clone https://github.com/raspdevpy/ccdoc`
-2. run `npm install`
-3. run `npm run dev`, and head to `https://localhost:8080`
+After your changes are done, you need to update your fork.
 
-## With Docker
-If docker and docker compose is installed in your system
+1\. Add all files for commit:
 
-1. run `git clone https://github.com/raspdevpy/ccdoc`
-2. run `docker compose up`
-3. head to `https://localhost:8080`
+```bash
+git add .
+```
+
+2\. Commit with your message:
+
+```bash
+git commit -m "Updated category Member"
+```
+
+3\. Push changes to your fork:
+
+```bash
+git push
+```
+
+To send these changes for review, open your cloned fork on GitHub and click the `Open Pull Request` button.

@@ -1,5 +1,5 @@
 ---
-hidden: true
+weight: 2
 ---
 
 # Syntax

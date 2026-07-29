@@ -1,6 +1,7 @@
 import { viteBundler } from "@vuepress/bundler-vite";
 import { defaultTheme } from "@vuepress/theme-default";
 import { searchPlugin } from "@vuepress/plugin-search";
+import { removeHtmlExtensionPlugin } from "vuepress-plugin-remove-html-extension";
 
 import { getDirname, path } from "vuepress/utils";
 import fs from "fs";
@@ -18,21 +19,8 @@ const replacePageContent = (content, replacements) => {
     return output;
 };
 
-const aiFiles = new Set();
 
-function scanAiFiles(dir) {
-    fs.readdirSync(dir, { withFileTypes: true }).forEach((entry) => {
-        const fullPath = path.join(dir, entry.name);
 
-        if (entry.isDirectory()) {
-            scanAiFiles(fullPath);
-        } else if (entry.name.endsWith("_ai.md")) {
-            aiFiles.add(entry.name.split("/").pop());
-        }
-    });
-}
-
-scanAiFiles(getDirname(import.meta.url) + "/../");
 module.exports = {
     lang: "en-US",
     title: "Custom Command",
@@ -111,7 +99,6 @@ module.exports = {
                 };
             },
         },
-
         {
             name: "dynamic-meta-plugin",
             extendsPage: (page) => {
@@ -129,17 +116,8 @@ module.exports = {
 
         searchPlugin({
             maxSuggestions: 15,
-            isSearchable: (page) => {
-                const file = page.data.filePathRelative;
-
-                if (!file) return true;
-
-                if (file.endsWith("_ai.md")) return true;
-                return !aiFiles.has(
-                    file.replace(".md", "_ai.md").split("/").pop(),
-                );
-            },
             getExtraFields: (page) => parseTag(page),
         }),
+        removeHtmlExtensionPlugin(),
     ],
 };

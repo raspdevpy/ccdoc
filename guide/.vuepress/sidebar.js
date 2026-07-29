@@ -1,43 +1,63 @@
 const fs = require("fs");
 const path = require("path");
+const matter = require("gray-matter");
 
 function getSideBar(folder, title, options = {}) {
-    const extension = [".md"];
-    if (!fs.existsSync(path.join(`${__dirname}/../${folder}`)))
-        return { text: title, children: [], collapsible: false, ...options };
+    const children = getChildren(folder);
+    return { text: title, children, collapsible: false, ...options };
+}
+
+function getChildren(folder) {
+    if (!fs.existsSync(path.join(`${__dirname}/../${folder}`))) return [];
+
     const files = fs
-        .readdirSync(path.join(`${__dirname}/../${folder}`))
+        // get all files in $folder
+        .readdirSync(path.join(`${__dirname}/../${folder}`), {
+            withFileTypes: true,
+        })
+        .filter((dirent) => dirent.isFile())
+        // read frontmatter and append a weight to each file
+        .map((item) => {
+            const fileContent = fs.readFileSync(
+                `${item.parentPath}/${item.name}`,
+                "utf8",
+            );
+            const { data } = matter(fileContent);
+            return {
+                name: item.name,
+                path: `/${folder}/${item.name}`,
+                weight: data.weight ?? -1,
+                hidden: data.hidden ?? false,
+            };
+        })
+        // remove non .md files, and filter out files that are hidden
         .filter(
             (item) =>
-                item.toLowerCase() != "readme.md" &&
-                fs
-                    .statSync(path.join(`${__dirname}/../${folder}`, item))
-                    .isFile() &&
-                extension.includes(path.extname(item)),
-        );
-    let aiRefinedFiles = files.filter((file) => file.endsWith("_ai.md"));
+                item.path.endsWith(".md") &&
+                !item.hidden &&
+                item.name.toLowerCase() != "readme.md",
+        )
+        // sort files based on weight
+        .sort((a, b) => {
+            if (a.weight === -1 && b.weight === -1) return 0;
+            if (a.weight === -1) return 1;
+            if (b.weight === -1) return -1;
+            return a.weight - b.weight;
+        })
+        // convert back to array of paths
+        .map((file) => file.path);
 
-    let children = [];
-    files.forEach((name) => {
-        if (name.endsWith("_ai.md")) return;
-        if (aiRefinedFiles.includes(name.replace(".md", "_ai.md")))
-            children.push(`/${folder}/${name.replace(".md", "_ai.md")}`);
-        else children.push(`/${folder}/${name}`);
-    });
-    return { text: title, children, collapsible: false, ...options };
+    return files;
 }
 
 module.exports = {
     sidebarDepth: 1,
     sidebar: {
-        //getSideBar("functions","Functions")
         "/": [
             {
                 text: "Guide",
-                children: ["/"],
+                children: ["/", ...getChildren("Guide")],
             },
-
-            getSideBar("Guide", "Full Guide"),
             getSideBar("Trigger", "Trigger Types", { collapsible: true }),
             getSideBar("Tutorials", "Tutorials & Examples", {
                 collapsible: true,
@@ -131,7 +151,7 @@ module.exports = {
                     // getSideBar('Unclassified','Unclassfied Functions',{collapsible:true})
                 ],
             },
-            getSideBar("Contribution_Info", "Contribute"),
+            getSideBar("Contribution_Info", "Contribute", { collapsible: true }),
             getSideBar("Legal", "Legal"),
         ],
     },
