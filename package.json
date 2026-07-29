@@ -5,19 +5,20 @@
   "private": true,
   "scripts": {
     "dev": "vuepress dev guide",
-    "build": "node --max_old_space_size=8192 ./node_modules/vuepress/bin/vuepress.js build guide"
+    "build": "NODE_OPTIONS=--max-old-space-size=8192 vuepress build guide"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.31",
     "@vuepress/plugin-container": "^2.0.0-rc.28",
     "@vuepress/plugin-search": "^2.0.0-rc.131",
+    "@vuepress/plugin-slimsearch": "^2.0.0-rc.131",
     "@vuepress/theme-default": "^2.0.0-rc.132",
     "sass-embedded": "^1.100.0",
     "vuepress": "^2.0.0-rc.31"
   },
   "dependencies": {
     "@discord-message-components/vue": "^0.2.1",
-    "@vueuse/core": "^9.13.0",
+    "@vueuse/core": "^14.4.0",
     "cheerio": "^1.0.0-rc.10"
   },
   "main": "index.js",
