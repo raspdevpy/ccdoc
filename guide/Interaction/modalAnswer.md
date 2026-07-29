@@ -1,131 +1,24 @@
-# $modal
-Used to send a modal, it must be used inside interaction like button/menu/slash triggers
-#### Usage: `$modal[Input]`
+# $modalAnswer
 
-**Input** will accept this format:
+Retrieves the value entered by a user in a modal. This function is used to access the data submitted through a modal triggered by the [`modal` trigger](../Trigger/modal.md).
 
-```
-{title=The modal title}
-{id=The modal id}
+**Usage:** `$modalAnswer[Input Value;Seperator (optional)]`
 
-{input=
-    {name=Input name}
-    {id=Input id}
-    {ph=Input placeholder}
-    {def=Input Default Value}
-    {required=Is input required?}
-    {min=Minimum length of the input}
-    {max=Maximum length of the input}
-    {type=What is the type of input?}
-}
+**Parameters:**
 
-{input=
-    {name=Menu name}
-    {type=menu}
-    {id=menu id}
-    {subtitle=Menu subtitle (description)}
+*   `Input Value`:  The unique identifier (input value) assigned to the specific input field within the `$modal` function when the modal was created. This is how you tell the function which input field's value you want to retrieve.
+*   `Seperator`:  In case a multiple answer provided in the modal like in a menu with 2 or more selected options, you can use this field to set the separator between them, by default it is ', '.
 
-    {option=Option 1}
-    {value=option_1_id}
+**Example:**
 
-    {option=Option 2}
-    {value=option_2_id}
-}
+The following image illustrates how to use `$modalAnswer` inside the `modal` trigger to retrieve the value the user entered in the modal's input field:
 
-{input=
-    {name=Attachment Input}
-    {type=attachment}
-    {id=input id}
-    {subtitle=Attachment subtitle (description)}
-    {min=Min number of attachments (1-10)}
-    {max=Max number of attachments (1-10)}
-    {required=yes/no}
-}
+![](https://i.imgur.com/SZc3371.png)
 
-{input=
-    {name=Select Menu}
-    {type=user or role or mention or channel}
-    {id=menu id}
-    {subtitle=Menu subtitle (description)}
-    {selected=ID} // Prefilled ID for user/role/channel menus
-    {selected_user=ID} // Prefilled user ID for mention menus
-    {selected_role=ID} // Prefilled role ID for mention menus
-}
-
-{input=
-    {name=Radio Group Name}
-    {type=radio}
-    {id=radio id}
-    {subtitle=Radio subtitle (description)}
-    {required=yes/no}
-
-    {option=Option 1}
-    {value=option_1_id}
-
-    {option=Option 2}
-    {value=option_2_id}
-}
-
-{input=
-    {name=Checkbox Group Name}
-    {type=checkbox}
-    {id=checkbox id}
-    {subtitle=Checkbox subtitle (description)}
-    {required=yes/no}
-    {min=Minimum required choices (0-10)}
-    {max=Maximum allowed choices (1-10)}
-
-    {option=Option 1}
-    {value=option_1_id}
-
-    {option=Option 2}
-    {value=option_2_id}
-}
-
-```
-
-#### Notes on input properties:
-
-##### **required**
-
-must be `yes` or `no`, the default is `yes`<br>
-
-##### **type**
-
-Specifies the input type for the input.
-
-* **`short` (Default):** A single-line text input field.
-* **`long`:** A multi-line text area for longer responses.
-* **`menu/user/role/mention/channel`:** A dropdown selection menu instead of a text field.
-* **`attachment/attach`:** A file upload input field.
-* **`radio`:** A multiple choice list where only **one** item can be selected (Min 2 options, Max 10).
-* **`checkbox`:** A multiple choice list where **several** items can be checked (Min 1 option, Max 10).
-
-#### Max Amount of Inputs
-
-You can include multiple input fields, up to a maximum of 5 total (for example: 2 text inputs, 1 attachment input, and 2 radio/checkbox fields).
-
-### Example
-#### Code
-![](https://i.imgur.com/ByYr0UI.png)
-
-#### Output
-![](https://i.imgur.com/LF7cnOK.png)
-
-### Example With Menu
-#### Code
-![](https://i.imgur.com/ClY5l4b.png)
-
-#### Output
-![](https://i.imgur.com/chJsAth.png)
-
-::: tip
-This can only be used inside the [modal trigger](../Trigger/modal.md)
+::: tip Important
+`$modalAnswer` can *only* be used within the context of the [`modal` trigger](../Trigger/modal.md).  Attempting to use it elsewhere will result in an error or unexpected behavior.
 :::
 
-::: tip
-Read more about the menu structure in [selectMenu](../Text/Components/selectMenu.md)
-:::
+**Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
-##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 
-###### Tags: <Badge type="tip" text="modal" vertical="middle" /> <Badge type="tip" text="sending modal" vertical="middle" />
+**Tags:** <Badge type="tip" text="modalAnswer" vertical="middle" /> <Badge type="tip" text="modal" vertical="middle" /> <Badge type="tip" text="modal answer" vertical="middle" />
