@@ -8,27 +8,31 @@
     "build": "node --max_old_space_size=8192 ./node_modules/vuepress/bin/vuepress.js build guide"
   },
   "devDependencies": {
-    "@vuepress/plugin-search": "^2.0.0-beta.36",
-    "vuepress": "^2.0.0-beta.36",
-    "vuepress-vite": "^2.0.0-beta.36"
+    "@vuepress/bundler-vite": "^2.0.0-rc.31",
+    "@vuepress/plugin-container": "^2.0.0-rc.28",
+    "@vuepress/plugin-search": "^2.0.0-rc.131",
+    "@vuepress/theme-default": "^2.0.0-rc.132",
+    "sass-embedded": "^1.100.0",
+    "vuepress": "^2.0.0-rc.31"
   },
   "dependencies": {
     "@discord-message-components/vue": "^0.2.1",
-    "@vuepress/plugin-container": "^2.0.0-beta.36",
     "@vueuse/core": "^9.13.0",
-    "cheerio": "^1.0.0-rc.10",
-    "vite": "2.8"
+    "cheerio": "^1.0.0-rc.10"
   },
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raspdevpy/vuedocs.git"
+    "url": "git+https://github.com/raspdevpy/ccdoc.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/raspdevpy/vuedocs/issues"
+    "url": "https://github.com/raspdevpy/ccdoc/issues"
   },
-  "homepage": "https://github.com/raspdevpy/vuedocs#readme"
+  "homepage": "https://github.com/raspdevpy/ccdoc",
+  "allowScripts": {
+    "vue-demi": true
+  }
 }
