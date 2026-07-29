@@ -68,9 +68,21 @@ module.exports = {
                 href: "https://doc.ccommandbot.com/bot-profile.png",
             },
         ],
+        [
+            "meta",
+            {
+                name: "twitter:image",
+                content: "https://doc.ccommandbot.com/bot-profile.png",
+            },
+        ],
+        [
+            "meta",
+            {
+                property: "og:image",
+                content: "https://doc.ccommandbot.com/bot-profile.png",
+            },
+        ],
         ["meta", { name: "theme-color", content: "#74b0f7" }],
-
-        ["meta", { property: "og:title", content: "Custom Command Bot" }],
         [
             "meta",
             {
@@ -81,25 +93,8 @@ module.exports = {
         [
             "meta",
             {
-                property: "og:image",
-                content: "https://doc.ccommandbot.com/bot-profile.png",
-            },
-        ],
-        ["meta", { property: "og:url", content: "https://ccommandbot.com" }],
-
-        ["meta", { name: "twitter:title", content: "Custom Command Bot" }],
-        [
-            "meta",
-            {
                 name: "twitter:description",
                 content: "Custom Command Bot's Documentation",
-            },
-        ],
-        [
-            "meta",
-            {
-                name: "twitter:image",
-                content: "https://doc.ccommandbot.com/bot-profile.png",
             },
         ],
     ],
@@ -114,6 +109,21 @@ module.exports = {
                     const html = render.call(md, ...args);
                     return html;
                 };
+            },
+        },
+
+        {
+            name: "dynamic-meta-plugin",
+            extendsPage: (page) => {
+                const title = page.title || null;
+                const newTitle = title
+                    ? `${title} | Custom Command`
+                    : "Custom Command Documentation";
+
+                page.frontmatter.head = [
+                    ["meta", { property: "og:title", content: newTitle }],
+                    ["meta", { name: "twitter:title", content: newTitle }],
+                ];
             },
         },
 

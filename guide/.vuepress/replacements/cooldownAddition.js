@@ -50,5 +50,11 @@ This function has built-in cooldown. Why? Read more about cooldowns [here](/Othe
 - **Type:** \`${cooldown.scope}\`
 
 Functions with the same type share cooldowns based on the same \`Tracked By\` value.`;
+    if (isHardCooldown) {
+        content += `
+::: warning Warning
+This cooldown cannot be bypassed by Tier 3+ bots.
+:::`;
+    }
     return content;
 };
