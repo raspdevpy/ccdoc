@@ -23,9 +23,9 @@ You can send embed using [Message Curl Format](../CodeReferences/ref.message_cur
 :::
 
 ::: danger
-The way [$modifyChannelPerms](../Channel/modifyChannelPerms) shown here is **NOT** correct! 
+The way `$modifyChannelPerms` shown here is **NOT** correct! 
 
-Check the [$modifyChannelPerms](../Channel/modifyChannelPerms) for the correct usage
+Check the `$modifyChannelPerms` for the correct usage
 :::
 
 ##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 

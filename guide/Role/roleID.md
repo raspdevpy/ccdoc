@@ -28,7 +28,7 @@ Let's say you have a role named "muted" in your server.  The following example d
 In this example, the command returns `772053356378062889`, which is the ID of the "muted" role.
 
 ::: tip Related Functions
-*   [$findRole](../Role/findRole.md):  Use this function to find a role by its name or mention if you are unsure of the exact name.
+*   `$findRole`:  Use this function to find a role by its name or mention if you are unsure of the exact name.
 :::
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />

@@ -30,7 +30,7 @@ How to use $status
 This function requires the Presence Intent to be enabled. You can change that in Discord Developer Portal under your Bot settings.
 :::
 
-##### Related functions: [$membersWithStatus](../Member/membersWithStatus.md)
+##### Related functions: `$membersWithStatus`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="status" vertical="middle" /> <Badge type="tip" text="member status" vertical="middle" /> <Badge type="tip" text="online" vertical="middle" /> <Badge type="tip" text="offline" vertical="middle" /> <Badge type="tip" text="dnd" vertical="middle" />

@@ -24,7 +24,7 @@ How to return display name from author
     </discord-message>
 </discord-messages>
 
-##### Related functions: [$nickname](../Member/nickname.md) [$username](../Member/username.md)
+##### Related functions: `$nickname` `$username`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="name" vertical="middle"/> <Badge type="tip" text="username" vertical="middle"/> <Badge type="tip" text="nickname" vertical="middle"/>

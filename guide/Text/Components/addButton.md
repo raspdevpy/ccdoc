@@ -1,5 +1,5 @@
 # $addButton
-Adds a button to an existing message. Use [$button](./button.md) to send a message with a button.
+Adds a button to an existing message. Use `$button` to send a message with a button.
 
 ## Usage
 `$addButton[Message ID;Label;style/url;link/id;emoji(optional);Add to a new role (yes/no, optional); disabled (yes/no, optional)]`
@@ -18,7 +18,7 @@ Adds a button to an existing message. Use [$button](./button.md) to send a messa
 \
 **URL buttons are grey by default.**
 
-* You can use normal unicode emojis, custom emojis with their ID, or you can use [$customEmoji](../customEmoji.md).
+* You can use normal unicode emojis, custom emojis with their ID, or you can use `$customEmoji`.
 :::
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 

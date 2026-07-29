@@ -1,4 +1,4 @@
-# `$channel`
+# $channel
 
 Retrieves information about a specific channel.
 

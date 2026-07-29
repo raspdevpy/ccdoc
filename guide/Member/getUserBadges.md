@@ -28,7 +28,7 @@ How to return badges from command author
 Not all badges are 100% guranteed.
 :::
 
-##### Related functions: [$userBanner](../Member/userBanner.md)
+##### Related functions: `$userBanner`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="badges" vertical="middle"/> <Badge type="tip" text="user" vertical="middle"/>

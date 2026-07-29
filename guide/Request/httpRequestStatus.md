@@ -25,7 +25,7 @@ How to use $httpRequestStatus to display status code of request
     </discord-message>
 </discord-messages>
 
-##### Related functions: [$httpRequest](../Request/httpRequest.md) [$httpRequestHeader](../Request/httpRequestHeader.md)
+##### Related functions: `$httpRequest` `$httpRequestHeader`
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="http request" vertical="middle"/> <Badge type="tip" text="api request" vertical="middle"/> <Badge type="tip" text="status" vertical="middle"/>

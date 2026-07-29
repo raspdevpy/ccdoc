@@ -23,7 +23,7 @@ How to use $authorID
     </discord-message>
 </discord-messages>
 
-##### Related functions: [$mention](../Member/mention.md)
+##### Related functions: `$mention`
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="authorID" vertical="middle" /> <Badge type="tip" text="executor" vertical="middle" /> <Badge type="tip" text="command author" vertical="middle" /> <Badge type="tip" text="" vertical="middle" /> <Badge type="tip" text="userID" vertical="middle" />

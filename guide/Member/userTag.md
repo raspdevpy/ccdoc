@@ -28,7 +28,7 @@ How to use $userTag
 This feature is deprecated because Discord switched to usernames. This function will return only username as of the username update. This still works on bots.
 :::
 
-##### Related functions: [$nickname](../Member/nickname.md) [$discriminator](../Member/discriminator.md) [$username](../Member/username.md)
+##### Related functions: `$nickname` `$discriminator` `$username`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="name" vertical="middle" /> <Badge type="tip" text="userTag" vertical="middle" /> <Badge type="tip" text="nickname" vertical="middle" /> <Badge type="tip" text="username" vertical="middle" /> <Badge type="tip" text="Names" vertical="middle" /> <Badge type="tip" text="userID" vertical="middle" />

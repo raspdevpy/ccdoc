@@ -1,6 +1,6 @@
 # $dateToTime
 
-Converts a human-readable date string to milliseconds since the Unix epoch (January 1, 1970, 00:00:00 UTC).  You can optionally use [$timezone](../Date/timezone) to specify a custom timezone for accurate conversion.
+Converts a human-readable date string to milliseconds since the Unix epoch (January 1, 1970, 00:00:00 UTC).  You can optionally use `$timezone` to specify a custom timezone for accurate conversion.
 
 ## Usage
 

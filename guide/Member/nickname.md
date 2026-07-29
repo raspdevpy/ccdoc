@@ -24,7 +24,7 @@ How to use $nickname
     </discord-message>
 </discord-messages>
 
-##### Related functions: [$changeNickname](../Member/changeNickname.md) [$username](../Member/username.md) [$discriminator](../Member/discriminator.md) [$userTag](../Member/userTag.md)
+##### Related functions: `$changeNickname` `$username` `$discriminator` `$userTag`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="name" vertical="middle" /> <Badge type="tip" text="nickname" vertical="middle" /> <Badge type="tip" text="username" vertical="middle" /> <Badge type="tip" text="user" vertical="middle" />

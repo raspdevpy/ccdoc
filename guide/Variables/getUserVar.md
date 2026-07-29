@@ -24,9 +24,9 @@ or executors(author/you) warning count:
 </discord-messages>
 
 ::: tip Related Functions
-Check out: [$setUserVar](../Variables/setUserVar.md)
+Check out: `$setUserVar`
 
-Check out: [$deleteUserVar](../Variables/deleteUserVar.md)
+Check out: `$deleteUserVar`
 
-Check out: [$resetUserVar](../Variables/resetUserVar.md)
+Check out: `$resetUserVar`
 :::

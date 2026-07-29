@@ -26,12 +26,12 @@ Refer to this [list](../CodeReferences/ref.permissions_list.md) for a complete o
 :::
 
 ::: tip Helpful Functions
-*   **[$roleID](../Role/roleID.md):**  Returns a role ID based on its name.
+*   **`$roleID`:**  Returns a role ID based on its name.
 :::
 
 ::: tip Related Functions
-*   **[$modifyChannelPerms](../Channel/modifyChannelPerms.md):** Modifies the permissions of a channel.
-*   **[$modifyRole](../Role/modifyRole.md):** Edits a role's name or color.
+*   **`$modifyChannelPerms`:** Modifies the permissions of a channel.
+*   **`$modifyRole`:** Edits a role's name or color.
 :::
 
 ::: tip Important Notes

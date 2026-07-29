@@ -32,7 +32,7 @@ How to check if `name` key exists
     </discord-message>
 </discord-messages>
 
-##### Related functions: [$ObjectKeys](./ObjectKeys.md) [$ObjectCreate](./ObjectCreate.md) [$ObjectSet](./ObjectSet.md)
+##### Related functions: `$ObjectKeys` `$ObjectCreate` `$ObjectSet`
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="Object" vertical="middle" /> <Badge type="tip" text="Key" vertical="middle" />

@@ -31,7 +31,7 @@ User will be cached after they trigger any command from this bot, but eventually
 To have all members cached, you will need Tier 5 Bot.
 :::
 
-##### Related functions: [$findMember](../Member/findMember.md)
+##### Related functions: `$findMember`
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="User" vertical="middle" /> <Badge type="tip" text="Exists" vertical="middle" /> <Badge type="tip" text="Check" vertical="middle" /> <Badge type="tip" text="Is Real" vertical="middle" />

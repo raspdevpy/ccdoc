@@ -1,5 +1,5 @@
 # $splitText
-returns the element by index from [$textSplit](./textSplit.md)
+returns the element by index from `$textSplit`
 
 #### Usage: `$splitText[index]`
 <br/>
@@ -17,7 +17,7 @@ returns the element by index from [$textSplit](./textSplit.md)
 </discord-messages>
 
 ::: danger
-This function got deprecated, use [$arrayGet](./../Array/arrayGet.md) instead 
+This function got deprecated, use `$arrayGet` instead 
 :::
 
 ##### Function difficulty <Badge type="warning" text="Medium" vertical="middle" /> 

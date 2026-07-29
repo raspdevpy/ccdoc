@@ -31,7 +31,7 @@ How to use $getCooldownTime
 The `time` argument in must exactly match the time in the original cooldown function used. Mismatched durations will result in incorrect cooldown checks.
 :::
 
-##### Related functions: [$clearCooldown](../Cooldown/clearCooldown.md)
+##### Related functions: `$clearCooldown`
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="Tag1" vertical="middle"/> <Badge type="tip" text="Tag2" vertical="middle"/>

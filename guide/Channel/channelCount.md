@@ -1,4 +1,4 @@
-# `$channelCount`
+# $channelCount
 
 This function returns the total number of channels present in the server.
 

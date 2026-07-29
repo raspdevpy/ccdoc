@@ -31,7 +31,7 @@ The bot needs the "Read Messages/View Channels" permission in the given channel 
 Rate limits may apply if this function is used excessively.
 :::
 
-##### Related functions: [$usersInChannel](../Member/usersInChannel.md)
+##### Related functions: `$usersInChannel`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="typing" vertical="middle"/> <Badge type="tip" text="users" vertical="middle"/> <Badge type="tip" text="channel" vertical="middle"/>

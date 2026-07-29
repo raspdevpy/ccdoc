@@ -31,4 +31,4 @@ In the same way you can also define functions in a library to share code across 
 That demonstrates a library's usefulness.
 
 ## Some functions related to Library
-[$includeLibrary](../Useful/includeLibrary.md):   Include your library
+`$includeLibrary`:   Include your library

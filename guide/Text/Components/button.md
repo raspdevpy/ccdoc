@@ -93,7 +93,7 @@ Now, as you know how to create buttons, you may want to know how to handle them.
 Check these pages:
 
 - [Button trigger](../../Trigger/button.md)
-- [$awaitButton](./awaitbutton.md)
+- `$awaitButton`
 
 :::
 

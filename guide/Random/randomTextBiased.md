@@ -1,6 +1,6 @@
 # $randomTextBiased
 
-Similar to [$randomText](./randomText.md), but with weighted randomness! This allows you to influence the probability of specific text being selected.
+Similar to `$randomText`, but with weighted randomness! This allows you to influence the probability of specific text being selected.
 
 ## Usage
 

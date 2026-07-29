@@ -41,7 +41,7 @@ A comprehensive list of all available permissions can be found [here](../CodeRef
 
 ::: tip Related Functions
 
-*   [$editChannel](../Channel/editChannel.md):  Can be used to modify other channel properties (name, topic, etc.).
+*   `$editChannel`:  Can be used to modify other channel properties (name, topic, etc.).
 :::
 
 ##### Function Difficulty: <Badge type="danger" text="Difficult" vertical="middle" />

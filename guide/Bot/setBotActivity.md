@@ -1,4 +1,4 @@
-# `$setBotActivity` <Badge type="danger" text="Tier 4+ ONLY!" vertical="middle" />
+# $setBotActivity <Badge type="danger" text="Tier 4+ ONLY!" vertical="middle" />
 
 Set your bot's activity status (the text displayed under the bot's name).
 

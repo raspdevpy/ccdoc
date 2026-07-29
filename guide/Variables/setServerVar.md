@@ -10,7 +10,7 @@ Sets a Server variable value.
 </discord-messages>
 
 ::: tip Related Functions
-Check out: [$getServerVar](../Variables/getServerVar.md)
+Check out: `$getServerVar`
 
-Check out: [$deleteServerVar](../Variables/deleteServerVar.md)
+Check out: `$deleteServerVar`
 :::

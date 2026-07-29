@@ -22,14 +22,14 @@ This example grants the "Muted" role to the command executor.
 </discord-messages>
 
 ::: tip Useful Functions
-*   `[$roleID](../Role/roleID.md)`:  Retrieves a role's ID based on its name.
-*   `[$authorID](../Member/authorID.md)`: Returns the ID of the command executor (the user who ran the command).
+*   ``$roleID``:  Retrieves a role's ID based on its name.
+*   ``$authorID``: Returns the ID of the command executor (the user who ran the command).
 :::
 
 ::: tip Related Functions
-*   `[$toggleRoles](../Role/toggleRoles.md)`: Toggles a user's roles (adds if they don't have it, removes if they do).
-*   `[$takeRoles](../Role/takeRoles.md)`: Removes roles from a user.
-*   `[$setRoles](../Role/setRoles.md)`: Removes all roles from a user and then grants only the specified roles.
+*   ``$toggleRoles``: Toggles a user's roles (adds if they don't have it, removes if they do).
+*   ``$takeRoles``: Removes roles from a user.
+*   ``$setRoles``: Removes all roles from a user and then grants only the specified roles.
 :::
 
 ##### Difficulty: <Badge type="warning" text="Medium" vertical="middle" />

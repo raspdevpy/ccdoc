@@ -47,7 +47,7 @@ How to show user account creation date
 </discord-messages>
 
 
-##### Related functions: [$nickname](../Member/nickname.md)
+##### Related functions: `$nickname`
 
 ##### Function Difficulty: <Badge type="warning" text="Medium" vertical="middle" />
 ###### Tags: <Badge type="tip" text="account" vertical="middle" /> <Badge type="tip" text="user" vertical="middle" /> <Badge type="tip" text="created" vertical="middle" />

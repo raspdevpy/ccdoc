@@ -16,7 +16,7 @@ Returns a sequence of numbers, decided by a starting (inclusive) number and stop
 </discord-messages>
 
 ::: tip 
-This can be used with [$forEach](../Useful/forEach) quite easily
+This can be used with `$forEach` quite easily
 :::
 
 ##### Function difficulty <Badge type="danger" text="Difficult" vertical="middle" /> 

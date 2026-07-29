@@ -26,7 +26,7 @@ How to unban user with a reason
 Make sure that the bot does have sufficient permission.
 :::
 
-##### Related functions: [$kick](../Member/kick.md) [$ban](../Member/ban.md)
+##### Related functions: `$kick` `$ban`
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="unban" vertical="middle" /> <Badge type="tip" text="unpunish" vertical="middle" /> <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="moderation" vertical="middle" />

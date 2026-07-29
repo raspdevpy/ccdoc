@@ -10,7 +10,7 @@ Deletes a channel variable, from the command trigger channel or from the ID spec
 </discord-messages>
 
 ::: tip Related Functions
-Check out: [$setChannelVar](../Variables/setChannelVar.md)
+Check out: `$setChannelVar`
 
-Check out: [$getChannelVar](../Variables/getChannelVar.md)
+Check out: `$getChannelVar`
 :::

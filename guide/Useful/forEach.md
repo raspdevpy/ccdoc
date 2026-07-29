@@ -45,7 +45,7 @@ $endForEach
 </discord-messages>
 
 ::: tip 
-This can be used with [$seq](../Useful/seq)!
+This can be used with `$seq`!
 :::
 
 ##### Function difficulty <Badge type="danger" text="Difficult" vertical="middle" /> 

@@ -20,9 +20,9 @@ Returns the error the interpreter threw
 
 
 ::: danger
-The way [$modifyChannelPerms](../Channel/modifyChannelPerms) shown here is **NOT** correct! 
+The way `$modifyChannelPerms` shown here is **NOT** correct! 
 
-Check the [$modifyChannelPerms](../Channel/modifyChannelPerms) for the correct usage
+Check the `$modifyChannelPerms` for the correct usage
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" /> 

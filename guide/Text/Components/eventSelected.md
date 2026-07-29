@@ -1,6 +1,6 @@
 # $eventSelected
 
-Returns values that were selected by the user using [$selectMenu](./selectMenu.md).
+Returns values that were selected by the user using `$selectMenu`.
 
 ## Usage
 

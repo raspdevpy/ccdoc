@@ -27,7 +27,7 @@ Here are a few examples showcasing the `$channelUsed` function:
 In the first example, the bot set the specified channel ID `839090554205241394` as the channel used.  In the second example, because no channel ID is provided, the bot returns the channel ID where the `!!exec` command was executed.
 
 ::: tip Related Functions
-*   `$channelID` returns the channel ID where the command was executed. See the [$channelID](../Channel/channelID.md) documentation for more information.
+*   `$channelID` returns the channel ID where the command was executed. See the `$channelID` documentation for more information.
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />

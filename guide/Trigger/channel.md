@@ -24,7 +24,7 @@ You can see the whole list [here.](../CodeReferences/ref.channel_types.md)
 ## Related Functions
 The following list is functions that you might need:
 
-[$eventChannelID](../Channel/eventChannelID.md): will return the channel id that got created/removed
+`$eventChannelID`: will return the channel id that got created/removed
 
 `$eventChannelParent`: will return the channel's category id
 

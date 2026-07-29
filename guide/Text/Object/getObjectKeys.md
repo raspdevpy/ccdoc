@@ -9,5 +9,5 @@ $getObjectKeys or $getObjectKeys[Seperator (optional)]
 ```
 
 ::: danger
-This function got deprecated, use [$objectKeys](./ObjectKeys.md) instead 
+This function got deprecated, use `$objectKeys` instead 
 :::

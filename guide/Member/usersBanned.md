@@ -29,7 +29,7 @@ How to use $usersBanned
 Make sure that the bot does have sufficient permission.
 :::
 
-##### Related functions: [$ban](../Member/ban.md) [$unban](../Member/unban.md)
+##### Related functions: `$ban` `$unban`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle" />
 ###### Tags: <Badge type="tip" text="ban" vertical="middle" /> <Badge type="tip" text="punish" vertical="middle" /> <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="moderation" vertical="middle" /> <Badge type="tip" text="moderator" vertical="middle" />

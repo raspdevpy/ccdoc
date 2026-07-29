@@ -13,7 +13,7 @@ returns the index of the first occurrence of a value in an array from `$textspli
 </discord-messages>
 
 ::: danger
-This function got deprecated, use [$arraySearch](./../Array/arraySearch.md) instead 
+This function got deprecated, use `$arraySearch` instead 
 :::
 
 ##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 

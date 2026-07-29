@@ -18,7 +18,7 @@ or for current Channel
 </discord-messages>
 
 ::: tip Related Functions
-Check out: [$getChannelVar](../Variables/getChannelVar.md)
+Check out: `$getChannelVar`
 
-Check out: [$deleteChannelVar](../Variables/deleteChannelVar.md)
+Check out: `$deleteChannelVar`
 :::

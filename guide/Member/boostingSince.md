@@ -8,7 +8,7 @@ Returns the date a user started boosting the server.
 $boostingSince[userID;date/ms]
 ```
 1. **userID** - (Optional) default value: `$authorID`. The ID of user to return boosting date
-2. **date/ms** - (Optional) default value: `date`. If date, it will return text in this format: `Day(name), Month(name) Day(number), Year(YYYY) Hours(HH):Minutes(MM) PM/AM`. If ms, timestamp in miliseconds will be returned. You can later format the timestamp using [$formatDate](../Date/formatDate.md).
+2. **date/ms** - (Optional) default value: `date`. If date, it will return text in this format: `Day(name), Month(name) Day(number), Year(YYYY) Hours(HH):Minutes(MM) PM/AM`. If ms, timestamp in miliseconds will be returned. You can later format the timestamp using `$formatDate`.
 
 ## Example
 
@@ -37,7 +37,7 @@ Multiple ways of using function $boostingSince
     </discord-message>
 </discord-messages>
 
-##### Related functions: [$formatDate](../Date/formatDate.md) [$timeToDate](../Date/timeToDate.md)
+##### Related functions: `$formatDate` `$timeToDate`
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="boosting" vertical="middle"/> <Badge type="tip" text="time" vertical="middle"/> <Badge type="tip" text="timestamp" vertical="middle"/>

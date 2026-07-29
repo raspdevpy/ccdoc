@@ -1,4 +1,4 @@
-# `$channelID`
+# $channelID
 
 Returns the ID of the channel where the command is executed.  You can also use it to find the ID of another channel by providing its name.
 
@@ -34,9 +34,9 @@ Let's say you have a channel named `#general`.  You can get its ID like this:
 If a channel named `general` exists, the output will be its ID.
 
 ::: warning
-This function will **not** work with the voice channel join/leave trigger. Use [$voiceChannelID](../Channel/voiceChannelID.md) instead.
+This function will **not** work with the voice channel join/leave trigger. Use `$voiceChannelID` instead.
 
-This function will **not** work with the channel creation/deletion trigger. Use [$eventChannelID](../Channel/eventChannelID.md) instead.
+This function will **not** work with the channel creation/deletion trigger. Use `$eventChannelID` instead.
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />

@@ -24,9 +24,9 @@ To redirect any kind of errors to a specific channel, by default errors will app
 
 
 ::: danger
-The way [$modifyChannelPerms](../Channel/modifyChannelPerms) shown here is **NOT** correct! 
+The way `$modifyChannelPerms` shown here is **NOT** correct! 
 
-Check the [$modifyChannelPerms](../Channel/modifyChannelPerms) for the correct usage
+Check the `$modifyChannelPerms` for the correct usage
 :::
 
 ##### Function difficulty <Badge type="tip" text="Easy" vertical="middle" /> 

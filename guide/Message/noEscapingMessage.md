@@ -28,7 +28,7 @@ This function behaves similarly to `$message`, but it **does not escape special 
 
 ::: tip
 
-For most use cases, it's recommended to use [$message](../Message/message.md) to ensure proper character escaping and prevent unexpected issues.
+For most use cases, it's recommended to use `$message` to ensure proper character escaping and prevent unexpected issues.
 :::
 
 ##### Function difficulty: <Badge type="danger" text="Difficult" vertical="middle" />

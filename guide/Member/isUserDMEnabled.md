@@ -24,7 +24,7 @@ How to use $isUserDMEnabled
     </discord-message>
 </discord-messages>
 
-##### Related functions: [$dm](../Message/DM.md) [$sendDM](../Message/sendDM.md)
+##### Related functions: `$dm` `$sendDM`
 
 ##### Function difficulty: <Badge type="tip" text="Easy" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="dm" vertical="middle"/> <Badge type="tip" text="direct message" vertical="middle"/>

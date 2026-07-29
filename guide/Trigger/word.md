@@ -31,7 +31,7 @@ The mention will be the `parameter 1`, because users will mention their victim r
 </discord-messages>
 
 #### Setup
-Parameters can be retrieved using the [$message](../Message/message.md) function, we will use it to get the user mention:
+Parameters can be retrieved using the `$message` function, we will use it to get the user mention:
 
 ![?hug code](https://i.imgur.com/zXDpUmI.png)
 
@@ -223,7 +223,7 @@ This can be done using `%all%` trigger, it makes the command execute regardless 
 ### Message complimenter
 Let's make a command which will randomly compliment every sent message to a specific channel.
 
-To randomize the output, we will use [$randomText](../Random/randomText.md) function, and to restrict the channels we will use the `Run only in` dropdown menu:
+To randomize the output, we will use `$randomText` function, and to restrict the channels we will use the `Run only in` dropdown menu:
 
 ![Message complimenter](https://cdn.discordapp.com/attachments/957286111250624552/1100843662801379389/msgcompliment.png)
 
@@ -281,8 +281,8 @@ To get rid of the cooldown messages completely, you can either set a channel slo
 ### Continue reading
 Here are some pages that might come in handy if you still have some doubts about the word trigger:
 * [!report](../Tutorials/3.report.md) - word command tutorial
-* [$message](../Message/message.md) - loading parameters
-* [$msg](../Message/msg.md) - to load info about the message
+* `$message` - loading parameters
+* `$msg` - to load info about the message
 
 
 

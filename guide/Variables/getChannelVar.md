@@ -13,7 +13,7 @@ Gets a channel variable value
 </discord-messages>
 
 ::: tip Related Functions
-Check out: [$setChannelVar](../Variables/setChannelVar.md)
+Check out: `$setChannelVar`
 
-Check out: [$deleteChannelVar](../Variables/deleteChannelVar.md)
+Check out: `$deleteChannelVar`
 :::

@@ -1,5 +1,5 @@
 # $let
-Define a variable, that you can access later through [$get](./get.md).
+Define a variable, that you can access later through `$get`.
 This function is useful to temporarily store variables, like to save the result of a calculation
 
 #### Usage: `$let[variable name;variable value;remain after execution (yes/no , default no) (optional)]`
@@ -14,5 +14,5 @@ You can use $get[varname] or $varname to retrieve the value
 
 
 ::: tip Related Functions
-Check out: [$get](../Variables/get.md)
+Check out: `$get`
 :::

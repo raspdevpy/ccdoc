@@ -10,9 +10,9 @@ Sets a user variable value.
 </discord-messages>
 
 ::: tip Related Functions
-Check out: [$getUserVar](../Variables/getUserVar.md)
+Check out: `$getUserVar`
 
-Check out: [$deleteUserVar](../Variables/deleteUserVar.md)
+Check out: `$deleteUserVar`
 
-Check out: [$resetUserVar](../Variables/resetUserVar.md)
+Check out: `$resetUserVar`
 :::

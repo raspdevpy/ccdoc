@@ -4,7 +4,7 @@ Sets the name of your server to something, you have put in.
 #### Usage: `$setGuildName[name]`
 
 ::: tip Related Functions
-[$setGuildIcon](../Server/setGuildIcon.md), to set a server's logo/ icon
+`$setGuildIcon`, to set a server's logo/ icon
 :::
 
 

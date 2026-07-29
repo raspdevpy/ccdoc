@@ -26,7 +26,7 @@ How to return Content-Type from last request
     </discord-message>
 </discord-messages>
 
-##### Related functions: [$httpRequest](../Request/httpRequest.md) [$httpRequestStatus](../Request/httpRequestStatus.md)
+##### Related functions: `$httpRequest` `$httpRequestStatus`
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="http request" vertical="middle"/> <Badge type="tip" text="api request" vertical="middle"/> <Badge type="tip" text="header" vertical="middle"/>

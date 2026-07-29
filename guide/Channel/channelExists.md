@@ -27,11 +27,11 @@ This example checks if a channel with the ID `889102524727058463` exists. Since 
 :::
 
 ::: tip Useful Tip
-You can use the [$channelID](../Channel/channelID.md) function to retrieve the ID of a channel based on its name.  This is helpful if you don't already know the channel's ID.
+You can use the `$channelID` function to retrieve the ID of a channel based on its name.  This is helpful if you don't already know the channel's ID.
 :::
 
 ::: tip Related Functions
-*   [$findChannel](../Channel/findChannel.md):  Finds a channel by its name.
+*   `$findChannel`:  Finds a channel by its name.
 :::
 
 ##### Function Difficulty: <Badge type="tip" text="Easy" vertical="middle" />

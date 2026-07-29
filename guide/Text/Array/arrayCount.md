@@ -1,6 +1,6 @@
 # $arrayCount
 
-An alias for [$arrayLength](./arrayLength.md).
+An alias for `$arrayLength`.
 
 ## Usage
 

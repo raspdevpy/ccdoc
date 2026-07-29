@@ -39,7 +39,7 @@ Here are some examples of how to use the `$channelSendMessage` function:
 You can send more complex messages with features like footers and fields by using the [Message Curl Format](../CodeReferences/ref.message_curl_format.md). This format allows for more detailed control over your messages.
 
 ::: tip Related Functions
-*   [$sendMessage](../Message/sendMessage.md): Sends a message to the channel where the command was used.
+*   `$sendMessage`: Sends a message to the channel where the command was used.
 :::
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle" />

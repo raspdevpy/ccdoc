@@ -12,7 +12,7 @@ $function[printHello;name]
 $endFunction
 ``` 
 
-Call the function, using [$callFunction](../Useful/callFunction)
+Call the function, using `$callFunction`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -30,7 +30,7 @@ Call the function, using [$callFunction](../Useful/callFunction)
 	</discord-message>
 </discord-messages>
 
-Call the function, using [$printHello](../Useful/callFunction)
+Call the function, using `$printHello`
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -50,7 +50,7 @@ Call the function, using [$printHello](../Useful/callFunction)
 
 ::: tip
 Code inside the function is isolated from outside, which means changing of variables, arrays, random,...won't effect the outside.\
-you can access outside temporary variables (assigned by [$let](../Variables/let.md)) but you can't change them.
+you can access outside temporary variables (assigned by `$let`) but you can't change them.
 :::
 
 ::: danger 

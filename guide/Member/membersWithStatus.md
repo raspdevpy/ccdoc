@@ -44,7 +44,7 @@ User will be cached after they trigger any command from this bot, but eventually
 To have all members cached, you will need Tier 5 Bot.
 :::
 
-##### Related functions: [$status](../Member/status.md)
+##### Related functions: `$status`
 
 ##### Function difficulty: <Badge type="warning" text="Medium" vertical="middle"/>
 ###### Tags: <Badge type="tip" text="search" vertical="middle"/> <Badge type="tip" text="find" vertical="middle"/> <Badge type="tip" text="members" vertical="middle"/> <Badge type="tip" text="status" vertical="middle"/>

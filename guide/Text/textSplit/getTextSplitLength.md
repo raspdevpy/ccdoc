@@ -1,5 +1,5 @@
 # $getTextSplitLength
-Returns the amount of objects created by [$textSplit](./textSplit.md)
+Returns the amount of objects created by `$textSplit`
 
 
 <br/>
@@ -17,7 +17,7 @@ Returns the amount of objects created by [$textSplit](./textSplit.md)
 </discord-messages>
 
 ::: danger
-This function got deprecated, use [$arrayLength](./../Array/arrayLength.md) instead 
+This function got deprecated, use `$arrayLength` instead 
 :::
 
 ##### Function difficulty <Badge type="warning" text="Medium" vertical="middle" /> 
