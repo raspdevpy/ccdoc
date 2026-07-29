@@ -1,4 +1,4 @@
-const cooldowns = require('../cooldowns.json');
+const cooldowns = require("../cooldowns.json");
 function getTitle(content) {
     const match = content.match(/^#\s*(\$[a-zA-Z]+)(\s|$)/);
     return match ? match[1].trim() : null;
@@ -33,25 +33,28 @@ function formatDuration(ms) {
 
     return parts.join(" ");
 }
-module.exports=(page,content)=>{
+module.exports = (page, content) => {
+    let title = getTitle(content);
+    if (!title) return content;
+    const cooldown = cooldowns[title.toLowerCase()];
+    if (!cooldown) return content;
+    let isHardCooldown = cooldown.hardCooldown;
+    content += `
 
-    // console.log({path:page[0].filePath, content:content.slice(0, 30)})
-    // return content;
-    let title = getTitle(content)
-    if(!title)  return content;
-	const cooldown = cooldowns[title.toLowerCase()];
-	if (!cooldown) return content;
-    let isHardCooldown = cooldown.hardCooldown
-    content+=`\n\n ## ⏱️ Function Cooldown\nThis function has a built-in cooldown to help prevent excessive usage.\n| Property | Value |
-|----------|-------|
-| ⏱️ Duration | ${formatDuration(cooldown.time)} |
-| 🆔 Tracked By | ${cooldown.per} |
-| 🌐 Scope | \`${cooldown.scope.charAt(0).toUpperCase() + cooldown.scope.slice(1)}\` |
+## Function Cooldown
 
-> Functions with the same Scope share cooldowns based on the same \`Tracked By\` value.
+This function has built-in cooldown. Why? Read more about cooldowns [here](/Other/ratelimits.md).
 
-> 💎 **Tier 3+** servers ${isHardCooldown?"cannot bypass this cooldown":"bypass this cooldown. See [Premium Perks](https://ccommandbot.com/perks)"}.
-`
-return content;
-}
+- **Cooldown:** ${formatDuration(cooldown.time)}
+- **Tracked By:** ${cooldown.per}
+- **Type:** \`${cooldown.scope}\`
 
+Functions with the same type share cooldowns based on the same \`Tracked By\` value.`;
+    if (isHardCooldown) {
+        content += `
+::: warning Warning
+This cooldown cannot be bypassed by Tier 3+ bots.
+:::`;
+    }
+    return content;
+};

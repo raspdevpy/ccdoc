@@ -1,4 +1,4 @@
-# Custom Command Bot Terms of Service
+# Terms of Service
 
 **Effective Date:** July 26, 2026
 
