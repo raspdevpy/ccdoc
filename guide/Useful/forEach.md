@@ -1,10 +1,20 @@
 # $forEach
-Will loop over a list and every loop it will take an item and assign it inside varname accessible by $get[varname]
+Will loop over a list and every loop it will take an item and assign it inside varname accessible by $get[varname] or $varname
 
-#### Usage: 
-`$forEach[varname;LIST (ex: mido rake azz);Separator (Optional, default is space)]`
+## Usage: 
+```bash
+$forEach[varname;LIST (ex: mido rake azz);Separator (Optional, default is space)]
+```
+## Loop Limits
+Loops in this function are limited to a certain number of cycles. These limits vary between different tiers of premium.
+| Tier         | Limit |
+| :-------     | :---  |
+| 0 (Free)     | 10    |
+| 3 (Freemium) | 15    |
+| 4 (Pro)      | 30    |
+| 5 (Ultra)    | 60    |
 
-#### Example:
+## Example:
 ```bash
 $forEach[member;Rake, Mido, Mika, Azz, Felix, Flinkz, Wiki, Ddk;, ]
 $get[member], is one of our Staff Members!
