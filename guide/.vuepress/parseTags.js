@@ -42,6 +42,5 @@ module.exports = (page) => {
 
     write();
 
-    console.log(tags);
     return tags;
 };

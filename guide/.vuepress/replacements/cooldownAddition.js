@@ -34,8 +34,6 @@ function formatDuration(ms) {
     return parts.join(" ");
 }
 module.exports = (page, content) => {
-    // console.log({path:page[0].filePath, content:content.slice(0, 30)})
-    // return content;
     let title = getTitle(content);
     if (!title) return content;
     const cooldown = cooldowns[title.toLowerCase()];
