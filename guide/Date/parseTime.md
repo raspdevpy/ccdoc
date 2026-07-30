@@ -1,20 +1,31 @@
 # $parseTime
 
-Convert human-readable time strings into milliseconds. This function allows you to easily specify durations using common time units (seconds, minutes, hours, days, etc.) and get the equivalent value in milliseconds.
+Convert human-readable time strings into a duration. This function accepts a single duration or multiple durations combined into one expression, and can optionally return the result in a different unit.
 
 ## Usage
 
 ```php
-$parseTime[time]
+$parseTime[time;unit?]
 ```
 
-**Argument:**
+**Arguments:**
 
-*   `time`:  A string representing the time duration you want to convert.  Supported units include `s` (seconds), `m` (minutes), `h` (hours), `d` (days), `w` (weeks), `M` (months - 30 days), and `y` (years - 365 days).
+* `time`: A time duration to convert. Supported units include:
 
-## Example
+  * `ms` — milliseconds
+  * `s` — seconds
+  * `m` — minutes
+  * `h` — hours
+  * `d` — days
+  * `w` — weeks
+  * `M` — months (30 days)
+  * `y` — years (365 days)
 
-This example shows how to use `$parseTime` to convert 1 minute into milliseconds.
+* `unit` *(optional)*: The unit to return. Supported values are `ms`, `s`, `m`, `h`, `d`, `w`, `M`, `y`, or their full names (such as `seconds`, `hours`, and `days`). Defaults to `ms`.
+
+Multiple durations can be combined by separating them with spaces. As a convenience, compact expressions without spaces are also supported.
+
+## Examples
 
 <discord-messages>
   <discord-message :bot="false" role-color="#ffcc9a" author="Member">
@@ -25,8 +36,36 @@ This example shows how to use `$parseTime` to convert 1 minute into milliseconds
   </discord-message>
 </discord-messages>
 
+<discord-messages>
+  <discord-message :bot="false" role-color="#ffcc9a" author="Member">
+    !!exec $parseTime[1h 30m]
+  </discord-message>
+  <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+    5400000
+  </discord-message>
+</discord-messages>
+
+<discord-messages>
+  <discord-message :bot="false" role-color="#ffcc9a" author="Member">
+    !!exec $parseTime[1h30m]
+  </discord-message>
+  <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+    5400000
+  </discord-message>
+</discord-messages>
+
+<discord-messages>
+  <discord-message :bot="false" role-color="#ffcc9a" author="Member">
+    !!exec $parseTime[1h30m;m]
+  </discord-message>
+  <discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+    90
+  </discord-message>
+</discord-messages>
+
 **Explanation:**
 
-*   The user enters the command `!!exec $parseTime[1m]`.
-*   `$parseTime[1m]` converts "1m" (1 minute) into its equivalent in milliseconds, which is 60000.
-*   The bot then outputs the result: `60000`.
+* `$parseTime[1m]` converts 1 minute into `60000` milliseconds.
+* `$parseTime[1h 30m]` converts 1 hour and 30 minutes into `5400000` milliseconds.
+* `$parseTime[1h30m]` is interpreted the same way as `1h 30m` for convenience.
+* `$parseTime[1h30m;m]` returns the result in minutes instead of milliseconds.
