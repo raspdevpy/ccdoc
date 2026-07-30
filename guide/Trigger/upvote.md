@@ -1,0 +1,34 @@
+# On Upvote
+
+## Basic Information
+
+This trigger runs when a user votes for the bot using a server referral link.
+
+To trigger this event, the user **must be a member of the server at the time of voting**.
+
+## Syntax
+
+This trigger does not use a trigger value.
+
+## Example
+
+Create a new custom command and set its **Trigger Type** to **On Upvote**.
+
+You can then reward the voter, thank them, or perform any other action.
+
+For example:
+
+```text
+$giveRoles[$userID;Supporter]
+Thanks for supporting the server, <@$userID>! ❤️
+```
+
+### That's it! 🎉
+
+## Some functions related to On Upvote
+
+`$userID`: Returns the ID of the user who voted.
+
+`$upvoteReferralUserID`: Returns the ID of the user whose referral link was used, if any.
+
+`$upvoteTime`: Returns the Unix timestamp (milliseconds) when the vote was received.

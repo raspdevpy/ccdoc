@@ -1,0 +1,13 @@
+# $upvoteTime
+
+Returns the time when the current upvote was received.
+
+## Usage
+
+```bash
+$upvoteTime
+```
+
+This function is only available in the **On Upvote** trigger.
+
+The returned value is a Unix timestamp in milliseconds.

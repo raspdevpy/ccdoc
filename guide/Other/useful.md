@@ -48,6 +48,8 @@ Now that you understand the basic components, you need to choose a trigger. A tr
 | [Timed or Interval](../Trigger/time.md)      | Executes repeatedly at a set interval or at a specific time.                                          |
 | [Button](../Trigger/button.md)               | Executes when a user clicks a Discord button.                                                          |
 | [Role add/remove](../Trigger/roleaddremove.md) | Executes when a user receives or loses a role.                                                          |
+| [On Upvote](../Trigger/upvote.md)          | Executes when someone upvote in Top.gg.                |
+
 | [Library](../Trigger/library.md) | Create A library |
 
 ### Congratulations! Ready to Create?
