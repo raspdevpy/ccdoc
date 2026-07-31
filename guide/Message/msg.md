@@ -92,6 +92,13 @@ Here's a comprehensive list of the properties you can access with the `$msg` fun
 **Components:**
 * 	**`components`** - return all components in the message like `{button:..} {container:...}`
 
+**Forward Message:**
+* **`isforward`** – Returns `true` if the message is a forwarded message; otherwise returns `false`.
+* **`forwardsvid`** – Returns the server ID where the original forwarded message was sent.
+* **`forwardmsgid`** – Returns the original message ID of the forwarded message.
+* **`forwardchid`** – Returns the channel ID where the original forwarded message was posted.
+
+
 <br/>
 <discord-messages>
 	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
