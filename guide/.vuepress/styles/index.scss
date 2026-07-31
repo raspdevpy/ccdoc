@@ -1,25 +1,38 @@
-@font-face {
-    font-family: 'Assistant-Medium';
-    src: url('/fonts/Assistant-Medium.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
-    font-family: 'Noto-Sans-Medium';
-    src: url('/fonts/NotoSans-Medium.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-}
-.discord-messages {
+@import "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap";
+
+html[data-theme="dark"] .discord-messages, html[data-theme="dark"] div[class*="language-"] {
     background-color: #202024 !important;
-    border: 1px solid #3f4245 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
-.discord-messages,
-.discord-messages * {
-    font-family: 'Assistant-Medium', sans-serif !important;
+
+html[data-theme="light"] .discord-messages, html[data-theme="light"] div[class*="language-"] {
+    background-color: #e5e7eb !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
+
+html[data-theme="dark"] .discord-message {
+    color: #dcddde !important;
+}
+
+html[data-theme="light"] .discord-message {
+    color: #202024 !important;
+}
+
+.discord-message:hover {
+    background-color: rgba(128, 128, 128, 0.2) !important;
+}
+
+.discord-messages {
+    border-radius: 12px;
+    font-family: Inter, Roboto, sans-serif;
+}
+
+html[data-theme="light"] .discord-embed-container, html[data-theme="light"] .discord-embed-title {
+    background-color: white;
+    color: black !important;
+}
+
 .discord-message .discord-author-info .discord-author-username {
-    font-family: 'Noto-Sans-Medium', sans-serif !important;
     font-size: 0.95rem !important;
     letter-spacing: 0px !important;
     display: inline-flex !important;
@@ -31,4 +44,28 @@
     display: inline-flex !important;
     font-size: 11px !important;
     margin-left: 5px !important;
+}
+
+@media screen and (max-width: 719px) {
+    .hint-container {
+        margin-inline: 0 !important;
+    }
+}
+
+@media (max-width: 419px) {
+    #content > div[class*=language-], #content > .code-block-with-title > div[class*=language-] {
+        margin-inline: 0 !important;
+    }
+}
+
+:root {
+    --code-border-radius: 12px !important;
+    --tab-border-radius: 12px !important;
+}
+
+@media (max-width: 419px) {
+    #content {
+        --code-border-radius: 12px !important;
+        --tab-border-radius: 12px !important;
+    }
 }
