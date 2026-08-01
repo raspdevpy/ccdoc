@@ -1,4 +1,4 @@
-# $removeContains: Delete Messages Containing Specific Words
+# $removeContains
 
 This function allows you to delete messages within a specified channel that contain certain words. It's useful for moderation and removing unwanted content.
 
