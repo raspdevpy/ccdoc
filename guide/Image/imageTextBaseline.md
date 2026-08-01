@@ -4,7 +4,7 @@ This function allows you to control the vertical alignment (baseline) of text wi
 
 ## Usage
 
-```
+```php
 $imageTextBaseline[Baseline]
 ```
 

@@ -4,7 +4,7 @@ Unpins a specific message from a channel. You can either unpin the message that 
 
 ## Syntax
 
-```
+```php
 $unpinMessage
 $unpinMessage[channelID;messageID]
 ```
@@ -25,7 +25,7 @@ $unpinMessage[channelID;messageID]
 
 This will unpin the message the user sent that triggered the command (e.g., a command like `$unpinMessage`).
 
-```
+```php
 $unpinMessage
 ```
 
@@ -33,7 +33,7 @@ $unpinMessage
 
 This will unpin the message with ID `987654321098765432` from the channel with ID `123456789012345678`.  Replace these with the actual Channel and Message IDs you wish to unpin.
 
-```
+```php
 $unpinMessage[123456789012345678;987654321098765432]
 ```
 

@@ -13,7 +13,7 @@ set an object property value by key
 </discord-messages>
 
 ::: tip Setting Objects inside Objects
-```
+```php
 $objectCreate[{"type":0}]
 
 $objectset[version;2.5]

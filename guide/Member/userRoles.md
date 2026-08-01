@@ -4,7 +4,7 @@ Returns the list of roles from a user.
 
 ## Usage
 
-```
+```php
 $userRoles[userID;type;separator]
 ```
 1. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to return roles from.

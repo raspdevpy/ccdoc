@@ -10,7 +10,7 @@ This function prevents the bot from mentioning any roles in its messages. This i
 
 Simply include `$disableRoleMentions` in your command response or any message where you want to disable role mentions.
 
-```
+```php
 $disableRoleMentions
 ```
 
@@ -18,7 +18,7 @@ $disableRoleMentions
 
 Let's say you have a command that sends a welcome message, but you don't want to mention any roles in that message:
 
-```
+```php
 $disableRoleMentions
 Hello and Welcome!
 ```

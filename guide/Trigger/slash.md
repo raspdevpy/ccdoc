@@ -55,7 +55,7 @@ In this example we will create an `/avatar` command, that shows the user's avata
 ## Code Explanation
 ### Retrieving the option from user
 When a user uses the command like in Step 10, we can retrieve the option through the `$getOption` function:
-```
+```php
 $getOption[option name]
 ```
 In our example `option name` is `user` from step 6\
@@ -67,7 +67,7 @@ then the user id will be stored in a temporary variable named`user_id` using `$l
 ### Sending Message
 Next, to send a message with [$interactionReply[message]](../Interaction/interactionReply.md)\
 Here we will send an embed with a title and image using {title} and {image} [Curl Message Format](../CodeReferences/ref.message_curl_format.md):
-```
+```php
 $interactionReply[
     {title:Embed Title}
     {image:Embed Image}
@@ -81,7 +81,7 @@ Avatar of $userTag[$user_id]
 ```
 
 2. In Image to retrieve the user avatar, we will use [$userAvatar[user id]](../Member/userAvatar.md):
-```
+```php
 $userAvatar[$user_id]
 ```
 

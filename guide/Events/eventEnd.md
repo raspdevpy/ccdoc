@@ -8,7 +8,7 @@ The `$eventEnd` function allows you to terminate a currently running event.  You
 
 ## Usage
 
-```
+```php
 $eventEnd[Event ID]
 ```
 
@@ -20,7 +20,7 @@ $eventEnd[Event ID]
 
 To end an event with the ID `12345`, you would use:
 
-```
+```php
 $eventEnd[12345]
 ```
 

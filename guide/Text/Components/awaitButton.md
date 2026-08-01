@@ -21,7 +21,7 @@ The max time is `60 x (bot tier + 1)` seconds, for example for tier 3 it would b
 ![](https://cdn.discordapp.com/attachments/914682255346118687/938556903116652594/Screenshot_20220202190956.jpg)
 
 (Usage example)
-```
+```php
 $let[pressedButton;$awaitButton[Which color is my favorite?
 {button:Green:GREEN::green}
 {button:Blue:BLUE::blue}

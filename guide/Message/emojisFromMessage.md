@@ -33,7 +33,7 @@ Then consider these usages:
 
 **Example 1: Extracting emojis from the user's message using the default usage.**
 
-```
+```php
 $emojisFromMessage
 ```
 
@@ -43,7 +43,7 @@ This would return:
 
 **Example 2: Extracting emojis from the user's message, separated by a comma and a space.**
 
-```
+```php
 $emojisFromMessage[;, ]
 ```
 
@@ -53,7 +53,7 @@ This would return:
 
 **Example 3: Extracting emojis from specific text with a dash as a separator.**
 
-```
+```php
 $emojisFromMessage[This has 🎉 one and 😁 two emojis; - ]
 ```
 

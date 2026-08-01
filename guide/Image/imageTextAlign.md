@@ -6,7 +6,7 @@ In essence, `$imageTextAlign` determines the reference point for positioning you
 
 ## Usage
 
-```
+```php
 $imageTextAlign[Alignment]
 ```
 
@@ -24,7 +24,7 @@ The `Alignment` parameter accepts the following values:
 
 Let's say you want to center the text "Hello World" at coordinates (100, 50) on your image. You would use the following commands:
 
-```
+```php
 $imageTextAlign[center]
 $imageText[100,50,Hello World]
 ```

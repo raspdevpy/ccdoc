@@ -6,7 +6,7 @@ This function packs a punch with **11 different functionalities** related to emo
 
 The syntax is simple and powerful:
 
-```
+```php
 $emoji[emojiID;option]
 ```
 

@@ -4,7 +4,7 @@ Returns a random mention from the current server. This function is useful for th
 
 #### Usage:
 
-```
+```php
 $randomMention
 ```
 

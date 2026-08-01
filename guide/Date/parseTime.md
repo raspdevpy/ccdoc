@@ -4,7 +4,7 @@ Convert human-readable time strings into milliseconds. This function allows you 
 
 ## Usage
 
-```
+```php
 $parseTime[time]
 ```
 

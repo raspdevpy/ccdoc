@@ -4,7 +4,7 @@ Deletes an automod rule from the server.
 
 ## Usage
 
-```
+```php
 $deleteAutomod[Rule ID]
 ```
 
@@ -12,7 +12,7 @@ $deleteAutomod[Rule ID]
 
 ## Example
 
-```
+```php
 $deleteAutomod[123456789]
 ```
 

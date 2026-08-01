@@ -66,7 +66,7 @@ Here's a breakdown of the permissions you can use:
 
 This example demonstrates how to use `$modifyChannelPerms` to deny the "send messages" permission for a role with the ID `muted` in a specific channel.
 
-```
+```php
 $modifyChannelPerms[$channelID;-sendmessages;$roleID[muted]]
 ```
 

@@ -36,7 +36,7 @@ Info:
 
 ## Examples
 ### Sending a menu with some options with $selectMenu
-```
+```php
 $selectMenu[
     {id=my_menu}
     {ph=Select the option}
@@ -57,7 +57,7 @@ $selectMenu[
 ![](https://i.imgur.com/pSIYauj.png)
 
 ### Sending a menu with some options and selected some of them
-```
+```php
 $selectMenu[
     {id=my_menu}
     {ph=Select the option}
@@ -82,7 +82,7 @@ $selectMenu[
 
 
 ### Sending a menu to select user with $selectMenu
-```
+```php
 $selectMenu[
     {id=my_menu}
     {ph=Select the user}
@@ -94,7 +94,7 @@ $selectMenu[
 ![](https://i.imgur.com/TuXQ5nN.png)
 
 ### Sending a menu to select user with $sendMessage
-```
+```php
 $sendMessage[
     {menu:
         {id=my_menu}
@@ -108,7 +108,7 @@ $sendMessage[
 ![](https://i.imgur.com/EXOYY1k.png)
 
 ### Sending a menu with selected user
-```
+```php
 $selectMenu[
     {id=my_menu}
     {ph=Select the user}
@@ -121,7 +121,7 @@ $selectMenu[
 ![](https://i.imgur.com/UmFu9Of.png)
 
 ### Sending a menu with selected role
-```
+```php
 $selectMenu[
     {id=my_menu}
     {ph=Select the role}
@@ -134,7 +134,7 @@ $selectMenu[
 ![](https://i.imgur.com/XldvSKC.png)
 
 ### Sending a menu with selected channel
-```
+```php
 $selectMenu[
     {id=my_menu}
     {ph=Select the channel}
@@ -147,7 +147,7 @@ $selectMenu[
 ![](https://i.imgur.com/gNDtTWP.png)
 
 ### Sending a menu with selected mentionable (user / role)
-```
+```php
 $selectMenu[
     {id=my_menu}
     {ph=Select user or role}

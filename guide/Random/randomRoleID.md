@@ -4,7 +4,7 @@ This function returns a random Role ID from a Role present in the server.  It's 
 
 #### Usage:
 
-```
+```php
 $randomRoleID
 ```
 

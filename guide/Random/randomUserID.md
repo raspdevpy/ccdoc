@@ -4,7 +4,7 @@ Retrieves a random user ID from a user within the server.
 
 #### Usage:
 
-```
+```php
 $randomUserID
 ```
 

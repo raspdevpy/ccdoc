@@ -47,7 +47,7 @@ Often, you'll need to create more complex conditions by combining multiple expre
 
 ### Example 1:  Using AND (`&&`)
 
-```
+```php
 $username==Mido&&$country==Egypt
 ```
 
@@ -60,7 +60,7 @@ The `&&` operator means that *both* condition 1 *AND* condition 2 must be true f
 
 ### Example 2: Using OR (`||`)
 
-```
+```php
 $username==Mido||$country==Egypt
 ```
 
@@ -90,7 +90,7 @@ The entire expression evaluates to `true` if either group 1 *OR* group 2 is true
 
 ### Example 2: Nested OR Grouping
 
-```
+```php
 $username==Mido||($country==Egypt||$country==Masr)
 ```
 

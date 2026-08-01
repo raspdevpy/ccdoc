@@ -77,7 +77,7 @@ Spoiler, allow you to determine if the whole container will be marked as spoiler
 ```
 
 ### Example
-```
+```php
 $sendMessage[
 	{container:
 		

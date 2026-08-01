@@ -18,7 +18,7 @@ You can use {poll:data} to send a message with a poll
 ```
 
 ### Example
-```
+```php
 $sendMessage[
 {poll:
 {question=What is the biggest country in the world?}

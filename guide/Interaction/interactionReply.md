@@ -16,7 +16,7 @@ Ephemeral messages are only visible to the user who triggered the interaction. U
 
 ::: details Example
 
-```
+```php
 $interactionReply[Hello World;yes]
 ```
 

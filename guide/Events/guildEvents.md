@@ -16,7 +16,7 @@ You can specify what information you want to retrieve about the events (`info ty
 
 ## Usage
 
-```
+```php
 $guildEvents[info type;filter;separator]
 ```
 

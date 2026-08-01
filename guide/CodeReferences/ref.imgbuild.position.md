@@ -49,7 +49,7 @@ The `$imagePositionBase` function allows us to change the origin point used for 
 
 Its usage is:
 
-```
+```php
 $imagePositionBase[Base]
 ```
 

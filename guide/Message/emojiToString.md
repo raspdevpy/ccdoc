@@ -16,7 +16,7 @@ $emojiToString
 
 Let's say a user reacts to a message with the 👍 emoji. In a reaction add event, you might use `$emojiToString` to get the actual "👍" emoji:
 
-```
+```php
 $emojiToString 
 ```
 

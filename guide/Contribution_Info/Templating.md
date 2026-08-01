@@ -82,7 +82,7 @@ The `$onTemplate` function creates a user interface (UI) for interacting with co
 
 ### Usage
 
-```
+```php
 $onTemplate[type;field;title;help;default value]
 ```
 
@@ -136,7 +136,7 @@ Use the following escape sequences instead:
 
 **Ticket Code:**
 
-```
+```php
 $let[categoryID;$onTemplate[category;dropdown;Ticket Category;Choose the category where the ticket should be created;$channelCategoryID]] // Put the category ID Here
 $if[$buttonID==openTicket]
     $cooldown[1m;<@$authorID> Please Wait %time% to create a new ticket]
@@ -168,7 +168,7 @@ $endelse
 
 **How to Spread Arrays:**
 
-```
+```php
 $let[input;input,from,template]
 $giveRoles[$authorID;$spread[,;$input]]
 ```

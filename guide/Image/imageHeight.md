@@ -4,7 +4,7 @@ Retrieves the height of an image stored within the bot's memory. This function a
 
 ## Usage
 
-```
+```php
 $imageHeight[image name]
 ```
 
@@ -14,7 +14,7 @@ $imageHeight[image name]
 
 ### Example 1: Get the height of the last loaded image
 
-```
+```php
 $imageHeight
 ```
 
@@ -22,6 +22,6 @@ This will return the height of the most recently loaded image.  If no image has 
 
 ### Example 2: Get the height of an image named "avatar"
 
-```
+```php
 $imageHeight[avatar]
 ```

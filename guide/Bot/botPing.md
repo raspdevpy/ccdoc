@@ -10,7 +10,7 @@ The `$botPing` function calculates the time difference between when the bot send
 
 Simply use the `$botPing` function in your command or event.
 
-```
+```php
 $botPing
 ```
 

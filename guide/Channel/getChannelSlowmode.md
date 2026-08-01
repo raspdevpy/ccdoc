@@ -4,7 +4,7 @@ Retrieves the slow mode duration (in seconds) of a specified channel. If no slow
 
 ## Syntax
 
-```
+```php
 $getChannelSlowmode or $getChannelSlowmode[channelID]
 ```
 

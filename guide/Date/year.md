@@ -6,7 +6,7 @@ This command returns the current year based on the configured timezone (default 
 
 #### Usage:
 
-```
+```php
 $year
 ```
 

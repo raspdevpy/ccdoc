@@ -4,12 +4,12 @@ Changes the color of given role ID
 #### Usage: `$colorRole[Role ID;Primary Color (i.e hex or int);Second Color (optional);Third Color (optional)]`
 
 ### Example (Primary Color)
-```
+```php
 $colorRole[Role name;green]
 ```
 
 ### Example (Gradient)
-```
+```php
 $colorRole[Role name;green;red]
 ```
 

@@ -11,7 +11,7 @@ To use the `$msg` function, you need to provide the channel ID, the message ID, 
 
 #### Example:
 
-```
+```php
 $msg[1234567890;9876543210;authorname]
 ```
 

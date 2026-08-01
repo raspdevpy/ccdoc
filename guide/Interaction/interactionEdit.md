@@ -13,7 +13,7 @@ This function only works within interaction-based triggers (e.g., slash commands
 <br/>
 
 ::: details Example
-```
+```php
 $interactionreply[Hello world!;yes]
 $wait[2s]
 $interactionedit[Bye World!]

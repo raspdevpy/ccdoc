@@ -15,6 +15,6 @@ $botTyping
 **Example:**
 
 If used within a command, the bot will display the "Bot is typing..." indicator for 10 seconds when the command is executed.
-```
+```php
 $botTyping
 ```

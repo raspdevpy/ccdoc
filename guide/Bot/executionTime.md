@@ -6,7 +6,7 @@ This function returns the time it took for the interpreter to execute the code *
 
 Simply include `$executionTime` in your code.  It will be replaced with the execution time in milliseconds.
 
-```
+```php
 $executionTime
 ```
 

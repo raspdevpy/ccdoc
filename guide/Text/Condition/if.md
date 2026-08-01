@@ -94,7 +94,7 @@ Expression can accept multiple conditions, use `||` or `&&` as separators
  <br/> `&&` is for AND
 
 Example:
-```
+```php
 $username==Mido&&$country==Egypt
 ```
 Condition 1: `$username==Mido`

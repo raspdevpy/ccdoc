@@ -14,13 +14,13 @@ This function allows you to clear reactions from a specific message. You can eit
 
 Clearing all reactions from a message:
 
-```
+```php
 $clearReactions[8372387429384729;9483749283749283;all]
 ```
 
 Clearing only the 👍 reactions from a message:
 
-```
+```php
 $clearReactions[8372387429384729;9483749283749283;👍]
 ```
 

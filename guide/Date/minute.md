@@ -4,7 +4,7 @@ Returns the current minute (0-59).
 
 #### Usage:
 
-```
+```php
 $minute
 ```
 

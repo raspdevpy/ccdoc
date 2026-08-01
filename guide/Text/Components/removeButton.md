@@ -6,12 +6,12 @@ Removes a button from an existing message using its `(ID/label/Emoji/URL)`.
 
 :::details Examples
 (Remove Button using its label)
-```
+```php
 $removeButton[863xxxxxxxxxx21130;Visit example.com]
 ```
 
 (Remove the Last button)
-```
+```php
 $removeButton[863xxxxxxxxxx21130]
 ```
 :::

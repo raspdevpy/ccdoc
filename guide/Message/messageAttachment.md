@@ -4,7 +4,7 @@ This function retrieves the URL of the first attachment found in a message. If a
 
 #### Usage:
 
-```
+```php
 $messageAttachment
 ```
 

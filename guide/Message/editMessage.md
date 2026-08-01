@@ -10,7 +10,7 @@ Edits a message previously sent by the bot. This function allows you to modify t
 
 ## Example
 
-```
+```php
 $editMessage[123456789012345678;This is the updated message content!]
 ```
 

@@ -7,7 +7,7 @@ Retrieves the unique ID of an interaction (e.g., button press, menu selection).
 This function returns the unique identifier associated with a user interaction like pressing a button or selecting an option from a menu.  This ID can be useful for tracking or logging specific interactions.
 
 ::: details Example
-```
+```php
 $interactionReply[$interactionId;yes] /* Returns the interaction ID */
 ```
 

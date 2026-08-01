@@ -6,7 +6,7 @@ This function allows you to blacklist specific channels (including categories an
 
 ## Usage
 
-```
+```php
 $blackListChannelIDs[Channel ID 1;Channel ID 2;...;Error Message]
 ```
 
@@ -21,7 +21,7 @@ $blackListChannelIDs[Channel ID 1;Channel ID 2;...;Error Message]
 
 ## Example:
 
-```
+```php
 $blackListChannelIDs[123456789012345678;987654321098765432;You cannot use this command in the #games or #help channels.]
 ```
 
@@ -32,7 +32,7 @@ In this example:
 
 **Alternative Example using Channel Names (less reliable):**
 
-```
+```php
 $blackListChannelIDs[games;help;You cannot use this command in the #games or #help channels.]
 ```
 

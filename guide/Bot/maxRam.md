@@ -6,7 +6,7 @@ This function returns the maximum amount of RAM (memory) allocated to the curren
 
 Simply use the function in your code:
 
-```
+```php
 $maxRam
 ```
 

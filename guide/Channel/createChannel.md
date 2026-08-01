@@ -4,7 +4,7 @@ Creates a new channel within your Discord server.
 
 #### Usage:
 
-```
+```php
 $createChannel[name;type;return ID (yes/no);categoryID (optional);topic;NSFW (yes/no);Bitrate (i.e 64000, VC only);Position;Slowmode in Seconds (optional);User Limit (VC only);RTC Region (VC Only)]
 ```
 
@@ -30,7 +30,7 @@ default is `auto`, where discord will pick the best one, but you can specify one
 
 #### Example:
 
-```
+```php
 $createChannel[general;text;no]
 ```
 

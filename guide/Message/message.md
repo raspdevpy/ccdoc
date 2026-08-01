@@ -10,7 +10,7 @@ The `$message` function retrieves the user's message or command arguments, provi
 
 ## Usage
 
-```
+```php
 $message
 $message[index]
 $message[startIndex+]

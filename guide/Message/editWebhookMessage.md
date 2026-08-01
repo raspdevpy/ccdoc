@@ -4,7 +4,7 @@ This command allows you to edit a message that was sent by a webhook. You'll nee
 
 ## Syntax
 
-```
+```php
 $editWebhookMessage[Webhook ID;Webhook Token;Message ID;New Content;Thread ID (Optional)]
 ```
 
@@ -20,12 +20,12 @@ $editWebhookMessage[Webhook ID;Webhook Token;Message ID;New Content;Thread ID (O
 
 Let's say you have a webhook with the ID `123456789012345678`, the token `abcdefg1234567890abcdefg1234567890`, and you want to edit a message with the ID `987654321098765432`.  You want to change the message to "Hello, world! This message has been edited."
 
-```
+```php
 $editWebhookMessage[123456789012345678;abcdefg1234567890abcdefg1234567890;987654321098765432;Hello, world! This message has been edited.]
 ```
 
 If the message was in a thread with the ID `555555555555555555`, the command would look like this:
 
-```
+```php
 $editWebhookMessage[123456789012345678;abcdefg1234567890abcdefg1234567890;987654321098765432;Hello, world! This message has been edited.;555555555555555555]
 ```

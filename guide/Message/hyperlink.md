@@ -4,7 +4,7 @@ The `$hyperlink` function allows you to create hyperlinks specifically designed 
 
 ## Usage
 
-```
+```php
 $hyperlink[url;title]
 ```
 
@@ -15,7 +15,7 @@ $hyperlink[url;title]
 
 Let's say you want to create a Discord embed with a description that includes a link to your Discord server. You could use the following:
 
-```
+```php
 $description[$hyperlink[https://discord.com;Join us on Discord!]]
 ```
 

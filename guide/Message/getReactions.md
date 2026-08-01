@@ -22,7 +22,7 @@ Retrieve a list of users who reacted with a specific emoji to a message.
 
 **Code:**
 
-```
+```php
 $getReactions[832894131844128888;940739445487988807;👍;mention]
 ```
 

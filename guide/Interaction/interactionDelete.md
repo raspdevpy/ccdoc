@@ -18,13 +18,13 @@ This function allows you to remove an interaction reply. If you don't specify a 
 
 To delete the previous interaction reply:
 
-```
+```php
 $interactionDelete
 ```
 
 To delete a specific interaction reply by its ID:
 
-```
+```php
 $interactionDelete[123456789012345678]
 ```
 

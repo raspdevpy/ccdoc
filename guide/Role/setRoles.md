@@ -4,7 +4,7 @@ Gives a user specific roles, removing all other roles. This is useful for settin
 
 #### Usage:
 
-```
+```php
 $setRoles[userID;roleID 1;roleID 2;roleID 3;...]
 ```
 

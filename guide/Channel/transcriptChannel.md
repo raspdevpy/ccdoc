@@ -24,7 +24,7 @@ $transcriptChannel[Channel ID;Send to Channel ID;Message (optional);file name (o
 
 ### Example
 
-```
+```php
 $transcriptChannel[123456789012345678;987654321098765432;Here is the channel transcript;my_transcript;yes]
 ```
 

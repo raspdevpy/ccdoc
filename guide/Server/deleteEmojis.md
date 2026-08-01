@@ -16,7 +16,7 @@ This function allows you to delete one or more custom emojis from your Discord s
 
 **Example:**
 
-```
+```php
 $deleteEmojis[customEmoji1;customEmoji2]
 ```
 

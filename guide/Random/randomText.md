@@ -12,7 +12,7 @@ Returns a random text from a list of provided texts. This function is useful for
 
 **Example:**
 
-```
+```php
 $randomText[Hello;Hi;Hey]
 ```
 

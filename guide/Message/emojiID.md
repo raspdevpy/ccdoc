@@ -8,6 +8,6 @@ This variable returns the unique ID of the emoji that a user reacted with.  This
 
 Simply use `$emojiID` within your command or script where you need to access the emoji's ID.
 
-```
+```php
 $emojiID
 ```

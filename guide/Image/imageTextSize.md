@@ -6,7 +6,7 @@ This tag allows you to control the size of text used in image manipulation funct
 
 ## Usage
 
-```
+```php
 $imageTextSize[font size]
 ```
 
@@ -18,7 +18,7 @@ $imageTextSize[font size]
 
 To set the text size to 20 pixels:
 
-```
+```php
 $imageTextSize[20]
 ```
 
