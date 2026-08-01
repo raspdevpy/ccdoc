@@ -18,7 +18,7 @@ You can then reward the voter, thank them, or perform any other action.
 
 For example:
 
-```text
+```php
 $giveRoles[$userID;Supporter]
 Thanks for supporting the server, <@$userID>! ❤️
 ```
