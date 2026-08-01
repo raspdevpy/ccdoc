@@ -52,12 +52,6 @@ html[data-theme="light"] .discord-embed-container, html[data-theme="light"] .dis
     }
 }
 
-@media (max-width: 419px) {
-    #content > div[class*=language-], #content > .code-block-with-title > div[class*=language-] {
-        margin-inline: 0 !important;
-    }
-}
-
 :root {
     --code-border-radius: 8px !important;
     --tab-border-radius: 8px !important;
