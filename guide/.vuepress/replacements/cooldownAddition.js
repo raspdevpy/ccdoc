@@ -34,9 +34,17 @@ function formatDuration(ms) {
     return parts.join(" ");
 }
 module.exports = (page, content) => {
-    let title = getTitle(content);
-    if (!title) return content;
-    const cooldown = cooldowns[title.toLowerCase()];
+    if(!page[0]?.filePathRelative)
+        return content;
+    const functionName = "$" + page[0].filePathRelative
+        .split("/")
+        .pop()
+        .replace(/\.md$/, "");
+
+    const cooldown = cooldowns[functionName.toLowerCase()];
+    // let title = getTitle(content);
+    // if (!title) return content;
+    // const cooldown = cooldowns[title.toLowerCase()];
     if (!cooldown) return content;
     let isHardCooldown = cooldown.hardCooldown;
     content += `
