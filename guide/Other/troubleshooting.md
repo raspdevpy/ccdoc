@@ -28,7 +28,6 @@ Each problem is presented as a question, followed by troubleshooting steps and t
 
     You can adjust the role hierarchy in your Discord server settings.
 
-    ![Hierarchy example](https://media.discordapp.net/attachments/857273141968371732/964741875179356180/unknown.png?width=497&height=593 "Role Hierarchy Example")
 
 **Still having trouble?**
 
