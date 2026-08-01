@@ -23,7 +23,7 @@ html[data-theme="light"] .discord-message {
 }
 
 .discord-messages {
-    border-radius: 12px;
+    border-radius: 8px;
     font-family: Inter, Roboto, sans-serif;
 }
 
@@ -59,13 +59,13 @@ html[data-theme="light"] .discord-embed-container, html[data-theme="light"] .dis
 }
 
 :root {
-    --code-border-radius: 12px !important;
-    --tab-border-radius: 12px !important;
+    --code-border-radius: 8px !important;
+    --tab-border-radius: 8px !important;
 }
 
 @media (max-width: 419px) {
     #content {
-        --code-border-radius: 12px !important;
-        --tab-border-radius: 12px !important;
+        --code-border-radius: 8px !important;
+        --tab-border-radius: 8px !important;
     }
 }
