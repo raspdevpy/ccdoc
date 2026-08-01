@@ -36,7 +36,7 @@ $interactionReply[Hello there]
 
 ## What is a Function
 
-A function is a special instruction that begins with a dollar sign (`$`), for example [$username](/functions/member/username).  
+A function is a special instruction that begins with a dollar sign (`$`), for example `$username`.  
 All arguments are kept inside of square brackets (`[HERE]`).  
 Function names are case insensitive.
 
