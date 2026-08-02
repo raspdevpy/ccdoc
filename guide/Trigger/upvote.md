@@ -2,7 +2,7 @@
 
 ## Basic Information
 
-This trigger runs when a user votes for the bot using a server referral link. You can 
+This trigger runs when a user votes for the bot using a server referral link 
 
 To trigger this event, the user **must be a member of the server at the time of voting**.
 
