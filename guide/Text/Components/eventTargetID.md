@@ -1,0 +1,23 @@
+# $eventTargetID
+
+Returns the ID of the target selected by the user when using a **context menu command**.
+
+## Usage
+
+```bash
+$eventTargetID
+```
+
+### For Example:
+
+For a **User Command (Context Menu)**, `$eventTargetID` returns the **User ID** of the user selected from the context menu.
+
+For a **Message Command (Context Menu)**, `$eventTargetID` returns the **Message ID** of the message selected from the context menu.
+
+```php
+$interactionReply[Target ID: $eventTargetID]
+```
+
+If `@Mido` selects a User Command on `@Zero`, `$eventTargetID` would return Zero's User ID.
+
+If `@Mido` selects a Message Command on a message, `$eventTargetID` would return the selected message's ID.
