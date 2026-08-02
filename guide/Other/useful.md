@@ -49,6 +49,8 @@ Now that you understand the basic components, you need to choose a trigger. A tr
 | [Button](../Trigger/button.md)               | Executes when a user clicks a Discord button.                                                          |
 | [Role add/remove](../Trigger/roleaddremove.md) | Executes when a user receives or loses a role.                                                          |
 | [On Upvote](../Trigger/upvote.md)          | Executes when someone upvote in Top.gg.                |
+| [User Command (Context Menu)](../Trigger/app_cmd_user.md)          | Executes when someone select user command on the user.                |
+| [Message Command (Context Menu)](../Trigger/app_cmd_message.md)          | Executes when someone select message command on the selected message.                |
 
 | [Library](../Trigger/library.md) | Create A library |
 
