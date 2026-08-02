@@ -2,7 +2,7 @@
 
 ## Basic Information
 
-This trigger runs when a user votes for the bot using a server referral link.
+This trigger runs when a user votes for the bot using a server referral link. You can 
 
 To trigger this event, the user **must be a member of the server at the time of voting**.
 
@@ -12,9 +12,9 @@ This trigger does not use a trigger value.
 
 ## Example
 
-Create a new custom command and set its **Trigger Type** to **On Upvote**.
+Create a new custom command and set its **Trigger Type** to **On Upvote**. 
 
-You can then reward the voter, thank them, or perform any other action.
+Copy the link displayed to use it in other commands. You can then reward the voter, thank them, or perform any other action.
 
 For example:
 
@@ -24,6 +24,10 @@ Thanks for supporting the server, <@$userID>! ❤️
 ```
 
 ### That's it! 🎉
+
+::: tip Tip
+You can test this trigger using the `!!emit upvote` command. 
+:::
 
 ## Some functions related to On Upvote
 
