@@ -7,7 +7,7 @@ data.json
 build*.sh
 ignore/*
 .DS_Store
-guide/.vuepress/public/images/*
+guide/.vuepress/public/images/*.*
 .vscode
 OnTemplate.md
 .env
