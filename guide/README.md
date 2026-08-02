@@ -10,9 +10,11 @@ Same as it sounds - Custom Command (CC) is a bot that allows you to create fully
 It is a perfect tool for both experienced developers and complete beginners looking for a quick and easy command system.
 
 ## Examples
-![Word Trigger](./images/guide/get-started/get-started-word.png)
-![Slash Command](./images/guide/get-started/get-started-slash-cmd.png)
-![Join Event Trigger](./images/guide/get-started/get-started-join-event.png)
+
+![Word Trigger](/images/guide/get-started/get-started-word.png)
+![Slash Command](/images/guide/get-started/get-started-slash-cmd.png)
+![Join Event Trigger](/images/guide/get-started/get-started-join-event.png)
+
 ## Do I have to know coding?
 
 No, you don't need any previous coding experience. CC uses an easy-to-learn pseudo-language that has been designed specifically for easy Discord bot development.
