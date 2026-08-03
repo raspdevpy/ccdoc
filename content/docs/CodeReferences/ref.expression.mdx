@@ -1,0 +1,104 @@
+---
+title: "Expressions"
+---
+
+## Why Use Expressions?
+
+Some functions, like the incredibly useful `$if` function, require an expression as input. Expressions allow you to create dynamic and conditional logic within your scripts.
+
+## What is an Expression?
+
+At its core, an expression compares a left-hand side to a right-hand side using an operator. The operator dictates the type of comparison being made.
+
+```
+Left-Side [Operator] Right-Side
+```
+
+Here's a breakdown of the available operators:
+
+| Operator | True When                                                  | Description                                                                                                                              |
+| -------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `==`     | left-side is equal to right-side                           | Checks for equality. Both values are compared after normalizing whitespace (leading and trailing spaces are ignored).                    |
+| `===`    | left-side is exactly equal to right-side                   | Checks for exact equality. Values must match exactly, including any leading or trailing whitespace.                                      |
+| `!=`     | left-side is not equal to right-side                       | Checks for inequality. Both values are compared after normalizing whitespace (leading and trailing spaces are ignored).                  |
+| `!==`    | left-side is not exactly equal to right-side               | Checks for exact inequality. Values are considered different if they do not match exactly, including any leading or trailing whitespace. |
+| `>`      | left-side is greater than right-side (numeric)             | Left-side is numerically greater than the right-side.                                                                                    |
+| `>=`     | left-side is greater than or equal to right-side (numeric) | Left-side is numerically greater than or equal to the right-side.                                                                        |
+| `<`      | left-side is less than right-side (numeric)                | Left-side is numerically less than the right-side.                                                                                       |
+| `<=`     | left-side is less than or equal to right-side (numeric)    | Left-side is numerically less than or equal to the right-side.                                                                           |
+| `&&`     | left-side is true **and** right-side is true               | Logical AND. Both sides must evaluate to `true`.                                                                                         |
+| `\|\|`   | left-side is true **or** right-side is true                | Logical OR. At least one side must evaluate to `true`.                                                                                   |
+
+**Example:**
+
+```bash
+$username==Mido
+```
+
+In this expression:
+
+*   **Left-side:** `$username`
+*   **Right-side:** `Mido`
+*   **Operator:** `==`
+
+This expression evaluates to `true` *only* if the value of the variable `$username` is equal to `Mido`.
+
+## Combining Multiple Expressions
+
+Often, you'll need to create more complex conditions by combining multiple expressions.  This is where the `&&` (AND) and `||` (OR) operators become essential.
+
+### Example 1:  Using AND (`&&`)
+
+```php
+$username==Mido&&$country==Egypt
+```
+
+This expression consists of two separate conditions:
+
+1.  `$username==Mido`:  The username must be equal to "Mido".
+2.  `$country==Egypt`: The country must be equal to "Egypt".
+
+The `&&` operator means that *both* condition 1 *AND* condition 2 must be true for the entire expression to evaluate to `true`.
+
+### Example 2: Using OR (`||`)
+
+```php
+$username==Mido||$country==Egypt
+```
+
+This expression also consists of two separate conditions:
+
+1.  `$username==Mido`:  The username must be equal to "Mido".
+2.  `$country==Egypt`: The country must be equal to "Egypt".
+
+The `||` operator means that *either* condition 1 *OR* condition 2 (or both) must be true for the entire expression to evaluate to `true`.
+
+## Grouping Expressions with Parentheses
+
+For advanced scenarios, you may need to control the order in which expressions are evaluated. Use parentheses `()` to group conditions and ensure they are evaluated as a unit *before* other operations. This is similar to how parentheses work in mathematical equations.
+
+### Example 1: Complex AND/OR Grouping
+
+```
+($username==Mido&&$country==Egypt)||($username==Rake&&$country==Germany)
+```
+
+This expression combines AND and OR operators with grouping:
+
+1.  `($username==Mido&&$country==Egypt)`:  The username is "Mido" AND the country is "Egypt".
+2.  `($username==Rake&&$country==Germany)`: The username is "Rake" AND the country is "Germany".
+
+The entire expression evaluates to `true` if either group 1 *OR* group 2 is true.
+
+### Example 2: Nested OR Grouping
+
+```php
+$username==Mido||($country==Egypt||$country==Masr)
+```
+
+This example uses nested parentheses with OR operators:
+
+1.  `$username==Mido`: The username is "Mido".
+2.  `($country==Egypt||$country==Masr)`: The country is "Egypt" OR the country is "Masr".
+
+The expression is `true` if the username is "Mido" OR if the country is either "Egypt" or "Masr".

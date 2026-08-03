@@ -1,0 +1,41 @@
+---
+title: "$rolePerms"
+---
+
+Returns the permissions a role has.
+
+#### Usage:
+
+`$rolePerms[roleID;separator (optional)]`
+
+*   `roleID`: The ID of the role to check.
+*   `separator`: (Optional) The separator to use when listing the permissions. Defaults to no separator.
+
+<br/>
+
+**Example:**
+
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $rolePerms[$roleID[muted]; | ]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+View Channel | Read Message History
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="info" title={"Permissions List"}>
+
+For a comprehensive list of all permission names, refer to the [Permissions List](/CodeReferences/ref.permissions_list).  This list includes all the permissions a role can have.
+
+
+</Callout>
+
+<Callout type="info" title={"Related Functions"}>
+
+*   `$userPerms`: Returns a member's permissions.
+
+</Callout>
+
+**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" />
+

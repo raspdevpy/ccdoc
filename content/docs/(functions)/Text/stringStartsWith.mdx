@@ -1,0 +1,31 @@
+---
+title: "$stringStartsWith"
+---
+
+Determines whether given message starts by another message or not
+
+## Usage
+
+```bash
+$stringStartsWith[message;text]
+```
+
+### Example:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $stringStartsWith[Hello World;Hello]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+true<br /><br />
+</DiscordMessage>
+</DiscordMessages>
+
+### Example:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $stringStartsWith[Hello World;Hate]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+false
+</DiscordMessage>
+</DiscordMessages>

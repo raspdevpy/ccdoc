@@ -1,0 +1,34 @@
+---
+title: "$checkCondition"
+---
+
+Checks if given expression is true or false.
+
+## Usage
+
+```bash
+$checkCondition[Expression]
+```
+
+### Example:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $checkCondition[$username==Mido]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+true<br /><br />
+</DiscordMessage>
+</DiscordMessages>
+
+### Example:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $checkCondition[10&#60;5]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+false
+</DiscordMessage>
+</DiscordMessages>
+
+## To know more about expressions
+Read about it [here](/CodeReferences/ref.expression)

@@ -1,0 +1,34 @@
+---
+title: "$httpRequestStatus"
+---
+
+Returns the $httpRequest status code of the last request.
+
+## Usage
+
+```bash
+$httpRequestStatus
+```
+
+## Example
+
+#### Using $httpRequestStatus
+
+How to use $httpRequestStatus to display status code of request
+
+<DiscordMessages>
+<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+!!exec $httpRequest[https://api.example.com/]<br />
+Code: $httpRequestStatus
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+Api response!<br />
+Code: 200
+</DiscordMessage>
+</DiscordMessages>
+
+##### Related functions: `$httpRequest` `$httpRequestHeader`
+
+**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle"/>
+
+**Tags:** <Badge type="tip" text="http request" vertical="middle"/> <Badge type="tip" text="api request" vertical="middle"/> <Badge type="tip" text="status" vertical="middle"/>

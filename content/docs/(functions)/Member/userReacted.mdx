@@ -1,0 +1,48 @@
+---
+title: "$userReacted"
+---
+
+Checks if a user has reacted to a message with the given emoji. Returns `true` or `false`.
+
+## Usage
+
+```bash
+$userReacted[channelID;messageID;userID;reaction]
+```
+1. **channelID** - (Optional) default value: `$channelID`. The ID of a channel you want to check reaction in.
+2. **messageID** - (Optional) default value: `$messageID`. The ID of a message you want to check reaction on.
+3. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to check from if they reacted.
+4. **reaction** - The emoji you want to check if user reacted with. For custom emojis, you can use their ID, which can be found when you send it into any channel with a backslash before it.
+
+## Example
+
+#### Using $userReacted
+
+How to use $userReacted
+
+<DiscordMessages>
+<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+!!exec $wait[5s] $userReacted[;;;<img src="https://cdn.discordapp.com/emojis/1000917016724648007.webp?size=16" alt="DogSmile" style={{ verticalAlign: "text-bottom" }} />]
+<DiscordReactions>
+<DiscordReaction name="DogSmile" image="https://cdn.discordapp.com/emojis/1000917016724648007.webp" count={1} active  />
+</DiscordReactions>
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+true
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="warn" title={"Cache"}>
+
+This function works on the bot's cache to find members.
+If the user is not cached, the function will not find them.
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br />
+To have all members cached, you will need Tier 5 Bot.
+
+</Callout>
+
+##### Related functions: `$getMessageReactions` `$getReactionCount`
+
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
+
+**Tags:** <Badge type="tip" text="reaction" vertical="middle" /> <Badge type="tip" text="user" vertical="middle" />

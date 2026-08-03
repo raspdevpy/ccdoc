@@ -1,0 +1,21 @@
+---
+title: "$mentioned"
+---
+
+Returns the ID of the mentioned user
+
+## Usage
+
+```bash
+$mentioned[mention number or all;return author ID (yes/no)(optional)]
+```
+
+### Example:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec First mention is $mentioned[1]<br />All mentions are: $mentioned[all]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+First mention is 788361834360864808<br />All mentions are: 788361834360864808, 840526017260945468
+</DiscordMessage>
+</DiscordMessages>

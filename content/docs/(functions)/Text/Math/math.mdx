@@ -1,0 +1,57 @@
+---
+title: "$math"
+---
+
+Calculates numbers with any mathematically correct 
+quantifier(s) in between.
+
+#### Usage: `$math[10*(2+5)/7*8-2]`
+e#### Usage: `$math[Expression;Name1=Value1;Name1=Value2]`
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $math[10*(2+5)/7*8-2]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+78
+</DiscordMessage>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec Networth = $math[cash+bank;cash=100;bank=500]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Networth = 600
+</DiscordMessage>
+</DiscordMessages>
+
+
+<Callout type="info" title={"Alternatives"}>
+
+`$sum`, can be used to sum up arguments.
+
+`$sub`, can be used to subtract arguments.
+
+`$multi`, can be used to multiply arguments.
+
+`$divide`, can be used to divide arguments.
+
+</Callout>
+
+## Valid Quantifiers
+Operator                 | Associativity | Description
+:----------------------- | :------------ | :----------
+(...)                    | None          | Grouping (brackets)
+!                        | Left          | Factorial
+^                        | Right         | Exponentiation
++, -, sqrt               | Right         | Unary prefix operators
+\*, /, %                 | Left          | Multiplication, division, remainder
++, -                     | Left          | Addition, subtraction
+
+<Callout type="warn" title={"Are there any more advanced functions?"}>
+
+There are more advanced functions located [here.](https://github.com/silentmatt/expr-eval/blob/master/README.md)
+
+</Callout>
+
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+
+**Tags:** <Badge type="tip" text="Maths" vertical="middle" /> <Badge type="tip" text="Calculate" vertical="middle" />

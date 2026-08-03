@@ -1,0 +1,36 @@
+---
+title: "Using Arrays"
+weight: 5
+---
+
+Array is a list of items that you can loop through, or join with a specific separator.  
+Once you create an array, you can use functions to modify it or retrieve information from it.
+
+## Indexes
+
+Each element in an array has a unique index number that identifies its position. Our array starts from index 1.
+
+## Example
+
+```php
+$arrayCreate[Apple Banana Kiwi; ] // List split by space
+
+// Retrieve items
+First item: $arrayGet[1]
+Last item: $arrayGet[$arrayLength]
+All items: $arrayJoin[/]
+```
+
+<DiscordMessages>
+<DiscordMessage>
+!!exec $arrayCreate[Apple Banana Kiwi; ]<br /><br />
+First item: $arrayGet[1]<br />
+Last item: $arrayGet[$arrayLength]<br />
+All items: $arrayJoin[/]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+First item: Apple<br />
+Last item: Kiwi<br />
+All items: Apple/Banana/Kiwi
+</DiscordMessage>
+</DiscordMessages>

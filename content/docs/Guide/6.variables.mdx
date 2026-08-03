@@ -1,0 +1,77 @@
+---
+title: "Using Variables"
+weight: 4
+---
+
+Variables are important for storing and manipulating data within Custom Command. There are temporary and permanent variables.
+
+## Temporary Variables
+
+Temporary variables exist only during the execution of a command. They are easy to access and are ideal for storing values during data processing. These can make your code more readable.
+
+### Functions
+
+- `$let` - Creates a temporary variable and assigns a value to it
+- `$get` - Retrieves the value stored in a temporary variable
+
+You can also access temporary variables directly by prefixing their name with a dollar sign (`$`).
+
+### Example
+
+```php
+$let[uid;$randomUserID]
+$let[name;$displayName[$uid]]
+
+User’s name: $name
+```
+
+<DiscordMessages>
+<DiscordMessage>
+!!exec $let[uid;$randomUserID]<br />
+$let[name;$displayName[$uid]]<br /><br />
+Random User's name: $name
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+Random User's name: Member
+</DiscordMessage>
+</DiscordMessages>
+
+## Permanent Variables
+
+Permanent variables persist even after the command execution is complete. Permanent variables can be stored alongside a server, channel, user or message. That means that each server, channel, user or message variable can have different value if it's different server, channel, user or message.  
+Permanent variables are ideal for storing settings, progress, or any other data that needs to be used later. For example, you can save different value for each user using user variables.
+
+### Functions
+
+- `$initVar` - Initializes a variable with a default value if the var does not exist
+- `$setServerVar` - Creates a permanent variable accessible in the whole server
+- `$getServerVar` - Retrieves the value stored in the permanent variable
+- `$increaseServerVar` - Increase a server variable with a certain amount
+- `$setChannelVar` - Creates a permanent variable accessible in the current channel
+- `$getChannelVar` - Retrieves the value stored in the permanent variable
+- `$increaseChannelVar` - Increase a channel variable with a certain amount
+- `$setUserVar` - Creates a permanent variable accessible for the current user
+- `$getUserVar` - Retrieves the value stored in the permanent variable
+- `$increaseUserVar` - Increase a user variable with a certain amount
+- `$setMessageVar` - Creates a permanent variable accessible for the current message
+- `$getMessageVar` - Retrieves the value stored in the permanent variable
+
+### Example
+
+```php title="Command 1"
+$setUserVar[level;4]
+```
+
+```php title="Command 2"
+Your level: $getUserVar[level] // 4
+```
+
+```php title="Command 3"
+$increaseUserVar[level;1]
+Your new level: $getUserVar[level] // 5
+```
+<Callout type="info" title={"Where are the variables saved?"}>
+
+All variables are saved in our database. If you have privacy concerns, please read our [Privacy Policy](/Legal/policy).
+
+</Callout>

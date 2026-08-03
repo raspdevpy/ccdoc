@@ -1,0 +1,30 @@
+---
+title: "$getTextSplitLength"
+---
+
+Returns the amount of objects created by `$textSplit`
+
+
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMarkdown>
+!!exec $textSplit[1 2 3 4 5 6 7 8 9 10; ]
+<br />
+$getTextSplitLength
+</DiscordMarkdown>
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+10
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="error">
+
+This function got deprecated, use `$arrayLength` instead 
+
+</Callout>
+
+**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" /> 
+
+**Tags:** <Badge type="tip" text="split text" vertical="middle" /> <Badge type="tip" text="Length" vertical="middle" />

@@ -1,0 +1,37 @@
+---
+title: "$year"
+---
+
+Get the current year.
+
+This command returns the current year based on the configured timezone (default is UTC).
+
+#### Usage:
+
+```php
+$year
+```
+
+**Example:**
+
+Here's how to use the `$year` command in a Discord message:
+
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $year
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+2021
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="info" title={"Timezone Information"}>
+
+Date functions default to the UTC timezone. You can customize the timezone used by your commands. [Learn More](/Date/timezone)
+
+</Callout>
+
+**Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
+
+
+**Tags:** <Badge type="tip" text="year" vertical="middle" />

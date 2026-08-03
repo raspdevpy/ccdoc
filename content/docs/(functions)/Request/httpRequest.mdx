@@ -1,0 +1,88 @@
+---
+title: "$httpRequest"
+---
+
+Performs an HTTP request with the specified content and headers, then returns the response body.
+
+## Usage
+
+```bash
+$httpRequest[URL;Method;Content;Header 1;Header 2;...]
+```
+
+## Parameters
+
+### Method
+
+Supported HTTP methods:
+
+* `GET`
+* `POST`
+* `PUT`
+* `PATCH`
+* `DELETE`
+* `HEAD`
+
+If no method is provided, `GET` is used by default.
+
+### Content
+
+The request body to send.
+
+The format of the content should match the `Content-Type` header. For example, if you specify:
+
+```text
+Content-Type: application/json
+```
+
+the content should be valid JSON.
+
+### Headers
+
+Headers should be provided in the following format:
+
+```text
+Header-Name: Value
+```
+
+For example:
+
+```text
+Content-Type: application/json
+```
+
+You can provide as many headers as needed.
+
+## Timeout
+
+Requests automatically timeout after **1 minute**.
+
+For **Tier 4 and above**, the timeout is extended to **30 minutes**.
+
+## Example
+
+### Sending a JSON request
+
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $let[response;$httpRequest[My API URL;post;\{"name":"Mido"};Content-Type: application/json]]<br />Response is $response<br />Response Status is $httpRequestStatus<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Response is \{"success":true}<br />Response Status is 200<br /><br />
+</DiscordMessage>
+</DiscordMessages>
+
+## Notes
+
+* This function **does not throw an error** when the server returns a non-success status code (such as `404` or `500`). Always check `$httpRequestStatus` to verify that the request completed successfully.
+* The response body must be **smaller than 1 MB**. Requests that exceed this limit will be rejected.
+* The destination URL must be **whitelisted** before it can be used. If the URL has not yet been approved, please open a ticket in our Support Server to request whitelisting.
+
+## Related Functions
+
+* `$httpRequestStatus`
+* `$httpRequestHeader`
+
+**Function Difficulty:** <Badge type="warning" text="Medium" vertical="middle"/>
+
+**Tags:** <Badge type="tip" text="http request" vertical="middle"/> <Badge type="tip" text="api request" vertical="middle"/>

@@ -1,0 +1,31 @@
+---
+title: "$viewServerVars"
+---
+
+View a list of all the variables that are defined for the server, and search for specific variables using a regular expression query filter
+
+## Usage
+
+```bash
+$viewServerVars[Separator;Query Regex (optional)]
+```
+
+### Example:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $viewServerVars<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+level1_xp, names, staffs, level2_xp, level3_xp, level1_reward<br /><br />
+</DiscordMessage>
+</DiscordMessages>
+
+### Example (return only variables that starts with level):
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $viewServerVars[, ;^level]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+level1_xp, level2_xp, level3_xp,level1_reward
+</DiscordMessage>
+</DiscordMessages>

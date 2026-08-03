@@ -1,0 +1,26 @@
+---
+title: "$concatTextSplit"
+---
+
+adds an array to the end of an array from `$textsplit`
+
+#### Usage: `$concatTextSplit[text;separator(optional, default = ,)]`
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $textsplit[Rake Mido; ] <br /> $concatTextSplit[Wiki,Mika;,] <br /> $arrayJoin[ ]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Rake Mido Wiki Mika
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="error">
+
+This function got deprecated, use `$arrayConcat` instead 
+
+</Callout>
+
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+
+**Tags:** <Badge type="tip" text="textsplit" vertical="middle" /> <Badge type="tip" text="concat" vertical="middle" /> <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="merge " vertical="middle" /> <Badge type="tip" text="add" vertical="middle" />

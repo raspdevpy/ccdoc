@@ -1,0 +1,31 @@
+---
+title: "$uri"
+---
+
+Decodes or Encodes a url Example when you encode a url 'hello world' = 'hello%20world'
+
+## Usage
+
+```bash
+$uri[decode/encode;text]
+```
+
+### Example (Encoding):
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $uri[encode;Hello World]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Hello%20World<br /><br />
+</DiscordMessage>
+</DiscordMessages>
+
+### Example (Decoding):
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $uri[decode;Hello%20World]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Hello World
+</DiscordMessage>
+</DiscordMessages>

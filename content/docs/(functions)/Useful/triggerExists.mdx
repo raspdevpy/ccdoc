@@ -1,0 +1,31 @@
+---
+title: "$triggerExists"
+---
+
+Check if a trigger with the specified token exists
+
+## Usage
+
+```bash
+$triggerExists[Token]
+```
+
+### Example (An existing trigger):
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $triggerExists[fx1d53]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+true<br /><br />
+</DiscordMessage>
+</DiscordMessages>
+
+### Example (not available trigger):
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $triggerExists[abcdef]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+false
+</DiscordMessage>
+</DiscordMessages>

@@ -1,0 +1,64 @@
+---
+title: "$addField"
+---
+
+Adds fields to a message embed.
+
+#### Usage: `$addField[title;value;inline(yes/no default=yes)(optional)]`
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $addField[title;value;no] <br/>
+$addField[title2;value2] <br/>
+$addField[title3;value3] <br/>
+$addField[title4;value4] <br/>
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordEmbed slot="embeds">
+<DiscordEmbedFields slot="fields">
+<DiscordEmbedField fieldTitle="title">
+value
+</DiscordEmbedField>
+<DiscordEmbedField inline fieldTitle="title2">
+value2
+</DiscordEmbedField>
+<DiscordEmbedField inline fieldTitle="title3">
+value3
+</DiscordEmbedField>
+<DiscordEmbedField inline fieldTitle="title4">
+value4
+</DiscordEmbedField>
+</DiscordEmbedFields>
+</DiscordEmbed>
+</DiscordMessage>
+</DiscordMessages>
+
+$addField with hyperlinks:
+Usage:  `\[link\](https://ccommandbot.com "tooltip(optional)")`
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $addField[title;This is a field with \[link\](https://ccommandbot.com "tooltip")]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordEmbed slot="embeds">
+<DiscordEmbedFields slot="fields">
+<DiscordEmbedField fieldTitle="title">
+This is a description <a href="https://ccommandbot.com" target="_blank" title="tooltip">hello</a>
+</DiscordEmbedField>
+</DiscordEmbedFields>
+</DiscordEmbed>
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="info" title={"Do you want to add an embed inside a Function as paramter like $sendmessage[text]"}>
+
+
+Use: `{field:name:value:inline(yes/no default=yes)(optional)}`
+
+</Callout>
+
+<Callout type="error" title={"Please be aware!!"}>
+
+If you add any `:` in this function it will error! Check out [this](/Other/syntax)
+
+</Callout>

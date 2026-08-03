@@ -1,0 +1,40 @@
+---
+title: "$hasPerms"
+---
+
+Checks if user has all of the given permissions. Returns `true` or `false`.
+
+## Usage:
+
+```bash
+$hasPerms[userID;perm1;perm2;...]
+```
+1. **userID** - User you want to check for permissions.
+2. **perm N** - You can add as many permissions as needed. The available permissions are here: [Permissions List](/CodeReferences/ref.permissions_list).
+
+## Example
+
+#### Using $hasPerms
+
+How to use $hasPerms. Keep in mind that only if the user does have all of listed permissions, true will be returned.
+
+<DiscordMessages>
+<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+!!exec $hasPerms[$authorID;sendmessages]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+true
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="info" title={"Suggestion"}>
+
+To make code stop if the user doesn't have the needed permission, you can check out `$onlyIf`. For multiple actions, check `$if`.
+
+</Callout>
+
+##### Related functions: `$hasAnyPerm` `$hasAnyRole` `$hasRole`
+
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle"/>
+
+**Tags:** <Badge type="tip" text="permission" vertical="middle"/> <Badge type="tip" text="management" vertical="middle"/>

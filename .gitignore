@@ -7,8 +7,17 @@ data.json
 build*.sh
 ignore/*
 .DS_Store
-guide/.vuepress/public/images/*.*
 .vscode
 OnTemplate.md
 .env
-guide/.vuepress/public/docs-pages.json
+
+# next / fumadocs
+.source
+/.next/
+/out/
+*.tsbuildinfo
+next-env.d.ts
+.vercel
+
+# remote images cached locally by lib/remark/images.ts
+public/images/*.*

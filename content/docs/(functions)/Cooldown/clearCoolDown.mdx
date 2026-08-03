@@ -1,0 +1,46 @@
+---
+title: "$clearCooldown"
+---
+
+Clears a cooldown set by cooldown function.
+
+**Type:** Clears or resets a pre-existing cooldown.
+
+## Usage
+
+```bash
+$clearCooldown[type;id;token]
+```
+1. **type** - (Optional) default value: `user`. Can be `user`, `channel` or `server`. The type of cooldown to clear.
+2. **id** - (Optional) default value: `$authorID` if type is user. The ID of a user or channel to clear cooldown from.
+3. **token** - (Optional) default value is the current command token, changing it means clearing another command cooldown
+## Example
+
+#### Remove cooldown from a user
+
+How to remove cooldown from a user
+
+<DiscordMessages>
+<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+!!exec $cooldown[5m]<br />
+$clearCooldown<br />
+No cooldown
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+No cooldown
+</DiscordMessage>
+<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+!!exec $cooldown[5m]<br />
+$clearCooldown<br />
+No cooldown 2nd try
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+No cooldown 2nd try
+</DiscordMessage>
+</DiscordMessages>
+
+##### Related functions: `$getCooldownTime`
+
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle"/>
+
+**Tags:** <Badge type="tip" text="Cooldown" vertical="middle"/> <Badge type="tip" text="Clear Cooldown" vertical="middle"/>

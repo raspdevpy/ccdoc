@@ -1,0 +1,360 @@
+---
+title: "Word Trigger"
+---
+
+Word commands, also known as message commands are executed when the bot receives a text message.
+
+## Basic word command
+Let's create a word command with a trigger `!ping`, this means the command will be triggered whenever someone sends a message starting with `!ping`.
+In the code part we will type `pong!`, so the bot will respond with it.
+
+![Word example](https://i.imgur.com/0ndhYaw.png)
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+!ping
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+pong!
+</DiscordMessage>
+</DiscordMessages>
+
+## Using parameters
+A crucial feature of the word type are parameters. They are data provided when executing the command.
+
+Let's say we had a `?hug` command, which users can use to hug other users. 
+In that case we would want users to select a user by mentioning him.
+
+#### Usage
+The mention will be the `parameter 1`, because users will mention their victim right after the ?hug keyword.
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+?hug <DiscordMention type="user">fajfaj</DiscordMention>
+</DiscordMessage>
+</DiscordMessages>
+
+#### Setup
+Parameters can be retrieved using the `$message` function, we will use it to get the user mention:
+
+![?hug code](https://i.imgur.com/zXDpUmI.png)
+
+#### Result
+Here's how the final command should look like:
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+?hug <DiscordMention type="user">fajfaj</DiscordMention>
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
+</DiscordMessage>
+</DiscordMessages>
+
+## Case insensitivity
+Sometimes we don't want to bother users with using correct capitalisation.
+
+#### How does it work?
+Case sensivity can be disabled by adding `|i` after the trigger. In our case `?hello` will be changed to `?hello|i`
+
+#### Example
+Here's how to make a case insensitive `?hello` command, that will respond with a simple `Hello @user` message.
+
+![?hello command](https://cdn.discordapp.com/attachments/1100128432395927765/1100823468720795678/hello.png)
+
+Let's test different variations:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+?hello
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
+</DiscordMessage>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+?HELLO
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
+</DiscordMessage>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+?HeLLo
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
+</DiscordMessage>
+
+</DiscordMessages>
+
+Works perfectly!
+
+## Multiple words
+Sometimes we want the bot to trigger on multiple words, by separating them with `|`
+
+Let's say we want our [Hug command](#using-parameters) to trigger on: ?hug, ?abrazo, and ?étreinte.
+
+#### How can we do that?
+We can do that with the following trigger:
+```bash
+?hug|?abrazo|?étreinte
+```
+
+![](https://cdn.discordapp.com/attachments/1100128432395927765/1100827624978260059/hugcmd.png)
+
+Let's test it out:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+?hug <DiscordMention type="user">fajfaj</DiscordMention>
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
+</DiscordMessage>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+?abrazo <DiscordMention type="user">fajfaj</DiscordMention>
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
+</DiscordMessage>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+?étreinte <DiscordMention type="user">fajfaj</DiscordMention>
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
+</DiscordMessage>
+</DiscordMessages>
+
+Works as expected!
+
+## Regex match
+The word trigger can also contain regex expressions for various dynamic triggers.
+
+<Callout type="info" title={"What's regex?"}>
+
+Don't worry if you don't know what it is. Regex is a pretty advanced topic, and is not necessary in most cases.
+
+However if you want to learn more about regex, you can learn it from some internet guides [like this one](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285) and regex playgrounds [like this one](https://regex101.com).
+
+</Callout>
+
+### Ping detector
+Regex has thousands of use cases, but here we will discuss using regex to trigger on a mention anywhere in the message.
+
+#### User mentions
+Bots can only see mentions as a string like: `<@434342521997492224>`, or `<@!434342521997492224>`, so we have to design our expression to catch this form.
+
+#### Trigger
+Here is the expression which we are going to use:
+* `?` - the previous character is optional
+* `\d` - any number
+* `{18,}` - the previous character has to appear 18 or more times
+
+```regex
+/<@!?\d{18,}>/
+```
+You need to add a forward slash before and after your expression, otherwise the bot will only reply when you literally send `<@!?\d{18,}>` in your message
+
+![Ping detector](https://i.imgur.com/TwgDMNI.png)
+
+Let's try sending some mentions:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Hey <DiscordMention type="user">fajfaj</DiscordMention>! How is it going?
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+You've pinged someone!
+</DiscordMessage>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMention type="user">Mido</DiscordMention>, have you found your chocolate yet?
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+You've pinged someone!
+</DiscordMessage>
+</DiscordMessages>
+
+It detects all of them!
+
+## Trigger when a message has attachment
+This can be done using `%has_attachment%` as trigger, it makes the command execute when a message contains an attachment.
+
+### Example
+![](https://i.imgur.com/41Q7lMg.png)
+
+### Output
+![](https://i.imgur.com/aaP2nVM.png)
+
+## Trigger when pinned message is sent
+This can be done using `%pin%` as trigger, it makes the command execute when discord send a message when a message get pinned.
+
+### Example
+![](https://i.imgur.com/VNhSEQ2.png)
+
+### Output
+![](https://i.imgur.com/YxFWWym.png)
+
+## Trigger when thread is created
+This can be done using `%thread_created%` as trigger, it makes the command execute when discord send a message when a thread get created.
+
+### Example
+![](https://i.imgur.com/VhBExwB.png)
+
+### Output
+![](https://i.imgur.com/WszJWXs.png)
+
+## Trigger when a poll is sent
+This can be done using `%has_poll%` as trigger, it makes the command execute when a user send a poll.
+
+### Example
+![](https://i.imgur.com/2tDlcML.png)
+
+### Output
+![](https://i.imgur.com/BLj6YY3.png)
+
+## Trigger on Discord AutoMod Action
+This can be done using `%automod_action%` as trigger, it makes the command execute when a user triggers a Discord AutoMod rule. The user who is flagged is the command executor.
+
+### Example
+![](https://i.imgur.com/dCld7bp.png)
+
+### Output
+![](https://i.imgur.com/YiF8lMH.png)
+
+
+## Any message
+From time to time you may not know what the message content will be, you can make cc trigger to any message sent in a channel.
+
+### How does it work?
+This can be done using `%all%` trigger, it makes the command execute regardless of the content.
+
+### Message complimenter
+Let's make a command which will randomly compliment every sent message to a specific channel.
+
+To randomize the output, we will use `$randomText` function, and to restrict the channels we will use the `Run only in` dropdown menu:
+
+![Message complimenter](https://cdn.discordapp.com/attachments/957286111250624552/1100843662801379389/msgcompliment.png)
+
+Let's see if we get any compliments:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+How is it going?
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Cool message!
+</DiscordMessage>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Does anyone here have a monkey as a pet?
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Wonderful punctuation!
+</DiscordMessage>
+</DiscordMessages>
+
+Amazing, we've just got complimented by the bot automatically.
+
+### 🎉 Congratulations
+If you read all of the information above, you became a real word trigger master!
+
+## Summary
+As we got through all the examples, here's a summary of the word trigger:
+
+| Name | Syntax | Example | Explanation |
+| - | - | - | - |
+| Word | `word` | `!ping` | Triggers on a message starting with !ping |
+| Multiple words | `word\|word...` | `!ban\|!unfriend\|!gulag` | Fires off on !ban, !unfriend or !gulag |
+| Case insensitive | `word\|i` | `apple\|i` | Matches with apple and any case variations like ApPLe |
+| Regex | `/RegExp/` | `/<@&\d{18,}>/` | Detects a user mention anywhere in a message |
+| Any message* | `%all%` | `%all%` | Triggers on **ANY** message |
+| Message Pin | `%pin%` | `%pin%` | Triggers on Discord system pin message |
+| Thread Creation | `%thread_created%` | `%thread_created%` | Triggers on Discord system thread creation message |
+| Message with Attachment | `%has_attachment%` | `%has_attachment%` | Triggers when user's message has an attachnment |
+| Message With Poll | `%has_poll%` | `%has_poll%` | Triggers when a user sends a poll |
+| Automod Action | `%automod_action%` | `%automod_action%` | Triggers when a user violates Discord AutoMod rules |
+
+<Callout type="info" title={"One word only!"}>
+
+In word trigger (besides Regex) you are not allowed to put more than one word. All other words are interpreted as parameters, and cannot overlap with the trigger.
+
+</Callout>
+
+<Callout type="error" title={"Any message*"}>
+
+Using `%all%` will result in a slight spam of cooldown messages, and might occasionally override your other commands.
+
+We strongly advise you to set the `Run only in` dropdown menu to specific channel(s).
+
+To get rid of the cooldown messages completely, you can either set a channel slowmode, or get yourself a [premium bot](https://ccommandbot.com/perks).
+
+
+</Callout>
+
+### Continue reading
+Here are some pages that might come in handy if you still have some doubts about the word trigger:
+* [!report](/Tutorials/3.report) - word command tutorial
+* `$message` - loading parameters
+* `$msg` - to load info about the message
+
+
+
+
+{/* ## User Inputs
+Now, let's make another command `?hug @user`, this command should give a hug to another user.
+
+let's create a new command and set the trigger settings as below:\
+![](https://i.imgur.com/iK8yRXP.png)
+
+as for code, let's make it simple response like: `$mention hugs someone`:\
+![](https://i.imgur.com/GGFKqVR.png)
+
+here is the result:
+![](https://i.imgur.com/BK8qolm.png)
+
+but how we can take the mentioned user and replace `someone` with `@user`?
+
+you can do that through `$message` function, this function return you any word the user for example:\
+if user sent: ?cmd This bot is amazing!
+> $message[1] will be replaced with `this`\
+$message[2] will be replaced with `bot`\
+$message[3] will be replaced with `is`\
+$message[4] will be replaced with `amazing!`
+
+and so on, so for command `?hug @user`
+to get the `@user` part we will use $message[1]
+
+so code will be:
+![](https://i.imgur.com/FCfSQVr.png)
+
+
+let's test it out:
+![](https://i.imgur.com/SXdOdM0.png)
+
+Yay! */}
+
+{/* Section below covered with trigger|trigger */}
+
+
+{/* Will be moved to tutorials */}
+{/* ## Example: Report Command
+let's assume we want to make a report command, where user can report other with a reason like: `?report @user <reason>`
+
+so trigger setting will be like this:
+![](https://i.imgur.com/4cGQdgN.png)
+
+as for code, we will use `$message[1]` to get `@user`
+and `$message[2]` to get `<reason>`
+
+like this:
+![](https://i.imgur.com/i45qJkX.png)
+
+let's try it out:
+![](https://i.imgur.com/sMolPyQ.png)
+
+Oh, it didn't work as expected, why is that?
+simply because $message[2] will get us the 2nd word, which indeed `he's`, so how we can get the rest of the phrase
+
+you can do so through `$message[2+]`, which means get 2nd word and what after it, so code after adjusting:
+![](https://i.imgur.com/gmoZ074.png)
+
+let's try it out:
+![](https://i.imgur.com/KZBeAVT.png)
+
+Yay! works well. */}

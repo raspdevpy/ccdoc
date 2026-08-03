@@ -1,0 +1,83 @@
+---
+title: "Code and Comments"
+weight: 3
+---
+
+Comments are lines in your code that are ignored by the interpreter. They're useful for making your code easier to understand.
+
+<Callout type="info" title={"Info"}>
+
+Comments are important to make your code readable, and are widely used across this documentation.
+
+</Callout>
+
+## Single-Line Comments
+
+Single-Line comments are comments just on one line. You should use this for notes, or simple explanations.
+
+### Example
+
+```php
+$let[userYear;2000]
+
+// User's age
+$let[age;$math[$year-$userYear]] // $userYear is year the user was born in
+
+// Send a message with age
+Your age is: $age
+
+// TODO: Save into user variable
+```
+
+<DiscordMessages>
+<DiscordMessage>
+!!exec $let[userYear;2000]<br /><br />
+// User's age<br />
+$let[age;$math[$year-$userYear]] // $userYear is year the user was born in<br /><br />
+// Send a message with age<br />
+Your age is: $age<br /><br />
+// TODO: Save into user variable
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+Your age is: 26
+</DiscordMessage>
+</DiscordMessages>
+
+## Multi-Line Comments
+
+Multi-Line comments can comment multiple lines at once. You can also use this to comment inside of functions.
+
+### Example
+
+```php
+/*
+userYear -> Year the user was born in
+age -> User's age
+*/
+
+$let[userYear;2000]
+$let[age;$math[$year /* current year - born year */ - $userYear]]
+
+Your age is: $age /* <- The variable */
+```
+
+<DiscordMessages>
+<DiscordMessage>
+!!exec /*<br />
+userYear -> Year the user was born in<br />
+age -> User's age<br />
+*/<br /><br />
+$let[userYear;2000]<br />
+$let[age;$math[$year /* current year - born year */ - $userYear]]<br />
+Your age is: $age /* \<- The variable */
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+Your age is: 26
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="info" title={"Dashboard Editor"}>
+
+In the dashboard editor, you can quickly comment out selected line(s) by pressing `Ctrl + /`
+
+</Callout>

@@ -1,0 +1,46 @@
+---
+title: "$boostingSince"
+---
+
+Returns the date a user started boosting the server.
+
+## Usage
+
+```bash
+$boostingSince[userID;date/ms]
+```
+1. **userID** - (Optional) default value: `$authorID`. The ID of user to return boosting date
+2. **date/ms** - (Optional) default value: `date`. If date, it will return text in this format: `Day(name), Month(name) Day(number), Year(YYYY) Hours(HH):Minutes(MM) PM/AM`. If ms, timestamp in miliseconds will be returned. You can later format the timestamp using `$formatDate`.
+
+## Example
+
+#### Using $boostingSince
+
+Multiple ways of using function $boostingSince
+
+<DiscordMessages>
+<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+!!exec $boostingSince
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+Wednesday, January 1, 2025 08:30 PM
+</DiscordMessage>
+<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+!!exec $boostingSince[123456789123456789;ms]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+1735763400000
+</DiscordMessage>
+<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+!!exec $formatDate[$boostingSince[123456789123456789;ms];MM-DD-YYYY]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+01-01-2025
+</DiscordMessage>
+</DiscordMessages>
+
+##### Related functions: `$formatDate` `$timeToDate`
+
+**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle"/>
+
+**Tags:** <Badge type="tip" text="boosting" vertical="middle"/> <Badge type="tip" text="time" vertical="middle"/> <Badge type="tip" text="timestamp" vertical="middle"/>
