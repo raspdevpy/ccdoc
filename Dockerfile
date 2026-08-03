@@ -22,3 +22,4 @@ COPY --from=builder /app/${BUILD_DIR} /usr/share/nginx/html
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
+
