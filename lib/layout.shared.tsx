@@ -19,8 +19,13 @@ export function baseOptions(): BaseLayoutProps {
         external: true,
       },
       {
-        text: 'Discord',
-        url: 'https://discord.gg/ZFQNZA4Ekz',
+        text: 'Invite the bot to your server',
+        url: 'https://ccommandbot.com/add',
+        external: true,
+      },
+      {
+        text: 'Join The Support Server',
+        url: 'https://ccommandbot.com/join',
         external: true,
       },
     ],

@@ -20,7 +20,10 @@ next-env.d.ts
 .vercel
 
 # remote images cached locally by lib/remark/images.ts
-public/images/*.*
+guide/.vuepress/public/images/*.*
 
 # browser-automation session artifacts (snapshots, console logs)
 .playwright-mcp/
+
+.pnpm-store
+docs-pages.json
