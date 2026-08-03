@@ -10,7 +10,7 @@ This function allows you to retrieve the message ID of the most recently sent me
 
 Simply use `$sentMessageID` in your commands to reference the last message's ID.
 
-```bash
+```php
 $sentMessageID
 ```
 
@@ -18,7 +18,7 @@ $sentMessageID
 
 This example demonstrates how to send a message, wait for 3 seconds, and then delete the message using its ID obtained with `$sentMessageID`.
 
-```bash
+```php
 $sendMessage[Hello World]
 $wait[3s]
 $deleteMessage[$sentMessageID]

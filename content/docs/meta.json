@@ -1,14 +1,12 @@
 {
-  "pages": [
-    "---Guide---",
-    "index",
-    "...Guide",
-    "Trigger",
-    "Tutorials",
-    "Other",
-    "Changelogs",
-    "(functions)",
-    "Contribution_Info",
-    "Legal"
-  ]
+    "pages": [
+        "Guide",
+        "Trigger",
+        "Tutorials",
+        "Other",
+        "Changelogs",
+        "(functions)",
+        "Contribution_Info",
+        "Legal"
+    ]
 }
