@@ -8,7 +8,7 @@ Prevent users from using a command by blacklisting their IDs.
 
 The `$blackListIDs` function allows you to restrict access to a command for a specified list of users. If a blacklisted user attempts to use the command, the function will return a custom error message.
 
-```bash
+```php
 $blackListIDs[userID;userID;...;error message]
 ```
 1. **userID** - This makes user not able to run this command. You can add as many userIDs as you want, separated with semicolon (`;`).

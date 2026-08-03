@@ -1,8 +1,4 @@
 {
-  "title": "Other Information",
-  "pages": [
-    "...",
-    "!syntax"
-  ],
-  "defaultOpen": true
+    "title": "Other Information",
+    "pages": ["...", "!syntax"]
 }

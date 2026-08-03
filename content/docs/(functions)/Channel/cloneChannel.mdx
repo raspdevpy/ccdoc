@@ -6,7 +6,7 @@ Clones a channel, duplicating its permissions.
 
 ## Usage
 
-```bash
+```php
 $cloneChannel[Channel ID;New Name (optional);Category (optional);Return ID (yes/no, optional)]
 ```
 
@@ -23,7 +23,7 @@ $cloneChannel[Channel ID;New Name (optional);Category (optional);Return ID (yes/
 
 This example clones the channel with the ID "General" and names the clone "General-Cloned".
 
-```bash
+```php
 $cloneChannel[General;General-Cloned]
 ```
 
@@ -31,7 +31,7 @@ $cloneChannel[General;General-Cloned]
 
 This example clones the channel with the ID "General", names the clone "General-Cloned", and places it in the category named "Category1".
 
-```bash
+```php
 $cloneChannel[General;General-Cloned;Category1]
 ```
 
@@ -39,6 +39,6 @@ $cloneChannel[General;General-Cloned;Category1]
 
 This clones the channel with the ID "General" and returns the ID of the newly created channel.
 
-```bash
+```php
 $cloneChannel[General;;;yes]
 ```

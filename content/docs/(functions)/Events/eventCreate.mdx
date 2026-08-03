@@ -8,7 +8,7 @@ Creates a scheduled event on your server.
 
 The `$eventCreate` function allows you to schedule events with various types, including voice, stage, and external events. Here's how to use it:
 
-```bash
+```php
 $eventCreate[
 	{name=Your event name}
 	{type=Your event type i.e. voice, stage, or external}
@@ -61,7 +61,7 @@ When creating `external` events, ensure you specify:
 
 This example creates a voice channel event called "Anime Watch!" in the channel "AnimeWatchVC", starting in 10 minutes and lasting for 1 day.
 
-```bash
+```php
 $eventCreate[
 	{name=Anime Watch!}
 	{start=$math[$timestamp+$parseTime[10m]]}
