@@ -21,3 +21,6 @@ next-env.d.ts
 
 # remote images cached locally by lib/remark/images.ts
 public/images/*.*
+
+# browser-automation session artifacts (snapshots, console logs)
+.playwright-mcp/
