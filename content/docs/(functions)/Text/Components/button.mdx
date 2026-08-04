@@ -5,14 +5,14 @@ title: "$button"
 Creates a discord button.
 
 ## Usage
-```php
+```cc
 $button[label;style;link/id;emoji (optional);disabled (yes/no, optional);new line (yes/no, optional)]
 ```
 
 ## Basic button
 The simplest button possible, has a label and ID.
 
-```php
+```cc
 $button[Click me!;;verySimpleButton]
 ```
 ![](https://cdn.discordapp.com/attachments/957286111250624552/1126652117373964338/basic-button.png)
@@ -28,7 +28,7 @@ Keep in mind, that there can't be two buttons with the same ID in one message.
 There are four button colors discord allows you to use:
 `blurple`, `grey`, `green`, and `red`.
 
-```php
+```cc
 $button[Blurple;blurple;blurpleButton]
 $button[Grey;grey;greyButton]
 $button[Green;green;greenButton]
@@ -39,14 +39,14 @@ $button[Red;red;redButton]
 ## Links
 You can also create buttons that open a link when clicked.
 To make one, you have to set the style to `url`, and put the link as ID.
-```php
+```cc
 $button[Check out our website!;url;https://ccommandbot.com]
 ```
 ![](https://cdn.discordapp.com/attachments/957286111250624552/1126655903555399781/url-button.png)
 
 ## Emojis
 Both interaction and url buttons can have emojis.
-```php
+```cc
 Please verify!
 $button[Verify;grey;heartButton;:detective:]
 $button[Server rules;url;https://discord.com/channels/772051119538176021/772051119923789847/818136570896449577;đ]
@@ -57,7 +57,7 @@ $button[Leave server;grey;leaveServer;$customEmoji[no]]
 
 ## Disabled
 You can disable any button by adding `yes` after the emoji.
-```php
+```cc
 We are not looking for new staff members at the moment.
 $button[Apply;blurple;applyButton;;yes]
 $button[View requirements;blurple;viewRequirements;;no]
@@ -67,7 +67,7 @@ $button[View requirements;blurple;viewRequirements;;no]
 ## New lines
 By default, buttons are placed in one line.
 You can change that by adding `yes` after the disabled parameter.
-```php
+```cc
 $button[Button in the first line;grey;button1;;;no]
 $button[Button in a new line;grey;button2;;;yes]
 ```
@@ -84,7 +84,7 @@ Mind that the order of `emoji` and `id` is reversed in this case, and the separa
 ```
 
 ### Example:
-```php
+```cc
 $sendmessage[How's your day going?
     {button:Fine:grey:😀:fine}
     {button:Bad:grey:😢:bad}

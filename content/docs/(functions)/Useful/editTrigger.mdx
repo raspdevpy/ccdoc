@@ -8,12 +8,12 @@ Editable types: name, runonlyin, ignorerole,  type, trigger, channelused, minper
 
 ## Usage
 
-```php
+```cc
 $editTrigger[InfoType;New value;Token (optional)]
 ```
 
 ### Example:
-```php
+```cc
 $editTrigger[name;Edited Name]
 ```
 
@@ -21,6 +21,6 @@ $editTrigger[name;Edited Name]
 you change the trigger time, with `time` as type, and value to be the timestamp (in ms) of the next trigger time, make sure it's a time in future
 
 Example (Set the time to trigger after 10s)
-```php
+```cc
 $editTrigger[time;$math[$timestamp+10000];$token]
 ```

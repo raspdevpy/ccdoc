@@ -12,7 +12,7 @@ The `Size` parameter in our functions is defined by two key components: **Width*
 
 Let's start with a simple example using the `$imageFill` function, which requires the size of the rectangle to be filled. We'll begin with a rectangle with `Width=100` and `Height=100`.
 
-```php
+```cc
 $imageFill([x=0, y=0, width=100, height=100, color=blue])
 ```
 
@@ -22,7 +22,7 @@ $imageFill([x=0, y=0, width=100, height=100, color=blue])
 
 Increasing the `Width` and `Height` proportionally scales the rectangle.  Let's try `Width=200` and `Height=100`:
 
-```php
+```cc
 $imageFill([x=0, y=0, width=200, height=100, color=blue])
 ```
 
@@ -32,7 +32,7 @@ $imageFill([x=0, y=0, width=200, height=100, color=blue])
 
 Let's create two rectangles (White and Red) to construct a simple representation of the Polish flag.
 
-```php
+```cc
 $imageFill([x=0, y=0, width=width, height=height/2, color=white])
 $imageFill([x=0, y=height/2, width=width, height=height/2, color=red])
 ```
@@ -61,7 +61,7 @@ These placeholders allow you to dynamically determine the size of elements based
 
 We can now use `center` to simplify our Polish flag example, making the code more readable:
 
-```php
+```cc
 $imageFill([x=0, y=0, width=width, height=centery, color=white])
 $imageFill([x=0, y=centery, width=width, height=centery, color=red])
 ```

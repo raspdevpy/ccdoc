@@ -21,7 +21,7 @@ For larger changes involving many files, we recommend using your IDE and the dev
 ### Requirements
 
 [Git](https://git-scm.com/install/),  
-[Node.js](https://nodejs.org/en/download/current) `>=22.18.0` and [pnpm](https://pnpm.io/installation), or [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+[Node.js](https://nodejs.org/en/download/current) `>=22.18.0` with [pnpm](https://pnpm.io/installation), or [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 ### Steps
 
@@ -60,6 +60,16 @@ pnpm dev
 docker compose up
 ```
 
+### Termux
+
+The default Turbopack does not natively run on Android. You need to download their fixed package:
+
+```bash
+pkg i turbopack
+```
+
+Restart your app and then continue using the [Node.js](#nodejs) method.
+
 ## Saving Changes
 
 After your changes are done, you need to update your fork.
@@ -79,40 +89,11 @@ git commit -m "Updated category Member"
 3\. Push changes to your fork:
 
 ```bash
-git push
+git push origin
 ```
 
-To send these changes for review, open your cloned fork on GitHub and click the `Open Pull Request` button.
+To send these changes for review, open your cloned fork on GitHub, and click the `Open Pull Request` button.
 
-## Where Things Live
+## Naviagation
 
-The site runs on [Fumadocs](https://fumadocs.dev) (Next.js), exported as a static build.
-
-| Path | What it is |
-| --- | --- |
-| `content/docs/` | Every page, as MDX. The URL matches the file path. |
-| `content/docs/(functions)/` | Function reference. The `(functions)` folder groups them in the sidebar without appearing in the URL — `Member/kick.mdx` is served at `/Member/kick`. |
-| `content/docs/**/meta.json` | Sidebar titles and page ordering for that folder. |
-| `components/` | `Badge`, `Arg`, and the Discord message components used in pages. |
-| `lib/remark/` | Build-time content rules: cooldown sections, `$function` auto-linking, cached remote images. |
-| `data/cooldowns.json` | Drives the generated "Function Cooldown" section on function pages. |
-
-### Writing a page
-
-Each page needs a `title` in its frontmatter — it renders as the page heading, so don't repeat it as an `# H1` in the body:
-
-```mdx
----
-title: "$myFunction"
----
-
-What the function does.
-
-::: is not available — use `<Callout>` and `<Accordion>` instead:
-
-<Callout type="info" title="Note">
-Something worth knowing.
-</Callout>
-```
-
-Because pages are MDX, a literal `{` or a stray `<` in prose must be escaped as `\{` and `\<`.
+All documentation files are stored at `/content/docs`.

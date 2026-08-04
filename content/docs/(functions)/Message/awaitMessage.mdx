@@ -6,7 +6,7 @@ The `$awaitMessage` function allows your bot to wait for a specific user's messa
 
 ## Usage
 
-```php
+```cc
 $awaitMessage[message;userid / everyone;timeout;return message ID instead of content]
 ```
 
@@ -35,7 +35,7 @@ The `timeout` parameter specifies how long the bot will wait for a user's messag
 
 This example sends the message "Are you tall?" and waits for the user who executed the command to respond.  It then displays the user's answer.
 
-```php
+```cc
 !!exec Your answer is: $awaitMessage[Are you tall?;$authorID]
 ```
 

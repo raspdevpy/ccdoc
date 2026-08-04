@@ -11,7 +11,7 @@ Here's how it's going to look like:
 Let's send a button users will use to open up the form.
 
 The button will be `blurple`, have a label `Apply` and an id `staff-app`.
-```php
+```cc
 !!exec $button[Apply;blurple;staff-app]
 ```
 
@@ -30,7 +30,7 @@ The button is meant to send a modal upon clicking, so let's use **$modal** to de
 * Reason
 * Pronouns
 
-```php
+```cc
 $modal[
     {title=Staff application}
     {id=staff-app}
@@ -76,7 +76,7 @@ Once we catch a submitted form, we need to do a few things:
 2. Send a report to a different channel
 3. Confirm the submission with an interaction reply
 
-```php
+```cc
 
 // Save answers to different variables
 $let[position;$modalAnswer[1]]

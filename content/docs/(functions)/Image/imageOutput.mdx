@@ -8,7 +8,7 @@ This function saves the current image being drawn into a file and returns the fi
 
 ## Usage
 
-```php
+```cc
 $imageOutput[type]
 ```
 
@@ -22,7 +22,7 @@ These examples assume you've already used functions like `$imageCreate` and othe
 
 **Example 1: Sending the image directly using `$image`**
 
-```php
+```cc
 $imageCreate[...] // Create the initial image (replace [...] with actual parameters)
 // ... Building the image using other $image functions ...
 $image[$imageOutput[png]] // Save as PNG and send the image using $image function
@@ -37,7 +37,7 @@ $image[$imageOutput[png]] // Save as PNG and send the image using $image functio
 
 **Example 2: Sending the image using `{image:...}` in `$sendMessage`**
 
-```php
+```cc
 $imageCreate[...] // Create the initial image (replace [...] with actual parameters)
 // ... Building the image using other $image functions ...
 $sendMessage[{image:$imageOutput[jpg]}] // Save as JPG and send the image using $sendMessage function

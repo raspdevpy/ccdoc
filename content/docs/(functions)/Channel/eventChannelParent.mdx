@@ -10,7 +10,7 @@ Returns the ID of the category/forum channel under which a channel or thread was
 
 Just use `$eventChannelParent` within the code of a channel-based trigger. It will be replaced with the category/forum's ID.
 
-```php
+```cc
 $eventChannelParent
 ```
 
@@ -18,7 +18,7 @@ $eventChannelParent
 
 Let's say you have a channel trigger that runs when a new channel is created. You can use `$eventChannelParent` to send a message to a specific log channel informing administrators which category the new channel was created under:
 
-```php
+```cc
 $channelSendMessage[LogChannelID;A new channel ($eventChannelName) was created under category ID: $eventChannelParent]
 ```
 

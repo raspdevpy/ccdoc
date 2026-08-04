@@ -8,13 +8,13 @@ This function returns the Discord ID of the user(s) who own or manage the bot.  
 
 ## Usage
 
-```php
+```cc
 $botOwnerID
 ```
 
 Returns a single ID if there's only one owner, or a comma-separated list of IDs if there are multiple owners (e.g., a team).
 
-```php
+```cc
 $botOwnerID[separator]
 ```
 
@@ -30,7 +30,7 @@ Returns a list of IDs separated by the specified `separator`.
 
 If the bot has a single owner, this will return their ID.
 
-```php
+```cc
 $botOwnerID
 ```
 
@@ -38,13 +38,13 @@ $botOwnerID
 
 If the bot belongs to a team, this will return the IDs of all team members separated by a pipe (|) character.
 
-```php
+```cc
 $botOwnerID[|]
 ```
 
 **Example 3: Get the bot owner IDs (team) with the default comma separator:**
 
-```php
+```cc
 $botOwnerID
 ```
 

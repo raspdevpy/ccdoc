@@ -1,13 +1,16 @@
-import { createMDX } from 'fumadocs-mdx/next';
+import { createMDX } from "fumadocs-mdx/next";
+import os from "node:os";
 
 const withMDX = createMDX();
 
-/** @type {import('next').NextConfig} */
+/** @type {import("next").NextConfig} */
 const config = {
-  output: 'export',
-  reactStrictMode: true,
-  // static export has no image optimizer; nginx serves the files as-is
-  images: { unoptimized: true },
+    output: "export",
+    reactStrictMode: true,
+    images: { unoptimized: true },
+    experimental: {
+        cpus: os.cpus().length,
+    },
 };
 
 export default withMDX(config);
