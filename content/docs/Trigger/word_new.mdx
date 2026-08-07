@@ -1,0 +1,423 @@
+
+## title: "On User Message Trigger"
+
+Message triggers allow you to execute a custom command when a message matches a specific condition.
+
+message triggers can detect different types of messages, such as messages starting with specific text, messages containing attachments, polls, mentions, Discord system messages, and more.
+
+## How message triggers work
+
+When creating a message trigger, you can choose how the message should be matched.
+
+The available options are:
+
+| Type                               | Description                                                |
+| ---------------------------------- | ---------------------------------------------------------- |
+| **Starts with**                    | Triggers when the message starts with the specified text   |
+| **Ends with**                      | Triggers when the message ends with the specified text     |
+| **Contains**                       | Triggers when the message contains the specified text      |
+| **Advanced (Regex)**               | Uses a regular expression to match the message             |
+| **Contains attachment**            | Triggers when the message contains an attachment           |
+| **Discord Pin Message**            | Triggers when Discord sends a pin notification             |
+| **Discord Thread Created Message** | Triggers when Discord sends a thread creation notification |
+| **Contains Poll**                  | Triggers when the message contains a poll                  |
+| **Has User Mention/Ping**          | Triggers when a user is mentioned in the message           |
+| **Forwarded Message**              | Triggers when a message is forwarded                       |
+| **Discord Automod Action Message** | Triggers when Discord AutoMod takes action on a message    |
+| **Every Message**                  | Triggers on every message                                  |
+
+
+## Starts with
+
+The **Starts with** option triggers when a message begins with the specified text.
+
+For example, if the trigger is:
+
+```text
+!hello
+```
+
+The command will trigger when a message starts with `!hello`.
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+!hello
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+Hello!
+</DiscordMessage>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+!hello everyone
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+Hello!
+</DiscordMessage>
+</DiscordMessages>
+
+However, a message where `!hello` appears later will not trigger the command.
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Hey !hello
+</DiscordMessage>
+</DiscordMessages>
+
+This is useful for traditional commands such as `!help`, `?report`, or `!hug`.
+
+
+## Ends with
+
+The **Ends with** option triggers when a message ends with the specified text.
+
+For example, with the trigger:
+
+```text
+good morning
+```
+
+The command will trigger when the message ends with `good morning`.
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Everyone, good morning
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+Good morning!
+</DiscordMessage>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Good morning
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+Good morning!
+</DiscordMessage>
+</DiscordMessages>
+
+A message where the text appears in the middle will not trigger the command.
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Good morning everyone!
+</DiscordMessage>
+</DiscordMessages>
+
+
+## Contains
+
+The **Contains** option triggers when the specified text appears anywhere in the message.
+
+For example, using:
+
+```text
+banana
+```
+
+will trigger whenever `banana` appears in the message.
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+I really like bananas!
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+🍌 Banana detected!
+</DiscordMessage>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Does anyone have a banana?
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+🍌 Banana detected!
+</DiscordMessage>
+</DiscordMessages>
+
+The text does not need to be at the beginning or end of the message.
+
+
+## Advanced (Regex)
+
+The **Advanced (Regex)** option allows you to use regular expressions for more advanced matching.
+
+Regex is useful when a normal text match is not enough.
+
+For example, the following expression detects a Discord user mention:
+
+```regex
+/<@!?\d{18,}>/
+```
+
+This can detect mentions such as:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Hey <DiscordMention type="user">Mido</DiscordMention>!
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+You've mentioned someone!
+</DiscordMessage>
+</DiscordMessages>
+
+Regex can be used to create much more advanced message matching rules.
+
+<Callout type="info" title={"What's regex?"}>
+
+Regex, short for **regular expression**, is a way of describing patterns in text.
+
+It is an advanced feature and is not required for most message triggers. If you only need to detect a specific word or phrase, **Starts with**, **Ends with**, or **Contains** will usually be easier.
+
+</Callout>
+
+
+## Contains attachment
+
+The **Contains attachment** option triggers when a message contains an attachment.
+
+This can be useful for creating commands that automatically react to images, files, videos, or other uploaded attachments.
+
+For example:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Check out this image!
+[attachment: image.png]
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+Nice image!
+</DiscordMessage>
+</DiscordMessages>
+
+The message does not need to contain any particular text.
+
+
+## Discord Pin Message
+
+The **Discord Pin Message** option triggers when Discord sends a system message indicating that a message was pinned.
+
+For example:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+[Discord system message: A message was pinned]
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+A message was pinned!
+</DiscordMessage>
+</DiscordMessages>
+
+This can be useful for automatically responding when someone pins a message.
+
+
+## Discord Thread Created Message
+
+The **Discord Thread Created Message** option triggers when Discord sends a system message indicating that a thread was created.
+
+For example:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+[Discord system message: A thread was created]
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+A new thread has been created!
+</DiscordMessage>
+</DiscordMessages>
+
+This can be useful for automatically responding to newly created threads.
+
+
+## Contains Poll
+
+The **Contains Poll** option triggers when a message contains a Discord poll.
+
+For example:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Which game should we play?
+
+[Poll]
+Minecraft
+Fortnite
+Terraria </DiscordMessage> <DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+Thanks for creating a poll! </DiscordMessage> </DiscordMessages>
+
+The command does not need to know the poll's question or answers.
+
+
+## Has User Mention/Ping
+
+The **Has User Mention/Ping** option triggers when a message contains a mention of a Discord user.
+
+For example:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Hey <DiscordMention type="user">Mido</DiscordMention>, check this out!
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+Someone was mentioned!
+</DiscordMessage>
+</DiscordMessages>
+
+The mention can appear anywhere in the message.
+
+For example, all of these can trigger the command:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMention type="user">Mido</DiscordMention> hello!
+</DiscordMessage>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Hello <DiscordMention type="user">Mido</DiscordMention>!
+</DiscordMessage>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Can someone help <DiscordMention type="user">Mido</DiscordMention>?
+</DiscordMessage>
+</DiscordMessages>
+
+
+## Forwarded Message
+
+The **Forwarded Message** option triggers when a message contains a forwarded Discord message.
+
+For example:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+[Forwarded message]
+
+This is the original message. </DiscordMessage> <DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+A message was forwarded! </DiscordMessage> </DiscordMessages>
+
+This allows you to create commands that react specifically to forwarded messages without needing to inspect their text.
+
+
+## Discord AutoMod Action Message
+
+The **Discord AutoMod Action Message** option triggers when Discord AutoMod takes action on a message.
+
+For example, when a user sends a message that violates an AutoMod rule:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+This message triggered AutoMod
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+AutoMod has detected a violation.
+</DiscordMessage>
+</DiscordMessages>
+
+The user who triggered the AutoMod action is considered the executor of the command.
+
+This allows you to build custom responses or logging systems around Discord AutoMod actions.
+
+
+## Every Message
+
+The **Every Message** option triggers for every message received by the bot.
+
+It does not matter what the message contains.
+
+For example, a command configured with **Every Message** could automatically respond to messages:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Hello everyone!
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+Have a great day!
+</DiscordMessage>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+Does anyone want to play?
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+Have a great day!
+</DiscordMessage>
+</DiscordMessages>
+
+This can be useful for automatic responses, message logging, counters, or other systems that need to process every message.
+
+<Callout type="error" title={"Use with caution"}>
+
+An **Every Message** trigger can execute very frequently in an active server.
+
+If you only want the command to run in specific channels, use the **Run only in** option to restrict where the command can execute.
+
+You should also consider using cooldowns to prevent excessive executions.
+
+</Callout>
+
+
+## Parameters
+
+Message triggers can still use message parameters.
+
+For example, suppose you create a **Starts with** trigger for:
+
+```text
+!hug
+```
+
+A user could send:
+
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+!hug <DiscordMention type="user">fajfaj</DiscordMention>
+</DiscordMessage>
+</DiscordMessages>
+
+The trigger matches `!hug`, while the remaining content can be accessed using the message functions.
+
+For example, `$message[2]` can be used to retrieve the first parameter after the trigger.
+
+This allows you to create commands such as:
+
+```text
+!hug @user
+!report @user reason
+!announce message
+```
+
+
+## Combining message conditions
+
+The different trigger types are designed for different kinds of message detection.
+
+For example:
+
+| Goal                             | Recommended type                   |
+| -------------------------------- | ---------------------------------- |
+| Message starts with `!help`      | **Starts with**                    |
+| Message ends with `thanks`       | **Ends with**                      |
+| Message contains `hello`         | **Contains**                       |
+| Detect a complex pattern         | **Advanced (Regex)**               |
+| Detect uploaded files            | **Contains attachment**            |
+| Detect Discord pin notifications | **Discord Pin Message**            |
+| Detect newly created threads     | **Discord Thread Created Message** |
+| Detect polls                     | **Contains Poll**                  |
+| Detect user mentions             | **Has User Mention/Ping**          |
+| Detect forwarded messages        | **Forwarded Message**              |
+| Detect AutoMod actions           | **Discord AutoMod Action Message** |
+| Process every message            | **Every Message**                  |
+
+Choose the simplest option that matches what you are trying to detect. Regex should generally only be used when the other matching options cannot accomplish the desired behavior.
+
+## Summary
+
+| Name                               | Example          | Explanation                                                |
+| ---------------------------------- | ---------------- | ---------------------------------------------------------- |
+| **Starts with**                    | `!hello`         | Triggers when the message starts with the specified text   |
+| **Ends with**                      | `hello`          | Triggers when the message ends with the specified text     |
+| **Contains**                       | `hello`          | Triggers when the message contains the specified text      |
+| **Advanced (Regex)**               | `/<@!?\d{18,}>/` | Uses a regular expression to match messages                |
+| **Contains attachment**            | —                | Triggers when a message contains an attachment             |
+| **Discord Pin Message**            | —                | Triggers when Discord sends a pin notification             |
+| **Discord Thread Created Message** | —                | Triggers when Discord sends a thread creation notification |
+| **Contains Poll**                  | —                | Triggers when a message contains a poll                    |
+| **Has User Mention/Ping**          | —                | Triggers when a message mentions a user                    |
+| **Forwarded Message**              | —                | Triggers when a message contains a forwarded message       |
+| **Discord AutoMod Action Message** | —                | Triggers when Discord AutoMod takes action                 |
+| **Every Message**                  | —                | Triggers for every message                                 |
+
+<Callout type="info" title={"Choose the right trigger"}>
+
+For normal text matching, prefer **Starts with**, **Ends with**, or **Contains**. Use **Advanced (Regex)** when you need more complex patterns, and use the specialized message types when you want to detect Discord-specific message features.
+
+</Callout>
