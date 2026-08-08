@@ -22,15 +22,15 @@ How to use $hasAnyPerm without user argument. Keep in mind that if the user does
 <DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
 !!exec I have managechannels OR manageroles permission: $hasAnyPerm[managechannels;manageroles]
 </DiscordMessage>
-<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+<DiscordMessageBot>
 I have managechannels OR manageroles permission: true
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
 !!exec I have managechannels permission: $hasAnyPerm[managechannels], I have manageroles permission: $hasAnyPerm[manageroles]
 </DiscordMessage>
-<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+<DiscordMessageBot>
 I have managechannels permission: true, I have manageroles permission: false
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 <Callout type="info" title={"Suggestion"}>

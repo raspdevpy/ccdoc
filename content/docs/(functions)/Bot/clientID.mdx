@@ -13,12 +13,12 @@ This function is commonly used to programmatically access the bot's ID within cu
 Here's an example of how it works in practice:
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $clientID
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 725721249652670555
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 As you can see, the command `!!exec $clientID` returns the bot's ID: `725721249652670555`.

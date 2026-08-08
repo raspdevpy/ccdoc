@@ -25,12 +25,12 @@ This will output an invite link for your bot with administrator permissions.
 **Example Output:**
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $getBotInvite[admin]
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 https://discord.com/oauth2/authorize?client_id=725721249652670555&#38;scope=bot+applications.commands&#38;permissions=8
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 <Callout type="info" title={"Permissions"}>

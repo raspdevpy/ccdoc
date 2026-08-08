@@ -8,12 +8,12 @@ Use `$getObjectProperty` or `$objectGet` to get a key value.
 #### Usage: `$objectCreate[JSON string]`
 <br/>
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $objectCreate[\{"Name":"Wiki","Level":20,"isExpert":true,"userId":327996784012034050}] Hi, my name is $objectget[Name]. Level $objectget[Level]. Am i expert? $objectget[isExpert]. My user id is $objectget[userId]
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 Hi, my name is Wiki. Level 20. Am i expert? true. My user id is 327996784012034050
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 <Callout type="info" title={"Saving Object inside Vars"}>

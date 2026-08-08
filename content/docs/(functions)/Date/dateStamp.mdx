@@ -15,12 +15,12 @@ This function allows you to retrieve the current timestamp in either millisecond
 **Example:**
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $dateStamp, $dateStamp[yes]
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 1630841854895, 1630841854
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 In this example, the first `$dateStamp` call returns the timestamp in milliseconds, while the second `$dateStamp[yes]` call returns the timestamp in seconds.

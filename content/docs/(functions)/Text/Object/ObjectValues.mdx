@@ -12,20 +12,20 @@ $ObjectValues[Seperator (optional, default:, );Nested Propery 1;Nested Property 
 
 ### Example (Get values of nested property):
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $ObjectSet[name;Mido]<br />$objectSet[age;300]<br />$ObjectValues<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 Mido, 300<br /><br />
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ### Example:
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $objectSet[user;name;Mido]<br />$objectSet[user;id;1234]<br />$objectSet[user;weapon;Sword]<br />$ObjectValues[/;user]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 Mido/1234/Sword
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

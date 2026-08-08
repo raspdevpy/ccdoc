@@ -22,10 +22,10 @@ How to return Content-Type from last request
 !!exec $httpRequest[https://api.example.com/]<br />
 Content-Type Header: $httpRequestHeader[content-type]
 </DiscordMessage>
-<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+<DiscordMessageBot>
 \{"message": "Api response!"}<br />
 Content-Type Header: application/json
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ##### Related functions: `$httpRequest` `$httpRequestStatus`

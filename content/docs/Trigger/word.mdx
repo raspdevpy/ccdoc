@@ -18,9 +18,9 @@ In the code part we will type `pong!`, so the bot will respond with it.
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 !ping
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessageBot>
 pong!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ## Using parameters
@@ -48,9 +48,9 @@ Here's how the final command should look like:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 ?hug <DiscordMention type="user">fajfaj</DiscordMention>
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessageBot>
 <DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ## Case insensitivity
@@ -70,21 +70,21 @@ Let's test different variations:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 ?hello
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessageBot>
 Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 ?HELLO
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessageBot>
 Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 ?HeLLo
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessageBot>
 Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
-</DiscordMessage>
+</DiscordMessageBot>
 
 </DiscordMessages>
 
@@ -109,21 +109,21 @@ Let's test it out:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 ?hug <DiscordMention type="user">fajfaj</DiscordMention>
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessageBot>
 <DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 ?abrazo <DiscordMention type="user">fajfaj</DiscordMention>
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessageBot>
 <DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 ?étreinte <DiscordMention type="user">fajfaj</DiscordMention>
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessageBot>
 <DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 Works as expected!
@@ -164,15 +164,15 @@ Let's try sending some mentions:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Hey <DiscordMention type="user">fajfaj</DiscordMention>! How is it going?
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessageBot>
 You've pinged someone!
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 <DiscordMention type="user">Mido</DiscordMention>, have you found your chocolate yet?
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessageBot>
 You've pinged someone!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 It detects all of them!
@@ -242,15 +242,15 @@ Let's see if we get any compliments:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 How is it going?
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessageBot>
 Cool message!
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Does anyone here have a monkey as a pet?
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessageBot>
 Wonderful punctuation!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 Amazing, we've just got complimented by the bot automatically.

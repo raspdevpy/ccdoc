@@ -10,19 +10,19 @@ To redirect any kind of errors to a specific channel, by default errors will app
 #### Example:
 <br/>
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 <DiscordMarkdown>
 !!exec $modifyChannelPerms[$authorID;-sendmessages;$channelID]
 $redirectErrors[Channel ID]
 </DiscordMarkdown>
-</DiscordMessage>
+</DiscordMessageUser>
 </DiscordMessages>
 
 <br/>
 <DiscordMessages>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessageBot>
 ❌ Invalid channel ID in $modifyChannelPerms[787695068306866198;-sendmessages;879380104768278608]
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 

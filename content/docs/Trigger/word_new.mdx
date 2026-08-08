@@ -52,15 +52,15 @@ The command will trigger when a message starts with `!hello`.
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 !hello
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Hello Member!
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 !hello everyone
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Hello Member!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 However, a message where `!hello` appears later will not trigger the command.
@@ -95,15 +95,15 @@ The command will trigger when the message ends with `good morning`.
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Everyone, good morning
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Good morning, Member!
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Good morning
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Good morning, Member!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 A message where the text appears in the middle will not trigger the command.
@@ -136,15 +136,15 @@ will trigger whenever `banana` appears in the message.
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 I really like bananas!
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 🍌 Banana detected!
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Does anyone have a banana?
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 🍌 Banana detected!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 The text does not need to be at the beginning or end of the message.
@@ -173,9 +173,9 @@ This can detect mentions such as:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Hey <DiscordMention type="user">Mido</DiscordMention>!
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 You have mentioned Mido!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 Regex can be used to create much more advanced message matching rules.
@@ -202,9 +202,9 @@ For example:
 Check out this image!
 [attachment: image.png]
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Nice image!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 The message does not need to contain any particular text.
@@ -220,9 +220,9 @@ For example:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 [Discord system message: A message was pinned]
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 A message was pinned!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 This can be useful for automatically responding when someone pins a message.
@@ -238,9 +238,9 @@ For example:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 [Discord system message: A thread was created]
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 A new thread has been created!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 This can be useful for automatically responding to newly created threads.
@@ -261,9 +261,9 @@ Minecraft
 Fortnite
 Terraria
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Thanks for creating a poll!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 The command does not need to know the poll's question or answers.
@@ -279,9 +279,9 @@ For example:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Hey <DiscordMention type="user">Mido</DiscordMention>, check this out!
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Someone was mentioned!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 The mention can appear anywhere in the message.
@@ -313,9 +313,9 @@ For example:
 
 This is the original message. 
 </DiscordMessage> 
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 A message was forwarded! 
-</DiscordMessage> 
+</DiscordMessageBot> 
 </DiscordMessages>
 
 This allows you to create commands that react specifically to forwarded messages without needing to inspect their text.
@@ -331,9 +331,9 @@ For example, when a user sends a message that violates an AutoMod rule:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 This message triggered AutoMod
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 AutoMod has detected a violation.
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 The user who triggered the AutoMod action is considered the executor of the command.
@@ -353,15 +353,15 @@ For example, a command configured with **Every Message** could automatically res
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Hello everyone!
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Have a great day!
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Does anyone want to play?
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Have a great day!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 This can be useful for automatic responses, message logging, counters, or other systems that need to process every message.

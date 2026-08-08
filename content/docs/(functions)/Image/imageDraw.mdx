@@ -32,11 +32,11 @@ For more detailed information on how Width and Height work within image manipula
 This example creates a 300x300 image, loads the author's avatar, draws it onto the created image, and then outputs the result.
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $imageCreate[300;300] // Create Image Frame<br />$imageLoadFromURL[avatar;$replaceText[$authorAvatar;webp;png]] // Load Avatar as "avatar"<br />$imageDraw[avatar;0;0;300;300] // Draw "avatar" at (0,0) with width 300 and height 300<br />$image[$imageOutput]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 <DiscordEmbed slot="embeds" image="https://i.imgur.com/m4m7QLo.png">
 </DiscordEmbed>
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

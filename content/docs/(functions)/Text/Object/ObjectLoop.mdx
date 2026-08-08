@@ -29,10 +29,10 @@ Array loops are limited to a certain number of cycles. These limits vary between
 
 ### Example:
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $objectSet[Mido;Sword]<br />$objectSet[Rake;Staff]<br />$objectLoop[name;weapon;index]\{<br />$index. $name has $weapon<br />}<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 1. Mido has Sword<br />2. Rake has Staff
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

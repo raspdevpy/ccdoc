@@ -18,30 +18,30 @@ $arraySort[Ascending (yes/no, default is no);Sort Type;array name (optional)]
 
 ### Example (Sort Occurrences):
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $textSplit[3.Mido<br />1.Azz<br />2.Rake<br />2.Rake<br />3.Mido<br />3.Mido<br />4.Finkz;<br />]<br />$arraySort[no;frequent]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 The sorted list is<br />3.Mido<br />2.Rake<br />4.Finkz<br />1.Azz<br /><br />
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ### Example (Sort Numerically):
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $textSplit[1. Azz<br />3.Mido<br />2.Rake<br />4.Finkz;<br />]<br />$arraySort[yes;num]<br />The sorted list is<br />$arrayJoin[<br />]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 The sorted list is<br />1. Azz<br />2.Rake<br />3.Mido<br />4.Finkz<br /><br />
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ### Example (Sort Alphabetically):
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $textSplit[3.Mido<br />1.Azz<br />2.Rake<br />4.Finkz;<br />]<br />$arraySort[yes;alpha]<br />The sorted list is<br />$arrayJoin[<br />]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 The sorted list is<br />1. Azz<br />4.Finkz<br />3.Mido<br />2.Rake
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

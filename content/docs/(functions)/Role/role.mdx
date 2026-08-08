@@ -41,12 +41,12 @@ Here's a list of the available properties you can use with the `$role` function:
 #### Example:
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $role[798789079070970;position]
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 2
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 This example retrieves the position of the role with the ID `798789079070970`. The bot responds with `2`, indicating the role's position in the role hierarchy.

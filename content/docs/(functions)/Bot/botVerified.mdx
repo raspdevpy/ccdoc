@@ -21,12 +21,12 @@ Here are a couple of examples demonstrating how `$botVerified` works.
 In this example, we check if the bot with the ID `725721249652670555` is verified.
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $botVerified[725721249652670555]
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 true
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 The function returns `true` because the bot with ID `725721249652670555` is verified.
@@ -36,12 +36,12 @@ The function returns `true` because the bot with ID `725721249652670555` is veri
 In this example, we check if the bot with the ID `582019849073590274` is verified.
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $botVerified[582019849073590274]
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 false
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 The function returns `false` because the bot with ID `582019849073590274` is not verified.

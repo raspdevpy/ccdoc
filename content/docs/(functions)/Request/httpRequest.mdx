@@ -64,12 +64,12 @@ For **Tier 4 and above**, the timeout is extended to **30 minutes**.
 ### Sending a JSON request
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $let[response;$httpRequest[My API URL;post;\{"name":"Mido"};Content-Type: application/json]]<br />Response is $response<br />Response Status is $httpRequestStatus<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 Response is \{"success":true}<br />Response Status is 200<br /><br />
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ## Notes

@@ -15,15 +15,15 @@ Returns the ID of the channel used. If no channel ID is specified, it defaults t
 Here are a few examples showcasing the `$channelUsed` function:
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $channelUsed[839090554205241394]
-</DiscordMessage>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+</DiscordMessageUser>
+<DiscordMessageUser>
 !!exec $channelUsed
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 839090554205241394
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 In the first example, the bot set the specified channel ID `839090554205241394` as the channel used.  In the second example, because no channel ID is provided, the bot returns the channel ID where the `!!exec` command was executed.

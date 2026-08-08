@@ -57,9 +57,9 @@ $math[1+1] = $mAtH[1+1] = $MATH[1+1]
 <DiscordMessage>
 !!exec $math[1+1] = $mAtH[1+1] = $MATH[1+1]
 </DiscordMessage>
-<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+<DiscordMessageBot>
 2 = 2 = 2
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 Function doesn't have to be closed at the same line where it was opened:
@@ -76,12 +76,12 @@ Click to reveal: ||$math[2^11]||]
 $description[What is 2^11?<br />
 Click to reveal: ||$math[2^11]||]
 </DiscordMessage>
-<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+<DiscordMessageBot>
 <DiscordEmbed embedTitle="Math question">
 What is 2^11?<br />
 Click to reveal: <code>2048</code>
 </DiscordEmbed>
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ## Function Actions
@@ -114,7 +114,7 @@ Example of using `$msg` with multiple arguments
 <DiscordMessage>
 !!exec Message content: $msg[$channelID;$messageID;content]
 </DiscordMessage>
-<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+<DiscordMessageBot>
 Message content: !!exec Message content: $msg[$channelID;$messageID;content]
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

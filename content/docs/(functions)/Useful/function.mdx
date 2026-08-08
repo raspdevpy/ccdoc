@@ -18,7 +18,7 @@ $endFunction
 Call the function, using `$callFunction`
 <br/>
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 <DiscordMarkdown>
 !!exec $function[printHello;name]
 <br />
@@ -27,16 +27,16 @@ Hello $name 👋
 $endFunction
 $callFunction[printhello;Mika]
 </DiscordMarkdown>
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 Hello Mika 👋
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 Call the function, using `$printHello`
 <br/>
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 <DiscordMarkdown>
 !!exec $function[printHello;name]
 <br />
@@ -45,10 +45,10 @@ Hello $name 👋
 $endFunction
 $printhello[Mika]
 </DiscordMarkdown>
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 Hello Mika 👋
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 <Callout type="info">

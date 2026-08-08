@@ -24,13 +24,13 @@ $imageLoadEmoji[id;Emoji]
 This example creates a 300x300 image, loads the `:cheese:` emoji, fills a gray rectangle, and then draws the cheese emoji on top.
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $imageCreate[300;300]<br />$imageLoadEmoji[mycheese;:cheese:]<br />$imageBorderRad[100]<br />$imageFill[gray;50;50;200;200]<br />$imageDraw[mycheese;100;100;100;100]<br />$image[$imageOutput]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 <DiscordEmbed slot="embeds" image="https://i.imgur.com/eixJUIX.png">
 </DiscordEmbed>
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 **Example 2: Loading and drawing both a standard and a custom emoji**
@@ -38,11 +38,11 @@ This example creates a 300x300 image, loads the `:cheese:` emoji, fills a gray r
 This example creates a 600x600 image, loads both a custom Discord emoji (using its ID) and the `:cheese:` emoji, and draws them both.
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $imageCreate[600;600]<br />$imageLoadEmoji[seed;&#60;:seed:1149808771888062605&#62;]<br />$imageLoadEmoji[cheese;:cheese:]<br />$imageBorderRad[100]<br />$imageFill[gray;50;200;200;200]<br />$imageFill[gray;350;200;200;200]<br />$imageDraw[cheese;100;250;100;100]<br />$imageDraw[seed;400;250;100;100]<br />$image[$imageOutput]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 <DiscordEmbed slot="embeds" image="https://i.imgur.com/m0ZkHyL.png">
 </DiscordEmbed>
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
