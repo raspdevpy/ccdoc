@@ -1,0 +1,33 @@
+---
+title: "$footer"
+---
+
+Adds a footer to a message embed with an optional icon url
+
+#### Usage: `$footer[text;icon url(optional)]`
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $footer[This is a fantastic embed footer]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordEmbed slot="embeds">
+<span slot="footer">This is a fantastic embed footer</span>
+</DiscordEmbed>
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="info" title={"Do you want to add an embed inside a Function as paramter like $sendmessage[text]"}>
+
+
+Use: `{footer: Your text here:icon url(optional)}`
+
+</Callout>
+
+<Callout type="error" title={"Please be aware!!"}>
+
+If you add any `:` in this function it will error! Check out [this](/Other/syntax)
+
+Link escapes are needed, use `\` to escape characters. Read [me](/Other/syntax) to see more
+
+</Callout>

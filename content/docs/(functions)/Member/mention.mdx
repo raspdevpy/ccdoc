@@ -1,0 +1,35 @@
+---
+title: "$mention"
+---
+
+Returns a mention of a user.
+
+## Usage
+
+```cc
+$mention[userID]
+```
+1. **userID** - (Optional) default value: `$authorID`. The ID of user to get mentioned.
+
+## Example
+
+#### Using $mention
+
+How to use $mention for author or other user
+
+<DiscordMessages>
+<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+!!exec Me: $mention<br />
+Other user: $mention[123456789123456789]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+Me: <DiscordMention highlight>User</DiscordMention><br />
+Other user: <DiscordMention>Other User</DiscordMention>
+</DiscordMessage>
+</DiscordMessages>
+
+##### Related functions: `$username` `$nickname`
+
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
+
+**Tags:** <Badge type="tip" text="member" vertical="middle" /> <Badge type="tip" text="ping" vertical="middle" /> <Badge type="tip" text="mention" vertical="middle" /> <Badge type="tip" text="author" vertical="middle" />

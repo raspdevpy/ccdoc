@@ -1,0 +1,60 @@
+---
+title: "$userBanner"
+---
+
+Returns the banner URL of a user.
+
+## Usage
+
+```cc
+$userBanner[userID]
+```
+1. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to return banner URL from. If no banner is found, returns `undefined`.
+
+## Example
+
+#### Banner is available
+
+How is the banner URL displayed when sent with text and without text
+
+<DiscordMessages>
+<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+!!exec With text: $userBanner
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+With text: https://cdn.discordapp.com/banners/287135364127129601/a_0c1e74ef99e35d10f868bd839066e022.png<br />
+<img src="https://cdn.discordapp.com/banners/287135364127129601/a_0c1e74ef99e35d10f868bd839066e022.png" alt="User Banner" style={{ verticalAlign: "text-bottom" }} />
+</DiscordMessage>
+<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+!!exec $userBanner
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+<img src="https://cdn.discordapp.com/banners/287135364127129601/a_0c1e74ef99e35d10f868bd839066e022.png" alt="User Banner" style={{ verticalAlign: "text-bottom" }} />
+</DiscordMessage>
+</DiscordMessages>
+
+#### Banner is not available
+
+What shows when user does not have banner
+
+<DiscordMessages>
+<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+!!exec $userBanner
+</DiscordMessage>
+<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+undefined
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="info" title={"Note"}>
+
+You can send the image as an attachment, so no link will be displayed. For this, you can use function `$attachment`.
+To display the avatar URL as plain text, either enclose the function in backticks (`` `$authorAvatar` ``) or angle brackets (`<$authorAvatar>`).
+
+</Callout>
+
+##### Related functions: `$attachment`
+
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle"/>
+
+**Tags:** <Badge type="tip" text="Image" vertical="middle"/> <Badge type="tip" text="Banner" vertical="middle"/> <Badge type="tip" text="Attachment" vertical="middle"/>

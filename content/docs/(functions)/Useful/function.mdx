@@ -1,0 +1,71 @@
+---
+title: "$function"
+---
+
+Create a user-defined function that can be called by $callFunction or $functionName
+
+
+#### Usage: 
+`$function[Function name;Param 1 (optional);Param 2...(optional)]`
+
+#### Example:
+```cc
+$function[printHello;name]
+    Hello $name
+$endFunction
+``` 
+
+Call the function, using `$callFunction`
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMarkdown>
+!!exec $function[printHello;name]
+<br />
+Hello $name 👋
+<br />
+$endFunction
+$callFunction[printhello;Mika]
+</DiscordMarkdown>
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Hello Mika 👋
+</DiscordMessage>
+</DiscordMessages>
+
+Call the function, using `$printHello`
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMarkdown>
+!!exec $function[printHello;name]
+<br />
+Hello $name 👋
+<br />
+$endFunction
+$printhello[Mika]
+</DiscordMarkdown>
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Hello Mika 👋
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="info">
+
+Code inside the function is isolated from outside, which means changing of variables, arrays, random,...won't effect the outside.\
+you can access outside temporary variables (assigned by `$let`) but you can't change them.
+
+</Callout>
+
+<Callout type="error">
+
+A function name can't start with number, and must be within [A-Z or a-z or _ or 0-9] for short format ($functionName)
+but if you are using $callFunction to call the function, any name is valid
+
+</Callout>
+
+**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" /> 
+
+**Tags:** <Badge type="tip" text="Function" vertical="middle" />  <Badge type="tip" text="Custom Functions" vertical="middle" />  <Badge type="tip" text="Nested code" vertical="middle" />
+

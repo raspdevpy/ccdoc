@@ -1,0 +1,24 @@
+---
+title: "$conditional"
+---
+
+return A if condition is true, B if condition is false
+
+## Usage
+
+```cc
+$conditional[condition;A;B]
+```
+
+### Example:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $conditional[$username==Mido;You are Mido;You are Rake]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+You are Mido<br /><br />
+</DiscordMessage>
+</DiscordMessages>
+
+### Output (if Rake run the command):
+You are Rake

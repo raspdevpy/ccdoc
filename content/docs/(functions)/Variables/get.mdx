@@ -1,0 +1,33 @@
+---
+title: "$get"
+---
+
+retrieve variable defined by `$let`
+
+## Usage: `$get[varname;value if not exists] or $varname`
+
+### Example 1:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $let[orange;10] <br/> $get[orange] or $orange
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+10 or 10
+</DiscordMessage>
+</DiscordMessages>
+
+### Example 2 (Use default value if not exists):
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec Your name is $get[name;Mido]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Your name is Mido
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="info" title={"Related Functions"}>
+
+Check out: `$let`
+
+</Callout>

@@ -1,0 +1,73 @@
+---
+title: "$parseTime"
+---
+
+Convert human-readable time strings into a duration. This function accepts a single duration or multiple durations combined into one expression, and can optionally return the result in a different unit.
+
+## Usage
+
+```cc
+$parseTime[time;unit?]
+```
+
+**Arguments:**
+
+* `time`: A time duration to convert. Supported units include:
+
+  * `ms` — milliseconds
+  * `s` — seconds
+  * `m` — minutes
+  * `h` — hours
+  * `d` — days
+  * `w` — weeks
+  * `M` — months (30 days)
+  * `y` — years (365 days)
+
+* `unit` *(optional)*: The unit to return. Supported values are `ms`, `s`, `m`, `h`, `d`, `w`, `M`, `y`, or their full names (such as `seconds`, `hours`, and `days`). Defaults to `ms`.
+
+Multiple durations can be combined by separating them with spaces. As a convenience, compact expressions without spaces are also supported.
+
+## Examples
+
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $parseTime[1m]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+60000
+</DiscordMessage>
+</DiscordMessages>
+
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $parseTime[1h 30m]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+5400000
+</DiscordMessage>
+</DiscordMessages>
+
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $parseTime[1h30m]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+5400000
+</DiscordMessage>
+</DiscordMessages>
+
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $parseTime[1h30m;m]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+90
+</DiscordMessage>
+</DiscordMessages>
+
+**Explanation:**
+
+* `$parseTime[1m]` converts 1 minute into `60000` milliseconds.
+* `$parseTime[1h 30m]` converts 1 hour and 30 minutes into `5400000` milliseconds.
+* `$parseTime[1h30m]` is interpreted the same way as `1h 30m` for convenience.
+* `$parseTime[1h30m;m]` returns the result in minutes instead of milliseconds.

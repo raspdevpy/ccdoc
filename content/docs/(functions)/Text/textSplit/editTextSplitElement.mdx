@@ -1,0 +1,25 @@
+---
+title: "$editTextSplitElement"
+---
+
+adds an element to an array from `$textsplit` or replaces the value by index of the split text from `$textsplit`
+
+#### Usage: `$editTextSplitElement[index;new value]`
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $textsplit[Wiki Rake; ] <br /> $editTextSplitElement[1;Mido] <br /> $arrayJoin[ ]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Mido Rake
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="error">
+
+This function got deprecated, use `$arraySet` instead 
+
+</Callout>
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+
+**Tags:** <Badge type="tip" text="textsplit" vertical="middle" /> <Badge type="tip" text="edit" vertical="middle" /> <Badge type="tip" text="array" vertical="middle" /> <Badge type="tip" text="element" vertical="middle" />

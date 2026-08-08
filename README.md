@@ -21,7 +21,7 @@ For larger changes involving many files, we recommend using your IDE and the dev
 ### Requirements
 
 [Git](https://git-scm.com/install/),  
-[Node.js](https://nodejs.org/en/download/current) `>=22.18.0` or [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+[Node.js](https://nodejs.org/en/download/current) `>=22.18.0` with [pnpm](https://pnpm.io/installation), or [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 ### Steps
 
@@ -43,13 +43,13 @@ git clone git@github.com:YOUR_USERNAME/ccdoc.git
 3\. Install dependencies:
  
 ```bash
-npm i
+pnpm install
 ```
 
 4\. Start the dev server and go to [localhost:8080](http://localhost:8080):
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 ### Docker Compose
@@ -59,6 +59,16 @@ npm run dev
 ```bash
 docker compose up
 ```
+
+### Termux
+
+The default Turbopack does not natively run on Android. You need to download their fixed package:
+
+```bash
+pkg i turbopack
+```
+
+Restart your app and then continue using the [Node.js](#nodejs) method.
 
 ## Saving Changes
 
@@ -79,7 +89,11 @@ git commit -m "Updated category Member"
 3\. Push changes to your fork:
 
 ```bash
-git push
+git push origin
 ```
 
-To send these changes for review, open your cloned fork on GitHub and click the `Open Pull Request` button.
+To send these changes for review, open your cloned fork on GitHub, and click the `Open Pull Request` button.
+
+## Naviagation
+
+All documentation files are stored at `/content/docs`.

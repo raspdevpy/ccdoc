@@ -6,6 +6,9 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
+      - /app/.next
     ports:
       - 8080:8080
-    command: npm run dev
+    command: pnpm dev
+    environment:
+      - NODE_ENV=development

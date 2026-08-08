@@ -1,0 +1,21 @@
+---
+title: "$userVarRank"
+---
+
+Return user var rank returned by $userleaderboard for a single user
+
+## Usage
+
+```cc
+$uservarRank[Variable name;Order Type (optional) (asc/desc, default is desc);User ID (optional)]
+```
+
+### Example:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec Your rank is $userVarRank[xp]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Your rank is 3
+</DiscordMessage>
+</DiscordMessages>

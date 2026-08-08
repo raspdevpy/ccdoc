@@ -1,0 +1,67 @@
+---
+title: "Report command"
+---
+
+Here's a step-by-step instruction on how to create a simple report command.
+
+## 1. Setting trigger
+Users are meant to report using a word command `!report`, so let's set a corresponding trigger
+
+![!report trigger](https://cdn.discordapp.com/attachments/957286111250624552/1100494691721560116/image.png)
+
+## 2. Getting user ID
+Let's begin by loading the ID of provided user. For that we will use a combination of two functions:
+
+* `$message` - to load user input
+* `$findMember` - to get the id regardless of input format
+
+and save them in a `$let` variable.
+```cc
+// $message[1] returns the first parameter
+// $findMember[...;no] returns user id or undefined 
+$let[reportedUser;$findMember[$message[1];no]]
+```
+
+## 3. Loading reason
+Users should be able to describe what behavior they want to report, let's save the rest of parameters to a new variable.
+```cc
+$let[reason;$message[2+]]
+```
+
+## 4. Send report
+As we have all data stored and ready, we will procceed to send the report. For that we will use:
+
+* `$channelID` - to change channel name to ID
+* `$channelSendMessage` - to send a message to a different channel
+
+```cc
+$let[reportsChannel;$channelID[reports]]
+$channelSendMessage[$reportsChannel;$mention has reported <@!$reportedUser>, for: $reason.
+]
+```
+
+## 5. Confirmation message
+So far, the command is sending a correct message to a different channel. Let's also send a message to the reporting user.
+```cc
+$mention you report has been submitted, thank you for keeping our community safe.
+```
+
+### Result
+<DiscordMessages>
+<DiscordMessage author="Member" roleColor="#ffcc9a">
+!report <DiscordMention type="user">fajfaj</DiscordMention> breaking server rule #5
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMention type="user" highlight="true">Member</DiscordMention> your report has been submitted, thank you for keeping our community safe.
+</DiscordMessage>
+</DiscordMessages>
+
+Meanwhile in #reports
+<DiscordMessages>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMention type="user" highlight="false">Member</DiscordMention> has reported <DiscordMention type="user">fajfaj</DiscordMention>, for breaking server rule #5
+</DiscordMessage>
+</DiscordMessages>
+
+### 🎉 Congrats!
+You've passed the course with grade A!

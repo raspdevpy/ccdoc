@@ -1,0 +1,43 @@
+---
+title: "v1.x (Current)"
+---
+
+## v1.6.0 (Beta)
+> Release Date: TBD
+#### ✨ Improvements
+
+* Support for combined duration expressions in `$parseTime` (e.g. `1h30m` and `1h 30m`).
+* Support for specifying the output unit in `$parseTime` (`ms`, `s`, `m`, `h`, `d`, `w`, `M`, `y`).
+* New trigger for upvoting with a referral link, [learn more here](/Trigger/upvote).
+* New functions `$upvoteTime` and `$upvoteReferralUserID` for the new upvote trigger.
+* Added a **Custom** option for Custom Bot status (Tier 4+) in **Dashboard > Premium**.
+* Improved the Word Trigger UI with more intuitive options such as **Starts With**. New commands use the updated system while maintaining backward compatibility.
+* Support for Forwarded Messages in the new Word Trigger.
+* Support for User Mention/Ping in the new Word Trigger.
+* `$msg` now supports forward-related options such as `isforward`, `forwardmsgid`, `forwardsvid`, and `forwardchid`.
+* `$message` now returns the forwarded message content when the message is a forwarded message.
+* New trigger for User Commands (Context Menu), [learn more here](/Trigger/app_cmd_user).
+* New trigger for Message Commands (Context Menu), [learn more here](/Trigger/app_cmd_message).
+* New function `$eventTargetID` to retrieve the User ID or Message ID for the new User Command and Message Command triggers.
+* For testing purposes, the `emit` command now supports the Upvote event. Use `[prefix]emit upvote`.
+
+#### 🐛 Fixes
+* `$serverCount` and `$allMembersCount` return the correct numbers for custom bots (Tier 3+)
+* Fix for message fails to edit if used some curl message like \{color} inside `$editIn`
+
+
+## v1.5.0 (Main)
+> Release Date: 26 July 2026
+#### ✨ Improvements
+
+* Increased **referral vote reward** from **0.4 → 0.5 credits**.
+* Added the new **`!!ping`** command to check bot latency for public use.
+* Refreshed the UI for **`!!debug`**, **`!!info`**, **`!!help`**, and **`!!commands`**.
+
+#### 🐛 Fixes
+
+* Fixed **`$newTicket`** not adding the user to newly created ticket channels.
+
+#### 📚 Changes
+
+* Removed **`!!doc`**. Use **`!!func`** to search the documentation instead.

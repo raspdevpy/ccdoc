@@ -1,0 +1,28 @@
+---
+title: "$addUsersToThread"
+---
+
+Adds one or more users to a thread.
+
+## Usage
+
+```cc
+$addUsersToThread[Thread ID;User 1 ID;User 2 ID;User 3 ID....]
+```
+
+**Thread ID** - ID of the thread where you want to add the user.
+**User ID** - User IDs to add.
+
+### Example
+
+Add one user
+
+```cc
+$addUsersToThread[1024373454578917426;$authorID]
+```
+
+Add multiple users
+
+```cc
+$addUsersToThread[1024373454578917426;$authorID;788361834360864808]
+```

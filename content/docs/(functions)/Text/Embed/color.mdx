@@ -1,0 +1,50 @@
+---
+title: "$color"
+---
+
+sets the color of the embed
+
+## Usage
+`$color[Hex or Color Name]`
+
+## Accepted Color Names
+Check this [page](/CodeReferences/ref.embed.colors)
+
+## Example 1: Using it in function format
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $color[#0099ff]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordEmbed slot="embeds" borderColor="#0099ff">
+</DiscordEmbed>
+</DiscordMessage>
+</DiscordMessages>
+
+## Example 2: Using In Curl Format
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $sendMessage[<br />\{desc:You are awesome}<br />\{color:#0099ff}<br />]
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordEmbed slot="embeds" borderColor="#0099ff" description="">
+You are awesome
+</DiscordEmbed>
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="info" title={"To color an embed inside a function like $sendmessage[text]"}>
+
+
+Use: `{color:hex or colorname or RANDOM or TRANSPARENT}`
+Example: `{color:#0099ff}`
+
+</Callout>
+
+<Callout type="error" title={"Please be aware!!"}>
+
+If you add any `:` in this function it will error! Check out [this](/Other/syntax)
+
+</Callout>

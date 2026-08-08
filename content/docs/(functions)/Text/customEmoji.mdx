@@ -1,0 +1,33 @@
+---
+title: "$customEmoji"
+---
+
+Returns a custom emoji
+
+## Usage
+
+```cc
+$customEmoji[name or id]
+```
+
+### Example (Using Custom Emoji Name):
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $customEmoji[yes]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordEmbed slot="embeds" image="https://i.imgur.com/E174Ey0.png"><br />
+</DiscordEmbed>
+</DiscordMessage>
+</DiscordMessages>
+
+### Example (Using Custom Emoji ID):
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $customEmoji[833252579873259521]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordEmbed slot="embeds" image="https://i.imgur.com/7t3gZNn.png"><br />
+</DiscordEmbed>
+</DiscordMessage>
+</DiscordMessages>

@@ -1,0 +1,31 @@
+---
+title: "$isChannelMention"
+---
+
+To check if text provided satisfy discord channel mention format or not
+
+## Usage
+
+```cc
+$isChannelMention[Text]
+```
+
+### Example:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $isChannelMention[abc]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+false<br /><br />
+</DiscordMessage>
+</DiscordMessages>
+
+### Example:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $isChannelMention[&#60;#1234567890&#62;]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+true
+</DiscordMessage>
+</DiscordMessages>

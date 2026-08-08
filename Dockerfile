@@ -2,16 +2,17 @@
 FROM node:24-alpine AS builder
 WORKDIR /app
 
-COPY package*.json ./
-RUN npm ci  --legacy-peer-deps
+RUN npm i -g pnpm@11
+
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+RUN pnpm install --frozen-lockfile
 
 COPY . .
-# adjust the build command if your project uses a different script
-RUN npm run build
+RUN pnpm build
 
 # Stage 2 — serve with nginx
 FROM nginx:1.25-alpine
-ARG BUILD_DIR=guide/.vuepress/dist
+ARG BUILD_DIR=out
 
 # Remove default config and add a simple SPA-friendly config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
@@ -21,3 +22,4 @@ COPY --from=builder /app/${BUILD_DIR} /usr/share/nginx/html
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
+

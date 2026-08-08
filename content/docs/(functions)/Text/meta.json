@@ -1,0 +1,16 @@
+{
+    "title": "Text Functions",
+    "pages": [
+        "...",
+        "!Condition",
+        "!Embed",
+        "!Components",
+        "!Math",
+        "!textSplit",
+        "!Array",
+        "!Object",
+        "!isandhas",
+        "!only",
+        "!Regex"
+    ]
+}

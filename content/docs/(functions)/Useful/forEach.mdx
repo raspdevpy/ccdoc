@@ -1,0 +1,69 @@
+---
+title: "$forEach"
+---
+
+Will loop over a list and every loop it will take an item and assign it inside varname accessible by $get[varname] or $varname
+
+## Usage: 
+```cc
+$forEach[varname;LIST (ex: mido rake azz);Separator (Optional, default is space)]
+```
+## Loop Limits
+Loops in this function are limited to a certain number of cycles. These limits vary between different tiers of premium.
+| Tier         | Limit |
+| :-------     | :---  |
+| 0 (Free)     | 10    |
+| 3 (Freemium) | 15    |
+| 4 (Pro)      | 30    |
+| 5 (Ultra)    | 60    |
+
+## Example:
+```cc
+$forEach[member;Rake, Mido, Mika, Azz, Felix, Flinkz, Wiki, Ddk;, ]
+$get[member], is one of our Staff Members!
+$endForEach
+``` 
+
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMarkdown>
+!!exec $forEach[member;Rake, Mido, Azz, Mika, Felix, Flinkz, Wiki, Ddk;, ]
+<br />
+$get[member], is one of our Staff Members!
+<br />
+$endForEach
+</DiscordMarkdown>
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMarkdown>
+Rake, is one of our Staff Members!
+<br />
+Mido, is one of our Staff Members!
+<br />
+Azz, is one of our Staff Members!
+<br />
+Mika, is one of our Staff Members!
+<br />
+Felix, is one of our Staff Members!
+<br />
+Flinkz, is one of our Staff Members!
+<br />
+Wiki, is one of our Staff Members!
+<br />
+Ddk, is one of our Staff Members!
+<br />
+</DiscordMarkdown>
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="info">
+
+This can be used with `$seq`!
+
+</Callout>
+
+**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" /> 
+
+**Tags:** <Badge type="tip" text="loop" vertical="middle" />  <Badge type="tip" text="forEach" vertical="middle" />  <Badge type="tip" text="for each object in list" vertical="middle" /> 
+

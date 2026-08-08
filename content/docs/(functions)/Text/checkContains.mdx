@@ -1,0 +1,31 @@
+---
+title: "$checkContains"
+---
+
+checks if given message contains any of the texts
+
+## Usage
+
+```cc
+$checkContains[message;text1;text2;...]
+```
+
+### Example 1:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $checkContains[Mido is good;good]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+true<br /><br />
+</DiscordMessage>
+</DiscordMessages>
+
+### Example 2:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $checkContains[Mido is good;bad]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+false
+</DiscordMessage>
+</DiscordMessages>

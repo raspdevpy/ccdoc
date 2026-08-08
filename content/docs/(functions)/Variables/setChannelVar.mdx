@@ -1,0 +1,29 @@
+---
+title: "$setChannelVar"
+---
+
+Sets a channel variable value.
+
+#### Usage: `$setChannelVar[variable;value;channelID (optional)]`
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $setChannelVar[Creator;Mido;$channelID]
+</DiscordMessage>
+</DiscordMessages>
+
+or for current Channel
+
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $setChannelVar[Creator;Mido]
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="info" title={"Related Functions"}>
+
+Check out: `$getChannelVar`
+
+Check out: `$deleteChannelVar`
+
+</Callout>

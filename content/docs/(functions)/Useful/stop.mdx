@@ -1,0 +1,52 @@
+---
+title: "$stop"
+---
+
+This function will cause the interpetender to stop the command execution & return a message if wanted.
+
+#### Usage: 
+`$stop[Message (optional)]`
+
+#### Example:
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMarkdown>
+!!exec $sendMessage[This message will be send;no]
+<br />
+$stop[This funtion will cause the interpetender to stop the code]
+<br />
+$sendMesssage[This message won't be send;no]
+</DiscordMarkdown>
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+This message will be send
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+This funtion will cause the interpetender to stop the code
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="info" title={"Note"}>
+
+You can send embed using [Message Curl Format](/CodeReferences/ref.message_curl_format)
+
+</Callout>
+
+<Callout type="error" title={"Watch Out!!"}>
+
+Using plain text in your code, like below will **NOT** work!!
+
+This code doesn't work:
+```cc
+This is plain text before the stop function
+$stop
+This is plain text after the stop function
+```
+^^ - This will not send anything! 
+
+</Callout>
+
+**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" /> 
+
+**Tags:** <Badge type="tip" text="Stop" vertical="middle" />  <Badge type="tip" text="Cancel" vertical="middle" />  <Badge type="tip" text="Error" vertical="middle" />  <Badge type="tip" text="End Execution" vertical="middle" />

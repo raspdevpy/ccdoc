@@ -1,0 +1,31 @@
+---
+title: "$textLength"
+---
+
+Counts character of a text, or the user's message.
+
+## Usage
+
+```cc
+$textLength or $textLength[text]
+```
+
+### Example:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $textLength[Mido]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+4<br /><br />
+</DiscordMessage>
+</DiscordMessages>
+
+### Example:
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+!!exec $textLength[Hello]<br /><br />
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+6
+</DiscordMessage>
+</DiscordMessages>

@@ -1,0 +1,60 @@
+---
+title: "$callFunction"
+---
+
+To call a user-defined function created with `$function`
+
+
+#### Usage: 
+`$callFunction[Function Name;Argument 1 (optional);Argument 2....(optional)]`
+
+#### Example:
+```cc
+$callFunction[printHello;Mika]
+``` 
+
+Call the function, using `$callFunction`
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMarkdown>
+!!exec $function[printHello;name]
+<br />
+Hello $name 👋
+<br />
+$endFunction
+$callFunction[printhello;Mika]
+</DiscordMarkdown>
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Hello Mika 👋
+</DiscordMessage>
+</DiscordMessages>
+
+Call the function, using `$printHello`
+<br/>
+<DiscordMessages>
+<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMarkdown>
+!!exec $function[printHello;name]
+<br />
+Hello $name 👋
+<br />
+$endFunction
+$printhello[Mika]
+</DiscordMarkdown>
+</DiscordMessage>
+<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+Hello Mika 👋
+</DiscordMessage>
+</DiscordMessages>
+
+<Callout type="error">
+
+A function name can't start with number, and must be within [A-Z or a-z or _ or 0-9]
+
+</Callout>
+
+**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" /> 
+
+**Tags:** <Badge type="tip" text="Function" vertical="middle" />  <Badge type="tip" text="Custom Functions" vertical="middle" />  <Badge type="tip" text="Nested code" vertical="middle" />

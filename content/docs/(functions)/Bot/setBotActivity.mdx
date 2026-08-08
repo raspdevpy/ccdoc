@@ -1,0 +1,28 @@
+---
+title: "$setBotActivity"
+---
+
+<Badge type="danger" text="Tier 4+ ONLY!" vertical="middle" />
+
+Set your bot's activity status (the text displayed under the bot's name).
+
+## Usage
+
+```cc
+$setBotActivity[activity type;activity text]
+```
+
+**Parameters:**
+
+*   `activity type`:  The type of activity.  Valid options are: `playing`, `streaming`, `listening`, `watching`, `custom` and `competing`.
+*   `activity text`: The text to display as the bot's activity.
+
+## Examples
+
+**Example:** Sets the bot's activity to "Listening to The Cosmos".
+
+```cc
+$setBotActivity[listening;The Cosmos]
+```
+
+![](https://i.imgur.com/KyYqUGU.png)
