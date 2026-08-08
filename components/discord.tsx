@@ -75,9 +75,21 @@ export function DiscordEmbed({
 }: DiscordEmbedProps) {
   const { resolvedTheme } = useTheme();
 
-  const child = Array.isArray(children) && children.length === 1
-    ? children[0]
-    : children;
+  const childArray = React.Children.toArray(children);
+
+  // Empty embed: preserve it as-is.
+  if (childArray.length === 0) {
+    return (
+      <RawEmbed
+        lightTheme={resolvedTheme === 'light'}
+        {...props}
+      />
+    );
+  }
+
+  const child = childArray.length === 1
+    ? childArray[0]
+    : null;
 
   const isParagraph =
     React.isValidElement(child) &&
@@ -85,9 +97,10 @@ export function DiscordEmbed({
 
   const description = isParagraph
     ? child.props.children
-    : child;
+    : children;
 
   const isPlainContent =
+    isParagraph ||
     typeof description === 'string' ||
     typeof description === 'number';
 
@@ -96,7 +109,7 @@ export function DiscordEmbed({
       lightTheme={resolvedTheme === 'light'}
       {...props}
     >
-      {isPlainContent || isParagraph ? (
+      {isPlainContent ? (
         <DiscordEmbedDescription slot="description">
           {description}
         </DiscordEmbedDescription>
