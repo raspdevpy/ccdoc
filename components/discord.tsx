@@ -96,7 +96,7 @@ export function DiscordEmbed({
     child.type === 'p';
 
   const description = isParagraph
-    ? child.props.children
+    ? (child.props as { children?: ReactNode }).children
     : children;
 
   const isPlainContent =
