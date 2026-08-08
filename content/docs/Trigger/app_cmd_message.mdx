@@ -28,6 +28,7 @@ The command will appear as **Report Message** in the message's context menu.
 
 ## Example
 
+
 Create a new custom command and set its **Trigger Type** to **On Message Command (Context Menu)**.
 
 Set the trigger to:
@@ -44,7 +45,10 @@ For example:
 $interactionReply[Message reported successfully!]
 ```
 
+![](/images/guide/app-msg-cmd/app_user_cmd_example.png)
+
 The selected message can be accessed using `$eventTargetID` or `$messageID`.
+
 
 You can also use `$msg` to get information about the selected message, such as its author or content.
 
