@@ -1,9 +1,13 @@
-
-## title: "On User Message Trigger"
+---
+title: "On User Message Trigger"
+---
 
 Message triggers allow you to execute a custom command when a message matches a specific condition.
 
 message triggers can detect different types of messages, such as messages starting with specific text, messages containing attachments, polls, mentions, Discord system messages, and more.
+
+## Example
+![](/images/guide/word-new-trigger/word_new_contains.png)
 
 ## How message triggers work
 
@@ -33,8 +37,13 @@ The **Starts with** option triggers when a message begins with the specified tex
 
 For example, if the trigger is:
 
-```text
+```php
 !hello
+```
+
+and if the response code is
+```php
+Hello $username!
 ```
 
 The command will trigger when a message starts with `!hello`.
@@ -44,13 +53,13 @@ The command will trigger when a message starts with `!hello`.
 !hello
 </DiscordMessage>
 <DiscordMessage bot author="Custom Command" roleColor="#0099ff">
-Hello!
+Hello Member!
 </DiscordMessage>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 !hello everyone
 </DiscordMessage>
 <DiscordMessage bot author="Custom Command" roleColor="#0099ff">
-Hello!
+Hello Member!
 </DiscordMessage>
 </DiscordMessages>
 
@@ -71,8 +80,13 @@ The **Ends with** option triggers when a message ends with the specified text.
 
 For example, with the trigger:
 
-```text
+```php
 good morning
+```
+
+and if the response code is
+```php
+Good morning, $username!
 ```
 
 The command will trigger when the message ends with `good morning`.
@@ -82,13 +96,13 @@ The command will trigger when the message ends with `good morning`.
 Everyone, good morning
 </DiscordMessage>
 <DiscordMessage bot author="Custom Command" roleColor="#0099ff">
-Good morning!
+Good morning, Member!
 </DiscordMessage>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Good morning
 </DiscordMessage>
 <DiscordMessage bot author="Custom Command" roleColor="#0099ff">
-Good morning!
+Good morning, Member!
 </DiscordMessage>
 </DiscordMessages>
 
@@ -107,8 +121,13 @@ The **Contains** option triggers when the specified text appears anywhere in the
 
 For example, using:
 
-```text
+```php
 banana
+```
+
+and if the response code is
+```php
+🍌 Banana detected!
 ```
 
 will trigger whenever `banana` appears in the message.
@@ -143,6 +162,11 @@ For example, the following expression detects a Discord user mention:
 /<@!?\d{18,}>/
 ```
 
+and if the response code is
+```php
+You have mentioned $username[$mentioned]! 
+```
+
 This can detect mentions such as:
 
 <DiscordMessages>
@@ -150,7 +174,7 @@ This can detect mentions such as:
 Hey <DiscordMention type="user">Mido</DiscordMention>!
 </DiscordMessage>
 <DiscordMessage bot author="Custom Command" roleColor="#0099ff">
-You've mentioned someone!
+You have mentioned Mido!
 </DiscordMessage>
 </DiscordMessages>
 
@@ -235,8 +259,12 @@ Which game should we play?
 [Poll]
 Minecraft
 Fortnite
-Terraria </DiscordMessage> <DiscordMessage bot author="Custom Command" roleColor="#0099ff">
-Thanks for creating a poll! </DiscordMessage> </DiscordMessages>
+Terraria
+</DiscordMessage>
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+Thanks for creating a poll!
+</DiscordMessage>
+</DiscordMessages>
 
 The command does not need to know the poll's question or answers.
 
@@ -283,8 +311,12 @@ For example:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 [Forwarded message]
 
-This is the original message. </DiscordMessage> <DiscordMessage bot author="Custom Command" roleColor="#0099ff">
-A message was forwarded! </DiscordMessage> </DiscordMessages>
+This is the original message. 
+</DiscordMessage> 
+<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+A message was forwarded! 
+</DiscordMessage> 
+</DiscordMessages>
 
 This allows you to create commands that react specifically to forwarded messages without needing to inspect their text.
 
@@ -347,33 +379,71 @@ You should also consider using cooldowns to prevent excessive executions.
 
 ## Parameters
 
-Message triggers can still use message parameters.
+Message parameters are separated by spaces and can be accessed using the `$message[]` function.
 
-For example, suppose you create a **Starts with** trigger for:
+For example, if a user sends:
 
-```text
-!hug
-```
-
-A user could send:
-
-<DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
-!hug <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessage>
-</DiscordMessages>
-
-The trigger matches `!hug`, while the remaining content can be accessed using the message functions.
-
-For example, `$message[2]` can be used to retrieve the first parameter after the trigger.
-
-This allows you to create commands such as:
-
-```text
+```php
 !hug @user
-!report @user reason
-!announce message
 ```
+
+The message is split into parameters:
+
+* `$message[1]` → `!hug`
+* `$message[2]` → `@user`
+
+Each parameter is assigned a number based on its position in the message:
+
+```php
+!hug hello world
+ │    │     │
+ │    │     └── $message[3]
+ │    └──────── $message[2]
+ └───────────── $message[1]
+```
+
+You can also use `+` to get a parameter **and everything after it**.
+
+For example:
+
+```php
+!announce Hello everyone, welcome!
+```
+
+* `$message[1]` → `!announce`
+* `$message[2]` → `Hello`
+* `$message[2+]` → `Hello everyone, welcome!`
+* `$message[3+]` → `everyone, welcome!`
+
+This is useful when you want to accept a message or sentence as a single parameter.
+
+For example:
+
+```php
+!hug @user
+!report @user spam in the chat
+!announce Hello everyone, welcome to the server!
+```
+
+For `!report @user spam in the chat`, you could use:
+
+```php
+$message[2]  → @user
+$message[3+] → spam in the chat
+```
+
+In short:
+
+```php
+$message[1]  → first word
+$message[2]  → second word
+$message[3]  → third word
+$message[n]  → nth word
+
+$message[2+] → second word + everything after it
+$message[3+] → third word + everything after it
+```
+
 
 
 ## Combining message conditions
