@@ -18,7 +18,7 @@ Anything in the code that isn't a function is considered text.
 
 ### Example
 
-```php
+```cc
 Hello $username, how are you?
 ```
 
@@ -26,7 +26,7 @@ Hello $username, how are you?
 - `$username` - Function
 - `, how are you?` - Text
 
-```php
+```cc
 $interactionReply[Hello there]
 ```
 
@@ -49,7 +49,7 @@ All functions can be either executed by writing a command in the dashboard, or u
 
 Function case insensitivity
 
-```php
+```cc
 $math[1+1] = $mAtH[1+1] = $MATH[1+1]
 ```
 
@@ -64,7 +64,7 @@ $math[1+1] = $mAtH[1+1] = $MATH[1+1]
 
 Function doesn't have to be closed at the same line where it was opened:
 
-```php
+```cc
 $title[Math question]
 $description[What is 2^11?
 Click to reveal: ||$math[2^11]||]
@@ -96,7 +96,7 @@ Functions performs one of these three actions:
 
 Some functions require multiple arguments. Arguments can also be required or optional.
 
-```php
+```cc
 $msg[Channel ID;Message ID;Option;Additional 1;Additional 2]
 ```
 

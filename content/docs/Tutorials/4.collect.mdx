@@ -35,7 +35,7 @@ The reward that users will receive is 100$ with the [template economy](/Guide/4.
 
 Let's get a user's balance and store it in a temporary variable called `bal`:
 
-```php
+```cc
 $let[bal;$getUserVar[money]]
 ```
 
@@ -43,7 +43,7 @@ $let[bal;$getUserVar[money]]
 
 Next, we'll add 100$ to the balance:
 
-```php
+```cc
 $let[bal;$math[$bal+100]]
 ```
 
@@ -51,7 +51,7 @@ $let[bal;$math[$bal+100]]
 
 Now that we have the new balance, let's overwrite the current balance with the new one:
 
-```php
+```cc
 $setUserVar[money;$bal]
 ```
 
@@ -61,7 +61,7 @@ At this point, the command will successfully increase the balance, but we want t
 
 In order to prevent users from collecting multiple rewards, we need to save information about whether each user has already used the command.
 
-```php
+```cc
 $setUserVar[hasCollected;true]
 ```
 
@@ -69,7 +69,7 @@ $setUserVar[hasCollected;true]
 
 Now that we have a variable called `hasCollected` that returns whether the user has already collected the reward, let's use it to prevent users from collecting the same reward multiple times by putting this code at the beginning of the command:
 
-```php
+```cc
 $onlyIf[$getUserVar[hasCollected]!=true;You cannot collect the same reward more than once!]
 ```
 

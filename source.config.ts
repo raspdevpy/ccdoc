@@ -4,6 +4,7 @@ import type { ShikiTransformer } from "shiki";
 import { remarkCooldowns } from "./lib/remark/cooldowns";
 import { remarkFunctionLinks } from "./lib/remark/function-links";
 import { remarkCachedImages } from "./lib/remark/images";
+import { cclang, cc_dark, cc_light } from "./lib/cclang";
 
 const transformerLineNumbers: ShikiTransformer = {
     name: "shiki-transformer-line-numbers",
@@ -28,10 +29,16 @@ export default defineConfig({
 
         rehypeCodeOptions: {
             ...rehypeCodeDefaultOptions,
-            themes: { light: "github-light", dark: "github-dark" },
+            themes: {
+                light: cc_light,
+                dark: cc_dark,
+            },
             transformers: [
                 ...(rehypeCodeDefaultOptions.transformers ?? []),
                 transformerLineNumbers,
+            ],
+            langs: [
+                cclang,
             ],
         },
     },

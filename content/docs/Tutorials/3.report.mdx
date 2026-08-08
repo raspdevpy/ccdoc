@@ -16,7 +16,7 @@ Let's begin by loading the ID of provided user. For that we will use a combinati
 * `$findMember` - to get the id regardless of input format
 
 and save them in a `$let` variable.
-```php
+```cc
 // $message[1] returns the first parameter
 // $findMember[...;no] returns user id or undefined 
 $let[reportedUser;$findMember[$message[1];no]]
@@ -24,7 +24,7 @@ $let[reportedUser;$findMember[$message[1];no]]
 
 ## 3. Loading reason
 Users should be able to describe what behavior they want to report, let's save the rest of parameters to a new variable.
-```php
+```cc
 $let[reason;$message[2+]]
 ```
 
@@ -34,7 +34,7 @@ As we have all data stored and ready, we will procceed to send the report. For t
 * `$channelID` - to change channel name to ID
 * `$channelSendMessage` - to send a message to a different channel
 
-```php
+```cc
 $let[reportsChannel;$channelID[reports]]
 $channelSendMessage[$reportsChannel;$mention has reported <@!$reportedUser>, for: $reason.
 ]
@@ -42,7 +42,7 @@ $channelSendMessage[$reportsChannel;$mention has reported <@!$reportedUser>, for
 
 ## 5. Confirmation message
 So far, the command is sending a correct message to a different channel. Let's also send a message to the reporting user.
-```php
+```cc
 $mention you report has been submitted, thank you for keeping our community safe.
 ```
 

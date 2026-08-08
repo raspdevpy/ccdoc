@@ -11,7 +11,7 @@ title: "V1.4.4"
 An easy user-friendly way to mention a role or a channel with name or id.
 
 Example
-```php
+```cc
 $mentionRole[Member]
 $mentionChannel[updates-beta]
 ```
@@ -35,7 +35,7 @@ Usage
 ```
 
 Example
-```php
+```cc
 $editMessage[
 my new content
 {removebutton}
@@ -53,12 +53,12 @@ Will help you to remove specific embed from a message or all embeds of a message
 
 
 Usage
-```php
+```cc
 $removeEmbed[Channel ID;Message ID;Embed Number (or all)]
 ```
 
 Example (Remove all embeds of a message)
-```php
+```cc
 $removeEmbed[$channelID;$messageID;all]
 ```
 
@@ -127,7 +127,7 @@ As shown in the image
 a new image builder function, where it crop a loaded image.
 
 ##### Usage
-```php
+```cc
 $imageCrop[image name;offset x;offset y;width;height]
 ```
 
@@ -202,7 +202,7 @@ This new curl name, will help you send a new poll
 ```
 
 ##### Example
-```php
+```cc
 $sendMessage[
 {poll:
 {question=What is the biggest country in the world?}
@@ -238,7 +238,7 @@ This new trigger will help you detect some useful actions of events like: when i
 This function gonna help you know which invite method and code the user used to join the server, it uses member search behind the scene to retrieve the value.
 
 #### Usage
-```php
+```cc
 $memberJoinedCode[User ID;Info Type]
 ```
 
@@ -252,7 +252,7 @@ You can pick from `code, code_url, type, inviter`
 
 
 #### Example
-```php
+```cc
 $memberJoinedCode[$userID;code]
 ```
 
@@ -269,22 +269,22 @@ XABCDEF
 This function allows you to pause invites/DMs for the server for a period of time (up to you).
 
 #### Usage
-```php
+```cc
 $securityPause[Duration of Pause (i.e 2h);Pause Invite (Yes/No);Pause DM (Yes/No)]
 ```
 
 ##### Example (Pause invites for 24 hours)
-```php
+```cc
 $securityPause[24h;yes;no]
 ```
 
 ##### Example (Pause DMs for 12 hours)
-```php
+```cc
 $securityPause[12h;no;yes]
 ```
 
 ##### Example (Pause invites and DMs for 24 hours)
-```php
+```cc
 $securityPause[24h;yes;yes]
 ```
 
@@ -298,7 +298,7 @@ $securityPause[24h;yes;yes]
 This function allows you, to search for a member if his username/nickname started with a query. it does not rely on cache and instead use discord api.
 
 #### Usage
-```php
+```cc
 $memberSearch[Query;Amount to Return;separator;info to return]
 ```
 
@@ -324,7 +324,7 @@ It determines how many users it will return if they match the query, by default 
 Added `displayname` property, that will help you know the user display name if exists
 
 ##### Usage
-```php
+```cc
 $user[12345678987654321;displayname]
 ```
 
@@ -398,7 +398,7 @@ So added new curl that allow you to shape them when sending a new messsage, here
 <Accordion title={"Support Menu in Modal"}>
 
 ##### Usage:
-```php
+```cc
 $modal[...
 {input:
 {type=menu}
@@ -408,7 +408,7 @@ $modal[...
 ```
 
 ##### Example:
-```php
+```cc
 $modal[
 {title=Application}
 {id=modal_id}
@@ -458,7 +458,7 @@ when sending a menu with curl, you can specify the selected options by default (
 ```
 
 ##### Example:
-```php
+```cc
 $sendMessage[
 {menu:
 {id=menu_id}
@@ -484,7 +484,7 @@ $forwardMessage[Source Channel ID;Source Message ID;Target Channel ID;Return Mes
 
 
 ##### Example:
-```php
+```cc
 $forwardMessage[$channelID;$messageID;Another Channel]
 ```
 
@@ -496,7 +496,7 @@ $forwardMessage[$channelID;$messageID;Another Channel]
 You can add other types of menus like user selection in the modal
 
 ##### Usage:
-```php
+```cc
 $modal[...
 {input:
 {type=user/role/channel/mention}
@@ -512,7 +512,7 @@ $modal[...
 ```
 
 ##### Example:
-```php
+```cc
 $modal[
 {title=Report Application}
 {id=modal_id}
@@ -543,7 +543,7 @@ An update in $user, to allow you to get the equipped clan tag of the user, in ad
 `clantagserver`: get the tag server id
 
 ##### Example
-```php
+```cc
 $user[1234567;clantag]
 ```
 
@@ -557,7 +557,7 @@ $user[1234567;clantag]
 You can now ask the user to upload a file in the modal
 
 ##### Usage:
-```php
+```cc
 $modal[...
 {input:
 {type=attachment}
@@ -571,7 +571,7 @@ $modal[...
 ```
 
 ##### Example:
-```php
+```cc
 $modal[
 {title=Report Application}
 {id=modal_id}
@@ -606,7 +606,7 @@ You can now natively add interactive **Radio Groups** (select one option) and **
 
 ##### Usage:
 
-```php
+```cc
 $modal[...
 {input:
   {type=radio/checkbox}
@@ -630,7 +630,7 @@ $modal[...
 
 ##### Example:
 
-```php
+```cc
 $modal[
 {title=Report Application}
 {id=modal_id}
@@ -684,7 +684,7 @@ $modal[
 Return the global name of a user using $globalName or $user
 
 ##### Usage
-```php
+```cc
 $globalName[User ID]
 
 Or
@@ -718,7 +718,7 @@ Added alias in options:
 added `separator` input for it, to return all numbers with certain separator
 
 **Example**
-```php
+```cc
 $findNumbers[my name is mido, i'm 999 years old, living in the 1000th floor in heaven building.;, ]
 ```
 
@@ -736,7 +736,7 @@ $findNumbers[my name is mido, i'm 999 years old, living in the 1000th floor in h
 You can use user mention as acceptable user input for functions such as $giveRoles
 
 Example
-```php
+```cc
 $giveRoles[$mention;Role name]
 ```
 will work as expected
@@ -750,7 +750,7 @@ will work as expected
 A new input added to the function called `command token`, it allows you to specify which command cooldown you want to retrieve, instead of the running command
  
 New Usage
-```php
+```cc
 $getCooldownTime[time (i.e 5m);type (i.e user);id (i.e 123456);token (i.e xGhkd)]
 ```
 
@@ -808,7 +808,7 @@ Added a new optional input: `Command Token`
 Allows you to clear another command token instead of the running one
 
 New Usage
-```php
+```cc
 $clearCooldown[type;id;token]
 ```
 
@@ -821,7 +821,7 @@ $clearCooldown[type;id;token]
 `Mention Number`  input accept `all` as input, which means return all mentioned users with `, ` as separator 
 
 Example
-```php
+```cc
 $mentioned[all]
 ```
 
@@ -841,7 +841,7 @@ id1, id2, id3
 Added `post name` as input, if you would like to create a post inside a forum using the webhook
 
 Example
-```php
+```cc
 $sendWebhook[Webhook ID;Webhook Token;Your message content;;;;;Post name]
 ```
 
@@ -856,7 +856,7 @@ $sendWebhook[Webhook ID;Webhook Token;Your message content;;;;;Post name]
 Added `Delete After` input, if you would like to wait a certain amount of time before deleting the message
 
 #### Example
-```php
+```cc
 $deleteCommand[5m]
 ```
 
@@ -869,7 +869,7 @@ $deleteCommand[5m]
 Added an input to control if you would like to skip deleting pinned messages or not.
 
 #### Example
-```php
+```cc
 $clear[amount;userid;channel;skip pinned messages (yes/no)]
 ```
 
@@ -914,7 +914,7 @@ After: $hour
 added `color_hex` property to get the color as hex instead of integer.
 
 ##### Example
-```php
+```cc
 $getEmbed[$channelID;12345;color_hex]
 ```
 
@@ -932,7 +932,7 @@ It behaved same as $displayName, so we added new option to control if you would 
 
 
 ##### Usage
-```php
+```cc
 $nickname[User ID;Return Display name if no nickname set (yes/no, default is yes)]
 ```
 
@@ -953,7 +953,7 @@ Remove specific fields
 ```
 
 ##### Example
-```php
+```cc
 $editEmbed[$channelID;$messageID;{removefields}]
 ```
 
@@ -965,7 +965,7 @@ $editEmbed[$channelID;$messageID;{removefields}]
 added a new optional option to set the separator of the returned list of numbers, by default it is space
 
 ##### Usage
-```php
+```cc
 $seq[Start;Stop;Step;Separator (default ' ')]
 ```
 
@@ -989,7 +989,7 @@ $role[Role name;ThirdColor]
 
 
 ##### Example:
-```php
+```cc
 $colorRole[Admin;green;red]
 ```
 
@@ -1001,7 +1001,7 @@ $colorRole[Admin;green;red]
 You can see the  message components in form of curl property `components` in $msg
 
 ##### Usage:
-```php
+```cc
 $msg[channel ID;message ID;components]
 ```
 
@@ -1028,7 +1028,7 @@ You can get the voice channel user limit using `limit` in $channel
 it will return 0 when there is no limit.
 
 ##### Example
-```php
+```cc
 $channel[1234567;limit]
 ```
 

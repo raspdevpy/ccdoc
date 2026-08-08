@@ -6,7 +6,7 @@ Send a message to multiple channels simultaneously. This function is useful for 
 
 ## Syntax
 
-```php
+```cc
 $sendCrosspostingMessage[message;channel1;channel2;...]
 ```
 
@@ -22,7 +22,7 @@ $sendCrosspostingMessage[message;channel1;channel2;...]
 
 This example demonstrates sending the message "Hello World!" to the channels named `#general` and `#off-topics`.
 
-```php
+```cc
 $sendCrosspostingMessage[Hello World!;general;off-topics]
 ```
 
@@ -30,7 +30,7 @@ $sendCrosspostingMessage[Hello World!;general;off-topics]
 
 To use Channel IDs instead of names, you'll need to enable Developer Mode in Discord. Go to User Settings -> Advanced, and toggle Developer Mode on. Then, right-click on the channel you want to use and select "Copy ID."  You can then paste this ID into the `$sendCrosspostingMessage` function.  For example:
 
-```php
+```cc
 $sendCrosspostingMessage[Hello World!;123456789012345678;987654321098765432]
 ```
 

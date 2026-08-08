@@ -12,6 +12,8 @@ import { getMDXComponents } from "@/components/mdx";
 import type { Metadata } from "next";
 import { createRelativeLink } from "fumadocs-ui/mdx";
 import { appName, gitConfig, socialImage, appDescription } from "@/lib/shared";
+import { Button } from "@/components/ui/button";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export default async function Page(props: PageProps<"/[[...slug]]">) {
     const params = await props.params;
@@ -29,10 +31,13 @@ export default async function Page(props: PageProps<"/[[...slug]]">) {
             </DocsDescription>
             <div className="flex flex-row gap-2 items-center border-b pb-6">
                 <MarkdownCopyButton markdownUrl={markdownUrl} />
-                <ViewOptionsPopover
-                    markdownUrl={markdownUrl}
-                    githubUrl={`https://github.com/${gitConfig.user}/${gitConfig.repo}/blob/${gitConfig.branch}/content/docs/${page.path}`}
-                />
+                <Button
+                    color="secondary"
+                    icon={<GitHubLogoIcon />}
+                    link={`https://github.com/${gitConfig.user}/${gitConfig.repo}/edit/${gitConfig.branch}/content/docs/${page.path}`}
+                >
+                    Edit This Page
+                </Button>
             </div>
             <DocsBody>
                 <MDX

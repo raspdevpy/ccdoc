@@ -18,7 +18,7 @@ You can also access temporary variables directly by prefixing their name with a 
 
 ### Example
 
-```php
+```cc
 $let[uid;$randomUserID]
 $let[name;$displayName[$uid]]
 
@@ -58,15 +58,15 @@ Permanent variables are ideal for storing settings, progress, or any other data 
 
 ### Example
 
-```php title="Command 1"
+```cc title="Command 1"
 $setUserVar[level;4]
 ```
 
-```php title="Command 2"
+```cc title="Command 2"
 Your level: $getUserVar[level] // 4
 ```
 
-```php title="Command 3"
+```cc title="Command 3"
 $increaseUserVar[level;1]
 Your new level: $getUserVar[level] // 5
 ```

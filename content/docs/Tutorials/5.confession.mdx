@@ -24,7 +24,7 @@ Next, Let's write the code that will respond when user runs the slash command:
     * To receive user input of confession, we can use $getOption[option name], where `option name` is same option name we used while building the slash command which is `message`
     > For example: $getOption[message]
     * So we would combine both and code would look like:
-```php
+```cc
 $interactionReply[Your confession is
 
 $getOption[message]
@@ -48,7 +48,7 @@ Curl is a way for you to build an embed in the place of the `message` input, for
 > You can see the full list [here](/CodeReferences/ref.message_curl_format)
 
 So, We will modify the message content of `$interactionReply` and use the curl message format, code would look like:
-```php
+```cc
 $interactionReply[
 
 {title:$username's confession}

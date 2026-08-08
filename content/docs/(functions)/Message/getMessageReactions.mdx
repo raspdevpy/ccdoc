@@ -10,7 +10,7 @@ The `$getMessageReactions` command allows you to list the reactions (emojis) tha
 
 ## Usage
 
-```php
+```cc
 $getMessageReactions[Channel ID (optional);Message ID (optional);Separator (optional)]
 ```
 
@@ -24,7 +24,7 @@ $getMessageReactions[Channel ID (optional);Message ID (optional);Separator (opti
 
 *   **Get reactions from the current message in the current channel (most common use):**
 
-    ```php
+    ```cc
     $getMessageReactions
     ```
 
@@ -32,7 +32,7 @@ $getMessageReactions[Channel ID (optional);Message ID (optional);Separator (opti
 
 *   **Get reactions from a specific message in the current channel:**
 
-    ```php
+    ```cc
     $getMessageReactions[$messageID]
     ```
 
@@ -40,7 +40,7 @@ $getMessageReactions[Channel ID (optional);Message ID (optional);Separator (opti
 
 *   **Get reactions from a specific message in a specific channel:**
 
-    ```php
+    ```cc
     $getMessageReactions[123456789012345678;987654321098765432]
     ```
 
@@ -48,7 +48,7 @@ $getMessageReactions[Channel ID (optional);Message ID (optional);Separator (opti
 
 *   **Get reactions from a specific message in a specific channel, using a custom separator:**
 
-    ```php
+    ```cc
     $getMessageReactions[123456789012345678;987654321098765432; | ]
     ```
 

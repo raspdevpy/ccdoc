@@ -6,7 +6,7 @@ Sets the global opacity for all subsequent drawing operations performed by the i
 
 ## Usage
 
-```php
+```cc
 $imageSetOpacity[opacity]
 ```
 
@@ -22,7 +22,7 @@ $imageSetOpacity[opacity]
 
 This example sets the opacity to 50%, making subsequent drawings semi-transparent.
 
-```php
+```cc
 $imageSetOpacity[50]
 ```
 
@@ -30,7 +30,7 @@ $imageSetOpacity[50]
 
 This example demonstrates how to use `$imageSetOpacity` to draw two avatars with different opacities.  It fetches the author's avatar, loads it into the image builder, draws it once at full opacity, then sets the opacity to 50% and draws it again.
 
-```php
+```cc
 !!exec $let[avatar;$replaceText[$authoravatar;.webp;.png]]
 $imageCreate[300;300]
 $imageLoadFromURL[avatar;$avatar]

@@ -6,7 +6,7 @@ Initializes a variable with a default value if the var is undefined or does not 
 
 ## Usage
 
-```php
+```cc
 $initVar[type;varname;Default Value;Custom ID (optional)]
 ```
 
@@ -19,21 +19,21 @@ server, message, channel, user
 * For type 'user', it will be the user id.
 
 ### Example (Server Var):
-```php
+```cc
 $initVar[server;totalPolls;0]
 ```
 
 ### Example (Channel Var):
-```php
+```cc
 $initVar[channel;ticket-owner;$authorID;$channelID]
 ```
 
 ### Example (User Var):
-```php
+```cc
 $initVar[user;money;0;$userID]
 ```
 
 ### Example (Message Var):
-```php
+```cc
 $initVar[message;reactions;0;$messageID]
 ```

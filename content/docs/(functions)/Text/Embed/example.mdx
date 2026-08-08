@@ -5,7 +5,7 @@ title: "Complete Embed"
 Here is a code example for a complete embed in both function and curl format.
 ## Function Format
 
-```php
+```cc
 $author[name;avatar;link]
 $title[title;url]
 $color[hex/colorname/random]
@@ -28,7 +28,7 @@ $selectMenu[id;placeholder;min value(optional);max value;(optional);label;desc;v
 ## Curl Format
 Here are all curl embed components you can use in any function containing `message` field.
 
-```
+```cc
 {content:text}
 {author:name:avatar:link url}
 {title:title}
@@ -58,7 +58,8 @@ Here are all curl embed components you can use in any function containing `messa
 
 ### Only for interactions
 These arguments can be used in interaction trigger commands.
-```
+
+```cc
 {interaction}
 {ephemeral=yes/no}
 {message=content, curl embed, menus, buttons...} // Only in $interactionReply
@@ -83,7 +84,7 @@ If you created a command with the following code, the bot would:
 1. First change author's 
 2. Send an embed confirming the change,
 
-```php
+```cc
 $title[Nickname changed]
 $description[Your nickname has been changed to lowercase ($toLowercase[$username])]
 
@@ -101,7 +102,7 @@ The following code would:
 2. Edit user's nickname,
 3. Edit the previously sent message to confirm the change.
 
-```php
+```cc
 $sendMessage[
     {title: Nickname change}
     {description: Your nickname is going to be changed to lowercase ($toLowercase[$username])}
