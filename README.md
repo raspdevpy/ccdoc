@@ -39,9 +39,9 @@ git clone git@github.com:YOUR_USERNAME/ccdoc.git
 ```
 
 ### Node.js
- 
+
 3\. Install dependencies:
- 
+
 ```bash
 pnpm install
 ```
@@ -94,6 +94,6 @@ git push origin
 
 To send these changes for review, open your cloned fork on GitHub, and click the `Open Pull Request` button.
 
-## Naviagation
+## Navigation
 
 All documentation files are stored at `/content/docs`.
