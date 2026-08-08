@@ -9,7 +9,7 @@ const config = {
     reactStrictMode: true,
     images: { unoptimized: true },
     experimental: {
-        cpus: os.cpus().length,
+        ...(process.env.USE_ALL_CPU == 'true'?{cpus: os.cpus().length}:{})
     },
 };
 
