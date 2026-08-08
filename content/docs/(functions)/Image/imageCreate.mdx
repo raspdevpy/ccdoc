@@ -23,18 +23,18 @@ This function creates a blank image and stores it for further processing with ot
 
 This example creates a 300x300 pixel image, fills it with the color red, and then displays the image.
 
-```
+```cc
 !!exec $imageCreate[300;300]
 $imageFill[red]
 $image[$imageOutput]
 ```
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $imageCreate[300;300]<br />$imageFill[red]<br />$image[$imageOutput]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 <DiscordEmbed slot="embeds" image="https://i.imgur.com/Qoz7xDW.png">
 </DiscordEmbed>
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

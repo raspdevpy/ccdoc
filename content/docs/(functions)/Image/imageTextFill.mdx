@@ -28,11 +28,11 @@ $imageTextFill[Text;position x;position y;color;opacity]
 This example creates a 300x300 image, sets the text size to 30, aligns the text to the center, and then writes "CC is Awesome" at position 150,150 with the color #4461b3.
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $imageCreate[300;300]<br />$imageTextSize[30]<br />$imageTextAlign[center]<br />$imageTextFill[CC is Awesome;150;150;#4461b3]<br />$image[$imageOutput]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 <DiscordEmbed slot="embeds" image="https://i.imgur.com/PwNg0VA.png">
 </DiscordEmbed>
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

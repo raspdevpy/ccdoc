@@ -7,12 +7,12 @@ set an object property value by key
 #### Usage: `$objectSet[key;key;key....;value]`
 <br/>
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $objectCreate[\{"name":"Wiki"}] $objectSet[name;Rake] $objectSet[tag;0001] $getObject
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 \{"name":"Rake","tag":"0001"}
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 <Callout type="info" title={"Setting Objects inside Objects"}>
@@ -35,7 +35,7 @@ $objectSet[userdata;role;Moderator]
 
 <Callout type="info" title={"Setting values inside array"}>
 
-```
+```cc
  $objectCreate[{ "userdata":{
   "age":0,
   "name":"undefined",

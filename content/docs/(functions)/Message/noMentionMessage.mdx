@@ -17,12 +17,12 @@ Let's say you want to echo the user's message in a custom command, but you don't
 Here's how it would look in Discord:
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec <DiscordMention highlight>Server Moderator</DiscordMention> testing [$noMentionMessage] ($message)
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 <DiscordMention highlight>Server Moderator</DiscordMention> [testing] (<DiscordMention highlight>Server Moderator</DiscordMention> testing)
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 In this example, even though the user mentioned "Server Moderator", the bot only mentions them once and then includes "testing" (the message with mentions removed). The original message including the mention is also included.

@@ -19,12 +19,12 @@ Retrieves the ID of a specified role.
 Let's say you have a role named "muted" in your server.  The following example demonstrates how to retrieve its ID.
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $roleID[muted]
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 772053356378062889
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 In this example, the command returns `772053356378062889`, which is the ID of the "muted" role.

@@ -13,32 +13,32 @@ in case flag is not `g` it will return the whole matched text and matched groups
 
 ### Example (Find the first number):
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $regexMatch[Rake owns 50$ and has 18 properties.;\d+]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 50<br /><br />
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ### Example (Find all numbers):
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $regexMatch[Rake owns 50$ and has 18 properties.;\d+;g;all;/]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 50/18<br /><br />
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ### Example (Find 2nd number only):
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $regexMatch[Rake owns 50$ and has 18 properties.;\d+;g;1]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 18
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 <Callout type="info" title={"Regex Flags"}>

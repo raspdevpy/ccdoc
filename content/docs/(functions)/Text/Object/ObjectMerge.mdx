@@ -12,20 +12,20 @@ $ObjectMerge[object]
 
 ### Example:
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $objectSet[name;Mido]<br />$objectMerge[\{"country":"EG"}]<br />$objectGet<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 \{"name":"Mido", "country":"EG"}<br /><br />
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ### Example (Nested Keys):
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $objectSet[user;name;Mido]<br />$objectSet[user;country;EG]<br />Before: $objectGet<br />$objectMerge[user;\{"name":"Rake","country":"DE"}]<br />After: $objectGet<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 Before: \{"user":\{"name":"Mido","country":"EG"}}<br />After: \{"user":\{"name":"Rake","country":"DE"}}
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

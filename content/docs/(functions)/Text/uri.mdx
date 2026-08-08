@@ -12,20 +12,20 @@ $uri[decode/encode;text]
 
 ### Example (Encoding):
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $uri[encode;Hello World]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 Hello%20World<br /><br />
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ### Example (Decoding):
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $uri[decode;Hello%20World]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 Hello World
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

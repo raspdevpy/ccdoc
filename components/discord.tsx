@@ -1,7 +1,9 @@
 'use client';
 
 import type { ComponentProps, ElementType, ReactNode } from 'react';
+import React from 'react';
 import { useTheme } from 'next-themes';
+
 import {
   DiscordActionRow,
   DiscordButton,
@@ -21,34 +23,108 @@ import {
  * Discord message mock-ups.
  *
  * The old site used `@discord-message-components/vue`, which has no maintained
- * React counterpart (its React twin was last published in 2022). `@skyra/*` is
- * the actively maintained successor and covers every component the docs use,
- * with one exception: `DiscordMarkdown`, shimmed below.
- *
- * These are Lit web components, so they render on the client only.
+ * React counterpart. Skyra is the maintained successor.
  */
 
-/**
- * The old site kept these blocks in step with the site theme via CSS overrides.
- * Skyra renders into a shadow root, so external CSS can't reach it — the
- * supported route is the per-component `lightTheme` prop.
- */
-function withSiteTheme<T extends ElementType>(Component: T) {
-  return function Themed(props: ComponentProps<T> & { lightTheme?: boolean }) {
+function withSiteTheme(Component: any) {
+  return function Themed(
+    props: ComponentProps<any> & { lightTheme?: boolean }
+  ) {
     const { resolvedTheme } = useTheme();
     const Rendered = Component as ElementType;
-    return <Rendered lightTheme={resolvedTheme === 'light'} {...props} />;
+
+    return (
+      <Rendered
+        lightTheme={resolvedTheme === 'light'}
+        {...props}
+      />
+    );
   };
 }
 
 export const DiscordMessages = withSiteTheme(RawMessages);
 export const DiscordMessage = withSiteTheme(RawMessage);
-export const DiscordEmbed = withSiteTheme(RawEmbed);
+
+/**
+ * Legacy DiscordEmbed.
+ *
+ * Existing syntax continues to work:
+ *
+ * <DiscordEmbed slot="embeds" color="#0F52BA">
+ *   <DiscordEmbedDescription>
+ *     You are awesome
+ *   </DiscordEmbedDescription>
+ * </DiscordEmbed>
+ *
+ * New simplified syntax also works:
+ *
+ * <DiscordEmbed>
+ *   You are awesome
+ * </DiscordEmbed>
+ */
+type DiscordEmbedProps = Omit<
+  ComponentProps<typeof RawEmbed>,
+  'children'
+> & {
+  children?: ReactNode;
+};
+
+export function DiscordEmbed({
+  children,
+  ...props
+}: DiscordEmbedProps) {
+  const { resolvedTheme } = useTheme();
+
+  const childArray = React.Children.toArray(children);
+
+  // Empty embed: preserve it as-is.
+  if (childArray.length === 0) {
+    return (
+      <RawEmbed
+        lightTheme={resolvedTheme === 'light'}
+        {...props}
+      />
+    );
+  }
+
+  const child = childArray.length === 1
+    ? childArray[0]
+    : null;
+
+  const isParagraph =
+    React.isValidElement(child) &&
+    child.type === 'p';
+
+  const description = isParagraph
+    ? (child.props as { children?: ReactNode }).children
+    : children;
+
+  const isPlainContent =
+    isParagraph ||
+    typeof description === 'string' ||
+    typeof description === 'number';
+
+  return (
+    <RawEmbed
+      lightTheme={resolvedTheme === 'light'}
+      {...props}
+    >
+      {isPlainContent ? (
+        <DiscordEmbedDescription slot="description">
+          {description}
+        </DiscordEmbedDescription>
+      ) : (
+        children
+      )}
+    </RawEmbed>
+  );
+}
+
 export const DiscordEmbedField = withSiteTheme(RawEmbedField);
 export const DiscordMention = withSiteTheme(RawMention);
 export const DiscordReaction = withSiteTheme(RawReaction);
 
-// these have no `lightTheme` of their own — they inherit from their parent
+// These have no `lightTheme` of their own — they inherit from their parent.
 export {
   DiscordActionRow,
   DiscordButton,
@@ -59,10 +135,51 @@ export {
 };
 
 /**
- * `@skyra/*` dropped the `DiscordMarkdown` wrapper — message bodies handle
- * their own formatting now. Kept as a passthrough so existing content renders
- * unchanged.
+ * Simplified Discord message components.
+ *
  */
-export function DiscordMarkdown({ children }: { children?: ReactNode }) {
-  return <span>{children}</span>;
+
+type SimpleMessageProps = {
+  children?: ReactNode;
+};
+
+export function DiscordMessageUser({
+  children,
+}: SimpleMessageProps) {
+  const lightTheme = useTheme().resolvedTheme === 'light';
+  return (
+    <RawMessage lightTheme={lightTheme} roleColor="#ffcc9a" author="Member">
+      {children}
+    </RawMessage>
+  );
+}
+
+export function DiscordMessageBot({
+  children,
+}: SimpleMessageProps) {
+  const lightTheme = useTheme().resolvedTheme === 'light';
+  
+  return (
+    <RawMessage
+      lightTheme={lightTheme}
+      author="Custom Command"
+      bot
+      roleColor="#0099ff"
+      avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp"
+    >
+      {children}
+      
+    </RawMessage>
+  );
+}
+
+/**
+ * `DiscordMarkdown` compatibility wrapper.
+ */
+export function DiscordMarkdown({
+  children,
+}: {
+  children?: ReactNode;
+}) {
+  return children;
 }

@@ -12,20 +12,20 @@ $viewServerVars[Separator;Query Regex (optional)]
 
 ### Example:
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $viewServerVars<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 level1_xp, names, staffs, level2_xp, level3_xp, level1_reward<br /><br />
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ### Example (return only variables that starts with level):
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $viewServerVars[, ;^level]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 level1_xp, level2_xp, level3_xp,level1_reward
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

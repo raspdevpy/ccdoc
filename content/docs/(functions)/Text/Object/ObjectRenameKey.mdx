@@ -12,20 +12,20 @@ $objectRenameKey[old key;new key name]
 
 ### Example:
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $objectSet[name;Mido]<br />Before: $objectGet<br />$objectRenameKey[name;nick]<br />After: $objectGet<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 Before: \{"name":"Mido"}<br />After: \{"nick":"Mido"}<br /><br />
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ### Example (Nested Key):
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $objectSet[user;name;Mido]<br />Before: $objectGet<br />$objectRenameKey[user;name;nick]<br />After: $objectGet<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 Before: \{"user":\{"name":"Mido"}}<br />After: \{"user":\{"nick":"Mido"}}
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

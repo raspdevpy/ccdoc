@@ -21,9 +21,9 @@ What happens if user is connected to a voice channel
 <DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
 !!exec $userConnectedVC
 </DiscordMessage>
-<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+<DiscordMessageBot>
 123456789987654321
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 #### Is not connected to a voice channel
@@ -34,9 +34,9 @@ What happens if user is not connected to a voice channel
 <DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
 !!exec $userConnectedVC
 </DiscordMessage>
-<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+<DiscordMessageBot>
 undefined
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ##### Related functions: `$vcBefore` `$vcAfter`

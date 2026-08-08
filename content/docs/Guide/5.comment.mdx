@@ -38,9 +38,9 @@ $let[age;$math[$year-$userYear]] // $userYear is year the user was born in<br />
 Your age is: $age<br /><br />
 // TODO: Save into user variable
 </DiscordMessage>
-<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+<DiscordMessageBot>
 Your age is: 26
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ## Multi-Line Comments
@@ -71,9 +71,9 @@ $let[userYear;2000]<br />
 $let[age;$math[$year /* current year - born year */ - $userYear]]<br />
 Your age is: $age /* \<- The variable */
 </DiscordMessage>
-<DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+<DiscordMessageBot>
 Your age is: 26
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 <Callout type="info" title={"Dashboard Editor"}>

@@ -21,12 +21,12 @@ $getReactionCount[channelID;messageID;reaction]
 This example shows how to use `$getReactionCount` to display how many users reacted with a thumbs-up (`👍`) to a specific message.
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec Users agree with this decision: $getReactionCount[$channelID;12345678987654321;👍]
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 Users agree with this decision: 13
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 **Explanation:**

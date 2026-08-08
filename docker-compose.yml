@@ -12,3 +12,4 @@ services:
     command: pnpm dev
     environment:
       - NODE_ENV=development
+      - USE_ALL_CPU=false

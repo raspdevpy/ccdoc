@@ -27,13 +27,13 @@ $imageBorderRad[top-left corner radius; top-right corner radius; bottom-right co
 This example demonstrates how to draw a red circle in the center of a 300x300 pixel image using `$imageBorderRad` in conjunction with `$imageCreate` and `$imageFill`.
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $imageCreate[300;300]<br />$imageBorderRad[50]<br />$imageFill[red;100;100;100;100]<br />$image[$imageOutput]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 <DiscordEmbed slot="embeds" image="https://i.imgur.com/wBb0uBm.png">
 </DiscordEmbed>
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 **Breakdown of the command:**

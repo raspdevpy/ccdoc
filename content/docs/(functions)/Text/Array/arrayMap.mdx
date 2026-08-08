@@ -29,10 +29,10 @@ Array loops are limited to a certain number of cycles. These limits vary between
 
 ### Example:
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $textSplit[15,18,21;,]<br />$arrayMap[age]\{<br />age is $age<br />}<br />$arrayJoin[, ]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 age is 15, age is 18, age is 21
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

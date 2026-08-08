@@ -10,7 +10,7 @@ Retrieves the ID of the message that triggered the command.
 
 **Example:**
 
-```
+```cc
 !!exec $messageID
 ```
 
@@ -19,12 +19,12 @@ Retrieves the ID of the message that triggered the command.
 **Discord Example:**
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $messageID
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 789089088989809890
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 **Function Difficulty:** <Badge ID="tip" text="Easy" vertical="middle" />

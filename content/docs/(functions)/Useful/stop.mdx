@@ -10,7 +10,7 @@ This function will cause the interpetender to stop the command execution & retur
 #### Example:
 <br/>
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 <DiscordMarkdown>
 !!exec $sendMessage[This message will be send;no]
 <br />
@@ -18,13 +18,13 @@ $stop[This funtion will cause the interpetender to stop the code]
 <br />
 $sendMesssage[This message won't be send;no]
 </DiscordMarkdown>
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 This message will be send
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageBot>
+<DiscordMessageBot>
 This funtion will cause the interpetender to stop the code
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 <Callout type="info" title={"Note"}>

@@ -23,25 +23,25 @@ $imageFill[color;x;y;width;height;opacity]
 
 ### Example 1: Fill the entire image with gray.
 
-```
+```cc
 !!exec $imageCreate[300;300]
 $imageFill[gray]
 $image[$imageOutput]
 ```
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $imageCreate[300;300]<br />$imageFill[gray]<br />$image[$imageOutput]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 <DiscordEmbed slot="embeds" image="https://i.imgur.com/NwKtUYB.png">
 </DiscordEmbed>
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ### Example 2: Fill a 50x50 rectangle at (100, 100) with red.
 
-```
+```cc
 !!exec $imageCreate[300;300]
 $imageFill[gray]
 $imageFill[red;100;100;50;50]
@@ -49,11 +49,11 @@ $image[$imageOutput]
 ```
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $imageCreate[300;300]<br />$imageFill[gray]<br />$imageFill[red;100;100;50;50]<br />$image[$imageOutput]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 <DiscordEmbed slot="embeds" image="https://i.imgur.com/QeSr9tZ.png">
 </DiscordEmbed>
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

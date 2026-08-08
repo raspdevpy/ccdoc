@@ -13,26 +13,26 @@ Check this [page](/CodeReferences/ref.embed.colors)
 ## Example 1: Using it in function format
 <br/>
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $color[#0099ff]
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-<DiscordEmbed slot="embeds" borderColor="#0099ff">
+</DiscordMessageUser>
+<DiscordMessageBot>
+<DiscordEmbed slot="embeds" color="#0099ff">
 </DiscordEmbed>
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ## Example 2: Using In Curl Format
 <br/>
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $sendMessage[<br />\{desc:You are awesome}<br />\{color:#0099ff}<br />]
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
-<DiscordEmbed slot="embeds" borderColor="#0099ff" description="">
+</DiscordMessageUser>
+<DiscordMessageBot>
+<DiscordEmbed slot="embeds" color="#0099ff" description="">
 You are awesome
 </DiscordEmbed>
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 <Callout type="info" title={"To color an embed inside a function like $sendmessage[text]"}>

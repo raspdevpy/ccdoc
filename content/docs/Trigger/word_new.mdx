@@ -37,12 +37,12 @@ The **Starts with** option triggers when a message begins with the specified tex
 
 For example, if the trigger is:
 
-```php
+```cc
 !hello
 ```
 
 and if the response code is
-```php
+```cc
 Hello $username!
 ```
 
@@ -52,15 +52,15 @@ The command will trigger when a message starts with `!hello`.
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 !hello
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Hello Member!
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 !hello everyone
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Hello Member!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 However, a message where `!hello` appears later will not trigger the command.
@@ -80,12 +80,12 @@ The **Ends with** option triggers when a message ends with the specified text.
 
 For example, with the trigger:
 
-```php
+```cc
 good morning
 ```
 
 and if the response code is
-```php
+```cc
 Good morning, $username!
 ```
 
@@ -95,15 +95,15 @@ The command will trigger when the message ends with `good morning`.
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Everyone, good morning
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Good morning, Member!
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Good morning
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Good morning, Member!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 A message where the text appears in the middle will not trigger the command.
@@ -121,12 +121,12 @@ The **Contains** option triggers when the specified text appears anywhere in the
 
 For example, using:
 
-```php
+```cc
 banana
 ```
 
 and if the response code is
-```php
+```cc
 🍌 Banana detected!
 ```
 
@@ -136,15 +136,15 @@ will trigger whenever `banana` appears in the message.
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 I really like bananas!
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 🍌 Banana detected!
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Does anyone have a banana?
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 🍌 Banana detected!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 The text does not need to be at the beginning or end of the message.
@@ -163,7 +163,7 @@ For example, the following expression detects a Discord user mention:
 ```
 
 and if the response code is
-```php
+```cc
 You have mentioned $username[$mentioned]! 
 ```
 
@@ -173,9 +173,9 @@ This can detect mentions such as:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Hey <DiscordMention type="user">Mido</DiscordMention>!
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 You have mentioned Mido!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 Regex can be used to create much more advanced message matching rules.
@@ -202,9 +202,9 @@ For example:
 Check out this image!
 [attachment: image.png]
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Nice image!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 The message does not need to contain any particular text.
@@ -220,9 +220,9 @@ For example:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 [Discord system message: A message was pinned]
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 A message was pinned!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 This can be useful for automatically responding when someone pins a message.
@@ -238,9 +238,9 @@ For example:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 [Discord system message: A thread was created]
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 A new thread has been created!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 This can be useful for automatically responding to newly created threads.
@@ -261,9 +261,9 @@ Minecraft
 Fortnite
 Terraria
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Thanks for creating a poll!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 The command does not need to know the poll's question or answers.
@@ -279,9 +279,9 @@ For example:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Hey <DiscordMention type="user">Mido</DiscordMention>, check this out!
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Someone was mentioned!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 The mention can appear anywhere in the message.
@@ -313,9 +313,9 @@ For example:
 
 This is the original message. 
 </DiscordMessage> 
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 A message was forwarded! 
-</DiscordMessage> 
+</DiscordMessageBot> 
 </DiscordMessages>
 
 This allows you to create commands that react specifically to forwarded messages without needing to inspect their text.
@@ -331,9 +331,9 @@ For example, when a user sends a message that violates an AutoMod rule:
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 This message triggered AutoMod
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 AutoMod has detected a violation.
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 The user who triggered the AutoMod action is considered the executor of the command.
@@ -353,15 +353,15 @@ For example, a command configured with **Every Message** could automatically res
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Hello everyone!
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Have a great day!
-</DiscordMessage>
+</DiscordMessageBot>
 <DiscordMessage author="Member" roleColor="#ffcc9a">
 Does anyone want to play?
 </DiscordMessage>
-<DiscordMessage bot author="Custom Command" roleColor="#0099ff">
+<DiscordMessageBot>
 Have a great day!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 This can be useful for automatic responses, message logging, counters, or other systems that need to process every message.
@@ -383,7 +383,7 @@ Message parameters are separated by spaces and can be accessed using the `$messa
 
 For example, if a user sends:
 
-```php
+```cc
 !hug @user
 ```
 
@@ -394,7 +394,7 @@ The message is split into parameters:
 
 Each parameter is assigned a number based on its position in the message:
 
-```php
+```cc
 !hug hello world
  │    │     │
  │    │     └── $message[3]
@@ -406,7 +406,7 @@ You can also use `+` to get a parameter **and everything after it**.
 
 For example:
 
-```php
+```cc
 !announce Hello everyone, welcome!
 ```
 
@@ -419,7 +419,7 @@ This is useful when you want to accept a message or sentence as a single paramet
 
 For example:
 
-```php
+```cc
 !hug @user
 !report @user spam in the chat
 !announce Hello everyone, welcome to the server!
@@ -427,14 +427,14 @@ For example:
 
 For `!report @user spam in the chat`, you could use:
 
-```php
+```cc
 $message[2]  → @user
 $message[3+] → spam in the chat
 ```
 
 In short:
 
-```php
+```cc
 $message[1]  → first word
 $message[2]  → second word
 $message[3]  → third word

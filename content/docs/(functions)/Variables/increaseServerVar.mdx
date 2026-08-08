@@ -20,10 +20,10 @@ $increaseServerVar[ticket numbers;1]
 
 ### Example (double the messages):
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec Before: $getServerVar[ticket numbers]<br />$increaseServerVar[ticket numbers;x*2]<br />After: $getServerVar[ticket numbers]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 Before: 5<br />After: 10
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

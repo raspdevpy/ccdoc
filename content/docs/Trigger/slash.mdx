@@ -39,7 +39,7 @@ In this example we will create an `/avatar` command, that shows the user's avata
 <Accordions>
 <Accordion title={"Code"}>
 
-```
+```cc
     $let[user_id;$getOption[user]]
     $interactionReply[
         {title:Avatar of $usertag[$user_id]}
@@ -66,7 +66,7 @@ $getOption[option name]
 ```
 In our example `option name` is `user` from step 6\
 then the user id will be stored in a temporary variable named`user_id` using `$let`, this way we can recall it later in the code through `$user_id`:
-```
+```cc
     $let[user_id;$getOption[user]]
 ```
 
@@ -82,7 +82,7 @@ $interactionReply[
 
 1. In title we want to set it to: Avatar of Mido#1234\
 To get the username `Mido#1234` we will use [$userTag[user id]](/Member/userTag), to specifiy the user we will use `$user_id`:
-```
+```cc
 Avatar of $userTag[$user_id]
 ```
 
@@ -92,7 +92,7 @@ $userAvatar[$user_id]
 ```
 
 Whole code:
-```
+```cc
     $let[user_id;$getOption[user]]
     $interactionReply[
         {title:Avatar of $usertag[$user_id]}

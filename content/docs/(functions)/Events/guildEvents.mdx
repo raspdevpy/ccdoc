@@ -32,17 +32,17 @@ $guildEvents[info type;filter;separator]
 
 This example retrieves the names of all active events in the server, separated by a forward slash `/`.
 
-```
+```cc
 !!exec $guildEvents[name;active;/]
 ```
 
 **Result:**
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $guildEvents[name;active;/]
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 Event 1/Event 2
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

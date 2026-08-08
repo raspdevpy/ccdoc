@@ -12,20 +12,20 @@ $ObjectKeys[Seperator (optional, default:, );Nested Property 1;Nested Property 2
 
 ### Example:
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $objectSet[user1;name;Mido]<br />$objectSet[user1;id;1234]<br />$objectSet[user1;weapon;Sword]<br />$objectSet[user2;name;Rake]<br />$objectSet[user2;id;5678]<br />$objectSet[user2;weapon;Feather]<br />$ObjectKeys[/]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 user1/user2<br /><br />
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 ### Example (Getting Nested Property Keys):
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $objectSet[user1;name;Mido]<br />$objectSet[user1;id;1234]<br />$objectSet[user1;weapon;Sword]<br />$objectSet[user2;name;Rake]<br />$objectSet[user2;id;5678]<br />$objectSet[user2;weapon;Feather]<br />$ObjectKeys[/;user1]<br /><br />
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 name/id/weapon
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>

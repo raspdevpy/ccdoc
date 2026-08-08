@@ -20,12 +20,12 @@ Searches for a channel by its ID, mention, or name.
 **Scenario 1: Channel Found (using channel name)**
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $findChannel[bot-commands;no]
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 869243919697846379
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 In this example, the bot searches for a channel named "bot-commands". If found, it returns the channel's ID (869243919697846379).  The `;no` tells the function to return undefined if the channel isn't found.
@@ -33,12 +33,12 @@ In this example, the bot searches for a channel named "bot-commands". If found, 
 **Scenario 2: Channel Not Found (with `returnCurrentChannel` set to `no`)**
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec $findChannel[bot-cmnds;no]
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 undefined
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 Here, the bot attempts to find a channel named "bot-cmnds" (note the typo).  Since no such channel exists, and the second argument is set to `no`, the function returns `undefined`.
