@@ -37,12 +37,12 @@ The **Starts with** option triggers when a message begins with the specified tex
 
 For example, if the trigger is:
 
-```php
+```cc
 !hello
 ```
 
 and if the response code is
-```php
+```cc
 Hello $username!
 ```
 
@@ -80,12 +80,12 @@ The **Ends with** option triggers when a message ends with the specified text.
 
 For example, with the trigger:
 
-```php
+```cc
 good morning
 ```
 
 and if the response code is
-```php
+```cc
 Good morning, $username!
 ```
 
@@ -121,12 +121,12 @@ The **Contains** option triggers when the specified text appears anywhere in the
 
 For example, using:
 
-```php
+```cc
 banana
 ```
 
 and if the response code is
-```php
+```cc
 🍌 Banana detected!
 ```
 
@@ -163,7 +163,7 @@ For example, the following expression detects a Discord user mention:
 ```
 
 and if the response code is
-```php
+```cc
 You have mentioned $username[$mentioned]! 
 ```
 
@@ -383,7 +383,7 @@ Message parameters are separated by spaces and can be accessed using the `$messa
 
 For example, if a user sends:
 
-```php
+```cc
 !hug @user
 ```
 
@@ -394,7 +394,7 @@ The message is split into parameters:
 
 Each parameter is assigned a number based on its position in the message:
 
-```php
+```cc
 !hug hello world
  │    │     │
  │    │     └── $message[3]
@@ -406,7 +406,7 @@ You can also use `+` to get a parameter **and everything after it**.
 
 For example:
 
-```php
+```cc
 !announce Hello everyone, welcome!
 ```
 
@@ -419,7 +419,7 @@ This is useful when you want to accept a message or sentence as a single paramet
 
 For example:
 
-```php
+```cc
 !hug @user
 !report @user spam in the chat
 !announce Hello everyone, welcome to the server!
@@ -427,14 +427,14 @@ For example:
 
 For `!report @user spam in the chat`, you could use:
 
-```php
+```cc
 $message[2]  → @user
 $message[3+] → spam in the chat
 ```
 
 In short:
 
-```php
+```cc
 $message[1]  → first word
 $message[2]  → second word
 $message[3]  → third word

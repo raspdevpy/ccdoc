@@ -31,7 +31,7 @@ For a more detailed explanation of Width and Height, refer to this resource: [Wi
 
 This example creates an image, loads a user's avatar, fills the background with gray, adds a transparent rectangle, and then draws the avatar behind it.
 
-```
+```cc
 !!exec $imageCreate[300;300]
 $imageLoadFromURL[avatar;$replaceText[$authorAvatar;webp;png]]
 $imageFill[gray]
