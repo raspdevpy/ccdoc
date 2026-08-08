@@ -1,0 +1,45 @@
+---
+title: "Expressions"
+---
+
+Some functions such as `$if` require expressions to implement dynamic, conditional logic.
+
+## Expression Structure
+
+An expression compares a left-hand side to a right-hand side using an operator.
+
+```
+Left-Side[Operator]Right-Side
+```
+
+## Operators
+
+| Operator | Description |
+| :--- | :--- |
+| `==` | Equality (ignores surrounding whitespace) |
+| `===` | Exact equality (including whitespace) |
+| `!=` | Inequality (ignores surrounding whitespace) |
+| `!==` | Exact inequality (including whitespace) |
+| `>` | Greater than (numeric) |
+| `>=` | Greater than or equal to (numeric) |
+| `<` | Less than (numeric) |
+| `<=` | Less than or equal to (numeric) |
+| `&&` | Logical AND (both sides must be true) |
+| `\|\|` | Logical OR (at least one side must be true) |
+
+## Complex Expressions
+
+You can build complex logic by combining multiple conditions.
+
+- **AND (`&&`)**: Evaluates as `true` only if both conditions are met.
+- **OR (`||`)**: Evaluates as `true` if at least one condition is met.
+
+## Grouping
+
+Use parentheses `()` to explicitly define the order of evaluation. Expressions within parentheses are evaluated as a unit before other operators.
+
+## Examples
+
+- **Simple:** `A!=B`
+- **Complex:** `A == A||true!=false&&1>0`
+- **Complex With Grouping:** `(A == A||true!=false)&&1>0`

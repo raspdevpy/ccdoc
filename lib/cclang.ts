@@ -37,8 +37,8 @@ export const cclang: LanguageRegistration = {
             match: "([<>]=?|!==?|===?)",
         },
         {
-            name: "keyword.keys.cclang",
-            match: "(?<={[\\w\\d_]*)[:=]",
+            name: "keyword.colons.cclang",
+            match: ":|=",
         },
         {
             name: "keyword.tags.cclang",
@@ -82,7 +82,7 @@ export const cc_dark = {
             },
         },
         {
-            scope: ["keyword.keys.cclang"],
+            scope: ["keyword.colons.cclang"],
             settings: {
                 foreground: "rgb(240, 128, 128)",
             },
@@ -132,7 +132,7 @@ export const cc_light = {
             },
         },
         {
-            scope: ["keyword.keys.cclang"],
+            scope: ["keyword.colons.cclang"],
             settings: {
                 foreground: "rgb(240, 128, 128)",
             },

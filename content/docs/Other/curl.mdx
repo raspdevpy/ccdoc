@@ -1,37 +1,221 @@
 ---
-title: "Curl Arguments"
+title: "Curl Format"
 ---
 
-Tired of long, complicated function calls with tons of empty parameters? Curl arguments are here to help! They provide a more readable and intuitive way to pass options to functions, making your code cleaner and easier to understand.
+Many functions like `$sendMessage` or `$editChannel` accept the curl format. It can be used to style your messages, or to make your code more readable when the function has many arguments.
 
-Instead of using parameter arrays like `$randomText[one;two;three]`, curl arguments allow you to specify options using a key-value format, similar to how you would in a URL. This eliminates the need for placeholder values and improves the overall clarity of your code.
+## Usage
 
-**Key Benefits:**
-
-*   **Improved Readability:**  No more deciphering long strings of semicolons and empty parameters. Curl arguments make it clear what each option is intended for.
-*   **Simplified Code:** Avoid unnecessary placeholder values for optional parameters.  You only need to specify the options you want to change.
-*   **Reduced Errors:** Easier to see and avoid mistakes when specifying function parameters.
-
-## Example: Creating a Channel with Curl Arguments
-
-Let's say you want to create a text channel. Using traditional parameters, you might need to include several empty values for optional settings.  With curl arguments, it's much simpler:
+The most basic usage is:
 
 ```cc
-$createChannel[
-    {name=channelName}
-    {type=text}
-    {topic=channel topic}
-]
+{key:value}
 ```
 
-This code clearly defines the channel's name, type, and topic without requiring you to specify values for "return ID" or "NSFW" (or leave them blank with `;;;`).
+But it can also have multiple values:
 
-## Checking for Curl Support
-
-Not all functions support curl arguments yet. To find out if a specific function supports them, use the `!!func` command:
-
-```
-!!func function name
+```cc
+{key:value1:value2:value3}
 ```
 
-This will provide information about the function, including whether curl arguments are supported.  Look for a "Curl Support" or similar indicator in the function documentation.  If it's supported, you can start taking advantage of this cleaner, more efficient way to pass options!
+When there are more curls inside of one curl option, they use an equal character (`=`) to split key and value.
+
+## Message Formatting
+
+In message functions, you can use it to send embeds, menus, or control other message options.
+
+<DiscordMessages>
+    <DiscordMessage>
+        !!exec $sendMessage[  
+            \{title:Embed Title}  
+            \{desc:Embed Description}  
+            \{footer:Embed Footer}  
+        ]
+    </DiscordMessage>
+    <DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="https://doc.ccommandbot.com/bot-profile.png">
+        <DiscordEmbed embedTitle="Embed Title" embedFooter="Embed Footer">
+            Embed Description
+        </DiscordEmbed>
+    </DiscordMessage>
+</DiscordMessages>
+
+---
+
+### Messages
+
+These tags control the general settings, actions, and behavior of the message itself.
+
+| Format                                   | Description                                            |
+| :--------------------------------------- | :----------------------------------------------------- |
+| `{content:text}`                         | Message content                                        |
+| `{reply:Message ID}`                     | Replies directly to a specific message ID.             |
+| `{reply_mention:yes/no}`                 | Decides if the reply pings the user.                   |
+| `{attachment:name:url:spoiler (yes/no)}` | Attaches a file from a web link.                       |
+| `{file:name:content}`                    | Creates and attaches a plain text file.                |
+| `{reactions:emoji,emoji,...}`            | Adds reactions to the message.                         |
+| `{reaction:emoji,emoji,...}`             | Adds reactions to the message.                         |
+| `{suppress:yes/no}`                      | Hides embeds sent by the bot.                          |
+| `{delete:time}`                          | Deletes the message after a delay (e.g. `10s`, `5m`).  |
+| `{edit:time:New Content}`                | Changes message text after a delay (in milliseconds).  |
+| `{deletecommand}`                        | Instantly deletes the user's trigger command.          |
+| `{deletecommand:time}`                   | Deletes the trigger command after a delay (e.g. `5s`). |
+| `{pin}`                                  | Pins the message to the channel.                       |
+| `{silent}`                               | Sends the message quietly without notifications.       |
+| `{stickers:id1:id2:id3}`                 | Sends up to 3 Discord stickers by ID.                  |
+| `{interaction}`                          | Sends the message with the author name above.          |
+| `{ephemeral:yes/no}`                     | Makes the interaction private.                         |
+| `{private}`                              | Makes the interaction private.                         |
+
+---
+
+### Embeds
+
+These tags build embeds within your message.
+
+| Format                               | Description                                                                    |
+| :----------------------------------- | :----------------------------------------------------------------------------- |
+| `{author:name:avatar}`               | Adds an author section with name and avatar.                                   |
+| `{title:text}`                       | Sets the title.                                                                |
+| `{url:link}`                         | Turns the title into a clickable link.                                         |
+| `{thumbnail:image url}`              | Shows a small image in the top-right corner.                                   |
+| `{description:text}`                 | Sets the description.                                                          |
+| `{desc:text}`                        | Sets the description.                                                          |
+| `{color:hex}`                        | Sets the embed border color. (hex code or color name)                          |
+| `{field:title:text:inline (yes/no)}` | Adds a field with text.                                                        |
+| `{removefields:field number}`        | Remove a field based on its position. Keep empty to remove all fields.         |
+| `{image:image url}`                  | Adds a large image at the bottom.                                              |
+| `{footer:text:avatar url}`           | Adds bottom footer text and optional avatar icon.                              |
+| `{timestamp}`                        | Adds Discord timestamp to the footer.                                          |
+| `{timestamp:time}`                   | Adds Discord timestamp to the footer with specific time set. (in milliseconds) |
+| `{embed:Embed Curls}`                | Adds embed to the message. Use when you need to show multiple embeds.          |
+
+---
+
+### Buttons
+
+Buttons let users click to trigger actions or open web links.
+
+```cc
+{button:label:style:emoji:id:newline:disabled}
+```
+
+Or
+
+```cc
+{button:
+    {label=Label}
+    {style=Style}
+    {id=ID}
+    {emoji=Emoji}
+    {disabled=Is Disabled?}
+    {newline=Is on New Line?}
+}
+```
+
+- <Arg name="label" default="None" /> - The text displayed on the button.
+- <Arg name="style" default="blue" code="true" /> - The button color. Can be `blue`, `green`, `red` or `gray`. If your button is a link, use `url`.
+- <Arg name="emoji" default="None" /> - Emoji or emoji ID that will be displayed on the left side of the button.
+- <Arg name="id" /> - Button ID for triggering a command or url that will open on click.
+- <Arg name="newline" default="no" code="true" /> - Forces the button on a new row. Can be `yes` or `no`.
+- <Arg name="disabled" default="no" code="true" /> - Makes the button disabled and unclickable. Can be `yes` or `no`.
+
+Use `{removebutton:id}` to remove a button from your message. Keep empty to remove all buttons.
+
+---
+
+### Menus
+
+Menus create interactive dropdown lists where users can select one or multiple choices.
+
+```cc
+{menu:
+    {id=ID}
+    {placeholder=Placeholder}
+    {type=Menu Type}
+
+    // Depending on the type:
+    {selected=Selected Value ID}
+    {selected_user=Selected User ID}
+    {selected_role=Selected Role ID}
+    {selected_channel=Selected Channel ID}
+
+    {min=Minimum}
+    {max=Maximum}
+
+    {label=Label}
+    {desc=Description}
+    {value=Value}
+    {emoji=Emoji}
+
+    // repeat the last 4 curls to add more options:
+
+    {label=Label}
+    {desc=Description}
+    {value=Value}
+    {emoji=Emoji}
+}
+```
+
+- <Arg name="id" /> - Menu ID for triggering a command.
+- <Arg name="placeholder" default="Make a selection" code="true" /> - Text that is shown before any selection.
+- <Arg name="type" default="text" code="true" /> - The menu type. Can be `user`, `role`, `channel`, `mention` (roles and users) or `text`.
+- <Arg name="selected" default="None" /> - Default selected option. Works across all types but isn't reliable on type `mention`. To select more options, include this argument multiple times.
+- <Arg name="selected_user" default="None" /> - Default selected user. Works only when type is `user` or `mention`. To select more options, include this argument multiple times.
+- <Arg name="selected_role" default="None" /> - Default selected option. Works only when type is `role`. To select more options, include this argument multiple times.
+- <Arg name="selected_channel" default="None" /> - Default selected option. Works only when type is `channel`. To select more options, include this argument multiple times.
+- <Arg name="min" default="None" /> - Minimum number of selections.
+- <Arg name="max" default="None" /> - Maximum number of selections.
+- <Arg name="label" default="Option 1" code="true" /> - Option label.
+- <Arg name="desc" default="None" /> - Option description.
+- <Arg name="value" default="1" code="true" /> - Option value. This value will get returned in your commands.
+- <Arg name="emoji" default="None" /> - Emoji or emoji ID that will be displayed on the left side of the option.
+
+Use `{removemenu:id}` to remove a menu from your message. Keep empty to remove all menus.
+
+### Polls
+
+This creates a Discord poll where you can select one or multiple answers.
+
+```cc
+{poll:
+    {question=Poll Question}
+    {duration=Poll Duration}
+    {multiple=Multiple Answers?}
+
+    {answer=Answer Title}
+    {emoji=Answer Emoji}
+
+    // repeat last 2 curls to add more options:
+    
+    {answer=Answer Title}
+    {emoji=Answer Emoji}
+}
+```
+
+- <Arg name="question" default="Poll question" code="true" /> - The question/title of your poll.
+- <Arg name="duration" default="24h" code="true" /> - The poll duration in hours. Must be from `1h` to `168h` (one week).
+- <Arg name="multiple" default="no" code="true" /> - Determines if user can vote for multiple options. Can be `yes` or `no`.
+- <Arg name="answer" /> - The answer title.
+- <Arg name="emoji" default="None" /> - Emoji that will display next to the answer.
+
+### V2 Components
+
+Using Discord V2 embed-like components.
+
+| Format                                      | Description                                                                     |
+| :------------------------------------------ | :------------------------------------------------------------------------------ |
+| `{container:V2 Curls}`                      | Embed-like background for components                                            |
+| `{color:hex}`                               | Container border color. (hex or color name)                                     |
+| `{text:text}`                               | Regular text                                                                    |
+| `{section:Curls}`                           | A section can contain `{text}` with `{thumbnail}`, `{button}` or a `{spoiler}`. |
+| `{thumbnail:image url}`                     | Small image on the right side of section.                                       |
+| `{thumb:image url}`                         | Small image on the right side of section.                                       |
+| `{gallery:Image Curls}`                     | Can display up to 10 `{image}`'s.                                               |
+| `{row:Curls}`                               | A row can contain 5 `{button}`'s or 1 `{menu}`.                                 |
+| `{separator:invisible (yes/no):size (1/2)}` | Displays a separator line.                                                      |
+
+You can also use `{file}`, `{menu}` or `{spoiler}` inside of Components V2.
+
+<Callout title="Note">
+Discord V2 components are not required to be inside of `{container}`.
+</Callout>

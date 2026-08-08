@@ -2,37 +2,28 @@
 title: "Troubleshooting"
 ---
 
-Our bot's advanced features mean users may encounter unique issues. This section addresses common problems, ordered from most frequent to less frequent.
+Our custom language syntax and widely customizable commands can cause new users to encounter problems with their work. You can find the most common problems here.
 
-Each problem is presented as a question, followed by troubleshooting steps and the trigger type.
+## Errors
 
-## My command doesn't trigger
+If something fails in your code, you will most likely get an error that explains what went wrong. You can fix the most issues from this message.
 
-<Badge type="tip" text="Word" vertical="middle" />
+## My command doesn't run
 
-**Possible Causes:**
+This is a very broad term. First thing you need to check, is if your command is enabled. You can see a switch in the right-top corner in the command editor.
 
-*   **Incorrect Permission Level:** Have you set the minimum permission level for the command execution to `None`?
+To make sure your command triggers correctly, you need to make sure the permissions are set correctly. The default minimum required permission should be set to `None`. If that didn't fix your issue, check if your command trigger contains any special characters. Special characters can sometimes interfere with trigger recognition. If your trigger is a RegEx, ensure it's correct.
 
-    *   **No:** Change the permission level to `None`, save the changes, and try again.
+The issue might also be in ingnored roles or the code.
 
-    *   **Yes:** Continue to the next possible cause.
+## Bot doesn't execute function
 
-*   **Special Characters in Trigger:** Does your command trigger contain any [special characters](../CodeReferences/specialCharacters)? Special characters can sometimes interfere with trigger recognition.
+If the bot doesn't execute a function that you've told it to, there are multiple factors that could cause this:
 
-## The bot failed to assign a role
+- **Insufficient Permission (most likely)** - The bot doesn't have permission to do the task. You have to edit  it's role permission in Discord role settings.
 
-**Troubleshooting Steps:**
+- **Role Hierarchy** - When giving/taking roles, or changing user nicknames, your highest role **needs** to be higher than the highest role of your target. Nickname changes to server owners are not allowed by Discord.
 
-1.  **Insufficient Bot Permissions:** Ensure the bot has sufficient permissions to assign roles.  Granting the bot Administrator permissions is the easiest way to resolve permission issues.
+## Unknown error
 
-2.  **Role Hierarchy:**  The bot's role (@Custom Command) must be higher in the server's role hierarchy than:
-    *   The role the bot is trying to assign.
-    *   All roles the member already has.
-
-    You can adjust the role hierarchy in your Discord server settings.
-
-
-**Still having trouble?**
-
-If these steps don't resolve the issue, please reach out to our staff on the [support server](https://ccommandsbot.com/join) for personalized assistance.
+If the bot gives you error without any description or says the error is unknown, please ask for help in our [discord server](https://ccommandbot.com/join).

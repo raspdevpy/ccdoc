@@ -1,4 +1,14 @@
 {
-    "title": "Other Information",
-    "pages": ["...", "!syntax"]
+    "title": "Other",
+    "pages": [
+        "curl",
+        "escaping",
+        "ratelimits",
+        "CustomBot",
+        "embedBuilder",
+        "expression",
+        "permission-list",
+        "time-format",
+        "troubleshooting"
+    ]
 }
