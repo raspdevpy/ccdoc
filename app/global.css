@@ -17,3 +17,8 @@ discord-messages {
     border-radius: 8px;
     overflow: hidden;
 }
+@layer utilities {
+  .prose p {
+    margin-top: 0.25rem !important;
+  }
+}
