@@ -6,26 +6,23 @@ Checks if a role exists within the server and returns a boolean value (true or f
 
 #### Usage:
 
-`$roleExists[roleID]`
+`$roleExists[Role Name/ID]`
 
 **Parameters:**
 
-*   `roleID`: The ID of the role you want to check.
+*   `Role Name or ID`: The Name/ID of the role you want to check.
 
 <br/>
 
 **Example:**
-
-```cc
-<discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
-		!!exec $roleExists[$roleID[muted]]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessages>
+	<DiscordMessageUser>
+		!!exec $roleExists[Muted]
+	</DiscordMessageUser>
+	<DiscordMessageBot>
 		true
-	</discord-message>
-</discord-messages>
-```
+	</DiscordMessageBot>
+</DiscordMessages>
 
 **Explanation:**
 

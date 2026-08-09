@@ -16,16 +16,14 @@ This function allows you to retrieve the current month in either its numerical r
 
 **Example:**
 
-```html
-<discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
+<DiscordMessages>
+	<DiscordMessageUser>
 		!!exec $month, $month[yes]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+	</DiscordMessageUser>
+	<DiscordMessageBot>
 		11, November
-	</discord-message>
-</discord-messages>
-```
+	</DiscordMessageBot>
+</DiscordMessages>
 
 **Explanation:**
 

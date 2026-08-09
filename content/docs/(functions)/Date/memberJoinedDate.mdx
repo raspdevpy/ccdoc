@@ -16,29 +16,25 @@ $memberJoinedDate[userID;format(optional)]
 
 <br/>
 
-```html
-<discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
+<DiscordMessages>
+	<DiscordMessageUser>
 		!!exec $memberJoinedDate[725721249652670555;date]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+	</DiscordMessageUser>
+	<DiscordMessageBot>
 		Sat Oct 31 2020
-	</discord-message>
-</discord-messages>
-```
+	</DiscordMessageBot>
+</DiscordMessages>
 
 <br/>
 
-```html
-<discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
+<DiscordMessages>
+	<DiscordMessageUser>
 		!!exec $memberJoinedDate[725721249652670555]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+	</DiscordMessageUser>
+	<DiscordMessageBot>
 		Sat Oct 31 2020 10:55:30 GMT+0000 (Coordinated Universal Time)
-	</discord-message>
-</discord-messages>
-```
+	</DiscordMessageBot>
+</DiscordMessages>
 
 <Callout type="info" title={"Timezone Information"}>
 

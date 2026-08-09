@@ -18,16 +18,14 @@ $messageSlice[from;to (optional)]
 
 Let's say the message sent is: `!!exec a b c d e`
 
-```html
-<discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
+<DiscordMessages>
+	<DiscordMessageUser>
 		!!exec $messageSlice[1]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+	</DiscordMessageUser>
+	<DiscordMessageBot>
 		b c d e
-	</discord-message>
-</discord-messages>
-```
+	</DiscordMessageBot>
+</DiscordMessages>
 
 In this example, `$messageSlice[1]` extracts arguments from index 1 to the end, resulting in `b c d e`.  Remember that arguments are separated by spaces, and the command itself (`!!exec` in this case) is not included.
 
@@ -37,16 +35,15 @@ In this example, `$messageSlice[1]` extracts arguments from index 1 to the end, 
 
 Using the same message: `!!exec a b c d e`
 
-```html
-<discord-messages>
-	<discord-message :bot="false" role-color="#ffcc9a" author="Member">
+<DiscordMessages>
+	<DiscordMessageUser>
 		!!exec $messageSlice[1;2]
-	</discord-message>
-	<discord-message :bot="true" role-color="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+	</DiscordMessageUser>
+	<DiscordMessageBot>
 		b c
-	</discord-message>
-</discord-messages>
-```
+	</DiscordMessageBot>
+</DiscordMessages>
+
 
 Here, `$messageSlice[1;2]` extracts arguments from index 1 to index 2, resulting in `b c`.
 
