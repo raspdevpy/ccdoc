@@ -17,3 +17,53 @@ discord-messages {
     border-radius: 8px;
     overflow: hidden;
 }
+
+.discord-chats {
+    font-family: Inter, Roboto, sans-serif;
+}
+.discord-chats * {
+    background-size: cover;
+}
+.discord-chats p {
+    margin: 0;
+}
+
+.message-mentioned {
+    background-color: #F8A30014;
+}
+
+.message-mentioned:hover {
+    background-color: #F8A30009 !important;
+}
+
+.message-ephemeral {
+    background-color: rgba(88, 101, 242, 0.1);
+}
+
+.message-ephemeral:hover {
+    background-color: rgba(88, 101, 242, 0.18) !important;
+}
+
+.discord-message-wrapper:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+html.dark .discord-message-wrapper:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.text-xxs { font-size: 10px; }
+
+.discord-slash, .discord-reply, .discord-reply-username {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    white-space: nowrap;
+    align-items: center;
+    gap: 4px;
+    height: 18px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    color: #00000080;
+}
