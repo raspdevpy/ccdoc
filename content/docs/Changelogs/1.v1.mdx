@@ -20,6 +20,7 @@ title: "v1.x (Current)"
 * New trigger for Message Commands (Context Menu), [learn more here](/Trigger/app_cmd_message).
 * New function `$eventTargetID` to retrieve the User ID or Message ID for the new User Command and Message Command triggers.
 * For testing purposes, the `emit` command now supports the Upvote event. Use `[prefix]emit upvote`.
+* `$viewServerVars`, `$viewUserVars`, `$viewChannelVars` query significant speed optimization (100x speed for some servers).
 
 #### 🐛 Fixes
 * `$serverCount` and `$allMembersCount` return the correct numbers for custom bots (Tier 3+)
