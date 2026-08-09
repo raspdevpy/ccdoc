@@ -4,7 +4,10 @@ title: "$blackListRoleIds"
 
 This function prevents users with specific roles from using a command. You specify the role IDs and an error message to display when someone with a blacklisted role tries to execute the command.
 
-#### Usage: `$blackListRoleIDs[roleID;roleID;...;error message]`
+#### Usage
+```cc
+$blackListRoleIDs[roleID;roleID;...;error message]
+```
 
 *   **roleID:** The ID of the role you want to blacklist. Separate multiple role IDs with a semicolon (;).
 *   **error message:** The message the bot will send if a user with a blacklisted role tries to use the command.

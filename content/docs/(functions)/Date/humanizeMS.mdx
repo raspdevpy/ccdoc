@@ -4,7 +4,10 @@ title: "$humanizeMS"
 
 Converts milliseconds into a human-readable duration string. This function is useful for displaying elapsed time or time remaining in a user-friendly format.
 
-#### Usage: `$humanizeMS[milliseconds; limit (optional); separator (optional)]`
+#### Usage
+```cc
+$humanizeMS[milliseconds; limit (optional); separator (optional)]
+```
 
 *   **`milliseconds`**: The number of milliseconds to convert.  This is a required argument.
 *   **`limit` (optional)**:  The maximum number of units to display (e.g., if the limit is 2, it might show "2 years, 3 months" and omit days, hours, etc.). Defaults to showing all units if not specified. Must be a number.
