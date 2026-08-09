@@ -26,15 +26,18 @@ Sends a message to the channel where the command was executed.
 <DiscordMessageBot>
 This is a fantastic message!
 </DiscordMessageBot>
+<DiscordMessageUser>
+!!exec $sendMessage[<br/>\{description: This is a fantastic message! \}<br/>\{color:GREEN\}<br/>]
+</DiscordMessageUser>
+
+<DiscordMessageBot>
+<DiscordEmbed color="lime">
+This is a fantastic message!
+</DiscordEmbed>
+</DiscordMessageBot>
+
 </DiscordMessages>
 
-#### More Examples
-
-**Sending an embed:**
-
-It is recommended to use [Message Curl Format](/CodeReferences/ref.message_curl_format) to send more complex messages like embeds
-
-![](https://i.imgur.com/A7UbSpj.png)
 
 <Callout type="info" title={"Note"}>
 
