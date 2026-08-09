@@ -33,3 +33,9 @@ export function Badge({
     </span>
   );
 }
+
+export function Tag({text}: {text: string}) {
+  return (
+    <Badge type="tip" text={text} vertical="middle" />
+  );
+}
