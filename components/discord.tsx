@@ -165,7 +165,7 @@ export function DiscordMessageBot({
       author="Custom Command"
       bot
       roleColor="#0099ff"
-      avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp"
+      avatar="/bot-profile.png"
     >
       {children}
       
