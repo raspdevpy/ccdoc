@@ -19,9 +19,9 @@ $kick[userID;reason]
 Successfull kick with no response
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser author="User">
 !!exec $kick[123456789123456789;Spamming]
-</DiscordMessage>
+</DiscordMessageUser>
 </DiscordMessages>
 
 #### Unsucessful kick
@@ -29,9 +29,9 @@ Successfull kick with no response
 Unsuccessful kick with error message
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser author="User">
 !!exec $kick[$ownerID;Spamming]
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 ❌ bot is missing enough permissions at line 1
 </DiscordMessageBot>

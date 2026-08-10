@@ -49,15 +49,15 @@ Hello $username!
 The command will trigger when a message starts with `!hello`.
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 !hello
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Hello Member!
 </DiscordMessageBot>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 !hello everyone
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Hello Member!
 </DiscordMessageBot>
@@ -66,9 +66,9 @@ Hello Member!
 However, a message where `!hello` appears later will not trigger the command.
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 Hey !hello
-</DiscordMessage>
+</DiscordMessageUser>
 </DiscordMessages>
 
 This is useful for traditional commands such as `!help`, `?report`, or `!hug`.
@@ -92,15 +92,15 @@ Good morning, $username!
 The command will trigger when the message ends with `good morning`.
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 Everyone, good morning
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Good morning, Member!
 </DiscordMessageBot>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 Good morning
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Good morning, Member!
 </DiscordMessageBot>
@@ -109,9 +109,9 @@ Good morning, Member!
 A message where the text appears in the middle will not trigger the command.
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 Good morning everyone!
-</DiscordMessage>
+</DiscordMessageUser>
 </DiscordMessages>
 
 
@@ -133,15 +133,15 @@ and if the response code is
 will trigger whenever `banana` appears in the message.
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 I really like bananas!
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 🍌 Banana detected!
 </DiscordMessageBot>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 Does anyone have a banana?
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 🍌 Banana detected!
 </DiscordMessageBot>
@@ -170,9 +170,9 @@ You have mentioned $username[$mentioned]!
 This can detect mentions such as:
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 Hey <DiscordMention type="user">Mido</DiscordMention>!
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 You have mentioned Mido!
 </DiscordMessageBot>
@@ -198,10 +198,10 @@ This can be useful for creating commands that automatically react to images, fil
 For example:
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 Check out this image!
 [attachment: image.png]
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Nice image!
 </DiscordMessageBot>
@@ -217,9 +217,9 @@ The **Discord Pin Message** option triggers when Discord sends a system message 
 For example:
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 [Discord system message: A message was pinned]
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 A message was pinned!
 </DiscordMessageBot>
@@ -235,9 +235,9 @@ The **Discord Thread Created Message** option triggers when Discord sends a syst
 For example:
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 [Discord system message: A thread was created]
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 A new thread has been created!
 </DiscordMessageBot>
@@ -253,14 +253,14 @@ The **Contains Poll** option triggers when a message contains a Discord poll.
 For example:
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 Which game should we play?
 
 [Poll]
 Minecraft
 Fortnite
 Terraria
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Thanks for creating a poll!
 </DiscordMessageBot>
@@ -276,9 +276,9 @@ The **Has User Mention/Ping** option triggers when a message contains a mention 
 For example:
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 Hey <DiscordMention type="user">Mido</DiscordMention>, check this out!
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Someone was mentioned!
 </DiscordMessageBot>
@@ -289,15 +289,15 @@ The mention can appear anywhere in the message.
 For example, all of these can trigger the command:
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 <DiscordMention type="user">Mido</DiscordMention> hello!
-</DiscordMessage>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+</DiscordMessageUser>
+<DiscordMessageUser>
 Hello <DiscordMention type="user">Mido</DiscordMention>!
-</DiscordMessage>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+</DiscordMessageUser>
+<DiscordMessageUser>
 Can someone help <DiscordMention type="user">Mido</DiscordMention>?
-</DiscordMessage>
+</DiscordMessageUser>
 </DiscordMessages>
 
 
@@ -308,11 +308,11 @@ The **Forwarded Message** option triggers when a message contains a forwarded Di
 For example:
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 [Forwarded message]
 
 This is the original message. 
-</DiscordMessage> 
+</DiscordMessageUser> 
 <DiscordMessageBot>
 A message was forwarded! 
 </DiscordMessageBot> 
@@ -328,9 +328,9 @@ The **Discord AutoMod Action Message** option triggers when Discord AutoMod take
 For example, when a user sends a message that violates an AutoMod rule:
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 This message triggered AutoMod
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 AutoMod has detected a violation.
 </DiscordMessageBot>
@@ -350,15 +350,15 @@ It does not matter what the message contains.
 For example, a command configured with **Every Message** could automatically respond to messages:
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 Hello everyone!
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Have a great day!
 </DiscordMessageBot>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 Does anyone want to play?
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Have a great day!
 </DiscordMessageBot>

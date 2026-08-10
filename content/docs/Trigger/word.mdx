@@ -15,9 +15,9 @@ In the code part we will type `pong!`, so the bot will respond with it.
 ![Word example](https://i.imgur.com/0ndhYaw.png)
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 !ping
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 pong!
 </DiscordMessageBot>
@@ -32,9 +32,9 @@ In that case we would want users to select a user by mentioning him.
 #### Usage
 The mention will be the `parameter 1`, because users will mention their victim right after the ?hug keyword.
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 ?hug <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessage>
+</DiscordMessageUser>
 </DiscordMessages>
 
 #### Setup
@@ -45,9 +45,9 @@ Parameters can be retrieved using the `$message` function, we will use it to get
 #### Result
 Here's how the final command should look like:
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 ?hug <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 <DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
 </DiscordMessageBot>
@@ -67,21 +67,21 @@ Here's how to make a case insensitive `?hello` command, that will respond with a
 Let's test different variations:
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 ?hello
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
 </DiscordMessageBot>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 ?HELLO
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
 </DiscordMessageBot>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 ?HeLLo
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
 </DiscordMessageBot>
@@ -106,21 +106,21 @@ We can do that with the following trigger:
 Let's test it out:
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 ?hug <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 <DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
 </DiscordMessageBot>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 ?abrazo <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 <DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
 </DiscordMessageBot>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 ?étreinte <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 <DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
 </DiscordMessageBot>
@@ -161,15 +161,15 @@ You need to add a forward slash before and after your expression, otherwise the 
 Let's try sending some mentions:
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 Hey <DiscordMention type="user">fajfaj</DiscordMention>! How is it going?
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 You've pinged someone!
 </DiscordMessageBot>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 <DiscordMention type="user">Mido</DiscordMention>, have you found your chocolate yet?
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 You've pinged someone!
 </DiscordMessageBot>
@@ -239,15 +239,15 @@ To randomize the output, we will use `$randomText` function, and to restrict the
 Let's see if we get any compliments:
 
 <DiscordMessages>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 How is it going?
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Cool message!
 </DiscordMessageBot>
-<DiscordMessage author="Member" roleColor="#ffcc9a">
+<DiscordMessageUser>
 Does anyone here have a monkey as a pet?
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Wonderful punctuation!
 </DiscordMessageBot>

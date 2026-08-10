@@ -19,17 +19,17 @@ $serverCooldown[time;error message]
 As you can see, first time it will set the cooldown and execute code below, second time, it won't allow execution
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser>
 !!exec $serverCooldown[5m;You're on cooldown!]<br />
 You're not on cooldown!
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 You're not on cooldown!
 </DiscordMessageBot>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser>
 !!exec $serverCooldown[5m;You're on cooldown! Still %mins%m remaining!]<br />
 You're not on cooldown!
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 You're on cooldown! Still 4m remaining!
 </DiscordMessageBot>
