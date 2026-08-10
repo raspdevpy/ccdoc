@@ -2,20 +2,55 @@
 title: "$userVarRank"
 ---
 
-Return user var rank returned by $userleaderboard for a single user
+Return user's rank returned by `$userleaderboard` for a single user
 
-## Usage
+#### Usage
 
 ```cc
-$uservarRank[Variable name;Order Type (optional) (asc/desc, default is desc);User ID (optional)]
+$uservarRank[Variable name;Sorting Type;User ID (optional)]
 ```
 
-### Example:
+#### Sorting Type
+
+* `highest-first` (Default): Uses the sorting type that displays the list from the highest value to the lowest.
+* `lowest-first`: Uses the sorting type that displays the list from the lowest value to the highest.
+* `desc` <Badge type="warning">Deprecated</Badge>: Legacy alias for `lowest-first`.
+* `asc` <Badge type="warning">Deprecated</Badge>: Legacy alias for `highest-first`.
+
+#### Example:
 <DiscordMessages>
 <DiscordMessageUser>
-!!exec Your rank is $userVarRank[xp]<br /><br />
+!!exec Top 5  
+$userLeaderboard[money;highest-first;\{top}. \{username} - \{value};5]
 </DiscordMessageUser>
 <DiscordMessageBot>
-Your rank is 3
+Top 5  
+1. Member - 350  
+2. Rake - 201  
+3. Zero - 121  
+4. Red - 53  
+5. Azz - 22  
+</DiscordMessageBot>
+<DiscordMessageUser>
+!!exec Your rank is $userVarRank[money]
+</DiscordMessageUser>
+<DiscordMessageBot>
+Your rank is 1
 </DiscordMessageBot>
 </DiscordMessages>
+
+#### What if the user does not have the variable?
+If the specified user does not have the variable defined, `$userVarRank` will return `undefined`.
+
+<Callout type="info" title={"Related Functions"}>
+Check out: `$userLeaderboard`
+
+Check out: `$setUserVar`
+
+Check out: `$getUserVar`
+
+Check out: `$deleteUserVar`
+
+Check out: `$resetUserVar`
+
+</Callout>
