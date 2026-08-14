@@ -23,6 +23,7 @@ title: "v1.x (Current)"
 * `$viewServerVars`, `$viewUserVars`, `$viewChannelVars` query significant speed optimization (100x speed for some servers).
 * Slash command support is now available for some native commands, such as clone. These slash commands are available on the main bot only.
 * `$userLeaderboard` and `$userVarRank` now uses clearer sorting names to avoid confusion. Sorting options are now `highest-first` and `lowest-first`.
+* `$includeLibrary` respects the status of the included library; disabled libraries cannot be included.
 
 #### 🐛 Fixes
 * `$serverCount` and `$allMembersCount` return the correct numbers for custom bots (Tier 3+)
