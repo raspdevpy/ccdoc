@@ -1,5 +1,5 @@
 ---
-title: "$ObjectValues"
+title: "$objectValues"
 ---
 
 Return the Object values with seperator between each value
@@ -7,13 +7,13 @@ Return the Object values with seperator between each value
 ## Usage
 
 ```cc
-$ObjectValues[Seperator (optional, default:, );Nested Propery 1;Nested Property 2]
+$objectValues[Seperator (optional, default:, );Nested Propery 1;Nested Property 2]
 ```
 
 ### Example (Get values of nested property):
 <DiscordMessages>
 <DiscordMessageUser>
-!!exec $ObjectSet[name;Mido]<br />$objectSet[age;300]<br />$ObjectValues<br /><br />
+!!exec $objectSet[name;Mido]<br />$objectSet[age;300]<br />$objectValues<br /><br />
 </DiscordMessageUser>
 <DiscordMessageBot>
 Mido, 300<br /><br />
@@ -23,7 +23,7 @@ Mido, 300<br /><br />
 ### Example:
 <DiscordMessages>
 <DiscordMessageUser>
-!!exec $objectSet[user;name;Mido]<br />$objectSet[user;id;1234]<br />$objectSet[user;weapon;Sword]<br />$ObjectValues[/;user]<br /><br />
+!!exec $objectSet[user;name;Mido]<br />$objectSet[user;id;1234]<br />$objectSet[user;weapon;Sword]<br />$objectValues[/;user]<br /><br />
 </DiscordMessageUser>
 <DiscordMessageBot>
 Mido/1234/Sword
