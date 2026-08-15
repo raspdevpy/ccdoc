@@ -25,8 +25,30 @@ When there are more curls inside of one curl option, they use an equal character
 In message functions, you can use it to send embeds, menus, or control other message options.
 
 <Discord>
-    <Message slash="hello">
-        Hi!
+    <Message slash="test" ephemeral>
+        Normal Text  
+        *Not Normal Text*  
+        **Not Normal Text 2**
+        <Embed title="Embed Title" footer="Footer" footerImage="/bot-profile.png">
+            Normal Text  
+            *Not Normal Text*  
+            **Not Normal Text 2**
+        </Embed>
+    </Message>
+</Discord>
+
+<Discord>
+    <Message>
+        !!exec $sendMessage[  
+        <Tab/>\{title:Embed Title}  
+        <Tab/>\{desc:Embed Description}  
+        <Tab/>\{footer:Embed Footer}  
+        ]
+    </Message>
+    <Message bot>
+        <Embed title="Embed Title" footer="Embed Footer">
+            Embed Description
+        </Embed>
     </Message>
 </Discord>
 

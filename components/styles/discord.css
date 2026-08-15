@@ -1,0 +1,15 @@
+.discord-chats {
+    font-family: Inter, Roboto, sans-serif;
+}
+.discord-chats * {
+    background-size: cover;
+}
+.discord-chats p {
+    margin: 0px;
+    line-height: 1.33333;
+}
+
+.text-xxs {
+    font-size: 10px;
+    line-height: 1.5;
+}

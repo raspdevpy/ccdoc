@@ -1,4 +1,5 @@
 import React from "react";
+import { filterChildren } from "./componentFilter";
 
 interface MessageProps {
     bot?: boolean;
@@ -23,7 +24,7 @@ interface MessageProps {
 export const Message = ({
     bot = false,
     avatar = "https://cdn.discordapp.com/embed/avatars/0.png",
-    botAvatar = "/favicon.svg",
+    botAvatar = "/bot-profile.png",
     color = "#a7c7e7",
     botColor = "#0099ff",
     name = "Member",
@@ -39,26 +40,20 @@ export const Message = ({
     replyColor = "#a7c7e7",
     children = [],
 }: MessageProps) => {
-    const everything = React.Children.toArray(children);
-    const components: React.ReactNode[] = [];
-    const message: React.ReactNode[] = [];
+    if (bot) {
+        avatar = botAvatar;
+        color = botColor;
+        name = botName;
+    }
 
-    everything.forEach((child) => {
-        if (
-            React.isValidElement(child) &&
-            (child.type as any).name !== "Mention" &&
-            (typeof child !== "string" || typeof child !== "number")
-        ) {
-            components.push(child);
-        } else {
-            message.push(child);
-        }
-    });
+    const { components, message } = filterChildren(children);
 
     return (
-        <div className={`discord-message-wrapper flex min-w-full w-max min-h-0 my-0.5 py-0.75 px-3 gap-3 transition-colors ${mention ? "message-mentioned" : ephemeral ? "message-ephemeral" : ""}`}>
+        <div
+            className={`flex flex-row min-w-full w-max my-0.5 py-0.75 px-3 gap-3 transition-colors border-l-2 ${mention ? "dark:bg-[#f8a30014] dark:hover:bg-[#f8a30009] bg-[#f8a30024] hover:bg-[#f8a30019] border-l-[#f8a300]/50" : ephemeral ? "bg-[rgba(88,101,242,0.1)] hover:bg-[rgba(88,101,242,0.18)] border-l-[rgba(88,101,242,0.5)]" : "not-dark:hover:bg-[rgba(0,0,0,0.04)] dark:hover:bg-[rgba(255,255,255,0.04)] border-l-transparent"}`}
+        >
             <div className="flex shrink-0 flex-col">
-                {slash !== "" && reply !== "" && (
+                {(slash !== "" || reply !== "") && (
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 160 90"
@@ -76,15 +71,15 @@ export const Message = ({
                 )}
                 <img src={avatar} className="rounded-full m-0 mt-1 w-10 h-10" />
             </div>
-            <div className="flex flex-col text-zinc-800 dark:text-zinc-300 pr-4 w-full leading-snug">
+            <div className="flex flex-col text-zinc-800 dark:text-zinc-300 pr-4 w-full">
                 {slash !== "" && (
-                    <div className="discord-slash">
+                    <div className="flex flex-row flex-nowrap whitespace-nowrap items-center gap-1 h-4.5 mb-0.5 text-xs text-black/50 dark:text-white/50">
                         <img
                             className="rounded-full m-0 h-4 w-4"
-                            src={avatar}
+                            src={slashAvatar}
                         />
                         {slashUser} used
-                        <div className="discord-slash-view">
+                        <div className="flex h-full items-center justify-center py-px px-1 bg-[rgba(88,101,242,0.2)] rounded-sm text-[#4346d5] dark:text-[#57a0ff] gap-1 text-xs cursor-pointer">
                             <svg
                                 aria-hidden="true"
                                 role="img"
@@ -104,12 +99,15 @@ export const Message = ({
                     </div>
                 )}
                 {reply !== "" && (
-                    <div className="discord-reply">
+                    <div className="flex flex-row flex-nowrap whitespace-nowrap items-center gap-1 h-4.5 mb-0.5 text-xs text-black/50">
                         <img
                             className="rounded-full m-0 h-4 w-4"
                             src={replyAvatar}
                         />
-                        <div className="flex flex-row flex-nowrap text-nowrap items-center gap-1 h-4.5 mb-0.5 text-xs text-black/50">
+                        <div
+                            className="flex flex-row flex-nowrap text-nowrap items-center gap-1 h-4.5 mb-0.5 text-xs text-black/50"
+                            style={{ color: replyColor }}
+                        >
                             @{replyUser}
                         </div>
                         {reply}
@@ -118,7 +116,7 @@ export const Message = ({
 
                 <div className="flex gap-1.5 items-center">
                     <div
-                        className="text-nowrap font-semibold"
+                        className="text-nowrap font-semibold text-base"
                         style={{ color: color }}
                     >
                         {name}
@@ -138,7 +136,7 @@ export const Message = ({
 
                     <div className="text-xxs text-gray-500">01/01/0101</div>
                 </div>
-                <div className="text-sm prose">{message}</div>
+                <div className="flex text-sm prose">{message}</div>
                 {components}
                 {ephemeral && (
                     <div className="flex flex-row text-xxs gap-1.25 mt-1.25 text-gray-500/50">

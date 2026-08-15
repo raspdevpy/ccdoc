@@ -9,6 +9,9 @@ import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
 import { Discord } from "@/components/discord/discord";
 import { Message } from "@/components/discord/message";
+import { Embed } from "@/components/discord/embed";
+
+import { Tab } from "@/components/tab";
 
 const Image = ({
     className,
@@ -56,6 +59,8 @@ export function getMDXComponents(components?: MDXComponents) {
         Arg,
         Discord,
         Message,
+        Embed,
+        Tab,
         ...Discords,
         ...components,
     } satisfies MDXComponents;
