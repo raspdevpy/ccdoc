@@ -7,10 +7,7 @@ import { Arg } from "@/components/arg";
 import * as Discords from "@/components/discord";
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-import { Discord } from "@/components/discord/discord";
-import { Message } from "@/components/discord/message";
-import { Embed } from "@/components/discord/embed";
-import { Mention } from "./discord/mention";
+import * as Discord from "@/components/chats/index";
 
 import { Tab } from "@/components/tab";
 
@@ -59,11 +56,8 @@ export function getMDXComponents(components?: MDXComponents) {
         Badge,
         Tag,
         Arg,
-        Discord,
-        Message,
-        Embed,
-        Mention,
         Tab,
+        ...Discord,
         ...Discords,
         ...components,
     } satisfies MDXComponents;

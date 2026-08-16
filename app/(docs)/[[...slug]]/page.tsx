@@ -14,7 +14,7 @@ import { appName, gitConfig, socialImage, appDescription } from "@/lib/shared";
 import { Button } from "@/components/ui/button";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { getEditTime } from "@/lib/getEditTime";
-import { Message } from "@/components/discord/message";
+import { Message } from "@/components/chats/message/message";
 
 export default async function Page(props: PageProps<"/[[...slug]]">) {
     const params = await props.params;

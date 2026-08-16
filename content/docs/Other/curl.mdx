@@ -27,14 +27,23 @@ In message functions, you can use it to send embeds, menus, or control other mes
 <Discord>
     <Message slash="test" bot ephemeral>
         Normal Text <Mention/>  
-        ![](/bot-profile.png)
         *Not Normal Text*  
         **Not Normal Text 2**
         <Embed title="Embed Title" footer="Footer" footerImage="/bot-profile.png">
             Normal Text  
             *Not Normal Text*  
             **Not Normal Text 2**
-            ![](/bot-profile.png)
+            <Fields>
+                <Field title="Field?">
+                    Hello everyone! **HAHAHA**
+                </Field>
+                <Field title="Field?" inline>
+                    Hello everyone! **HAHAHA**
+                </Field>
+                <Field title="Field?">
+                    Hello everyone! **HAHAHA**
+                </Field>
+            </Fields>
         </Embed>
     </Message>
 </Discord>

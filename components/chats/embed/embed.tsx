@@ -1,5 +1,5 @@
 import React from "react";
-import { filterChildren } from "./componentFilter";
+import { filterChildren } from "@/components/chats/componentFilter";
 
 interface MessageProps {
     color?: string;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Mention } from "../discord/mention";
+import { Mention } from "./message/mention";
 
 export function filterChildren(children: React.ReactNode) {
     const everything = React.Children.toArray(children);
