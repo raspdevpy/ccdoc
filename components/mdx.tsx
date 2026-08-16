@@ -2,7 +2,7 @@ import defaultMdxComponents from "fumadocs-ui/mdx";
 import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 import type { MDXComponents } from "mdx/types";
 import type { ComponentProps } from "react";
-import { Badge } from "@/components/badge";
+import { Badge, Tag } from "@/components/badge";
 import { Arg } from "@/components/arg";
 import * as Discords from "@/components/discord";
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
@@ -57,6 +57,7 @@ export function getMDXComponents(components?: MDXComponents) {
         Accordion,
         Accordions,
         Badge,
+        Tag,
         Arg,
         Discord,
         Message,

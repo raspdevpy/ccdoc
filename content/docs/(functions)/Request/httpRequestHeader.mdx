@@ -18,17 +18,17 @@ $httpRequestHeader[header name]
 How to return Content-Type from last request
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser author="User">
 !!exec $httpRequest[https://api.example.com/]<br />
 Content-Type Header: $httpRequestHeader[content-type]
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 \{"message": "Api response!"}<br />
 Content-Type Header: application/json
 </DiscordMessageBot>
 </DiscordMessages>
 
-##### Related functions: `$httpRequest` `$httpRequestStatus`
+**Related Functions:** `$httpRequest` `$httpRequestStatus`
 
 **Function difficulty:** <Badge type="warning" text="Medium" vertical="middle"/>
 

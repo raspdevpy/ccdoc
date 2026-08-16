@@ -4,23 +4,26 @@ title: "$botCount"
 
 This function returns the total number of bots present in your Discord server (guild).
 
-#### Usage: `$botCount`
+#### Usage
+```cc
+$botCount
+```
 
 Here's how you can use the `$botCount` function:
 
-```
+```cc
 !!exec There are $botCount bots in the server!
 ```
 
 This command, when executed, will display a message showing the bot count in the server.  See the example next:
 
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Member">
+<DiscordMessageUser>
 !!exec There are $botCount bots in the server!
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Custom Command" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageUser>
+<DiscordMessageBot>
 There are 2 bots in the server!
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 <Callout type="error" title={"Warning"}>
@@ -32,4 +35,4 @@ The bot count is retrieved from the bot's cache, not directly from the Discord A
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
 
-**Tags:** <Badge type="tip" text="bots" vertical="middle" /> <Badge type="tip" text="count" vertical="middle" /> <Badge type="tip" text="amount of bots" vertical="middle" /> <Badge type="tip" text="return number" vertical="middle" />
+**Tags:** <Tag text="Bots"/> <Tag text="Count"/> <Tag text="Amount Of Bots"/> <Tag text="Return Number"/>

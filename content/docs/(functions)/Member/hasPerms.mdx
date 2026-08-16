@@ -19,9 +19,9 @@ $hasPerms[userID;perm1;perm2;...]
 How to use $hasPerms. Keep in mind that only if the user does have all of listed permissions, true will be returned.
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser>
 !!exec $hasPerms[$authorID;sendmessages]
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 true
 </DiscordMessageBot>
@@ -33,7 +33,7 @@ To make code stop if the user doesn't have the needed permission, you can check 
 
 </Callout>
 
-##### Related functions: `$hasAnyPerm` `$hasAnyRole` `$hasRole`
+**Related Functions:** `$hasAnyPerm` `$hasAnyRole` `$hasRole`
 
 **Function difficulty:** <Badge type="tip" text="Easy" vertical="middle"/>
 

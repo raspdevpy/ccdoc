@@ -139,16 +139,21 @@ export {
  *
  */
 
-type SimpleMessageProps = {
+type SimpleMessageProps = Omit<
+  ComponentProps<typeof RawMessage>,
+  'children'
+> & {
   children?: ReactNode;
 };
 
+
 export function DiscordMessageUser({
   children,
+  ...props
 }: SimpleMessageProps) {
   const lightTheme = useTheme().resolvedTheme === 'light';
   return (
-    <RawMessage lightTheme={lightTheme} roleColor="#ffcc9a" author="Member">
+    <RawMessage lightTheme={lightTheme} roleColor="#ffcc9a" author="Member" {...props} >
       {children}
     </RawMessage>
   );
@@ -156,6 +161,7 @@ export function DiscordMessageUser({
 
 export function DiscordMessageBot({
   children,
+  ...props
 }: SimpleMessageProps) {
   const lightTheme = useTheme().resolvedTheme === 'light';
   
@@ -165,8 +171,8 @@ export function DiscordMessageBot({
       author="Custom Command"
       bot
       roleColor="#0099ff"
-      avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp"
-    >
+      avatar="/bot-profile.png"
+      {...props} >
       {children}
       
     </RawMessage>

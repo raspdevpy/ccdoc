@@ -4,7 +4,10 @@ title: "$sendWebhook"
 
 Sends a message via a Discord webhook using its ID and token.
 
-#### Usage: `$sendWebhook[webhookID;webhookToken;message;return message ID (yes/no, optional);username (optional);avatar URL (optional)]`
+#### Usage
+```cc
+$sendWebhook[webhookID;webhookToken;message;return message ID (yes/no, optional);username (optional);avatar URL (optional)]
+```
 
 *   **webhookID:** The ID of the webhook.
 *   **webhookToken:** The token of the webhook.
@@ -43,4 +46,4 @@ For non-premium bots, this function will behave exactly as `$sendMessage` due to
 
 **Function difficulty:** <Badge type="warning" text=" Medium" vertical="middle" />
 
-**Tags:** <Badge type="tip" text="webhook" vertical="middle" /> <Badge type="tip" text="message" vertical="middle" />
+**Tags:** <Tag text="Webhook"/> <Tag text="Message"/>

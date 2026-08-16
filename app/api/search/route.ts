@@ -18,7 +18,7 @@ function tagsFor(filePath: string, title: string) {
   const raw = fs.readFileSync(path.join(process.cwd(), 'content/docs', filePath), 'utf8');
 
   const tags: string[] = [];
-  for (const [, text] of raw.matchAll(/<Badge[^>]*\btext="([^"]*)"/g)) {
+  for (const [, text] of raw.matchAll(/<(?:Badge|Tag)[^>]*\btext="([^"]*)"/g)) {
     if (text.length > 1 && !NOT_A_TAG.test(text)) tags.push(text);
   }
   // the old plugin also indexed the bare function name

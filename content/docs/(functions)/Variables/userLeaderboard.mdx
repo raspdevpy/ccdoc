@@ -4,12 +4,24 @@ title: "$userLeaderboard"
 
 Generates a leaderboard of a user variable and return it.
 
-#### Usage: `$userLeaderboard[variable;asc/desc (optional);{top}.- {username} - {value};list (optional, max=40);page (optional)]`
+#### Usage
+```cc
+$userLeaderboard[variable;Sorting Type;{top}.- {username} - {value};limit per page (optional, default=10, max=40);page (optional, default=1)]
+```
 
-Available Variables:
+#### Sorting Type
+
+* `highest-first` (Default): Shows the list from the highest value to the lowest.
+* `lowest-first`: Shows the list from the lowest value to the highest.
+* `desc` <Badge type="warning">Deprecated</Badge>: Legacy alias for `lowest-first`.
+* `asc` <Badge type="warning">Deprecated</Badge>: Legacy alias for `highest-first`.
+
+
+#### Available Variables
 | Variable | Description |
 | --- | ----------- |
 | \{top} | returns the rank number |
+| \{rank} | same as \{top} |
 | \{value} | returns the numerical value of the variable |
 | \{raw_value} | returns the raw value in case it's not number |
 | \{id} | returns the user id |
@@ -19,24 +31,46 @@ Available Variables:
 | \{tag} | returns the tag like Mido#1234 |
 | \{discriminator} | returns the discriminator like 1234 |
 
-Order:
-* `desc`: Will display all the members' ranks from largest to smallest.
-* `asc`: Will display all the members' ranks from smallest to largest.
+#### Pagination
+
+Since the list can contain many entries, you can control which portion of the list is displayed using the `limit per page` and `page` values.
+
+* `limit per page`: The maximum number of entries to show on each page.
+* `page`: The page number to display.
+
 
 #### Example:
-To use this function your uservar must have numeric values .
-<br/>
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Mido">
-!!exec $setUserVar[money;100] <br/>
-!!exec $userLeaderboard[money;asc;\{top}.- \{username} - \{value}]
-</DiscordMessage>
+<DiscordMessageUser>
+!!exec Top 5  
+$userLeaderboard[money;highest-first;\{top}. \{username} - \{value};5]
+</DiscordMessageUser>
 <DiscordMessageBot>
-1.- Mido - 100
+Top 5  
+1. Mido - 350  
+2. Rake - 201  
+3. Zero - 121  
+4. Red - 53  
+5. Azz - 22  
 </DiscordMessageBot>
+<DiscordMessageUser>
+!!exec Top 3  
+$userLeaderboard[money;highest-first;\{top}. \{username} - \{value};3]
+</DiscordMessageUser>
+<DiscordMessageBot>
+Top 3  
+1. Mido - 350  
+2. Rake - 201  
+3. Zero - 121  
+</DiscordMessageBot>
+
 </DiscordMessages>
 
+#### What if the value is not a valid number?
+If a value is not a valid number, it will always be placed at the end of the list, regardless of the selected sorting type.
+
 <Callout type="info" title={"Related Functions"}>
+Check out: `$uservarRank`
 
 Check out: `$setUserVar`
 

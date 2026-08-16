@@ -19,9 +19,9 @@ $hasRoles[userID;role1;role2;...]
 How to use $hasRoles. Keep in mind that only if the user does have all of listed roles, true will be returned.
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser author="User">
 !!exec $hasRoles[$authorID;123456789123456789]
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 true
 </DiscordMessageBot>
@@ -33,7 +33,7 @@ To make code stop if the user doesn't have the needed role, you can check out `$
 
 </Callout>
 
-##### Related functions: `$hasAnyPerm` `$hasPerms` `$hasAnyRole`
+**Related Functions:** `$hasAnyPerm` `$hasPerms` `$hasAnyRole`
 
 **Function difficulty:** <Badge type="tip" text="Easy" vertical="middle"/>
 

@@ -21,15 +21,15 @@ $blackListIDs[userID;userID;...;error message]
 How to blacklist a user from the command
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser>
 !!exec $blackListIDs[$authorID;You are blacklisted from using this command!]<br />Message
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 You are blacklisted from using this command!
 </DiscordMessageBot>
 </DiscordMessages>
 
-##### Related functions: `$blackListRoleIds` `$blackListChannelIDs` `$onlyForIDs` `$onlyForRoles`
+**Related Functions:** `$blackListRoleIds` `$blackListChannelIDs` `$onlyForIDs` `$onlyForRoles`
 
 **Function difficulty:** <Badge type="warning" text="Medium" vertical="middle"/>
 

@@ -4,27 +4,28 @@ title: "$getUserVar"
 
 Gets a user variable value
 
-#### Usage: `$getUserVar[variable;userid(optional)]`
-<br/>
+#### Usage
+```cc
+$getUserVar[variable;User ID (Optional)]
+```
+
+#### Example
 <DiscordMessages>
 <DiscordMessageUser>
-!!exec $getUserVar[warnings;683630053686378498]
+!!exec Your warnings: $getUserVar[warns]
 </DiscordMessageUser>
 <DiscordMessageBot>
-4
+Your warnings: 4
+</DiscordMessageBot>
+<DiscordMessageUser>
+!!exec Other user's warnings: $getUserVar[warns;12346786512312]
+</DiscordMessageUser>
+<DiscordMessageBot>
+Other user's warnings: 1
 </DiscordMessageBot>
 </DiscordMessages>
 
-or executors(author/you) warning count: 
-
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $getUserVar[warnings]
-</DiscordMessageUser>
-<DiscordMessageBot>
-1
-</DiscordMessageBot>
-</DiscordMessages>
+**Note:** The return value will be `undefined` if the variable was not defined for that user.
 
 <Callout type="info" title={"Related Functions"}>
 

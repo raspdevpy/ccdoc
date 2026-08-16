@@ -6,7 +6,10 @@ title: "$sendDM"
 
 Sends the output of the code to the message author's DMs or to the DMs of a specified user.
 
-#### Usage: `$sendDM[userID;message]`
+#### Usage
+```cc
+$sendDM[userID;message]
+```
 
 *   `userID`: (Optional) The ID of the user to send the DM to. If omitted, the DM will be sent to the message author.
 *   `message`: The message to send in the DM.
@@ -25,12 +28,12 @@ $sendDM[$authorID;I can add this multiple times in my code! This is time 2]
 <br/>
 
 <DiscordMessages>
-<DiscordMessage bot roleColor="#0099ff" author="Your Custom Bot" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+<DiscordMessageBot author="Your Custom Bot">
 I can add this multiple times in my code! This is time 1
-</DiscordMessage>
-<DiscordMessage bot roleColor="#0099ff" author="Your Custom Bot" avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp">
+</DiscordMessageBot>
+<DiscordMessageBot>
 I can add this multiple times in my code! This is time 2
-</DiscordMessage>
+</DiscordMessageBot>
 </DiscordMessages>
 
 <Callout type="info" title={"Note"}>
@@ -48,4 +51,4 @@ You can send embeds using the [Message Curl Format](/Other/curl).  This allows y
 
 **Function Difficulty:** <Badge type="warning" text="Medium" vertical="middle" />
 
-**Tags:** <Badge type="tip" text="Send" vertical="middle" /> <Badge type="tip" text="Message" vertical="middle" /> <Badge type="tip" text="DM" vertical="middle" /> <Badge type="tip" text="send DM Message" vertical="middle" />
+**Tags:** <Tag text="Send"/> <Tag text="Message"/> <Tag text="DM"/> <Tag text="Send DM Message"/>

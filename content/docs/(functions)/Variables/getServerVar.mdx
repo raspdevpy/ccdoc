@@ -4,7 +4,10 @@ title: "$getServerVar"
 
 Gets a server variable value
 
-#### Usage: `$getServerVar[variable]`
+#### Usage
+```cc
+$getServerVar[variable]
+```
 <br/>
 <DiscordMessages>
 <DiscordMessageUser>
@@ -14,6 +17,8 @@ Gets a server variable value
 Mika
 </DiscordMessageBot>
 </DiscordMessages>
+
+**Note:** The return value will be `undefined` if the variable was not defined for that server.
 
 <Callout type="info" title={"Related Functions"}>
 

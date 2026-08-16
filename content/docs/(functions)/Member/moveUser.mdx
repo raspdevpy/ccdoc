@@ -20,9 +20,9 @@ $moveUser[userID;channelID;reason]
 How to move user to another channel
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser author="User">
 !!exec $moveUser[123456789123456789;123456789987654321;AFK]
-</DiscordMessage>
+</DiscordMessageUser>
 </DiscordMessages>
 
 #### Disconnecting user from a channel
@@ -30,9 +30,9 @@ How to move user to another channel
 How to diconnect user from a channel
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser author="User">
 !!exec $moveUser[123456789123456789;;AFK]
-</DiscordMessage>
+</DiscordMessageUser>
 </DiscordMessages>
 
 <Callout type="info" title={"Permission"}>
@@ -41,7 +41,7 @@ Make sure that the bot does have enough permission to move or disconnect members
 
 </Callout>
 
-##### Related functions: `$vcBefore` `$vcAfter`
+**Related Functions:** `$vcBefore` `$vcAfter`
 
 **Function difficulty:** <Badge type="warning" text="Medium" vertical="middle"/>
 

@@ -18,9 +18,9 @@ $userConnectedVC[userID]
 What happens if user is connected to a voice channel
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser author="User">
 !!exec $userConnectedVC
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 123456789987654321
 </DiscordMessageBot>
@@ -31,15 +31,15 @@ What happens if user is connected to a voice channel
 What happens if user is not connected to a voice channel
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser author="User">
 !!exec $userConnectedVC
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 undefined
 </DiscordMessageBot>
 </DiscordMessages>
 
-##### Related functions: `$vcBefore` `$vcAfter`
+**Related Functions:** `$vcBefore` `$vcAfter`
 
 **Function difficulty:** <Badge type="tip" text="Easy" vertical="middle"/>
 

@@ -20,10 +20,10 @@ $getCooldownTime[time;type;id;token]
 How to use $getCooldownTime
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser>
 !!exec $channelCooldown[5m]<br />
 $getCooldownTime[5m;channel;$channelID]
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 299937
 </DiscordMessageBot>
@@ -35,7 +35,7 @@ The `time` argument in must exactly match the time in the original cooldown func
 
 </Callout>
 
-##### Related functions: `$clearCooldown`
+**Related Functions:** `$clearCooldown`
 
 **Function difficulty:** <Badge type="warning" text="Medium" vertical="middle"/>
 

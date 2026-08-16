@@ -18,16 +18,16 @@ $authorAvatar[serverAvatar]
 How is the avatar URL displayed when sent with text and without text
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser>
 !!exec With text: $authorAvatar
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 With text: https://cdn.discordapp.com/embed/avatars/0.png<br />
 <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="User Avatar" style={{ verticalAlign: "text-bottom" }} />
 </DiscordMessageBot>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser>
 !!exec $authorAvatar
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="User Avatar" style={{ verticalAlign: "text-bottom" }} />
 </DiscordMessageBot>
@@ -40,7 +40,7 @@ To display the avatar URL as plain text, either enclose the function in backtick
 
 </Callout>
 
-##### Related functions: `$attachment`
+**Related Functions:** `$attachment`
 
 **Function difficulty:** <Badge type="tip" text="Easy" vertical="middle"/>
 

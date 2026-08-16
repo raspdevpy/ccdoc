@@ -20,9 +20,9 @@ $muteUser[userID;mute;reason]
 How to mute a member with reason
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser author="User">
 !!exec $muteUser[123456789123456789;yes;AFK]
-</DiscordMessage>
+</DiscordMessageUser>
 </DiscordMessages>
 
 #### Unmuting a member
@@ -30,9 +30,9 @@ How to mute a member with reason
 How to unmute a member with reason
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser author="User">
 !!exec $muteUser[123456789123456789;no;Not AFK]
-</DiscordMessage>
+</DiscordMessageUser>
 </DiscordMessages>
 
 <Callout type="info" title={"Permission"}>
@@ -41,7 +41,7 @@ Make sure that the bot does have enough permission to mute or unmute members. Th
 
 </Callout>
 
-##### Related functions: `$vcBefore` `$vcAfter`
+**Related Functions:** `$vcBefore` `$vcAfter`
 
 **Function difficulty:** <Badge type="warning" text="Medium" vertical="middle"/>
 

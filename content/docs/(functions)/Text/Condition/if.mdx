@@ -19,11 +19,11 @@ Read about it [here](/Other/expression)
 Since the username of the executor is Tom it executed the if block
 <br/>
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Tom">
+<DiscordMessageUser author="Tom">
 !!exec $if[$username==Tom]<br/>
 Oh, you are Tom!<br/>
 $endIf
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 Oh, you are Tom!
 </DiscordMessageBot>
@@ -34,13 +34,13 @@ Oh, you are Tom!
 Since the username is not Tom it executes the else block
 <br/>
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Bob">
+<DiscordMessageUser author="Bob">
 !!exec $if[$username==Tom]<br/>
 Oh, you are Tom!<br/>
 $else <br/>
 You are not Tom!<br/>
 $endIf
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 You are not Tom!
 </DiscordMessageBot>
@@ -51,7 +51,7 @@ You are not Tom!
 Since the username is not Tom .It goes to the next if statement ,which is $elseif[$username==Lisa] and it will execute it 
 <br/>
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Lisa">
+<DiscordMessageUser author="Lisa">
 !!exec $if[$username==Tom]<br/>
 Oh, you are Tom!<br/>
 $elseif[$username==Lisa] <br/>
@@ -60,7 +60,7 @@ $endelseIf<br/>
 $else<br/>
 I don't know you :C<br/>
 $endIf
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 You are Lisa!
 </DiscordMessageBot>
@@ -73,7 +73,7 @@ Since the username is not Tom .It goes to the next if statement ,which is $elsei
 Info: The second else if will get never executed ,because it will exit the statement after the first true expression
 <br/>
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Lisa">
+<DiscordMessageUser author="Lisa">
 !!exec $if[$username==Tom]<br/>
 Oh, you are Tom!<br/>
 $elseif[$username==Lisa] <br/>
@@ -85,7 +85,7 @@ $endelseIf<br/>
 $else<br/>
 I don't know you :C<br/>
 $endIf
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 1.You are Lisa!
 </DiscordMessageBot>
@@ -107,11 +107,11 @@ But this expression will only be true only if both condition 1 **AND** (because 
 The Example below will execute since $username==Tom is false but the second expression is true .It wouldn't work with &&
 <br/>
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Lisa">
+<DiscordMessageUser author="Lisa">
 !!exec $if[$username==Tom||$username=Lisa]<br/>
 You are Tom or Lisa<br/>
 $endIf
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 You are Tom or Lisa
 </DiscordMessageBot>
@@ -119,11 +119,11 @@ You are Tom or Lisa
 
 The Example will only execute if the username is Lisa and their tag is 9999
 <DiscordMessages>
-<DiscordMessage roleColor="#ffcc9a" author="Lisa#9999">
+<DiscordMessageUser author="Lisa#9999">
 !!exec $if[$username==Lisa&&$discriminator=9999]<br/>
 You are Lisa with tag 9999<br/>
 $endIf<br/>
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 You are Lisa with tag 9999
 </DiscordMessageBot>
@@ -131,4 +131,4 @@ You are Lisa with tag 9999
 
 **Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
 
-**Tags:** <Badge type="tip" text="if" vertical="middle" /> <Badge type="tip" text="condition" vertical="middle" /> <Badge type="case" text="decimals" vertical="middle" />
+**Tags:** <Tag text="If"/> <Tag text="Condition"/> <Badge type="case" text="decimals" vertical="middle" />

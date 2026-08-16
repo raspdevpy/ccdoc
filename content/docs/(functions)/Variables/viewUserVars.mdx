@@ -7,7 +7,7 @@ View a list of all the variables that are defined for a specific user
 ## Usage
 
 ```cc
-$viewUserVars[User ID;Separator]
+$viewUserVars[User ID;Separator (optional);Query Regex (optional)]
 ```
 
 ### Example:
@@ -16,6 +16,19 @@ $viewUserVars[User ID;Separator]
 !!exec $viewUsersVars[$authorID]<br /><br />
 </DiscordMessageUser>
 <DiscordMessageBot>
-xp, money, bonus
+xp, money, bonus, xp-global
 </DiscordMessageBot>
+<DiscordMessageUser>
+!!exec $viewUsersVars[$authorID;/]<br /><br />
+</DiscordMessageUser>
+<DiscordMessageBot>
+xp/money/bonus/xp-global
+</DiscordMessageBot>
+<DiscordMessageUser>
+!!exec $viewUsersVars[$authorID;/;xp]<br /><br />
+</DiscordMessageUser>
+<DiscordMessageBot>
+xp/x-global
+</DiscordMessageBot>
+
 </DiscordMessages>

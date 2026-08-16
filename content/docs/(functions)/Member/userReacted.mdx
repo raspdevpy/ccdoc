@@ -21,12 +21,12 @@ $userReacted[channelID;messageID;userID;reaction]
 How to use $userReacted
 
 <DiscordMessages>
-<DiscordMessage roleColor="#d6e0ff" author="User" avatar="https://cdn.discordapp.com/embed/avatars/0.png">
+<DiscordMessageUser author="User">
 !!exec $wait[5s] $userReacted[;;;<img src="https://cdn.discordapp.com/emojis/1000917016724648007.webp?size=16" alt="DogSmile" style={{ verticalAlign: "text-bottom" }} />]
 <DiscordReactions>
 <DiscordReaction name="DogSmile" image="https://cdn.discordapp.com/emojis/1000917016724648007.webp" count={1} active  />
 </DiscordReactions>
-</DiscordMessage>
+</DiscordMessageUser>
 <DiscordMessageBot>
 true
 </DiscordMessageBot>
@@ -41,8 +41,8 @@ To have all members cached, you will need Tier 5 Bot.
 
 </Callout>
 
-##### Related functions: `$getMessageReactions` `$getReactionCount`
+**Related Functions:** `$getMessageReactions` `$getReactionCount`
 
 **Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
-**Tags:** <Badge type="tip" text="reaction" vertical="middle" /> <Badge type="tip" text="user" vertical="middle" />
+**Tags:** <Tag text="Reaction"/> <Tag text="User"/>

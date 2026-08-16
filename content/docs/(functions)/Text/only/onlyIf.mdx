@@ -4,7 +4,12 @@ title: "$onlyIf"
 
 Continue the execution only if certain [expression](/Other/expression) is satisfied, otherwise stop the execution and send the error message.
 In theory $onlyif can replace all other $onlyFor with the proper [expression](/Other/expression)
-#### Usage: `$onlyif[Expression;error message]`
+
+#### Usage
+
+```cc
+$onlyif[Expression;error message]
+```
 
 #### Example: `$onlyIf[$username==Mido;You are not mido]`
 
@@ -22,4 +27,4 @@ You can send embed using [Message Curl Format](/Other/curl)
 
 **Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" /> 
 
-**Tags:** <Badge type="tip" text="Only If" vertical="middle" /> <Badge type="tip" text="Conditional restriction" vertical="middle" /> <Badge type="tip" text="Only Execute if" vertical="middle" />
+**Tags:** <Tag text="Only If"/> <Tag text="Conditional Restriction"/> <Tag text="Only Execute if"/>
