@@ -18,3 +18,7 @@ discord-messages {
     overflow: hidden;
     padding: 6px 14px;
 }
+
+table {
+    border-radius: var(--radius-xl);
+}

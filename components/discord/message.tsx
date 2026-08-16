@@ -1,5 +1,6 @@
 import React from "react";
 import { filterChildren } from "./componentFilter";
+import { getEditTime } from "@/lib/getEditTime";
 
 interface MessageProps {
     bot?: boolean;
@@ -18,6 +19,7 @@ interface MessageProps {
     replyUser?: string;
     replyAvatar?: string;
     replyColor?: string;
+    file: string;
     children?: React.ReactNode;
 }
 
@@ -38,6 +40,7 @@ export const Message = ({
     replyUser = "Member",
     replyAvatar = "https://cdn.discordapp.com/embed/avatars/0.png",
     replyColor = "#a7c7e7",
+    file,
     children = [],
 }: MessageProps) => {
     if (bot) {
@@ -45,6 +48,11 @@ export const Message = ({
         color = botColor;
         name = botName;
     }
+
+    const timestamp = getEditTime(file);
+    const editedAt = !isNaN(timestamp.getTime())
+        ? timestamp.toLocaleDateString()
+        : "01/01/0101";
 
     const { components, message } = filterChildren(children);
 
@@ -134,7 +142,7 @@ export const Message = ({
                         </div>
                     )}
 
-                    <div className="text-xxs text-gray-500">01/01/0101</div>
+                    <div className="text-xxs text-gray-500">{editedAt}</div>
                 </div>
                 <div className="flex text-sm prose">{message}</div>
                 {components}

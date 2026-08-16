@@ -1,11 +1,10 @@
-import { getPageMarkdownUrl, source } from "@/lib/source";
+import { source } from "@/lib/source";
 import {
     DocsBody,
     DocsDescription,
     DocsPage,
     DocsTitle,
-    MarkdownCopyButton,
-    ViewOptionsPopover,
+    PageLastUpdate,
 } from "fumadocs-ui/layouts/docs/page";
 import { notFound } from "next/navigation";
 import { getMDXComponents } from "@/components/mdx";
@@ -14,6 +13,8 @@ import { createRelativeLink } from "fumadocs-ui/mdx";
 import { appName, gitConfig, socialImage, appDescription } from "@/lib/shared";
 import { Button } from "@/components/ui/button";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { getEditTime } from "@/lib/getEditTime";
+import { Message } from "@/components/discord/message";
 
 export default async function Page(props: PageProps<"/[[...slug]]">) {
     const params = await props.params;
@@ -21,7 +22,9 @@ export default async function Page(props: PageProps<"/[[...slug]]">) {
     if (!page) notFound();
 
     const MDX = page.data.body;
-    const markdownUrl = getPageMarkdownUrl(page).url;
+
+    const editedAt = getEditTime(page.path);
+    const validTime = !isNaN(editedAt.getTime());
 
     return (
         <DocsPage toc={page.data.toc} full={page.data.full}>
@@ -30,7 +33,8 @@ export default async function Page(props: PageProps<"/[[...slug]]">) {
                 {page.data.description}
             </DocsDescription>
             <div className="flex flex-row gap-2 items-center border-b pb-6">
-                <MarkdownCopyButton markdownUrl={markdownUrl} />
+                {validTime && <PageLastUpdate date={editedAt} />}
+                <div className="flex-1"></div>
                 <Button
                     color="secondary"
                     icon={<GitHubLogoIcon />}
@@ -43,6 +47,9 @@ export default async function Page(props: PageProps<"/[[...slug]]">) {
                 <MDX
                     components={getMDXComponents({
                         a: createRelativeLink(source, page),
+                        Message: (props) => (
+                            <Message {...props} file={`${page.path}`} />
+                        ),
                     })}
                 />
             </DocsBody>

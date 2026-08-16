@@ -25,14 +25,16 @@ When there are more curls inside of one curl option, they use an equal character
 In message functions, you can use it to send embeds, menus, or control other message options.
 
 <Discord>
-    <Message slash="test" ephemeral>
-        Normal Text  
+    <Message slash="test" bot ephemeral>
+        Normal Text <Mention/>  
+        ![](/bot-profile.png)
         *Not Normal Text*  
         **Not Normal Text 2**
         <Embed title="Embed Title" footer="Footer" footerImage="/bot-profile.png">
             Normal Text  
             *Not Normal Text*  
             **Not Normal Text 2**
+            ![](/bot-profile.png)
         </Embed>
     </Message>
 </Discord>

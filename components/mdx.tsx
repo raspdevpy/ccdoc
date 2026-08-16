@@ -10,6 +10,7 @@ import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 import { Discord } from "@/components/discord/discord";
 import { Message } from "@/components/discord/message";
 import { Embed } from "@/components/discord/embed";
+import { Mention } from "./discord/mention";
 
 import { Tab } from "@/components/tab";
 
@@ -60,6 +61,7 @@ export function getMDXComponents(components?: MDXComponents) {
         Discord,
         Message,
         Embed,
+        Mention,
         Tab,
         ...Discords,
         ...components,
