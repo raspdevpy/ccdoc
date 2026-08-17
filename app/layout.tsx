@@ -27,6 +27,7 @@ export const metadata: Metadata = {
         description: appDescription,
         images: socialImage,
     },
+    manifest: "/manifest.json",
 };
 
 export const viewport: Viewport = {

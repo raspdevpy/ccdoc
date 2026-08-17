@@ -26,7 +26,7 @@ interface MessageProps {
 export const Message = ({
     bot = false,
     avatar = "https://cdn.discordapp.com/embed/avatars/0.png",
-    botAvatar = "/bot-profile.png",
+    botAvatar = "/icon.png",
     color = "#a7c7e7",
     botColor = "#0099ff",
     name = "Member",

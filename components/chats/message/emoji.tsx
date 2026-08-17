@@ -18,7 +18,7 @@ export const Emoji = ({
     return (
         <img
             src={src}
-            className={`discord-emoji inline ${big ? "h-12 w-12" : "h-5.5 w-5.5"}`}
+            className={`discord-emoji inline align-bottom ${big ? "h-12 w-12" : "h-5.5 w-5.5"}`}
         />
     );
 };

@@ -1,7 +1,7 @@
 export const appName = "Custom Command";
 export const appDescription = "Custom Command Bot's Documentation";
 export const siteUrl = "https://doc.ccommandbot.com";
-export const socialImage = `${siteUrl}/bot-profile.png`;
+export const socialImage = "/icon.png";
 
 export const docsRoute = "/";
 export const docsContentRoute = "/llms.mdx";
