@@ -40,6 +40,9 @@ $image[$imageOutput] // Output the resulting image<br /><br />
 3.  **`$imageDraw[avatar;0;0;300;300]`**: Draws the image named "avatar" (loaded in the previous step) onto the created image.  The coordinates `0;0` specify the top-left corner of where the avatar should be placed, and `300;300` defines the width and height of the drawn image (effectively stretching or shrinking the avatar to fill the entire canvas).
 4.  **`$image[$imageOutput]`**:  Outputs the final image. `$imageOutput` is a special variable that tells the command processor to display the generated image.
 
+** Max file size **
+The image max size is 3MB.
+
 **Key takeaways:**
 
 *   The `$imageLoadFromURL` function doesn't directly display the image. It loads it into memory for further processing with other `$image...` functions.
