@@ -144,7 +144,7 @@ export const Message = ({
 
                     <div className="text-xxs text-gray-500">{editedAt}</div>
                 </div>
-                <div className="text-sm prose">{message}</div>
+                <div className="text-sm prose leading-5.5">{message}</div>
                 {components}
                 {ephemeral && (
                     <div className="flex flex-row text-xxs gap-1.25 mt-1.25 text-gray-500/50">

@@ -23,7 +23,7 @@ export const Embed = ({
     const { components, message } = filterChildren(children);
 
     return (
-        <div className="flex max-w-lg self-start rounded-md bg-white dark:bg-[#202023] gap-2 pr-3.5 overflow-hidden border border-gray-500/30 mt-1 mb-0.5">
+        <div className="discord-embed flex max-w-lg self-start rounded-md bg-white dark:bg-[#202023] gap-2 pr-3.5 overflow-hidden border border-gray-500/30 mt-1 mb-0.5">
             <div
                 className="border-none w-1 shrink-0"
                 style={{ backgroundColor: color }}
@@ -41,7 +41,7 @@ export const Embed = ({
                         {title}
                     </div>
                 )}
-                <div className="prose text-xs my-px">{message}</div>
+                <div className="prose text-xs my-px leading-4.5">{message}</div>
                 {components}
                 {(footer !== "" || footerImage !== "") && (
                     <div className="flex items-center gap-1.5 mt-1 min-h-0 text-xxs">

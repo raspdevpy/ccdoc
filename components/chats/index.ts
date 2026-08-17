@@ -4,3 +4,4 @@ export { Embed } from "./embed/embed";
 export { Mention } from "./message/mention";
 export { Fields } from "./embed/fields";
 export { Field } from "./embed/field";
+export { Emoji } from "./message/emoji";

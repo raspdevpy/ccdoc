@@ -16,7 +16,7 @@ export const Field = ({
             <div className={`${!inline ? "basis-full" : ""} h-0`}></div>
             <div className="mr-2 mt-0.5">
                 <div className="text-sm font-semibold">{title}</div>
-                <div className="prose text-xs">{children}</div>
+                <div className="prose text-xs leading-4.5">{children}</div>
             </div>
         </>
     );
