@@ -2,29 +2,30 @@
 title: "$function"
 ---
 
-Create a user-defined function that can be called by $callFunction or $functionName
+Create a user-defined function that can be called by `$callFunction` or `$functionName`.
 
+## Usage
 
-## Usage: 
 `$function[Function name;Param 1 (optional);Param 2...(optional)]`
 
-#### Example:
+#### Example
+
 ```cc
 $function[printHello;name]
     Hello $name
 $endFunction
-``` 
+```
 
-Call the function, using `$callFunction`
+Call the function using `$callFunction`:
+
 <br/>
 <DiscordMessages>
 <DiscordMessageUser>
 <DiscordMarkdown>
-!!exec $function[printHello;name]
-<br />
-Hello $name 👋
-<br />
-$endFunction
+!!exec $function[printHello;name]  
+Hello $name 👋  
+$endFunction 
+
 $callFunction[printhello;Mika]
 </DiscordMarkdown>
 </DiscordMessageUser>
@@ -33,16 +34,16 @@ Hello Mika 👋
 </DiscordMessageBot>
 </DiscordMessages>
 
-Call the function, using `$printHello`
+Call the function using `$printHello`:
+
 <br/>
 <DiscordMessages>
 <DiscordMessageUser>
 <DiscordMarkdown>
-!!exec $function[printHello;name]
-<br />
-Hello $name 👋
-<br />
-$endFunction
+!!exec $function[printHello;name]  
+Hello $name 👋  
+$endFunction  
+
 $printhello[Mika]
 </DiscordMarkdown>
 </DiscordMessageUser>
@@ -51,21 +52,97 @@ Hello Mika 👋
 </DiscordMessageBot>
 </DiscordMessages>
 
+<Callout type="warning">
+
+A function name can't start with number, and must be within [A-Z or a-z or _ or 0-9] for short format (`$functionName`)
+but if you are using `$callFunction` to call the function, any name is valid.
+
+</Callout>
+
 <Callout type="info">
 
-Code inside the function is isolated from outside, which means changing of variables, arrays, random,...won't effect the outside.\
+Code inside the function is isolated from outside, which means changing of variables, arrays, random,...won't effect the outside.
 you can access outside temporary variables (assigned by `$let`) but you can't change them.
 
 </Callout>
 
-<Callout type="error">
 
-A function name can't start with number, and must be within [A-Z or a-z or _ or 0-9] for short format ($functionName)
-but if you are using $callFunction to call the function, any name is valid
+## Default parameter values
+
+Parameters can have a default value by using `=`. The default value is used when the parameter is not provided when calling the function.
+
+```cc
+$function[greet;name=Mika]
+    Hello $name 👋
+$endFunction
+```
+
+Calling the function without providing `name`:
+
+```cc
+$greet[]
+```
+
+outputs:
+
+```text
+Hello Mika 👋
+```
+
+Providing a value overrides the default:
+
+```cc
+$greet[Alex]
+```
+
+outputs:
+
+```text
+Hello Alex 👋
+```
+
+Default values can also be used with multiple parameters:
+
+```cc
+$function[greet;name=Mika;greeting=Hello]
+    $greeting $name 👋
+$endFunction
+```
+
+Calling:
+
+```cc
+$greet[]
+```
+
+outputs:
+
+```text
+Hello Mika 👋
+```
+
+While providing custom values:
+
+```cc
+$greet[Alex;Welcome]
+```
+
+outputs:
+
+```text
+Welcome Alex 👋
+```
+
+<Callout type="warning">
+
+When defining default parameter values, spaces in the parameter name are ignored, but spaces in the default value are preserved.
+
+- `param=def` and `param    =def` are equivalent.
+- `param=     def` is different from `param=def` because the spaces are part of the default value.
+- `=abc` is invalid because a parameter name is required.
 
 </Callout>
 
-**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" /> 
+**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" />
 
-**Tags:** <Tag text="Function"/>  <Tag text="Custom Functions"/>  <Tag text="Nested Code"/>
-
+**Tags:** <Tag text="Function"/> <Tag text="Custom Functions"/> <Tag text="Nested Code"/>
