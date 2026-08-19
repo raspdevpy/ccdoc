@@ -25,6 +25,7 @@ title: "v1.x (Current)"
 * `$userLeaderboard` and `$userVarRank` now uses clearer sorting names to avoid confusion. Sorting options are now `highest-first` and `lowest-first`.
 * `$includeLibrary` respects the status of the included library; disabled libraries cannot be included.
 * Added support for **default parameter values** in custom functions defined by `$function` using the `param=default` syntax.
+* Added `$botPrefix`, which returns the current bot prefix used for native commands, including custom bot prefixes configured in the dashboard.
 
 #### 🐛 Fixes
 * `$serverCount` and `$allMembersCount` return the correct numbers for custom bots (Tier 3+)
