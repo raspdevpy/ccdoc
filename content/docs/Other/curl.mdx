@@ -26,14 +26,15 @@ In message functions, you can use it to send embeds, menus, or control other mes
 
 <Discord>
     <Message slash="test" bot ephemeral>
-        Normal Text (with mention) <Mention/> (and emoji)  <Emoji id="1361573139582288102"/>  
+        Normal Text (with mention) <Mention/> (and emoji) <Emoji id="1361573139582288102"/> ha!  
         <Emoji id="1361573141209550978" big/>  
+        <Mention />
         *Not Normal Text*  
         **Not Normal Text 2**
         <Embed title="Embed Title" footer="Footer" footerImage="/icon.png">
             Normal Text  
             *Not Normal Text*  
-            **Not Normal Text 2** <Emoji id="1361573139582288102"/> <Emoji id="1361573139582288102" big/>  
+            **Not Normal Text 2** <Emoji id="1361573139582288102" /> <Emoji id="1361573139582288102" big />  
             <Fields>
                 <Field title="Field?">
                     Hello everyone! **HAHAHA** <Emoji id="1361573139582288102"/>
@@ -46,6 +47,11 @@ In message functions, you can use it to send embeds, menus, or control other mes
                 </Field>
             </Fields>
         </Embed>
+        <Buttons>
+            <Button label="Hello there" image="/icon.png" url="/" color="green"/>
+            <Button label="Inline" inline/>
+            <Button label="Newline"/>
+        </Buttons>
     </Message>
 </Discord>
 

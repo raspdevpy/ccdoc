@@ -5,3 +5,5 @@ export { Mention } from "./message/mention";
 export { Fields } from "./embed/fields";
 export { Field } from "./embed/field";
 export { Emoji } from "./message/emoji";
+export { Buttons } from "./components/buttons";
+export { Button } from "./components/button";

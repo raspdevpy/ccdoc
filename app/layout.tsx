@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import type { Metadata, Viewport } from "next";
 import { Provider } from "@/components/provider";
-import { appDescription, appName, siteUrl, socialImage } from "@/lib/shared";
+import { appDescription, appName, siteUrl, botIcon } from "@/lib/shared";
 import "./global.css";
 
 const inter = Inter({
@@ -16,16 +16,16 @@ export const metadata: Metadata = {
     },
     description: appDescription,
     icons: {
-        icon: socialImage,
+        icon: botIcon,
     },
     openGraph: {
         description: appDescription,
-        images: socialImage,
+        images: botIcon,
     },
     twitter: {
         card: "summary",
         description: appDescription,
-        images: socialImage,
+        images: botIcon,
     },
     manifest: "/manifest.json",
 };

@@ -1,17 +1,18 @@
 import React from "react";
+import { userAvatar } from "@/lib/shared";
 
 interface MessageProps {
     src?: string;
-    id?: number;
+    id?: string;
     big?: boolean;
 }
 
 export const Emoji = ({
-    src = "https://cdn.discordapp.com/embed/avatars/0.png",
-    id = 0,
+    src = userAvatar,
+    id = "",
     big = false,
 }: MessageProps) => {
-    if (id > 0) {
+    if (id != "") {
         src = `https://cdn.discordapp.com/emojis/${id}.webp`;
     }
 

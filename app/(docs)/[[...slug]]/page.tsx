@@ -10,7 +10,7 @@ import { notFound } from "next/navigation";
 import { getMDXComponents } from "@/components/mdx";
 import type { Metadata } from "next";
 import { createRelativeLink } from "fumadocs-ui/mdx";
-import { appName, gitConfig, socialImage, appDescription } from "@/lib/shared";
+import { appName, gitConfig, botIcon, appDescription } from "@/lib/shared";
 import { Button } from "@/components/ui/button";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { getEditTime } from "@/lib/getEditTime";
@@ -78,13 +78,13 @@ export async function generateMetadata(
         openGraph: {
             title: social,
             description: appDescription,
-            images: socialImage,
+            images: botIcon,
         },
         twitter: {
             card: "summary",
             title: social,
             description: appDescription,
-            images: socialImage,
+            images: botIcon,
         },
     };
 }

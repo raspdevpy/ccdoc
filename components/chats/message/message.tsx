@@ -1,6 +1,7 @@
 import React from "react";
 import { filterChildren } from "../componentFilter";
 import { getEditTime } from "@/lib/getEditTime";
+import { botIcon, userAvatar } from "@/lib/shared";
 
 interface MessageProps {
     bot?: boolean;
@@ -25,20 +26,20 @@ interface MessageProps {
 
 export const Message = ({
     bot = false,
-    avatar = "https://cdn.discordapp.com/embed/avatars/0.png",
-    botAvatar = "/icon.png",
+    avatar = userAvatar,
+    botAvatar = botIcon,
     color = "#a7c7e7",
     botColor = "#0099ff",
     name = "Member",
     botName = "Custom Command",
     slash = "",
     slashUser = "Member",
-    slashAvatar = "https://cdn.discordapp.com/embed/avatars/0.png",
+    slashAvatar = userAvatar,
     mention = false,
     ephemeral = false,
     reply = "",
     replyUser = "Member",
-    replyAvatar = "https://cdn.discordapp.com/embed/avatars/0.png",
+    replyAvatar = userAvatar,
     replyColor = "#a7c7e7",
     file,
     children = [],
