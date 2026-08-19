@@ -28,7 +28,8 @@ title: "v1.x (Current)"
 * Added `$botPrefix`, which returns the current bot prefix used for native commands, including custom bot prefixes configured in the dashboard.
 * Updated `$changeNickname` to support resetting nicknames and optional audit-log reasons.
 * Added `primaryHex`, `secondaryHex`, and `tertiaryHex` properties to `$role` for retrieving role gradient colors in hexadecimal format.
-
+* Added `$hasUpvoted` to check whether a user has upvoted the current server within the last 12 hours.
+* Added `$onlyForUpvoters` to restrict command execution to users who have upvoted the current server within the last 12 hours.
 #### 🐛 Fixes
 * `$serverCount` and `$allMembersCount` return the correct numbers for custom bots (Tier 3+)
 * Fix for message fails to edit if used some curl message like \{color} inside `$editIn`

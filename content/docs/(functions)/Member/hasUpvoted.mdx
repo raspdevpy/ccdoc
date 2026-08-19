@@ -1,0 +1,42 @@
+---
+title: "$hasUpvoted"
+---
+
+Checks whether a user has upvoted the current server within the last 12 hours.
+
+## Usage
+
+```cc
+$hasUpvoted[userID (optional)]
+````
+
+This function accepts one optional argument:
+
+* **userID** - The ID of the user to check. If omitted, the user who triggered the command is used.
+
+The function returns `true` if the user has upvoted the current server within the last 12 hours. Otherwise, it returns `false`.
+
+## Example
+
+#### Checking the command author's upvote status
+
+<DiscordMessages>
+<DiscordMessageUser>
+!!exec $hasUpvoted
+</DiscordMessageUser>
+<DiscordMessageBot>
+true
+</DiscordMessageBot>
+</DiscordMessages>
+
+#### Checking a specific user
+
+```cc
+$hasUpvoted[123456789012345678]
+```
+
+**Related Functions:** `$onlyForUpvoters`
+
+**Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
+
+**Tags:** <Tag text="Upvote"/> <Tag text="Vote"/> <Tag text="User"/>
