@@ -1,6 +1,18 @@
 import React from "react";
 
-interface MessageProps {
+interface ButtonsProps {
+    children?: React.ReactNode;
+}
+
+export const Buttons = ({ children }: ButtonsProps) => {
+    return (
+        <div className="flex flex-row flex-wrap gap-0.5 mt-0.5 mb-1">
+            {children}
+        </div>
+    );
+};
+
+interface ButtonProps {
     label?: string;
     color?: "blue" | "green" | "red" | "gray";
     inline?: boolean;
@@ -14,7 +26,7 @@ export const Button = ({
     inline = false,
     url = "",
     image = "",
-}: MessageProps) => {
+}: ButtonProps) => {
     const colors = {
         blue: "#5865F2",
         green: "#008545",
@@ -71,9 +83,9 @@ export const Button = ({
                         <path
                             fill="none"
                             stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M13.5 10.5L21 3m-5 0h5v5m0 6v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"
                         />
                     </svg>

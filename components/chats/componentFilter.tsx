@@ -1,10 +1,12 @@
 import React from "react";
-import { Mention } from "./message/mention";
+import { Mention, Emoji } from "./index";
 
 export function filterChildren(children: React.ReactNode) {
     const everything = React.Children.toArray(children);
     const components: React.ReactNode[] = [];
     const message: React.ReactNode[] = [];
+
+    const filter = new Set<React.JSXElementConstructor<any>>([Mention, Emoji]);
 
     everything.forEach((child) => {
         if (!React.isValidElement(child)) {
@@ -17,7 +19,7 @@ export function filterChildren(children: React.ReactNode) {
             return;
         }
 
-        if (child.type === Mention) {
+        if (filter.has(child.type)) {
             message.push(child);
         } else {
             components.push(child);

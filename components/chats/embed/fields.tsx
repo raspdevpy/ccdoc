@@ -1,9 +1,9 @@
 import React from "react";
 
-interface MessageProps {
+interface FieldsProps {
     children?: React.ReactNode;
 }
 
-export const Fields = ({ children }: MessageProps) => {
+export const Fields = ({ children }: FieldsProps) => {
     return <div className="flex flex-row flex-wrap my-1">{children}</div>;
 };

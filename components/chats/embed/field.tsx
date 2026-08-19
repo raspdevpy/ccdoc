@@ -1,16 +1,12 @@
 import React from "react";
 
-interface MessageProps {
+interface FieldProps {
     title?: string;
     inline?: boolean;
     children?: React.ReactNode;
 }
 
-export const Field = ({
-    children,
-    title = "",
-    inline = false,
-}: MessageProps) => {
+export const Field = ({ children, title = "", inline = false }: FieldProps) => {
     return (
         <>
             <div className={`${!inline ? "basis-full" : ""} h-0`}></div>

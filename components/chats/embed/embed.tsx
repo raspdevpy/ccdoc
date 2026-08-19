@@ -1,7 +1,7 @@
 import React from "react";
 import { filterChildren } from "@/components/chats/componentFilter";
 
-interface MessageProps {
+interface EmbedProps {
     color?: string;
     author?: string;
     authorAvatar?: string;
@@ -19,11 +19,11 @@ export const Embed = ({
     footer = "",
     footerImage = "",
     children = [],
-}: MessageProps) => {
+}: EmbedProps) => {
     const { components, message } = filterChildren(children);
 
     return (
-        <div className="discord-embed flex max-w-lg self-start rounded-md bg-white dark:bg-[#202023] gap-2 pr-3.5 overflow-hidden border border-gray-500/30 mt-1 mb-0.5">
+        <div className="discord-embed flex max-w-lg self-start rounded-lg bg-white dark:bg-[#202023] gap-2 pr-3.5 overflow-hidden border border-gray-500/30 mt-1 mb-0.5">
             <div
                 className="border-none w-1 shrink-0"
                 style={{ backgroundColor: color }}
@@ -37,7 +37,7 @@ export const Embed = ({
                 )}
 
                 {title !== "" && (
-                    <div className="font-semibold text-sm mb-2 leading-4">
+                    <div className="font-semibold text-sm mb-1 leading-4">
                         {title}
                     </div>
                 )}

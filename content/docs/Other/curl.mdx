@@ -25,10 +25,11 @@ When there are more curls inside of one curl option, they use an equal character
 In message functions, you can use it to send embeds, menus, or control other message options.
 
 <Discord>
-    <Message slash="test" bot ephemeral>
+    <Message slash="test" bot>
         Normal Text (with mention) <Mention/> (and emoji) <Emoji id="1361573139582288102"/> ha!  
         <Emoji id="1361573141209550978" big/>  
-        <Mention />
+        <br/>
+        <Mention />  
         *Not Normal Text*  
         **Not Normal Text 2**
         <Embed title="Embed Title" footer="Footer" footerImage="/icon.png">
@@ -48,10 +49,23 @@ In message functions, you can use it to send embeds, menus, or control other mes
             </Fields>
         </Embed>
         <Buttons>
-            <Button label="Hello there" image="/icon.png" url="/" color="green"/>
-            <Button label="Inline" inline/>
-            <Button label="Newline"/>
+            <Button label="Hello there" image="/icon.png" url="/"/>
+            <Button label="Inline" inline color="red"/>
+            <Button label="Newline" color="green"/>
+            <Button image="https://cdn.discordapp.com/emojis/833252008730820619.webp" color="blue" inline/>
         </Buttons>
+        Sending with attachment!
+        <Attachment name="secret.zip" size="25.31 KB"/>
+        <Poll question="Do you like turtles?" time="120m">
+            <Answer text="Yes" emoji="✅"/>
+            <Answer text="No" emoji="❌"/>
+        </Poll>
+        <Poll question="What would you like to do?" votes="4" closed multiple>
+            <Answer text="Play a game" emoji="🎮" multiple closed votes="1" percent="25%"/>
+            <Answer text="Go outside" emoji="🌲" multiple closed votes="1" percent="25%"/>
+            <Answer text="Go to bed" emoji="🛏️" multiple closed votes="2" win percent="50%"/>
+        </Poll>
+        <Menu/>
     </Message>
 </Discord>
 
