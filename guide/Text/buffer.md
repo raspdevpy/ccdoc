@@ -1,6 +1,6 @@
 # $buffer
 
-It return the input (useful for some rare cases)
+Returns the input (useful for some rare cases)
 
 ## Usage
 
