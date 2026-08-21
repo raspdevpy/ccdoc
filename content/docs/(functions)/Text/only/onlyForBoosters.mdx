@@ -1,0 +1,29 @@
+---
+title: "$onlyForBoosters"
+---
+
+Only allows the command to continue executing if the user is boosting the current server.
+
+## Usage
+
+```cc
+$onlyForBoosters[error message (optional)]
+````
+
+This function accepts one optional argument:
+
+* **error message** - The message to send when the user is not one of boosters. If omitted, a default error message is used.
+
+## Example
+
+#### Restricting a command to upvoters
+
+```cc
+$onlyForBoosters[You must boost this server to use this command.]
+```
+
+**Related Functions:** `$isBoosting`
+
+**Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
+
+**Tags:** <Tag text="boost"/> <Tag text="boosters"/> <Tag text="Restriction"/>

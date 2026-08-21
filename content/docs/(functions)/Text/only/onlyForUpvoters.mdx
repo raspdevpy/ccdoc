@@ -1,0 +1,35 @@
+---
+title: "$onlyForUpvoters"
+---
+
+Only allows the command to continue executing if the user has upvoted the current server within the last 12 hours.
+
+If the user has not upvoted the server within the last 12 hours, the function sends an error message and stops the execution of the command.
+
+## Usage
+
+```cc
+$onlyForUpvoters[error message (optional)]
+````
+
+This function accepts one optional argument:
+
+* **error message** - The message to send when the user has not upvoted. If omitted, a default error message is used.
+
+## Example
+
+#### Restricting a command to upvoters
+
+```cc
+$onlyForUpvoters[You must upvote this server to use this command.]
+```
+
+If the user has not upvoted the server within the last 12 hours, the command will stop executing and the provided message will be sent.
+
+The command will continue normally if the user has upvoted the server within the last 12 hours.
+
+**Related Functions:** `$hasUpvoted`
+
+**Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
+
+**Tags:** <Tag text="Upvote"/> <Tag text="Vote"/> <Tag text="Restriction"/>

@@ -2,21 +2,23 @@
 title: "$changeNickname"
 ---
 
-Changes the nickname of a specified member in the server.
+Changes the nickname of a specified member in the server. The nickname can also be left empty to reset the member's nickname.
 
 ## Usage:
 
 ```cc
-$changeNickname[userID;nickname]
-```
+$changeNickname[userID;nickname;reason (optional)]
+````
+
 1. **userID** - The ID of the member whose nickname you want to change.
-2. **nickname** - The new nickname you want to assign to the member.
+2. **nickname** - The new nickname you want to assign to the member. Leave this empty to reset the nickname.
+3. **reason** - The reason for changing the nickname. This is optional.
 
 ## Example
 
-#### Using $changeNickname
+### Changing a nickname
 
-Changing the nickname of the command author
+Changing the nickname of the command author:
 
 <DiscordMessages>
 <DiscordMessageUser>
@@ -27,15 +29,23 @@ Hello
 </DiscordMessageUser>
 </DiscordMessages>
 
+### Resetting a nickname
+
+Leave the nickname argument empty to reset the member's nickname:
+
+```cc
+$changeNickname[$authorID;;Reset nickname]
+```
+
 <Callout type="info" title={"Permissions"}>
 
-The bot requires the "Manage Nicknames" permission to change nicknames and only change nicknames of members with roles lower than bots highest role.
+The bot requires the "Manage Nicknames" permission to change nicknames and can only change the nicknames of members with roles lower than the bot's highest role.
 
 </Callout>
 
-<Callout type="error" title={"Discord restiriction"}>
+<Callout type="error" title={"Discord restriction"}>
 
-Discord doesn't allow others to change owners nickname. If you will try to change nickname of an invalid member or owner, error message will be shown.
+Discord doesn't allow bots to change the owner's nickname. If you try to change the nickname of an invalid member or the server owner, an error message will be shown.
 
 </Callout>
 

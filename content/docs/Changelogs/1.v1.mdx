@@ -24,12 +24,20 @@ title: "v1.x (Current)"
 * Slash command support is now available for some native commands, such as clone. These slash commands are available on the main bot only.
 * `$userLeaderboard` and `$userVarRank` now uses clearer sorting names to avoid confusion. Sorting options are now `highest-first` and `lowest-first`.
 * `$includeLibrary` respects the status of the included library; disabled libraries cannot be included.
-
+* Added support for **default parameter values** in custom functions defined by `$function` using the `param=default` syntax.
+* Added `$botPrefix`, which returns the current bot prefix used for native commands, including custom bot prefixes configured in the dashboard.
+* Updated `$changeNickname` to support resetting nicknames and optional audit-log reasons.
+* Added `primaryHex`, `secondaryHex`, and `tertiaryHex` properties to `$role` for retrieving role gradient colors in hexadecimal format.
+* Added `$hasUpvoted` to check whether a user has upvoted the current server within the last 12 hours.
+* Added `$onlyForUpvoters` to restrict command execution to users who have upvoted the current server within the last 12 hours.
+* Added `$onlyForBoosters` to restrict command execution to users who have the current server.
+* New font `Inter` for `$imageUseFont`
 #### 🐛 Fixes
 * `$serverCount` and `$allMembersCount` return the correct numbers for custom bots (Tier 3+)
 * Fix for message fails to edit if used some curl message like \{color} inside `$editIn`
 * Poll Update Trigger, was not triggering properly.
-
+* In `$msg` if trying to use `component` option and the message has a button with empty text (just emoji), it failed.
+* Custom bots (Tier 4+) with a status other than Online were not being set correctly. Custom bots will now properly follow the status configured in the dashboard.
 
 ## v1.5.0 (Main)
 > Release Date: 26 July 2026
