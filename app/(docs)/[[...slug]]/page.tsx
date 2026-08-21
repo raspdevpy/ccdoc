@@ -24,7 +24,8 @@ export default async function Page(props: PageProps<"/[[...slug]]">) {
     const MDX = page.data.body;
 
     const editedAt = getEditTime(page.path);
-    const validTime = !isNaN(editedAt.getTime());
+    // const validTime = !isNaN(editedAt.getTime());
+    const validTime = false;
 
     return (
         <DocsPage toc={page.data.toc} full={page.data.full}>
@@ -32,6 +33,16 @@ export default async function Page(props: PageProps<"/[[...slug]]">) {
             <DocsDescription className="mb-0">
                 {page.data.description}
             </DocsDescription>
+            <DocsBody>
+                <MDX
+                    components={getMDXComponents({
+                        a: createRelativeLink(source, page),
+                        Message: (props) => (
+                            <Message {...props} file={`${page.path}`} />
+                        ),
+                    })}
+                />
+            </DocsBody>
             <div className="flex flex-row gap-2 items-center border-b pb-6">
                 {validTime && <PageLastUpdate date={editedAt} />}
                 <div className="flex-1"></div>
@@ -43,16 +54,7 @@ export default async function Page(props: PageProps<"/[[...slug]]">) {
                     Edit This Page
                 </Button>
             </div>
-            <DocsBody>
-                <MDX
-                    components={getMDXComponents({
-                        a: createRelativeLink(source, page),
-                        Message: (props) => (
-                            <Message {...props} file={`${page.path}`} />
-                        ),
-                    })}
-                />
-            </DocsBody>
+
         </DocsPage>
     );
 }
