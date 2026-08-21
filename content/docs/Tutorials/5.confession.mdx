@@ -39,13 +39,13 @@ That is all, let's test it out :star_struck:
 It works :happy:! but... what about making the respond into a beautiful embed?
 
 ## 4. Modify Code To Respond With Embed
-To build an embed, we need to use [curl message format](/CodeReferences/ref.message_curl_format).
+To build an embed, we need to use [curl message format](/Other/curl).
 Curl is a way for you to build an embed in the place of the `message` input, for example to set up an embed with description and title we will use:
 ```js
 {desc:My embed description}
 {title:My embed title}
 ```
-> You can see the full list [here](/CodeReferences/ref.message_curl_format)
+> You can see the full list [here](/Other/curl)
 
 So, We will modify the message content of `$interactionReply` and use the curl message format, code would look like:
 ```cc

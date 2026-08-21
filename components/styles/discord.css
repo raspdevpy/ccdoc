@@ -1,0 +1,48 @@
+.text-xxs {
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.discord-chats img {
+    max-width: 370px;
+}
+
+.discord-embed .discord-emoji {
+    height: 18px !important;
+    width: 18px !important;
+}
+
+.discord-poll-answer {
+    padding: 8px 16px;
+    margin-bottom: 4px;
+    width: 100%;
+    min-width: 160px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    border: transparent solid 1px;
+    transition: border 150ms ease-in-out;
+    font-weight: 500;
+    font-size: 14px;
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        width: 22px;
+        height: 22px;
+        accent-color: #000;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+}
+
+html.dark .discord-poll-answer:hover {
+    border: rgba(255, 255, 255, 0.2) solid 1px;
+}
+
+.discord-poll-answer:hover {
+    border: rgba(0, 0, 0, 0.2) solid 1px;
+}

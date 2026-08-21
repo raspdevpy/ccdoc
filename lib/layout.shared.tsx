@@ -1,5 +1,5 @@
 import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
-import { appName, gitConfig } from "./shared";
+import { appName, gitConfig, botIcon } from "./shared";
 
 export function baseOptions(): BaseLayoutProps {
     return {
@@ -7,7 +7,7 @@ export function baseOptions(): BaseLayoutProps {
             title: (
                 <>
                     <img
-                        src="/favicon.ico"
+                        src={botIcon}
                         alt=""
                         width={24}
                         height={24}

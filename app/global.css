@@ -16,6 +16,11 @@ discord-messages {
     margin: 1rem 0;
     border-radius: 8px;
     overflow: hidden;
+    padding: 6px 14px;
+}
+
+table {
+    border-radius: var(--radius-xl);
 }
 @layer utilities {
   .prose p {

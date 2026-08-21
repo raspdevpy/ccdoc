@@ -37,9 +37,7 @@ export default defineConfig({
                 ...(rehypeCodeDefaultOptions.transformers ?? []),
                 transformerLineNumbers,
             ],
-            langs: [
-                cclang,
-            ],
+            langs: [cclang],
         },
     },
 });

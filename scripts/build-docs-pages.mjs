@@ -1,11 +1,3 @@
-/**
- * Regenerates `docs-pages.json`, which the old VuePress build emitted as a side
- * effect of its search plugin (guide/.vuepress/parseTags.js). It is served at
- * /docs-pages.json and consumed outside this repo, so the shape is kept as-is:
- * { title, path, content, tags }.
- *
- * Runs after `next build`, reading the exported HTML in `out/`.
- */
 import fs from "node:fs";
 import path from "node:path";
 import * as cheerio from "cheerio";
@@ -13,7 +5,6 @@ import * as cheerio from "cheerio";
 const OUT = path.join(process.cwd(), "out");
 const CONTENT = path.join(process.cwd(), "content/docs");
 
-/** difficulty labels were never treated as tags */
 const NOT_A_TAG = /Easy|Difficult|Read Below|Medium|Bugged/i;
 
 function walk(dir, test, found = []) {
@@ -25,7 +16,6 @@ function walk(dir, test, found = []) {
     return found;
 }
 
-/** route -> source .mdx, so tags can be read off the original Badge props */
 const sources = new Map();
 for (const file of walk(CONTENT, (n) => n.endsWith(".mdx"))) {
     const route =
@@ -54,7 +44,6 @@ function metaFor(route) {
     for (const [, text] of raw.matchAll(/<Badge[^>]*\btext="([^"]*)"/g)) {
         if (text.length > 1 && !NOT_A_TAG.test(text)) tags.push(text);
     }
-    // the old plugin also indexed the bare function name
     if (title?.startsWith("$")) tags.push(title.slice(1));
 
     return { title, tags };

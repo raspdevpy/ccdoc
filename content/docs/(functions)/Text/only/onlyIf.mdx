@@ -2,9 +2,11 @@
 title: "$onlyIf"
 ---
 
-Continue the execution only if certain [expression](/CodeReferences/ref.expression) is satisfied, otherwise stop the execution and send the error message.
-In theory $onlyif can replace all other $onlyFor with the proper [expression](/CodeReferences/ref.expression)
+Continue the execution only if certain [expression](/Other/expression) is satisfied, otherwise stop the execution and send the error message.
+In theory $onlyif can replace all other $onlyFor with the proper [expression](/Other/expression)
+
 ## Usage
+
 ```cc
 $onlyif[Expression;error message]
 ```
@@ -13,17 +15,16 @@ $onlyif[Expression;error message]
 
 <Callout type="info" title={"Note"}>
 
-Read about [Expression](/CodeReferences/ref.expression)
+Read about [Expression](/Other/expression)
 
 </Callout>
 
 <Callout type="info" title={"Note"}>
 
-You can send embed using [Message Curl Format](/CodeReferences/ref.message_curl_format)
+You can send embed using [Message Curl Format](/Other/curl)
 
 </Callout>
 
 **Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" /> 
 
 **Tags:** <Tag text="Only If"/> <Tag text="Conditional Restriction"/> <Tag text="Only Execute if"/>
-

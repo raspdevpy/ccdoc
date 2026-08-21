@@ -1,0 +1,52 @@
+---
+title: "Escaping Characters"
+---
+
+Certain characters can cause unexpected behavior and need to be escaped. For example, if you want to send the literal text `$username` instead of having it replaced with the username. There are multiple ways of doing so.
+
+## Backslash
+
+As in any other language, you can also use backslash here to escape characters.
+
+### Example
+
+<DiscordMessages>
+  <DiscordMessage>
+      !!exec Hello \\$username, how are you?
+  </DiscordMessage>
+  <DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="/icon.png">
+      Hello $username, how are you?
+  </DiscordMessage>
+  <DiscordMessage>
+      !!exec $description[Ban Command: \\$ban \<user>  
+      Kick Command: \\$kick \<user>]
+  </DiscordMessage>
+  <DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="/icon.png">
+    <DiscordEmbed>
+        Ban Command: $ban \<user>  
+        Kick Command: $kick \<user>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>
+
+## Hashtag Alternatives
+
+Beside backslash, you can also use hashtag alternatives that will get replaced by their character.
+
+|         Text          |    Result     |
+| :-------------------: | :-----------: |
+|       `#RIGHT#`       |      `]`      |
+|       `#LEFT#`        |      `[`      |
+|       `#SEMI#`        |      `;`      |
+|       `#COLON#`       |      `:`      |
+| `#DOLLAR#` / `#CHAR#` |      `$`      |
+|    `#RIGHT_CLICK#`    |      `>`      |
+|    `#LEFT_CLICK#`     |      `<`      |
+|       `#EQUAL#`       |      `=`      |
+|   `#RIGHT_BRACKET#`   |      `}`      |
+|   `#LEFT_BRACKET#`    |      `{`      |
+|    `#NL#` / `#BR#`    |   New Line    |
+|        `#SP#`         |     Space     |
+|        `#TAB#`        | Tab Character |
+|       `#SLASH#`       |      `/`      |
+|     `#BACKSLASH#`     |      `\`      |

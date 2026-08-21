@@ -1,76 +1,50 @@
 ---
-title: "Setting Up Your Custom Bot"
+title: "Setting Up Custom Bot"
 ---
 
-This guide will walk you through setting up your own custom bot. This feature is available to users who have achieved Tier 3+ access, either by redeeming it or by winning it in our support server.
+This guide is for Tier 3+ users. You only need to do this once per server.
 
-## One-Time Setup Steps
+## Creating Bot
 
-Follow these steps to create and connect your custom bot. You only need to do this once!
+Head over to the [Discord Developer Portal](https://discord.com/developers/applications) and login with your Discord account.
 
-### 1. Access the Discord Developer Portal
+Click the `New Application` button and give your bot a name. This will be visible to your server members, so choose something that fits your community.
 
-Go to the [Discord Developer Portal](https://discord.com/developers/applications). This is where you'll create and manage your bot.
+![](/images/other/custom-bot/0.png)
 
-### 2. Create a New Application
+## Configuring Bot
 
-Click the "New Application" button.
+On the left sidebar, click the `Bot` tab. This is where you'll customize your bot's appearance and behavior.
 
-![Create a new application](/images/guide/cb-setup/new-app.png)
+If you want, upload a profile picture and set a display name. Then scroll down and enable **all three Privileged Gateway Intents**. These are required for the bot to function properly.  
+In case your server has over 10K members, you will have to send a request to Discord for these intents.
 
-### 3. Name Your Application
+Make sure to toggle off **Public Bot** so noone else can invite it, and click `Save Changes`.
 
-Enter a name for your bot application and click the "Create" button. This name is what your bot will be called on Discord.
+![](/images/other/custom-bot/1.png)
 
-![Enter a name and press the create button](/images/guide/cb-setup/name-your-app.png)
+## Getting Bot Token
 
-### 4. Navigate to the Bot Section
+Click the `Reset Token` button. Discord will generate a fresh token for you. Then click the copy button and head over to the next step.
 
-In the left-hand menu, click on the "Bot" section.
+![](/images/other/custom-bot/2.png)
 
-![Go to section bot](/images/guide/cb-setup/nav-to-bot-cat.png)
+<Callout title="Sharing Token">
+Anyone with this token can control your bot, so never share it with anyone.
+</Callout>
 
-### 5. Setup the needed intents for your use case
-* If you use `On User Message/Poll Updates` Triggers or using message content/attachment/embeds/polls from other users messages : Enable Message Intent Content.
-* If you use `Join/Leave Member/Server Boost` Trigger or Member-cached functions like `$usersWithRole` or Cache All Members for Tier 5: Enable Server Members Intent.
-* If you use `$status`/`$membersWithStatus` functions in your codes, enable Presence Intent. 
-![](/images/guide/cb-setup/setup-intents.png)
+## Dashboard Settings
 
-### 6. Generate a Bot Token
+Now go to our [dashboard](https://ccommandbot.com/dashboard) and select the server where you have premium access.
 
-Click the "Reset Token" button. This will generate a new, valid token for your bot. **Keep this token secure! Do not share it with anyone!**
+Navigate to the premium page, paste your bot token into the text field, and choose your prefix. After saving, the system will start your bot immediately.
 
-![](/images/guide/cb-setup/reset-token.png)
+![](/images/other/custom-bot/3.png)
 
-### 7. Copy the Token
+## Inviting Bot
 
-Click the "Copy" button next to the token to copy it to your clipboard.
+Once the bot is running, click the `Invite Your Bot` button. You'll be redirected to Discord's authorization screen where you can pick the server you want to add it to.
 
-![](/images/guide/cb-setup/copy-token.png)
-
-### 8. Navigate to Premium Section of your server dashboard
-
-Go to the [Dashboard](https://ccommandbot.com/dashboard) and select the server where you want to use your premium features.
-
-![](/images/guide/cb-setup/nav-to-prem1.png)
-
-![](/images/guide/cb-setup/nav-to-prem2.png)
-
-### 9. Paste the Token and Save
-
-Paste the copied token into the "Token" input field and click the "Save" button.
-
-![](/images/guide/cb-setup/paste-token.png)
-![](/images/guide/cb-setup/save-btn.png)
-
-### 10. Invite Your Bot to Your Server
-
-Click on the "Invite your bot" button. This will take you to a Discord authorization page where you can select the server you want to add your bot to. **Make sure you have the "Manage Server" permission in the server you're inviting the bot to.**
-
-![](/images/guide/cb-setup/inv-your-bot.png)
-
-### 11. All Done!
-
-You're finished! Wait a few minutes for your bot to come online. :tada:
-
-**Important:** Make sure the main `Custom Command` bot remains in your server. Removing the main bot will prevent you from accessing the dashboard and managing your custom bot.
+<Callout title="Kicking Free Bot" type="warn">
+Removing the Free bot from your server will result in you loosing access to the dashboard.
+</Callout>

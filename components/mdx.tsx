@@ -1,15 +1,15 @@
 import defaultMdxComponents from "fumadocs-ui/mdx";
 import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 import type { MDXComponents } from "mdx/types";
-import type { ComponentProps, ComponentType } from "react";
+import type { ComponentProps } from "react";
 import { Badge, Tag } from "@/components/badge";
 import { Arg } from "@/components/arg";
-import * as Discord from "@/components/discord";
+import * as Discords from "@/components/discord";
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-const NextImage = defaultMdxComponents.img as ComponentType<
-    ComponentProps<"img">
->;
+import * as Discord from "@/components/chats/index";
+
+import { Tab } from "@/components/tab";
 
 const Image = ({
     className,
@@ -56,7 +56,9 @@ export function getMDXComponents(components?: MDXComponents) {
         Badge,
         Tag,
         Arg,
+        Tab,
         ...Discord,
+        ...Discords,
         ...components,
     } satisfies MDXComponents;
 }
