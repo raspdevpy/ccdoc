@@ -1,0 +1,18 @@
+---
+title: "$getUpvoteLink"
+---
+
+Returns the server's upvote link, optionally setting a user as the referral.
+
+## Usage
+```cc
+$getUpvoteLink[User ID (optional)]
+````
+
+* **User ID:** The user ID to set as the referral. Defaults to the user who triggered the command.
+
+When a user upvotes the server through the generated link, the specified referral user receives extra credits and the server's **Upvote** trigger is activated.
+
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
+
+**Tags:** <Tag text="Upvote"/><Tag text="Referral"/><Tag text="Server"/>
