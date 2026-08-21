@@ -102,8 +102,9 @@ Here's a comprehensive list of the properties you can access with the `$msg` fun
 * **`forwardsvid`** – Returns the server ID where the original forwarded message was sent.
 * **`forwardmsgid`** – Returns the original message ID of the forwarded message.
 * **`forwardchid`** – Returns the channel ID where the original forwarded message was posted.
+* **`forward-*`**: Retrieves information from the original message contained within a forwarded message ([Read more here](#forwarded-message)).
 
-
+## Example
 <br/>
 <DiscordMessages>
 <DiscordMessageUser>
@@ -113,6 +114,34 @@ Here's a comprehensive list of the properties you can access with the `$msg` fun
 Old Messsage
 </DiscordMessageBot>
 </DiscordMessages>
+
+## Forwarded Message
+You can use `forward-*` to get the forward message data instead of the original message, Replace * with any supported property from the following categories:
+* Channel Information
+* Message Content, except `cleancontent`
+* Message Metadata, except `thread`, `reference`, and `pinned`
+* Attachment Information
+* Embed Information
+* Sticker Information
+* Components
+
+For example:
+
+```cc
+$msg[channelid;messageid;forward-content]
+```
+
+returns the content of the original forwarded message.
+
+Other examples:
+
+```cc
+$msg[channelid;messageid;forward-author]
+$msg[channelid;messageid;forward-embed]
+$msg[channelid;messageid;forward-components]
+```
+
+`forward-*` properties are only available when the target message is a forwarded message.
 
 **Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
