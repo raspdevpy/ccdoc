@@ -25,6 +25,7 @@ The available options are:
 | **Discord Pin Message**            | Triggers when Discord sends a pin notification             |
 | **Discord Thread Created Message** | Triggers when Discord sends a thread creation notification |
 | **Contains Poll**                  | Triggers when the message contains a poll                  |
+| **Contains Sticker**                  | Triggers when the message is a sticker                 |
 | **Has User Mention/Ping**          | Triggers when a user is mentioned in the message           |
 | **Forwarded Message**              | Triggers when a message is forwarded                       |
 | **Discord Automod Action Message** | Triggers when Discord AutoMod takes action on a message    |
@@ -246,28 +247,17 @@ A new thread has been created!
 This can be useful for automatically responding to newly created threads.
 
 
-## Contains Poll
+## Contains Sticker
 
-The **Contains Poll** option triggers when a message contains a Discord poll.
+The **Contains Sticker** option triggers when a message contains a sticker.  
+You can find the sticker id with `$messageStickers`, which can be used to get more information like name through `$sticker`
 
 For example:
+```cc
+$sticker[$messageStickers;name]
+```
 
-<DiscordMessages>
-<DiscordMessageUser>
-Which game should we play?
-
-[Poll]
-Minecraft
-Fortnite
-Terraria
-</DiscordMessageUser>
-<DiscordMessageBot>
-Thanks for creating a poll!
-</DiscordMessageBot>
-</DiscordMessages>
-
-The command does not need to know the poll's question or answers.
-
+This example will show you the sticker name.
 
 ## Has User Mention/Ping
 
@@ -462,6 +452,7 @@ For example:
 | Detect Discord pin notifications | **Discord Pin Message**            |
 | Detect newly created threads     | **Discord Thread Created Message** |
 | Detect polls                     | **Contains Poll**                  |
+| Detect stickers                     | **Contains Sticker**                  |
 | Detect user mentions             | **Has User Mention/Ping**          |
 | Detect forwarded messages        | **Forwarded Message**              |
 | Detect AutoMod actions           | **Discord AutoMod Action Message** |
@@ -481,6 +472,7 @@ Choose the simplest option that matches what you are trying to detect. Regex sho
 | **Discord Pin Message**            | —                | Triggers when Discord sends a pin notification             |
 | **Discord Thread Created Message** | —                | Triggers when Discord sends a thread creation notification |
 | **Contains Poll**                  | —                | Triggers when a message contains a poll                    |
+| **Contains Sticker**                  | —                | Triggers when a message contains a sticker                    |
 | **Has User Mention/Ping**          | —                | Triggers when a message mentions a user                    |
 | **Forwarded Message**              | —                | Triggers when a message contains a forwarded message       |
 | **Discord AutoMod Action Message** | —                | Triggers when Discord AutoMod takes action                 |
