@@ -1,0 +1,45 @@
+---
+title: "$getBanReason"
+---
+
+Gets the reason a user was banned from the current server.
+
+## Usage
+
+```cc
+$getBanReason[userID]
+```
+
+1. **userID** - The ID of the banned user.
+
+## Examples
+
+#### Get ban reason
+
+<DiscordMessages>
+<DiscordMessageUser>
+!!exec The ban reason is: $getBanReason[123456789123456789]
+</DiscordMessageUser>
+<DiscordMessageBot>
+The ban reason is: Spamming
+</DiscordMessageBot>
+</DiscordMessages>
+
+#### User is not banned
+
+If the user is not banned or there is no ban reason set, the function returns an empty value.
+
+<DiscordMessages>
+<DiscordMessageUser>
+!!exec The ban reason is: $getBanReason[123456789123456789]
+</DiscordMessageUser>
+<DiscordMessageBot>
+The ban reason is: 
+</DiscordMessageBot>
+</DiscordMessages>
+
+**Related Functions:** `$ban` `$unban` `$isBanned`
+
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
+
+**Tags:** <Tag text="Ban"/> <Tag text="Member"/> <Tag text="Moderation"/> <Tag text="Moderator"/>
