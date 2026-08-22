@@ -35,6 +35,7 @@ title: "v1.x (Current)"
 * Added `$getUpvoteLink` to generate the server's upvote link with an optional referral user.
 * Support for Sticker Messages in the new Word Trigger (`Contains Sticker`).
 * Added `$getBanReason` to retrieve the ban reason for a user in the current server.
+* Added `$eventSourceUserID` to retrieve the ID of the user whose action directly triggered the triggers like **Role Give/Take** command.
 
 #### 🐛 Fixes
 * `$serverCount` and `$allMembersCount` return the correct numbers for custom bots (Tier 3+)
@@ -43,6 +44,7 @@ title: "v1.x (Current)"
 * In `$msg` if trying to use `component` option and the message has a button with empty text (just emoji), it failed.
 * Custom bots (Tier 4+) with a status other than Online were not being set correctly. Custom bots will now properly follow the status configured in the dashboard.
 * Setting `Run only in` to select a category for a trigger, was not properly enforced for children posts/threads of the category.
+* Fix for when getting week of the year (with `w/ww/WW/ww`) in `$formatDate`
 
 
 ## v1.5.0 (Main)

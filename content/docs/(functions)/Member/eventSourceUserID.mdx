@@ -1,0 +1,24 @@
+---
+title: "$eventSourceUserID"
+---
+
+The function returns the ID of the user whose action directly triggered the command.
+
+For example, when a role is added or removed using a **Role Give/Take** trigger, this returns the ID of the user who performed that action.
+
+## Usage
+
+```cc
+$eventSourceUserID
+```
+
+## Triggers
+This function is limited for specific triggers and it is meaning change based on the trigger:
+* Role Give/Take: it will return the user id who gave/take the role from the user
+* Nickname: it will return the user id who changed the user nickname
+* User Timeout: it will return the user id who timed out the user
+
+
+**Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
+
+**Tags:** <Tag text="User"/> <Tag text="User ID"/> 
