@@ -12,6 +12,11 @@
     width: 18px !important;
 }
 
+.discord-container .discord-mention {
+    font-size: 11px !important;
+    padding: 1px 4px !important;
+}
+
 .discord-poll-answer {
     padding: 8px 16px;
     margin-bottom: 4px;
