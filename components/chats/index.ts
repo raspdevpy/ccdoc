@@ -10,3 +10,8 @@ export { Attachment } from "./other/attachment";
 export { Menu } from "./other/menu";
 export { Poll } from "./poll/poll";
 export { Answer } from "./poll/answer";
+export { Container } from "./v2/container";
+export { RButtons } from "./v2/buttons";
+export { Section } from "./v2/section";
+export { Separator } from "./v2/separator";
+export { Thumbnail } from "./v2/thumbnail";
