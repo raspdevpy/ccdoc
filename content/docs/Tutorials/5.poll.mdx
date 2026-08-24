@@ -1,77 +1,73 @@
 ---
-title: "Sending a poll"
+title: "Sending Polls"
 ---
 
 In this guide, you will learn how to send a poll.
 
-## 1. Create a command
-The first step is to create a new command, which you can learn to do in [this guide](/Guide/1.create).
+## Creating Command
 
-## 2. Set a trigger
-Let assume user need to say `!poll` to send the poll
-![Trigger](https://i.imgur.com/0YTbKP6.png)
+First step is to [create a command](/Guide/1.create).
 
-## 3. Craft the code
+## Trigger Options
 
-Now that we have the initial setup done, it's time to make the command actually work.
+Let assume the user wants to say `!poll` to send the poll:
 
-<Callout type="info" title={"We will use:"}>
+![](/images/tutorials/poll/0.png)
 
-* `$sendMessage` - to send a message
-* [poll curl data](/Other/curl#polls)
+## Code
 
-</Callout>
+For the code, we will use:
+- `$sendMessage`
+- [poll curl format](/Other/curl#polls)
 
-### Sending a message
-To send a message, we will use `$sendMessage[content]` where content is the message content, in our case we will fill it with our poll data
+## Constructing the Poll
 
-### Constructing the poll
-we will use [poll curl data](/Other/curl#polls) like:
-```
+Now we need to create a simple poll:
+
+```cc
 {poll:
-	{question=poll question}
-	{duration=poll duration in hours like 24h}
-	{multiple=can user select multiple answers? (yes/no)}
-	
-	{answer=Add an anwer}
-	{emoji=Add an emoji to the previous answer}
-	
-	{answer=Add an anwer}
-	{emoji=Add an emoji to the previous answer}
-	...
+    {question=Do you like turtles?}
+    {duration=2h}
+    
+    {answer=Yes}
+    {emoji=🐢}
+    
+    {answer=No}
+    {emoji=❌}
 }
 ```
 
-In our case, we will send a poll about countries code:
+And put it inside of `$sendMessage` to send it:
+
 ```cc
 $sendMessage[
-{poll:
-{question=What is the biggest country in the world?}
-{answer=China}
-{emoji=🇨🇳} 
-{answer=Russia}
-{emoji=🇷🇺}
+    {poll:
+        {question=Do you like turtles?}
+        {duration=2h}
 
-{duration=1h}
-{multiple=no}
-}
+        {answer=Yes}
+        {emoji=🐢}
+
+        {answer=No}
+        {emoji=❌}
+    }
 ]
 ```
 
-### Final result
-Setup:
-![Setup preview](https://i.imgur.com/9Rc5aNC.png)
+After the code is done, don't forget to save the command.
 
-Output:
-![](https://i.imgur.com/4BRQVag.png)
+## Testing
 
+Send the command and see if it works!
 
-
-<Callout type="info" title={"Note"}>
-
-You may not always limit executions to one per user, you can use other vars like `server vars` to restrict the command to one execution per server. 
-
-</Callout>
-
-### 🎉 Congrats!
-You've learned how to make a command that can be used only one time!
+<Discord>
+    <Message>
+        !poll
+    </Message>
+    <Message bot>
+        <Poll question="Do you like turtles?" time="120m">
+            <Answer text="Yes" emoji="🐢"/>
+            <Answer text="No" emoji="❌"/>
+        </Poll>
+    </Message>
+</Discord>
