@@ -34,6 +34,21 @@
     "per": "Thread ID",
     "scope": "thread"
   },
+  "$awaitbutton": {
+    "time": 2000,
+    "per": "User",
+    "scope": "channeluser"
+  },
+  "$awaitmenu": {
+    "time": 2000,
+    "per": "User",
+    "scope": "channeluser"
+  },
+  "$awaitmessage": {
+    "time": 2000,
+    "per": "User",
+    "scope": "channeluser"
+  },
   "$ban": {
     "time": 180000,
     "per": "User",
@@ -160,7 +175,7 @@
     "scope": "emojiupdate"
   },
   "$deletemessage": {
-    "time": 9600,
+    "time": 10000,
     "per": "Message ID",
     "scope": "messageupdate"
   },
@@ -201,17 +216,17 @@
     "scope": "webhookuser"
   },
   "$disablebutton": {
-    "time": 9600,
+    "time": 10000,
     "per": "Message ID",
     "scope": "messageupdate"
   },
   "$disablebuttons": {
-    "time": 9600,
+    "time": 10000,
     "per": "Message ID",
     "scope": "messageupdate"
   },
   "$disablemenu": {
-    "time": 9600,
+    "time": 10000,
     "per": "message id",
     "scope": "messageupdate"
   },
@@ -226,7 +241,7 @@
     "scope": "automod"
   },
   "$editbutton": {
-    "time": 9600,
+    "time": 10000,
     "per": "Message ID",
     "scope": "messageupdate"
   },
