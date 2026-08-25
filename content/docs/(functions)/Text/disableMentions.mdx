@@ -5,20 +5,19 @@ title: "$disableMentions"
 will not ping a user even though mentioned
 
 ## Usage
+
 ```cc
 $disableMentions
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $disableMentions <DiscordMention highlight>Member</DiscordMention>
-</DiscordMessageUser>
-<DiscordMessageBot>
-@Member
-</DiscordMessageBot>
-</DiscordMessages>
 
-**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+<Discord>
+    <Message>
+        !!exec $disableMentions{" "}
+        <DiscordMention highlight>Member</DiscordMention>
+    </Message>
+    <Message bot>@Member</Message>
+</Discord>
+
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
 **Tags:** <Tag text="Do Not Ping"/> <Tag text="Mention"/> <Tag text="Ping"/> <Tag text="Annoying"/>
-

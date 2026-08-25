@@ -4,28 +4,23 @@ title: "$stop"
 
 This function will cause the interpetender to stop the command execution & return a message if wanted.
 
-## Usage: 
+## Usage:
+
 `$stop[Message (optional)]`
 
 #### Example:
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-<DiscordMarkdown>
-!!exec $sendMessage[This message will be send;no]
-<br />
-$stop[This funtion will cause the interpetender to stop the code]
-<br />
-$sendMesssage[This message won't be send;no]
-</DiscordMarkdown>
-</DiscordMessageUser>
-<DiscordMessageBot>
-This message will be send
-</DiscordMessageBot>
-<DiscordMessageBot>
-This funtion will cause the interpetender to stop the code
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $sendMessage[This message will be send;no] $stop[This funtion
+        will cause the interpetender to stop the code] $sendMesssage[This
+        message won't be send;no]
+    </Message>
+    <Message bot>This message will be send</Message>
+    <Message bot>
+        This funtion will cause the interpetender to stop the code
+    </Message>
+</Discord>
 
 <Callout type="info" title={"Note"}>
 
@@ -38,15 +33,17 @@ You can send embed using [Message Curl Format](/Other/curl)
 Using plain text in your code, like below will **NOT** work!!
 
 This code doesn't work:
+
 ```cc
 This is plain text before the stop function
 $stop
 This is plain text after the stop function
 ```
-^^ - This will not send anything! 
+
+^^ - This will not send anything!
 
 </Callout>
 
-**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" /> 
+**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" />
 
-**Tags:** <Tag text="Stop"/>  <Tag text="Cancel"/>  <Tag text="Error"/>  <Tag text="End Execution"/>
+**Tags:** <Tag text="Stop"/> <Tag text="Cancel"/> <Tag text="Error"/> <Tag text="End Execution"/>

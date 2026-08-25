@@ -18,18 +18,18 @@ This format uses curly braces `{}` to define different aspects of your message. 
 
 Here's how to send an embed with the title "Hello" and the description "World":
 
-<DiscordMessages>
-<DiscordMessage>
+<Discord>
+<Message>
 !!exec $sendMessage[\{title:Hello}\{description:World}]
-</DiscordMessage>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 <DiscordEmbed embedTitle="Hello">
 <DiscordEmbedDescription>
 World
 </DiscordEmbedDescription>
 </DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 ### Available Curl Formats:
 

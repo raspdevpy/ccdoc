@@ -10,8 +10,6 @@ Retrieves the highest role (in terms of hierarchy) a user has in the current gui
 
 `$highestRole` - Returns the highest role of the command executor (the user who triggered the command).
 
-<br/>
-
 **Example:**
 
 This example shows how to use `$highestRole` with `$roleName` to output the role's name.
@@ -28,16 +26,11 @@ This example shows how to use `$highestRole` with `$roleName` to output the role
 Admin
 ```
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $roleName[$highestRole]
-</DiscordMessageUser>
-<DiscordMessageBot>
-Admin
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $roleName[$highestRole]</Message>
+    <Message bot>Admin</Message>
+</Discord>
 
 **Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Role"/> <Tag text="Highest Role"/> <Tag text="Role Hierarchy"/>

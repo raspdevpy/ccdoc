@@ -11,21 +11,15 @@ $viewChannelVars[Channel ID (default: $channelID);Separator;Query Regex (optiona
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $viewChannelVars<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-ticket, ticket_owner, staff<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $viewChannelVars</Message>
+    <Message bot>ticket, ticket_owner, staff</Message>
+</Discord>
 
 ### Example (return only variables that starts with ticket):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $viewChannelVars[$channelID; ,;^ticket]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-ticket, ticket_owner
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $viewChannelVars[$channelID; ,;^ticket]</Message>
+    <Message bot>ticket, ticket_owner</Message>
+</Discord>

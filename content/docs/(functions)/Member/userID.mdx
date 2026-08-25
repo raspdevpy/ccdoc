@@ -5,9 +5,11 @@ title: "$userID"
 Returns a user ID based on the given username.
 
 ## Usage
+
 ```cc
 $userID[username]
 ```
+
 1. **username** - (Optional) if not provided, $authorID will be returned. The username of a user you want to return ID of.
 
 ## Example
@@ -16,20 +18,16 @@ $userID[username]
 
 How to use $userID
 
-<DiscordMessages>
-<DiscordMessageUser author="User">
-!!exec $userID[user]
-</DiscordMessageUser>
-<DiscordMessageBot>
-123456789123456789
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $userID[user]</Message>
+    <Message bot>123456789123456789</Message>
+</Discord>
 
 <Callout type="warn" title={"Cache"}>
 
 This function works on the bot's cache to find members.
 If the user is not cached, the function will not find them.
-User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br />
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.  
 To have all members cached, you will need Tier 5 Bot.
 
 </Callout>

@@ -11,21 +11,15 @@ $stringStartsWith[message;text]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $stringStartsWith[Hello World;Hello]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-true<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $stringStartsWith[Hello World;Hello]</Message>
+    <Message bot>true</Message>
+</Discord>
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $stringStartsWith[Hello World;Hate]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-false
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $stringStartsWith[Hello World;Hate]</Message>
+    <Message bot>false</Message>
+</Discord>

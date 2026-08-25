@@ -3,36 +3,50 @@ title: "$arrayFilter"
 ---
 
 Iterates through each element in an array. If the code returns `false`, the element will be removed from the array.
+
 <Callout type="warn" title={"Warning"}>
 
 Only zero-cooldown functions are allowed in the CODE section! Functions that have a cooldown will be skipped, even in Tier 3+.
-<br/>For example, if your loop contains `$sendMessage[Hello world!]`, it will literally display as "$sendMessage[Hello world!]" because `$sendMessage` is not a zero-cooldown function.
+
+For example, if your loop contains `$sendMessage[Hello world!]`, it will
+literally display as "$sendMessage[Hello world!]" because `$sendMessage` is not
+a zero-cooldown function.
 
 If you are looking to loop over non-zero cooldown functions, you should use `$forEach` instead.
 
 </Callout>
 
 ## Usage
+
 ```cc
 $arrayFilter[Element Value;Element Index;array name]{
 CODE...
 }
 ```
+
 ## Loop Limits
+
 Array loops are limited to a certain number of cycles. These limits vary between different tiers of premium.
-| Tier         | Limit |
-| :-------     | :---  |
-| 0 (Free)     | 50    |
-| 3 (Freemium) | 50    |
-| 4 (Pro)      | 100   |
-| 5 (Ultra)    | 150   |
+| Tier | Limit |
+| :------- | :--- |
+| 0 (Free) | 50 |
+| 3 (Freemium) | 50 |
+| 4 (Pro) | 100 |
+| 5 (Ultra) | 150 |
 
 ### Example (Remove Hello):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSplit[Hello/World;/]<br />$arrayFilter[value]\{<br />$if[$value==Hello]\{<br />false<br />}<br />}<br />$arrayJoin[/]
-</DiscordMessageUser>
-<DiscordMessageBot>
-World
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textSplit[Hello/World;/]
+        $arrayFilter[value]\{
+        <Tab/>$if[$value==Hello]\{
+        <Tab/>    false
+        <Tab/>}
+        }
+        $arrayJoin[/]
+    </Message>
+    <Message bot>
+        World
+    </Message>
+</Discord>

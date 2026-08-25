@@ -6,13 +6,13 @@ This command retrieves the current tier level of your bot.
 
 The standard, free version of the bot operates at **Tier 0**.
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $botTier
-</DiscordMessageUser>
-<DiscordMessageBot>
-0
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message mention>
+        !!exec $botTier
+    </Message>
+    <Message bot>
+        0
+    </Message>
+</Discord>
 
 The command will then return the tier level of your bot.

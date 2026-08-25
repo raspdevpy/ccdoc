@@ -12,11 +12,11 @@ $imageSetOpacity[opacity]
 
 ## Parameters
 
-*   **`opacity`**: A numerical value between 0 and 100 representing the desired opacity level.
+- **`opacity`**: A numerical value between 0 and 100 representing the desired opacity level.
 
-    *   `0`:  Fully transparent (invisible).
-    *   `100`: Fully opaque (completely visible).
-    *   Values between 0 and 100 create varying degrees of transparency.
+    - `0`: Fully transparent (invisible).
+    - `100`: Fully opaque (completely visible).
+    - Values between 0 and 100 create varying degrees of transparency.
 
 ## Example
 
@@ -28,7 +28,7 @@ $imageSetOpacity[50]
 
 ## Practical Example
 
-This example demonstrates how to use `$imageSetOpacity` to draw two avatars with different opacities.  It fetches the author's avatar, loads it into the image builder, draws it once at full opacity, then sets the opacity to 50% and draws it again.
+This example demonstrates how to use `$imageSetOpacity` to draw two avatars with different opacities. It fetches the author's avatar, loads it into the image builder, draws it once at full opacity, then sets the opacity to 50% and draws it again.
 
 ```cc
 !!exec $let[avatar;$replaceText[$authoravatar;.webp;.png]]
@@ -40,12 +40,17 @@ $imageDraw[avatar;100;190;100;100]
 $image[$imageOutput]
 ```
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec ?exec $let[avatar;$replaceText[$authoravatar;.webp;.png]]<br />$imageCreate[300;300]<br />$imageLoadFromURL[avatar;$avatar]<br />$imageDraw[avatar;100;10;100;100]<br />$imageSetOpacity[50]<br />$imageDraw[avatar;100;190;100;100]<br />$image[$imageOutput]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds" image="https://i.imgur.com/1lgsIxt.png">
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec ?exec $let[avatar;$replaceText[$authoravatar;.webp;.png]]
+        $imageCreate[300;300] $imageLoadFromURL[avatar;$avatar]
+        $imageDraw[avatar;100;10;100;100] $imageSetOpacity[50]
+        $imageDraw[avatar;100;190;100;100] $image[$imageOutput]
+    </Message>
+    <Message bot>
+        <DiscordEmbed
+            slot="embeds"
+            image="https://i.imgur.com/1lgsIxt.png"
+        ></DiscordEmbed>
+    </Message>
+</Discord>

@@ -5,25 +5,25 @@ title: "$concatTextSplit"
 adds an array to the end of an array from `$textsplit`
 
 ## Usage
+
 ```cc
 $concatTextSplit[text;separator(optional, default = ,)]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textsplit[Rake Mido; ] <br /> $concatTextSplit[Wiki,Mika;,] <br /> $arrayJoin[ ]
-</DiscordMessageUser>
-<DiscordMessageBot>
-Rake Mido Wiki Mika
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textsplit[Rake Mido; ] $concatTextSplit[Wiki,Mika;,] $arrayJoin[
+        ]
+    </Message>
+    <Message bot>Rake Mido Wiki Mika</Message>
+</Discord>
 
 <Callout type="error">
 
-This function got deprecated, use `$arrayConcat` instead 
+This function got deprecated, use `$arrayConcat` instead
 
 </Callout>
 
-**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
 **Tags:** <Tag text="Textsplit"/> <Tag text="Concat"/> <Tag text="Array"/> <Tag text="Merge "/> <Tag text="Add"/>

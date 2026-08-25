@@ -18,26 +18,26 @@ $boostingSince[userID;date/ms]
 
 Multiple ways of using function $boostingSince
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec $boostingSince
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Wednesday, January 1, 2025 08:30 PM
-</DiscordMessageBot>
-<DiscordMessageUser>
+</Message>
+<Message>
 !!exec $boostingSince[123456789123456789;ms]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 1735763400000
-</DiscordMessageBot>
-<DiscordMessageUser>
+</Message>
+<Message>
 !!exec $formatDate[$boostingSince[123456789123456789;ms];MM-DD-YYYY]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 01-01-2025
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 **Related Functions:** `$formatDate` `$timeToDate`
 

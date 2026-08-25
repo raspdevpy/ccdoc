@@ -10,24 +10,24 @@ As in any other language, you can also use backslash here to escape characters.
 
 ### Example
 
-<DiscordMessages>
-  <DiscordMessage>
+<Discord>
+  <Message>
       !!exec Hello \\$username, how are you?
-  </DiscordMessage>
-  <DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="/icon.png">
+  </Message>
+  <Message bot>
       Hello $username, how are you?
-  </DiscordMessage>
-  <DiscordMessage>
-      !!exec $description[Ban Command: \\$ban \<user>  
+  </Message>
+  <Message>
+      !!exec $description[Ban Command: \\$ban \<user>
       Kick Command: \\$kick \<user>]
-  </DiscordMessage>
-  <DiscordMessage bot roleColor="#5fb0fa" author="Custom Command" avatar="/icon.png">
+  </Message>
+  <Message bot>
     <DiscordEmbed>
-        Ban Command: $ban \<user>  
+        Ban Command: $ban \<user>
         Kick Command: $kick \<user>
     </DiscordEmbed>
-  </DiscordMessage>
-</DiscordMessages>
+  </Message>
+</Discord>
 
 ## Hashtag Alternatives
 

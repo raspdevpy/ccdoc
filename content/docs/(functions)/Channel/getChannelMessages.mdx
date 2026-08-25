@@ -23,11 +23,11 @@ $getChannelMessages[Channel ID;userID or everyone (default is everyone);ids/cont
 
 This example demonstrates how to retrieve the IDs of the 2 most recent messages sent by the command invoker in the channel where the command was executed, separating them with a forward slash.
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec $getChannelMessages[$channelID;$authorID;ids;/;2]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 982807194485555300/982807196318457918
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>

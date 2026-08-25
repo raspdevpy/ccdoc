@@ -5,29 +5,22 @@ title: "$splitText"
 returns the element by index from `$textSplit`
 
 ## Usage
+
 ```cc
 $splitText[index]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-<DiscordMarkdown>
-!!exec $textSplit[1 2 3 4 5 6 7 8 9 10; ]
-<br />
-$splitText[2]
-</DiscordMarkdown>
-</DiscordMessageUser>
-<DiscordMessageBot>
-2
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $textSplit[1 2 3 4 5 6 7 8 9 10; ] $splitText[2]</Message>
+    <Message bot>2</Message>
+</Discord>
 
 <Callout type="error">
 
-This function got deprecated, use `$arrayGet` instead 
+This function got deprecated, use `$arrayGet` instead
 
 </Callout>
 
-**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" /> 
+**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" />
 
 **Tags:** <Tag text="Split Text"/> <Tag text="Return Value"/>

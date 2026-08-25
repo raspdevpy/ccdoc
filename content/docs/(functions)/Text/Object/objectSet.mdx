@@ -5,18 +5,19 @@ title: "$objectSet"
 set an object property value by key
 
 ## Usage
+
 ```cc
 $objectSet[key;key;key....;value]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
+
+<Discord>
+<Message>
 !!exec $objectCreate[\{"name":"Wiki"}] $objectSet[name;Rake] $objectSet[tag;0001] $getObject
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 \{"name":"Rake","tag":"0001"}
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 <Callout type="info" title={"Setting Objects inside Objects"}>
 
@@ -65,7 +66,6 @@ $objectSet[userdata;0;role;Moderator]
 
 </Callout>
 
-**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" /> 
+**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" />
 
-**Tags:** <Tag text="Object"/> <Tag text="Set"/> 
-
+**Tags:** <Tag text="Object"/> <Tag text="Set"/>

@@ -9,6 +9,7 @@ Checks if a user has reacted to a message with the given emoji. Returns `true` o
 ```cc
 $userReacted[channelID;messageID;userID;reaction]
 ```
+
 1. **channelID** - (Optional) default value: `$channelID`. The ID of a channel you want to check reaction in.
 2. **messageID** - (Optional) default value: `$messageID`. The ID of a message you want to check reaction on.
 3. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to check from if they reacted.
@@ -20,23 +21,32 @@ $userReacted[channelID;messageID;userID;reaction]
 
 How to use $userReacted
 
-<DiscordMessages>
-<DiscordMessageUser author="User">
-!!exec $wait[5s] $userReacted[;;;<img src="https://cdn.discordapp.com/emojis/1000917016724648007.webp?size=16" alt="DogSmile" style={{ verticalAlign: "text-bottom" }} />]
-<DiscordReactions>
-<DiscordReaction name="DogSmile" image="https://cdn.discordapp.com/emojis/1000917016724648007.webp" count={1} active  />
-</DiscordReactions>
-</DiscordMessageUser>
-<DiscordMessageBot>
-true
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $wait[5s] $userReacted[;;;
+        <img
+            src="https://cdn.discordapp.com/emojis/1000917016724648007.webp?size=16"
+            alt="DogSmile"
+            style={{ verticalAlign: "text-bottom" }}
+        />
+        ]
+        <DiscordReactions>
+            <DiscordReaction
+                name="DogSmile"
+                image="https://cdn.discordapp.com/emojis/1000917016724648007.webp"
+                count={1}
+                active
+            />
+        </DiscordReactions>
+    </Message>
+    <Message bot>true</Message>
+</Discord>
 
 <Callout type="warn" title={"Cache"}>
 
 This function works on the bot's cache to find members.
 If the user is not cached, the function will not find them.
-User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br />
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.  
 To have all members cached, you will need Tier 5 Bot.
 
 </Callout>

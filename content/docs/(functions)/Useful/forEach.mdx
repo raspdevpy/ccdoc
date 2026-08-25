@@ -4,58 +4,42 @@ title: "$forEach"
 
 Will loop over a list and every loop it will take an item and assign it inside varname accessible by $get[varname] or $varname
 
-## Usage: 
+## Usage:
+
 ```cc
 $forEach[varname;LIST (ex: mido rake azz);Separator (Optional, default is space)]
 ```
+
 ## Loop Limits
+
 Loops in this function are limited to a certain number of cycles. These limits vary between different tiers of premium.
-| Tier         | Limit |
-| :-------     | :---  |
-| 0 (Free)     | 10    |
-| 3 (Freemium) | 15    |
-| 4 (Pro)      | 30    |
-| 5 (Ultra)    | 60    |
+| Tier | Limit |
+| :------- | :--- |
+| 0 (Free) | 10 |
+| 3 (Freemium) | 15 |
+| 4 (Pro) | 30 |
+| 5 (Ultra) | 60 |
 
 ## Example:
+
 ```cc
 $forEach[member;Rake, Mido, Mika, Azz, Felix, Flinkz, Wiki, Ddk;, ]
 $get[member], is one of our Staff Members!
 $endForEach
-``` 
+```
 
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-<DiscordMarkdown>
-!!exec $forEach[member;Rake, Mido, Azz, Mika, Felix, Flinkz, Wiki, Ddk;, ]
-<br />
-$get[member], is one of our Staff Members!
-<br />
-$endForEach
-</DiscordMarkdown>
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordMarkdown>
-Rake, is one of our Staff Members!
-<br />
-Mido, is one of our Staff Members!
-<br />
-Azz, is one of our Staff Members!
-<br />
-Mika, is one of our Staff Members!
-<br />
-Felix, is one of our Staff Members!
-<br />
-Flinkz, is one of our Staff Members!
-<br />
-Wiki, is one of our Staff Members!
-<br />
-Ddk, is one of our Staff Members!
-<br />
-</DiscordMarkdown>
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $forEach[member;Rake, Mido, Azz, Mika, Felix, Flinkz, Wiki, Ddk;,
+        ] $get[member], is one of our Staff Members! $endForEach
+    </Message>
+    <Message bot>
+        Rake, is one of our Staff Members! Mido, is one of our Staff Members!
+        Azz, is one of our Staff Members! Mika, is one of our Staff Members!
+        Felix, is one of our Staff Members! Flinkz, is one of our Staff Members!
+        Wiki, is one of our Staff Members! Ddk, is one of our Staff Members!
+    </Message>
+</Discord>
 
 <Callout type="info">
 
@@ -63,7 +47,6 @@ This can be used with `$seq`!
 
 </Callout>
 
-**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" /> 
+**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" />
 
-**Tags:** <Tag text="Loop"/>  <Tag text="For Each"/>  <Tag text="For Each Object in list"/> 
-
+**Tags:** <Tag text="Loop"/> <Tag text="For Each"/> <Tag text="For Each Object in list"/>

@@ -12,14 +12,12 @@ $sticker[Sticker ID;name;Info]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $sticker[992974663099629588;name]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Smiley
-</DiscordMessageBot>
-</DiscordMessages>
 
+<Discord>
+    <Message>
+        !!exec $sticker[992974663099629588;name]
+    </Message>
+    <Message bot>Smiley</Message>
+</Discord>
 
 **Related Functions:** `$messageStickers`

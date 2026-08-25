@@ -8,38 +8,34 @@ Takes away a role from a user.
 
 `$takeRoles[userID;roleID 1;roleID 2;roleID 3;...]`
 
-*   **userID:** The ID of the user to take the roles from.
-*   **roleID 1;roleID 2;roleID 3;...:** A semicolon-separated list of role IDs to remove from the user.
+- **userID:** The ID of the user to take the roles from.
+- **roleID 1;roleID 2;roleID 3;...:** A semicolon-separated list of role IDs to remove from the user.
 
-<br/>
-
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $takeRoles[$authorID;$roleID[Muted]]
-</DiscordMessageUser>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $takeRoles[$authorID;$roleID[Muted]]</Message>
+</Discord>
 
 **Example Breakdown:**
 
 This example takes the "Muted" role from the user who executed the command.
 
-*   `!!exec`:  Executes the custom command function.
-*   `$takeRoles[...]`:  The function that removes roles.
-*   `$authorID`:  Gets the ID of the command executor.  (See [here](/Member/authorID) for more info)
-*   `$roleID[Muted]`:  Gets the ID of the role named "Muted". (See [here](/Role/roleID) for more info)
+- `!!exec`: Executes the custom command function.
+- `$takeRoles[...]`: The function that removes roles.
+- `$authorID`: Gets the ID of the command executor. (See [here](/Member/authorID) for more info)
+- `$roleID[Muted]`: Gets the ID of the role named "Muted". (See [here](/Role/roleID) for more info)
 
 <Callout type="info" title={"Used Functions"}>
 
-*   `$roleID`:  Returns a role ID based on the role's name.
-*   `$authorID`:  Returns the ID of the command executor.
+- `$roleID`: Returns a role ID based on the role's name.
+- `$authorID`: Returns the ID of the command executor.
 
 </Callout>
 
 <Callout type="info" title={"Related Functions"}>
 
-*   `$giveRoles`:  Gives roles to a user.
-*   `$setRoles`:  Removes all roles from a user and then gives them the specified roles.
-*   `$toggleRoles`:  Toggles roles on a user (adds if they don't have it, removes if they do).
+- `$giveRoles`: Gives roles to a user.
+- `$setRoles`: Removes all roles from a user and then gives them the specified roles.
+- `$toggleRoles`: Toggles roles on a user (adds if they don't have it, removes if they do).
 
 </Callout>
 

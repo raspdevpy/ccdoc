@@ -5,34 +5,30 @@ title: "$addTimestamp"
 Adds a timestamp to a message embed.
 
 ## Usage
+
 ```cc
 $addTimestamp
-``` or `$addTimestamp[ms]`
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $addTimestamp
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds" timestamp="09/12/2021">
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+```
+
+or `$addTimestamp[ms]`
+
+<Discord>
+    <Message>!!exec $addTimestamp</Message>
+    <Message bot>
+        <DiscordEmbed slot="embeds" timestamp="09/12/2021"></DiscordEmbed>
+    </Message>
+</Discord>
 
 or with specified Time
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $addTimestamp[$parseTime[13/09/2021]]
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds" timestamp="09/13/2021">
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $addTimestamp[$parseTime[13/09/2021]]</Message>
+    <Message bot>
+        <DiscordEmbed slot="embeds" timestamp="09/13/2021"></DiscordEmbed>
+    </Message>
+</Discord>
 
 <Callout type="info" title={"Do you want to add an embed inside a Function as paramter like $sendmessage[text]"}>
-
 
 Use: `{timestamp:ms}`
 
@@ -43,3 +39,4 @@ Use: `{timestamp:ms}`
 If you add any `:` in this function it will error! Check out [this](/Guide/syntax)
 
 </Callout>
+````

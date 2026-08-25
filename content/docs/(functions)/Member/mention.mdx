@@ -9,6 +9,7 @@ Returns a mention of a user.
 ```cc
 $mention[userID]
 ```
+
 1. **userID** - (Optional) default value: `$authorID`. The ID of user to get mentioned.
 
 ## Example
@@ -17,16 +18,16 @@ $mention[userID]
 
 How to use $mention for author or other user
 
-<DiscordMessages>
-<DiscordMessageUser author="User">
-!!exec Me: $mention<br />
-Other user: $mention[123456789123456789]
-</DiscordMessageUser>
-<DiscordMessageBot>
-Me: <DiscordMention highlight>User</DiscordMention><br />
-Other user: <DiscordMention>Other User</DiscordMention>
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec Me: $mention
+        Other user: $mention[123456789123456789]
+    </Message>
+    <Message bot>
+        Me: <DiscordMention highlight>User</DiscordMention>
+        Other user: <DiscordMention>Other User</DiscordMention>
+    </Message>
+</Discord>
 
 **Related Functions:** `$username` `$nickname`
 

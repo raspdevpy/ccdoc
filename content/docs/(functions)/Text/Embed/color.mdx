@@ -5,38 +5,39 @@ title: "$color"
 sets the color of the embed
 
 ## Usage
+
 `$color[Hex or Color Name]`
 
 ## Accepted Color Names
+
 Check this [page](/CodeReferences/ref.embed.colors)
 
 ## Example 1: Using it in function format
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $color[#0099ff]
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds" color="#0099ff">
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $color[#0099ff]</Message>
+    <Message bot>
+        <DiscordEmbed slot="embeds" color="#0099ff"></DiscordEmbed>
+    </Message>
+</Discord>
 
 ## Example 2: Using In Curl Format
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $sendMessage[<br />\{desc:You are awesome}<br />\{color:#0099ff}<br />]
-</DiscordMessageUser>
-<DiscordMessageBot>
+
+<Discord>
+<Message>
+!!exec $sendMessage[
+<Tab/>\{desc:You are awesome}
+<Tab/>\{color:#0099ff}
+]
+</Message>
+<Message bot>
 <DiscordEmbed slot="embeds" color="#0099ff" description="">
 You are awesome
 </DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 <Callout type="info" title={"To color an embed inside a function like $sendmessage[text]"}>
-
 
 Use: `{color:hex or colorname or RANDOM or TRANSPARENT}`
 Example: `{color:#0099ff}`

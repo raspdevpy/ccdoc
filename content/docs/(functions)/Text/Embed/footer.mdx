@@ -5,23 +5,21 @@ title: "$footer"
 Adds a footer to a message embed with an optional icon url
 
 ## Usage
+
 ```cc
 $footer[text;icon url(optional)]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $footer[This is a fantastic embed footer]
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds">
-<span slot="footer">This is a fantastic embed footer</span>
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $footer[This is a fantastic embed footer]</Message>
+    <Message bot>
+        <DiscordEmbed slot="embeds">
+            <span slot="footer">This is a fantastic embed footer</span>
+        </DiscordEmbed>
+    </Message>
+</Discord>
 
 <Callout type="info" title={"Do you want to add an embed inside a Function as paramter like $sendmessage[text]"}>
-
 
 Use: `{footer: Your text here:icon url(optional)}`
 

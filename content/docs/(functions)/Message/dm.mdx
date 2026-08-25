@@ -7,44 +7,42 @@ title: "$dm"
 Sends the output of your code directly to the author via Discord Direct Message (DM), or to the specified user ID's DM.
 
 ## Usage
+
 ```cc
 $dm[userID (optional)]
 ```
 
 **Explanation:**
 
-*   The `$dm` function is used to send the result of the preceding code to a user's DM.
-*   If no `userID` is provided, the message will be sent to the author of the command.
-*   If a `userID` is provided, the message will be sent to the user with that ID.
-
-<br/>
+- The `$dm` function is used to send the result of the preceding code to a user's DM.
+- If no `userID` is provided, the message will be sent to the author of the command.
+- If a `userID` is provided, the message will be sent to the user with that ID.
 
 **Example:**
 
 **Command Input:**
+
 ```cc
 !!exec $dm[$authorID] This is a fantastic message!
 ```
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $dm[$authorID] This is a fantastic message!
-</DiscordMessageUser>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $dm[$authorID] This is a fantastic message!</Message>
+</Discord>
 
 **Result (Sent to the Command Author's DM):**
 
-<DiscordMessages>
-<DiscordMessageBot author="Your Custom Bot">
-This is a fantastic message!
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message bot botName="Custom Bot">
+        This is a fantastic message!
+    </Message>
+</Discord>
 
 <Callout type="info" title={"Related Functions"}>
 
-*   `$sendDM`:  Send the output of the console to a DM message. (More control over the DM)
-*   `$channelSendMessage`: Send a message to a specific channel in the server.
-*   `$sendMessage`: Send a message to the channel where the command was used.
+- `$sendDM`: Send the output of the console to a DM message. (More control over the DM)
+- `$channelSendMessage`: Send a message to a specific channel in the server.
+- `$sendMessage`: Send a message to the channel where the command was used.
 
 </Callout>
 

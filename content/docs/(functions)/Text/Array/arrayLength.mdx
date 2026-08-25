@@ -11,11 +11,11 @@ $arrayLength[array name (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSplit[Mido/Rake/Azz;/]<br />$arrayLength<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-3
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textSplit[Mido/Rake/Azz;/]
+        $arrayLength
+    </Message>
+    <Message bot>3</Message>
+</Discord>

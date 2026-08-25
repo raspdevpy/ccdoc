@@ -5,6 +5,7 @@ title: "$channelCount"
 This function returns the total number of channels present in the server.
 
 ## Usage
+
 ```cc
 $channelCount[Channel Type (optional)]
 ```
@@ -13,21 +14,18 @@ You can optionally specify a channel type to count only channels of that specifi
 
 #### Parameters:
 
-*   **`Channel Type` (optional):** The type of channel to count. If omitted, the function will count all channels.  Valid types can be found in the [Channel Types Reference](/CodeReferences/ref.channel_types).
+- **`Channel Type` (optional):** The type of channel to count. If omitted, the function will count all channels. Valid types can be found in the [Channel Types Reference](/CodeReferences/ref.channel_types).
 
 #### Example:
 
 Counts the number of public threads in the server:
 
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec There are $channelCount[threads_public] threads in the server!
-</DiscordMessageUser>
-<DiscordMessageBot>
-There are 13 threads in the server!
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec There are $channelCount[threads_public] threads in the server!
+    </Message>
+    <Message bot>There are 13 threads in the server!</Message>
+</Discord>
 
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 

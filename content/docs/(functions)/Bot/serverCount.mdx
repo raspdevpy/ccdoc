@@ -5,23 +5,20 @@ title: "$serverCount"
 This function returns the total number of servers (guilds) the bot is currently in. It's a simple way to display the bot's reach.
 
 ## Usage
+
 ```cc
 $serverCount
 ```
 
 This function doesn't require any arguments. Just include it in your command response.
-<br/>
+
 **Example:**
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec I am in $serverCount servers.
-</DiscordMessageUser>
-<DiscordMessageBot>
-I am in 15000 servers.
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec I am in $serverCount servers.</Message>
+    <Message bot>I am in 15000 servers.</Message>
+</Discord>
 
 **Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Server Count"/> <Tag text="Bot Server Count"/> <Tag text="OS"/> <Tag text="Stats"/>

@@ -11,11 +11,11 @@ $arrayInclude[Value;array name (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSplit[Mido/Rake/Azz;/]<br />$arrayInclude[Rake]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-true
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textSplit[Mido/Rake/Azz;/]
+        $arrayInclude[Rake]
+    </Message>
+    <Message bot>true</Message>
+</Discord>

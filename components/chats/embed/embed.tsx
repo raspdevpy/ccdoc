@@ -8,6 +8,7 @@ interface EmbedProps {
     title?: string;
     footer?: string;
     footerImage?: string;
+    image: string;
     children?: React.ReactNode;
 }
 
@@ -18,6 +19,7 @@ export const Embed = ({
     title = "",
     footer = "",
     footerImage = "",
+    image = "",
     children = [],
 }: EmbedProps) => {
     const { components, message } = filterChildren(children);
@@ -43,6 +45,7 @@ export const Embed = ({
                 )}
                 <div className="prose text-xs my-px leading-4.5">{message}</div>
                 {components}
+                {image != "" && <img src={image} />}
                 {(footer !== "" || footerImage !== "") && (
                     <div className="flex items-center gap-1.5 mt-1 min-h-0 text-xxs">
                         {footerImage !== "" && (

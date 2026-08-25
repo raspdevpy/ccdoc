@@ -18,20 +18,20 @@ $hasAnyPerm[userID;permission1;permission2;...]
 
 How to use $hasAnyPerm without user argument. Keep in mind that if the user does have only one of listed permissions, true will be returned.
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec I have managechannels OR manageroles permission: $hasAnyPerm[managechannels;manageroles]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 I have managechannels OR manageroles permission: true
-</DiscordMessageBot>
-<DiscordMessageUser>
+</Message>
+<Message>
 !!exec I have managechannels permission: $hasAnyPerm[managechannels], I have manageroles permission: $hasAnyPerm[manageroles]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 I have managechannels permission: true, I have manageroles permission: false
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 <Callout type="info" title={"Suggestion"}>
 

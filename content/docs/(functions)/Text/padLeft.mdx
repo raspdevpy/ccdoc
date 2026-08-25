@@ -11,11 +11,8 @@ $padLeft[Text;Max Length;Filling Text]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $padLeft[5;2;0]<br />$padLeft[13;2;0]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-05<br />13
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $padLeft[5;2;0] $padLeft[13;2;0]</Message>
+    <Message bot>05 13</Message>
+</Discord>

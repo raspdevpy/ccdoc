@@ -5,22 +5,20 @@ title: "$spread"
 spreads text as arguments inside functions
 
 ## Usage
+
 ```cc
 $spread[separator (optional, default: ,);data to spread]
 ```
 
-#### Example: 
-<br/>
-<DiscordMessages>
-<DiscordMessage>
-!!exec Your color is $randomtext[$spread[,;Blue,Yellow,Green]]
-</DiscordMessage>
-<DiscordMessageBot>
-Your color is Yellow
-</DiscordMessageBot>
-</DiscordMessages>
+#### Example:
 
-**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" /> 
+<Discord>
+    <Message>
+        !!exec Your color is $randomtext[$spread[,;Blue,Yellow,Green]]
+    </Message>
+    <Message bot>Your color is Yellow</Message>
+</Discord>
+
+**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" />
 
 **Tags:** <Tag text="Data"/> <Tag text="Spread"/> <Tag text="Arguments"/>
-

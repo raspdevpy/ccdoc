@@ -11,6 +11,7 @@ $poll[Channel ID (default $channelID);Message ID (default $messageID);data]
 ```
 
 ### data options:
+
 `name/question`: get the poll question\
 `answers`: get the poll answers count\
 `votes`: get the total votes this poll gathered\
@@ -26,11 +27,18 @@ $poll[Channel ID (default $channelID);Message ID (default $messageID);data]
 `ended`: whether poll is ended (yes/no)
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec Poll name: $poll[$channelID;$messageID;name]<br />Total votes: $poll[$channelID;$messageID;votes]<br />Total answers: $poll[$channelID;$messageID;answers]<br />1st answer name: $poll[$channelID;$messageID;answer 1 name]<br />2nd answer name: $poll[$channelID;$messageID;answer 2 name]<br />1st answer votes: $poll[$channelID;$messageID;answer 1 votes]<br /><br />
-</DiscordMessageUser>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec Poll name: $poll[$channelID;$messageID;name]
+        Total votes: $poll[$channelID;$messageID;votes]
+        Total answers: $poll[$channelID;$messageID;answers]
+        1st answer name: $poll[$channelID;$messageID;answer 1 name]
+        2nd answer name: $poll[$channelID;$messageID;answer 2 name]
+        1st answer votes: $poll[$channelID;$messageID;answer 1 votes]
+    </Message>
+</Discord>
 
 ### Output:
+
 ![](https://i.imgur.com/DRajoEQ.png)

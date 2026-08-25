@@ -9,6 +9,7 @@ Returns the avatar (profile picture) URL of the user who executed the command.
 ```cc
 $authorAvatar[serverAvatar]
 ```
+
 1. **serverAvatar** - (Optional) default value: `no`. Can be `yes` or `no`. Discord does have two types of avatars, global and per-server (custom avatar in each server). If no server avatar is set, the global avatar will be used.
 
 ## Examples
@@ -17,21 +18,25 @@ $authorAvatar[serverAvatar]
 
 How is the avatar URL displayed when sent with text and without text
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec With text: $authorAvatar
-</DiscordMessageUser>
-<DiscordMessageBot>
-With text: https://cdn.discordapp.com/embed/avatars/0.png<br />
-<img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="User Avatar" style={{ verticalAlign: "text-bottom" }} />
-</DiscordMessageBot>
-<DiscordMessageUser>
-!!exec $authorAvatar
-</DiscordMessageUser>
-<DiscordMessageBot>
-<img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="User Avatar" style={{ verticalAlign: "text-bottom" }} />
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec With text: $authorAvatar</Message>
+    <Message bot>
+        With text: https://cdn.discordapp.com/embed/avatars/0.png
+        <img
+            src="https://cdn.discordapp.com/embed/avatars/0.png"
+            alt="User Avatar"
+            style={{ verticalAlign: "text-bottom" }}
+        />
+    </Message>
+    <Message>!!exec $authorAvatar</Message>
+    <Message bot>
+        <img
+            src="https://cdn.discordapp.com/embed/avatars/0.png"
+            alt="User Avatar"
+            style={{ verticalAlign: "text-bottom" }}
+        />
+    </Message>
+</Discord>
 
 <Callout type="info" title={"Note"}>
 

@@ -19,24 +19,24 @@ $ban[userID;reason;messages to delete]
 
 Successful ban with no response
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec $ban[123456789123456789;Spamming;7]
-</DiscordMessageUser>
-</DiscordMessages>
+</Message>
+</Discord>
 
 #### Unsucessful ban
 
 Unsuccessful ban with error message
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec $ban[$ownerID;Just a test;0]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 ❌ bot is missing enough permissions at line 1
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 <Callout type="info" title={"Permissions"}>
 

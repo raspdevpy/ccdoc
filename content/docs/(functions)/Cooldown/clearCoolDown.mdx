@@ -11,33 +11,23 @@ Clears a cooldown set by cooldown function.
 ```cc
 $clearCooldown[type;id;token]
 ```
+
 1. **type** - (Optional) default value: `user`. Can be `user`, `channel` or `server`. The type of cooldown to clear.
 2. **id** - (Optional) default value: `$authorID` if type is user. The ID of a user or channel to clear cooldown from.
 3. **token** - (Optional) default value is the current command token, changing it means clearing another command cooldown
+
 ## Example
 
 #### Remove cooldown from a user
 
 How to remove cooldown from a user
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $cooldown[5m]<br />
-$clearCooldown<br />
-No cooldown
-</DiscordMessageUser>
-<DiscordMessageBot>
-No cooldown
-</DiscordMessageBot>
-<DiscordMessageUser>
-!!exec $cooldown[5m]<br />
-$clearCooldown<br />
-No cooldown 2nd try
-</DiscordMessageUser>
-<DiscordMessageBot>
-No cooldown 2nd try
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $cooldown[5m] $clearCooldown No cooldown</Message>
+    <Message bot>No cooldown</Message>
+    <Message>!!exec $cooldown[5m] $clearCooldown No cooldown 2nd try</Message>
+    <Message bot>No cooldown 2nd try</Message>
+</Discord>
 
 **Related Functions:** `$getCooldownTime`
 

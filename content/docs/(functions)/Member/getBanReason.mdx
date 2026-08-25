@@ -16,27 +16,27 @@ $getBanReason[userID]
 
 #### Get ban reason
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec The ban reason is: $getBanReason[123456789123456789]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 The ban reason is: Spamming
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 #### User is not banned
 
 If the user is not banned or there is no ban reason set, the function returns an empty value.
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec The ban reason is: $getBanReason[123456789123456789]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 The ban reason is: 
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 **Related Functions:** `$ban` `$unban` `$isBanned`
 

@@ -11,11 +11,11 @@ $onlyIfMessageContains[text;word1;word2;...;error message]
 ```
 
 ## Example
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $onlyIfMessageContains[$username[$authorID];mem;My username doesn't contain `mem`] My username contains `mem`!<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-My username contains `mem`<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $onlyIfMessageContains[$username[$authorID];mem;My username
+        doesn't contain `mem`] My username contains `mem`!
+    </Message>
+    <Message bot>My username contains `mem`</Message>
+</Discord>

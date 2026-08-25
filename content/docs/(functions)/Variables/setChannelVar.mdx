@@ -5,23 +5,20 @@ title: "$setChannelVar"
 Sets a channel variable value.
 
 ## Usage
+
 ```cc
 $setChannelVar[variable;value;channelID (optional)]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $setChannelVar[Creator;Mido;$channelID]
-</DiscordMessageUser>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $setChannelVar[Creator;Mido;$channelID]</Message>
+</Discord>
 
 or for current Channel
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $setChannelVar[Creator;Mido]
-</DiscordMessageUser>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $setChannelVar[Creator;Mido]</Message>
+</Discord>
 
 <Callout type="info" title={"Related Functions"}>
 

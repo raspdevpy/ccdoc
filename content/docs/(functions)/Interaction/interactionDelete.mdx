@@ -5,11 +5,10 @@ title: "$interactionDelete"
 Deletes an interaction reply previously sent using `$interactionReply`.
 
 ## Usage
+
 ```cc
 $interactionDelete[message ID (optional, defaults to the previous interaction reply)]
 ```
-
-<br/>
 
 **Explanation:**
 
@@ -17,7 +16,7 @@ This function allows you to remove an interaction reply. If you don't specify a 
 
 **Parameters:**
 
-*   `message ID` (Optional): The ID of the message you want to delete. If left blank, it defaults to deleting the last interaction reply sent by the bot in that command execution.
+- `message ID` (Optional): The ID of the message you want to delete. If left blank, it defaults to deleting the last interaction reply sent by the bot in that command execution.
 
 **Example:**
 
@@ -34,6 +33,5 @@ $interactionDelete[123456789012345678]
 ```
 
 **Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Interaction"/> <Tag text="Delete"/> <Tag text="Ephemeral"/> <Tag text="Reply"/>

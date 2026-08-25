@@ -11,30 +11,23 @@ $viewServerVars[Separator;Query Regex (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $viewServerVars<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-level1_xp, names, staffs, level2_xp, level3_xp, level1_reward<br /><br />
-</DiscordMessageBot>
 
-<DiscordMessageUser>
-!!exec $viewServerVars[/]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-level1_xp/names/staffs/level2_xp/level3_xp/level1_reward<br /><br />
-</DiscordMessageBot>
+<Discord>
+<Message>
+!!exec $viewServerVars
+</Message>
+<Message bot>
+level1_xp, names, staffs, level2_xp, level3_xp, level1_reward
+</Message>
 
+<Message>!!exec $viewServerVars[/]</Message>
+<Message bot>level1_xp/names/staffs/level2_xp/level3_xp/level1_reward</Message>
 
-</DiscordMessages>
+</Discord>
 
 ### Example (return only variables that starts with level):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $viewServerVars[, ;^level]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-level1_xp, level2_xp, level3_xp,level1_reward
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $viewServerVars[, ;^level]</Message>
+    <Message bot>level1_xp, level2_xp, level3_xp,level1_reward</Message>
+</Discord>

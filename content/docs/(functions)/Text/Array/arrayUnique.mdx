@@ -11,11 +11,10 @@ $arrayUnique[Separator (default ', ');Trim Element before check? (default is yes
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSplit[Mido/Rake/Rake/Mido/Azz;/]<br />$arrayUnique[, ]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Mido, Rake, Azz
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textSplit[Mido/Rake/Rake/Mido/Azz;/] $arrayUnique[, ]
+    </Message>
+    <Message bot>Mido, Rake, Azz</Message>
+</Discord>

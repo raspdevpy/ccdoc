@@ -20,14 +20,14 @@ Here are a couple of examples demonstrating how `$botVerified` works.
 
 In this example, we check if the bot with the ID `725721249652670555` is verified.
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec $botVerified[725721249652670555]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 true
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 The function returns `true` because the bot with ID `725721249652670555` is verified.
 
@@ -35,13 +35,13 @@ The function returns `true` because the bot with ID `725721249652670555` is veri
 
 In this example, we check if the bot with the ID `582019849073590274` is verified.
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec $botVerified[582019849073590274]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 false
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 The function returns `false` because the bot with ID `582019849073590274` is not verified.

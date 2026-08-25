@@ -16,16 +16,16 @@ $httpRequestStatus
 
 How to use $httpRequestStatus to display status code of request
 
-<DiscordMessages>
-<DiscordMessageUser author="User">
-!!exec $httpRequest[https://api.example.com/]<br />
-Code: $httpRequestStatus
-</DiscordMessageUser>
-<DiscordMessageBot>
-Api response!<br />
-Code: 200
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $httpRequest[https://api.example.com/]
+        Code: $httpRequestStatus
+    </Message>
+    <Message bot>
+        Api response!
+        Code: 200
+    </Message>
+</Discord>
 
 **Related Functions:** `$httpRequest` `$httpRequestHeader`
 

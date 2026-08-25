@@ -2,27 +2,31 @@
 title: "$objectCreate"
 ---
 
-Creates a json object from the input 
+Creates a json object from the input
 
 Use `$getObjectProperty` or `$objectGet` to get a key value.
+
 ## Usage
+
 ```cc
 $objectCreate[JSON string]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
+
+<Discord>
+<Message>
 !!exec $objectCreate[\{"Name":"Wiki","Level":20,"isExpert":true,"userId":327996784012034050}] Hi, my name is $objectget[Name]. Level $objectget[Level]. Am i expert? $objectget[isExpert]. My user id is $objectget[userId]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Hi, my name is Wiki. Level 20. Am i expert? true. My user id is 327996784012034050
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 <Callout type="info" title={"Saving Object inside Vars"}>
 
 The example above shows how to save the object inside a variable and retrieve it later.
+
 - with an object you can save many properties inside a variable.
+
 ```cc
 $initvar[user;Data;{"Name":"none","Level":0,"isExpert":false,"userId":0}]
 $objectCreate[$getuservar[Data]]
@@ -56,11 +60,11 @@ $setUserVar[Data;$getObject]
 "String":"value"},{"String":"value"},{"String":"value"}]
 }
 ```
-* use `$objectGet[groupname;key]` to get the value or $objectGet[groupname;key;index] to get the value of an array
+
+- use `$objectGet[groupname;key]` to get the value or $objectGet[groupname;key;index] to get the value of an array
 
 </Callout>
 
-**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" /> 
+**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" />
 
 **Tags:** <Tag text="Create"/> <Tag text="Object"/> <Tag text="Json"/>
-

@@ -11,11 +11,8 @@ $isStreaming[User ID]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec Is $username Streaming?: $isStreaming<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Is Mido Streaming?: false
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec Is $username Streaming?: $isStreaming</Message>
+    <Message bot>Is Mido Streaming?: false</Message>
+</Discord>

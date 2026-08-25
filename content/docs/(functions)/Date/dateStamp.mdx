@@ -5,30 +5,24 @@ title: "$dateStamp"
 Returns the current Unix timestamp (the number of milliseconds that have elapsed since January 1, 1970 UTC).
 
 ## Usage
+
 ```cc
 $dateStamp[Return in Seconds (Yes/No)]
 ```
 
 This function allows you to retrieve the current timestamp in either milliseconds or seconds.
 
-*   **`Return in Seconds (Yes/No)`:**  Specify whether you want the timestamp returned in seconds (enter `Yes`) or milliseconds (enter `No` or leave blank).
-
-<br/>
+- **`Return in Seconds (Yes/No)`:** Specify whether you want the timestamp returned in seconds (enter `Yes`) or milliseconds (enter `No` or leave blank).
 
 **Example:**
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $dateStamp, $dateStamp[yes]
-</DiscordMessageUser>
-<DiscordMessageBot>
-1630841854895, 1630841854
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $dateStamp, $dateStamp[yes]</Message>
+    <Message bot>1630841854895, 1630841854</Message>
+</Discord>
 
 In this example, the first `$dateStamp` call returns the timestamp in milliseconds, while the second `$dateStamp[yes]` call returns the timestamp in seconds.
 
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Return"/> <Tag text="Time"/> <Tag text="Milliseconds"/>

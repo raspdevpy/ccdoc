@@ -11,25 +11,32 @@ $objectIncrease[Key;Amount]
 ```
 
 ### Notes on Amount:
-* It can be a number like `5`, or negative `-5` to reduce instead of increase\
-* It can be expression like x*2 where `x` is the current value
+
+- It can be a number like `5`, or negative `-5` to reduce instead of increase\
+- It can be expression like x\*2 where `x` is the current value
 
 ### Example 1:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $objectIncrease[Mido;10]<br />$objectIncrease[Rake;5]<br />$objectGet<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-\{"Mido":10,"Rake":5}<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+<Message>
+!!exec $objectIncrease[Mido;10]
+$objectIncrease[Rake;5]
+$objectGet
+</Message>
+<Message bot>
+\{"Mido":10,"Rake":5}
+</Message>
+</Discord>
 
 ### Example 2:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $objectIncrease[Mido;10]<br />$objectIncrease[Mido;x*2]<br />$objectGet<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
+
+<Discord>
+<Message>
+!!exec $objectIncrease[Mido;10]
+$objectIncrease[Mido;x*2]
+$objectGet
+</Message>
+<Message bot>
 \{"Mido":20}
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>

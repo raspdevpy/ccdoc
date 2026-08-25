@@ -4,50 +4,35 @@ title: "$callFunction"
 
 To call a user-defined function created with `$function`
 
+## Usage:
 
-## Usage: 
 `$callFunction[Function Name;Argument 1 (optional);Argument 2....(optional)]`
 
 #### Example:
+
 ```cc
 $callFunction[printHello;Mika]
-``` 
+```
 
 Call the function, using `$callFunction`
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-<DiscordMarkdown>
-!!exec $function[printHello;name]
-<br />
-Hello $name 👋
-<br />
-$endFunction
-$callFunction[printhello;Mika]
-</DiscordMarkdown>
-</DiscordMessageUser>
-<DiscordMessageBot>
-Hello Mika 👋
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $function[printHello;name] Hello $name 👋 $endFunction
+        $callFunction[printhello;Mika]
+    </Message>
+    <Message bot>Hello Mika 👋</Message>
+</Discord>
 
 Call the function, using `$printHello`
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-<DiscordMarkdown>
-!!exec $function[printHello;name]
-<br />
-Hello $name 👋
-<br />
-$endFunction
-$printhello[Mika]
-</DiscordMarkdown>
-</DiscordMessageUser>
-<DiscordMessageBot>
-Hello Mika 👋
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $function[printHello;name] Hello $name 👋 $endFunction
+        $printhello[Mika]
+    </Message>
+    <Message bot>Hello Mika 👋</Message>
+</Discord>
 
 <Callout type="error">
 
@@ -55,6 +40,6 @@ A function name can't start with number, and must be within [A-Z or a-z or _ or 
 
 </Callout>
 
-**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" /> 
+**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" />
 
-**Tags:** <Tag text="Function"/>  <Tag text="Custom Functions"/>  <Tag text="Nested Code"/>
+**Tags:** <Tag text="Function"/> <Tag text="Custom Functions"/> <Tag text="Nested Code"/>

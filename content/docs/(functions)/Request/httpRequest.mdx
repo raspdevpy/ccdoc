@@ -16,12 +16,12 @@ $httpRequest[URL;Method;Content;Header 1;Header 2;...]
 
 Supported HTTP methods:
 
-* `GET`
-* `POST`
-* `PUT`
-* `PATCH`
-* `DELETE`
-* `HEAD`
+- `GET`
+- `POST`
+- `PUT`
+- `PATCH`
+- `DELETE`
+- `HEAD`
 
 If no method is provided, `GET` is used by default.
 
@@ -63,25 +63,28 @@ For **Tier 4 and above**, the timeout is extended to **30 minutes**.
 
 ### Sending a JSON request
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $let[response;$httpRequest[My API URL;post;\{"name":"Mido"};Content-Type: application/json]]<br />Response is $response<br />Response Status is $httpRequestStatus<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Response is \{"success":true}<br />Response Status is 200<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+<Message>
+!!exec $let[response;$httpRequest[My API URL;post;\{"name":"Mido"};Content-Type: application/json]]
+Response is $response
+Response Status is $httpRequestStatus
+</Message>
+<Message bot>
+Response is \{"success":true}
+Response Status is 200
+</Message>
+</Discord>
 
 ## Notes
 
-* This function **does not throw an error** when the server returns a non-success status code (such as `404` or `500`). Always check `$httpRequestStatus` to verify that the request completed successfully.
-* The response body must be **smaller than 1 MB**. Requests that exceed this limit will be rejected.
-* The destination URL must be **whitelisted** before it can be used. If the URL has not yet been approved, please open a ticket in our Support Server to request whitelisting.
+- This function **does not throw an error** when the server returns a non-success status code (such as `404` or `500`). Always check `$httpRequestStatus` to verify that the request completed successfully.
+- The response body must be **smaller than 1 MB**. Requests that exceed this limit will be rejected.
+- The destination URL must be **whitelisted** before it can be used. If the URL has not yet been approved, please open a ticket in our Support Server to request whitelisting.
 
 ## Related Functions
 
-* `$httpRequestStatus`
-* `$httpRequestHeader`
+- `$httpRequestStatus`
+- `$httpRequestHeader`
 
 **Function Difficulty:** <Badge type="warning" text="Medium" vertical="middle"/>
 

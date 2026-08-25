@@ -11,11 +11,8 @@ $filterMessage[message;letterOrSymbols]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $filterMessage[Hello World;lo]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-He Wrd
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $filterMessage[Hello World;lo]</Message>
+    <Message bot>He Wrd</Message>
+</Discord>

@@ -11,21 +11,30 @@ $objectMerge[object]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $objectSet[name;Mido]<br />$objectMerge[\{"country":"EG"}]<br />$objectGet<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-\{"name":"Mido", "country":"EG"}<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+<Message>
+!!exec $objectSet[name;Mido]
+$objectMerge[\{"country":"EG"}]
+$objectGet
+</Message>
+<Message bot>
+\{"name":"Mido", "country":"EG"}
+</Message>
+</Discord>
 
 ### Example (Nested Keys):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $objectSet[user;name;Mido]<br />$objectSet[user;country;EG]<br />Before: $objectGet<br />$objectMerge[user;\{"name":"Rake","country":"DE"}]<br />After: $objectGet<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Before: \{"user":\{"name":"Mido","country":"EG"}}<br />After: \{"user":\{"name":"Rake","country":"DE"}}
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+<Message>
+!!exec $objectSet[user;name;Mido]
+$objectSet[user;country;EG]
+Before: $objectGet
+$objectMerge[user;\{"name":"Rake","country":"DE"}]
+After: $objectGet
+</Message>
+<Message bot>
+Before: \{"user":\{"name":"Mido","country":"EG"}}
+After: \{"user":\{"name":"Rake","country":"DE"}}
+</Message>
+</Discord>

@@ -11,14 +11,21 @@ $arrayCreate[List;separator;array name (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $arrayCreate[Mido/Rake/Azz;/]<br />1 is $arrayGet[1]<br />2 is $arrayGet[2]<br />3 is $arrayGet[3]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-1 is Mido<br />2 is Rake<br />3 is Azz
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $arrayCreate[Mido/Rake/Azz;/]
+        1 is $arrayGet[1]
+        2 is $arrayGet[2]
+        3 is $arrayGet[3]
+    </Message>
+    <Message bot>
+        1 is Mido
+        2 is Rake
+        3 is Azz
+    </Message>
+</Discord>
 
 ### Note on Separator:
+
 You can use regex as separator i.e `/separator/`

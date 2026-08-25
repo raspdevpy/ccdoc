@@ -11,11 +11,17 @@ $arrayGet[index;array name (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSplit[Mido/Rake/Azz;/]<br />First is $arrayGet[1]<br />Second is $arrayGet[2]<br />Third is $arrayGet[3]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-First is Mido<br />Second is Rake<br />Third is Azz
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textSplit[Mido/Rake/Azz;/]
+        First is $arrayGet[1]
+        Second is $arrayGet[2]
+        Third is $arrayGet[3]
+    </Message>
+    <Message bot>
+        First is Mido
+        Second is Rake
+        Third is Azz
+    </Message>
+</Discord>

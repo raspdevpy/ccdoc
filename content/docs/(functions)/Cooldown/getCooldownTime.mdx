@@ -9,25 +9,24 @@ Returns remaining time of a cooldown in miliseconds.
 ```cc
 $getCooldownTime[time;type;id;token]
 ```
+
 1. **time** - (Optional) default value: (last cooldown set). The time your cooldown was set to.
 2. **type** - (Optional) default value: `user`. Can be `user`, `channel` or `server`. The type of cooldown to return remaining time of.
 3. **id** - (Optional) default value: `$authorID` if type is user. The ID of a user or a channel to check cooldown from.
 4. **token** - (Optional) default value is the current command. It specify which command it should get the cooldown of
+
 ## Example
 
 #### Using $getCooldownTime
 
 How to use $getCooldownTime
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $channelCooldown[5m]<br />
-$getCooldownTime[5m;channel;$channelID]
-</DiscordMessageUser>
-<DiscordMessageBot>
-299937
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $channelCooldown[5m] $getCooldownTime[5m;channel;$channelID]
+    </Message>
+    <Message bot>299937</Message>
+</Discord>
 
 <Callout type="warn" title={"Note"}>
 

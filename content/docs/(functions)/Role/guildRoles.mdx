@@ -12,31 +12,35 @@ You can specify the type of information you want (ID, name, or mention) and limi
 
 **Parameters:**
 
-*   `type` (Optional):  Determines what information to return for each role. Possible values are:
-    *   `id`: Returns the role's ID.
-    *   `name`: Returns the role's name. (Default)
-    *   `mention`: Returns the role's mention.
-*   `amount` (Optional): The maximum number of roles to return. If omitted, all roles will be returned.
-*   `separator` (Optional): The separator between the returned list, default is ', '
-
-<br/>
+- `type` (Optional): Determines what information to return for each role. Possible values are:
+    - `id`: Returns the role's ID.
+    - `name`: Returns the role's name. (Default)
+    - `mention`: Returns the role's mention.
+- `amount` (Optional): The maximum number of roles to return. If omitted, all roles will be returned.
+- `separator` (Optional): The separator between the returned list, default is ', '
 
 **Example:**
 
 This example shows how to retrieve the IDs of all roles in the guild.
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $guildRoles[id]
-</DiscordMessageUser>
-<DiscordMessageBot>
-869243918787686431, 869243918817058856, 869243918489878654, 869250889813213244, 871289098231513098, 869251802556678154, 869243918489878650, 878284024232165407, 869249016213422150, 869250128136003614, 869243918787686434, 869248264426356736, 869243918787686436, 869243918489878657, 869243918489878653, 869250129272651787, 869250127347453992, 869250888106115092, 869243918787686430, 869243918787686432, 869243918817058857, 869249218169147422, 869243918489878652, 869244293959794720, 869250129901813820
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $guildRoles[id]</Message>
+    <Message bot>
+        869243918787686431, 869243918817058856, 869243918489878654,
+        869250889813213244, 871289098231513098, 869251802556678154,
+        869243918489878650, 878284024232165407, 869249016213422150,
+        869250128136003614, 869243918787686434, 869248264426356736,
+        869243918787686436, 869243918489878657, 869243918489878653,
+        869250129272651787, 869250127347453992, 869250888106115092,
+        869243918787686430, 869243918787686432, 869243918817058857,
+        869249218169147422, 869243918489878652, 869244293959794720,
+        869250129901813820
+    </Message>
+</Discord>
 
 <Callout type="info" title={"Related Functions"}>
 
-*   `$roleID`:  Retrieves a role ID by its name.
+- `$roleID`: Retrieves a role ID by its name.
 
 </Callout>
 

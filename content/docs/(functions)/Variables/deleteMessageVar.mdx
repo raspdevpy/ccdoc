@@ -5,15 +5,14 @@ title: "$deleteMessageVar"
 Deletes a message variable, from the command trigger or from the ID specified.
 
 ## Usage
+
 ```cc
 $deleteMessageVar[variable;MessageID(optional)]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $deleteMessageVar[Author]
-</DiscordMessageUser>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $deleteMessageVar[Author]</Message>
+</Discord>
 
 <Callout type="info" title={"Related Functions"}>
 

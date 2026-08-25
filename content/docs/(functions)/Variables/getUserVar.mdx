@@ -10,20 +10,20 @@ $getUserVar[variable;User ID (Optional)]
 ```
 
 #### Example
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec Your warnings: $getUserVar[warns]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Your warnings: 4
-</DiscordMessageBot>
-<DiscordMessageUser>
+</Message>
+<Message>
 !!exec Other user's warnings: $getUserVar[warns;12346786512312]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Other user's warnings: 1
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 **Note:** The return value will be `undefined` if the variable was not defined for that user.
 

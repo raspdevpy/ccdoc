@@ -3,7 +3,9 @@ title: "$modal"
 ---
 
 Used to send a modal, it must be used inside interaction like button/menu/slash triggers
+
 ## Usage
+
 ```cc
 $modal[Input]
 ```
@@ -94,35 +96,41 @@ $modal[Input]
 
 ##### **required**
 
-must be `yes` or `no`, the default is `yes`<br />
+must be `yes` or `no`, the default is `yes`
 
 ##### **type**
 
 Specifies the input type for the input.
 
-* **`short` (Default):** A single-line text input field.
-* **`long`:** A multi-line text area for longer responses.
-* **`menu/user/role/mention/channel`:** A dropdown selection menu instead of a text field.
-* **`attachment/attach`:** A file upload input field.
-* **`radio`:** A multiple choice list where only **one** item can be selected (Min 2 options, Max 10).
-* **`checkbox`:** A multiple choice list where **several** items can be checked (Min 1 option, Max 10).
+- **`short` (Default):** A single-line text input field.
+- **`long`:** A multi-line text area for longer responses.
+- **`menu/user/role/mention/channel`:** A dropdown selection menu instead of a text field.
+- **`attachment/attach`:** A file upload input field.
+- **`radio`:** A multiple choice list where only **one** item can be selected (Min 2 options, Max 10).
+- **`checkbox`:** A multiple choice list where **several** items can be checked (Min 1 option, Max 10).
 
 #### Max Amount of Inputs
 
 You can include multiple input fields, up to a maximum of 5 total (for example: 2 text inputs, 1 attachment input, and 2 radio/checkbox fields).
 
 ### Example
+
 #### Code
+
 ![](https://i.imgur.com/ByYr0UI.png)
 
 #### Output
+
 ![](https://i.imgur.com/LF7cnOK.png)
 
 ### Example With Menu
+
 #### Code
+
 ![](https://i.imgur.com/ClY5l4b.png)
 
 #### Output
+
 ![](https://i.imgur.com/chJsAth.png)
 
 <Callout type="info">
@@ -137,6 +145,6 @@ Read more about the menu structure in [selectMenu](/Text/Components/selectMenu)
 
 </Callout>
 
-**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
 **Tags:** <Tag text="Modal"/> <Tag text="Sending Modal"/>

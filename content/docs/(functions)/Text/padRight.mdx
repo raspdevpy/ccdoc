@@ -11,11 +11,8 @@ $padRight[Text;Max Length;Filling Text]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $padRight[I like custom commands;25;.]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-I like custom commands...
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $padRight[I like custom commands;25;.]</Message>
+    <Message bot>I like custom commands...</Message>
+</Discord>

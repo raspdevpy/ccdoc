@@ -5,19 +5,16 @@ title: "$interactionEdit"
 Edits a previously sent interaction, typically one created using `$interactionReply`.
 
 ## Usage
+
 ```cc
 $interactionEdit[New Message;message id (optional, defaults to the original interaction reply)]
 ```
 
-<br />
-
 <Callout type="warn" title={"Important"}>
 
-This function only works within interaction-based triggers (e.g., slash commands, button clicks).  Do not use it in `exec` or other trigger types.
+This function only works within interaction-based triggers (e.g., slash commands, button clicks). Do not use it in `exec` or other trigger types.
 
 </Callout>
-
-<br/>
 
 <Accordions>
 <Accordion title={"Example"}>
@@ -41,6 +38,6 @@ You can send embeds using the [Message Curl Format](/Other/curl). This allows fo
 
 </Callout>
 
-**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
 **Tags:** <Tag text="Interaction"/> <Tag text="Edit"/> <Tag text="Ephemeral"/> <Tag text="Reply"/> <Badge type="message" text="edit" vertical="middle" />

@@ -40,29 +40,15 @@ $image[$imageOutput]
 
 **Result:**
 
-<DiscordMessages>
-    <DiscordMessageUser>
-        !!exec $imageCreate[300;300]
-        <br />
-        $imageTextSize[30]
-        <br />
-        $imageTextAlign[center]
-        <br />
-        $imageTextStroke[CC is Awesome;150;150;#4461b3]
-        <br />
-        $image[$imageOutput]
-        <br />
-        <br />
-    </DiscordMessageUser>
-    <DiscordMessage
-        bot
-        roleColor="#0099ff"
-        author="Custom Command"
-        avatar="https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp"
-    >
+<Discord>
+    <Message>
+        !!exec $imageCreate[300;300] $imageTextSize[30] $imageTextAlign[center]
+        $imageTextStroke[CC is Awesome;150;150;#4461b3] $image[$imageOutput]
+    </Message>
+    <Message bot>
         <DiscordEmbed
             slot="embeds"
             image="https://i.imgur.com/FVSYuIV.png"
         ></DiscordEmbed>
-    </DiscordMessage>
-</DiscordMessages>
+    </Message>
+</Discord>

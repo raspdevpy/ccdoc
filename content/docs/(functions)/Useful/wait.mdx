@@ -4,28 +4,20 @@ title: "$wait"
 
 Will wait an X time, before executing the code below it.
 
-## Usage: 
+## Usage:
+
 `$wait[time]`
 
 #### Example:
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-<DiscordMarkdown>
-!!exec $sendMessage[This part gets executed before the 10s]
-<br />
-$wait[10s]
-<br />
-$sendMessage[This part after the 10s]
-</DiscordMarkdown>
-</DiscordMessageUser>
-<DiscordMessageBot>
-This part gets executed before the 10s
-</DiscordMessageBot>
-<DiscordMessageBot>
-This part after the 10s
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $sendMessage[This part gets executed before the 10s] $wait[10s]
+        $sendMessage[This part after the 10s]
+    </Message>
+    <Message bot>This part gets executed before the 10s</Message>
+    <Message bot>This part after the 10s</Message>
+</Discord>
 
 <Callout type="info">
 
@@ -33,7 +25,6 @@ If you want to wait more then 1m, we suggest you use `$setTimeout`
 
 </Callout>
 
-**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
-**Tags:** <Tag text="Timeout"/>  <Tag text="Wait"/>  <Tag text="Thinking"/> 
-
+**Tags:** <Tag text="Timeout"/> <Tag text="Wait"/> <Tag text="Thinking"/>

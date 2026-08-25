@@ -12,11 +12,19 @@ $arrayElementCount[Element To Count;Trim before compare (yes/no);array name]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $arrayCreate[Mido/Rake/Mido/Rake/Rake/Azz/Faj;/]<br />Rake repeated $arrayElementCount[Rake] times<br />Mido repeated $arrayElementCount[Mido] times<br />Azz repeated $arrayElementCount[Azz] times<br />Faj repeated $arrayElementCount[Faj] times<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Rake repeated 3 times<br />Mido repeated 2 times<br />Azz repeated 1 times<br />Faj repeated 1 times
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $arrayCreate[Mido/Rake/Mido/Rake/Rake/Azz/Faj;/]
+        Rake repeated $arrayElementCount[Rake] times
+        Mido repeated $arrayElementCount[Mido] times
+        Azz repeated $arrayElementCount[Azz] times
+        Faj repeated $arrayElementCount[Faj] times
+    </Message>
+    <Message bot>
+        Rake repeated 3 times
+        Mido repeated 2 times
+        Azz repeated 1 times
+        Faj repeated 1 times
+    </Message>
+</Discord>

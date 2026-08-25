@@ -5,35 +5,29 @@ title: "$parseDate"
 Converts milliseconds into a human-readable date or time format.
 
 ## Usage
+
 ```cc
 $parseDate[milliseconds; format]
 ```
 
 **Arguments:**
 
-*   `milliseconds`: The number of milliseconds to convert.
-*   `format`:  Specifies the desired output format.  Use `date` to get a formatted date or `time` to get a formatted time duration.
-
-<br/>
+- `milliseconds`: The number of milliseconds to convert.
+- `format`: Specifies the desired output format. Use `date` to get a formatted date or `time` to get a formatted time duration.
 
 **Example:**
 
 This example demonstrates converting 1000 milliseconds to a time duration.
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $parseDate[1000;time]
-</DiscordMessageUser>
-<DiscordMessageBot>
-1 second
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $parseDate[1000;time]</Message>
+    <Message bot>1 second</Message>
+</Discord>
 
 **Explanation:**
 
 The command `$parseDate[1000;time]` converts 1000 milliseconds to a time format, resulting in the output "1 second".
 
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Convert"/> <Tag text="Date"/> <Tag text="Milliseconds"/>

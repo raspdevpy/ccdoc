@@ -2,7 +2,7 @@
 title: "$arrayUnshift"
 ---
 
-Adds an element to the start of the array. 
+Adds an element to the start of the array.
 
 ## Usage
 
@@ -11,11 +11,11 @@ $arrayUnshift[value;array name (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $arrayUnshift[Mido]<br />$arrayUnshift[Rake]<br />$arrayUnshift[Azz]<br />$arrayJoin[/]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Azz/Rake/Mido
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $arrayUnshift[Mido] $arrayUnshift[Rake] $arrayUnshift[Azz]
+        $arrayJoin[/]
+    </Message>
+    <Message bot>Azz/Rake/Mido</Message>
+</Discord>

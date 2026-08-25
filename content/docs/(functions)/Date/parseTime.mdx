@@ -29,41 +29,41 @@ Multiple durations can be combined by separating them with spaces. As a convenie
 
 ## Examples
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec $parseTime[1m]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 60000
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec $parseTime[1h 30m]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 5400000
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec $parseTime[1h30m]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 5400000
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec $parseTime[1h30m;m]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 90
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 **Explanation:**
 

@@ -17,22 +17,22 @@ $objectKeyExists[Key;...]
 
 How to check if `name` key exists
 
-<DiscordMessages>
-<DiscordMessageUser author="User">
+<Discord>
+<Message>
 !!exec $objectSet[name;Mido]
 $objectKeyExists[name]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 true
-</DiscordMessageBot>
-<DiscordMessageUser author="User">
+</Message>
+<Message>
 !!exec $objectSet[username;mido]
 $objectKeyExists[name]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 false
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 **Related Functions:** `$objectKeys` `$objectCreate` `$objectSet`
 

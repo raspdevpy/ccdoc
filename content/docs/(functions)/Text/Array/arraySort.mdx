@@ -12,36 +12,37 @@ $arraySort[Ascending (yes/no, default is no);Sort Type;array name (optional)]
 ```
 
 ### Sort Types:
+
 `num`: Sort Numerically\
 `alpha`: Sort Alphabetically\
 `frequent`: Sort By how many element got repeated
 
 ### Example (Sort Occurrences):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSplit[3.Mido<br />1.Azz<br />2.Rake<br />2.Rake<br />3.Mido<br />3.Mido<br />4.Finkz;<br />]<br />$arraySort[no;frequent]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-The sorted list is<br />3.Mido<br />2.Rake<br />4.Finkz<br />1.Azz<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textSplit[3.Mido 1.Azz 2.Rake 2.Rake 3.Mido 3.Mido 4.Finkz; ]
+        $arraySort[no;frequent]
+    </Message>
+    <Message bot>The sorted list is 3.Mido 2.Rake 4.Finkz 1.Azz</Message>
+</Discord>
 
 ### Example (Sort Numerically):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSplit[1. Azz<br />3.Mido<br />2.Rake<br />4.Finkz;<br />]<br />$arraySort[yes;num]<br />The sorted list is<br />$arrayJoin[<br />]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-The sorted list is<br />1. Azz<br />2.Rake<br />3.Mido<br />4.Finkz<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textSplit[1. Azz 3.Mido 2.Rake 4.Finkz; ] $arraySort[yes;num]
+        The sorted list is $arrayJoin[ ]
+    </Message>
+    <Message bot>The sorted list is 1. Azz 2.Rake 3.Mido 4.Finkz</Message>
+</Discord>
 
 ### Example (Sort Alphabetically):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSplit[3.Mido<br />1.Azz<br />2.Rake<br />4.Finkz;<br />]<br />$arraySort[yes;alpha]<br />The sorted list is<br />$arrayJoin[<br />]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-The sorted list is<br />1. Azz<br />4.Finkz<br />3.Mido<br />2.Rake
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textSplit[3.Mido 1.Azz 2.Rake 4.Finkz; ] $arraySort[yes;alpha]
+        The sorted list is $arrayJoin[ ]
+    </Message>
+    <Message bot>The sorted list is 1. Azz 4.Finkz 3.Mido 2.Rake</Message>
+</Discord>

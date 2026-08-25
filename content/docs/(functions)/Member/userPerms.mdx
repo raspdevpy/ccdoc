@@ -9,6 +9,7 @@ Returns a list of permissions a user has across the server based on their roles.
 ```cc
 $userPerms[userID;separator]
 ```
+
 1. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to return permissions from.
 2. **separator** - (Optional) default value: `, `. The separator used for creating permission list.
 
@@ -18,20 +19,16 @@ $userPerms[userID;separator]
 
 How to use $userPerms
 
-<DiscordMessages>
-<DiscordMessageUser author="User">
-!!exec $userPerms[;/]
-</DiscordMessageUser>
-<DiscordMessageBot>
-View Channel/Send Messages/Mention Everyone
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $userPerms[;/]</Message>
+    <Message bot>View Channel/Send Messages/Mention Everyone</Message>
+</Discord>
 
 <Callout type="warn" title={"Cache"}>
 
 This function works on the bot's cache to find members.
 If the user is not cached, the function will not find them.
-User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br />
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.  
 To have all members cached, you will need Tier 5 Bot.
 
 </Callout>

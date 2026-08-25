@@ -8,25 +8,18 @@ Retrieves the ID of the category channel the current channel or a specified chan
 
 ## Usage:
 
-*   `$channelCategoryID` -  Returns the category ID of the current channel where the command is used.
-*   `$channelCategoryID[channelID]` - Returns the category ID of the specified channel ID. Replace `channelID` with the actual ID of the channel.
-
-<br/>
+- `$channelCategoryID` - Returns the category ID of the current channel where the command is used.
+- `$channelCategoryID[channelID]` - Returns the category ID of the specified channel ID. Replace `channelID` with the actual ID of the channel.
 
 **Example:**
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $channelCategoryID
-</DiscordMessageUser>
-<DiscordMessageBot>
-83975894758938799
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $channelCategoryID</Message>
+    <Message bot>83975894758938799</Message>
+</Discord>
 
-In this example, the command `!!exec $channelCategoryID` is used in a channel that is within the category channel with the ID `83975894758938799`.  The bot returns the ID of the category channel.
+In this example, the command `!!exec $channelCategoryID` is used in a channel that is within the category channel with the ID `83975894758938799`. The bot returns the ID of the category channel.
 
 **Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Channel"/> <Tag text="Category"/> <Tag text="Channel ID"/>

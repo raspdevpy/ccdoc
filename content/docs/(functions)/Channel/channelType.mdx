@@ -5,31 +5,26 @@ title: "$channelType"
 Retrieves the type of a channel based on its ID.
 
 ## Usage
+
 ```cc
 $channelType[channelID]
 ```
 
 This function allows you to determine the type of a specific channel using its unique ID.
 
-<br/>
-
 **Example:**
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $channelType[$channelID]
-</DiscordMessageUser>
-<DiscordMessageBot>
-text
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $channelType[$channelID]</Message>
+    <Message bot>text</Message>
+</Discord>
 
 <Callout type="info" title={"Note"}>
 
-The `$channelType` function returns a string representing the channel type.  Refer to this [list](/CodeReferences/ref.channel_types) for possible channel types and their meanings.
+The `$channelType` function returns a string representing the channel type. Refer to this [list](/CodeReferences/ref.channel_types) for possible channel types and their meanings.
 
 </Callout>
 
-**Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+**Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
 **Tags:** <Tag text="Channel"/> <Tag text="Channel Type"/>

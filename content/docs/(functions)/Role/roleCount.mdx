@@ -5,34 +5,28 @@ title: "$roleCount"
 The `$roleCount` function returns the total number of roles present in your Discord server (guild).
 
 ## Usage
+
 ```cc
 $roleCount
 ```
 
 This function is straightforward to use. Simply include it in your command response to display the role count.
 
-<br/>
-
 **Example:**
 
 Let's create a custom command that announces the total number of roles in the server.
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec There are `$roleCount` roles in the server!
-</DiscordMessageUser>
-<DiscordMessageBot>
-There are `23` roles in the server
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec There are `$roleCount` roles in the server!</Message>
+    <Message bot>There are `23` roles in the server</Message>
+</Discord>
 
 In this example:
 
-*   The user triggers the custom command with `!!exec`.
-*   The command uses `$roleCount` to retrieve the role count.
-*   The bot responds with a message stating, "There are `23` roles in the server" (the number will reflect the actual role count of the server).
+- The user triggers the custom command with `!!exec`.
+- The command uses `$roleCount` to retrieve the role count.
+- The bot responds with a message stating, "There are `23` roles in the server" (the number will reflect the actual role count of the server).
 
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Role"/> <Tag text="Count"/> <Tag text="Amount Of Roles"/> <Tag text="Return Number"/>

@@ -40,31 +40,31 @@ Since the list can contain many entries, you can control which portion of the li
 
 
 #### Example:
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec Top 5  
 $userLeaderboard[money;highest-first;\{top}. \{username} - \{value};5]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Top 5  
 1. Mido - 350  
 2. Rake - 201  
 3. Zero - 121  
 4. Red - 53  
 5. Azz - 22  
-</DiscordMessageBot>
-<DiscordMessageUser>
+</Message>
+<Message>
 !!exec Top 3  
 $userLeaderboard[money;highest-first;\{top}. \{username} - \{value};3]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Top 3  
 1. Mido - 350  
 2. Rake - 201  
 3. Zero - 121  
-</DiscordMessageBot>
+</Message>
 
-</DiscordMessages>
+</Discord>
 
 #### What if the value is not a valid number?
 If a value is not a valid number, it will always be placed at the end of the list, regardless of the selected sorting type.

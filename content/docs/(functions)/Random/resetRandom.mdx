@@ -2,9 +2,10 @@
 title: "$resetRandom"
 ---
 
-The `$resetRandom` function clears the stored seed used by the `$random` function, effectively resetting the random number generator. This means that subsequent calls to `$random` will generate a new sequence of random numbers, potentially different from the previous sequence before the reset.  This is useful when you want to ensure a fresh set of random numbers.
+The `$resetRandom` function clears the stored seed used by the `$random` function, effectively resetting the random number generator. This means that subsequent calls to `$random` will generate a new sequence of random numbers, potentially different from the previous sequence before the reset. This is useful when you want to ensure a fresh set of random numbers.
 
 ## Usage
+
 ```cc
 $resetRandom
 ```
@@ -14,15 +15,19 @@ $resetRandom
 When you use `$random` multiple times without resetting, it might produce the same number due to how it's seeded. `$resetRandom` ensures each subsequent `$random` call behaves truly randomly by clearing that internal seed.
 
 **Example:**
-<DiscordMessages>
-	<DiscordMessageUser>
-		!!exec Picked Number: $random[1;6]<br/>Another Picked Number: $random[1;6]<br/>$resetRandom<br/>Picked Number After Reset: $random[1;6]
-	</DiscordMessageUser>
-	<DiscordMessageBot>
-		Picked Number: 5<br/>Another Picked Number: 5<br/>Picked Number After Reset: 3
-	</DiscordMessageBot>
-</DiscordMessages>
 
-
+<Discord>
+    <Message>
+        !!exec Picked Number: $random[1;6]
+        Another Picked Number: $random[1;6]
+        $resetRandom
+        Picked Number After Reset: $random[1;6]
+    </Message>
+    <Message bot>
+        Picked Number: 5
+        Another Picked Number: 5
+        Picked Number After Reset: 3
+    </Message>
+</Discord>
 
 **Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />

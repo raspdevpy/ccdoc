@@ -11,21 +11,15 @@ $isUserMention[Text]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $isUserMention[abc]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-false<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $isUserMention[abc]</Message>
+    <Message bot>false</Message>
+</Discord>
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $isUserMention[&#60;@!1234567890&#62;]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-true
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $isUserMention[&#60;@!1234567890&#62;]</Message>
+    <Message bot>true</Message>
+</Discord>

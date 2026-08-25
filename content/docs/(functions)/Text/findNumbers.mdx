@@ -11,11 +11,11 @@ $findNumbers[text;separator]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $findNumbers[My age is 99 years old, and located 15 miles away from nearest station.;, ]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-99, 15
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $findNumbers[My age is 99 years old, and located 15 miles away
+        from nearest station.;, ]
+    </Message>
+    <Message bot>99, 15</Message>
+</Discord>

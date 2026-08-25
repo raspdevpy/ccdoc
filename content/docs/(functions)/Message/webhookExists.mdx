@@ -8,21 +8,14 @@ Checks if a webhook exists using its ID and token. Returns `true` if the webhook
 
 `$webhookExists[webhookID;webhookToken]`
 
-*   **webhookID:** The ID of the webhook to check.
-*   **webhookToken:** The token of the webhook to check.
+- **webhookID:** The ID of the webhook to check.
+- **webhookToken:** The token of the webhook to check.
 
-<br/>
-
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $webhookExists[940749xx...;Oc_BoyAWxx...]
-</DiscordMessageUser>
-<DiscordMessageBot>
-true
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $webhookExists[940749xx...;Oc_BoyAWxx...]</Message>
+    <Message bot>true</Message>
+</Discord>
 
 **Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" />
-
 
 **Tags:** <Tag text="Webhook"/> <Tag text="Exists"/>

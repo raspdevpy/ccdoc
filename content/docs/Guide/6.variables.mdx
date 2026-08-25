@@ -25,16 +25,14 @@ $let[name;$displayName[$uid]]
 User’s name: $name
 ```
 
-<DiscordMessages>
-<DiscordMessage>
-!!exec $let[uid;$randomUserID]<br />
-$let[name;$displayName[$uid]]<br /><br />
-Random User's name: $name
-</DiscordMessage>
-<DiscordMessageBot>
-Random User's name: Member
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $let[uid;$randomUserID]
+        $let[name;$displayName[$uid]]
+        Random User's name: $name
+    </Message>
+    <Message bot>Random User's name: Member</Message>
+</Discord>
 
 ## Permanent Variables
 
@@ -70,6 +68,7 @@ Your level: $getUserVar[level] // 4
 $increaseUserVar[level;1]
 Your new level: $getUserVar[level] // 5
 ```
+
 <Callout type="info" title={"Where are the variables saved?"}>
 
 All variables are saved in our database. If you have privacy concerns, please read our [Privacy Policy](/Legal/policy).

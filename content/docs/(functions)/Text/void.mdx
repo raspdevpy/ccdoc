@@ -11,11 +11,8 @@ $void[ANYTHING]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $let[name;Mido]<br />My name is $void[$get[name]]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-My name is
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $let[name;Mido] My name is $void[$get[name]]</Message>
+    <Message bot>My name is</Message>
+</Discord>

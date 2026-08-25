@@ -5,25 +5,20 @@ title: "$day"
 Returns the current date. Optionally, you can also retrieve the day of the week.
 
 ## Usage
+
 ```cc
 $day[yes/no (optional)]
 ```
 
-*   **`$day`**: Returns the current date (day of the month).
-*   **`$day[yes]`**: Returns the current date (day of the month) followed by the day of the week.
+- **`$day`**: Returns the current date (day of the month).
+- **`$day[yes]`**: Returns the current date (day of the month) followed by the day of the week.
 
 **Example:**
 
-<br/>
-
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $day $day[yes]
-</DiscordMessageUser>
-<DiscordMessageBot>
-25 Saturday
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $day $day[yes]</Message>
+    <Message bot>25 Saturday</Message>
+</Discord>
 
 <Callout type="info" title={"Timezone Information"}>
 
@@ -32,6 +27,5 @@ Date functions default to the UTC timezone. You can customize the timezone used 
 </Callout>
 
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Day"/>

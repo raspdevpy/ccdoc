@@ -2,7 +2,7 @@
 title: "$randomRoleID"
 ---
 
-This function returns a random Role ID from a Role present in the server.  It's a simple way to pick a random role ID for various purposes in your custom commands.
+This function returns a random Role ID from a Role present in the server. It's a simple way to pick a random role ID for various purposes in your custom commands.
 
 ## Usage:
 
@@ -10,24 +10,17 @@ This function returns a random Role ID from a Role present in the server.  It's 
 $randomRoleID
 ```
 
-<br/>
-
 **Example:**
 
 Here's how you can use `$randomRoleID` in a custom command:
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $randomRoleID
-</DiscordMessageUser>
-<DiscordMessageBot>
-82907890789087988
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $randomRoleID</Message>
+    <Message bot>82907890789087988</Message>
+</Discord>
 
 In this example, the command `!!exec $randomRoleID` will output a random role ID from your server (e.g., `82907890789087988`).
 
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Random"/> <Tag text="Role ID"/> <Tag text="Selection"/>

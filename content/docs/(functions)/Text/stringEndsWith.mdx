@@ -11,21 +11,15 @@ $stringEndsWith[message;text]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $stringEndsWith[Hello World;World]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-true<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $stringEndsWith[Hello World;World]</Message>
+    <Message bot>true</Message>
+</Discord>
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $stringEndsWith[Hello World;Discord]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-false
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $stringEndsWith[Hello World;Discord]</Message>
+    <Message bot>false</Message>
+</Discord>

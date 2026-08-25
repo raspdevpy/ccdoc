@@ -11,14 +11,14 @@ $conditional[condition;A;B]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $conditional[$username==Mido;You are Mido;You are Rake]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-You are Mido<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $conditional[$username==Mido;You are Mido;You are Rake]
+    </Message>
+    <Message bot>You are Mido</Message>
+</Discord>
 
 ### Output (if Rake run the command):
+
 You are Rake

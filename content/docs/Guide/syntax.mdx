@@ -39,7 +39,8 @@ All arguments are kept inside of square brackets (`[HERE]`).
 Function names are case insensitive.
 
 <Callout type="info" title={"How to execute functions"}>
-    All functions can be either executed by writing a command in the dashboard, or using the built in `!!exec` command.
+    All functions can be either executed by writing a command in the dashboard,
+    or using the built in `!!exec` command.
 </Callout>
 
 ### Example
@@ -50,14 +51,10 @@ Function case insensitivity
 $math[1+1] = $mAtH[1+1] = $MATH[1+1]
 ```
 
-<DiscordMessages>
-<DiscordMessage>
-!!exec $math[1+1] = $mAtH[1+1] = $MATH[1+1]
-</DiscordMessage>
-<DiscordMessageBot>
-2 = 2 = 2
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $math[1+1] = $mAtH[1+1] = $MATH[1+1]</Message>
+    <Message bot>2 = 2 = 2</Message>
+</Discord>
 
 Function doesn't have to be closed at the same line where it was opened:
 
@@ -67,19 +64,19 @@ $description[What is 2^11?
 Click to reveal: ||$math[2^11]||]
 ```
 
-<DiscordMessages>
-<DiscordMessage>
-!!exec $title[Math question]<br />
-$description[What is 2^11?<br />
-Click to reveal: ||$math[2^11]||]
-</DiscordMessage>
-<DiscordMessageBot>
-<DiscordEmbed embedTitle="Math question">
-What is 2^11?<br />
-Click to reveal: `2048`
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $title[Math question]
+        $description[What is 2^11?
+        Click to reveal: ||$math[2^11]||]
+    </Message>
+    <Message bot>
+        <DiscordEmbed embedTitle="Math question">
+            What is 2^11?
+            Click to reveal: `2048`
+        </DiscordEmbed>
+    </Message>
+</Discord>
 
 ## Function Actions
 
@@ -97,21 +94,26 @@ Some functions require multiple arguments. Arguments can also be required or opt
 $msg[Channel ID;Message ID;Option;Additional 1;Additional 2]
 ```
 
-- <Arg name="Channel ID" default="$channelID" code="true" /> - ID of channel you want to retrieve information from.
-- <Arg name="Message ID" default="$messageID" code="true" /> - ID of the message you want to retrieve information from.
+- <Arg name="Channel ID" default="$channelID" code="true" /> - ID of channel you
+  want to retrieve information from.
+- <Arg name="Message ID" default="$messageID" code="true" /> - ID of the message
+  you want to retrieve information from.
 - <Arg name="Option" /> - What kind of information you want to retrieve.
-- <Arg name="Additional 1" default="None" /> - Additional argument. Some options need these to work properly.
-- <Arg name="Additional 2" default="None" /> - Additional argument. Some options need these to work properly.
+- <Arg name="Additional 1" default="None" /> - Additional argument. Some options
+  need these to work properly.
+- <Arg name="Additional 2" default="None" /> - Additional argument. Some options
+  need these to work properly.
 
 ### Example
 
 Example of using `$msg` with multiple arguments
 
-<DiscordMessages>
-<DiscordMessage>
-!!exec Message content: $msg[$channelID;$messageID;content]
-</DiscordMessage>
-<DiscordMessageBot>
-Message content: !!exec Message content: $msg[$channelID;$messageID;content]
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec Message content: $msg[$channelID;$messageID;content]
+    </Message>
+    <Message bot>
+        Message content: !!exec Message content:
+        $msg[$channelID;$messageID;content]
+    </Message>
+</Discord>

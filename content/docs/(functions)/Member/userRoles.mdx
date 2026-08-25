@@ -9,6 +9,7 @@ Returns the list of roles from a user.
 ```cc
 $userRoles[userID;type;separator]
 ```
+
 1. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to return roles from.
 2. **type** - (Optional) default value: `names`. Can be `ids`, `names` or `mentions`. What format of returned roles do you want.
 3. **separator** - (Optional) default value: `, `. The separator used for creating roles list.
@@ -19,20 +20,16 @@ $userRoles[userID;type;separator]
 
 How to return roles from message author
 
-<DiscordMessages>
-<DiscordMessageUser author="User">
-!!exec $userRoles[;ids;/]
-</DiscordMessageUser>
-<DiscordMessageBot>
-123456789987654321/123456789123456789
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $userRoles[;ids;/]</Message>
+    <Message bot>123456789987654321/123456789123456789</Message>
+</Discord>
 
 <Callout type="warn" title={"Cache"}>
 
 This function works on the bot's cache to find members.
 If the user is not cached, the function will not find them.
-User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br />
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.  
 To have all members cached, you will need Tier 5 Bot.
 
 </Callout>

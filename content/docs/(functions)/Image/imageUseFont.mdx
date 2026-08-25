@@ -14,24 +14,24 @@ $imageUseFont[font name]
 
 You can choose from the following fonts:
 
-*   DejaVu Serif
-*   DejaVu Sans Mono
-*   DejaVu Sans
-*   Courier Prime
-*   Lato
-*   Montserrat
-*   Open Sans
-*   PT Mono
-*   Quicksand
-*   Raleway
-*   Roboto
-*   Roboto Mono
-*   Rubik
-*   Space Mono
-*   Minecraft
-*   Blackout
-*   Motorblock
-*   Inter
+- DejaVu Serif
+- DejaVu Sans Mono
+- DejaVu Sans
+- Courier Prime
+- Lato
+- Montserrat
+- Open Sans
+- PT Mono
+- Quicksand
+- Raleway
+- Roboto
+- Roboto Mono
+- Rubik
+- Space Mono
+- Minecraft
+- Blackout
+- Motorblock
+- Inter
 
 ## Font Preview
 
@@ -43,12 +43,17 @@ See a preview of these fonts in the image below:
 
 This example creates a 300x300 image, sets the font to "Roboto", the text color to white, the text size to 30, and then writes "Hello World" at position 20x, 50y.
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $imageCreate[300;300]<br />$imageUseFont[Roboto]<br />$imageTextColor[white]<br />$imageTextSize[30]<br />$imageTextFill[Hello World;20;50]<br />$stop[\{image:$imageOutput}]
-</DiscordMessageUser>
-<DiscordMessageBot>
+<Discord>
+<Message>
+!!exec $imageCreate[300;300]
+$imageUseFont[Roboto]
+$imageTextColor[white]
+$imageTextSize[30]
+$imageTextFill[Hello World;20;50]
+$stop[\{image:$imageOutput}]
+</Message>
+<Message bot>
 <DiscordEmbed slot="embeds" image="https://i.imgur.com/RcvQDM7.png">
 </DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>

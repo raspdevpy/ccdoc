@@ -5,6 +5,7 @@ title: "$hour"
 This command returns the current hour (in 24-hour format).
 
 ## Usage
+
 ```cc
 $hour
 ```
@@ -13,16 +14,10 @@ $hour
 
 This example shows how to use the `$hour` command in a custom command.
 
-<br/>
-
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $hour
-</DiscordMessageUser>
-<DiscordMessageBot>
-19
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $hour</Message>
+    <Message bot>19</Message>
+</Discord>
 
 <Callout type="info" title={"Timezone Considerations"}>
 
@@ -31,6 +26,5 @@ Date functions use the UTC timezone by default. You can change the timezone for 
 </Callout>
 
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Hour"/>

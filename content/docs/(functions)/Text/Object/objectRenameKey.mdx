@@ -11,21 +11,31 @@ $objectRenameKey[old key;new key name]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $objectSet[name;Mido]<br />Before: $objectGet<br />$objectRenameKey[name;nick]<br />After: $objectGet<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Before: \{"name":"Mido"}<br />After: \{"nick":"Mido"}<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+<Message>
+!!exec $objectSet[name;Mido]
+Before: $objectGet
+$objectRenameKey[name;nick]
+After: $objectGet
+</Message>
+<Message bot>
+Before: \{"name":"Mido"}
+After: \{"nick":"Mido"}
+</Message>
+</Discord>
 
 ### Example (Nested Key):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $objectSet[user;name;Mido]<br />Before: $objectGet<br />$objectRenameKey[user;name;nick]<br />After: $objectGet<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Before: \{"user":\{"name":"Mido"}}<br />After: \{"user":\{"nick":"Mido"}}
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+<Message>
+!!exec $objectSet[user;name;Mido]
+Before: $objectGet
+$objectRenameKey[user;name;nick]
+After: $objectGet
+</Message>
+<Message bot>
+Before: \{"user":\{"name":"Mido"}}
+After: \{"user":\{"nick":"Mido"}}
+</Message>
+</Discord>

@@ -5,9 +5,11 @@ title: "$userAvatar"
 Returns the avatar (profile picture) URL of the user who was specified.
 
 ## Usage
+
 ```cc
 $userAvatar[userID;size;dynamic;serverAvatar]
 ```
+
 1. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to return avatar URL from.
 2. **size** - (Optional) default value: `2048`. The size of user avatar to return in pixels.
 3. **dynamic** - (Optional) default value: `yes`. Can be `yes` or `no`. If yes, animated avatar URL will be returned (if they have animated). If no, static image will be returned.
@@ -19,21 +21,25 @@ $userAvatar[userID;size;dynamic;serverAvatar]
 
 How is the avatar URL displayed when sent with text and without text
 
-<DiscordMessages>
-<DiscordMessageUser author="User">
-!!exec With text: $userAvatar
-</DiscordMessageUser>
-<DiscordMessageBot>
-With text: https://cdn.discordapp.com/embed/avatars/0.png<br />
-<img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="User Avatar" style={{ verticalAlign: "text-bottom" }} />
-</DiscordMessageBot>
-<DiscordMessageUser author="User">
-!!exec $userAvatar
-</DiscordMessageUser>
-<DiscordMessageBot>
-<img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="User Avatar" style={{ verticalAlign: "text-bottom" }} />
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec With text: $userAvatar</Message>
+    <Message bot>
+        With text: https://cdn.discordapp.com/embed/avatars/0.png
+        <img
+            src="https://cdn.discordapp.com/embed/avatars/0.png"
+            alt="User Avatar"
+            style={{ verticalAlign: "text-bottom" }}
+        />
+    </Message>
+    <Message>!!exec $userAvatar</Message>
+    <Message bot>
+        <img
+            src="https://cdn.discordapp.com/embed/avatars/0.png"
+            alt="User Avatar"
+            style={{ verticalAlign: "text-bottom" }}
+        />
+    </Message>
+</Discord>
 
 <Callout type="info" title={"Note"}>
 

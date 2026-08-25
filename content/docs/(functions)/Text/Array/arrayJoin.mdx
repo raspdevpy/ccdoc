@@ -11,11 +11,11 @@ $arrayJoin[Separator (optional);array name (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSplit[Rake/Mido/Azz;/]<br />$arrayJoin[, ]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Rake, Mido, Azz
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textSplit[Rake/Mido/Azz;/]
+        $arrayJoin[, ]
+    </Message>
+    <Message bot>Rake, Mido, Azz</Message>
+</Discord>

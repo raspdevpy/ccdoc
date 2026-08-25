@@ -5,18 +5,15 @@ title: "$getServerVar"
 Gets a server variable value
 
 ## Usage
+
 ```cc
 $getServerVar[variable]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $getServerVar[holder]
-</DiscordMessageUser>
-<DiscordMessageBot>
-Mika
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $getServerVar[holder]</Message>
+    <Message bot>Mika</Message>
+</Discord>
 
 **Note:** The return value will be `undefined` if the variable was not defined for that server.
 
