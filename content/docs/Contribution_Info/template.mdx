@@ -1,0 +1,34 @@
+---
+title: "Function Template"
+---
+
+```md
+---
+title: "$functionName"
+---
+```
+
+Very useful and short description. It should have a dot at the end.
+
+## Usage
+
+```cc
+$functionName[all;parameters]
+```
+
+- <Arg name="Optional Argument" default="None" /> - Description of this argument. Don't use `code="true"` if `default` is not a function.
+- <Arg name="Argument with default value" default="$authorID" code="true" /> - This argument uses `code="true"`.
+- <Arg name="Required Argument" /> - This argument is required.
+
+## Example
+
+Using the function:
+
+<Discord>
+    <Message>
+        !!exec $sendMessage[Hello World!]
+    </Message>
+    <Message bot>
+        Hello World!
+    </Message>
+</Discord>

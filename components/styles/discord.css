@@ -36,9 +36,9 @@
 
     input[type="checkbox"],
     input[type="radio"] {
-        width: 22px;
-        height: 22px;
-        accent-color: #000;
+        width: 18px;
+        height: 18px;
+        accent-color: #fff;
         cursor: pointer;
         vertical-align: middle;
     }
@@ -50,4 +50,21 @@ html.dark .discord-poll-answer:hover {
 
 .discord-poll-answer:hover {
     border: rgba(0, 0, 0, 0.2) solid 1px;
+}
+
+.embed-author {
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    font-size: 14px;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 5px;
+
+    img {
+        border-radius: 1000px;
+        width: 22px;
+        height: 22px;
+        margin: 0;
+    }
 }

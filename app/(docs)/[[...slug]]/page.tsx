@@ -54,7 +54,6 @@ export default async function Page(props: PageProps<"/[[...slug]]">) {
                     Edit This Page
                 </Button>
             </div>
-
         </DocsPage>
     );
 }
