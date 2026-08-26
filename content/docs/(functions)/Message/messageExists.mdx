@@ -8,27 +8,22 @@ Checks if a message exists in a specified channel and returns `true` or `false`.
 
 `$messageExists[channelID;messageID]`
 
-*   **channelID:** The ID of the channel where the message should be checked.
-*   **messageID:** The ID of the message to check for.
-
-<br/>
+- **channelID:** The ID of the channel where the message should be checked.
+- **messageID:** The ID of the message to check for.
 
 **Example:**
 
 Let's say you want to check if a message with the ID `123456789012345678` exists in the channel with the ID `987654321098765432`.
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $messageExists[987654321098765432;123456789012345678]
-</DiscordMessageUser>
-<DiscordMessageBot>
-true
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $messageExists[987654321098765432;123456789012345678]
+    </Message>
+    <Message bot>true</Message>
+</Discord>
 
 In this example, if the message exists, the bot will return `true`. If the message doesn't exist, the bot will return `false`.
 
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Exists"/> <Tag text="Message"/>

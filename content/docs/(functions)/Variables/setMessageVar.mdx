@@ -5,15 +5,14 @@ title: "$setMessageVar"
 Sets a message variable value.
 
 ## Usage
+
 ```cc
 $setMessageVar[variable;value;messageID(optional)]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $setMessageVar[Creator;Mido;$messageID]
-</DiscordMessageUser>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $setMessageVar[Creator;Mido;$messageID]</Message>
+</Discord>
 
 <Callout type="info" title={"Related Functions"}>
 

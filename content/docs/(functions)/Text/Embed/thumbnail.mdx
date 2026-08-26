@@ -5,22 +5,28 @@ title: "$thumbnail"
 Adds a thumbnail to a message embed.
 
 ## Usage
+
 ```cc
 $thumbnail[YOUR URL HERE]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $thumbnail[$userAvatar]
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds" thumbnail="https://cdn.discordapp.com/avatars/787695068306866198/a70b4a5c5b00d9fcb684cac6768fded4.webp?size=4096">
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $title[Title]
+        $description[Description]
+        $thumbnail[$userAvatar]
+    </Message>
+    <Message bot>
+        <Embed
+            title="Title"
+            thumbnail="member"
+        >
+            Description
+        </Embed>
+    </Message>
+</Discord>
 
 <Callout type="info" title={"Do you want to add an embed inside a Function as paramter like $sendmessage[text]"}>
-
 
 Use: `{thumbnail: Your link here}`
 

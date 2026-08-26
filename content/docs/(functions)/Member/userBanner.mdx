@@ -9,6 +9,7 @@ Returns the banner URL of a user.
 ```cc
 $userBanner[userID]
 ```
+
 1. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to return banner URL from. If no banner is found, returns `undefined`.
 
 ## Example
@@ -17,34 +18,35 @@ $userBanner[userID]
 
 How is the banner URL displayed when sent with text and without text
 
-<DiscordMessages>
-<DiscordMessageUser author="User">
-!!exec With text: $userBanner
-</DiscordMessageUser>
-<DiscordMessageBot>
-With text: https://cdn.discordapp.com/banners/287135364127129601/a_0c1e74ef99e35d10f868bd839066e022.png<br />
-<img src="https://cdn.discordapp.com/banners/287135364127129601/a_0c1e74ef99e35d10f868bd839066e022.png" alt="User Banner" style={{ verticalAlign: "text-bottom" }} />
-</DiscordMessageBot>
-<DiscordMessageUser author="User">
-!!exec $userBanner
-</DiscordMessageUser>
-<DiscordMessageBot>
-<img src="https://cdn.discordapp.com/banners/287135364127129601/a_0c1e74ef99e35d10f868bd839066e022.png" alt="User Banner" style={{ verticalAlign: "text-bottom" }} />
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec With text: $userBanner</Message>
+    <Message bot>
+        With text:
+        https://cdn.discordapp.com/banners/287135364127129601/a_0c1e74ef99e35d10f868bd839066e022.png
+        <img
+            src="https://cdn.discordapp.com/banners/287135364127129601/a_0c1e74ef99e35d10f868bd839066e022.png"
+            alt="User Banner"
+            style={{ verticalAlign: "text-bottom" }}
+        />
+    </Message>
+    <Message>!!exec $userBanner</Message>
+    <Message bot>
+        <img
+            src="https://cdn.discordapp.com/banners/287135364127129601/a_0c1e74ef99e35d10f868bd839066e022.png"
+            alt="User Banner"
+            style={{ verticalAlign: "text-bottom" }}
+        />
+    </Message>
+</Discord>
 
 #### Banner is not available
 
 What shows when user does not have banner
 
-<DiscordMessages>
-<DiscordMessageUser author="User">
-!!exec $userBanner
-</DiscordMessageUser>
-<DiscordMessageBot>
-undefined
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $userBanner</Message>
+    <Message bot>undefined</Message>
+</Discord>
 
 <Callout type="info" title={"Note"}>
 

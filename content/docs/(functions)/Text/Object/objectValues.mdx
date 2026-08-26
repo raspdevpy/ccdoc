@@ -11,21 +11,20 @@ $objectValues[Seperator (optional, default:, );Nested Propery 1;Nested Property 
 ```
 
 ### Example (Get values of nested property):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $objectSet[name;Mido]<br />$objectSet[age;300]<br />$objectValues<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Mido, 300<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $objectSet[name;Mido] $objectSet[age;300] $objectValues
+    </Message>
+    <Message bot>Mido, 300</Message>
+</Discord>
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $objectSet[user;name;Mido]<br />$objectSet[user;id;1234]<br />$objectSet[user;weapon;Sword]<br />$objectValues[/;user]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Mido/1234/Sword
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $objectSet[user;name;Mido] $objectSet[user;id;1234]
+        $objectSet[user;weapon;Sword] $objectValues[/;user]
+    </Message>
+    <Message bot>Mido/1234/Sword</Message>
+</Discord>

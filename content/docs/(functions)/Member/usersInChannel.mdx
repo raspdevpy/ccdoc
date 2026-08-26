@@ -9,6 +9,7 @@ Returns a list of users in given text or voice channel.
 ```cc
 $usersInChannel[channelID;type;separator]
 ```
+
 1. **channelID** - (Optional) default value: `$channelID`. The ID of a channel you want to return list of users from.
 2. **type** - (Optional) default value: `username`. Can be `id`, `username`, `mention` or `count`.
 3. **separator** - (Optional) default value: `, `. The separator used for creating list of users.
@@ -19,20 +20,16 @@ $usersInChannel[channelID;type;separator]
 
 How to use $usersInChannel
 
-<DiscordMessages>
-<DiscordMessageUser author="User">
-!!exec $usersInChannel
-</DiscordMessageUser>
-<DiscordMessageBot>
-user, user1, user2
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $usersInChannel</Message>
+    <Message bot>user, user1, user2</Message>
+</Discord>
 
 <Callout type="warn" title={"Cache"}>
 
 This function works on the bot's cache to find members.
 If the user is not cached, the function will not find them.
-User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br />
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.  
 To have all members cached, you will need Tier 5 Bot.
 
 </Callout>

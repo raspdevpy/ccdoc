@@ -18,39 +18,35 @@ $endFunction
 
 Call the function using `$callFunction`:
 
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-<DiscordMarkdown>
+<Discord>
+<Message>
 !!exec $function[printHello;name]  
 Hello $name 👋  
-$endFunction 
+$endFunction
 
 $callFunction[printhello;Mika]
-</DiscordMarkdown>
-</DiscordMessageUser>
-<DiscordMessageBot>
+
+</Message>
+<Message bot>
 Hello Mika 👋
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 Call the function using `$printHello`:
 
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-<DiscordMarkdown>
+<Discord>
+<Message>
 !!exec $function[printHello;name]  
 Hello $name 👋  
-$endFunction  
+$endFunction
 
 $printhello[Mika]
-</DiscordMarkdown>
-</DiscordMessageUser>
-<DiscordMessageBot>
+
+</Message>
+<Message bot>
 Hello Mika 👋
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 <Callout type="warning">
 
@@ -65,7 +61,6 @@ Code inside the function is isolated from outside, which means changing of varia
 you can access outside temporary variables (assigned by `$let`) but you can't change them.
 
 </Callout>
-
 
 ## Default parameter values
 

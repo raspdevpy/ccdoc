@@ -2,7 +2,7 @@
 title: "$arraySlice"
 ---
 
-To keep only a part of the array, *slicing* it.
+To keep only a part of the array, _slicing_ it.
 
 ## Usage
 
@@ -11,11 +11,12 @@ $arraySlice[from;to;array name (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSplit[Mido Rake Azz Finkz; ]<br />$arraySlice[2;3]<br />$arrayJoin[ ]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Rake Azz
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textSplit[Mido Rake Azz Finkz; ]
+        $arraySlice[2;3]
+        $arrayJoin[ ]
+    </Message>
+    <Message bot>Rake Azz</Message>
+</Discord>

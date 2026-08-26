@@ -11,11 +11,16 @@ $arrayClear[array name (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSplit[Hello World; ]<br />Before=$arrayJoin[, ]<br />$arrayClear<br />After=$arrayJoin[, ]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Before=Hello, World<br />After=
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textSplit[Hello World; ]
+        Before=$arrayJoin[, ]
+        $arrayClear
+        After=$arrayJoin[, ]
+    </Message>
+    <Message bot>
+        Before=Hello, World
+        After=
+    </Message>
+</Discord>

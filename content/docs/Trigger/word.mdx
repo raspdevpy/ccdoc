@@ -14,14 +14,14 @@ In the code part we will type `pong!`, so the bot will respond with it.
 
 ![Word example](https://i.imgur.com/0ndhYaw.png)
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !ping
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 pong!
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 ## Using parameters
 A crucial feature of the word type are parameters. They are data provided when executing the command.
@@ -31,11 +31,11 @@ In that case we would want users to select a user by mentioning him.
 
 #### Usage
 The mention will be the `parameter 1`, because users will mention their victim right after the ?hug keyword.
-<DiscordMessages>
-<DiscordMessageUser>
-?hug <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessageUser>
-</DiscordMessages>
+<Discord>
+<Message>
+?hug <Mention name="fajfaj" />
+</Message>
+</Discord>
 
 #### Setup
 Parameters can be retrieved using the `$message` function, we will use it to get the user mention:
@@ -44,14 +44,14 @@ Parameters can be retrieved using the `$message` function, we will use it to get
 
 #### Result
 Here's how the final command should look like:
-<DiscordMessages>
-<DiscordMessageUser>
-?hug <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+<Message>
+?hug <Mention name="fajfaj" />
+</Message>
+<Message bot mention>
+<Mention /> hugs <Mention name="fajfaj" />
+</Message>
+</Discord>
 
 ## Case insensitivity
 Sometimes we don't want to bother users with using correct capitalisation.
@@ -66,27 +66,27 @@ Here's how to make a case insensitive `?hello` command, that will respond with a
 
 Let's test different variations:
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 ?hello
-</DiscordMessageUser>
-<DiscordMessageBot>
-Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
-</DiscordMessageBot>
-<DiscordMessageUser>
+</Message>
+<Message bot mention>
+Hello <Mention />!
+</Message>
+<Message>
 ?HELLO
-</DiscordMessageUser>
-<DiscordMessageBot>
-Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
-</DiscordMessageBot>
-<DiscordMessageUser>
+</Message>
+<Message bot mention>
+Hello <Mention />!
+</Message>
+<Message>
 ?HeLLo
-</DiscordMessageUser>
-<DiscordMessageBot>
-Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
-</DiscordMessageBot>
+</Message>
+<Message bot mention>
+Hello <Mention />!
+</Message>
 
-</DiscordMessages>
+</Discord>
 
 Works perfectly!
 
@@ -105,26 +105,26 @@ We can do that with the following trigger:
 
 Let's test it out:
 
-<DiscordMessages>
-<DiscordMessageUser>
-?hug <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessageBot>
-<DiscordMessageUser>
-?abrazo <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessageBot>
-<DiscordMessageUser>
-?étreinte <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+<Message>
+?hug <Mention name="fajfaj" />
+</Message>
+<Message bot mention>
+<Mention /> hugs <Mention name="fajfaj" />
+</Message>
+<Message>
+?abrazo <Mention name="fajfaj" />
+</Message>
+<Message bot mention>
+<Mention /> hugs <Mention name="fajfaj" />
+</Message>
+<Message>
+?étreinte <Mention name="fajfaj" />
+</Message>
+<Message bot mention>
+<Mention /> hugs <Mention name="fajfaj" />
+</Message>
+</Discord>
 
 Works as expected!
 
@@ -160,20 +160,20 @@ You need to add a forward slash before and after your expression, otherwise the 
 
 Let's try sending some mentions:
 
-<DiscordMessages>
-<DiscordMessageUser>
-Hey <DiscordMention type="user">fajfaj</DiscordMention>! How is it going?
-</DiscordMessageUser>
-<DiscordMessageBot>
+<Discord>
+<Message>
+Hey <Mention name="fajfaj" />! How is it going?
+</Message>
+<Message bot>
 You've pinged someone!
-</DiscordMessageBot>
-<DiscordMessageUser>
-<DiscordMention type="user">Mido</DiscordMention>, have you found your chocolate yet?
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message>
+<Mention name="Mido" />, have you found your chocolate yet?
+</Message>
+<Message bot>
 You've pinged someone!
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 It detects all of them!
 
@@ -238,20 +238,20 @@ To randomize the output, we will use `$randomText` function, and to restrict the
 
 Let's see if we get any compliments:
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 How is it going?
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Cool message!
-</DiscordMessageBot>
-<DiscordMessageUser>
+</Message>
+<Message>
 Does anyone here have a monkey as a pet?
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Wonderful punctuation!
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 Amazing, we've just got complimented by the bot automatically.
 
@@ -366,5 +366,3 @@ Yay! works well. */}
 
 For Tier 3+, This trigger require `Message Content Intent` enabled for your custom bot
 </Callout>
-
-

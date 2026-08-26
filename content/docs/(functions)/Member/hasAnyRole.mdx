@@ -18,20 +18,20 @@ $hasAnyRole[userID;roleID1;roleID2;...]
 
 How to use $hasAnyRole without user argument. Keep in mind that if the user does have only one of listed roles, true will be returned.
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec I have Admin OR Manager role: $hasAnyRole[admin;manager]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 I have Admin OR Manager role: true
-</DiscordMessageBot>
-<DiscordMessageUser>
+</Message>
+<Message>
 !!exec I have Admin role: $hasAnyRole[admin], I have Manager role: $hasAnyRole[manager]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 I have Admin role: true, I have Manager role: false
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 <Callout type="info" title={"Suggestion"}>
 

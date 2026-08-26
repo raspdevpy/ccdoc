@@ -18,26 +18,26 @@ $uservarRank[Variable name;Sorting Type;User ID (optional)]
 * `asc` <Badge type="warning">Deprecated</Badge>: Legacy alias for `highest-first`.
 
 #### Example:
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec Top 5  
 $userLeaderboard[money;highest-first;\{top}. \{username} - \{value};5]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Top 5  
 1. Member - 350  
 2. Rake - 201  
 3. Zero - 121  
 4. Red - 53  
 5. Azz - 22  
-</DiscordMessageBot>
-<DiscordMessageUser>
+</Message>
+<Message>
 !!exec Your rank is $userVarRank[money]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Your rank is 1
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 #### What if the user does not have the variable?
 If the specified user does not have the variable defined, `$userVarRank` will return `undefined`.

@@ -18,37 +18,37 @@ Clears messages from a channel. You can clear messages from a specific user, or 
 
 **Before:**
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 I'm a spammer, everyone shut up!
-</DiscordMessageUser>
-<DiscordMessageUser>
+</Message>
+<Message>
 I'm a spammer, everyone shut up!
-</DiscordMessageUser>
-<DiscordMessageUser>
+</Message>
+<Message>
 I'm a spammer, everyone shut up!
-</DiscordMessageUser>
-<DiscordMessageUser>
+</Message>
+<Message>
 I'm a spammer, everyone shut up!
-</DiscordMessageUser>
-<DiscordMessageUser>
+</Message>
+<Message>
 I'm a spammer, everyone shut up!
-</DiscordMessageUser>
-<DiscordMessageUser>
+</Message>
+<Message>
 I'm a spammer, everyone shut up!
-</DiscordMessageUser>
-<DiscordMessageUser author="Good Moderator">
+</Message>
+<Message>
 !!exec $clear[10;everyone] $sendMessage[<strong>Channel has been purged</strong>]
-</DiscordMessageUser>
-</DiscordMessages>
+</Message>
+</Discord>
 
 **After:**
 
-<DiscordMessages>
-<DiscordMessageBot>
+<Discord>
+<Message bot>
 <strong>Channel has been purged.</strong>
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 <Callout type="warn">
 
@@ -57,4 +57,3 @@ You can clear a maximum of 100 messages at a time.  Messages older than 2 weeks 
 </Callout>
 
 **Function Difficulty:** <Badge type="warning" text="Medium" vertical="middle" />
-

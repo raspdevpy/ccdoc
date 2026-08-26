@@ -12,13 +12,13 @@ $randomTextBiased[Text1,Weight1;Text2,Weight2;Text3,Weight3]
 
 **Explanation:**
 
-*   `Text1`, `Text2`, `Text3`: The text options you want to randomly select from.
-*   `Weight1`, `Weight2`, `Weight3`:  Numerical values representing the weight or probability associated with each corresponding text option.  **Higher weight = Higher chance of selection.**
+- `Text1`, `Text2`, `Text3`: The text options you want to randomly select from.
+- `Weight1`, `Weight2`, `Weight3`: Numerical values representing the weight or probability associated with each corresponding text option. **Higher weight = Higher chance of selection.**
 
 **Important:**
 
-*   Separate each `Text,Weight` pair with a semicolon (`;`).
-*   Weights don't need to add up to 100; they are relative to each other.
+- Separate each `Text,Weight` pair with a semicolon (`;`).
+- Weights don't need to add up to 100; they are relative to each other.
 
 ### Note:
 
@@ -36,10 +36,10 @@ This example demonstrates a reward box system where the rarity of the reward is 
 
 **Explanation:**
 
-*   `Common` has a weight of `80`, making it the most likely outcome.
-*   `Rare` has a weight of `10`.
-*   `Epic` has a weight of `8`.
-*   `Platinum` has a weight of `2`, making it the least likely outcome.
+- `Common` has a weight of `80`, making it the most likely outcome.
+- `Rare` has a weight of `10`.
+- `Epic` has a weight of `8`.
+- `Platinum` has a weight of `2`, making it the least likely outcome.
 
 **Possible Outcomes:**
 
@@ -47,22 +47,22 @@ Here are a couple of example scenarios demonstrating the range of possibilities:
 
 **Example (Unlucky guy):**
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec Your reward is: $randomTextBiased[Common,80;Rare,10;Epic,8;Platinum,2] Box<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Your reward is: Common Box<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec Your reward is:
+        $randomTextBiased[Common,80;Rare,10;Epic,8;Platinum,2] Box
+    </Message>
+    <Message bot>
+        Your reward is: Common Box
+    </Message>
+</Discord>
 
 **Example (Lucky guy):**
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec Your reward is: $randomTextBiased[Common,80;Rare,10;Epic,8;Platinum,2] Box<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Your reward is: Epic Box
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec Your reward is:
+        $randomTextBiased[Common,80;Rare,10;Epic,8;Platinum,2] Box
+    </Message>
+    <Message bot>Your reward is: Epic Box</Message>
+</Discord>

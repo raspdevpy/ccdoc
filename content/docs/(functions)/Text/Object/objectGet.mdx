@@ -5,20 +5,20 @@ title: "$objectGet"
 Get a object value/property by key, if the key is not found then return `undefined` (same as `$getObjectProperty`)
 
 ## Usage
+
 ```cc
 $objectGet[key]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $createObject[\{"BotName":"Custom Commands","BotOwner":"Rake","Contributor":"Wiki"}] Bot name: $objectGet[BotName], Owner: $objectGet[BotOwner], Docs Contributor: $objectGet[Contributor]
-</DiscordMessageUser>
-<DiscordMessageBot>
-Bot name: Custom Commands, Owner: Rake, Docs Contributor: Wiki
-</DiscordMessageBot>
-</DiscordMessages>
 
-**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" /> 
+<Discord>
+<Message>
+!!exec $createObject[\{"BotName":"Custom Commands","BotOwner":"Rake","Contributor":"Wiki"}] Bot name: $objectGet[BotName], Owner: $objectGet[BotOwner], Docs Contributor: $objectGet[Contributor]
+</Message>
+<Message bot>
+Bot name: Custom Commands, Owner: Rake, Docs Contributor: Wiki
+</Message>
+</Discord>
+
+**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" />
 
 **Tags:** <Tag text="Object"/> <Tag text="Get"/> <Tag text="Json"/> <Tag text="Property"/>
-

@@ -11,56 +11,61 @@ $memberSearch[username/nickname;amount to return (Default is 1);separator (Defau
 ```
 
 ### Info To Return:
+
 By default it is `id`, but you can pick from:
 
-* `id`: to return the found user id\
-* `username`: to return the found user's username\
-* `nickname`: to return the found user's nickname in the server\
-* `name`: to return the found user's display name in the server
-> You can also use combination of them, like `name (id)` to be replaced with `Mido (12345678901234567)`
+- `id`: to return the found user id\
+- `username`: to return the found user's username\
+- `nickname`: to return the found user's nickname in the server\
+- `name`: to return the found user's display name in the server
+    > You can also use combination of them, like `name (id)` to be replaced with `Mido (12345678901234567)`
 
 > You can know more information about the user with the use of `$user`
 
 ### Amount to Return:
+
 It determines how many users it will return if they match the query, by default it is 1
+
 > When multiple user returned, they will merged together with the `separator`
 
 ### Example (Search and member is found):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $memberSearch[mido.dev]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-788361834360864808<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $memberSearch[mido.dev]
+    </Message>
+    <Message bot>
+        788361834360864808
+    </Message>
+</Discord>
 
 ### Example (Search and multiple members are found):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $memberSearch[A;5;, ;name]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Alpha, Alight, A living legend, A story in life<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $memberSearch[A;5;, ;name]
+    </Message>
+    <Message bot>
+        Alpha, Alight, A living legend, A story in life
+    </Message>
+</Discord>
 
 ### Example (Search but member is not found):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $memberSearch[bad.dev]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-<br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $memberSearch[bad.dev]
+    </Message>
+    <Message bot>
+    </Message>
+</Discord>
 
 ### Example (Search and use the user id to retrieve join date):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $let[user_id;$memberSearch[mido.dev]]<br />Mido joined the server at: $memberJoinedDate[$user_id]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Mido joined the server at: Wed Mar 09 2022 22:06:21
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $let[user_id;$memberSearch[mido.dev]]
+        Mido joined the server at: $memberJoinedDate[$user_id]
+    </Message>
+    <Message bot>Mido joined the server at: Wed Mar 09 2022 22:06:21</Message>
+</Discord>

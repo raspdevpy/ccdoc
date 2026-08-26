@@ -11,23 +11,25 @@ $customEmoji[name or id]
 ```
 
 ### Example (Using Custom Emoji Name):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $customEmoji[yes]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds" image="https://i.imgur.com/E174Ey0.png"><br />
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $customEmoji[yes]</Message>
+    <Message bot>
+        <Embed
+            image="https://i.imgur.com/E174Ey0.png"
+        ></Embed>
+    </Message>
+</Discord>
 
 ### Example (Using Custom Emoji ID):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $customEmoji[833252579873259521]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds" image="https://i.imgur.com/7t3gZNn.png"><br />
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $customEmoji[833252579873259521]
+    </Message>
+    <Message bot>
+        <Embed
+            image="https://i.imgur.com/7t3gZNn.png"
+        ></Embed>
+    </Message>
+</Discord>

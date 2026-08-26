@@ -4,32 +4,30 @@ title: "$thread"
 
 Gets info trom a thread.
 
-## Usage: 
+## Usage:
+
 `$thread[Thread ID;Type]`
 
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec &lt;@!$thread[owner]&gt;
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordMention highlight>Member</DiscordMention>
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec &lt;@!$thread[owner]&gt;</Message>
+    <Message bot mention>
+        <Mention />
+    </Message>
+</Discord>
 
 <Accordions>
 <Accordion title={"Valid objects for \"Type\""}>
 
-* `archivedat`
-* `duration`
-* `id`
-* `members`
-* `memberscount`
-* `messagescount`
-* `name`
-* `owner`
-* `locked`
-* `parent`
+- `archivedat`
+- `duration`
+- `id`
+- `members`
+- `memberscount`
+- `messagescount`
+- `name`
+- `owner`
+- `locked`
+- `parent`
 
 </Accordion>
 </Accordions>
@@ -40,6 +38,6 @@ This Command supports Curl Arguments, a link to the page explaining it, will get
 
 </Callout>
 
-**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" /> 
+**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" />
 
 **Tags:** <Tag text="Channel"/> <Tag text="Get Functions/ get thread"/> <Tag text="Threads"/> <Tag text="Info Threads"/>

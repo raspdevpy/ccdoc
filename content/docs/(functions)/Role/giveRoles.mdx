@@ -8,37 +8,32 @@ Grants one or more roles to a specified user.
 
 `$giveRoles[userID;roleID 1;roleID 2;roleID 3;...]`
 
-*   **userID:** The ID of the user you want to give roles to.
-*   **roleID 1;roleID 2;roleID 3;...:** A semicolon-separated list of role IDs to grant to the user.
-
-<br/>
+- **userID:** The ID of the user you want to give roles to.
+- **roleID 1;roleID 2;roleID 3;...:** A semicolon-separated list of role IDs to grant to the user.
 
 **Example:**
 
 This example grants the "Muted" role to the command executor.
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $giveRoles[$authorID;$roleID[Muted]]
-</DiscordMessageUser>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $giveRoles[$authorID;$roleID[Muted]]</Message>
+</Discord>
 
 <Callout type="info" title={"Useful Functions"}>
 
-*   ``$roleID``:  Retrieves a role's ID based on its name.
-*   ``$authorID``: Returns the ID of the command executor (the user who ran the command).
+- `$roleID`: Retrieves a role's ID based on its name.
+- `$authorID`: Returns the ID of the command executor (the user who ran the command).
 
 </Callout>
 
 <Callout type="info" title={"Related Functions"}>
 
-*   ``$toggleRoles``: Toggles a user's roles (adds if they don't have it, removes if they do).
-*   ``$takeRoles``: Removes roles from a user.
-*   ``$setRoles``: Removes all roles from a user and then grants only the specified roles.
+- `$toggleRoles`: Toggles a user's roles (adds if they don't have it, removes if they do).
+- `$takeRoles`: Removes roles from a user.
+- `$setRoles`: Removes all roles from a user and then grants only the specified roles.
 
 </Callout>
 
 **Difficulty:** <Badge type="warning" text="Medium" vertical="middle" />
-
 
 **Tags:** <Tag text="Give Roles"/> <Tag text="Add Role"/> <Tag text="Grant Role"/> <Tag text="Member"/> <Tag text="Role"/>

@@ -11,11 +11,16 @@ $arraySet[index;value;array name (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSplit[Mido/Rake/Azz;/]<br />Before: $arrayGet[3]<br />$arraySet[3;Finkz]<br />After: $arrayGet[3]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Before: Azz<br />After: Finkz
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textSplit[Mido/Rake/Azz;/]
+        Before: $arrayGet[3]
+        $arraySet[3;Finkz]
+        After: $arrayGet[3]
+    </Message>
+    <Message bot>
+        Before: Azz
+        After: Finkz
+    </Message>
+</Discord>

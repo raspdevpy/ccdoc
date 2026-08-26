@@ -10,24 +10,17 @@ Retrieves a random user ID from a user within the server.
 $randomUserID
 ```
 
-<br/>
-
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $randomUserID
-</DiscordMessageUser>
-<DiscordMessageBot>
-97907890789087988
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $randomUserID</Message>
+    <Message bot>97907890789087988</Message>
+</Discord>
 
 <Callout type="error" title={"Important"}>
 
-The user ID is selected randomly from the server's cached members.  This means the returned user ID might not always represent a currently active member, especially if all guild members are not cached (typically only guaranteed in higher server tiers).
+The user ID is selected randomly from the server's cached members. This means the returned user ID might not always represent a currently active member, especially if all guild members are not cached (typically only guaranteed in higher server tiers).
 
 </Callout>
 
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Random"/> <Tag text="Random User ID"/> <Tag text="Selection"/> <Tag text="User ID"/>

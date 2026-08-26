@@ -1,5 +1,5 @@
 ---
-title: "Clone Community Commands"
+title: "Community Commands"
 weight: 6
 ---
 
@@ -22,26 +22,22 @@ After choosing what to clone, click next to continue. Some commands may require 
 
 Once everything is done, you're ready to go! After the commands are cloned, it will show you how the commands are used. To test if it works, we can try it out in Discord now.
 
-<DiscordMessages>
-<DiscordMessage>
-!wordle
-</DiscordMessage>
-<DiscordMessageBot>
-<DiscordEmbed embedTitle="Can you guess?" embedFooter="Member Session">
-There is a word of 5 characters, can you guess it?
-<DiscordEmbedFields>
-<DiscordEmbedField fieldTitle="Preview">
-[<code> </code>] [<code> </code>] [<code> </code>] [<code> </code>] [<code> </code>]
-</DiscordEmbedField>
-</DiscordEmbedFields>
-</DiscordEmbed>
-<DiscordActionRow>
-<DiscordButton>
-Guess
-</DiscordButton>
-</DiscordActionRow>
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!wordle</Message>
+    <Message bot>
+        <Embed title="Can you guess?" footer="Member Session">
+            There is a word of 5 characters, can you guess it?
+            <Fields>
+                <Field title="Preview">
+                    [` `] [` `] [` `] [` `] [` `]
+                </Field>
+            </Fields>
+        </Embed>
+        <Buttons>
+            <Button label="Guess" color="gray" />
+        </Buttons>
+    </Message>
+</Discord>
 
 ## Sharing Your Commands
 

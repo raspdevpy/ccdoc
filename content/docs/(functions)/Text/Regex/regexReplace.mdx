@@ -11,11 +11,10 @@ $regexReplace[text;regex;flags;new text]
 ```
 
 ### Example 1:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $regexReplace[My age is 900 years old.;\d+;g;[SECRET AGE]]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-My age is [SECRET AGE] years old.
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $regexReplace[My age is 900 years old.;\d+;g;[SECRET AGE]]
+    </Message>
+    <Message bot>My age is [SECRET AGE] years old.</Message>
+</Discord>

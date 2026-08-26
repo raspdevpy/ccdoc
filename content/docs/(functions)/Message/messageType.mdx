@@ -5,24 +5,19 @@ title: "$messageType"
 This function returns the type of the message that triggered the command. This can be useful for creating commands that behave differently depending on how they were called.
 
 ## Usage
+
 ```cc
 $messageType
 ```
-
-<br/>
 
 **Example:**
 
 Here's how `$messageType` might be used in a custom command:
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $messageType
-</DiscordMessageUser>
-<DiscordMessageBot>
-Default
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $messageType</Message>
+    <Message bot>Default</Message>
+</Discord>
 
 <Callout type="info" title={"Note"}>
 
@@ -31,6 +26,5 @@ The `$messageType` function returns a specific message type. You can find a list
 </Callout>
 
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Type"/> <Tag text="Message"/>

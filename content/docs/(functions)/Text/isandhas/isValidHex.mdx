@@ -2,25 +2,26 @@
 title: "$isValidHex"
 ---
 
-checks if the given int or hex code or [color name](/CodeReferences/ref.embed.colors) is valid  ,returns true,false
+checks if the given int or hex code or [color name](/CodeReferences/ref.embed.colors) is valid ,returns true,false
 
 ## Usage
+
 ```cc
 $isValidHex[int or hexcode or color name]
 ```
-Example:
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $isValidHex[#ffffff] , $isValidHex[test], $isValidHex[Red]
-</DiscordMessageUser>
-<DiscordMessageBot>
-true , false, true
-</DiscordMessageBot>
-</DiscordMessages>
 
-**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+Example:
+
+<Discord>
+    <Message>
+        !!exec $isValidHex[#ffffff] , $isValidHex[test], $isValidHex[Red]
+    </Message>
+    <Message bot>true , false, true</Message>
+</Discord>
+
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
 ###### Tags:
-<Tag text="Is"/> 
-<Tag text="Valid Hex"/> 
+
+<Tag text="Is" />
+<Tag text="Valid Hex" />

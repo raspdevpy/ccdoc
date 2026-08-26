@@ -9,6 +9,7 @@ Returns the value of a given header from the last request.
 ```cc
 $httpRequestHeader[header name]
 ```
+
 1. **header name** - The header name to return value from. (case-insensitive)
 
 ## Example
@@ -17,16 +18,16 @@ $httpRequestHeader[header name]
 
 How to return Content-Type from last request
 
-<DiscordMessages>
-<DiscordMessageUser author="User">
-!!exec $httpRequest[https://api.example.com/]<br />
+<Discord>
+<Message>
+!!exec $httpRequest[https://api.example.com/]
 Content-Type Header: $httpRequestHeader[content-type]
-</DiscordMessageUser>
-<DiscordMessageBot>
-\{"message": "Api response!"}<br />
+</Message>
+<Message bot>
+\{"message": "Api response!"}
 Content-Type Header: application/json
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 **Related Functions:** `$httpRequest` `$httpRequestStatus`
 

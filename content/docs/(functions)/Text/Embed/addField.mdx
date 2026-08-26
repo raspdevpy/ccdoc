@@ -5,56 +5,57 @@ title: "$addField"
 Adds fields to a message embed.
 
 ## Usage
+
 ```cc
 $addField[title;value;inline(yes/no default=yes)(optional)]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $addField[title;value;no] <br/>
-$addField[title2;value2] <br/>
-$addField[title3;value3] <br/>
-$addField[title4;value4] <br/>
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds">
-<DiscordEmbedFields slot="fields">
-<DiscordEmbedField fieldTitle="title">
-value
-</DiscordEmbedField>
-<DiscordEmbedField inline fieldTitle="title2">
-value2
-</DiscordEmbedField>
-<DiscordEmbedField inline fieldTitle="title3">
-value3
-</DiscordEmbedField>
-<DiscordEmbedField inline fieldTitle="title4">
-value4
-</DiscordEmbedField>
-</DiscordEmbedFields>
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $addField[title;value1]
+        $addField[title2;value2]
+        $addField[title3;value3]
+        $addField[title4;value4]
+    </Message>
+    <Message bot>
+        <Embed>
+            <Fields>
+                <Field title="title">
+                    value1
+                </Field>
+                <Field title="title2">
+                    value2
+                </Field>
+                <Field title="title3">
+                    value3
+                </Field>
+                <Field title="title4">
+                    value4
+                </Field>
+            </Fields>
+        </Embed>
+    </Message>
+</Discord>
 
 $addField with hyperlinks:
-Usage:  `\[link\](https://ccommandbot.com "tooltip(optional)")`
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $addField[title;This is a field with \[link\](https://ccommandbot.com "tooltip")]
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds">
-<DiscordEmbedFields slot="fields">
-<DiscordEmbedField fieldTitle="title">
-This is a description <a href="https://ccommandbot.com" target="_blank" title="tooltip">hello</a>
-</DiscordEmbedField>
-</DiscordEmbedFields>
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+Usage: `\[link\](https://ccommandbot.com "tooltip(optional)")`
+
+<Discord>
+    <Message>
+        !!exec $addField[Title;This is a field with a \[link\](https://ccommandbot.com)]
+    </Message>
+    <Message bot>
+        <Embed>
+            <Fields>
+              <Field title="Title">
+                    This is a field with a [link](https://ccommandbot.com)
+                </Field>
+            </Fields>
+        </Embed>
+    </Message>
+</Discord>
 
 <Callout type="info" title={"Do you want to add an embed inside a Function as paramter like $sendmessage[text]"}>
-
 
 Use: `{field:name:value:inline(yes/no default=yes)(optional)}`
 

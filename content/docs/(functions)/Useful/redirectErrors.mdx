@@ -4,37 +4,34 @@ title: "$redirectErrors"
 
 To redirect any kind of errors to a specific channel, by default errors will appear in the execution channel
 
-## Usage: 
+## Usage:
+
 `$redirectErrors[Channel ID]`
 
 #### Example:
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-<DiscordMarkdown>
-!!exec $modifyChannelPerms[$authorID;-sendmessages;$channelID]
-$redirectErrors[Channel ID]
-</DiscordMarkdown>
-</DiscordMessageUser>
-</DiscordMessages>
 
-<br/>
-<DiscordMessages>
-<DiscordMessageBot>
-❌ Invalid channel ID in $modifyChannelPerms[787695068306866198;-sendmessages;879380104768278608]
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $modifyChannelPerms[$authorID;-sendmessages;$channelID]
+        $redirectErrors[Channel ID]
+    </Message>
+</Discord>
 
+<Discord>
+    <Message bot>
+        ❌ Invalid channel ID in
+        $modifyChannelPerms[787695068306866198;-sendmessages;879380104768278608]
+    </Message>
+</Discord>
 
 <Callout type="error">
 
-The way `$modifyChannelPerms` shown here is **NOT** correct! 
+The way `$modifyChannelPerms` shown here is **NOT** correct!
 
 Check the `$modifyChannelPerms` for the correct usage
 
 </Callout>
 
-**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
-**Tags:** <Tag text="Error"/>  <Tag text="Wrong Usage"/>  <Tag text="Trown Error"/> 
-
+**Tags:** <Tag text="Error"/> <Tag text="Wrong Usage"/> <Tag text="Trown Error"/>

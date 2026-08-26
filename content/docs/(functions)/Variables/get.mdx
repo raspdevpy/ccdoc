@@ -5,29 +5,24 @@ title: "$get"
 retrieve variable defined by `$let`
 
 ## Usage
+
 ```cc
 $get[varname;value if not exists] or $varname
 ```
 
 ### Example 1:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $let[orange;10] <br/> $get[orange] or $orange
-</DiscordMessageUser>
-<DiscordMessageBot>
-10 or 10
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $let[orange;10] $get[orange] or $orange</Message>
+    <Message bot>10 or 10</Message>
+</Discord>
 
 ### Example 2 (Use default value if not exists):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec Your name is $get[name;Mido]
-</DiscordMessageUser>
-<DiscordMessageBot>
-Your name is Mido
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec Your name is $get[name;Mido]</Message>
+    <Message bot>Your name is Mido</Message>
+</Discord>
 
 <Callout type="info" title={"Related Functions"}>
 

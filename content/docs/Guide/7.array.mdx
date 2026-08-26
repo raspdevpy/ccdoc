@@ -21,16 +21,16 @@ Last item: $arrayGet[$arrayLength]
 All items: $arrayJoin[/]
 ```
 
-<DiscordMessages>
-<DiscordMessage>
-!!exec $arrayCreate[Apple Banana Kiwi; ]<br /><br />
-First item: $arrayGet[1]<br />
-Last item: $arrayGet[$arrayLength]<br />
-All items: $arrayJoin[/]
-</DiscordMessage>
-<DiscordMessageBot>
-First item: Apple<br />
-Last item: Kiwi<br />
-All items: Apple/Banana/Kiwi
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $arrayCreate[Apple Banana Kiwi; ]
+        First item: $arrayGet[1]
+        Last item: $arrayGet[$arrayLength]
+        All items: $arrayJoin[/]
+    </Message>
+    <Message bot>
+        First item: Apple
+        Last item: Kiwi
+        All items: Apple/Banana/Kiwi
+    </Message>
+</Discord>

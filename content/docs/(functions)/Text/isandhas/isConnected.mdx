@@ -11,11 +11,8 @@ $isConnected[User ID]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec Is $username Connected To Channel?: $isConnected<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Is Mido Connected To Channel?: true
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec Is $username Connected To Channel?: $isConnected</Message>
+    <Message bot>Is Mido Connected To Channel?: true</Message>
+</Discord>

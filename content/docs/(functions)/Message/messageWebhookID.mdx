@@ -10,20 +10,13 @@ Retrieves the ID of the webhook that sent the message.
 
 This function requires no arguments and simply returns the webhook ID.
 
-<br/>
-
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $messageWebhookID
-</DiscordMessageUser>
-<DiscordMessageBot>
-683630053686378498
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $messageWebhookID</Message>
+    <Message bot>683630053686378498</Message>
+</Discord>
 
 **Example:** If a webhook with the ID `683630053686378498` sent the message, the function would return `683630053686378498`.
 
 **Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Webhook ID"/> <Tag text="Message"/>

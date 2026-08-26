@@ -11,11 +11,8 @@ $textSlice[text;x;y (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSlice[Hello world;0;5]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Hello
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $textSlice[Hello world;0;5]</Message>
+    <Message bot>Hello</Message>
+</Discord>

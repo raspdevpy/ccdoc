@@ -2,7 +2,7 @@
 title: "$status"
 ---
 
-<Badge type="warning" text="Required Tier 3+" vertical="middle" /><br />
+<Badge type="warning" text="Tier 3+ Only" vertical="middle" />
 
 Returns the status of a user. Can be `online`, `offline`, `idle` or `dnd`.
 
@@ -11,6 +11,7 @@ Returns the status of a user. Can be `online`, `offline`, `idle` or `dnd`.
 ```cc
 $status[userID]
 ```
+
 1. **userID** - (Optional) default value: `$authorID`. The ID of user to return the status from.
 
 ## Example
@@ -19,14 +20,10 @@ $status[userID]
 
 How to use $status
 
-<DiscordMessages>
-<DiscordMessageUser author="User">
-!!exec $status
-</DiscordMessageUser>
-<DiscordMessageBot>
-online
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $status</Message>
+    <Message bot>online</Message>
+</Discord>
 
 <Callout type="error" title={"Important Note"}>
 

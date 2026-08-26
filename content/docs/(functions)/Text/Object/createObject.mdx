@@ -11,17 +11,21 @@ $createObject[object string]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $createObject[\{"name":"Mido","age":110}]<br />Your name is $objectGet[name]<br />Your age is $objectGet[age]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Your name is Mido<br />Your age is 110
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+<Message>
+!!exec $createObject[\{"name":"Mido","age":110}]
+Your name is $objectGet[name]
+Your age is $objectGet[age]
+</Message>
+<Message bot>
+Your name is Mido
+Your age is 110
+</Message>
+</Discord>
 
 <Callout type="error">
 
-This function got deprecated, use `$objectCreate` instead 
+This function got deprecated, use `$objectCreate` instead
 
 </Callout>

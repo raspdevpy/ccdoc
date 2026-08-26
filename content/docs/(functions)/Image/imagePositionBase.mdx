@@ -12,32 +12,33 @@ $imagePositionBase[Base]
 
 **Parameter:**
 
-*   `Base`: Specifies the base position.  Must be one of the valid values listed below.
+- `Base`: Specifies the base position. Must be one of the valid values listed below.
 
 ### Base Values:
 
 The following values are accepted for the `Base` parameter:
 
-*   `topleft`: Top-left corner
-*   `top`: Top-center
-*   `topright`: Top-right corner
-*   `centerleft`: Center-left
-*   `center`: Center
-*   `centerright`: Center-right
-*   `bottomleft`: Bottom-left corner
-*   `bottom`: Bottom-center
-*   `bottomright`: Bottom-right corner
+- `topleft`: Top-left corner
+- `top`: Top-center
+- `topright`: Top-right corner
+- `centerleft`: Center-left
+- `center`: Center
+- `centerright`: Center-right
+- `bottomleft`: Bottom-left corner
+- `bottom`: Bottom-center
+- `bottomright`: Bottom-right corner
 
 ### Example:
 
 This example creates an image, sets the base position to `centerleft`, draws a white square, then sets the base position to `centerright` and draws a red square.
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $imageCreate[300;300]<br />$imagePositionBase[centerleft]<br />$imageFill[white;center;center;100;100]<br />$imagePositionBase[centerright]<br />$imageFill[red;center;center;100;100]<br />$image[$imageOutput]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds" image="https://i.imgur.com/wIK4BAm.png">
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $imageCreate[300;300] $imagePositionBase[centerleft]
+        $imageFill[white;center;center;100;100] $imagePositionBase[centerright]
+        $imageFill[red;center;center;100;100] $image[$imageOutput]
+    </Message>
+    <Message bot>
+        <Embed image="https://i.imgur.com/wIK4BAm.png"></Embed>
+    </Message>
+</Discord>

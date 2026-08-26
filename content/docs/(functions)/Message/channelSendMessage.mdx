@@ -5,25 +5,24 @@ title: "$channelSendMessage"
 Sends a message to a specified channel. This function allows you to send messages to any channel your bot has access to.
 
 ## Usage
+
 ```cc
 $channelSendMessage[channelID;message;return ID (yes/no) (optional, default=no)]
 ```
 
-| Parameter     | Description                                                                                                                                         | Required | Default |
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------|----------|---------|
-| `channelID`   | The ID of the channel to send the message to. You can get this by right-clicking the channel and selecting "Copy ID" (you must have Developer Mode enabled in Discord settings). | Yes      |         |
-| `message`     | The message to send.  This can be plain text, embeds, buttons, menus, or any other valid Discord message content.                                                        | Yes      |         |
-| `return ID`   |  `yes` or `no`.  If `yes`, the ID of the sent message will be returned. Defaults to `no`.  This is useful if you need to edit or delete the message later. | No       | `no`    |
+| Parameter   | Description                                                                                                                                                                      | Required | Default |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------- |
+| `channelID` | The ID of the channel to send the message to. You can get this by right-clicking the channel and selecting "Copy ID" (you must have Developer Mode enabled in Discord settings). | Yes      |         |
+| `message`   | The message to send. This can be plain text, embeds, buttons, menus, or any other valid Discord message content.                                                                 | Yes      |         |
+| `return ID` | `yes` or `no`. If `yes`, the ID of the sent message will be returned. Defaults to `no`. This is useful if you need to edit or delete the message later.                          | No       | `no`    |
 
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $channelSendMessage[879431439299543040;This is a fantastic message!;no]
-</DiscordMessageUser>
-<DiscordMessageBot>
-This is a fantastic message!
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $channelSendMessage[879431439299543040;This is a fantastic
+        message!;no]
+    </Message>
+    <Message bot>This is a fantastic message!</Message>
+</Discord>
 
 ## Examples
 
@@ -45,7 +44,7 @@ You can send more complex messages with features like footers and fields by usin
 
 <Callout type="info" title={"Related Functions"}>
 
-*   `$sendMessage`: Sends a message to the channel where the command was used.
+- `$sendMessage`: Sends a message to the channel where the command was used.
 
 </Callout>
 

@@ -21,6 +21,8 @@ interface MessageProps {
     replyAvatar?: string;
     replyColor?: string;
     file: string;
+    time: string;
+    edited: boolean;
     children?: React.ReactNode;
 }
 
@@ -42,6 +44,8 @@ export const Message = ({
     replyAvatar = userAvatar,
     replyColor = "#a7c7e7",
     file,
+    time = "",
+    edited = false,
     children = [],
 }: MessageProps) => {
     if (bot) {
@@ -51,15 +55,18 @@ export const Message = ({
     }
 
     const timestamp = getEditTime(file);
-    const editedAt = !isNaN(timestamp.getTime())
-        ? timestamp.toLocaleDateString()
-        : "01/01/0101";
+    const editedAt =
+        time != ""
+            ? time
+            : !isNaN(timestamp.getTime())
+              ? timestamp.toLocaleDateString()
+              : "01/01/0101";
 
     const { components, message } = filterChildren(children);
 
     return (
         <div
-            className={`flex flex-row min-w-full w-max my-0.5 py-0.75 px-3 gap-3 transition-colors border-l-2 ${mention ? "dark:bg-[#f8a30014] dark:hover:bg-[#f8a30009] bg-[#f8a30024] hover:bg-[#f8a30019] border-l-[#f8a300]/50" : ephemeral ? "bg-[rgba(88,101,242,0.1)] hover:bg-[rgba(88,101,242,0.18)] border-l-[rgba(88,101,242,0.5)]" : "not-dark:hover:bg-[rgba(0,0,0,0.04)] dark:hover:bg-[rgba(255,255,255,0.04)] border-l-transparent"}`}
+            className={`flex flex-row min-w-full w-fit my-0.5 py-0.75 px-2.5 gap-2.5 transition-colors border-l-2 ${mention ? "dark:bg-[#f8a30014] dark:hover:bg-[#f8a30009] bg-[#f8a30024] hover:bg-[#f8a30019] border-l-[#f8a300]/50" : ephemeral ? "bg-[rgba(88,101,242,0.1)] hover:bg-[rgba(88,101,242,0.18)] border-l-[rgba(88,101,242,0.5)]" : "not-dark:hover:bg-[rgba(0,0,0,0.04)] dark:hover:bg-[rgba(255,255,255,0.04)] border-l-transparent"}`}
         >
             <div className="flex shrink-0 flex-col">
                 {(slash !== "" || reply !== "") && (
@@ -80,7 +87,7 @@ export const Message = ({
                 )}
                 <img src={avatar} className="rounded-full m-0 mt-1 w-10 h-10" />
             </div>
-            <div className="flex flex-col text-zinc-800 dark:text-zinc-300 pr-4 w-full">
+            <div className="flex flex-col flex-1 text-zinc-800 dark:text-zinc-300 pr-4">
                 {slash !== "" && (
                     <div className="flex flex-row flex-nowrap whitespace-nowrap items-center gap-1 h-4.5 mb-0.5 text-xs text-black/50 dark:text-white/50">
                         <img
@@ -108,13 +115,13 @@ export const Message = ({
                     </div>
                 )}
                 {reply !== "" && (
-                    <div className="flex flex-row flex-nowrap whitespace-nowrap items-center gap-1 h-4.5 mb-0.5 text-xs text-black/50">
+                    <div className="flex flex-row flex-nowrap whitespace-nowrap items-center text-center gap-1 h-4.5 mb-0.5 text-xs text-black/50 dark:text-white/50">
                         <img
                             className="rounded-full m-0 h-4 w-4"
                             src={replyAvatar}
                         />
                         <div
-                            className="flex flex-row flex-nowrap text-nowrap items-center gap-1 h-4.5 mb-0.5 text-xs text-black/50"
+                            className="flex flex-row flex-nowrap text-nowrap items-center gap-1 h-4.5 text-xs text-black/50"
                             style={{ color: replyColor }}
                         >
                             @{replyUser}
@@ -125,7 +132,7 @@ export const Message = ({
 
                 <div className="flex gap-1.5 items-center">
                     <div
-                        className="text-nowrap font-semibold text-base"
+                        className="text-nowrap font-semibold text-[14.5px]"
                         style={{ color: color }}
                     >
                         {name}
@@ -145,8 +152,15 @@ export const Message = ({
 
                     <div className="text-xxs text-gray-500">{editedAt}</div>
                 </div>
-                <div className="text-sm prose leading-5.5">{message}</div>
+                <div className="discord-contents text-sm prose leading-5.5 whitespace-break-spaces *:first:mt-0!">
+                    {message}
+                </div>
                 {components}
+                {edited && (
+                    <div className="flex text-[9.5px] leading-3.5 items-center text-gray-500 dark:text-gray-500 h-5">
+                        (edited)
+                    </div>
+                )}
                 {ephemeral && (
                     <div className="flex flex-row text-xxs gap-1.25 mt-1.25 text-gray-500/50">
                         <svg
@@ -170,7 +184,12 @@ export const Message = ({
                             ></path>
                         </svg>
                         Only you can see this •
-                        <div style={{ color: "dodgerblue", cursor: "pointer" }}>
+                        <div
+                            style={{
+                                color: "dodgerblue",
+                                cursor: "pointer",
+                            }}
+                        >
                             Dismiss message
                         </div>
                     </div>

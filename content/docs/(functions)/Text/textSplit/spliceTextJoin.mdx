@@ -5,20 +5,16 @@ title: "$spliceTextJoin"
 Splits a text with `separator1`, then joins with it `separator2` every `x` times, and then joins with `separator3` every `x-1` times.
 
 ## Usage
+
 ```cc
 $spliceTextJoin[text;separator1;separator2;separator3;every]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $spliceTextJoin[1 2 3 4 5 6 7; ;+;-;2]
-</DiscordMessageUser>
-<DiscordMessageBot>
-1+2-3+4-5+6
-</DiscordMessageBot>
-</DiscordMessages>
 
-**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" /> 
+<Discord>
+    <Message>!!exec $spliceTextJoin[1 2 3 4 5 6 7; ;+;-;2]</Message>
+    <Message bot>1+2-3+4-5+6</Message>
+</Discord>
+
+**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" />
 
 **Tags:** <Tag text="Textsplit"/> <Tag text="Splice"/>
-

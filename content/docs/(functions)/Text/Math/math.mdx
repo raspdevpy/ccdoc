@@ -2,33 +2,27 @@
 title: "$math"
 ---
 
-Calculates numbers with any mathematically correct 
+Calculates numbers with any mathematically correct
 quantifier(s) in between.
 
 ## Usage
+
 ```cc
 $math[10*(2+5)/7*8-2]
 ```
+
 e## Usage
+
 ```cc
 $math[Expression;Name1=Value1;Name1=Value2]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $math[10*(2+5)/7*8-2]
-</DiscordMessageUser>
-<DiscordMessageBot>
-78
-</DiscordMessageBot>
-<DiscordMessageUser>
-!!exec Networth = $math[cash+bank;cash=100;bank=500]
-</DiscordMessageUser>
-<DiscordMessageBot>
-Networth = 600
-</DiscordMessageBot>
-</DiscordMessages>
 
+<Discord>
+    <Message>!!exec $math[10*(2+5)/7*8-2]</Message>
+    <Message bot>78</Message>
+    <Message>!!exec Networth = $math[cash+bank;cash=100;bank=500]</Message>
+    <Message bot>Networth = 600</Message>
+</Discord>
 
 <Callout type="info" title={"Alternatives"}>
 
@@ -43,14 +37,15 @@ Networth = 600
 </Callout>
 
 ## Valid Quantifiers
-Operator                 | Associativity | Description
-:----------------------- | :------------ | :----------
-(...)                    | None          | Grouping (brackets)
-!                        | Left          | Factorial
-^                        | Right         | Exponentiation
-+, -, sqrt               | Right         | Unary prefix operators
-\*, /, %                 | Left          | Multiplication, division, remainder
-+, -                     | Left          | Addition, subtraction
+
+| Operator   | Associativity | Description                         |
+| :--------- | :------------ | :---------------------------------- |
+| (...)      | None          | Grouping (brackets)                 |
+| !          | Left          | Factorial                           |
+| ^          | Right         | Exponentiation                      |
+| +, -, sqrt | Right         | Unary prefix operators              |
+| \*, /, %   | Left          | Multiplication, division, remainder |
+| +, -       | Left          | Addition, subtraction               |
 
 <Callout type="warn" title={"Are there any more advanced functions?"}>
 
@@ -58,6 +53,6 @@ There are more advanced functions located [here.](https://github.com/silentmatt/
 
 </Callout>
 
-**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
 **Tags:** <Tag text="Maths"/> <Tag text="Calculate"/>

@@ -11,21 +11,15 @@ $uri[decode/encode;text]
 ```
 
 ### Example (Encoding):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $uri[encode;Hello World]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Hello%20World<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $uri[encode;Hello World]</Message>
+    <Message bot>Hello%20World</Message>
+</Discord>
 
 ### Example (Decoding):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $uri[decode;Hello%20World]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Hello World
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $uri[decode;Hello%20World]</Message>
+    <Message bot>Hello World</Message>
+</Discord>

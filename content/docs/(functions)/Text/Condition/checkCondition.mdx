@@ -11,24 +11,19 @@ $checkCondition[Expression]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $checkCondition[$username==Mido]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-true<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $checkCondition[$username==Mido]</Message>
+    <Message bot>true</Message>
+</Discord>
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $checkCondition[10&#60;5]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-false
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $checkCondition[10&#60;5]</Message>
+    <Message bot>false</Message>
+</Discord>
 
 ## To know more about expressions
+
 Read about it [here](/Other/expression)

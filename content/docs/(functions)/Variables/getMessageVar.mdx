@@ -5,18 +5,15 @@ title: "$getMessageVar"
 Gets a message variable value
 
 ## Usage
+
 ```cc
 $getMessageVar[variable;messageID(optional)]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $getMessageVar[data]
-</DiscordMessageUser>
-<DiscordMessageBot>
-Mido
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $getMessageVar[data]</Message>
+    <Message bot>Mido</Message>
+</Discord>
 
 **Note:** The return value will be `undefined` if the variable was not defined for that message.
 

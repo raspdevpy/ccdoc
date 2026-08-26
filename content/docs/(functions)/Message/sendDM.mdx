@@ -7,45 +7,43 @@ title: "$sendDM"
 Sends the output of the code to the message author's DMs or to the DMs of a specified user.
 
 ## Usage
+
 ```cc
 $sendDM[userID;message]
 ```
 
-*   `userID`: (Optional) The ID of the user to send the DM to. If omitted, the DM will be sent to the message author.
-*   `message`: The message to send in the DM.
-
-<br/>
+- `userID`: (Optional) The ID of the user to send the DM to. If omitted, the DM will be sent to the message author.
+- `message`: The message to send in the DM.
 
 **Example 1: Sending a DM to the message author multiple times.**
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $sendDM[$authorID;I can add this multiple times in my code! This is time 1]
-$sendDM[$authorID;I can add this multiple times in my code! This is time 2]
-</DiscordMessageUser>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $sendDM[$authorID;I can add this multiple times in my code! This
+        is time 1] $sendDM[$authorID;I can add this multiple times in my code!
+        This is time 2]
+    </Message>
+</Discord>
 
-<br/>
-
-<DiscordMessages>
-<DiscordMessageBot author="Your Custom Bot">
-I can add this multiple times in my code! This is time 1
-</DiscordMessageBot>
-<DiscordMessageBot>
-I can add this multiple times in my code! This is time 2
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message bot botName="Custom Bot">
+        I can add this multiple times in my code! This is time 1
+    </Message>
+    <Message bot>
+        I can add this multiple times in my code! This is time 2
+    </Message>
+</Discord>
 
 <Callout type="info" title={"Note"}>
 
-You can send embeds using the [Message Curl Format](/Other/curl).  This allows you to create richly formatted messages within the DM.
+You can send embeds using the [Message Curl Format](/Other/curl). This allows you to create richly formatted messages within the DM.
 
 </Callout>
 
 <Callout type="info" title={"Related Functions"}>
 
-*   `$channelSendMessage`: Sends a message to a specific channel in the server.
-*   `$sendMessage`: Sends a message to the channel where the command was used.
+- `$channelSendMessage`: Sends a message to a specific channel in the server.
+- `$sendMessage`: Sends a message to the channel where the command was used.
 
 </Callout>
 

@@ -5,36 +5,27 @@ title: "$memberJoinedDate"
 Retrieves the date and time a member joined the server. You can specify a user ID or use it without any arguments to get the join date of the command executor.
 
 ## Usage
+
 ```cc
 $memberJoinedDate[userID;format(optional)] or $memberJoinedDate
-``` 
+```
 
-*   `userID`: (Optional) The ID of the member you want to retrieve the join date for. If omitted, it will use the command executor's join date.
-*   `format`: (Optional) Specifies whether to return the date or time.  Can be either `date` or `time`. If omitted, it returns the full date and time.
+- `userID`: (Optional) The ID of the member you want to retrieve the join date for. If omitted, it will use the command executor's join date.
+- `format`: (Optional) Specifies whether to return the date or time. Can be either `date` or `time`. If omitted, it returns the full date and time.
 
 **Examples:**
 
-<br/>
+<Discord>
+    <Message>!!exec $memberJoinedDate[725721249652670555;date]</Message>
+    <Message bot>Sat Oct 31 2020</Message>
+</Discord>
 
-<DiscordMessages>
-	<DiscordMessageUser>
-		!!exec $memberJoinedDate[725721249652670555;date]
-	</DiscordMessageUser>
-	<DiscordMessageBot>
-		Sat Oct 31 2020
-	</DiscordMessageBot>
-</DiscordMessages>
-
-<br/>
-
-<DiscordMessages>
-	<DiscordMessageUser>
-		!!exec $memberJoinedDate[725721249652670555]
-	</DiscordMessageUser>
-	<DiscordMessageBot>
-		Sat Oct 31 2020 10:55:30 GMT+0000 (Coordinated Universal Time)
-	</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $memberJoinedDate[725721249652670555]</Message>
+    <Message bot>
+        Sat Oct 31 2020 10:55:30 GMT+0000 (Coordinated Universal Time)
+    </Message>
+</Discord>
 
 <Callout type="info" title={"Timezone Information"}>
 
@@ -43,6 +34,5 @@ Date functions default to UTC timezone. You can customize the timezone by follow
 </Callout>
 
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Member Joined Date"/>

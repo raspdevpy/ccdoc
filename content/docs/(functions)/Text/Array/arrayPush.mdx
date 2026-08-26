@@ -11,11 +11,13 @@ $arrayPush[Value;array name (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $arrayPush[Mido]<br />$arrayPush[Rake]<br />$arrayPush[Azz]<br />$arrayJoin[/]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Mido/Rake/Azz
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $arrayPush[Mido]
+        $arrayPush[Rake]
+        $arrayPush[Azz]
+        $arrayJoin[/]
+    </Message>
+    <Message bot>Mido/Rake/Azz</Message>
+</Discord>

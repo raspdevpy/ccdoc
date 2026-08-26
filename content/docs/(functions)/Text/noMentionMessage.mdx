@@ -5,20 +5,19 @@ title: "$noMentionMessage"
 User's message without any mentions. (members, roles & channels)
 
 ## Usage
+
 ```cc
 $noMentionMessage
 ```
 
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec aaa <DiscordMention highlight>Member</DiscordMention> $noMentionMessage
-</DiscordMessageUser>
-<DiscordMessageBot>
-aaa
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message mention>
+        !!exec aaa <Mention />
+        $noMentionMessage
+    </Message>
+    <Message bot>aaa</Message>
+</Discord>
 
-**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
 **Tags:** <Tag text="Mentions"/> <Tag text="Disable Mentions"/>

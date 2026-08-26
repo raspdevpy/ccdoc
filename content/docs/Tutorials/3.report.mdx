@@ -47,21 +47,22 @@ $mention you report has been submitted, thank you for keeping our community safe
 ```
 
 ### Result
-<DiscordMessages>
-<DiscordMessageUser>
-!report <DiscordMention type="user">fajfaj</DiscordMention> breaking server rule #5
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordMention type="user" highlight="true">Member</DiscordMention> your report has been submitted, thank you for keeping our community safe.
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !report <Mention name="fajfaj" /> breaking server rule #5
+    </Message>
+    <Message bot>
+        <Mention /> your report has been submitted, thank you for keeping our community safe.
+    </Message>
+</Discord>
 
 Meanwhile in #reports
-<DiscordMessages>
-<DiscordMessageBot>
-<DiscordMention type="user" highlight="false">Member</DiscordMention> has reported <DiscordMention type="user">fajfaj</DiscordMention>, for breaking server rule #5
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message bot>
+        <Mention /> has reported <Mention name="fajfaj" />, for breaking server rule #5
+    </Message>
+</Discord>
 
 ### 🎉 Congrats!
 You've passed the course with grade A!

@@ -2,55 +2,52 @@
 title: "$regexMatch"
 ---
 
-Matches a string with the given Regex Pattern and returns the matched text or multiple matches seperated by the seperator 
+Matches a string with the given Regex Pattern and returns the matched text or multiple matches seperated by the seperator
 
 ## Usage
+
 ```cc
 $regexMatch[text;regexp;flags(optional);group index(optional, 0 by default) or all;separator (optional)]
 ```
 
 ## Note about Separator
+
 It can only be used when group index is `all`.\
 in case flag is `g` it will return all matches glued with that separator\
 in case flag is not `g` it will return the whole matched text and matched groups
 
 ### Example (Find the first number):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $regexMatch[Rake owns 50$ and has 18 properties.;\d+]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-50<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $regexMatch[Rake owns 50$ and has 18 properties.;\d+]
+    </Message>
+    <Message bot>50</Message>
+</Discord>
 
 ### Example (Find all numbers):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $regexMatch[Rake owns 50$ and has 18 properties.;\d+;g;all;/]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-50/18<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $regexMatch[Rake owns 50$ and has 18 properties.;\d+;g;all;/]
+    </Message>
+    <Message bot>50/18</Message>
+</Discord>
 
 ### Example (Find 2nd number only):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $regexMatch[Rake owns 50$ and has 18 properties.;\d+;g;1]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-18
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $regexMatch[Rake owns 50$ and has 18 properties.;\d+;g;1]
+    </Message>
+    <Message bot>18</Message>
+</Discord>
 
 <Callout type="info" title={"Regex Flags"}>
 
 These are all regex flags: `g, i, m, u, s, y.`
 
 </Callout>
-**Function difficulty:** <Badge type=" warning" text="Medium" vertical="middle" /> 
+**Function difficulty:** <Badge type=" warning" text="Medium" vertical="middle" />
 
 **Tags:** <Tag text="Regex"/> <Tag text="Search"/> <Tag text="Find"/> <Tag text="Search"/> <Tag text="Match"/>
-
-

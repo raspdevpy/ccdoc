@@ -8,9 +8,7 @@ Returns a random text from a list of provided texts. This function is useful for
 
 `$randomText[text1;text2;text3;...]`
 
-*   **text1;text2;text3;...**:  A semicolon-separated list of texts. The function will randomly choose one of these texts to return.
-
-<br/>
+- **text1;text2;text3;...**: A semicolon-separated list of texts. The function will randomly choose one of these texts to return.
 
 **Example:**
 
@@ -20,22 +18,15 @@ $randomText[Hello;Hi;Hey]
 
 This example will randomly return either "Hello", "Hi", or "Hey".
 
-<br/>
-
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec `$randomText[I'm sad;I'm very happy]`
-</DiscordMessageUser>
-<DiscordMessageBot>
-I'm very happy
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec `$randomText[I'm sad;I'm very happy]`</Message>
+    <Message bot>I'm very happy</Message>
+</Discord>
 
 **Explanation:**
 
-In this example, the command `!!exec $randomText[I'm sad;I'm very happy]` instructs the bot to execute the `$randomText` function with the options "I'm sad" and "I'm very happy".  The bot randomly selects one of these options and returns it, in this case, "I'm very happy".
+In this example, the command `!!exec $randomText[I'm sad;I'm very happy]` instructs the bot to execute the `$randomText` function with the options "I'm sad" and "I'm very happy". The bot randomly selects one of these options and returns it, in this case, "I'm very happy".
 
 **Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Random"/> <Tag text="Random Text"/> <Tag text="Choose"/> <Tag text="Return Random Text"/>

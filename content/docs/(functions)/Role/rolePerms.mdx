@@ -8,34 +8,26 @@ Returns the permissions a role has.
 
 `$rolePerms[roleID;separator (optional)]`
 
-*   `roleID`: The ID of the role to check.
-*   `separator`: (Optional) The separator to use when listing the permissions. Defaults to no separator.
-
-<br/>
+- `roleID`: The ID of the role to check.
+- `separator`: (Optional) The separator to use when listing the permissions. Defaults to no separator.
 
 **Example:**
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $rolePerms[$roleID[muted]; | ]
-</DiscordMessageUser>
-<DiscordMessageBot>
-View Channel | Read Message History
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $rolePerms[$roleID[muted]; | ]</Message>
+    <Message bot>View Channel | Read Message History</Message>
+</Discord>
 
 <Callout type="info" title={"Permissions List"}>
 
-For a comprehensive list of all permission names, refer to the [Permissions List](/Other/permission-list).  This list includes all the permissions a role can have.
-
+For a comprehensive list of all permission names, refer to the [Permissions List](/Other/permission-list). This list includes all the permissions a role can have.
 
 </Callout>
 
 <Callout type="info" title={"Related Functions"}>
 
-*   `$userPerms`: Returns a member's permissions.
+- `$userPerms`: Returns a member's permissions.
 
 </Callout>
 
 **Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" />
-

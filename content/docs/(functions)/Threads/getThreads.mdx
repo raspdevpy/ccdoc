@@ -4,18 +4,14 @@ title: "$getThreads"
 
 Get all threads from a channel.
 
-## Usage: 
+## Usage:
+
 `$getThreads[Channel ID;Type to return (name/id);Seperator (default:, )]`
 
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $getThreads[$channelID;name; | ]
-</DiscordMessageUser>
-<DiscordMessageBot>
-Cat Disscussion | Help
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $getThreads[$channelID;name; | ]</Message>
+    <Message bot>Cat Disscussion | Help</Message>
+</Discord>
 
 <Callout type="info">
 
@@ -23,6 +19,6 @@ This Command supports Curl Arguments, a link to the page explaining it, will get
 
 </Callout>
 
-**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" /> 
+**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" />
 
 **Tags:** <Tag text="Channel"/> <Tag text="Get Functions/ get thread"/> <Tag text="Threads"/> <Tag text="Info Threads"/>

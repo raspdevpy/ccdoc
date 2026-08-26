@@ -5,43 +5,34 @@ title: "$description"
 Adds a description to a message embed.
 
 ## Usage
+
 ```cc
 $description[your text]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $description[This is a description]
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds">
-This is a description
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $description[This is description]</Message>
+    <Message bot>
+        <Embed>This is description</Embed>
+    </Message>
+</Discord>
 
 Description with hyperlinks:
-Usage:  `\[link\](https://ccommandbot.com "tooltip(optional)")`
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $description[This is a description with \[link\](https://ccommandbot.com "tooltip")]
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds">
-This is a description <a href="https://ccommandbot.com" target="_blank" title="tooltip">hello</a>
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+Usage: `\[link\](https://ccommandbot.com "tooltip(optional)")`
+
+<Discord>
+    <Message>
+        !!exec $description[This is description with \[link\](https://ccommandbot.com)]
+    </Message>
+    <Message bot>
+        <Embed>
+            This is description with [link](https://ccommandbot.com)
+        </Embed>
+    </Message>
+</Discord>
 
 <Callout type="info" title={"Do you want to add an embed inside a Function as paramter like $sendmessage[text]"}>
 
-
 Use: `{description:your text}`
-
-</Callout>
-
-<Callout type="error" title={"Please be aware!!"}>
-
-If you add any `:` in this function it will error! Check out [this](/Guide/syntax)
 
 </Callout>

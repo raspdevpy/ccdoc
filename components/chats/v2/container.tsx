@@ -10,7 +10,7 @@ export const Container = ({
     children = [],
 }: ContainerProps) => {
     return (
-        <div className="discord-container flex max-w-lg self-start rounded-md bg-white dark:bg-[#202023] gap-2 pr-3.5 overflow-hidden border border-gray-500/30 mt-1 mb-0.5">
+        <div className="[&_.discord-mention]:py-px! [&_.discord-mention]:px-1! [&_.discord-mention]:text-[11px]! flex max-w-lg self-start rounded-md bg-white dark:bg-[#202023] gap-2 pr-3.5 overflow-hidden border border-gray-500/30 mt-1 mb-0.5">
             <div
                 className="border-none w-1 shrink-0"
                 style={{ backgroundColor: color }}

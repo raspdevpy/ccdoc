@@ -11,6 +11,7 @@ The `$blackListIDs` function allows you to restrict access to a command for a sp
 ```cc
 $blackListIDs[userID;userID;...;error message]
 ```
+
 1. **userID** - This makes user not able to run this command. You can add as many userIDs as you want, separated with semicolon (`;`).
 2. **error message** - (Optional) default value: (none). If a blacklisted user attempts to run this command, this message will be sent. If empty, no message will be sent.
 
@@ -20,14 +21,14 @@ $blackListIDs[userID;userID;...;error message]
 
 How to blacklist a user from the command
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $blackListIDs[$authorID;You are blacklisted from using this command!]<br />Message
-</DiscordMessageUser>
-<DiscordMessageBot>
-You are blacklisted from using this command!
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $blackListIDs[$authorID;You are blacklisted from using this
+        command!]
+        Message
+    </Message>
+    <Message bot>You are blacklisted from using this command!</Message>
+</Discord>
 
 **Related Functions:** `$blackListRoleIds` `$blackListChannelIDs` `$onlyForIDs` `$onlyForRoles`
 

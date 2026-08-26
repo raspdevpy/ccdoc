@@ -11,17 +11,17 @@ $objectRemove[Key;Key...(Optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $objectSet[Name;Mido]<br />
-$objectSet[Country;EG]<br />
-Before: $getObject<br />
-$objectRemove[Name]<br />
+
+<Discord>
+<Message>
+!!exec $objectSet[Name;Mido]
+$objectSet[Country;EG]
+Before: $getObject
+$objectRemove[Name]
 After: $getObject
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Before: \{"Name":"Mido","Country":"EG"}
-<br />
 After: \{"Country":"EG"}
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>

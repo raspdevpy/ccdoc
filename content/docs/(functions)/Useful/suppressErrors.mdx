@@ -4,22 +4,19 @@ title: "$suppressErrors"
 
 Suppress all the errors and sends a custom one. \{error} will contain the error that was thrown.
 
-## Usage: 
+## Usage:
+
 `$suppressErrors[message]`
 
 #### Example:
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-<DiscordMarkdown>
-!!exec $suppressErrors[Wrong usage of $modifyChannelPerms]
-$modifyChannelPerms[$authorID;-sendmessages;$channelID]
-</DiscordMarkdown>
-</DiscordMessageUser>
-<DiscordMessageBot>
-Wrong usage of $modifyChannelPerms
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $suppressErrors[Wrong usage of $modifyChannelPerms]
+        $modifyChannelPerms[$authorID;-sendmessages;$channelID]
+    </Message>
+    <Message bot>Wrong usage of $modifyChannelPerms</Message>
+</Discord>
 
 <Callout type="info" title={"Note"}>
 
@@ -29,13 +26,12 @@ You can send embed using [Message Curl Format](/Other/curl)
 
 <Callout type="error">
 
-The way `$modifyChannelPerms` shown here is **NOT** correct! 
+The way `$modifyChannelPerms` shown here is **NOT** correct!
 
 Check the `$modifyChannelPerms` for the correct usage
 
 </Callout>
 
-**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
-**Tags:** <Tag text="Error"/>  <Tag text="Custom Message"/>  <Tag text="Wrong Usage"/>  <Tag text="Trown Error"/> 
-
+**Tags:** <Tag text="Error"/> <Tag text="Custom Message"/> <Tag text="Wrong Usage"/> <Tag text="Trown Error"/>

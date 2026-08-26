@@ -10,37 +10,31 @@ Checks if a role exists within the server and returns a boolean value (true or f
 
 **Parameters:**
 
-*   `Role Name or ID`: The Name/ID of the role you want to check.
-
-<br/>
+- `Role Name or ID`: The Name/ID of the role you want to check.
 
 **Example:**
-<DiscordMessages>
-	<DiscordMessageUser>
-		!!exec $roleExists[Muted]
-	</DiscordMessageUser>
-	<DiscordMessageBot>
-		true
-	</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $roleExists[Muted]</Message>
+    <Message bot>true</Message>
+</Discord>
 
 **Explanation:**
 
-This example checks if a role with the name "muted" exists on the server.  First, `$roleID[muted]` resolves to the role ID of the role named "muted" (if it exists).  Then, `$roleExists` checks if a role with that ID exists. The command returns `true` if the role exists and `false` if it doesn't.
+This example checks if a role with the name "muted" exists on the server. First, `$roleID[muted]` resolves to the role ID of the role named "muted" (if it exists). Then, `$roleExists` checks if a role with that ID exists. The command returns `true` if the role exists and `false` if it doesn't.
 
 <Callout type="info" title={"Used Functions"}>
 
-*   `$roleID`:  Retrieves a role's ID by its name.
+- `$roleID`: Retrieves a role's ID by its name.
 
 </Callout>
 
 <Callout type="info" title={"Related Functions"}>
 
-*   `$findRole`:  Finds roles by name or mention.
+- `$findRole`: Finds roles by name or mention.
 
 </Callout>
 
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Role"/> <Tag text="Exists"/> <Tag text="Check"/> <Tag text="Is Real"/> <Tag text="Server Role"/>

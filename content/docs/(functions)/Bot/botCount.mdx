@@ -17,14 +17,14 @@ Here's how you can use the `$botCount` function:
 
 This command, when executed, will display a message showing the bot count in the server.  See the example next:
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec There are $botCount bots in the server!
-</DiscordMessageUser>
-<DiscordMessageBot>
-There are 2 bots in the server!
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec There are $botCount bots in the server!
+    </Message>
+    <Message bot>
+        There are 2 bots in the server!
+    </Message>
+</Discord>
 
 <Callout type="error" title={"Warning"}>
 

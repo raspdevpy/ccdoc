@@ -11,11 +11,17 @@ $arrayShift[array name (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSplit[Mido/Rake/Azz;/]<br />first one is $arrayShift<br />after it is $arrayShift<br />after it is $arrayShift<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-first one is Mido<br />after it is Rake<br />after it is Azz
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textSplit[Mido/Rake/Azz;/]
+        first one is $arrayShift
+        after it is $arrayShift
+        after it is $arrayShift
+    </Message>
+    <Message bot>
+        first one is Mido
+        after it is Rake
+        after it is Azz
+    </Message>
+</Discord>

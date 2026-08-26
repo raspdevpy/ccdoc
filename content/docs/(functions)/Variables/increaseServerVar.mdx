@@ -12,6 +12,7 @@ $increaseServerVar[variable name;amount/expression;default amount (default is 0)
 ```
 
 ### Example (increase ticket numbers by 1):
+
 ```cc
 $increaseServerVar[ticket numbers;1]
 
@@ -19,11 +20,11 @@ $increaseServerVar[ticket numbers;1]
 ```
 
 ### Example (double the messages):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec Before: $getServerVar[ticket numbers]<br />$increaseServerVar[ticket numbers;x*2]<br />After: $getServerVar[ticket numbers]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Before: 5<br />After: 10
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec Before: $getServerVar[ticket numbers] $increaseServerVar[ticket
+        numbers;x*2] After: $getServerVar[ticket numbers]
+    </Message>
+    <Message bot>Before: 5 After: 10</Message>
+</Discord>

@@ -4,20 +4,18 @@ title: "$replaceTextWithRegex"
 
 Uses a regular expression to replace matching queries
 
-## Usage: 
+## Usage:
+
 `$replaceTextWithRegex[text;regex;flags;new text]`
 
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $replaceTextWithRegex[Today is my birthday;/(birthday|party)/;gi;birthday 🎉]
-</DiscordMessageUser>
-<DiscordMessageBot>
-Today is my birthday 🎉
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $replaceTextWithRegex[Today is my
+        birthday;/(birthday|party)/;gi;birthday 🎉]
+    </Message>
+    <Message bot>Today is my birthday 🎉</Message>
+</Discord>
 
-
-**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
 **Tags:** <Tag text="Replace Text With Regex"/> <Tag text="Replace"/> <Tag text="Regex"/>

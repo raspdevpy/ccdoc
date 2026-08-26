@@ -11,24 +11,25 @@ $viewUserVars[User ID;Separator (optional);Query Regex (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $viewUsersVars[$authorID]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-xp, money, bonus, xp-global
-</DiscordMessageBot>
-<DiscordMessageUser>
-!!exec $viewUsersVars[$authorID;/]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-xp/money/bonus/xp-global
-</DiscordMessageBot>
-<DiscordMessageUser>
-!!exec $viewUsersVars[$authorID;/;xp]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-xp/x-global
-</DiscordMessageBot>
 
-</DiscordMessages>
+<Discord>
+<Message>
+!!exec $viewUsersVars[$authorID]
+</Message>
+<Message bot>
+xp, money, bonus, xp-global
+</Message>
+<Message>
+!!exec $viewUsersVars[$authorID;/]
+</Message>
+<Message bot>
+xp/money/bonus/xp-global
+</Message>
+<Message>
+!!exec $viewUsersVars[$authorID;/;xp]
+</Message>
+<Message bot>
+xp/x-global
+</Message>
+
+</Discord>

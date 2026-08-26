@@ -15,3 +15,4 @@ export { RButtons } from "./v2/buttons";
 export { Section } from "./v2/section";
 export { Separator } from "./v2/separator";
 export { Thumbnail } from "./v2/thumbnail";
+export { Reactions, Reaction } from "./other/reactions";

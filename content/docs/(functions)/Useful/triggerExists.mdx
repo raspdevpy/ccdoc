@@ -11,21 +11,21 @@ $triggerExists[Token]
 ```
 
 ### Example (An existing trigger):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $triggerExists[fx1d53]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-true<br /><br />
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+<Message>
+!!exec $triggerExists[fx1d53]
+</Message>
+<Message bot>
+true
+</Message>
+</Discord>
 
 ### Example (not available trigger):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $triggerExists[abcdef]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
+<Discord>
+<Message>
+!!exec $triggerExists[abcdef]
+</Message>
+<Message bot>
 false
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>

@@ -5,25 +5,24 @@ title: "$findTextSplitIndex"
 returns the index of the first occurrence of a value in an array from `$textsplit`
 
 ## Usage
+
 ```cc
 $findTextSplitIndex[value]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textsplit[Rake Wiki Mika Mido; ] <br /> $findTextSplitIndex[Wiki]
-</DiscordMessageUser>
-<DiscordMessageBot>
-2
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textsplit[Rake Wiki Mika Mido; ] $findTextSplitIndex[Wiki]
+    </Message>
+    <Message bot>2</Message>
+</Discord>
 
 <Callout type="error">
 
-This function got deprecated, use `$arraySearch` instead 
+This function got deprecated, use `$arraySearch` instead
 
 </Callout>
 
-**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
 **Tags:** <Tag text="Search"/> <Tag text="Textsplit"/> <Tag text="Array"/> <Badge type="find" text="textsplit" vertical="middle" /> <Tag text="Index"/>

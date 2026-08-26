@@ -22,24 +22,24 @@ $latestMessage[Channel ID (defaults to current channel);User ID (defaults to all
 
 This example retrieves the content of the most recent message in the current channel.
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec $latestMessage[$channelID]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Hello World
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 ### Example 2: Return the Latest Message ID
 
 This example retrieves the ID of the most recent message from any user in the current channel.
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !!exec $latestMessage[$channelID;everyone;yes]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 1234567890
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>

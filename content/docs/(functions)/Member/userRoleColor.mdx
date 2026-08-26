@@ -9,6 +9,7 @@ Returns the hex color code of the users highest role.
 ```cc
 $userRoleColor[userID]
 ```
+
 1. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to return top role color from.
 
 ## Example
@@ -17,20 +18,16 @@ $userRoleColor[userID]
 
 How to use $userRoleColor
 
-<DiscordMessages>
-<DiscordMessageUser author="User">
-!!exec $userRoleColor
-</DiscordMessageUser>
-<DiscordMessageBot>
-#d6e0ff
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $userRoleColor</Message>
+    <Message bot>#d6e0ff</Message>
+</Discord>
 
 <Callout type="warn" title={"Cache"}>
 
 This function works on the bot's cache to find members.
 If the user is not cached, the function will not find them.
-User will be cached after they trigger any command from this bot, but eventually they will get deleted.<br />
+User will be cached after they trigger any command from this bot, but eventually they will get deleted.  
 To have all members cached, you will need Tier 5 Bot.
 
 </Callout>

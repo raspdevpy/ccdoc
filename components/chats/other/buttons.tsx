@@ -46,7 +46,7 @@ export const Button = ({
             <div className={`${inline ? "" : "basis-full"} h-0`}></div>
             {url == "" && (
                 <div
-                    className={`flex w-fit min-w-15 h-8 py-px px-2 rounded-lg items-center justify-center border border-gray-400/20 cursor-pointer font-medium text-sm gap-1.5 ${seeThrough ? "dark:text-white text-black" : "text-white"}`}
+                    className={`flex w-fit min-w-14 h-7.5 py-px px-2 rounded-lg items-center justify-center border border-gray-400/20 cursor-pointer font-medium text-sm gap-1.5 ${seeThrough ? "dark:text-white text-black" : "text-white"}`}
                     style={{ backgroundColor: styleColor }}
                 >
                     {image != "" && (

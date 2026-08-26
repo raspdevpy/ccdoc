@@ -12,7 +12,7 @@ $imageStrokeWidth[width]
 
 ### Parameters:
 
-*   **`width`**: The desired thickness of the stroke line, measured in pixels. The default value is `1`.  A higher number results in a thicker line.
+- **`width`**: The desired thickness of the stroke line, measured in pixels. The default value is `1`. A higher number results in a thicker line.
 
 # Understanding Position (X & Y)
 
@@ -26,12 +26,13 @@ To learn more about defining the size of elements using Width and Height, please
 
 This example demonstrates how to create a red square with a stroke thickness of 10 pixels, centered on a 300x300 canvas.
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $imageCreate[300;300]<br />$imagePositionBase[center]<br />$imageStrokeWidth[10]<br />$imageStroke[red;center;center;50;50]<br />$image[$imageOutput]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds" image="https://i.imgur.com/0pqE9Ds.png"><br />
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $imageCreate[300;300] $imagePositionBase[center]
+        $imageStrokeWidth[10] $imageStroke[red;center;center;50;50]
+        $image[$imageOutput]
+    </Message>
+    <Message bot>
+        <Embed image="https://i.imgur.com/0pqE9Ds.png"></Embed>
+    </Message>
+</Discord>

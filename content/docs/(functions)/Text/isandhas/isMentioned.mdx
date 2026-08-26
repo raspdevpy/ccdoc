@@ -2,25 +2,24 @@
 title: "$isMentioned"
 ---
 
-Checks if the given id of userID/roleID/channelID/everyone is Mentioned ,returns true or false 
+Checks if the given id of userID/roleID/channelID/everyone is Mentioned ,returns true or false
 
 ## Usage
+
 ```cc
 $isMentioned[userID/roleID/channelID/everyone]
 ```
-Example:
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $mention $isMentioned[$authorID]
-</DiscordMessageUser>
-<DiscordMessageBot>
-true
-</DiscordMessageBot>
-</DiscordMessages>
 
-**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+Example:
+
+<Discord>
+    <Message>!!exec $mention $isMentioned[$authorID]</Message>
+    <Message bot>true</Message>
+</Discord>
+
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
 ###### Tags:
-<Tag text="Is"/> 
-<Tag text="Mentioned"/> 
+
+<Tag text="Is" />
+<Tag text="Mentioned" />

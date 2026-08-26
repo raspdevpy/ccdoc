@@ -5,36 +5,36 @@ title: "$author"
 Adds an author to a message embed, with an optional icon url and/or hyperlink.
 
 ## Usage
+
 ```cc
 $author[text;icon url(optional);hyperlink(optional)]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $author[text]
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds" authorName="text">
-</DiscordEmbed>
-</DiscordMessageBot>
-<DiscordMessageUser>
-!!exec $author[text;$authorAvatar]
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds" authorName="text" authorIcon="https://cdn.discordapp.com/attachments/654503812593090602/665721745466195978/blue.png">
-</DiscordEmbed>
-</DiscordMessageBot>
-<DiscordMessageUser>
-!!exec $author[text;$authorAvatar;https://ccommandbot.com]
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds" authorName="text" authorIcon="https://cdn.discordapp.com/attachments/654503812593090602/665721745466195978/blue.png" authorUrl="https://ccommandbot.com">
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $author[Member]</Message>
+    <Message bot>
+        <Embed author="Member"></Embed>
+    </Message>
+    <Message>!!exec $author[Member;$authorAvatar]</Message>
+    <Message bot>
+        <Embed
+            author="Member"
+            authorAvatar="member"
+        ></Embed>
+    </Message>
+    <Message>
+        !!exec $author[text;$authorAvatar;https://ccommandbot.com]
+    </Message>
+    <Message bot>
+        <Embed
+            author="Member"
+            authorAvatar="member"
+            authorUrl="https://ccommandbot.com"
+        ></Embed>
+    </Message>
+</Discord>
 
 <Callout type="info" title={"Do you want to add an embed inside a Function as paramter like $sendmessage[text]"}>
-
 
 Use: `{author:text:icon url(optional):hyper link(optional)}`
 

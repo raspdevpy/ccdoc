@@ -11,16 +11,32 @@ If multiple values are selected, all of them will be returned, separated with `,
 ```cc
 $awaitMenu[Message (optional);user id (optional, default:author);timeout (optional, default:15s);menu id1 (optional);menu id2...]
 ```
+
 ### Timeout
+
 The maximum time the bot waits for a user to select an option.\
 Accepts time in the format `10s` for example.\
 The max time is `60 x (bot tier + 1)` seconds, for example for tier 3 it would be `240` seconds.
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec You selected: $awaitMenu[<br />\{title: Test}<br />\{menu:<br />    \{id=test}<br />    \{placeholder=Select}<br />    \{min=1}<br />    \{max=1}<br />    \{option=Mido}<br />    \{desc=A guy}<br />    \{value=mido}<br />    \{option=Rake}<br />    \{desc=Another guy}<br />    \{value=rake}<br />}<br />;$authorID;;test]<br /><br />
-</DiscordMessageUser>
-</DiscordMessages>
+
+<Discord>
+<Message>
+!!exec You selected: $awaitMenu[
+<Tab/>\{title: Test}
+<Tab/>\{menu:
+<Tab/>\{id=test}
+<Tab/>\{placeholder=Select}
+<Tab/>\{min=1}
+<Tab/>\{max=1}
+<Tab/>\{option=Mido}
+<Tab/>\{desc=A guy}
+<Tab/>\{value=mido}
+<Tab/>\{option=Rake}
+<Tab/>\{desc=Another guy}
+<Tab/>\{value=rake}
+};$authorID;;test]
+</Message>
+</Discord>
 
 ![](https://i.imgur.com/58Wzc05.gif)

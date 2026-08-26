@@ -5,31 +5,23 @@ title: "$hasRole"
 Determines if a user possesses a specific role within the server. Returns `true` if the user has the role, and `false` otherwise.
 
 ## Usage
+
 ```cc
 $hasRole[userID;roleID]
 ```
 
-*   **userID:** The ID of the user you want to check. You can use `$authorID` to check the message author.
-*   **roleID:** The ID of the role you want to check for.
-
-<br/>
+- **userID:** The ID of the user you want to check. You can use `$authorID` to check the message author.
+- **roleID:** The ID of the role you want to check for.
 
 **Example:**
 
 Checks if the message author has the role with the ID `99871..xx`.
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $hasRole[$authorid;99871..xx]
-</DiscordMessageUser>
-<DiscordMessageBot>
-false
-</DiscordMessageBot>
-</DiscordMessages>
-
-<br/>
+<Discord>
+    <Message>!!exec $hasRole[$authorid;99871..xx]</Message>
+    <Message bot>false</Message>
+</Discord>
 
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Has"/> <Tag text="Role"/>

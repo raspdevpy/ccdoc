@@ -10,27 +10,22 @@ This function retrieves the URL of the first attachment found in a message. If a
 $messageAttachment
 ```
 
-<br/>
-
 #### Example:
 
 This example demonstrates how `$messageAttachment` can be used.
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $messageAttachment
-</DiscordMessageUser>
-<DiscordMessageBot>
-https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>!!exec $messageAttachment</Message>
+    <Message bot>
+        https://media.discordapp.net/avatars/725721249652670555/781224f90c3b841ba5b40678e032f74a.webp
+    </Message>
+</Discord>
 
 **Explanation:**
 
-*   The member sends the command `!!exec $messageAttachment`.
-*   The bot returns the URL of the first attachment in the member's message. If the message does not contain any attachment it will return an empty string.
+- The member sends the command `!!exec $messageAttachment`.
+- The bot returns the URL of the first attachment in the member's message. If the message does not contain any attachment it will return an empty string.
 
 **Function Difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
-
 
 **Tags:** <Tag text="Attachment"/> <Tag text="Message"/>

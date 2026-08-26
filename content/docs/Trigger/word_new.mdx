@@ -49,28 +49,28 @@ Hello $username!
 
 The command will trigger when a message starts with `!hello`.
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 !hello
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Hello Member!
-</DiscordMessageBot>
-<DiscordMessageUser>
+</Message>
+<Message>
 !hello everyone
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Hello Member!
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 However, a message where `!hello` appears later will not trigger the command.
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 Hey !hello
-</DiscordMessageUser>
-</DiscordMessages>
+</Message>
+</Discord>
 
 This is useful for traditional commands such as `!help`, `?report`, or `!hug`.
 
@@ -92,28 +92,28 @@ Good morning, $username!
 
 The command will trigger when the message ends with `good morning`.
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 Everyone, good morning
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Good morning, Member!
-</DiscordMessageBot>
-<DiscordMessageUser>
+</Message>
+<Message>
 Good morning
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Good morning, Member!
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 A message where the text appears in the middle will not trigger the command.
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 Good morning everyone!
-</DiscordMessageUser>
-</DiscordMessages>
+</Message>
+</Discord>
 
 
 ## Contains
@@ -133,20 +133,20 @@ and if the response code is
 
 will trigger whenever `banana` appears in the message.
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 I really like bananas!
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 🍌 Banana detected!
-</DiscordMessageBot>
-<DiscordMessageUser>
+</Message>
+<Message>
 Does anyone have a banana?
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 🍌 Banana detected!
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 The text does not need to be at the beginning or end of the message.
 
@@ -170,14 +170,14 @@ You have mentioned $username[$mentioned]!
 
 This can detect mentions such as:
 
-<DiscordMessages>
-<DiscordMessageUser>
-Hey <DiscordMention type="user">Mido</DiscordMention>!
-</DiscordMessageUser>
-<DiscordMessageBot>
+<Discord>
+<Message>
+Hey <Mention name="Mido" />!
+</Message>
+<Message bot>
 You have mentioned Mido!
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 Regex can be used to create much more advanced message matching rules.
 
@@ -198,15 +198,15 @@ This can be useful for creating commands that automatically react to images, fil
 
 For example:
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 Check out this image!
 [attachment: image.png]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Nice image!
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 The message does not need to contain any particular text.
 
@@ -217,14 +217,14 @@ The **Discord Pin Message** option triggers when Discord sends a system message 
 
 For example:
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 [Discord system message: A message was pinned]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 A message was pinned!
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 This can be useful for automatically responding when someone pins a message.
 
@@ -235,14 +235,14 @@ The **Discord Thread Created Message** option triggers when Discord sends a syst
 
 For example:
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 [Discord system message: A thread was created]
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 A new thread has been created!
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 This can be useful for automatically responding to newly created threads.
 
@@ -265,30 +265,30 @@ The **Has User Mention/Ping** option triggers when a message contains a mention 
 
 For example:
 
-<DiscordMessages>
-<DiscordMessageUser>
-Hey <DiscordMention type="user">Mido</DiscordMention>, check this out!
-</DiscordMessageUser>
-<DiscordMessageBot>
+<Discord>
+<Message>
+Hey <Mention name="Mido" />, check this out!
+</Message>
+<Message bot>
 Someone was mentioned!
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 The mention can appear anywhere in the message.
 
 For example, all of these can trigger the command:
 
-<DiscordMessages>
-<DiscordMessageUser>
-<DiscordMention type="user">Mido</DiscordMention> hello!
-</DiscordMessageUser>
-<DiscordMessageUser>
-Hello <DiscordMention type="user">Mido</DiscordMention>!
-</DiscordMessageUser>
-<DiscordMessageUser>
-Can someone help <DiscordMention type="user">Mido</DiscordMention>?
-</DiscordMessageUser>
-</DiscordMessages>
+<Discord>
+<Message>
+<Mention name="Mido" /> hello!
+</Message>
+<Message>
+Hello <Mention name="Mido" />!
+</Message>
+<Message>
+Can someone help <Mention name="Mido" />?
+</Message>
+</Discord>
 
 
 ## Forwarded Message
@@ -297,16 +297,16 @@ The **Forwarded Message** option triggers when a message contains a forwarded Di
 
 For example:
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 [Forwarded message]
 
 This is the original message. 
-</DiscordMessageUser> 
-<DiscordMessageBot>
+</Message> 
+<Message bot>
 A message was forwarded! 
-</DiscordMessageBot> 
-</DiscordMessages>
+</Message> 
+</Discord>
 
 This allows you to create commands that react specifically to forwarded messages without needing to inspect their text.
 
@@ -317,14 +317,14 @@ The **Discord AutoMod Action Message** option triggers when Discord AutoMod take
 
 For example, when a user sends a message that violates an AutoMod rule:
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 This message triggered AutoMod
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 AutoMod has detected a violation.
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 The user who triggered the AutoMod action is considered the executor of the command.
 
@@ -339,20 +339,20 @@ It does not matter what the message contains.
 
 For example, a command configured with **Every Message** could automatically respond to messages:
 
-<DiscordMessages>
-<DiscordMessageUser>
+<Discord>
+<Message>
 Hello everyone!
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Have a great day!
-</DiscordMessageBot>
-<DiscordMessageUser>
+</Message>
+<Message>
 Does anyone want to play?
-</DiscordMessageUser>
-<DiscordMessageBot>
+</Message>
+<Message bot>
 Have a great day!
-</DiscordMessageBot>
-</DiscordMessages>
+</Message>
+</Discord>
 
 This can be useful for automatic responses, message logging, counters, or other systems that need to process every message.
 

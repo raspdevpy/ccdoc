@@ -12,8 +12,8 @@ $imageCreate[width;height]
 
 **Parameters:**
 
-*   **width:** The width of the new image in pixels.
-*   **height:** The height of the new image in pixels.
+- **width:** The width of the new image in pixels.
+- **height:** The height of the new image in pixels.
 
 **Returns:**
 
@@ -29,12 +29,11 @@ $imageFill[red]
 $image[$imageOutput]
 ```
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $imageCreate[300;300]<br />$imageFill[red]<br />$image[$imageOutput]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-<DiscordEmbed slot="embeds" image="https://i.imgur.com/Qoz7xDW.png">
-</DiscordEmbed>
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $imageCreate[300;300] $imageFill[red] $image[$imageOutput]
+    </Message>
+    <Message bot>
+        <Embed image="https://i.imgur.com/Qoz7xDW.png"></Embed>
+    </Message>
+</Discord>

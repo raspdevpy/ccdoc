@@ -12,6 +12,7 @@ $increaseUserVar[variable name;amount/expression;user id;default amount (default
 ```
 
 ### Example (increase user money by 1000):
+
 ```cc
 $increaseUserVar[money;1000]
 
@@ -19,11 +20,11 @@ $increaseUserVar[money;1000]
 ```
 
 ### Example (double the money):
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec Before: $getUserVar[money]<br />$increaseUserVar[money;x*2]<br />After: $getUserVar[money]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Before: 1000<br />After: 2000
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec Before: $getUserVar[money] $increaseUserVar[money;x*2] After:
+        $getUserVar[money]
+    </Message>
+    <Message bot>Before: 1000 After: 2000</Message>
+</Discord>

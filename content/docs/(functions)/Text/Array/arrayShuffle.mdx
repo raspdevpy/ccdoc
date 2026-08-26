@@ -11,11 +11,12 @@ $arrayShuffle[array name (optional)]
 ```
 
 ### Example:
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $textSplit[Rake/Azz/Mido;/]<br />$arrayShuffle<br />$arrayJoin[/]<br /><br />
-</DiscordMessageUser>
-<DiscordMessageBot>
-Azz/Mido/Rake
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>
+        !!exec $textSplit[Rake/Azz/Mido;/]
+        $arrayShuffle
+        $arrayJoin[/]
+    </Message>
+    <Message bot>Azz/Mido/Rake</Message>
+</Discord>

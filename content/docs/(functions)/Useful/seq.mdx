@@ -2,21 +2,18 @@
 title: "$seq"
 ---
 
-Returns a sequence of numbers, decided by a starting (inclusive) number and stop at ending (inclusive) number with step. 
+Returns a sequence of numbers, decided by a starting (inclusive) number and stop at ending (inclusive) number with step.
 
-## Usage: 
+## Usage:
+
 `$seq[Start;End;Step (optional, default=1);Separator (default ' ')]`
 
 #### Example:
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $seq[1;10]
-</DiscordMessageUser>
-<DiscordMessageBot>
-1 2 3 4 5 6 7 8 9 10
-</DiscordMessageBot>
-</DiscordMessages>
+
+<Discord>
+    <Message>!!exec $seq[1;10]</Message>
+    <Message bot>1 2 3 4 5 6 7 8 9 10</Message>
+</Discord>
 
 <Callout type="info">
 
@@ -24,6 +21,6 @@ This can be used with `$forEach` quite easily
 
 </Callout>
 
-**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" /> 
+**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" />
 
-**Tags:** <Tag text="Sequence"/>  <Tag text="Numbers List"/>  <Tag text="Return List"/>  <Tag text="For Each"/> 
+**Tags:** <Tag text="Sequence"/> <Tag text="Numbers List"/> <Tag text="Return List"/> <Tag text="For Each"/>

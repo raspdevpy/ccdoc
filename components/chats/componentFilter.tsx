@@ -6,7 +6,7 @@ export function filterChildren(children: React.ReactNode) {
     const components: React.ReactNode[] = [];
     const message: React.ReactNode[] = [];
 
-    const filter = new Set<React.JSXElementConstructor<any>>([Mention, Emoji]);
+    const keep = new Set<React.JSXElementConstructor<any>>([Mention, Emoji]);
 
     everything.forEach((child) => {
         if (!React.isValidElement(child)) {
@@ -19,7 +19,7 @@ export function filterChildren(children: React.ReactNode) {
             return;
         }
 
-        if (filter.has(child.type)) {
+        if (keep.has(child.type)) {
             message.push(child);
         } else {
             components.push(child);

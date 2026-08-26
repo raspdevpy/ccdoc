@@ -17,32 +17,31 @@ The bot requires the `Manage Webhooks` permission in the target channel to execu
 </Callout>
 
 ## Usage
+
 ```cc
 $createWebhook[channelID;name;avatarURL;returnWebhookID&Token (yes/no);separator]
 ```
 
 **Parameters:**
 
-*   `channelID`: The ID of the channel where the webhook will be created.
-*   `name`: The name of the webhook.
-*   `avatarURL`: The URL of the avatar image for the webhook.
-*   `returnWebhookID&Token (yes/no)`:  Specifies whether the function should return the webhook's ID and token after creation.  Use `yes` to return the ID and Token, and `no` to return nothing.
-*   `separator`:  The separator used to delimit the webhook ID and token when `returnWebhookID&Token` is set to `yes`.
+- `channelID`: The ID of the channel where the webhook will be created.
+- `name`: The name of the webhook.
+- `avatarURL`: The URL of the avatar image for the webhook.
+- `returnWebhookID&Token (yes/no)`: Specifies whether the function should return the webhook's ID and token after creation. Use `yes` to return the ID and Token, and `no` to return nothing.
+- `separator`: The separator used to delimit the webhook ID and token when `returnWebhookID&Token` is set to `yes`.
 
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $createWebHook[$channelid;WikiHook;https://cdn.discordapp.com/guilds/723032190719623289/users/327996784012034050/avatars/7aa9a46ad68d89c4eb8da9d39bbf7ba4.webp?size=2048;yes;/]
-</DiscordMessageUser>
-<DiscordMessageBot>
-94074xx.../O_BoAW...
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec
+        $createWebHook[$channelid;WikiHook;https://cdn.discordapp.com/guilds/723032190719623289/users/327996784012034050/avatars/7aa9a46ad68d89c4eb8da9d39bbf7ba4.webp?size=2048;yes;/]
+    </Message>
+    <Message bot>94074xx.../O_BoAW...</Message>
+</Discord>
 
 **Example:**
 
 In this example, a webhook named "WikiHook" is created in the channel specified by `$channelid`. The webhook is given a specific avatar. The command then returns the webhook ID and Token, separated by `/`.
 
-**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" /> 
+**Function difficulty:** <Badge type="warning" text="Medium" vertical="middle" />
 
 **Tags:** <Tag text="Webhook"/> <Tag text="Creation"/>

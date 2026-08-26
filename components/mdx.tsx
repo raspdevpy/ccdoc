@@ -58,7 +58,7 @@ export function getMDXComponents(components?: MDXComponents) {
         Arg,
         Tab,
         ...Discord,
-        ...Discords,
+        // ...Discords,
         ...components,
     } satisfies MDXComponents;
 }

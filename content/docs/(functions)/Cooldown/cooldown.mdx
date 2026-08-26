@@ -9,6 +9,7 @@ Sets a cooldown in a command for user.
 ```cc
 $cooldown[time;error message;userID]
 ```
+
 1. **time** - (Optional) default value: `5s`. The cooldown duration. Example times: `10s`, `1m`, `2h`, `1d`
 2. **error message** - (Optional) default value: (none). The message to send if a cooldown is still in progress.
 3. **userID** - (Optional) default value: `$authorID`. The ID of a user you want to set a cooldown to.
@@ -19,36 +20,31 @@ $cooldown[time;error message;userID]
 
 As you can see, first time it will set the cooldown and execute code below, second time, it won't allow execution
 
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $cooldown[5m;You're on cooldown!]<br />
-You're not on cooldown!
-</DiscordMessageUser>
-<DiscordMessageBot>
-You're not on cooldown!
-</DiscordMessageBot>
-<DiscordMessageUser>
-!!exec $cooldown[5m;You're on cooldown! Still %mins%m remaining!]<br />
-You're not on cooldown!
-</DiscordMessageUser>
-<DiscordMessageBot>
-You're on cooldown! Still 4m remaining!
-</DiscordMessageBot>
-</DiscordMessages>
+<Discord>
+    <Message>
+        !!exec $cooldown[5m;You're on cooldown!] You're not on cooldown!
+    </Message>
+    <Message bot>You're not on cooldown!</Message>
+    <Message>
+        !!exec $cooldown[5m;You're on cooldown! Still %mins%m remaining!] You're
+        not on cooldown!
+    </Message>
+    <Message bot>You're on cooldown! Still 4m remaining!</Message>
+</Discord>
 
 ## Placeholders
 
 Available placeholders you can use in error message
 
-| Placeholder   | Description                                               | Output Example                            |
-| ------------- | --------------------------------------------------------- | ----------------------------------------- |
-| `%time%`      | The full time remaining                                   | `1 day 2 hours 3 minutes and 4 seconds`   |
-| `%days%`      | The number of days remaining                              | `1`                                       |
-| `%hrs%`       | The number of hours remaining                             | `2`                                       |
-| `%mins%`      | The number of minutes remaining                           | `3`                                       |
-| `%secs%`      | The number of seconds remaining                           | `4`                                       |
-| `%timestamp%` | Timestamp of cooldown expiration in seconds               | `1735689600`                              |
-| `%relative%`  | Shows Discord relative timestamp (Automatically Updates)  | `<t:1735689600:R>` - Displays: `in 1 day` |
+| Placeholder   | Description                                              | Output Example                            |
+| ------------- | -------------------------------------------------------- | ----------------------------------------- |
+| `%time%`      | The full time remaining                                  | `1 day 2 hours 3 minutes and 4 seconds`   |
+| `%days%`      | The number of days remaining                             | `1`                                       |
+| `%hrs%`       | The number of hours remaining                            | `2`                                       |
+| `%mins%`      | The number of minutes remaining                          | `3`                                       |
+| `%secs%`      | The number of seconds remaining                          | `4`                                       |
+| `%timestamp%` | Timestamp of cooldown expiration in seconds              | `1735689600`                              |
+| `%relative%`  | Shows Discord relative timestamp (Automatically Updates) | `<t:1735689600:R>` - Displays: `in 1 day` |
 
 <Callout type="warn" title={"Warning"}>
 
@@ -60,7 +56,6 @@ Place this function above the code you want to use cooldown for. All code before
 You can send embeds, select menus and buttons by using the [message curl format](/Other/curl).
 
 </Callout>
-
 
 **Related Functions:** `$channelCooldown` `$serverCooldown`
 

@@ -5,19 +5,21 @@ title: "$mentionedRoles"
 Returns the ID of one of the roles that was mentioned by the user
 
 ## Usage
+
 ```cc
 $mentionedRoles[number]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $mentionedRoles[1] <mention type="role" color="#70f0b4">Support</mention>
-</DiscordMessageUser>
-<DiscordMessageBot>
-869243918787686432
-</DiscordMessageBot>
-</DiscordMessages>
 
-**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" /> 
+<Discord>
+    <Message>
+        !!exec $mentionedRoles[1]{" "}
+        <mention type="role" color="#70f0b4">
+            Support
+        </mention>
+    </Message>
+    <Message bot>869243918787686432</Message>
+</Discord>
+
+**Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
 **Tags:** <Tag text="Mentioned"/> <Tag text="Role Mention"/> <Tag text="Ping"/> <Tag text="Role Ping"/>

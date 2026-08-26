@@ -6,26 +6,24 @@ The first field is the message we want to split and get indexes for. The second
 field would be the split/seperator used in the text, and the next field would get the value of the index provided, setting this index value as the new text. The next
 fields work as splitters/seperators and new indexes for this new text.
 
-
 ## Usage
+
 ```cc
 $advancedTextSplit[text;split;index;split;index;...]
 ```
-<br/>
-<DiscordMessages>
-<DiscordMessageUser>
-!!exec $advancedTextSplit[Wow, what a nice day, i'll go outside;,;2] /* Will get the second index */
-</DiscordMessageUser>
-<DiscordMessageBot>
-what a nice day
-</DiscordMessageBot>
-</DiscordMessages>
-<Callout type="warn" title={"This function is only for EXPERTS"}>
 
+<Discord>
+<Message>
+!!exec $advancedTextSplit[Wow, what a nice day, i'll go outside;,;2] /* Will get the second index */
+</Message>
+<Message bot>
+what a nice day
+</Message>
+</Discord>
+<Callout type="warn" title={"This function is only for EXPERTS"}>
 
 </Callout>
 
-**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" /> 
+**Function difficulty:** <Badge type="danger" text="Difficult" vertical="middle" />
 
 **Tags:** <Tag text="Advanced"/> <Tag text="Textsplit"/>
-
