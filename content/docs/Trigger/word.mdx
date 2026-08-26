@@ -33,7 +33,7 @@ In that case we would want users to select a user by mentioning him.
 The mention will be the `parameter 1`, because users will mention their victim right after the ?hug keyword.
 <Discord>
 <Message>
-?hug <DiscordMention type="user">fajfaj</DiscordMention>
+?hug <Mention name="fajfaj" />
 </Message>
 </Discord>
 
@@ -46,10 +46,10 @@ Parameters can be retrieved using the `$message` function, we will use it to get
 Here's how the final command should look like:
 <Discord>
 <Message>
-?hug <DiscordMention type="user">fajfaj</DiscordMention>
+?hug <Mention name="fajfaj" />
 </Message>
-<Message bot>
-<DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
+<Message bot mention>
+<Mention /> hugs <Mention name="fajfaj" />
 </Message>
 </Discord>
 
@@ -70,20 +70,20 @@ Let's test different variations:
 <Message>
 ?hello
 </Message>
-<Message bot>
-Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
+<Message bot mention>
+Hello <Mention />!
 </Message>
 <Message>
 ?HELLO
 </Message>
-<Message bot>
-Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
+<Message bot mention>
+Hello <Mention />!
 </Message>
 <Message>
 ?HeLLo
 </Message>
-<Message bot>
-Hello <DiscordMention type="user" highlight="true">Member</DiscordMention>!
+<Message bot mention>
+Hello <Mention />!
 </Message>
 
 </Discord>
@@ -107,22 +107,22 @@ Let's test it out:
 
 <Discord>
 <Message>
-?hug <DiscordMention type="user">fajfaj</DiscordMention>
+?hug <Mention name="fajfaj" />
 </Message>
-<Message bot>
-<DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
-</Message>
-<Message>
-?abrazo <DiscordMention type="user">fajfaj</DiscordMention>
-</Message>
-<Message bot>
-<DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
+<Message bot mention>
+<Mention /> hugs <Mention name="fajfaj" />
 </Message>
 <Message>
-?étreinte <DiscordMention type="user">fajfaj</DiscordMention>
+?abrazo <Mention name="fajfaj" />
 </Message>
-<Message bot>
-<DiscordMention type="user" highlight="true">Member</DiscordMention> hugs <DiscordMention type="user">fajfaj</DiscordMention>
+<Message bot mention>
+<Mention /> hugs <Mention name="fajfaj" />
+</Message>
+<Message>
+?étreinte <Mention name="fajfaj" />
+</Message>
+<Message bot mention>
+<Mention /> hugs <Mention name="fajfaj" />
 </Message>
 </Discord>
 
@@ -162,13 +162,13 @@ Let's try sending some mentions:
 
 <Discord>
 <Message>
-Hey <DiscordMention type="user">fajfaj</DiscordMention>! How is it going?
+Hey <Mention name="fajfaj" />! How is it going?
 </Message>
 <Message bot>
 You've pinged someone!
 </Message>
 <Message>
-<DiscordMention type="user">Mido</DiscordMention>, have you found your chocolate yet?
+<Mention name="Mido" />, have you found your chocolate yet?
 </Message>
 <Message bot>
 You've pinged someone!
@@ -366,5 +366,3 @@ Yay! works well. */}
 
 For Tier 3+, This trigger require `Message Content Intent` enabled for your custom bot
 </Callout>
-
-

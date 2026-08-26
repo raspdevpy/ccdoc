@@ -3,68 +3,25 @@
     line-height: 1.5;
 }
 
-.discord-chats img {
-    max-width: 370px;
-}
-
-.discord-embed .discord-emoji {
-    height: 18px !important;
-    width: 18px !important;
-}
-
-.discord-container .discord-mention {
-    font-size: 11px !important;
-    padding: 1px 4px !important;
-}
-
-.discord-poll-answer {
-    padding: 8px 16px;
-    margin-bottom: 4px;
-    width: 100%;
-    min-width: 160px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    cursor: pointer;
-    border: transparent solid 1px;
-    transition: border 150ms ease-in-out;
-    font-weight: 500;
-    font-size: 14px;
-
-    input[type="checkbox"],
-    input[type="radio"] {
-        width: 18px;
-        height: 18px;
-        accent-color: #fff;
-        cursor: pointer;
-        vertical-align: middle;
-    }
-}
-
-html.dark .discord-poll-answer:hover {
-    border: rgba(255, 255, 255, 0.2) solid 1px;
-}
-
-.discord-poll-answer:hover {
-    border: rgba(0, 0, 0, 0.2) solid 1px;
-}
-
-.embed-author {
-    display: flex;
-    flex-direction: row;
-    font-weight: 600;
-    font-size: 14px;
-    gap: 5px;
-    align-items: center;
-    margin-bottom: 5px;
-
+.discord-chats {
     img {
-        border-radius: 1000px;
-        width: 22px;
-        height: 22px;
-        margin: 0;
+        max-width: 370px;
+    }
+    a {
+        color: dodgerblue;
+        cursor: pointer;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    code {
+        display: inline;
+        align-items: center;
+        vertical-align: bottom;
+        border-radius: 4px !important;
+        padding: 0 2px;
+        border: 1px solid;
+        border-color: var(--color-fd-border);
+        background: var(--color-fd-muted);
     }
 }

@@ -15,9 +15,12 @@ Check this [page](/CodeReferences/ref.embed.colors)
 ## Example 1: Using it in function format
 
 <Discord>
-    <Message>!!exec $color[#0099ff]</Message>
+    <Message>
+        !!exec $title[Title]
+        $color[#0099ff]
+    </Message>
     <Message bot>
-        <DiscordEmbed slot="embeds" color="#0099ff"></DiscordEmbed>
+        <Embed title="Title" color="#0099ff"></Embed>
     </Message>
 </Discord>
 
@@ -31,9 +34,9 @@ Check this [page](/CodeReferences/ref.embed.colors)
 ]
 </Message>
 <Message bot>
-<DiscordEmbed slot="embeds" color="#0099ff" description="">
+<Embed color="#0099ff">
 You are awesome
-</DiscordEmbed>
+</Embed>
 </Message>
 </Discord>
 

@@ -172,7 +172,7 @@ This can detect mentions such as:
 
 <Discord>
 <Message>
-Hey <DiscordMention type="user">Mido</DiscordMention>!
+Hey <Mention name="Mido" />!
 </Message>
 <Message bot>
 You have mentioned Mido!
@@ -267,7 +267,7 @@ For example:
 
 <Discord>
 <Message>
-Hey <DiscordMention type="user">Mido</DiscordMention>, check this out!
+Hey <Mention name="Mido" />, check this out!
 </Message>
 <Message bot>
 Someone was mentioned!
@@ -280,13 +280,13 @@ For example, all of these can trigger the command:
 
 <Discord>
 <Message>
-<DiscordMention type="user">Mido</DiscordMention> hello!
+<Mention name="Mido" /> hello!
 </Message>
 <Message>
-Hello <DiscordMention type="user">Mido</DiscordMention>!
+Hello <Mention name="Mido" />!
 </Message>
 <Message>
-Can someone help <DiscordMention type="user">Mido</DiscordMention>?
+Can someone help <Mention name="Mido" />?
 </Message>
 </Discord>
 

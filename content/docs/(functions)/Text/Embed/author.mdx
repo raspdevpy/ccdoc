@@ -11,28 +11,26 @@ $author[text;icon url(optional);hyperlink(optional)]
 ```
 
 <Discord>
-    <Message>!!exec $author[text]</Message>
+    <Message>!!exec $author[Member]</Message>
     <Message bot>
-        <DiscordEmbed slot="embeds" authorName="text"></DiscordEmbed>
+        <Embed author="Member"></Embed>
     </Message>
-    <Message>!!exec $author[text;$authorAvatar]</Message>
+    <Message>!!exec $author[Member;$authorAvatar]</Message>
     <Message bot>
-        <DiscordEmbed
-            slot="embeds"
-            authorName="text"
-            authorIcon="https://cdn.discordapp.com/attachments/654503812593090602/665721745466195978/blue.png"
-        ></DiscordEmbed>
+        <Embed
+            author="Member"
+            authorAvatar="member"
+        ></Embed>
     </Message>
     <Message>
         !!exec $author[text;$authorAvatar;https://ccommandbot.com]
     </Message>
     <Message bot>
-        <DiscordEmbed
-            slot="embeds"
-            authorName="text"
-            authorIcon="https://cdn.discordapp.com/attachments/654503812593090602/665721745466195978/blue.png"
+        <Embed
+            author="Member"
+            authorAvatar="member"
             authorUrl="https://ccommandbot.com"
-        ></DiscordEmbed>
+        ></Embed>
     </Message>
 </Discord>
 

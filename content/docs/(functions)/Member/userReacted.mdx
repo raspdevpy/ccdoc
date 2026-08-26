@@ -23,21 +23,10 @@ How to use $userReacted
 
 <Discord>
     <Message>
-        !!exec $wait[5s] $userReacted[;;;
-        <img
-            src="https://cdn.discordapp.com/emojis/1000917016724648007.webp?size=16"
-            alt="DogSmile"
-            style={{ verticalAlign: "text-bottom" }}
-        />
-        ]
-        <DiscordReactions>
-            <DiscordReaction
-                name="DogSmile"
-                image="https://cdn.discordapp.com/emojis/1000917016724648007.webp"
-                count={1}
-                active
-            />
-        </DiscordReactions>
+        !!exec $wait[5s] $userReacted[;;;<Emoji src="https://cdn.discordapp.com/emojis/1000917016724648007.webp?size=32" />]
+        <Reactions>
+            <Reaction image="https://cdn.discordapp.com/emojis/1000917016724648007.webp?size=32" count="1" active />
+        </Reactions>
     </Message>
     <Message bot>true</Message>
 </Discord>

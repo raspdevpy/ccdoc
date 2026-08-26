@@ -11,9 +11,9 @@ $description[your text]
 ```
 
 <Discord>
-    <Message>!!exec $description[This is a description]</Message>
+    <Message>!!exec $description[This is description]</Message>
     <Message bot>
-        <DiscordEmbed slot="embeds">This is a description</DiscordEmbed>
+        <Embed>This is description</Embed>
     </Message>
 </Discord>
 
@@ -22,27 +22,17 @@ Usage: `\[link\](https://ccommandbot.com "tooltip(optional)")`
 
 <Discord>
     <Message>
-        !!exec $description[This is a description with
-        \[link\](https://ccommandbot.com "tooltip")]
+        !!exec $description[This is description with \[link\](https://ccommandbot.com)]
     </Message>
     <Message bot>
-        <DiscordEmbed slot="embeds">
-            This is a description{" "}
-            <a href="https://ccommandbot.com" target="_blank" title="tooltip">
-                hello
-            </a>
-        </DiscordEmbed>
+        <Embed>
+            This is description with [link](https://ccommandbot.com)
+        </Embed>
     </Message>
 </Discord>
 
 <Callout type="info" title={"Do you want to add an embed inside a Function as paramter like $sendmessage[text]"}>
 
 Use: `{description:your text}`
-
-</Callout>
-
-<Callout type="error" title={"Please be aware!!"}>
-
-If you add any `:` in this function it will error! Check out [this](/Guide/syntax)
 
 </Callout>

@@ -22,6 +22,7 @@ interface MessageProps {
     replyColor?: string;
     file: string;
     time: string;
+    edited: boolean;
     children?: React.ReactNode;
 }
 
@@ -44,6 +45,7 @@ export const Message = ({
     replyColor = "#a7c7e7",
     file,
     time = "",
+    edited = false,
     children = [],
 }: MessageProps) => {
     if (bot) {
@@ -150,10 +152,15 @@ export const Message = ({
 
                     <div className="text-xxs text-gray-500">{editedAt}</div>
                 </div>
-                <div className="text-sm prose leading-5.5 whitespace-break-spaces">
+                <div className="discord-contents text-sm prose leading-5.5 whitespace-break-spaces *:first:mt-0!">
                     {message}
                 </div>
                 {components}
+                {edited && (
+                    <div className="flex text-[9.5px] leading-3.5 items-center text-gray-500 dark:text-gray-500 h-5">
+                        (edited)
+                    </div>
+                )}
                 {ephemeral && (
                     <div className="flex flex-row text-xxs gap-1.25 mt-1.25 text-gray-500/50">
                         <svg

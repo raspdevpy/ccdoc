@@ -13,18 +13,24 @@ $addTimestamp
 or `$addTimestamp[ms]`
 
 <Discord>
-    <Message>!!exec $addTimestamp</Message>
+    <Message>
+        !!exec $title[Title]
+        $addTimestamp
+    </Message>
     <Message bot>
-        <DiscordEmbed slot="embeds" timestamp="09/12/2021"></DiscordEmbed>
+        <Embed title="Title" footer="Today at 12:00"></Embed>
     </Message>
 </Discord>
 
 or with specified Time
 
 <Discord>
-    <Message>!!exec $addTimestamp[$parseTime[13/09/2021]]</Message>
+    <Message>
+        !!exec $title[Title]
+        $addTimestamp[$dateToTime[09/13/2021]]
+    </Message>
     <Message bot>
-        <DiscordEmbed slot="embeds" timestamp="09/13/2021"></DiscordEmbed>
+        <Embed title="Title" footer="9/13/21, 00:00"></Embed>
     </Message>
 </Discord>
 
@@ -33,10 +39,3 @@ or with specified Time
 Use: `{timestamp:ms}`
 
 </Callout>
-
-<Callout type="error" title={"Please be aware!!"}>
-
-If you add any `:` in this function it will error! Check out [this](/Guide/syntax)
-
-</Callout>
-````

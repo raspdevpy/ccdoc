@@ -12,24 +12,28 @@ $addField[title;value;inline(yes/no default=yes)(optional)]
 
 <Discord>
     <Message>
-        !!exec $addField[title;value;no] $addField[title2;value2]
-        $addField[title3;value3] $addField[title4;value4]
+        !!exec $addField[title;value1]
+        $addField[title2;value2]
+        $addField[title3;value3]
+        $addField[title4;value4]
     </Message>
     <Message bot>
-        <DiscordEmbed slot="embeds">
-            <DiscordEmbedFields slot="fields">
-                <DiscordEmbedField fieldTitle="title">value</DiscordEmbedField>
-                <DiscordEmbedField inline fieldTitle="title2">
+        <Embed>
+            <Fields>
+                <Field title="title">
+                    value1
+                </Field>
+                <Field title="title2">
                     value2
-                </DiscordEmbedField>
-                <DiscordEmbedField inline fieldTitle="title3">
+                </Field>
+                <Field title="title3">
                     value3
-                </DiscordEmbedField>
-                <DiscordEmbedField inline fieldTitle="title4">
+                </Field>
+                <Field title="title4">
                     value4
-                </DiscordEmbedField>
-            </DiscordEmbedFields>
-        </DiscordEmbed>
+                </Field>
+            </Fields>
+        </Embed>
     </Message>
 </Discord>
 
@@ -38,24 +42,16 @@ Usage: `\[link\](https://ccommandbot.com "tooltip(optional)")`
 
 <Discord>
     <Message>
-        !!exec $addField[title;This is a field with
-        \[link\](https://ccommandbot.com "tooltip")]
+        !!exec $addField[Title;This is a field with a \[link\](https://ccommandbot.com)]
     </Message>
     <Message bot>
-        <DiscordEmbed slot="embeds">
-            <DiscordEmbedFields slot="fields">
-                <DiscordEmbedField fieldTitle="title">
-                    This is a description{" "}
-                    <a
-                        href="https://ccommandbot.com"
-                        target="_blank"
-                        title="tooltip"
-                    >
-                        hello
-                    </a>
-                </DiscordEmbedField>
-            </DiscordEmbedFields>
-        </DiscordEmbed>
+        <Embed>
+            <Fields>
+              <Field title="Title">
+                    This is a field with a [link](https://ccommandbot.com)
+                </Field>
+            </Fields>
+        </Embed>
     </Message>
 </Discord>
 

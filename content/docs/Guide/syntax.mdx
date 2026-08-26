@@ -66,15 +66,13 @@ Click to reveal: ||$math[2^11]||]
 
 <Discord>
     <Message>
-        !!exec $title[Math question]
-        $description[What is 2^11?
-        Click to reveal: ||$math[2^11]||]
+        !!exec $title[Math question] $description[What is 2^11? Click to reveal:
+        ||$math[2^11]||]
     </Message>
     <Message bot>
-        <DiscordEmbed embedTitle="Math question">
-            What is 2^11?
-            Click to reveal: `2048`
-        </DiscordEmbed>
+        <Embed title="Math question">
+            What is 2^11? Click to reveal: `2048`
+        </Embed>
     </Message>
 </Discord>
 

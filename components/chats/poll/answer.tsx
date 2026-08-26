@@ -28,11 +28,20 @@ export const Answer = ({
         : {};
 
     return (
-        <label className="discord-poll-answer" style={styles}>
+        <label
+            className="flex py-2 px-4 mb-1 w-full min-w-40 flex-row items-center gap-2 bg-gray-500/10 dark:bg-black/10 rounded-lg cursor-pointer border border-transparent transition-colors font-medium text-sm hover:border-black/20 dark:hover:border-white/20"
+            style={styles}
+        >
             <div className="text-[20px]">{emoji}</div>
             {text}
             <div className="flex-1"></div>
-            {!closed && <input type={type} name="option" />}
+            {!closed && (
+                <input
+                    type={type}
+                    name="option"
+                    className="size-4.5 accent-white cursor-pointer align-middle"
+                />
+            )}
             {closed && (
                 <>
                     <div className="text-[12px] text-nowrap">{votes} votes</div>

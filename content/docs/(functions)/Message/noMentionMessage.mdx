@@ -17,11 +17,11 @@ Let's say you want to echo the user's message in a custom command, but you don't
 Here's how it would look in Discord:
 
 <Discord>
-<Message>
-!!exec <DiscordMention highlight>Server Moderator</DiscordMention> testing [$noMentionMessage] ($message)
+<Message mention>
+!!exec <Mention name="Server Moderator" /> testing [$noMentionMessage] ($message)
 </Message>
-<Message bot>
-<DiscordMention highlight>Server Moderator</DiscordMention> [testing] (<DiscordMention highlight>Server Moderator</DiscordMention> testing)
+<Message bot mention>
+<Mention name="Mention" /> [testing] (<Mention name="Server Moderator" /> testing)
 </Message>
 </Discord>
 

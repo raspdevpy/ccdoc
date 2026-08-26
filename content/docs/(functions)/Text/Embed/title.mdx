@@ -11,22 +11,25 @@ $title[YOUR TITLE TEXT HERE;url(optional)]
 ```
 
 <Discord>
-    <Message>!!exec $title[This is a title]</Message>
+    <Message>
+        !!exec $title[This is title]
+    </Message>
     <Message bot>
-        <DiscordEmbed slot="embeds" embedTitle="This is a title"></DiscordEmbed>
+        <Embed title="This is title"></Embed>
     </Message>
 </Discord>
 
 Or with url
 
 <Discord>
-    <Message>!!exec $title[This is a title;https://discord.com]</Message>
+    <Message>
+        !!exec $title[This is a title;https://ccommandbot.com]
+    </Message>
     <Message bot>
-        <DiscordEmbed
-            slot="embeds"
-            embedTitle="This is a title"
+        <Embed
+            title="This is a title"
             url="https://discord.com"
-        ></DiscordEmbed>
+        ></Embed>
     </Message>
 </Discord>
 

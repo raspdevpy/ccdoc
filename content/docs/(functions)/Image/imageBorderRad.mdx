@@ -28,14 +28,13 @@ This example demonstrates how to draw a red circle in the center of a 300x300 pi
 
 <Discord>
     <Message>
-        !!exec $imageCreate[300;300] $imageBorderRad[50]
-        $imageFill[red;100;100;100;100] $image[$imageOutput]
+        !!exec $imageCreate[300;300]
+        $imageBorderRad[50]
+        $imageFill[red;100;100;100;100]
+        $image[$imageOutput]
     </Message>
     <Message bot>
-        <DiscordEmbed
-            slot="embeds"
-            image="https://i.imgur.com/wBb0uBm.png"
-        ></DiscordEmbed>
+        <Embed image="https://i.imgur.com/wBb0uBm.png"></Embed>
     </Message>
 </Discord>
 

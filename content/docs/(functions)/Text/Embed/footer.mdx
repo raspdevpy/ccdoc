@@ -11,11 +11,11 @@ $footer[text;icon url(optional)]
 ```
 
 <Discord>
-    <Message>!!exec $footer[This is a fantastic embed footer]</Message>
+    <Message>
+        !!exec $footer[This is a fantastic embed footer]
+    </Message>
     <Message bot>
-        <DiscordEmbed slot="embeds">
-            <span slot="footer">This is a fantastic embed footer</span>
-        </DiscordEmbed>
+        <Embed footer="This is a fantastic embed footer"></Embed>
     </Message>
 </Discord>
 

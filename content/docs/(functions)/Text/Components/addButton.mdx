@@ -6,16 +6,23 @@ Adds a button to an existing message. Use `$button` to send a message with a but
 
 ## Usage
 
-`$addButton[Message ID;Label;style/url;link/id;emoji(optional);Add to a new role (yes/no, optional); disabled (yes/no, optional)]`
+`$addButton[Message ID;Label;style/url;link/id;emoji(optional);Add to a new line (yes/no, optional); disabled (yes/no, optional)]`
 
 ## Example
 
-(Add a simple button)
-![](https://cdn.discordapp.com/attachments/914682255346118687/938578211380543578/Screenshot_20220202202417.jpg)
-(Add in new row)
-![](https://cdn.discordapp.com/attachments/914682255346118687/938578211695112192/Screenshot_20220202202711.jpg)
-(Add disabled)
-![](https://cdn.discordapp.com/attachments/914682255346118687/938578212018085899/Screenshot_20220202203325.jpg)
+Add a simple button
+
+<Discord>
+    <Message bot edited>
+        Hello!
+        <Buttons>
+            <Button label="Button Label" />
+        </Buttons>
+    </Message>
+    <Message>
+        !!exec $addButton[123456789123456789;Button Label;blue;my-button]
+    </Message>
+</Discord>
 
 <Callout type="info" title={"Available colors"}>
 
