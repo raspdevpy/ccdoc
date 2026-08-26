@@ -1,0 +1,28 @@
+---
+title: "$increaseMessageVar"
+---
+
+To increase message variable with a certain amount.  
+If the variable doesn't exist it will be created and its value set to the answer of the value as if the original value of the var is 0.
+
+## Usage
+
+```cc
+$increaseMessageVar[variable name;amount/expression;message id;default amount (default is 0)]
+```
+
+### Example (increase count by 1):
+
+```cc
+$increaseMessageVar[count;1]
+```
+
+### Example (double the count):
+
+<Discord>
+    <Message>
+        !!exec Before: $getMessageVar[count]
+        $increaseMessageVar[count;x*2] After: $getMessageVar[count]
+    </Message>
+    <Message bot>Before: 5 After: 10</Message>
+</Discord>
