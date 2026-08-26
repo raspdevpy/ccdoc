@@ -11,8 +11,24 @@ This function is useful to temporarily store variables, like to save the result 
 $let[variable name;variable value;remain after execution (yes/no , default no) (optional)]
 ```
 
-The first value will only exist until cc ends its execution,the second will still be accessable until next bot restart (every 5d)
 You can use $get[varname] or $varname to retrieve the value
+
+<Discord>
+    <Message>
+        !!exec $let[orange;10]  
+        I have so many oranges, in total of $get[orange]!
+    </Message>
+    <Message bot>
+        I have so many oranges, in total of 10!
+    </Message>
+    <Message>
+        !!exec $let[orange;10]  
+        I have so many oranges, in total of $orange!
+    </Message>
+    <Message bot>
+        I have so many oranges, in total of 10!
+    </Message>
+</Discord>
 
 <Discord>
     <Message>!!exec $let[orange;10] or $let[apple;10;yes]</Message>
