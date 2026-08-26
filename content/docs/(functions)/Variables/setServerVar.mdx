@@ -11,13 +11,12 @@ $setServerVar[variable;value]
 ```
 
 <Discord>
-    <Message>!!exec $setServerVar[holder;Mika]</Message>
+    <Message>
+        !!exec $setServerVar[holder;Mika]
+    </Message>
 </Discord>
 
-<Callout type="info" title={"Related Functions"}>
-
-Check out: `$getServerVar`
-
-Check out: `$deleteServerVar`
-
+<Callout title="Variable Limits" type="warn">
+    - Variable name length limit is **1024 characters**, and its value can have up to **5120 characters**. Exceeding this limit will throw an error.  
+    - All variables that are not read or changed in the span of one year, will automatically get deleted.
 </Callout>
