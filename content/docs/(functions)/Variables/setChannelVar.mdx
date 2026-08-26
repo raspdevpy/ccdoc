@@ -17,13 +17,12 @@ $setChannelVar[variable;value;channelID (optional)]
 or for current Channel
 
 <Discord>
-    <Message>!!exec $setChannelVar[Creator;Mido]</Message>
+    <Message>
+        !!exec $setChannelVar[Creator;Mido]
+    </Message>
 </Discord>
 
-<Callout type="info" title={"Related Functions"}>
-
-Check out: `$getChannelVar`
-
-Check out: `$deleteChannelVar`
-
+<Callout title="Variable Limits" type="warn">
+    - Variable name length limit is **1024 characters**, and its value can have up to **5120 characters**. Exceeding this limit will throw an error.  
+    - All variables that are not read or changed in the span of one year, will automatically get deleted.
 </Callout>

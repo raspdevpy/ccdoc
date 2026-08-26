@@ -22,9 +22,3 @@ discord-messages {
 table {
     border-radius: var(--radius-xl);
 }
-
-@layer utilities {
-    .prose p {
-        margin-top: 0.25rem !important;
-    }
-}

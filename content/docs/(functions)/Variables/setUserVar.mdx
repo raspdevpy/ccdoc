@@ -11,15 +11,12 @@ $setUserVar[variable;value;userID(optional)]
 ```
 
 <Discord>
-    <Message>!!exec $setMessageVar[warnings;5]</Message>
+    <Message>
+        !!exec $setMessageVar[warnings;5]
+    </Message>
 </Discord>
 
-<Callout type="info" title={"Related Functions"}>
-
-Check out: `$getUserVar`
-
-Check out: `$deleteUserVar`
-
-Check out: `$resetUserVar`
-
+<Callout title="Variable Limits" type="warn">
+    - Variable name length limit is **1024 characters**, and its value can have up to **5120 characters**. Exceeding this limit will throw an error.  
+    - All variables that are not read or changed in the span of one year, will automatically get deleted.
 </Callout>
