@@ -33,7 +33,6 @@ export const { staticGET: GET } = createFromSource(source, {
   buildIndex(page) {
     const structuredData = page.data.structuredData;
     const tags = tagsFor(page.path, page.data.title);
-
     return {
       id: page.url,
       title: page.data.title,

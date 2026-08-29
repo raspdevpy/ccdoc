@@ -2,13 +2,14 @@ import { loader } from "fumadocs-core/source";
 import { docsContentRoute, docsRoute } from "./shared";
 import { defineDocs } from "fumadocs-mdx/macro";
 import { metaSchema, pageSchema } from "fumadocs-core/source/schema";
-import remarkEmoji from 'remark-emoji';
+// import remarkEmoji from 'remark-emoji'; // later to support, since it broke the search api
 const docs = defineDocs({
     dir: "content/docs",
     docs: {
-        mdxOptions: {
-        remarkPlugins: [remarkEmoji],
-        },
+        // mdxOptions: {
+        // remarkPlugins: [remarkEmoji],
+        // },
+
         schema: pageSchema,
         postprocess: {
             includeProcessedMarkdown: true,
