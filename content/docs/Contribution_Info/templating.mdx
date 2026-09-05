@@ -42,7 +42,7 @@ Here's the structure of the metadata JSON object:
 - **`usecase`:** A brief explanation of what the command does (e.g., `"checks the balance of the user"`).
 - **`category`:** The category the command belongs to (e.g., `"economy"`).
 - **`preview`:** A link to a preview image or video demonstrating the command.
-- **`description`:** An array of strings providing a detailed description of the command. Each string can be a separate line of the description. Use `<code>...</code>` to format command examples.
+- **`description`:** An array of strings providing a detailed description of the command. Each string can be a separate line of the description. Use `\`...\`` to format command examples.
 - **`link`:** An array of links to relevant resources, documentation, or examples.
 - **`custommd`:** (Optional) A string containing custom markdown to further describe or provide instructions for the command.
 
@@ -59,7 +59,7 @@ Here's an example of metadata for a `!balance` command:
     "usecase": "checks the balance of the user",
     "category": "economy",
     "preview": "URL",
-    "description": ["Run <code>!bal</code> to show your balance"] ,
+    "description": ["Run `!bal` to show your balance"],
     "link": ["URL"],
     "custommd": ""
 }}}
