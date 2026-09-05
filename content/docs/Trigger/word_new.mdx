@@ -20,6 +20,8 @@ The available options are:
 | **Starts with**                    | Triggers when the message starts with the specified text   |
 | **Ends with**                      | Triggers when the message ends with the specified text     |
 | **Contains**                       | Triggers when the message contains the specified text      |
+| **Exact Match**                       | Triggers when the message exactly match the specified text |
+| **Prefix Match**                       | Triggers when the message prefixed with the specificed text |
 | **Advanced (Regex)**               | Uses a regular expression to match the message             |
 | **Contains attachment**            | Triggers when the message contains an attachment           |
 | **Discord Pin Message**            | Triggers when Discord sends a pin notification             |
@@ -150,6 +152,66 @@ Does anyone have a banana?
 
 The text does not need to be at the beginning or end of the message.
 
+## Exact Match
+
+The **Exact Match** option triggers when the specified text matches exactly the message
+
+For example, using:
+
+```cc
+banana
+```
+
+and if the response code is
+```cc
+🍌 Banana detected!
+```
+
+will trigger whenever `banana` appears in the message.
+
+<Discord>
+<Message>
+banana
+</Message>
+<Message bot>
+🍌 Banana detected!
+</Message>
+<Message>
+bananas
+</Message>
+</Discord>
+
+## Prefix Match
+
+The **Prefix Match** option triggers when the message matches the prefix you specified
+
+For example, using:
+
+```cc
+!work
+```
+
+and if the response code is
+```cc
+You worked!
+```
+
+will trigger whenever `banana` appears in the message.
+
+<Discord>
+<Message>
+!work
+</Message>
+<Message bot>
+You worked!
+</Message>
+<Message>
+!work something
+</Message>
+<Message bot>
+You worked!
+</Message>
+</Discord>
 
 ## Advanced (Regex)
 
@@ -467,12 +529,14 @@ Choose the simplest option that matches what you are trying to detect. Regex sho
 | **Starts with**                    | `!hello`         | Triggers when the message starts with the specified text   |
 | **Ends with**                      | `hello`          | Triggers when the message ends with the specified text     |
 | **Contains**                       | `hello`          | Triggers when the message contains the specified text      |
+| **Exact Match**                    | `hello`          |  Triggers when the message exactly match the specified text |
+| **Prefix Match**                   | `!work`          | Triggers when the message prefixed with the specificed text |
 | **Advanced (Regex)**               | `/<@!?\d{18,}>/` | Uses a regular expression to match messages                |
 | **Contains attachment**            | —                | Triggers when a message contains an attachment             |
 | **Discord Pin Message**            | —                | Triggers when Discord sends a pin notification             |
 | **Discord Thread Created Message** | —                | Triggers when Discord sends a thread creation notification |
 | **Contains Poll**                  | —                | Triggers when a message contains a poll                    |
-| **Contains Sticker**                  | —                | Triggers when a message contains a sticker                    |
+| **Contains Sticker**                  | —             | Triggers when a message contains a sticker                    |
 | **Has User Mention/Ping**          | —                | Triggers when a message mentions a user                    |
 | **Forwarded Message**              | —                | Triggers when a message contains a forwarded message       |
 | **Discord AutoMod Action Message** | —                | Triggers when Discord AutoMod takes action                 |
@@ -480,7 +544,7 @@ Choose the simplest option that matches what you are trying to detect. Regex sho
 
 <Callout type="info" title={"Choose the right trigger"}>
 
-For normal text matching, prefer **Starts with**, **Ends with**, or **Contains**. Use **Advanced (Regex)** when you need more complex patterns, and use the specialized message types when you want to detect Discord-specific message features.
+For normal text matching, prefer **Starts with**, **Ends with**, **Contains**, **Exact Match** or **Prefix Match**. Use **Advanced (Regex)** when you need more complex patterns, and use the specialized message types when you want to detect Discord-specific message features.
 
 </Callout>
 
@@ -490,6 +554,8 @@ For Tier 3+, this trigger **requires** the `Message Content Intent` to be enable
 * `Starts with`
 * `Ends with`
 * `Contains`
+* `Exact Match`
+* `Prefix Match`
 * `Advanced (Regex)`
 * `Contains attachment`
 * `Contains Poll`
