@@ -15,6 +15,7 @@ title: "v1.x (Current)"
 #### 🐛 Fixes
 * `$userLeaderboard` and `$userVarRank` was getting highest-first with `desc` instead of `asc` 
 * `$initVar` where it was mistakely assuming an empty value variable is an uninitialized one.
+* `{reply_mention}` was no respecting the value to mention/not mention user on reply.
 
 #### 📚 Changes
 * User/Channel/Server/Message variable name and value limit is enforced and will error, to avoid unexpected partial save.
