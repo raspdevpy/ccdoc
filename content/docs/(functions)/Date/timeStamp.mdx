@@ -9,26 +9,25 @@ Returns the current Unix timestamp (the number of milliseconds that have elapsed
 ## Usage
 
 ```cc
-$timeStamp[Return in Seconds (Yes/No)]
+$timeStamp[Return in Seconds (Yes/No);Offset (Optional)]
 ```
 
 - **`Return in Seconds (Yes/No)`**: This is an optional argument.
     - If set to `Yes`, the function will return the timestamp in seconds instead of milliseconds.
     - If set to `No` (or left blank), the function will return the timestamp in milliseconds.
+- **`Offset`**: This is an optional argument that can return an offset value from the current timestamp, like +1d, -2h
+    - valid examples: `1h` or `+1h` for adding 1 hour, `-1h` to substract 1 hour 
 
 **Alias:** This function is an alias for `$dateStamp`. You can use either one interchangeably.
 
 **Example:**
 
 <Discord>
-    <Message>!!exec $timeStamp, $timestamp[yes]</Message>
-    <Message bot>1630841854895, 1630841854</Message>
+    <Message>!!exec $timeStamp, $timestamp[yes], $timestamp[yes;+1h], $timestamp[yes;-1h]</Message>
+    <Message bot>1788624741387, 1788624741, 1788628341, 1788621141</Message>
+
 </Discord>
 
-**Explanation of the example:**
-
-- The first value `1630841854895` is the current time in milliseconds.
-- The second value `1630841854` is the current time in seconds because we specified `yes` in the function call.
 
 **Function difficulty:** <Badge type="tip" text="Easy" vertical="middle" />
 
