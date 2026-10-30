@@ -15,7 +15,6 @@ import { Button } from "@/components/ui/button";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { getEditTime } from "@/lib/getEditTime";
 import { Message } from "@/components/chats/message/message";
-import Script from "next/script";
 
 export default async function Page(props: PageProps<"/[[...slug]]">) {
     const params = await props.params;
@@ -81,38 +80,38 @@ export default async function Page(props: PageProps<"/[[...slug]]">) {
 
     return (
         <>
-        <script
-            id="discord:component-embed"
-            type="application/json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(components) }}
-        />
-        <DocsPage toc={page.data.toc} full={page.data.full}>
-            <DocsTitle>{page.data.title}</DocsTitle>
-            <DocsDescription className="mb-0">
-                {page.data.description}
-            </DocsDescription>
-            <DocsBody>
-                <MDX
-                    components={getMDXComponents({
-                        a: createRelativeLink(source, page),
-                        Message: (props) => (
-                            <Message {...props} file={`${page.path}`} />
-                        ),
-                    })}
-                />
-            </DocsBody>
-            <div className="flex flex-row gap-2 items-center border-b pb-6">
-                {validTime && <PageLastUpdate date={editedAt} />}
-                <div className="flex-1"></div>
-                <Button
-                    color="secondary"
-                    icon={<GitHubLogoIcon />}
-                    link={`https://github.com/${gitConfig.user}/${gitConfig.repo}/edit/${gitConfig.branch}/content/docs/${page.path}`}
-                >
-                    Edit This Page
-                </Button>
-            </div>
-        </DocsPage>
+            <script
+                id="discord:component-embed"
+                type="application/json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(components) }}
+            />
+            <DocsPage toc={page.data.toc} full={page.data.full}>
+                <DocsTitle>{page.data.title}</DocsTitle>
+                <DocsDescription className="mb-0">
+                    {page.data.description}
+                </DocsDescription>
+                <DocsBody>
+                    <MDX
+                        components={getMDXComponents({
+                            a: createRelativeLink(source, page),
+                            Message: (props) => (
+                                <Message {...props} file={`${page.path}`} />
+                            ),
+                        })}
+                    />
+                </DocsBody>
+                <div className="flex flex-row gap-2 items-center border-b pb-6">
+                    {validTime && <PageLastUpdate date={editedAt} />}
+                    <div className="flex-1"></div>
+                    <Button
+                        color="secondary"
+                        icon={<GitHubLogoIcon />}
+                        link={`https://github.com/${gitConfig.user}/${gitConfig.repo}/edit/${gitConfig.branch}/content/docs/${page.path}`}
+                    >
+                        Edit This Page
+                    </Button>
+                </div>
+            </DocsPage>
         </>
     );
 }
