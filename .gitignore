@@ -21,7 +21,10 @@ next-env.d.ts
 
 # remote images cached locally by lib/remark/images.ts
 guide/.vuepress/public/images/*.*
-
+public/images/*.png
+public/images/*.gif
+public/images/*.jpg
+public/images/*.jpeg
 # browser-automation session artifacts (snapshots, console logs)
 .playwright-mcp/
 
