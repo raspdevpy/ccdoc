@@ -6,7 +6,7 @@ const withMDX = createMDX();
 /** @type {import("next").NextConfig} */
 const config = {
     output: "export",
-    basePath: process.env.BASE_URL??"/",
+    basePath: process.env.BASE_URL??"",
     reactStrictMode: true,
     images: { unoptimized: true },
     allowedDevOrigins: ['*.trycloudflare.com'],
