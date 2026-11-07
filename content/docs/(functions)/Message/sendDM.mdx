@@ -9,11 +9,12 @@ Sends the output of the code to the message author's DMs or to the DMs of a spec
 ## Usage
 
 ```cc
-$sendDM[userID;message]
+$sendDM[userID;message;return message id or undefined, if message could not be send (yes/no, default is no)]
 ```
 
 - `userID`: (Optional) The ID of the user to send the DM to. If omitted, the DM will be sent to the message author.
 - `message`: The message to send in the DM.
+- `return message ID`: Whether to return the Message ID of the message sent to the user. If the DM failed to send, then the return value would be `undefined`.
 
 **Example 1: Sending a DM to the message author multiple times.**
 
