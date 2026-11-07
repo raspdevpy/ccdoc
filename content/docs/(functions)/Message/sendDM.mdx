@@ -14,7 +14,7 @@ $sendDM[userID;message;return message id or undefined, if message could not be s
 
 - `userID`: (Optional) The ID of the user to send the DM to. If omitted, the DM will be sent to the message author.
 - `message`: The message to send in the DM.
-- `return message ID`: Whether to return the Message ID of the message sent to the user. If the DM failed to send, then the return value would be `undefined`.
+- `return message ID`: (Optional) Determines whether to return the ID of the sent DM. If the DM failed to send, then the return value would be `undefined`. Defaults to `no` if not provided.
 
 **Example 1: Sending a DM to the message author multiple times.**
 
