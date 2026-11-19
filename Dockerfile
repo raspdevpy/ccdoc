@@ -11,7 +11,7 @@ COPY . .
 RUN pnpm build
 
 # Stage 2 — serve with nginx
-FROM nginx:1.25-alpine
+FROM nginx:1.30.7-alpine
 ARG BUILD_DIR=out
 
 # Remove default config and add a simple SPA-friendly config
